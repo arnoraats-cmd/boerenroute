@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- PRIMARY SEO -->
+<title>Boerenroute.nl — Boerderijwinkels & automaten vinden en een fietsroute plannen</title>
+<meta name="description" content="Vind boerderijwinkels, eierautomaten, melktaps en streekproducten bij jou in de buurt. Plan een fietstocht langs verse producten rechtstreeks van de boer. Gratis en voor heel Nederland.">
+<meta name="keywords" content="boerderijwinkel, boerderijautomaat, eierautomaat, melktap, streekproducten, lokaal voedsel, boer, fietsroute, verse producten, zelfpluk, kaasboerderij, honing, biologisch, korte keten">
+<meta name="author" content="Boerenroute.nl">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://boerenroute.nl/">
+
+<!-- OPEN GRAPH (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://boerenroute.nl/">
+<meta property="og:title" content="Boerenroute.nl — Verse producten rechtstreeks van de boer">
+<meta property="og:description" content="Vind boerderijwinkels en automaten bij jou in de buurt en plan een fietstocht langs verse, lokale producten. Gratis voor heel Nederland.">
+<meta property="og:image" content="https://boerenroute.nl/og-image.png">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Boerenroute.nl">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Boerenroute.nl — Verse producten van de boer">
+<meta name="twitter:description" content="Vind boerderijwinkels en automaten en plan een fietstocht langs lokale producten.">
+<meta name="twitter:image" content="https://boerenroute.nl/og-image.png">
+
+<!-- FAVICON -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+
+<!-- PWA: installeerbaar als app -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#3B6D11">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Boerenroute">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- STRUCTURED DATA (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Boerenroute.nl",
+  "url": "https://boerenroute.nl/",
+  "description": "Vind boerderijwinkels, automaten en streekproducten bij jou in de buurt en plan een fietsroute langs verse producten rechtstreeks van de boer.",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "All",
+  "inLanguage": "nl-NL",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Boerenroute.nl",
+    "url": "https://boerenroute.nl/"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- PRIVACY-VRIENDELIJKE STATISTIEKEN (GoatCounter) -->
+<script data-goatcounter="https://boerenroute.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --green-dark: #27500A;
+  --green-mid: #3B6D11;
+  --green-light: #639922;
+  --green-bg: #EAF3DE;
+  --green-pale: #f4f9ec;
+  --amber: #BA7517;
+  --amber-bg: #FAEEDA;
+  --red: #A32D2D;
+  --red-bg: #FCEBEB;
+  --sand: #f7f3ec;
+  --text: #1a1a18;
+  --text-mid: #555550;
+  --text-light: #888780;
+  --border: rgba(0,0,0,0.09);
+  --border-mid: rgba(0,0,0,0.15);
+  --white: #fff;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+body { font-family: 'DM Sans', sans-serif; background: var(--sand); color: var(--text); min-height: 100vh; }
+
+/* NAV */
+header { background: var(--white); border-bottom: 1px solid var(--border); padding: 0 1.5rem; position: sticky; top: 0; z-index: 1000; }
+.header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 1rem; }
+.logo { display: flex; align-items: center; gap: 9px; flex-shrink: 0; }
+.logo-icon { width: 34px; height: 34px; background: var(--green-bg); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+.logo-text { font-family: 'Lora', serif; font-size: 19px; font-weight: 600; color: var(--green-dark); }
+.logo-text span { color: var(--green-light); }
+.nav-tabs { display: flex; gap: 2px; }
+.nav-tab { padding: 6px 14px; font-size: 13px; font-family: 'DM Sans', sans-serif; border: none; background: none; color: var(--text-mid); cursor: pointer; border-radius: 20px; transition: all 0.15s; }
+.nav-tab:hover { background: var(--sand); color: var(--text); }
+.nav-tab.active { background: var(--green-bg); color: var(--green-dark); font-weight: 500; }
+.route-pill { display: flex; align-items: center; gap: 7px; background: var(--green-bg); border: 1px solid var(--green-light); border-radius: 20px; padding: 5px 13px; font-size: 13px; color: var(--green-dark); font-weight: 500; cursor: pointer; white-space: nowrap; }
+.route-pill:hover { background: #d8efc4; }
+.rbadge { background: var(--green-mid); color: white; border-radius: 50%; width: 18px; height: 18px; font-size: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+
+/* PAGE */
+.page { display: none; max-width: 1200px; margin: 0 auto; padding: 1.75rem 1.5rem; }
+.page.active { display: block; }
+
+/* WINKELS PAGE */
+.winkels-layout { display: grid; grid-template-columns: 1fr 340px; gap: 1.5rem; align-items: start; }
+@media(max-width:860px){ .winkels-layout { grid-template-columns: 1fr; } }
+.panel-title { font-family: 'Lora', serif; font-size: 21px; font-weight: 600; margin-bottom: 4px; }
+.panel-sub { font-size: 14px; color: var(--text-light); margin-bottom: 1.25rem; }
+.search-wrap { position: relative; margin-bottom: 1rem; }
+.si { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); font-size: 15px; }
+.search-input { width: 100%; padding: 9px 12px 9px 36px; font-size: 14px; font-family: 'DM Sans',sans-serif; border: 1px solid var(--border-mid); border-radius: var(--radius-sm); background: var(--white); color: var(--text); outline: none; transition: border-color 0.2s; }
+.search-input:focus { border-color: var(--green-mid); }
+.flabel { font-size: 11px; font-weight: 500; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 7px; }
+.filter-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1.25rem; }
+.chip { padding: 5px 13px; font-size: 13px; font-family: 'DM Sans',sans-serif; border-radius: 20px; border: 1px solid var(--border-mid); background: var(--white); color: var(--text-mid); cursor: pointer; transition: all 0.15s; }
+.chip:hover { border-color: var(--green-mid); color: var(--green-dark); }
+.chip.on { background: var(--green-bg); border-color: var(--green-mid); color: var(--green-dark); font-weight: 500; }
+.count-line { font-size: 13px; color: var(--text-light); margin-bottom: 1rem; display: flex; align-items: center; justify-content: space-between; }
+.sort-select { font-size: 12px; font-family: 'DM Sans',sans-serif; border: 1px solid var(--border-mid); border-radius: var(--radius-sm); padding: 4px 8px; background: var(--white); color: var(--text-mid); outline: none; cursor: pointer; }
+.shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px,1fr)); gap: 10px; }
+
+/* SHOP CARD */
+.shop-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; cursor: pointer; transition: all 0.2s; position: relative; }
+.shop-card:hover { border-color: var(--green-light); box-shadow: 0 2px 12px rgba(59,109,17,0.08); transform: translateY(-1px); }
+.shop-card.added { background: var(--green-pale); border-color: var(--green-mid); }
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 9px; }
+.shop-emoji { font-size: 24px; }
+.add-circle { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--border-mid); background: var(--white); display: flex; align-items: center; justify-content: center; font-size: 15px; color: var(--text-light); transition: all 0.15s; flex-shrink: 0; }
+.add-circle:hover { border-color: var(--green-mid); color: var(--green-dark); background: var(--green-bg); }
+.add-circle.on { background: var(--green-mid); border-color: var(--green-mid); color: white; }
+.shop-name { font-weight: 500; font-size: 14px; color: var(--text); margin-bottom: 2px; }
+.shop-hours { font-size: 12px; color: var(--text-light); margin-bottom: 6px; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 3px; margin-bottom: 7px; }
+.ptag { font-size: 11px; padding: 2px 7px; border-radius: 10px; background: var(--sand); color: var(--text-mid); }
+.card-footer { display: flex; align-items: center; justify-content: space-between; }
+.dist-pill { display: inline-flex; align-items: center; gap: 3px; font-size: 12px; color: var(--green-dark); background: var(--green-bg); border-radius: 10px; padding: 2px 8px; }
+.star-line { font-size: 12px; color: var(--amber); }
+.season-badge { font-size: 11px; color: var(--amber); background: var(--amber-bg); border-radius: 10px; padding: 2px 7px; margin-left: 5px; }
+.review-link { font-size: 12px; color: var(--green-mid); text-decoration: underline; cursor: pointer; margin-top: 5px; display: inline-block; }
+
+/* ROUTE PANEL */
+.route-panel { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem; position: sticky; top: 72px; }
+.rp-header { display: flex; align-items: center; gap: 8px; margin-bottom: 1rem; }
+.rp-title { font-family: 'Lora', serif; font-size: 16px; font-weight: 600; color: var(--green-dark); }
+.rp-empty { text-align: center; padding: 1.5rem 1rem; color: var(--text-light); }
+.rp-empty-icon { font-size: 32px; margin-bottom: 8px; }
+.rp-empty-text { font-size: 13px; line-height: 1.6; }
+.route-stop { display: flex; align-items: flex-start; gap: 9px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+.route-stop:last-of-type { border-bottom: none; }
+.stop-dot { width: 22px; height: 22px; border-radius: 50%; background: var(--green-mid); color: white; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.stop-body { flex: 1; min-width: 0; }
+.stop-name { font-size: 13px; font-weight: 500; }
+.stop-prods { font-size: 12px; color: var(--text-light); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stop-dist { font-size: 11px; color: var(--green-mid); margin-top: 1px; }
+.stop-del { color: var(--text-light); cursor: pointer; padding: 2px 4px; font-size: 13px; }
+.stop-del:hover { color: var(--red); }
+.connector { width: 2px; height: 10px; background: var(--green-light); margin-left: 10px; opacity: 0.35; }
+.stats-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 7px; margin: 1rem 0; }
+.stat-box { background: var(--sand); border-radius: var(--radius-sm); padding: 9px 6px; text-align: center; }
+.stat-val { font-size: 17px; font-weight: 500; }
+.stat-lbl { font-size: 11px; color: var(--text-light); margin-top: 1px; }
+.start-btn { width: 100%; padding: 11px; background: var(--green-mid); color: white; border: none; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; font-family: 'DM Sans',sans-serif; cursor: pointer; transition: background 0.2s; }
+.start-btn:hover { background: var(--green-dark); }
+.start-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.clear-btn { width: 100%; margin-top: 7px; padding: 7px; background: none; color: var(--text-light); border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 13px; font-family: 'DM Sans',sans-serif; cursor: pointer; }
+.clear-btn:hover { color: var(--red); border-color: var(--red); }
+
+/* GPS BANNER */
+.gps-banner { background: var(--amber-bg); border: 1px solid var(--amber); border-radius: var(--radius-sm); padding: 9px 14px; font-size: 13px; color: var(--amber); display: flex; align-items: center; gap: 8px; margin-bottom: 1rem; cursor: pointer; }
+.gps-banner:hover { background: #f5e0c0; }
+.gps-banner.ok { background: var(--green-bg); border-color: var(--green-mid); color: var(--green-dark); cursor: default; }
+
+/* MAP PAGE */
+#map { height: 520px; border-radius: var(--radius); border: 1px solid var(--border); }
+.map-controls { display: flex; gap: 8px; margin-bottom: 1rem; flex-wrap: wrap; align-items: center; }
+.map-btn { padding: 7px 14px; font-size: 13px; font-family: 'DM Sans',sans-serif; border: 1px solid var(--border-mid); border-radius: 20px; background: var(--white); color: var(--text-mid); cursor: pointer; transition: all 0.15s; }
+.map-btn:hover { border-color: var(--green-mid); color: var(--green-dark); }
+.map-btn.on { background: var(--green-bg); border-color: var(--green-mid); color: var(--green-dark); font-weight: 500; }
+
+/* DETAIL MODAL */
+.modal-bg { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 2000; align-items: center; justify-content: center; padding: 1rem; }
+.modal-bg.open { display: flex; }
+.modal { background: var(--white); border-radius: var(--radius); max-width: 560px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 1.5rem; position: relative; }
+.modal-close { position: absolute; top: 14px; right: 14px; font-size: 18px; color: var(--text-light); cursor: pointer; background: none; border: none; line-height: 1; }
+.modal-close:hover { color: var(--text); }
+.modal-emoji { font-size: 36px; margin-bottom: 8px; }
+.modal-name { font-family: 'Lora', serif; font-size: 20px; font-weight: 600; margin-bottom: 4px; }
+.modal-meta { font-size: 13px; color: var(--text-light); margin-bottom: 1rem; }
+.modal-section { font-size: 12px; font-weight: 500; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.07em; margin: 1rem 0 6px; }
+.product-grid { display: flex; flex-wrap: wrap; gap: 5px; }
+.prod-chip { font-size: 12px; padding: 4px 10px; border-radius: 10px; background: var(--sand); color: var(--text-mid); }
+
+/* REVIEWS */
+.review-item { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.review-item:last-child { border-bottom: none; }
+.review-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
+.review-author { font-size: 13px; font-weight: 500; }
+.review-stars { font-size: 13px; color: var(--amber); }
+.review-date { font-size: 11px; color: var(--text-light); }
+.review-text { font-size: 13px; color: var(--text-mid); line-height: 1.55; }
+.no-reviews { font-size: 13px; color: var(--text-light); padding: 1rem 0; }
+
+/* REVIEW FORM */
+.review-form { background: var(--sand); border-radius: var(--radius-sm); padding: 1rem; margin-top: 1rem; }
+.review-form-title { font-size: 14px; font-weight: 500; margin-bottom: 10px; }
+.star-picker { display: flex; gap: 4px; margin-bottom: 10px; font-size: 24px; cursor: pointer; }
+.star-picker span { transition: transform 0.1s; color: #D3D1C7; }
+.star-picker span.lit { color: var(--amber); }
+.star-picker span:hover { transform: scale(1.15); }
+.rf-input { width: 100%; padding: 8px 10px; font-size: 13px; font-family: 'DM Sans',sans-serif; border: 1px solid var(--border-mid); border-radius: var(--radius-sm); background: var(--white); color: var(--text); outline: none; margin-bottom: 7px; }
+.rf-input:focus { border-color: var(--green-mid); }
+textarea.rf-input { resize: vertical; min-height: 70px; }
+.rf-submit { padding: 8px 18px; background: var(--green-mid); color: white; border: none; border-radius: var(--radius-sm); font-size: 13px; font-family: 'DM Sans',sans-serif; cursor: pointer; font-weight: 500; }
+.rf-submit:hover { background: var(--green-dark); }
+.rf-msg { font-size: 13px; color: var(--green-mid); margin-top: 7px; display: none; }
+
+/* AANMELDEN PAGE */
+.aanmeld-wrap { max-width: 640px; }
+.form-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; }
+.form-title { font-family: 'Lora', serif; font-size: 19px; font-weight: 600; margin-bottom: 4px; }
+.form-sub { font-size: 14px; color: var(--text-light); margin-bottom: 1.5rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+@media(max-width:520px){ .form-row { grid-template-columns: 1fr; } }
+.form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
+.form-label { font-size: 13px; font-weight: 500; color: var(--text-mid); }
+.form-input { padding: 9px 11px; font-size: 14px; font-family: 'DM Sans',sans-serif; border: 1px solid var(--border-mid); border-radius: var(--radius-sm); background: var(--white); color: var(--text); outline: none; transition: border-color 0.2s; }
+.form-input:focus { border-color: var(--green-mid); }
+textarea.form-input { resize: vertical; min-height: 80px; }
+.product-check-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; }
+.pcheck { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-mid); cursor: pointer; }
+.pcheck input { accent-color: var(--green-mid); }
+.form-submit { padding: 11px 28px; background: var(--green-mid); color: white; border: none; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; font-family: 'DM Sans',sans-serif; cursor: pointer; transition: background 0.2s; }
+.form-submit:hover { background: var(--green-dark); }
+.form-success { background: var(--green-bg); border: 1px solid var(--green-mid); border-radius: var(--radius-sm); padding: 1rem; font-size: 14px; color: var(--green-dark); display: none; margin-top: 1rem; }
+
+/* UTIL */
+.avg-stars { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; }
+.fav-heart { font-size: 16px; cursor: pointer; line-height: 1; transition: transform 0.15s; }
+.fav-heart:hover { transform: scale(1.2); }
+.avg-stars .stars { color: var(--amber); }
+.avg-stars .count { color: var(--text-light); font-size: 12px; }
+.season-badge { font-size: 11px; color: var(--amber); background: var(--amber-bg); border-radius: 10px; padding: 2px 7px; margin-left: 5px; }
+.automaat-badge { font-size: 11px; color: #185FA5; background: #E6F1FB; border-radius: 10px; padding: 2px 7px; margin-left: 5px; }
+.always-open { font-size: 11px; color: #0F6E56; background: #E1F5EE; border-radius: 10px; padding: 2px 7px; margin-left: 5px; }
+.kids-badge { font-size: 11px; color: #8B3A8B; background: #F6E6F6; border-radius: 10px; padding: 2px 7px; margin-left: 5px; }
+.premium-badge { font-size: 11px; color: #854F0B; background: #FAEEDA; border-radius: 10px; padding: 2px 7px; margin-left: 5px; font-weight: 500; }
+.shop-card.premium { border-color: #EF9F27; border-width: 1.5px; }
+.sponsored-block { background: var(--white); border: 1.5px dashed #EF9F27; border-radius: var(--radius); padding: 1rem 1.1rem; margin-bottom: 1.25rem; }
+.sponsored-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.sponsored-logo { width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--green-bg); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+.sponsored-label { font-size: 10px; color: var(--amber); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 500; }
+.sponsored-title { font-size: 14px; font-weight: 500; }
+.sponsored-sub { font-size: 13px; color: var(--text-mid); line-height: 1.5; }
+.sponsored-cta { display: inline-block; margin-top: 6px; font-size: 12px; color: var(--green-mid); font-weight: 500; cursor: pointer; text-decoration: underline; }
+.type-filter-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1rem; }
+.type-chip { padding: 5px 12px; font-size: 12px; font-family: 'DM Sans',sans-serif; border-radius: 20px; border: 1px solid var(--border-mid); background: var(--white); color: var(--text-mid); cursor: pointer; transition: all 0.15s; }
+.type-chip:hover { border-color: #185FA5; color: #0C447C; }
+.type-chip.on { background: #E6F1FB; border-color: #185FA5; color: #0C447C; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<!-- SEO: semantische introtekst voor zoekmachines (visueel verborgen, wel leesbaar voor crawlers & screenreaders) -->
+<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">
+  <h1>Boerenroute.nl — boerderijwinkels en automaten vinden in Nederland</h1>
+  <p>Boerenroute.nl helpt je verse, lokale producten te vinden rechtstreeks van de boer. Ontdek boerderijwinkels, eierautomaten, melktaps, kaasboerderijen, zelfplukbedrijven en boerenmarkten bij jou in de buurt. Plan vervolgens een fietstocht langs jouw favoriete verkooppunten en haal onderweg aardappelen, eieren, melk, kaas, groente, fruit en honing. Gratis te gebruiken voor heel Nederland.</p>
+  <h2>Wat kun je met Boerenroute.nl?</h2>
+  <ul>
+    <li>Boerderijwinkels en automaten zoeken op locatie, stad of postcode</li>
+    <li>Filteren op product: eieren, melk, zuivel, groente, fruit, vlees, honing en graan</li>
+    <li>Een fietsroute plannen langs meerdere boerderijen</li>
+    <li>De route exporteren naar Garmin, Strava, Komoot of Google Maps</li>
+    <li>Reviews lezen en achterlaten</li>
+    <li>Zien welke producten nu in het seizoen zijn</li>
+  </ul>
+</div>
+
+<noscript>
+  <div style="padding:2rem;text-align:center;font-family:sans-serif">
+    <h1>Boerenroute.nl</h1>
+    <p>Voor deze app is JavaScript nodig. Schakel JavaScript in om boerderijwinkels te zoeken en een fietsroute te plannen.</p>
+  </div>
+</noscript>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">🌾</div>
+      <div>
+        <div class="logo-text">Boeren<span>route.nl</span></div>
+      </div>
+    </div>
+    <nav class="nav-tabs">
+      <button class="nav-tab active" onclick="showPage('winkels',this)">🛒 Winkels</button>
+      <button class="nav-tab" onclick="showPage('kaart',this)">🗺️ Kaart</button>
+      <button class="nav-tab" onclick="showPage('aanmelden',this)">➕ Winkel aanmelden</button>
+    </nav>
+    <div class="route-pill" id="header-route" style="display:none" onclick="showPage('winkels',document.querySelector('.nav-tab'));scrollRouteIntoView()">
+      🚲 Route <span class="rbadge" id="header-count">0</span>
+    </div>
+  </div>
+</header>
+
+<!-- WINKELS PAGE -->
+<div class="page active" id="page-winkels">
+  <div class="winkels-layout">
+    <div>
+      <h1 class="panel-title">Boerderijwinkels bij jou in de buurt</h1>
+      <p class="panel-sub">Klik op een winkel voor meer info en reviews. Voeg stops toe aan je fietstocht — ook speeltuinen en kindvriendelijke plekken onderweg.</p>
+      <div style="background:var(--white);border:1px solid var(--border-mid);border-radius:var(--radius-sm);padding:10px 12px;margin-bottom:1rem">
+        <div style="font-size:11px;font-weight:500;color:var(--text-light);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:8px">📍 Zoeklocatie</div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap">
+          <div style="position:relative;flex:1;min-width:180px">
+            <input id="loc-input" type="text" placeholder="Typ een stad, adres of postcode…"
+              style="width:100%;padding:8px 10px;font-size:13px;font-family:DM Sans,sans-serif;border:1px solid var(--border-mid);border-radius:var(--radius-sm);background:var(--white);color:var(--text);outline:none"
+              onkeydown="if(event.key==='Enter')geocodeLocation()"
+              onfocus="this.style.borderColor='var(--green-mid)'"
+              onblur="this.style.borderColor='var(--border-mid)'">
+          </div>
+          <button onclick="geocodeLocation()" style="padding:8px 14px;background:var(--green-mid);color:white;border:none;border-radius:var(--radius-sm);font-size:13px;font-family:DM Sans,sans-serif;cursor:pointer;white-space:nowrap">🔍 Zoek</button>
+          <button onclick="getLocation()" id="gps-btn" style="padding:8px 14px;background:var(--white);color:var(--green-dark);border:1px solid var(--green-mid);border-radius:var(--radius-sm);font-size:13px;font-family:DM Sans,sans-serif;cursor:pointer;white-space:nowrap">📍 Mijn locatie</button>
+        </div>
+        <div id="loc-status" style="font-size:12px;color:var(--text-light);margin-top:6px;display:none"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap">
+          <span style="font-size:12px;color:var(--text-light)">Zoekradius:</span>
+          <div style="display:flex;gap:4px" id="radius-btns">
+            <button class="rbtn on" onclick="setRadius(25000,this)">25 km</button>
+            <button class="rbtn" onclick="setRadius(50000,this)">50 km</button>
+            <button class="rbtn" onclick="setRadius(100000,this)">100 km</button>
+            <button class="rbtn" onclick="setRadius(200000,this)">200 km</button>
+          </div>
+        </div>
+      </div>
+      <style>
+        .rbtn{padding:4px 10px;font-size:12px;font-family:DM Sans,sans-serif;border:1px solid var(--border-mid);border-radius:20px;background:var(--white);color:var(--text-mid);cursor:pointer;transition:all .15s}
+        .rbtn:hover{border-color:var(--green-mid);color:var(--green-dark)}
+        .rbtn.on{background:var(--green-bg);border-color:var(--green-mid);color:var(--green-dark);font-weight:500}
+      </style>
+      <div id="osm-banner" style="background:#EAF3DE;border:1px solid #3B6D11;border-radius:8px;padding:9px 14px;font-size:13px;color:#27500A;display:flex;align-items:center;gap:8px;margin-bottom:1rem">
+        <span id="osm-banner-icon">⏳</span>
+        <span id="osm-banner-text">Winkels laden in jouw omgeving…</span>
+        <span id="osm-spinner" style="margin-left:auto;font-size:16px;animation:spin 1s linear infinite">🔄</span>
+      </div>
+      <style>@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}</style>
+      <div class="search-wrap">
+        <span class="si">🔍</span>
+        <input class="search-input" type="text" id="search" placeholder="Zoek op naam of product…" oninput="renderShops()">
+      </div>
+      <div class="flabel">Type verkooppunt</div>
+      <div class="type-filter-row" id="type-filter-row">
+        <div class="type-chip on" onclick="setTypeFilter('all',this)">🏪 Alle types</div>
+        <div class="type-chip" onclick="setTypeFilter('winkel',this)">🚜 Boerderijwinkel</div>
+        <div class="type-chip" onclick="setTypeFilter('automaat',this)">🤖 Automaat (24/7)</div>
+        <div class="type-chip" onclick="setTypeFilter('zelfpluk',this)">🌿 Zelfpluk</div>
+        <div class="type-chip" onclick="setTypeFilter('markt',this)">🛒 Boerenmarkt</div>
+        <div class="type-chip" onclick="setTypeFilter('onderweg',this)">🎠 Onderweg (kids)</div>
+      </div>
+      <div class="flabel">Filter op product</div>
+      <div class="filter-row" id="filter-row"></div>
+
+      <!-- Extra toggles -->
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1rem;align-items:center">
+        <button class="toggle-btn" id="open-toggle" onclick="toggleNowOpen(this)">🕐 Nu open</button>
+        <button class="toggle-btn" id="fav-toggle" onclick="toggleFavOnly(this)">❤️ Favorieten</button>
+        <button class="toggle-btn" id="list-btn" onclick="openShoppingList()">📝 Boodschappenlijst</button>
+        <button class="toggle-btn" id="season-btn" onclick="openSeasonModal()">🌤️ Seizoenskalender</button>
+      </div>
+      <style>
+        .toggle-btn{padding:6px 13px;font-size:13px;font-family:DM Sans,sans-serif;border:1px solid var(--border-mid);border-radius:20px;background:var(--white);color:var(--text-mid);cursor:pointer;transition:all .15s}
+        .toggle-btn:hover{border-color:var(--green-mid);color:var(--green-dark)}
+        .toggle-btn.on{background:var(--green-bg);border-color:var(--green-mid);color:var(--green-dark);font-weight:500}
+      </style>
+      <div class="count-line">
+        <span id="count-line">10 winkels gevonden</span>
+        <select class="sort-select" id="sort-sel" onchange="renderShops()">
+          <option value="dist">Sorteer: dichtstbij</option>
+          <option value="rating">Sorteer: beste beoordeling</option>
+          <option value="name">Sorteer: naam A–Z</option>
+        </select>
+      </div>
+      <!-- SPONSORED BLOCK — voorbeeld van premium advertentieplaats -->
+      <div class="sponsored-block" id="sponsored-block">
+        <div class="sponsored-header">
+          <div class="sponsored-logo">🚲</div>
+          <div>
+            <div class="sponsored-label">⭐ Gesponsord — adverteer hier voor €9/mnd</div>
+            <div class="sponsored-title">Fietsherstel Uden — Altijd rijklaar voor je boerderijtocht</div>
+          </div>
+        </div>
+        <div class="sponsored-sub">Lekke band onderweg? Wij staan voor je klaar. Gratis bandencheck voor Boerenroute.nl-gebruikers t/m juni.</div>
+        <span class="sponsored-cta" onclick="alert('Advertentiepagina — koppel hier aan je boekingssysteem')">→ Meer info & afspraak maken</span>
+      </div>
+      <div class="shop-grid" id="shop-grid"></div>
+
+      <!-- CTA BLOK: boeren aanmelden + bezoekers tippen -->
+      <div style="margin-top:1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:10px" id="cta-blokken">
+        <!-- Tip voor bezoekers -->
+        <div style="background:var(--green-bg);border:1px solid var(--green-mid);border-radius:var(--radius);padding:1.1rem;cursor:pointer" onclick="openTipModal()">
+          <div style="font-size:22px;margin-bottom:6px">📍</div>
+          <div style="font-weight:500;font-size:14px;color:var(--green-dark);margin-bottom:4px">Mis je een verkooppunt?</div>
+          <div style="font-size:13px;color:var(--text-mid);line-height:1.5;margin-bottom:10px">Ken je een automaat of winkel die hier nog niet opstaat? Tip ons — het kost 30 seconden.</div>
+          <span style="display:inline-block;padding:6px 14px;background:var(--green-mid);color:white;border-radius:6px;font-size:12px;font-weight:500">➕ Tip insturen</span>
+        </div>
+        <!-- Aanmelding voor boeren -->
+        <div style="background:var(--amber-bg);border:1px solid var(--amber);border-radius:var(--radius);padding:1.1rem;cursor:pointer" onclick="showPage('aanmelden',document.querySelectorAll('.nav-tab')[2])">
+          <div style="font-size:22px;margin-bottom:6px">🚜</div>
+          <div style="font-weight:500;font-size:14px;color:var(--earth);margin-bottom:4px">Ben jij een boer of producent?</div>
+          <div style="font-size:13px;color:var(--text-mid);line-height:1.5;margin-bottom:10px">Zet jouw winkel of automaat op de kaart. Gratis zichtbaar voor duizenden fietsers en boodschappers.</div>
+          <span style="display:inline-block;padding:6px 14px;background:var(--amber);color:white;border-radius:6px;font-size:12px;font-weight:500">🌾 Gratis aanmelden</span>
+        </div>
+      </div>
+      <style>@media(max-width:520px){#cta-blokken{grid-template-columns:1fr}}</style>
+    </div>
+    <div id="route-sidebar">
+      <div class="route-panel" id="route-panel">
+        <div class="rp-header">
+          <span style="font-size:18px">🗺️</span>
+          <div class="rp-title">Mijn fietstocht</div>
+        </div>
+        <div id="rp-body">
+          <div class="rp-empty">
+            <div class="rp-empty-icon">🚲</div>
+            <div class="rp-empty-text">Voeg winkels toe<br>om je route te plannen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- KAART PAGE -->
+<div class="page" id="page-kaart">
+  <h1 class="panel-title" style="margin-bottom:4px">Kaartoverzicht</h1>
+  <p class="panel-sub">Alle boerderijwinkels in de omgeving van Uden.</p>
+  <div class="map-controls">
+    <button class="map-btn on" onclick="mapFilter('all',this)">Alle winkels</button>
+    <button class="map-btn" onclick="mapFilter('route',this)">Alleen mijn route</button>
+    <button class="map-btn" onclick="centerMap()">📍 Centreer op mij</button>
+  </div>
+  <div id="map"></div>
+</div>
+
+<!-- AANMELDEN PAGE -->
+<div class="page" id="page-aanmelden">
+  <div class="aanmeld-wrap">
+    <h1 class="panel-title">Meld jouw winkel aan</h1>
+    <p class="panel-sub">Ben je boer of producent? Zet jouw winkel op de kaart zodat klanten je kunnen vinden.</p>
+
+    <!-- Voordelen banner -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1.5rem">
+      <div style="background:var(--green-bg);border-radius:var(--radius-sm);padding:12px;text-align:center">
+        <div style="font-size:20px;margin-bottom:4px">🆓</div>
+        <div style="font-size:12px;font-weight:500;color:var(--green-dark)">Gratis</div>
+        <div style="font-size:11px;color:var(--text-mid)">Basisvermelding altijd kosteloos</div>
+      </div>
+      <div style="background:var(--green-bg);border-radius:var(--radius-sm);padding:12px;text-align:center">
+        <div style="font-size:20px;margin-bottom:4px">🚲</div>
+        <div style="font-size:12px;font-weight:500;color:var(--green-dark)">Fietsers bereiken</div>
+        <div style="font-size:11px;color:var(--text-mid)">Op de route van lokale fietsers</div>
+      </div>
+      <div style="background:var(--green-bg);border-radius:var(--radius-sm);padding:12px;text-align:center">
+        <div style="font-size:20px;margin-bottom:4px">⭐</div>
+        <div style="font-size:12px;font-weight:500;color:var(--green-dark)">Reviews</div>
+        <div style="font-size:11px;color:var(--text-mid)">Klanten laten reviews achter</div>
+      </div>
+    </div>
+    <div class="form-card">
+      <div class="form-title">Winkelgegevens</div>
+      <div class="form-sub">Vul de gegevens in en we plaatsen je winkel zo snel mogelijk op de kaart.</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Naam van de boerderij *</label>
+          <input class="form-input" type="text" id="f-name" placeholder="Bijv. Hoeve de Zon">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Contactpersoon *</label>
+          <input class="form-input" type="text" id="f-contact" placeholder="Voornaam achternaam">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">E-mailadres *</label>
+          <input class="form-input" type="email" id="f-email" placeholder="info@boerderij.nl">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Telefoonnummer</label>
+          <input class="form-input" type="tel" id="f-tel" placeholder="06-12345678">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Adres *</label>
+        <input class="form-input" type="text" id="f-adres" placeholder="Straatnaam 1, 5400 AA Uden">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Openingstijden *</label>
+          <input class="form-input" type="text" id="f-hours" placeholder="Bijv. di–za 9–17u">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Website (optioneel)</label>
+          <input class="form-input" type="url" id="f-web" placeholder="https://www.boerderij.nl">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Beschrijving van de winkel</label>
+        <textarea class="form-input" id="f-desc" placeholder="Vertel iets over jullie producten, werkwijze of bijzonderheden…"></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label" style="margin-bottom:8px">Welke producten verkopen jullie? *</label>
+        <div class="product-check-grid" id="product-checks"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Overige producten (kommagescheiden)</label>
+        <input class="form-input" type="text" id="f-other" placeholder="Bijv. hazelnoten, kruidenthee">
+      </div>
+      <!-- Honeypot tegen spam: verborgen veld dat mensen niet zien, bots wel invullen -->
+      <input type="text" id="f-website-url" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <button class="form-submit" onclick="submitAanmelding()">✔ Winkel aanmelden</button>
+      <div class="form-success" id="form-success">
+        🎉 Bedankt! We hebben je aanmelding ontvangen en nemen binnen 2 werkdagen contact met je op.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DETAIL MODAL -->
+<div class="modal-bg" id="modal-bg" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- TIP MODAL -->
+<div class="modal-bg" id="tip-modal-bg" onclick="closeTipModal(event)">
+  <div class="modal" id="tip-modal" style="max-width:480px">
+    <button class="modal-close" onclick="closeTipModalDirect()">✕</button>
+    <div style="font-size:28px;margin-bottom:8px">📍</div>
+    <div class="modal-name" style="font-size:18px">Tip een verkooppunt</div>
+    <p style="font-size:13px;color:var(--text-mid);margin:8px 0 1.25rem;line-height:1.6">Ken je een boerderijwinkel, automaat of stalletje dat hier nog niet op staat? Vul hieronder de basisgegevens in — we voegen het zo snel mogelijk toe.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+      <div>
+        <div class="form-label" style="margin-bottom:4px">Naam *</div>
+        <input class="form-input" id="tip-name" type="text" placeholder="Bijv. Hoeve de Zon" style="font-size:13px;padding:7px 9px">
+      </div>
+      <div>
+        <div class="form-label" style="margin-bottom:4px">Plaats *</div>
+        <input class="form-input" id="tip-city" type="text" placeholder="Bijv. Uden" style="font-size:13px;padding:7px 9px">
+      </div>
+    </div>
+
+    <div style="margin-bottom:10px">
+      <div class="form-label" style="margin-bottom:4px">Adres (optioneel)</div>
+      <input class="form-input" id="tip-address" type="text" placeholder="Straatnaam en huisnummer" style="font-size:13px;padding:7px 9px">
+    </div>
+
+    <div style="margin-bottom:10px">
+      <div class="form-label" style="margin-bottom:6px">Wat verkopen ze?</div>
+      <div style="display:flex;flex-wrap:wrap;gap:5px" id="tip-product-chips">
+        <span class="tip-chip" onclick="toggleTipChip(this)" data-val="eieren">🥚 eieren</span>
+        <span class="tip-chip" onclick="toggleTipChip(this)" data-val="melk/zuivel">🥛 melk/zuivel</span>
+        <span class="tip-chip" onclick="toggleTipChip(this)" data-val="groenten">🥬 groenten</span>
+        <span class="tip-chip" onclick="toggleTipChip(this)" data-val="fruit">🍎 fruit</span>
+        <span class="tip-chip" onclick="toggleTipChip(this)" data-val="vlees">🥩 vlees</span>
+        <span class="tip-chip" onclick="toggleTipChip(this)" data-val="honing">🍯 honing</span>
+        <span class="tip-chip" onclick="toggleTipChip(this)" data-val="kaas">🧀 kaas</span>
+        <span class="tip-chip" onclick="toggleTipChip(this)" data-val="brood/graan">🌾 brood/graan</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom:10px">
+      <div class="form-label" style="margin-bottom:4px">Type verkooppunt</div>
+      <select class="form-input" id="tip-type" style="font-size:13px;padding:7px 9px">
+        <option value="winkel">🏪 Boerderijwinkel</option>
+        <option value="automaat">🤖 Automaat (24/7)</option>
+        <option value="stalletje">🛖 Stalletje langs de weg</option>
+        <option value="zelfpluk">🌿 Zelfpluk</option>
+        <option value="markt">🛒 Boerenmarkt</option>
+        <option value="onderweg">🎠 Speeltuin / kindvriendelijke stop</option>
+        <option value="anders">❓ Anders</option>
+      </select>
+    </div>
+
+    <div style="margin-bottom:1.25rem">
+      <div class="form-label" style="margin-bottom:4px">Extra info (optioneel)</div>
+      <textarea class="form-input" id="tip-extra" placeholder="Openingstijden, website, bijzonderheden…" style="font-size:13px;padding:7px 9px;min-height:60px;resize:vertical"></textarea>
+    </div>
+
+    <div style="margin-bottom:10px">
+      <div class="form-label" style="margin-bottom:4px">Jouw naam of e-mail (optioneel)</div>
+      <input class="form-input" id="tip-sender" type="text" placeholder="Zodat we je kunnen bedanken" style="font-size:13px;padding:7px 9px">
+    </div>
+
+    <!-- Honeypot tegen spam -->
+    <input type="text" id="tip-website-url" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+
+    <button onclick="submitTip()" id="tip-submit-btn" style="width:100%;padding:11px;background:var(--green-mid);color:white;border:none;border-radius:var(--radius-sm);font-size:14px;font-weight:500;font-family:DM Sans,sans-serif;cursor:pointer">
+      📍 Tip insturen
+    </button>
+    <div id="tip-msg" style="display:none;margin-top:10px;padding:10px;border-radius:var(--radius-sm);font-size:13px;text-align:center"></div>
+  </div>
+</div>
+
+<!-- EXPORT MODAL -->
+<div class="modal-bg" id="export-modal-bg" onclick="closeExportModal(event)">
+  <div class="modal" style="max-width:460px">
+    <button class="modal-close" onclick="document.getElementById('export-modal-bg').classList.remove('open')">✕</button>
+    <div style="font-size:28px;margin-bottom:8px">📤</div>
+    <div class="modal-name" style="font-size:18px;margin-bottom:6px">Exporteer jouw route</div>
+    <p style="font-size:13px;color:var(--text-mid);line-height:1.6;margin-bottom:1.25rem">Download de GPX-bestand van jouw boerenroute en importeer het in jouw favoriete fietsapp of GPS-computer.</p>
+
+    <!-- GPX download -->
+    <button onclick="downloadGPX()" style="width:100%;padding:13px;background:var(--green-mid);color:white;border:none;border-radius:var(--radius-sm);font-size:14px;font-weight:500;font-family:DM Sans,sans-serif;cursor:pointer;margin-bottom:1.25rem;display:flex;align-items:center;justify-content:center;gap:8px">
+      <span style="font-size:18px">⬇️</span> GPX-bestand downloaden
+    </button>
+
+    <div style="font-size:12px;font-weight:500;color:var(--text-light);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px">Importeren in jouw app</div>
+
+    <!-- Platform cards -->
+    <div style="display:flex;flex-direction:column;gap:8px">
+
+      <div style="background:var(--sand);border-radius:var(--radius-sm);padding:11px 13px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:22px;flex-shrink:0">🟢</span>
+        <div>
+          <div style="font-size:13px;font-weight:500;margin-bottom:2px">Garmin</div>
+          <div style="font-size:12px;color:var(--text-mid);line-height:1.5">Download GPX → open <strong>Garmin Connect</strong> (connect.garmin.com) → Trainingen &amp; planning → Cursussen → GPX importeren. Synct automatisch naar je Garmin-fietscomputer.</div>
+        </div>
+      </div>
+
+      <div style="background:var(--sand);border-radius:var(--radius-sm);padding:11px 13px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:22px;flex-shrink:0">🟠</span>
+        <div>
+          <div style="font-size:13px;font-weight:500;margin-bottom:2px">Strava</div>
+          <div style="font-size:12px;color:var(--text-mid);line-height:1.5">Download GPX → open <strong>Strava</strong> → jouw profiel → Routes → Route maken → GPX importeren. Of ga naar strava.com/routes/new en upload het bestand.</div>
+        </div>
+      </div>
+
+      <div style="background:var(--sand);border-radius:var(--radius-sm);padding:11px 13px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:22px;flex-shrink:0">🟣</span>
+        <div>
+          <div style="font-size:13px;font-weight:500;margin-bottom:2px">Komoot</div>
+          <div style="font-size:12px;color:var(--text-mid);line-height:1.5">Download GPX → open <strong>Komoot</strong> → Profiel → Routes → GPX importeren. Komoot plant de route automatisch langs fietspaden.</div>
+        </div>
+      </div>
+
+      <div style="background:var(--sand);border-radius:var(--radius-sm);padding:11px 13px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:22px;flex-shrink:0">⚫</span>
+        <div>
+          <div style="font-size:13px;font-weight:500;margin-bottom:2px">Wahoo ELEMNT</div>
+          <div style="font-size:12px;color:var(--text-mid);line-height:1.5">Download GPX → open de <strong>Wahoo Fitness-app</strong> → Routes → + → Importeer GPX. Synct via Bluetooth naar je ELEMNT Bolt/Roam.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:1rem;padding:10px;background:var(--green-bg);border-radius:var(--radius-sm);font-size:12px;color:var(--green-dark);line-height:1.5">
+      💡 <strong>Tip:</strong> het GPX-bestand bevat alle tussenstops als waypoints. Elke app plant automatisch de mooiste fietsroute er tussendoor.
+    </div>
+  </div>
+</div>
+<div id="fab" onclick="openTipModal()" title="Tip een verkooppunt"
+  style="position:fixed;bottom:24px;right:24px;z-index:1500;width:56px;height:56px;background:var(--green-mid);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.2);transition:transform 0.15s" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform='scale(1)'">
+  ＋
+</div>
+
+<style>
+.tip-chip { padding:5px 11px;font-size:12px;border-radius:20px;border:1px solid var(--border-mid);background:var(--white);color:var(--text-mid);cursor:pointer;transition:all .15s;user-select:none; }
+.tip-chip:hover { border-color:var(--green-mid);color:var(--green-dark); }
+.tip-chip.on { background:var(--green-bg);border-color:var(--green-mid);color:var(--green-dark);font-weight:500; }
+</style>
+
+<!-- SHOPPING LIST MODAL -->
+<div class="modal-bg" id="list-modal-bg" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal" style="max-width:460px">
+    <button class="modal-close" onclick="document.getElementById('list-modal-bg').classList.remove('open')">✕</button>
+    <div style="font-size:28px;margin-bottom:8px">📝</div>
+    <div class="modal-name" style="font-size:18px;margin-bottom:6px">Boodschappenlijstje</div>
+    <p style="font-size:13px;color:var(--text-mid);line-height:1.6;margin-bottom:1rem">Vink aan wat je nodig hebt. We stellen automatisch een route samen langs winkels die deze producten verkopen.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.25rem" id="list-chips"></div>
+    <button onclick="buildRouteFromList()" style="width:100%;padding:12px;background:var(--green-mid);color:white;border:none;border-radius:var(--radius-sm);font-size:14px;font-weight:500;font-family:DM Sans,sans-serif;cursor:pointer">🚲 Stel route samen</button>
+    <div id="list-result" style="font-size:13px;color:var(--text-mid);margin-top:12px;line-height:1.6"></div>
+  </div>
+</div>
+
+<!-- SEASON MODAL -->
+<div class="modal-bg" id="season-modal-bg" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal" style="max-width:480px">
+    <button class="modal-close" onclick="document.getElementById('season-modal-bg').classList.remove('open')">✕</button>
+    <div style="font-size:28px;margin-bottom:8px">🌤️</div>
+    <div class="modal-name" style="font-size:18px;margin-bottom:6px">Seizoenskalender</div>
+    <p style="font-size:13px;color:var(--text-mid);line-height:1.6;margin-bottom:1rem" id="season-intro"></p>
+    <div id="season-content"></div>
+  </div>
+</div>
+
+<div id="fab" onclick="openTipModal()" title="Tip een verkooppunt"
+  style="position:fixed;bottom:24px;right:24px;z-index:1500;width:56px;height:56px;background:var(--green-mid);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.2);transition:transform 0.15s" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform='scale(1)'">
+  ＋
+</div>
+
+<script>
+// ── DATA ──────────────────────────────────────────────────────────────
+const UDEN_LAT = 51.6606, UDEN_LNG = 5.6188;
+
+const verifiedShops = [
+  {
+    id:1, emoji:"🌱", name:"Boer in Natuur", type:"winkel", premium:false, seasonal:false,
+    lat:51.6957874, lng:5.6002557,
+    address:"Erenakkerstraat 4, Uden",
+    hours:"Bel/mail voor openingstijden",
+    products:["groente","streekproducten","biologisch"],
+    tags:["groente"], rating:5.0,
+    desc:"Duurzame boerderij in Uden waar natuur en voedselproductie hand in hand gaan. Biologische teelt met respect voor mens en dier."
+  },
+  {
+    id:2, emoji:"🥛", name:"Boerderijwinkel De Volkelse Hooiberg", type:"winkel", premium:false, seasonal:false,
+    lat:51.6512472, lng:5.6642407,
+    address:"Venstraat 3a, Volkel",
+    hours:"Bel voor openingstijden: 06-25544802",
+    products:["zuivel","kaas","streekproducten","lunch"],
+    tags:["zuivel"],
+    desc:"Gezellige boerderijwinkel in Volkel met eigen producten en heerlijke lunches. Warme ontvangst en vers van het erf."
+  },
+  {
+    id:3, emoji:"🛒", name:"Bram's Hofke", type:"winkel", premium:false, seasonal:false,
+    lat:51.6805568, lng:5.7023466,
+    address:"Beemdsteeg 1, Zeeland",
+    hours:"vr 14–18u · za 12–18u",
+    products:["groente","fruit","streekproducten","eieren"],
+    tags:["groente","eieren"],
+    desc:"Kleinschalig hofje in Zeeland met verse groente en fruit van eigen land. Vriendelijk personeel en goede kwaliteit."
+  },
+  {
+    id:4, emoji:"🥚", name:"Cuppen-Ploegmakers", type:"winkel", premium:false, seasonal:false,
+    lat:51.7027201, lng:5.6819502,
+    address:"Kleine Graspeel 9, Zeeland",
+    hours:"ma–zo 7–19u",
+    products:["eieren","pluimvee"],
+    tags:["eieren"],
+    desc:"Al jaren dé plek voor verse eieren in Zeeland. Dagelijks open, vriendelijk gezinsbedrijf. Goede prijs-kwaliteitverhouding."
+  },
+  {
+    id:5, emoji:"🧀", name:"Siebe's Kaas", type:"winkel", premium:true, seasonal:false,
+    lat:51.6269512, lng:5.6110823,
+    address:"Kraanmeer 15, Erp",
+    hours:"do 9.30–16u · vr 9.30–17.30u · za 9.30–16u",
+    products:["kaas","verse melk","geitenkaas","streekproducten","cadeaus"],
+    tags:["zuivel"],
+    desc:"Siebe maakt zijn kaas met passie, pal naast de koeien die de melk leveren. Proeven mag altijd — er is voor elk wat wils. Uitstekend beoordeeld (4.9 ⭐)."
+  },
+  {
+    id:6, emoji:"🍓", name:"Lusthoffruit van den Biggelaar", type:"automaat", premium:false, seasonal:true,
+    lat:51.6279689, lng:5.5806050,
+    address:"Heiakkerstraat 2-3, Veghel",
+    hours:"24/7 — altijd open",
+    products:["aardbeien","seizoensfruit"],
+    tags:["fruit"],
+    desc:"Versautomaat langs de weg met dagverse aardbeien voor maar €2 per bakje (400g). Meest besproken trekpleister voor fietsers in de regio. Betaling contant of pin."
+  },
+  {
+    id:7, emoji:"🐗", name:"Het Maashorst Varken", type:"winkel", premium:false, seasonal:false,
+    lat:51.7086081, lng:5.5830558,
+    address:"Loo 47, Nistelrode",
+    hours:"Bel voor openingstijden: 06-13594425",
+    products:["varkensvlees","worst","streekproducten"],
+    tags:["vlees"],
+    desc:"Varkens die vrij rondlopen in de Maashorst. Het vlees is te proeven — vol van smaak, eerlijk geproduceerd en lokaal."
+  },
+  {
+    id:8, emoji:"🐐", name:"Op 't Maxend", type:"winkel", premium:false, seasonal:false,
+    lat:51.6920516, lng:5.5573767,
+    address:"Maxend 69, Nistelrode",
+    hours:"do–vr 10–17u · za 10–14u",
+    products:["geitenkaas","verse eieren","streekproducten","minicamping"],
+    tags:["zuivel","eieren"],
+    desc:"Charmant streekwinkeltje met geitenkaas, verse eieren en lokale producten. Ook minicamping voor fietsers en wandelaars. Topbeoordeeld (5.0 ⭐)."
+  },
+  {
+    id:9, emoji:"🍄", name:"Muchamp — Versautomaat", type:"automaat", premium:false, seasonal:false,
+    lat:51.5888887, lng:5.6747453,
+    address:"Mutshoek 2a, Boekel",
+    hours:"24/7 — altijd open",
+    products:["champignons","asperges","eieren","appelsap","vlierbessensap"],
+    tags:["groente","eieren"],
+    desc:"Populaire versautomaat bij Boekel met verse champignons, eieren en seizoensproducten. Zelfs appelsap en vlierbessensap verkrijgbaar. Geliefd bij fietsers."
+  },
+  {
+    id:10, emoji:"🪙", name:"Speelboerderij Het Gouden Woud", type:"onderweg", premium:false, seasonal:false,
+    lat:51.557791, lng:5.377612,
+    address:"Hamsestraat 18, Liempde",
+    hours:"wo, vr 10–18u · za, zo 10–19u",
+    products:["speeltuin","goud zoeken","dieren","terras","lunch"],
+    tags:["kindvriendelijk"],
+    desc:"Unieke speelboerderij midden in natuurgebied het Groene Woud. Kinderen kunnen goud zoeken, ravotten in de binnen- en buitenspeeltuin, dieren aaien en over het blotevoetenpad lopen. Ouders genieten op het terras. Perfecte stop tijdens een gezinsfietstocht. Neem reservekleding mee!"
+  },
+];
+
+// Live shops array — starts with verified, OSM data gets added
+let shops = [...verifiedShops];
+let osmLoaded = false;
+let osmLoading = false;
+let nextOsmId = 100;
+
+const allTags = ["groente","eieren","zuivel","fruit","honing","vlees","graan"];
+const productOptions = ["aardappelen","groenten","eieren","melk","kaas","yoghurt","fruit","honing","vlees","gevogelte","brood/graan","kruiden","jam","sap","andere zuivel"];
+
+// ── STATE ─────────────────────────────────────────────────────────────
+let filters = [];
+let typeFilter = 'all';
+let route = [];
+let userLat = null, userLng = null;
+let reviews = {};  // { shopId: [{name,stars,text,date}] }
+let mapInstance = null, mapMarkers = {}, mapFilter_mode = 'all';
+let currentStars = 0;
+let nowOpenOnly = false;
+let favOnly = false;
+let favorites = new Set();      // ids van favoriete winkels
+let shoppingList = new Set();   // gewenste producten
+
+// Seizoenskalender NL — welke maanden (0=jan) is een product op z'n best
+const SEASON = {
+  'asperges':    [3,4,5],
+  'aardbeien':   [4,5,6,7],
+  'frambozen':   [5,6,7,8],
+  'bramen':      [6,7,8,9],
+  'kersen':      [5,6],
+  'pruimen':     [7,8,9],
+  'appels':      [8,9,10,11],
+  'peren':       [8,9,10,11],
+  'pompoen':     [8,9,10],
+  'maïs':        [7,8,9],
+  'courgette':   [5,6,7,8,9],
+  'spinazie':    [3,4,5,8,9],
+  'prei':        [9,10,11,0,1,2],
+  'pastinaak':   [9,10,11,0,1],
+  'rode bessen': [5,6,7],
+  'honing':      [5,6,7,8],
+};
+const MONTHS_NL = ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
+
+// seed some sample reviews
+reviews[5] = [
+  { name:"Google-bezoeker", stars:5, text:"Siebe is zo enthousiast! De kaas is heerlijk. Je mag altijd proeven en hij vertelt graag over zijn koeien en kazen.", date:"2024" },
+  { name:"Google-bezoeker", stars:5, text:"Geweldige lokale kaas en verse melk. Echt een aanrader als je in de buurt bent.", date:"2024" },
+];
+reviews[8] = [
+  { name:"Fietser", stars:5, text:"Wat een schattig minicamping en winkeltje! Verse geitenkaas en eieren gekocht voor de volgende ochtend. Toplocatie voor fietsers.", date:"2024" },
+  { name:"Google-bezoeker", stars:5, text:"Heerlijke balkenbrij en super rustige plek. Zeker terug!", date:"2024" },
+];
+reviews[6] = [
+  { name:"Fietser", stars:5, text:"Heerlijke verse aardbeien uit de automaat voor maar €2 per bakje. Altijd een stop waard op de fiets!", date:"2024" },
+  { name:"Google-bezoeker", stars:4, text:"Lekkere aardbeien, niet duur. Wel contant geld meenemen want pin werkt niet altijd.", date:"2024" },
+];
+reviews[9] = [
+  { name:"Fietser", stars:5, text:"Verse champignons, eieren, asperges én appelsap. Zelfs een bekertje vlierbessensap voor de fietsers. Fantastisch!", date:"2024" },
+  { name:"Google-bezoeker", stars:4, text:"Altijd verse champignons. Kleine prijsverhoging eieren maar nog steeds goed.", date:"2024" },
+];
+
+// ── HELPERS ───────────────────────────────────────────────────────────
+function distKm(lat, lng) {
+  const R = 6371;
+  const bLat = userLat || UDEN_LAT, bLng = userLng || UDEN_LNG;
+  const dLat = (lat - bLat) * Math.PI / 180;
+  const dLng = (lng - bLng) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(bLat*Math.PI/180)*Math.cos(lat*Math.PI/180)*Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+function avgRating(id) {
+  const r = reviews[id];
+  if(!r || r.length===0) return null;
+  return r.reduce((s,x)=>s+x.stars,0)/r.length;
+}
+
+function starStr(n, size) {
+  if(n===null) return '';
+  const full = Math.round(n);
+  return '★'.repeat(full) + '☆'.repeat(5-full);
+}
+
+function tagEmoji(t) {
+  return {groente:'🥬',eieren:'🥚',zuivel:'🥛',fruit:'🍎',honing:'🍯',vlees:'🍗',graan:'🌾'}[t]||'';
+}
+
+function setTypeFilter(type, btn) {
+  typeFilter = type;
+  document.querySelectorAll('.type-chip').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  renderShops();
+}
+
+// ── GPS ───────────────────────────────────────────────────────────────
+// ── LOCATIE ───────────────────────────────────────────────────────────
+function setLocStatus(msg, color) {
+  const el = document.getElementById('loc-status');
+  el.style.display = msg ? 'block' : 'none';
+  el.style.color = color || 'var(--text-light)';
+  el.textContent = msg;
+}
+
+function setRadius(meters, btn) {
+  currentRadius = meters;
+  document.querySelectorAll('.rbtn').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  // reload with new radius from current search center
+  const lat = userLat || UDEN_LAT, lng = userLng || UDEN_LNG;
+  osmLoaded = false;
+  loadNearby(lat, lng, currentRadius);
+}
+
+async function geocodeLocation() {
+  const q = document.getElementById('loc-input').value.trim();
+  if (!q) return;
+  setLocStatus('⏳ Locatie opzoeken…', 'var(--amber)');
+
+  try {
+    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&countrycodes=nl&format=json&limit=1`;
+    const resp = await fetch(url, { headers: { 'Accept-Language': 'nl', 'User-Agent': 'Boerenroute.nl/1.0' } });
+    const results = await resp.json();
+
+    if (!results || results.length === 0) {
+      setLocStatus('⚠️ Locatie niet gevonden — probeer een andere zoekterm.', 'var(--amber)');
+      return;
+    }
+
+    const r = results[0];
+    userLat = parseFloat(r.lat);
+    userLng = parseFloat(r.lon);
+    const label = r.display_name.split(',').slice(0, 2).join(', ');
+    setLocStatus(`✅ Zoeken vanaf: ${label}`, 'var(--green-mid)');
+
+    osmLoaded = false;
+    loadNearby(userLat, userLng, currentRadius);
+    if (mapInstance) { mapInstance.setView([userLat, userLng], 11); updateMapMarkers(); }
+    renderShops();
+  } catch (err) {
+    setLocStatus('⚠️ Kon locatie niet opzoeken — controleer je verbinding.', 'var(--red)');
+  }
+}
+
+function getLocation() {
+  if (!navigator.geolocation) return;
+  const btn = document.getElementById('gps-btn');
+  btn.textContent = '⏳ Bezig…';
+  btn.disabled = true;
+  navigator.geolocation.getCurrentPosition(pos => {
+    userLat = pos.coords.latitude;
+    userLng = pos.coords.longitude;
+    btn.textContent = '✅ Locatie gevonden';
+    btn.style.background = 'var(--green-bg)';
+    document.getElementById('loc-input').value = '';
+    setLocStatus(`✅ Jouw GPS-locatie gebruikt (${userLat.toFixed(4)}, ${userLng.toFixed(4)})`, 'var(--green-mid)');
+    osmLoaded = false;
+    loadNearby(userLat, userLng, currentRadius);
+    if (mapInstance) { mapInstance.setView([userLat, userLng], 11); updateMapMarkers(); }
+    renderShops();
+  }, () => {
+    btn.textContent = '📍 Mijn locatie';
+    btn.disabled = false;
+    setLocStatus('⚠️ Locatietoegang geweigerd — typ een locatie in het zoekveld.', 'var(--amber)');
+  });
+}
+
+// ── FILTERS & SHOPS ───────────────────────────────────────────────────
+function renderFilters() {
+  document.getElementById('filter-row').innerHTML = allTags.map(t =>
+    `<div class="chip${filters.includes(t)?' on':''}" onclick="toggleFilter('${t}')">${tagEmoji(t)} ${t}</div>`
+  ).join('');
+}
+
+function toggleFilter(t) {
+  filters = filters.includes(t) ? filters.filter(x=>x!==t) : [...filters,t];
+  renderFilters(); renderShops();
+}
+
+function renderShops() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  const sort = document.getElementById('sort-sel').value;
+  let list = shops.filter(s => {
+    const fOk = filters.length===0 || filters.some(f=>s.tags.includes(f));
+    const qOk = !q || s.name.toLowerCase().includes(q) || s.products.some(p=>p.includes(q));
+    const tOk = typeFilter==='all' || s.type===typeFilter;
+    const oOk = !nowOpenOnly || isOpenNow(s);
+    const vOk = !favOnly || favorites.has(s.id);
+    return fOk && qOk && tOk && oOk && vOk;
+  });
+  list = list.map(s => ({ ...s, km: distKm(s.lat,s.lng), avg: avgRating(s.id) }));
+  if(sort==='dist') list.sort((a,b)=> (b.premium-a.premium) || (a.km-b.km));
+  else if(sort==='rating') list.sort((a,b)=> (b.premium-a.premium) || ((b.avg||0)-(a.avg||0)));
+  else list.sort((a,b)=> (b.premium-a.premium) || a.name.localeCompare(b.name));
+
+  document.getElementById('count-line').textContent = list.length + ' verkooppunt' + (list.length!==1?'en':'') + ' gevonden';
+
+  document.getElementById('shop-grid').innerHTML = list.map(s => {
+    const added = route.some(r=>r.id===s.id);
+    const rCount = reviews[s.id]?.length || 0;
+    const isAutomaat = s.type==='automaat';
+    const isZelfpluk = s.type==='zelfpluk';
+    const isMarkt = s.type==='markt';
+    const isOnderweg = s.type==='onderweg';
+    const openNow = isOpenNow(s);
+    const isFav = favorites.has(s.id);
+    // seizoensproducten die nu vers zijn
+    const inSeason = s.products.filter(p => SEASON[p] && SEASON[p].includes(new Date().getMonth()));
+    const badges = [
+      s.premium ? `<span class="premium-badge">⭐ Aanbevolen</span>` : '',
+      isAutomaat ? `<span class="automaat-badge">🤖 Automaat</span>` : '',
+      isOnderweg ? `<span class="kids-badge">🎠 Voor kids</span>` : '',
+      openNow ? `<span class="always-open">🟢 Nu open</span>` : '',
+      isZelfpluk ? `<span class="season-badge">🌿 Zelfpluk</span>` : '',
+      isMarkt ? `<span class="season-badge">🛒 Markt</span>` : '',
+      inSeason.length ? `<span class="season-badge">🌤 ${inSeason[0]} in seizoen</span>` : '',
+    ].filter(Boolean).join('');
+    return `<div class="shop-card${added?' added':''}${s.premium?' premium':''}" onclick="openModal(${s.id})">
+      <div class="card-top">
+        <span class="shop-emoji">${s.emoji}</span>
+        <div style="display:flex;gap:6px;align-items:center">
+          <div class="fav-heart${isFav?' on':''}" onclick="event.stopPropagation();toggleFav(${s.id})" title="Favoriet">${isFav?'❤️':'🤍'}</div>
+          <div class="add-circle${added?' on':''}" onclick="event.stopPropagation();toggleRoute(${s.id})">${added?'✓':'+'}</div>
+        </div>
+      </div>
+      <div class="shop-name">${s.name}</div>
+      <div style="margin-bottom:5px">${badges}</div>
+      <div class="shop-hours">${isAutomaat?'🕐':'⏰'} ${s.hours}</div>
+      <div class="tag-row">${s.products.slice(0,3).map(p=>`<span class="ptag">${p}</span>`).join('')}${s.products.length>3?`<span class="ptag">+${s.products.length-3}</span>`:''}</div>
+      <div class="card-footer">
+        <span class="dist-pill">🚲 ${s.km.toFixed(1)} km</span>
+        ${s.avg ? `<span class="avg-stars"><span class="stars">${starStr(s.avg)}</span><span class="count">(${rCount})</span></span>` : `<span style="font-size:12px;color:var(--text-light)">${rCount ? rCount+' review'+( rCount>1?'s':'') : 'Nog geen reviews'}</span>`}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── NU OPEN / FAVORIETEN / SEIZOEN ────────────────────────────────────
+function isOpenNow(s) {
+  if (s.type === 'automaat') return true; // automaten altijd open
+  const h = s.hours || '';
+  if (/24\/7|altijd open|dagelijks/i.test(h)) return true;
+  const now = new Date();
+  const day = now.getDay(); // 0=zo
+  const dayMap = { 'ma':1,'di':2,'wo':3,'do':4,'vr':5,'za':6,'zo':0 };
+  // zoek dagreeks zoals "di–za" of "vr–zo"
+  const rangeMatch = h.toLowerCase().match(/(ma|di|wo|do|vr|za|zo)\s*[–-]\s*(ma|di|wo|do|vr|za|zo)/);
+  let dayOk = false;
+  if (rangeMatch) {
+    let from = dayMap[rangeMatch[1]], to = dayMap[rangeMatch[2]];
+    // normaliseer (zo=7 voor vergelijking)
+    const d = day===0?7:day, f = from===0?7:from, t = to===0?7:to;
+    dayOk = f<=t ? (d>=f && d<=t) : (d>=f || d<=t);
+  } else {
+    // losse dagen zoals "za" of "vr–zo" niet gevonden → check losse dagcode
+    const codes = h.toLowerCase().match(/(ma|di|wo|do|vr|za|zo)/g) || [];
+    dayOk = codes.some(c => dayMap[c] === day);
+  }
+  if (!dayOk) return false;
+  // tijden zoals "9–17u" of "9.30–17.30u"
+  const timeMatch = h.match(/(\d{1,2})(?:[.:](\d{2}))?\s*[–-]\s*(\d{1,2})(?:[.:](\d{2}))?/);
+  if (!timeMatch) return dayOk; // dag klopt, geen tijd bekend
+  const openMin = parseInt(timeMatch[1])*60 + (parseInt(timeMatch[2])||0);
+  const closeMin = parseInt(timeMatch[3])*60 + (parseInt(timeMatch[4])||0);
+  const nowMin = now.getHours()*60 + now.getMinutes();
+  return nowMin >= openMin && nowMin <= closeMin;
+}
+
+function toggleNowOpen(btn) {
+  nowOpenOnly = !nowOpenOnly;
+  btn.classList.toggle('on', nowOpenOnly);
+  renderShops();
+}
+function toggleFavOnly(btn) {
+  favOnly = !favOnly;
+  btn.classList.toggle('on', favOnly);
+  renderShops();
+}
+function toggleFav(id) {
+  if (favorites.has(id)) favorites.delete(id);
+  else favorites.add(id);
+  renderShops();
+}
+
+// ── ROUTE ─────────────────────────────────────────────────────────────
+function toggleRoute(id) {
+  const shop = shops.find(s=>s.id===id);
+  if(route.some(r=>r.id===id)) route = route.filter(r=>r.id!==id);
+  else route.push({...shop, km: distKm(shop.lat, shop.lng)});
+  renderShops(); renderRoute(); updateMapMarkers();
+}
+
+function renderRoute() {
+  const wrap = document.getElementById('rp-body');
+  const hr = document.getElementById('header-route');
+  const hc = document.getElementById('header-count');
+  if(route.length===0) {
+    hr.style.display='none';
+    wrap.innerHTML=`<div class="rp-empty"><div class="rp-empty-icon">🚲</div><div class="rp-empty-text">Voeg winkels toe<br>om je route te plannen</div></div>`;
+    return;
+  }
+  hr.style.display='flex'; hc.textContent=route.length;
+
+  // Geoptimaliseerde volgorde via nearest-neighbour vanaf startpunt
+  const ordered = optimizeRoute(route);
+  const startLat = userLat || UDEN_LAT, startLng = userLng || UDEN_LNG;
+
+  // Bereken afstand per etappe
+  let prevLat = startLat, prevLng = startLng, totalKm = 0;
+  const legs = ordered.map(s => {
+    const leg = haversine(prevLat, prevLng, s.lat, s.lng);
+    totalKm += leg;
+    prevLat = s.lat; prevLng = s.lng;
+    return leg;
+  });
+  const mins = Math.round(totalKm/0.25);
+
+  let html = ordered.map((s,i) => `
+    <div class="route-stop">
+      <div class="stop-dot">${i+1}</div>
+      <div class="stop-body">
+        <div class="stop-name">${s.emoji} ${s.name}</div>
+        <div class="stop-prods">${s.products.slice(0,3).join(', ')}</div>
+        <div class="stop-dist">🚲 +${legs[i].toFixed(1)} km vanaf vorige stop</div>
+      </div>
+      <span class="stop-del" onclick="toggleRoute(${s.id})" title="Verwijder">✕</span>
+    </div>
+    ${i<ordered.length-1?'<div class="connector"></div>':''}
+  `).join('');
+
+  html += `<div style="font-size:11px;color:var(--green-mid);text-align:center;margin-top:8px">✨ Route geoptimaliseerd voor kortste afstand</div>`;
+  html += `<div class="stats-row">
+    <div class="stat-box"><div class="stat-val">${route.length}</div><div class="stat-lbl">stops</div></div>
+    <div class="stat-box"><div class="stat-val">${totalKm.toFixed(1)}</div><div class="stat-lbl">km</div></div>
+    <div class="stat-box"><div class="stat-val">${mins}</div><div class="stat-lbl">min ±</div></div>
+  </div>`;
+  html += `
+  <button class="start-btn" onclick="openMaps()" style="margin-bottom:8px">🗺️ Open in Google Maps</button>
+  <button class="start-btn" onclick="openExportModal()" style="background:var(--earth);margin-bottom:8px">📤 Exporteer route</button>
+  <button class="start-btn" onclick="shareRoute()" style="background:#185FA5;margin-bottom:8px">🔗 Deel route</button>
+  <button class="clear-btn" onclick="clearRoute()">Route wissen</button>`;
+  wrap.innerHTML = html;
+}
+
+// Nearest-neighbour route optimalisatie vanaf startpunt
+function optimizeRoute(stops) {
+  if (stops.length <= 1) return [...stops];
+  const startLat = userLat || UDEN_LAT, startLng = userLng || UDEN_LNG;
+  const remaining = [...stops];
+  const result = [];
+  let curLat = startLat, curLng = startLng;
+  while (remaining.length) {
+    let bestIdx = 0, bestDist = Infinity;
+    remaining.forEach((s, idx) => {
+      const d = haversine(curLat, curLng, s.lat, s.lng);
+      if (d < bestDist) { bestDist = d; bestIdx = idx; }
+    });
+    const next = remaining.splice(bestIdx, 1)[0];
+    result.push(next);
+    curLat = next.lat; curLng = next.lng;
+  }
+  return result;
+}
+
+function haversine(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2-lat1)*Math.PI/180, dLng = (lng2-lng1)*Math.PI/180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
+  return R*2*Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+function shareRoute() {
+  const ordered = optimizeRoute(route);
+  const text = `🚲 Mijn boerenroute via Boerenroute.nl:\n\n` +
+    ordered.map((s,i)=>`${i+1}. ${s.name} (${s.products.slice(0,2).join(', ')})`).join('\n') +
+    `\n\nPlan je eigen route op boerenroute.nl`;
+  if (navigator.share) {
+    navigator.share({ title: 'Mijn boerenroute', text }).catch(()=>{});
+  } else {
+    const wa = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    window.open(wa, '_blank');
+  }
+}
+
+function clearRoute() { route=[]; renderShops(); renderRoute(); updateMapMarkers(); }
+
+function openMaps() {
+  const ordered = optimizeRoute(route);
+  const base = userLat ? `${userLat},${userLng}` : 'Uden,Nederland';
+  const stops = ordered.map(s=>`${s.lat},${s.lng}`).join('/');
+  window.open(`https://www.google.com/maps/dir/${encodeURIComponent(base)}/${stops}?travelmode=bicycling`,'_blank');
+}
+
+function scrollRouteIntoView() {
+  document.getElementById('route-panel').scrollIntoView({behavior:'smooth'});
+}
+
+// ── MODAL ─────────────────────────────────────────────────────────────
+function openModal(id) {
+  const s = shops.find(x=>x.id===id);
+  const km = distKm(s.lat,s.lng);
+  const avg = avgRating(id);
+  const rList = reviews[id]||[];
+  const added = route.some(r=>r.id===id);
+
+  const isAutomaat = s.type==='automaat';
+  const isZelfpluk = s.type==='zelfpluk';
+  const isMarkt = s.type==='markt';
+  const isOnderweg = s.type==='onderweg';
+  const typeBadge = isAutomaat ? `<span class="automaat-badge">🤖 Automaat</span><span class="always-open" style="margin-left:4px">24/7 open</span>` :
+    isZelfpluk ? `<span class="season-badge">🌿 Zelfpluk</span>` :
+    isMarkt ? `<span class="season-badge">🛒 Boerenmarkt</span>` :
+    isOnderweg ? `<span class="kids-badge">🎠 Leuk voor kinderen</span>` : '';
+  const premBadge = s.premium ? `<span class="premium-badge">⭐ Aanbevolen</span>` : '';
+
+  let html = `
+    <div style="font-size:32px;margin-bottom:8px">${s.emoji}</div>
+    <div class="modal-name">${s.name}</div>
+    <div style="margin-bottom:8px">${premBadge}${typeBadge}${s.seasonal&&!isAutomaat?'<span class="season-badge" style="margin-left:4px">🌤 seizoen</span>':''}</div>
+    <div class="modal-meta">${isAutomaat?'🕐':'⏰'} ${s.hours} &nbsp;·&nbsp; 🚲 ${km.toFixed(1)} km</div>
+    ${s.address ? `<div style="font-size:13px;color:var(--text-light);margin-bottom:4px">📍 ${s.address}</div>` : ''}
+    ${s.phone ? `<div style="font-size:13px;color:var(--text-light);margin-bottom:4px">📞 <a href="tel:${s.phone}" style="color:var(--green-mid)">${s.phone}</a></div>` : ''}
+    ${s.website ? `<div style="font-size:13px;margin-bottom:4px">🌐 <a href="${s.website}" target="_blank" style="color:var(--green-mid);word-break:break-all">${s.website.replace(/^https?:\/\//,'')}</a></div>` : ''}
+    ${s.osm ? `<div style="font-size:11px;color:var(--text-light);margin-bottom:1rem">Bron: OpenStreetMap — gegevens kunnen afwijken</div>` : '<div style="margin-bottom:1rem"></div>'}
+    ${avg ? `<div style="margin-bottom:1rem"><span class="avg-stars"><span class="stars" style="font-size:16px;color:var(--amber)">${starStr(avg)}</span> <span style="font-size:13px;color:var(--text-mid)">${avg.toFixed(1)} gemiddeld (${rList.length} review${rList.length!==1?'s':''})</span></span></div>` : ''}
+    <p style="font-size:14px;color:var(--text-mid);line-height:1.6;margin-bottom:1rem">${s.desc}</p>
+    ${(() => {
+      const inSeason = s.products.filter(p => SEASON[p] && SEASON[p].includes(new Date().getMonth()));
+      return inSeason.length ? `<div style="background:var(--amber-bg);border-radius:var(--radius-sm);padding:10px 12px;margin-bottom:1rem;font-size:13px;color:var(--earth)">🌤️ <strong>Nu in seizoen:</strong> ${inSeason.join(', ')} — op z'n lekkerst deze maand!</div>` : '';
+    })()}
+    <div class="modal-section">Producten</div>
+    <div class="product-grid">${s.products.map(p=>`<span class="prod-chip">${p}</span>`).join('')}</div>
+    <div style="margin-top:1.25rem;display:flex;gap:8px;flex-wrap:wrap">
+      <button onclick="toggleRoute(${id});renderModal(${id})" style="padding:9px 18px;background:${added?'var(--sand)':'var(--green-mid)'};color:${added?'var(--text-mid)':'white'};border:1px solid ${added?'var(--border-mid)':'var(--green-mid)'};border-radius:var(--radius-sm);font-size:13px;font-family:DM Sans,sans-serif;cursor:pointer;font-weight:500">${added?'✕ Verwijder uit route':'+ Voeg toe aan route'}</button>
+      <button onclick="toggleFav(${id});renderModal(${id})" style="padding:9px 18px;background:var(--white);color:${favorites.has(id)?'#A32D2D':'var(--text-mid)'};border:1px solid var(--border-mid);border-radius:var(--radius-sm);font-size:13px;font-family:DM Sans,sans-serif;cursor:pointer;font-weight:500">${favorites.has(id)?'❤️ Favoriet':'🤍 Bewaar'}</button>
+    </div>
+    <div class="modal-section" style="margin-top:1.5rem">Reviews (${rList.length})</div>
+    <div id="review-list">${rList.length===0 ? '<div class="no-reviews">Nog geen reviews — wees de eerste!</div>' : rList.map(r=>`
+      <div class="review-item">
+        <div class="review-header">
+          <span class="review-author">${r.name}</span>
+          <span class="review-stars">${'★'.repeat(r.stars)}${'☆'.repeat(5-r.stars)}</span>
+        </div>
+        <div class="review-date">${r.date}</div>
+        <div class="review-text" style="margin-top:4px">${r.text}</div>
+      </div>`).join('')}
+    </div>
+    <div class="review-form">
+      <div class="review-form-title">Schrijf een review</div>
+      <div class="star-picker" id="star-picker">
+        <span onclick="setStar(${id},1)">★</span>
+        <span onclick="setStar(${id},2)">★</span>
+        <span onclick="setStar(${id},3)">★</span>
+        <span onclick="setStar(${id},4)">★</span>
+        <span onclick="setStar(${id},5)">★</span>
+      </div>
+      <input class="rf-input" type="text" id="rf-name" placeholder="Jouw naam">
+      <textarea class="rf-input" id="rf-text" placeholder="Vertel over je ervaring…"></textarea>
+      <button class="rf-submit" onclick="submitReview(${id})">Review plaatsen</button>
+      <div class="rf-msg" id="rf-msg">✅ Bedankt voor je review!</div>
+    </div>
+  `;
+  document.getElementById('modal-content').innerHTML = html;
+  document.getElementById('modal-bg').classList.add('open');
+  currentStars = 0;
+}
+
+function renderModal(id) {
+  openModal(id);
+}
+
+function setStar(shopId, n) {
+  currentStars = n;
+  const stars = document.querySelectorAll('#star-picker span');
+  stars.forEach((s,i) => s.classList.toggle('lit', i<n));
+}
+
+function submitReview(shopId) {
+  const name = document.getElementById('rf-name').value.trim();
+  const text = document.getElementById('rf-text').value.trim();
+  if(!name || !text || currentStars===0) {
+    alert('Vul je naam, een beoordeling en een tekst in.'); return;
+  }
+  if(!reviews[shopId]) reviews[shopId]=[];
+  const months = ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
+  const now = new Date();
+  reviews[shopId].unshift({ name, stars:currentStars, text, date: months[now.getMonth()]+' '+now.getFullYear() });
+  document.getElementById('rf-msg').style.display='block';
+  setTimeout(()=>{ openModal(shopId); renderShops(); }, 900);
+}
+
+function closeModal(e) { if(e.target===document.getElementById('modal-bg')) closeModalDirect(); }
+function closeModalDirect() { document.getElementById('modal-bg').classList.remove('open'); }
+
+// ── MAP ───────────────────────────────────────────────────────────────
+function initMap() {
+  if(mapInstance) return;
+  mapInstance = L.map('map').setView([UDEN_LAT, UDEN_LNG], 12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18
+  }).addTo(mapInstance);
+  updateMapMarkers();
+  setTimeout(()=>mapInstance.invalidateSize(), 100);
+}
+
+function updateMapMarkers() {
+  if(!mapInstance) return;
+  Object.values(mapMarkers).forEach(m=>m.remove());
+  mapMarkers = {};
+  const toShow = mapFilter_mode==='route' ? shops.filter(s=>route.some(r=>r.id===s.id)) : shops;
+  toShow.forEach((s,i) => {
+    const inRoute = route.some(r=>r.id===s.id);
+    const idx = inRoute ? route.findIndex(r=>r.id===s.id)+1 : null;
+    const color = inRoute ? '#3B6D11' : s.type==='automaat' ? '#185FA5' : s.type==='markt' ? '#854F0B' : s.type==='onderweg' ? '#8B3A8B' : '#888780';
+    const icon = L.divIcon({
+      html: `<div style="background:${color};color:white;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:${inRoute?'12':'14'}px;font-weight:600;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.25)">${inRoute?idx:s.emoji}</div>`,
+      className: '', iconSize:[28,28], iconAnchor:[14,14]
+    });
+    const avg = avgRating(s.id);
+    const m = L.marker([s.lat,s.lng],{icon}).addTo(mapInstance);
+    m.bindPopup(`<b>${s.emoji} ${s.name}</b><br>${s.hours}<br>🚲 ${distKm(s.lat,s.lng).toFixed(1)} km${avg?`<br>${'★'.repeat(Math.round(avg))} ${avg.toFixed(1)}`:''}`);
+    m.on('click',()=>openModal(s.id));
+    mapMarkers[s.id]=m;
+  });
+  if(userLat) {
+    const userIcon = L.divIcon({
+      html:`<div style="background:#185FA5;color:white;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;border:2px solid white;box-shadow:0 1px 4px rgba(0,0,0,0.25)">📍</div>`,
+      className:'',iconSize:[22,22],iconAnchor:[11,11]
+    });
+    L.marker([userLat,userLng],{icon:userIcon}).addTo(mapInstance).bindPopup('Jouw locatie');
+  }
+}
+
+function mapFilter(mode, btn) {
+  mapFilter_mode = mode;
+  document.querySelectorAll('.map-btn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  updateMapMarkers();
+}
+
+function centerMap() {
+  if(!mapInstance) return;
+  if(userLat) mapInstance.setView([userLat,userLng],13);
+  else getLocation();
+}
+
+// ── OPENSTREETMAP / OVERPASS ──────────────────────────────────────────
+const OVERPASS_ENDPOINTS = [
+  'https://overpass-api.de/api/interpreter',
+  'https://overpass.kumi.systems/api/interpreter',
+  'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
+];
+
+let currentRadius = 50000; // meters
+let lastLoadLat = null, lastLoadLng = null;
+
+async function overpassFetch(query) {
+  for (const endpoint of OVERPASS_ENDPOINTS) {
+    try {
+      const fetchPromise = fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'data=' + encodeURIComponent(query),
+      });
+      const timeoutPromise = new Promise((_, reject) =>
+        setTimeout(() => reject(new Error('Timeout na 25s')), 25000)
+      );
+      const resp = await Promise.race([fetchPromise, timeoutPromise]);
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      return await resp.json();
+    } catch (e) {
+      // probeer volgende server
+    }
+  }
+  throw new Error('Alle servers onbereikbaar');
+}
+
+async function loadNearby(lat, lng, radius) {
+  if (osmLoading) return;
+  osmLoading = false;
+  osmLoading = true;
+  lastLoadLat = lat; lastLoadLng = lng; currentRadius = radius;
+
+  const km = Math.round(radius / 1000);
+  setBanner('⏳', `Winkels zoeken binnen ${km} km van jouw locatie…`, true);
+
+  const around = `(around:${radius},${lat},${lng})`;
+
+  // OSM tags for farm shops & automaten are inconsistent — we query ALL known variants:
+  // vending=food is the most common missed tag for Dutch farm automaten!
+  const query = `[out:json][timeout:25];
+(
+  node["shop"="farm"]${around};
+  way["shop"="farm"]${around};
+  node["shop"="dairy"]${around};
+  node["shop"="greengrocer"]["direct_sales"="yes"]${around};
+  node["craft"~"^(cheese|dairy|beekeeper|winery|distillery|brewery)$"]${around};
+  node["amenity"="vending_machine"]["vending"~"^(eggs|milk|cheese|honey|vegetables|fruits|meat|farm_produce|local_produce|food|asparagus|potatoes|strawberries|mushrooms|bread|flowers|juice|jam|butter|yoghurt|ice_cream)$"]${around};
+  node["amenity"="vending_machine"]["vending"="food"]${around};
+  node["amenity"="vending_machine"]["food:eggs"="yes"]${around};
+  node["amenity"="vending_machine"]["food:milk"="yes"]${around};
+  node["amenity"="vending_machine"]["food:vegetables"="yes"]${around};
+  node["amenity"="vending_machine"]["food:fruit"="yes"]${around};
+  node["amenity"="vending_machine"]["produce"~"."]${around};
+  node["amenity"="vending_machine"]["farm_product"~"."]${around};
+  node["direct_sales"="yes"]["shop"!~"."]["amenity"!~"."]${around};
+  node["sell"~"eggs|milk|cheese|honey|vegetables|fruit|meat|farm"]${around};
+  node["leisure"="playground"]["name"]${around};
+  way["leisure"="playground"]["name"]${around};
+  node["tourism"="theme_park"]${around};
+  way["tourism"="theme_park"]${around};
+  node["attraction"="animal"]${around};
+  node["amenity"="petting_zoo"]${around};
+  way["amenity"="petting_zoo"]${around};
+  node["tourism"="zoo"]["zoo"="petting_zoo"]${around};
+  node["leisure"="nature_reserve"]["name"]${around};
+);
+out center;`;
+
+  try {
+    const data = await overpassFetch(query);
+    // reset OSM shops and reload for new area
+    shops = [...verifiedShops];
+    processOSMData(data.elements);
+    osmLoaded = true;
+    const extra = shops.length - verifiedShops.length;
+    setBanner('✅', `${shops.length} verkooppunten gevonden binnen ${km} km`, false);
+    setTimeout(hideBanner, 4000);
+  } catch (err) {
+    setBanner('⚠️', 'Kon geen locaties laden — controleer je verbinding.', false);
+    setTimeout(hideBanner, 6000);
+  }
+  osmLoading = false;
+}
+
+function processOSMData(elements) {
+  const existingNames = new Set(shops.map(s => norm(s.name)));
+
+  elements.forEach(el => {
+    const t = el.tags || {};
+    const lat = el.lat || (el.center && el.center.lat);
+    const lon = el.lon || (el.center && el.center.lon);
+    if (!lat || !lon || !t.name) return;
+    if (existingNames.has(norm(t.name))) return;
+    existingNames.add(norm(t.name));
+
+    // ── "Onderweg" categorie: speeltuinen, dierenparken, natuurgebieden ──
+    const isPlayground = t.leisure === 'playground';
+    const isThemePark = t.tourism === 'theme_park';
+    const isPettingZoo = t.amenity === 'petting_zoo' || t.zoo === 'petting_zoo' || t.attraction === 'animal';
+    const isNature = t.leisure === 'nature_reserve';
+    if (isPlayground || isThemePark || isPettingZoo || isNature) {
+      const city = t['addr:city'] || t['addr:place'] || t['addr:town'] || '';
+      const street = t['addr:street'] ? `${t['addr:street']} ${t['addr:housenumber']||''}`.trim() : '';
+      let emoji = '🎠', prods = [], desc = '';
+      if (isPlayground) { emoji='🛝'; prods=['speeltuin']; desc='Speeltuin — leuke stop voor kinderen tijdens de fietstocht.'; }
+      else if (isThemePark) { emoji='🎡'; prods=['attractiepark']; desc='Attractie- of speelpark, leuk voor een gezinsuitje.'; }
+      else if (isPettingZoo) { emoji='🐐'; prods=['kinderboerderij','dieren']; desc='Kinderboerderij of dierenweide — aaien en spelen.'; }
+      else if (isNature) { emoji='🌲'; prods=['natuurgebied','wandelen']; desc='Natuurgebied — mooi om doorheen te fietsen of even te pauzeren.'; }
+      shops.push({
+        id: nextOsmId++,
+        emoji,
+        name: t.name, lat, lng: lon,
+        address: [street, city].filter(Boolean).join(', '),
+        hours: t.opening_hours ? formatHours(t.opening_hours) : 'Vrij toegankelijk / zie website',
+        products: prods, tags: ['kindvriendelijk'],
+        type: 'onderweg',
+        seasonal: false, premium: false,
+        desc: t.description || t['description:nl'] || desc,
+        website: t.website || t.url || null,
+        phone: t.phone || t['contact:phone'] || null,
+        osm: true
+      });
+      return;
+    }
+
+    const isAutomaat = t.amenity === 'vending_machine';
+    const rawProds = [];
+    ['vending','produce','sell'].forEach(k => { if(t[k]) rawProds.push(...t[k].split(/[;,]/)); });
+    // food:eggs=yes / food:milk=yes style tags
+    Object.keys(t).forEach(k => {
+      if (k.startsWith('food:') && t[k] !== 'no') rawProds.push(k.replace('food:',''));
+      if (k.startsWith('produce:') && t[k] !== 'no') rawProds.push(k.replace('produce:',''));
+    });
+    // craft type → product
+    if (t.craft === 'cheese' || t.craft === 'dairy') rawProds.push('cheese');
+    if (t.craft === 'beekeeper') rawProds.push('honey');
+    if (t.craft === 'winery') rawProds.push('wine');
+
+    const PRODUCT_MAP = {
+      eggs:'eieren', egg:'eieren', milk:'melk', cheese:'kaas', honey:'honing',
+      vegetables:'groenten', vegetable:'groenten', fruits:'fruit', fruit:'fruit',
+      meat:'vlees', bread:'brood', farm_produce:'streekproducten',
+      local_produce:'streekproducten', food:'boerderijproducten',
+      mushrooms:'champignons', mushroom:'champignons',
+      strawberries:'aardbeien', strawberry:'aardbeien',
+      potatoes:'aardappelen', potato:'aardappelen',
+      yoghurt:'yoghurt', butter:'boter', asparagus:'asperges',
+      flowers:'bloemen', juice:'sap', jam:'jam',
+      wine:'wijn', beer:'bier', spirits:'drank',
+    };
+    const products = [...new Set(rawProds.map(p => {
+      const c = p.trim().toLowerCase().replace(/_/g,' ').replace(/-/g,' ');
+      return PRODUCT_MAP[c] || PRODUCT_MAP[c.replace(/s$/,'')] || (c.length > 2 ? c : null);
+    }).filter(Boolean))];
+    // if only "boerderijproducten" from vending=food, check food:* tags for specifics
+    if (products.length === 0 || (products.length === 1 && products[0] === 'boerderijproducten')) {
+      if (t['food:eggs'] === 'yes') products.push('eieren');
+      if (t['food:milk'] === 'yes') products.push('melk');
+      if (t['food:cheese'] === 'yes') products.push('kaas');
+      if (t['food:vegetables'] === 'yes') products.push('groenten');
+      if (t['food:fruit'] === 'yes') products.push('fruit');
+      if (t['food:honey'] === 'yes') products.push('honing');
+      if (products[0] === 'boerderijproducten' && products.length === 1) {
+        // keep generic label
+      }
+    }
+    if (products.length === 0) products.push('boerderijproducten');
+
+    const joined = products.join(' ');
+    const tags = [];
+    if (/ei/.test(joined)) tags.push('eieren');
+    if (/melk|kaas|zuivel|yoghurt|boter|kwark/.test(joined)) tags.push('zuivel');
+    if (/groent|aardappel|asperge|champignon/.test(joined)) tags.push('groente');
+    if (/fruit|aardbei|appel|peer|kers/.test(joined)) tags.push('fruit');
+    if (/honing/.test(joined)) tags.push('honing');
+    if (/vlees|worst|kip|varken|rund/.test(joined)) tags.push('vlees');
+    if (/brood|meel|graan|spelt/.test(joined)) tags.push('graan');
+    if (tags.length === 0) tags.push('groente');
+
+    const EMOJI = {eieren:'🥚',zuivel:'🥛',groente:'🥬',fruit:'🍎',honing:'🍯',vlees:'🥩',graan:'🌾'};
+    const city = t['addr:city'] || t['addr:place'] || t['addr:town'] || '';
+    const street = t['addr:street'] ? `${t['addr:street']} ${t['addr:housenumber']||''}`.trim() : '';
+
+    shops.push({
+      id: nextOsmId++,
+      emoji: isAutomaat ? '🤖' : (EMOJI[tags[0]] || '🏪'),
+      name: t.name, lat, lng: lon,
+      address: [street, city].filter(Boolean).join(', '),
+      hours: t.opening_hours ? formatHours(t.opening_hours) : (isAutomaat ? '24/7 — altijd open' : 'Zie website of bel'),
+      products, tags,
+      type: isAutomaat ? 'automaat' : 'winkel',
+      seasonal: false, premium: false,
+      desc: t.description || t['description:nl'] || `${isAutomaat?'Automaat':'Boerderijwinkel'} in ${city||'Nederland'}.`,
+      website: t.website || t.url || null,
+      phone: t.phone || t['contact:phone'] || null,
+      osm: true
+    });
+  });
+  renderShops();
+  if (mapInstance) updateMapMarkers();
+}
+
+function norm(s) { return s.toLowerCase().replace(/[^a-z0-9]/g,''); }
+function formatHours(oh) {
+  return oh.replace('Mo','ma').replace('Tu','di').replace('We','wo')
+           .replace('Th','do').replace('Fr','vr').replace('Sa','za').replace('Su','zo')
+           .replace(/-/g,'–');
+}
+function setBanner(icon, text, spinner) {
+  const b = document.getElementById('osm-banner');
+  b.style.display = 'flex';
+  document.getElementById('osm-banner-icon').textContent = icon;
+  document.getElementById('osm-banner-text').textContent = text;
+  document.getElementById('osm-spinner').style.display = spinner ? 'inline' : 'none';
+}
+function hideBanner() { document.getElementById('osm-banner').style.display = 'none'; }
+
+// ── AANMELDEN ─────────────────────────────────────────────────────────
+function renderProductChecks() {
+  document.getElementById('product-checks').innerHTML = productOptions.map(p=>
+    `<label class="pcheck"><input type="checkbox" value="${p}"> ${p}</label>`
+  ).join('');
+}
+
+function submitAanmelding() {
+  // Honeypot: als dit verborgen veld ingevuld is, is het een bot
+  if (document.getElementById('f-website-url').value) { return; }
+  const name    = document.getElementById('f-name').value.trim();
+  const contact = document.getElementById('f-contact').value.trim();
+  const email   = document.getElementById('f-email').value.trim();
+  const adres   = document.getElementById('f-adres').value.trim();
+  const hours   = document.getElementById('f-hours').value.trim();
+  const tel     = document.getElementById('f-tel').value.trim();
+  const web     = document.getElementById('f-web').value.trim();
+  const desc    = document.getElementById('f-desc').value.trim();
+  const other   = document.getElementById('f-other').value.trim();
+
+  if (!name || !email || !adres || !hours || !contact) {
+    showFormMsg('⚠️ Vul alle verplichte velden in (*)', '#A32D2D', '#FCEBEB');
+    return;
+  }
+
+  // Verzamel geselecteerde producten
+  const checked = [...document.querySelectorAll('#product-checks input:checked')].map(i => i.value);
+  const products = [...checked, ...(other ? other.split(',').map(s=>s.trim()) : [])].join(', ');
+
+  const btn = document.querySelector('.form-submit');
+  btn.textContent = '⏳ Versturen…';
+  btn.disabled = true;
+
+  // ── Formspree endpoint ────────────────────────────────────────────────
+  // Stap 1: Ga naar https://formspree.io en maak een gratis account aan
+  // Stap 2: Maak een nieuw formulier aan en kopieer de endpoint-URL
+  // Stap 3: Vervang de URL hieronder door jouw eigen endpoint
+  const FORMSPREE_URL = 'https://formspree.io/f/xykvvprz';
+  // ─────────────────────────────────────────────────────────────────────
+
+  fetch(FORMSPREE_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      'Naam boerderij':   name,
+      'Contactpersoon':   contact,
+      'E-mail':           email,
+      'Telefoonnummer':   tel || '—',
+      'Adres':            adres,
+      'Openingstijden':   hours,
+      'Website':          web || '—',
+      'Producten':        products || '—',
+      'Beschrijving':     desc || '—',
+      '_subject':         `Nieuwe winkelaanmelding: ${name}`,
+    }),
+  })
+  .then(resp => {
+    if (resp.ok) {
+      showFormMsg('🎉 Aanmelding verstuurd! We nemen binnen 2 werkdagen contact op.', '#27500A', '#EAF3DE');
+      btn.textContent = '✔ Verstuurd';
+    } else {
+      throw new Error('server fout');
+    }
+  })
+  .catch(() => {
+    showFormMsg('⚠️ Versturen mislukt. Probeer het opnieuw of stuur een e-mail.', '#A32D2D', '#FCEBEB');
+    btn.textContent = '✔ Winkel aanmelden';
+    btn.disabled = false;
+  });
+}
+
+function showFormMsg(text, color, bg) {
+  const el = document.getElementById('form-success');
+  el.style.display = 'block';
+  el.style.color = color;
+  el.style.background = bg;
+  el.style.borderColor = color;
+  el.textContent = text;
+}
+
+// ── PAGES ─────────────────────────────────────────────────────────────
+function showPage(id, btn) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(id==='kaart') { setTimeout(initMap,50); }
+}
+
+// ── BOODSCHAPPENLIJST ─────────────────────────────────────────────────
+function openShoppingList() {
+  const chips = document.getElementById('list-chips');
+  // verzamel alle unieke producten uit huidige winkels
+  const allProds = new Set();
+  shops.forEach(s => s.products.forEach(p => allProds.add(p)));
+  const common = ['eieren','melk','kaas','yoghurt','boter','aardappelen','groenten','fruit','aardbeien','appels','honing','vlees','brood'];
+  const prodList = [...new Set([...common, ...[...allProds].slice(0,20)])];
+  chips.innerHTML = prodList.map(p =>
+    `<span class="tip-chip${shoppingList.has(p)?' on':''}" onclick="toggleListItem('${p.replace(/'/g,'')}',this)">${p}</span>`
+  ).join('');
+  document.getElementById('list-result').innerHTML = '';
+  document.getElementById('list-modal-bg').classList.add('open');
+}
+
+function toggleListItem(p, el) {
+  if (shoppingList.has(p)) shoppingList.delete(p);
+  else shoppingList.add(p);
+  el.classList.toggle('on');
+}
+
+function buildRouteFromList() {
+  if (shoppingList.size === 0) {
+    document.getElementById('list-result').innerHTML = '⚠️ Selecteer eerst minimaal één product.';
+    return;
+  }
+  const wanted = [...shoppingList];
+  // vind voor elk product de dichtstbijzijnde winkel die het verkoopt
+  const chosen = new Map(); // shopId -> shop
+  const covered = new Set();
+  wanted.forEach(w => {
+    const candidates = shops
+      .filter(s => s.products.some(p => p.includes(w) || w.includes(p)))
+      .map(s => ({ ...s, km: distKm(s.lat,s.lng) }))
+      .sort((a,b)=>a.km-b.km);
+    if (candidates.length) {
+      // kies winkel die al gekozen is en dit product dekt, anders dichtstbijzijnde
+      const already = [...chosen.values()].find(s => s.products.some(p=>p.includes(w)||w.includes(p)));
+      if (already) { covered.add(w); }
+      else { chosen.set(candidates[0].id, candidates[0]); covered.add(w); }
+    }
+  });
+
+  route = [...chosen.values()].map(s => ({...s, km: distKm(s.lat,s.lng)}));
+  const notFound = wanted.filter(w => !shops.some(s => s.products.some(p=>p.includes(w)||w.includes(p))));
+
+  let msg = `✅ Route samengesteld met ${route.length} winkel${route.length!==1?'s':''} voor ${covered.size} product${covered.size!==1?'en':''}.`;
+  if (notFound.length) msg += `<br>⚠️ Niet gevonden in de buurt: ${notFound.join(', ')}.`;
+  document.getElementById('list-result').innerHTML = msg;
+  renderShops(); renderRoute(); updateMapMarkers();
+  setTimeout(() => {
+    document.getElementById('list-modal-bg').classList.remove('open');
+    scrollRouteIntoView();
+  }, 1800);
+}
+
+// ── SEIZOENSKALENDER ──────────────────────────────────────────────────
+function openSeasonModal() {
+  const m = new Date().getMonth();
+  const nu = Object.keys(SEASON).filter(p => SEASON[p].includes(m));
+  document.getElementById('season-intro').innerHTML =
+    `Het is nu <strong>${MONTHS_NL[m]}</strong>. Dit zijn de producten die op dit moment op hun lekkerst zijn — vers van het land.`;
+
+  // tabel: per product de maanden
+  const content = document.getElementById('season-content');
+  let html = `<div style="background:var(--green-bg);border-radius:var(--radius-sm);padding:12px;margin-bottom:1rem">
+    <div style="font-size:13px;font-weight:500;color:var(--green-dark);margin-bottom:6px">🌱 Nu in seizoen:</div>
+    <div style="display:flex;flex-wrap:wrap;gap:5px">${nu.length ? nu.map(p=>`<span class="ptag" style="background:white;cursor:pointer" onclick="filterBySeasonProduct('${p}')">${p}</span>`).join('') : '<span style="font-size:13px;color:var(--text-mid)">Weinig vers aanbod deze maand — automaten met eieren en zuivel blijven het hele jaar open.</span>'}</div>
+  </div>`;
+  html += `<div style="font-size:12px;font-weight:500;color:var(--text-light);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:8px">Jaaroverzicht</div>`;
+  html += `<div style="display:flex;flex-direction:column;gap:5px">`;
+  Object.keys(SEASON).forEach(p => {
+    const months = SEASON[p];
+    html += `<div style="display:flex;align-items:center;gap:8px">
+      <div style="font-size:12px;width:80px;flex-shrink:0;color:var(--text-mid)">${p}</div>
+      <div style="display:flex;gap:2px;flex:1">
+        ${MONTHS_NL.map((_,i)=>`<div title="${MONTHS_NL[i]}" style="flex:1;height:14px;border-radius:2px;background:${months.includes(i)?(i===m?'var(--green-mid)':'var(--green-light)'):'var(--sand)'}"></div>`).join('')}
+      </div>
+    </div>`;
+  });
+  html += `</div><div style="font-size:11px;color:var(--text-light);margin-top:8px">De donkergroene balk is de huidige maand.</div>`;
+  content.innerHTML = html;
+  document.getElementById('season-modal-bg').classList.add('open');
+}
+
+function filterBySeasonProduct(p) {
+  document.getElementById('season-modal-bg').classList.remove('open');
+  document.getElementById('search').value = p;
+  renderShops();
+}
+
+// ── ROUTE EXPORT (GPX) ────────────────────────────────────────────────
+function openExportModal() {
+  document.getElementById('export-modal-bg').classList.add('open');
+}
+function closeExportModal(e) {
+  if (e.target === document.getElementById('export-modal-bg')) {
+    document.getElementById('export-modal-bg').classList.remove('open');
+  }
+}
+
+function downloadGPX() {
+  if (route.length === 0) return;
+  const sorted = optimizeRoute(route);
+  const startLat = userLat || UDEN_LAT;
+  const startLng = userLng || UDEN_LNG;
+  const date = new Date().toISOString();
+
+  let gpx = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  gpx += `<gpx version="1.1" creator="Boerenroute.nl" xmlns="http://www.topografix.com/GPX/1/1">\n`;
+  gpx += `  <metadata>\n    <name>Boerenroute fietstocht</name>\n    <desc>Route langs boerderijwinkels en automaten</desc>\n    <time>${date}</time>\n  </metadata>\n`;
+
+  // Startpunt als waypoint
+  gpx += `  <wpt lat="${startLat}" lon="${startLng}">\n    <name>Start</name>\n    <sym>Flag</sym>\n  </wpt>\n`;
+
+  // Elke winkel als waypoint
+  sorted.forEach((s,i) => {
+    const desc = `${s.products.join(', ')}${s.hours ? ' | ' + s.hours : ''}`;
+    gpx += `  <wpt lat="${s.lat}" lon="${s.lng}">\n`;
+    gpx += `    <name>${i+1}. ${escapeXML(s.name)}</name>\n`;
+    gpx += `    <desc>${escapeXML(desc)}</desc>\n`;
+    gpx += `    <sym>Shopping Center</sym>\n`;
+    gpx += `  </wpt>\n`;
+  });
+
+  // Route (rte) met alle punten in volgorde
+  gpx += `  <rte>\n    <name>Boerenroute</name>\n`;
+  gpx += `    <rtept lat="${startLat}" lon="${startLng}"><name>Start</name></rtept>\n`;
+  sorted.forEach((s,i) => {
+    gpx += `    <rtept lat="${s.lat}" lon="${s.lng}"><name>${i+1}. ${escapeXML(s.name)}</name></rtept>\n`;
+  });
+  gpx += `  </rte>\n`;
+  gpx += `</gpx>`;
+
+  // Download triggeren
+  const blob = new Blob([gpx], { type: 'application/gpx+xml' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'boerenroute-fietstocht.gpx';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function escapeXML(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── TIP MODAL ─────────────────────────────────────────────────────────
+function openTipModal() {
+  document.getElementById('tip-modal-bg').classList.add('open');
+  // reset form
+  ['tip-name','tip-city','tip-address','tip-extra','tip-sender'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  document.querySelectorAll('.tip-chip').forEach(c => c.classList.remove('on'));
+  document.getElementById('tip-type').value = 'winkel';
+  document.getElementById('tip-msg').style.display = 'none';
+  document.getElementById('tip-submit-btn').disabled = false;
+  document.getElementById('tip-submit-btn').textContent = '📍 Tip insturen';
+}
+
+function closeTipModal(e) {
+  if (e.target === document.getElementById('tip-modal-bg')) closeTipModalDirect();
+}
+function closeTipModalDirect() {
+  document.getElementById('tip-modal-bg').classList.remove('open');
+}
+
+function toggleTipChip(el) {
+  el.classList.toggle('on');
+}
+
+function submitTip() {
+  // Honeypot tegen spam
+  if (document.getElementById('tip-website-url').value) { return; }
+  const name = document.getElementById('tip-name').value.trim();
+  const city = document.getElementById('tip-city').value.trim();
+  if (!name || !city) {
+    showTipMsg('⚠️ Vul minimaal naam en plaats in.', '#A32D2D', '#FCEBEB');
+    return;
+  }
+  const products = [...document.querySelectorAll('.tip-chip.on')].map(c => c.dataset.val).join(', ') || '—';
+  const type = document.getElementById('tip-type').value;
+  const address = document.getElementById('tip-address').value.trim() || '—';
+  const extra = document.getElementById('tip-extra').value.trim() || '—';
+  const sender = document.getElementById('tip-sender').value.trim() || 'Anoniem';
+
+  const btn = document.getElementById('tip-submit-btn');
+  btn.textContent = '⏳ Versturen…';
+  btn.disabled = true;
+
+  fetch('https://formspree.io/f/xykvvprz', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      '_subject': `Tip verkooppunt: ${name} (${city})`,
+      'Type melding':     'TIP VAN BEZOEKER',
+      'Naam':             name,
+      'Plaats':           city,
+      'Adres':            address,
+      'Type verkooppunt': type,
+      'Producten':        products,
+      'Extra info':       extra,
+      'Ingediend door':   sender,
+    }),
+  })
+  .then(r => {
+    if (r.ok) {
+      showTipMsg('🎉 Bedankt voor je tip! We voegen het zo snel mogelijk toe.', '#27500A', '#EAF3DE');
+      btn.textContent = '✅ Verstuurd';
+    } else throw new Error();
+  })
+  .catch(() => {
+    showTipMsg('⚠️ Versturen mislukt. Probeer het opnieuw.', '#A32D2D', '#FCEBEB');
+    btn.textContent = '📍 Tip insturen';
+    btn.disabled = false;
+  });
+}
+
+function showTipMsg(text, color, bg) {
+  const el = document.getElementById('tip-msg');
+  el.style.display = 'block';
+  el.style.color = color;
+  el.style.background = bg;
+  el.style.border = `1px solid ${color}`;
+  el.textContent = text;
+}
+renderFilters();
+renderShops();
+renderRoute();
+renderProductChecks();
+// Start: load shops within 25km of Uden — updates when user sets own location
+currentRadius = 25000;
+loadNearby(UDEN_LAT, UDEN_LNG, currentRadius);
+
+// ── PWA: service worker registreren ───────────────────────────────────
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+
+// ── PWA: "Installeer app" knop ────────────────────────────────────────
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  showInstallButton();
+});
+
+function showInstallButton() {
+  if (document.getElementById('install-btn')) return;
+  const btn = document.createElement('button');
+  btn.id = 'install-btn';
+  btn.innerHTML = '⬇️ App installeren';
+  btn.style.cssText = 'position:fixed;bottom:90px;right:24px;z-index:1500;padding:10px 16px;background:var(--green-mid);color:white;border:none;border-radius:24px;font-size:13px;font-weight:500;font-family:DM Sans,sans-serif;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.2)';
+  btn.onclick = async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+    btn.remove();
+  };
+  document.body.appendChild(btn);
+}
+
+// iOS toont geen automatische prompt — geef daar een hint
+(function iosInstallHint(){
+  const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  const isStandalone = window.navigator.standalone === true;
+  if (isIOS && !isStandalone && !sessionStorage.getItem('ios-hint-dismissed')) {
+    window.addEventListener('load', () => {
+      const hint = document.createElement('div');
+      hint.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:1600;background:var(--green-dark);color:white;padding:12px 16px;font-size:13px;font-family:DM Sans,sans-serif;display:flex;align-items:center;gap:10px;box-shadow:0 -2px 12px rgba(0,0,0,0.2)';
+      hint.innerHTML = '<span style="flex:1">📲 Installeer Boerenroute: tik op <strong>Deel</strong> en daarna op <strong>"Zet op beginscherm"</strong></span><span style="cursor:pointer;font-size:18px;padding:0 6px" onclick="this.parentElement.remove();sessionStorage.setItem(\'ios-hint-dismissed\',\'1\')">✕</span>';
+      document.body.appendChild(hint);
+    });
+  }
+})();
+</script>
+</body>
+</html>

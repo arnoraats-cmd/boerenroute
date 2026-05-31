@@ -1,0 +1,33 @@
+{
+  "name": "Boerenroute.nl — Verse producten van de boer",
+  "short_name": "Boerenroute",
+  "description": "Vind boerderijwinkels en automaten bij jou in de buurt en plan een fietstocht langs verse, lokale producten.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f3ec",
+  "theme_color": "#3B6D11",
+  "lang": "nl-NL",
+  "categories": ["food", "lifestyle", "navigation"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
