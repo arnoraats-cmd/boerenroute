@@ -600,6 +600,173 @@
   .quote-author strong { color: var(--green-dark); font-weight: 600; }
 }
 
+/* ══ BOERENROUTE VAN DE MAAND — homepage showcase ════════════════ */
+@layer components {
+  .maandhome {
+    background: var(--green-bg);
+    padding: clamp(32px, 5vw, 56px) var(--pad);
+  }
+
+  .maandhome-inner { max-width: var(--max-w); margin: 0 auto; }
+
+  .maandhome-skeleton {
+    color: var(--text-light);
+    font-size: var(--t-sm);
+    text-align: center;
+    padding: 40px;
+  }
+
+  .maandhome-card {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 0;
+    background: var(--white);
+    border-radius: var(--r-xl);
+    overflow: hidden;
+    box-shadow: var(--sh-md);
+    border: 1px solid var(--border);
+  }
+
+  .maandhome-left {
+    padding: clamp(24px, 3.5vw, 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .maandhome-badge {
+    display: inline-block;
+    background: var(--amber-bg);
+    color: var(--amber);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: var(--r-full);
+    margin-bottom: 14px;
+  }
+
+  .maandhome-title {
+    font-family: var(--serif);
+    font-size: clamp(1.4rem, 3.2vw, 2rem);
+    font-weight: 700;
+    color: var(--green-dark);
+    line-height: 1.15;
+    margin-bottom: 6px;
+  }
+
+  .maandhome-sub {
+    font-size: var(--t-md);
+    color: var(--green-mid);
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+
+  .maandhome-intro {
+    font-size: var(--t-sm);
+    color: var(--text-mid);
+    line-height: 1.65;
+    margin-bottom: 18px;
+  }
+
+  .maandhome-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  .maandhome-meta-item {
+    font-size: var(--t-sm);
+    color: var(--text-mid);
+  }
+  .maandhome-meta-item strong { color: var(--text); font-weight: 700; }
+
+  .maandhome-btn { font-size: var(--t-md); padding: 13px 24px; }
+
+  /* Rechterpaneel: stops-lijst */
+  .maandhome-right {
+    background: linear-gradient(160deg, var(--green-bg) 0%, #dcecca 100%);
+    padding: clamp(24px, 3.5vw, 36px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .maandhome-stops-label {
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--green-mid);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .maandhome-stops {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+  }
+
+  /* Verbindingslijn tussen stops */
+  .maandhome-stops::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    bottom: 16px;
+    width: 2px;
+    background: repeating-linear-gradient(
+      to bottom,
+      var(--green-light) 0 4px,
+      transparent 4px 8px
+    );
+    opacity: .5;
+  }
+
+  .maandhome-stop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .maandhome-stop-num {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    background: var(--green-mid);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--t-sm);
+    font-weight: 700;
+    border: 2px solid var(--white);
+  }
+
+  .maandhome-stop-emoji { font-size: 1.2rem; flex-shrink: 0; }
+  .maandhome-stop-name {
+    font-size: var(--t-sm);
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: 720px) {
+    .maandhome-card { grid-template-columns: 1fr; }
+    .maandhome-right { border-top: 1px solid var(--border); }
+  }
+}
+
 /* ══ KNOPPEN ════════════════════════════════════════════════════ */
 @layer components {
   .btn {

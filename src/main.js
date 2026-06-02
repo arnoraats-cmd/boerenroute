@@ -185,6 +185,7 @@ function _applyLocation(lat, lng, name) {
   mapFlyTo(lat, lng, 12);
   hero.hidden = true;
   document.getElementById('voordelenBanner')?.setAttribute('hidden', '');
+  document.getElementById('maandHomeBanner')?.setAttribute('hidden', '');
   document.getElementById('mainLayout')?.scrollIntoView({ behavior: 'smooth' });
   _showCrumb(name);
   _triggerOSM(lat, lng);
@@ -261,6 +262,7 @@ function _showCrumb(name) {
     if (osmInd) osmInd.hidden = true;
     hero.hidden = false;
     document.getElementById('voordelenBanner')?.removeAttribute('hidden');
+    document.getElementById('maandHomeBanner')?.removeAttribute('hidden');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
@@ -300,6 +302,9 @@ fetch('src/data/verifiedShops.json')
     initBoodschappenlijst(shops);
     initStempelkaart(shops);
 
+    /* Render maand-route op homepage zodra shops bekend zijn (race-safe) */
+    if (_maandData) _renderMaandHome(_maandData);
+
     /* Expose voor OSM-toevoeging */
     window._addOSMShops = extraShops => {
       const all = [...shops, ...extraShops];
@@ -314,11 +319,22 @@ fetch('src/data/verifiedShops.json')
   });
 
 /* ── Boerenroute van de maand laden ──────────────────────── */
+let _maandData = null;
 fetch('src/data/maandroute.json')
   .then(r => r.json())
-  .then(data => _renderMaandRoute(data))
+  .then(data => { _maandData = data; _renderMaandRoute(data); _renderMaandHome(data); })
   .catch(() => {});
 
+function _loadMaandStops(data) {
+  document.querySelector('[data-page="route"]')?.click();
+  import('./route.js').then(({ toggleStop, getStops }) => {
+    data.stopIds.forEach(id => {
+      if (!getStops().some(s => s.id === id)) toggleStop(id);
+    });
+  });
+}
+
+/* Compacte versie op de "Over ons"-pagina */
 function _renderMaandRoute(data) {
   const el = document.getElementById('maandRoute');
   if (!el) return;
@@ -334,13 +350,49 @@ function _renderMaandRoute(data) {
       </div>
       <button class="btn btn-green" id="loadMaandRoute">🚴 Laad deze route</button>
     </div>`;
-  document.getElementById('loadMaandRoute')?.addEventListener('click', () => {
-    /* Navigeer naar kaart-tab en laad de stops */
-    document.querySelector('[data-page="route"]')?.click();
-    import('./route.js').then(({ toggleStop, getStops }) => {
-      data.stopIds.forEach(id => {
-        if (!getStops().some(s => s.id === id)) toggleStop(id);
-      });
-    });
-  });
+  document.getElementById('loadMaandRoute')
+    ?.addEventListener('click', () => _loadMaandStops(data));
+}
+
+/* Prominente showcase op de homepage met echte stops */
+function _renderMaandHome(data) {
+  const el = document.getElementById('maandRouteHome');
+  if (!el) return;
+
+  /* Zoek de echte stop-winkels op naam/emoji */
+  const stops = data.stopIds
+    .map(id => _baseShops.find(s => s.id === id))
+    .filter(Boolean);
+
+  const stopsHTML = stops.map((s, i) => `
+    <li class="maandhome-stop">
+      <span class="maandhome-stop-num">${i + 1}</span>
+      <span class="maandhome-stop-emoji">${s.emoji}</span>
+      <span class="maandhome-stop-name">${_esc(s.name)}</span>
+    </li>`).join('');
+
+  el.innerHTML = `
+    <div class="maandhome-card">
+      <div class="maandhome-left">
+        <div class="maandhome-badge">🗓️ Boerenroute van de maand &middot; ${_esc(data.maand)}</div>
+        <h2 class="maandhome-title">${data.emoji} ${_esc(data.titel)}</h2>
+        <p class="maandhome-sub">${_esc(data.subtitel)}</p>
+        <p class="maandhome-intro">${_esc(data.intro)}</p>
+        <div class="maandhome-meta">
+          <span class="maandhome-meta-item">📏 <strong>${_esc(data.afstand)}</strong></span>
+          <span class="maandhome-meta-item">📍 <strong>${stops.length}</strong> stops</span>
+          <span class="maandhome-meta-item">🚴 op de fiets</span>
+        </div>
+        <button class="btn btn-primary maandhome-btn" id="loadMaandRouteHome">
+          🚴 Laad deze route op de kaart
+        </button>
+      </div>
+      <div class="maandhome-right">
+        <div class="maandhome-stops-label">De route langs:</div>
+        <ol class="maandhome-stops">${stopsHTML}</ol>
+      </div>
+    </div>`;
+
+  document.getElementById('loadMaandRouteHome')
+    ?.addEventListener('click', () => _loadMaandStops(data));
 }
