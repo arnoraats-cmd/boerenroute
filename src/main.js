@@ -162,6 +162,9 @@ async function _submitSearch() {
 }
 
 function _applyLocation(lat, lng, name) {
+  /* Sla locatie op zodat andere modules hem kunnen lezen */
+  window._brLat = lat;
+  window._brLng = lng;
   setUserLocation(lat, lng);
   mapFlyTo(lat, lng, 12);
   hero.hidden = true;

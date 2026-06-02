@@ -230,38 +230,88 @@ export function openSignupModal() {
 
 /* ══ Groente & fruit confetti ════════════════════════════════════ */
 
+/* Regiospecifieke bedankteksten */
+const _REGIO = {
+  friesland:       { title: 'Tankewol!',            sub: 'Dyn tip helpt oare fytsers farske produkten fine.',              icon: '🐄' },
+  groningen:       { title: 'Haile dank!',           sub: 'Mooi dat je dit doorgeeft aan andere fietsers in Groningen.',   icon: '🌻' },
+  drenthe:         { title: 'Dankewel!',             sub: 'Nös, goed bezig! Jouw tip helpt andere fietsers.',             icon: '🌿' },
+  overijssel:      { title: "Da's top, maat!",       sub: 'Bedankt voor je tip uit Overijssel!',                          icon: '🌾' },
+  flevoland:       { title: 'Goed gedaan!',          sub: 'Jouw tip helpt andere fietsers verse producten te vinden.',    icon: '🥕' },
+  gelderland:      { title: 'Dank je wel!',          sub: 'Jouw tip helpt andere fietsers in de Gelderse natuur.',        icon: '🍎' },
+  utrecht:         { title: 'Echt top!',             sub: 'Gaaf dat je dit doorgeeft aan andere fietsers!',               icon: '🌱' },
+  'noord-holland': { title: 'Tof zeg, bedankt!',     sub: 'Gaaf dat je dit doorgeeft! Anderen fietsen er blij mee.',     icon: '🧀' },
+  'zuid-holland':  { title: 'Hartstikke bedankt!',   sub: 'Jouw tip helpt andere fietsers verse producten te vinden.',   icon: '🌷' },
+  zeeland:         { title: 'Dank joe woel!',         sub: 'Jouw tip helpt andere fietsers in het mooie Zeeland.',       icon: '🦞' },
+  'noord-brabant': { title: 'Ge zijt een schat!',    sub: 'Dikke merci! Jouw tip helpt andere fietsers in Brabant.',     icon: '🌾' },
+  limburg:         { title: 'Proficiat, daanke!',    sub: 'Jouw tip helpt andere fietsers in het heuvelland.',           icon: '🍇' },
+  default:         { title: 'Bedankt!',              sub: 'Jouw tip helpt andere fietsers verse producten te vinden.',   icon: '🌾' },
+};
+
+function _detectRegio(lat, lng) {
+  if (!lat || !lng) return 'default';
+  /* Volgorde van specifiek naar algemeen */
+  if (lat > 52.95 && lng > 6.4)                          return 'groningen';
+  if (lat > 52.7  && lng < 6.4)                          return 'friesland';
+  if (lat > 52.45 && lat < 53.0  && lng > 6.3)           return 'drenthe';
+  if (lat > 52.2  && lat < 52.8  && lng > 5.2 && lng < 6.05) return 'flevoland';
+  if (lat > 52.1  && lat < 52.85 && lng > 6.05)          return 'overijssel';
+  if (lat > 51.7  && lat < 52.5  && lng > 5.5)           return 'gelderland';
+  if (lat > 51.9  && lat < 52.35 && lng > 4.8 && lng < 5.55) return 'utrecht';
+  if (lat > 52.2  && lng > 4.45  && lng < 5.4)           return 'noord-holland';
+  if (lat > 51.7  && lat < 52.25 && lng > 3.85 && lng < 5.1) return 'zuid-holland';
+  if (lat < 51.75 && lng < 4.35)                         return 'zeeland';
+  if (lat < 51.8  && lng > 5.5)                          return 'limburg';
+  if (lat < 51.8)                                         return 'noord-brabant';
+  return 'default';
+}
+
 function _celebrate() {
   const EMOJIS = ['🥕','🍅','🥦','🌽','🍓','🍎','🍇','🥑','🍋','🥬','🫑','🥒','🍊','🫐','🍏','🥝','🍆','🧅','🥔','🌶️','🍑','🫒','🥜','🌿'];
+  const DURATION = 7500; // ms — langer hangen
+
+  /* Regioboodschap */
+  const regio = _detectRegio(window._brLat, window._brLng);
+  const msg   = _REGIO[regio] || _REGIO.default;
+
+  /* Confetti-wrapper */
   const wrap = document.createElement('div');
   wrap.className = 'emoji-burst';
   wrap.setAttribute('aria-hidden', 'true');
 
-  for (let i = 0; i < 48; i++) {
+  for (let i = 0; i < 55; i++) {
     const el = document.createElement('span');
-    const drift = (Math.random() - 0.5) * 260;
+    const drift = (Math.random() - 0.5) * 300;
     el.className   = 'emoji-flake';
     el.textContent = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
-    el.style.left  = `${2 + Math.random() * 96}vw`;
+    el.style.left  = `${1 + Math.random() * 98}vw`;
     el.style.setProperty('--drift', `${drift}px`);
-    el.style.animationDelay    = `${Math.random() * 1.4}s`;
-    el.style.animationDuration = `${2.2 + Math.random() * 2.2}s`;
-    el.style.fontSize = `${1.1 + Math.random() * 1.6}rem`;
+    el.style.animationDelay    = `${Math.random() * 2}s`;
+    el.style.animationDuration = `${3 + Math.random() * 2.5}s`;
+    el.style.fontSize = `${1.1 + Math.random() * 1.8}rem`;
     wrap.appendChild(el);
   }
 
-  /* Dankjewel-banner */
+  /* Dankjewel-banner met regiotekst */
   const banner = document.createElement('div');
   banner.className = 'bedankt-banner';
   banner.innerHTML = `
-    <span class="bedankt-banner-icon">🌾</span>
-    <div class="bedankt-banner-title">Bedankt!</div>
-    <div class="bedankt-banner-sub">Jouw tip helpt andere fietsers verse producten te vinden.</div>`;
+    <span class="bedankt-banner-icon">${msg.icon}</span>
+    <div class="bedankt-banner-title">${msg.title}</div>
+    <div class="bedankt-banner-sub">${msg.sub}</div>`;
 
   document.body.appendChild(wrap);
   document.body.appendChild(banner);
 
-  /* Opruimen na 4.5 seconden */
-  setTimeout(() => { wrap.remove(); banner.remove(); }, 4500);
+  /* Fade-out en opruimen */
+  setTimeout(() => {
+    wrap.style.transition   = 'opacity .8s';
+    banner.style.transition = 'opacity .8s, transform .8s';
+    wrap.style.opacity   = '0';
+    banner.style.opacity = '0';
+    banner.style.transform = 'translate(-50%,-50%) scale(.9)';
+  }, DURATION - 900);
+
+  setTimeout(() => { wrap.remove(); banner.remove(); }, DURATION);
 }
 
 /* ══ Generieke formulier-handler ════════════════════════════════ */

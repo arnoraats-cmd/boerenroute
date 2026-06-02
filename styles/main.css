@@ -1800,10 +1800,10 @@
   }
 
   @keyframes emojifall {
-    0%   { transform: translateY(0)     translateX(0)            rotate(0deg)   scale(1);   opacity: 1; }
-    20%  { opacity: 1; }
-    60%  { transform: translateY(60vh)  translateX(var(--drift)) rotate(320deg) scale(.85); opacity: .9; }
-    100% { transform: translateY(115vh) translateX(calc(var(--drift) * 1.4)) rotate(560deg) scale(.6); opacity: 0; }
+    0%   { transform: translateY(0)     translateX(0)                        rotate(0deg)   scale(1);   opacity: 1; }
+    15%  { opacity: 1; }
+    65%  { transform: translateY(65vh)  translateX(var(--drift))              rotate(340deg) scale(.88); opacity: .85; }
+    100% { transform: translateY(118vh) translateX(calc(var(--drift) * 1.5)) rotate(600deg) scale(.55); opacity: 0; }
   }
 
   /* Dankjewel-banner die boven de confetti verschijnt */
