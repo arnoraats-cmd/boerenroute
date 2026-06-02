@@ -541,6 +541,63 @@
     line-height: 1.55;
     margin: 0;
   }
+
+  /* Quote / testimonial */
+  .quote-block {
+    max-width: 680px;
+    margin: clamp(28px, 4vw, 44px) auto 0;
+    padding: clamp(24px, 3vw, 36px);
+    background: var(--amber-bg);
+    border-radius: var(--r-xl);
+    border: 1px solid color-mix(in srgb, var(--amber) 20%, transparent);
+    position: relative;
+    text-align: center;
+  }
+
+  .quote-mark {
+    position: absolute;
+    top: clamp(-8px, -1vw, -4px);
+    left: clamp(16px, 3vw, 28px);
+    font-family: var(--serif);
+    font-size: clamp(3.5rem, 8vw, 5rem);
+    line-height: 1;
+    color: var(--amber);
+    opacity: .35;
+    pointer-events: none;
+  }
+
+  .quote-text {
+    font-family: var(--serif);
+    font-size: clamp(16px, 2.4vw, 20px);
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0 0 18px;
+    position: relative;
+  }
+
+  .quote-author {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--t-sm);
+    color: var(--text-mid);
+  }
+
+  .quote-avatar {
+    font-size: 1.8rem;
+    line-height: 1;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 50%;
+    box-shadow: var(--sh-sm);
+  }
+
+  .quote-author strong { color: var(--green-dark); font-weight: 600; }
 }
 
 /* ══ KNOPPEN ════════════════════════════════════════════════════ */
