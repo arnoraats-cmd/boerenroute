@@ -231,24 +231,42 @@
 
         <div class="route-empty" id="routeEmpty">
           <div class="route-empty-icon">🚴</div>
-          <p>Je route is nog leeg.</p>
-          <p>Klik op <strong>+ Route</strong> bij een winkel.</p>
+          <p class="route-empty-title">Je route is nog leeg</p>
+          <p class="route-empty-hint">
+            Ga naar <strong>Kaart</strong> en klik op
+            <span class="route-empty-badge">+ Route</span>
+            bij een winkel om hem toe te voegen.
+          </p>
+          <button class="btn btn-ghost btn-sm route-empty-back" id="routeGoToKaart">
+            ← Terug naar de kaart
+          </button>
         </div>
 
         <ol class="route-stops" id="routeStops" aria-label="Route-stops"></ol>
 
         <div class="route-actions" id="routeActions" hidden>
-          <button class="btn btn-ghost" id="gpxBtn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            GPX downloaden
-          </button>
-          <a class="btn btn-ghost" id="mapsLink" href="#" target="_blank" rel="noopener noreferrer">
-            🗺️ Google Maps
+          <!-- Primaire actie: navigeer op de fiets -->
+          <a class="btn btn-green route-nav-btn" id="mapsLink" href="#"
+             target="_blank" rel="noopener noreferrer" aria-label="Open route in Google Maps op de fiets">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Navigeer op de fiets
           </a>
-          <button class="btn btn-ghost" id="shareBtn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-            Delen
-          </button>
+
+          <!-- Secundaire acties -->
+          <div class="route-actions-row">
+            <button class="btn btn-outline route-sec-btn" id="gpxBtn"
+                    aria-label="Download GPX-bestand voor Garmin, Komoot of Wahoo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              GPX downloaden
+              <span class="route-sec-sub">Garmin · Komoot · Wahoo</span>
+            </button>
+            <button class="btn btn-outline route-sec-btn" id="shareBtn"
+                    aria-label="Deel je route via WhatsApp of native delen">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              Delen
+              <span class="route-sec-sub">WhatsApp · kopieer link</span>
+            </button>
+          </div>
         </div>
 
       </section>

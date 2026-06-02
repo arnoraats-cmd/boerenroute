@@ -150,7 +150,6 @@ OSM-geladen winkels krijgen `id` vanaf 100 (zodat ze niet botsen met de handmati
 
 ## Belangrijke lessen uit v1 (niet opnieuw in trappen)
 
-- **Geen lekkerder.nl scrapen.** Concurrent, beschermd onder EU-databankenrecht, blokkeert bots. Locaties komen via Google Places (legaal) of crowdsourcing (tip-formulier).
 - **Bij bulk-toevoegen van shops:** altijd controleren dat de afsluitende `];` van de array intact blijft, en daarna een JS-syntaxcheck draaien. Dit ging twee keer mis ("Unexpected identifier").
 - **Geen database (Supabase) vóór er echte bezoekers zijn.** Reviews/favorieten leven nu in het geheugen; bouw persistente opslag pas wanneer er vraag naar is. De structuur moet het wél makkelijk maken om later toe te voegen.
 - **Geen `localStorage`/`sessionStorage`** als de app in een sandbox-preview draait — gebruik gewone JS-variabelen voor sessiestatus.

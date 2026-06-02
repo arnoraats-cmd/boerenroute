@@ -36,8 +36,13 @@ export function clearRoute() { _clear(); }
 function _add(shopId) {
   const shop = _allRef.find(s => s.id === shopId);
   if (!shop || isInRoute(shopId)) return;
+  const wasEmpty = _stops.length === 0;
   _stops.push(shop);
   _sync();
+  /* Schakel automatisch naar route-tab bij eerste stop */
+  if (wasEmpty) {
+    document.querySelector('.nav-btn[data-page="route"]')?.click();
+  }
 }
 
 function _remove(shopId) {

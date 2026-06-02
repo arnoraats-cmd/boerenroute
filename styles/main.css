@@ -1172,7 +1172,7 @@
 
   /* Lege staat */
   .route-empty {
-    padding: 48px 24px;
+    padding: 48px 24px 36px;
     text-align: center;
     color: var(--text-light);
     font-size: var(--t-sm);
@@ -1180,11 +1180,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
   }
 
-  .route-empty-icon { font-size: 3rem; opacity: .35; }
+  .route-empty-icon  { font-size: 3rem; opacity: .3; margin-bottom: 4px; }
+  .route-empty-title { font-size: var(--t-md); font-weight: 600; color: var(--text-mid); }
+  .route-empty-hint  { max-width: 240px; }
   .route-empty strong { color: var(--green-mid); }
+
+  .route-empty-badge {
+    display: inline-block;
+    background: var(--green-bg);
+    color: var(--green-dark);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    padding: 1px 7px;
+    border-radius: var(--r-full);
+    border: 1px solid rgba(39,80,10,.15);
+    white-space: nowrap;
+  }
+
+  .route-empty-back {
+    margin-top: 4px;
+    color: var(--text-light);
+  }
 
   /* Stop-lijst */
   .route-stops {
@@ -1265,21 +1284,72 @@
 
   .stop-rm:hover { background: rgba(163,45,45,.09); color: var(--red); }
 
-  /* Export-knoppen */
+  /* Export-knoppen — sticky onderaan het routepaneel */
   .route-actions {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    background: var(--bg-page);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -4px 18px rgba(0,0,0,.07);
+    padding: 14px 16px 18px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 12px 14px 16px;
-    border-top: 1px solid var(--border);
-    margin-top: auto;
+    gap: 10px;
   }
 
-  .route-actions .btn {
-    justify-content: flex-start;
+  /* Primaire navigeerknop */
+  .route-nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
-    width: 100%;
+    font-size: var(--t-md);
+    font-weight: 600;
+    padding: 13px 16px;
+    border-radius: var(--r);
+    text-align: center;
+  }
+
+  /* Rij met secundaire knoppen */
+  .route-actions-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .route-sec-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 10px 8px;
     font-size: var(--t-sm);
+    font-weight: 600;
+    border-radius: var(--r);
+    text-align: center;
+  }
+
+  .route-sec-sub {
+    font-size: var(--t-xs);
+    font-weight: 400;
+    color: var(--text-light);
+    line-height: 1.2;
+  }
+
+  /* btn-outline variant */
+  .btn-outline {
+    background: transparent;
+    color: var(--text-mid);
+    border: 1.5px solid var(--border-md);
+    transition: background var(--tf), border-color var(--tf), color var(--tf);
+  }
+
+  .btn-outline:hover {
+    background: var(--sand-dark);
+    border-color: var(--green-mid);
+    color: var(--green-dark);
   }
 
   /* Kleine variant van btn-ghost en btn-sm */

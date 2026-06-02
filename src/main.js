@@ -111,6 +111,11 @@ document.getElementById('signupLink')?.addEventListener('click', e => {
   openSignupModal();
 });
 
+/* ── Route-leeg: terug naar kaart-knop ───────────────────── */
+document.getElementById('routeGoToKaart')?.addEventListener('click', () => {
+  document.querySelector('.nav-btn[data-page="kaart"]')?.click();
+});
+
 /* ── Hero-elementen ──────────────────────────────────────── */
 const heroGpsBtn       = document.getElementById('heroGpsBtn');
 const heroSearchBtn    = document.getElementById('heroSearchBtn');

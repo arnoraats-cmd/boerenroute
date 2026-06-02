@@ -1,0 +1,27 @@
+﻿{
+    "seasonal":  false,
+    "desc":  "Versautomaat in Udenhout met Brabants Duingoed kaas, verse eieren, ijs en streekproducten.",
+    "address":  "Oude Bossche Baan 3, Udenhout",
+    "premium":  false,
+    "googleRating":  null,
+    "placeId":  null,
+    "type":  "automaat",
+    "tags":  [
+                 "zuivel",
+                 "eieren"
+             ],
+    "lng":  5.1298717,
+    "dagVers":  null,
+    "lat":  51.6378615,
+    "hours":  "dagelijks",
+    "emoji":  "🧀",
+    "products":  [
+                     "ambachtelijke kaas",
+                     "verse eieren",
+                     "ijs",
+                     "streekproducten"
+                 ],
+    "googleReviews":  null,
+    "name":  "Bij Boer Gijs",
+    "id":  200
+}
