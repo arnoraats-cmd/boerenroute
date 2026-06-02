@@ -184,6 +184,7 @@ function _applyLocation(lat, lng, name) {
   setUserLocation(lat, lng);
   mapFlyTo(lat, lng, 12);
   hero.hidden = true;
+  document.getElementById('voordelenBanner')?.setAttribute('hidden', '');
   document.getElementById('mainLayout')?.scrollIntoView({ behavior: 'smooth' });
   _showCrumb(name);
   _triggerOSM(lat, lng);
@@ -259,6 +260,7 @@ function _showCrumb(name) {
     const osmInd = document.getElementById('osmIndicator');
     if (osmInd) osmInd.hidden = true;
     hero.hidden = false;
+    document.getElementById('voordelenBanner')?.removeAttribute('hidden');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }

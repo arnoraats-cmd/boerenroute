@@ -87,26 +87,35 @@
       <div class="hero-blob blob-2"></div>
       <div class="hero-blob blob-3"></div>
       <div class="hero-grain"></div>
+      <!-- Decoratieve iconen -->
+      <div class="hero-deco" aria-hidden="true">
+        <span class="hero-deco-item" style="top:12%;left:6%;font-size:2.2rem;opacity:.13;transform:rotate(-15deg)">🥕</span>
+        <span class="hero-deco-item" style="top:22%;right:8%;font-size:1.8rem;opacity:.10;transform:rotate(12deg)">🧀</span>
+        <span class="hero-deco-item" style="bottom:28%;left:4%;font-size:1.6rem;opacity:.09;transform:rotate(8deg)">🍎</span>
+        <span class="hero-deco-item" style="bottom:18%;right:5%;font-size:2rem;opacity:.12;transform:rotate(-8deg)">🥛</span>
+        <span class="hero-deco-item" style="top:40%;left:2%;font-size:1.4rem;opacity:.08;transform:rotate(20deg)">🌿</span>
+        <span class="hero-deco-item" style="top:8%;right:15%;font-size:1.5rem;opacity:.09;transform:rotate(-5deg)">🥚</span>
+      </div>
     </div>
 
     <!-- Inhoud -->
     <div class="hero-inner">
       <div class="hero-badge" aria-hidden="true">
-        <span>🌿</span> 94 geverifieerde locaties &middot; altijd gratis
+        <span>🌿</span> Gratis &middot; geen account &middot; privacyvriendelijk
       </div>
 
       <h1 class="hero-title">
-        Verse producten,<br>
-        <em>rechtstreeks</em> van de boer
+        Vers van de boer,<br>
+        <em>om de hoek</em> bij jou.
       </h1>
 
       <p class="hero-sub">
-        Vind boerderijwinkels, eierautomaten en zelfpluktuinen bij jou in de buurt.<br>
-        Plan er een fietstocht omheen.
+        Ontdek boerderijwinkels, eierautomaten en zelfpluktuinen bij jou in de buurt.<br>
+        Plan er een fietstocht omheen &mdash; gratis, altijd en overal in Nederland.
       </p>
 
       <div class="hero-actions">
-        <button class="btn btn-primary" id="heroGpsBtn">
+        <button class="btn btn-primary hero-btn-main" id="heroGpsBtn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="9" stroke-dasharray="3 0" opacity=".3"/></svg>
           Vind winkels bij mij
         </button>
@@ -123,12 +132,27 @@
         <button class="btn btn-primary" id="heroSearchSubmit">Zoeken</button>
       </div>
 
-      <div class="hero-stats" role="list">
-        <span role="listitem"><strong>7</strong> provincies</span>
-        <span class="stat-sep" aria-hidden="true">·</span>
-        <span role="listitem"><strong>5</strong> categorieën</span>
-        <span class="stat-sep" aria-hidden="true">·</span>
-        <span role="listitem">op de <strong>fiets</strong></span>
+      <!-- Vertrouwens-stats -->
+      <div class="hero-trust" role="list" aria-label="Feiten over Boerenroute">
+        <div class="hero-trust-item" role="listitem">
+          <span class="hero-trust-num">241+</span>
+          <span class="hero-trust-label">geverifieerde locaties</span>
+        </div>
+        <div class="hero-trust-sep" aria-hidden="true"></div>
+        <div class="hero-trust-item" role="listitem">
+          <span class="hero-trust-num">12</span>
+          <span class="hero-trust-label">provincies</span>
+        </div>
+        <div class="hero-trust-sep" aria-hidden="true"></div>
+        <div class="hero-trust-item" role="listitem">
+          <span class="hero-trust-num">5</span>
+          <span class="hero-trust-label">categorieën</span>
+        </div>
+        <div class="hero-trust-sep" aria-hidden="true"></div>
+        <div class="hero-trust-item" role="listitem">
+          <span class="hero-trust-num">€0</span>
+          <span class="hero-trust-label">altijd gratis</span>
+        </div>
       </div>
     </div>
 
@@ -137,6 +161,32 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 72" preserveAspectRatio="none">
         <path d="M0,36 C240,72 480,0 720,36 C960,72 1200,12 1440,44 L1440,72 L0,72 Z" fill="#F7F3EC"/>
       </svg>
+    </div>
+  </section>
+
+  <!-- ══ VOORDELEN (alleen zichtbaar voor locatie-keuze) ══════════ -->
+  <section class="voordelen" id="voordelenBanner" aria-label="Waarom Boerenroute">
+    <div class="voordelen-inner">
+      <div class="voordeel-card">
+        <span class="voordeel-icon">🌱</span>
+        <strong>Lokaal &amp; vers</strong>
+        <p>Rechtstreeks van de boer — geen supermarkt, geen tussenpersoon.</p>
+      </div>
+      <div class="voordeel-card">
+        <span class="voordeel-icon">🚴</span>
+        <strong>Op de fiets</strong>
+        <p>Plan je eigen boerentocht langs meerdere stops. GPX-download voor je GPS.</p>
+      </div>
+      <div class="voordeel-card">
+        <span class="voordeel-icon">🗂️</span>
+        <strong>Spaar stempels</strong>
+        <p>Bezoek winkels en verdien stempels. Haal een diploma voor de kinderen.</p>
+      </div>
+      <div class="voordeel-card">
+        <span class="voordeel-icon">🔒</span>
+        <strong>Privacyvriendelijk</strong>
+        <p>Geen account, geen cookies, geen trackers. Gewoon gratis gebruiken.</p>
+      </div>
     </div>
   </section>
 
@@ -196,8 +246,10 @@
       <section class="map-section" aria-label="Kaart met locaties">
         <div id="map" class="map-container">
           <div class="map-placeholder" aria-hidden="true">
-            <span>🗺️</span>
-            <p>Kaart wordt geladen…</p>
+            <span class="map-placeholder-icon">🌾</span>
+            <p class="map-placeholder-text">
+              Kaart laden<span class="map-placeholder-dots"></span>
+            </p>
           </div>
         </div>
       </section>

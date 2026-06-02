@@ -401,17 +401,57 @@
     box-shadow: 0 0 0 3px rgba(186,117,23,.25), 0 4px 20px rgba(0,0,0,.22);
   }
 
-  .hero-stats {
+  /* Decoratieve achtergrond-emoji's */
+  .hero-deco { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  .hero-deco-item { position: absolute; }
+
+  /* Grote primaire CTA */
+  .hero-btn-main { font-size: clamp(15px,2vw,17px); padding: 14px 28px; gap: 10px; }
+
+  /* Trust-stats vervangt de oude hero-stats */
+  .hero-trust {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: var(--t-sm);
-    color: rgba(255,255,255,.52);
+    gap: 0;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: var(--r-xl);
+    padding: 14px 20px;
     animation: fade-up .55s var(--ease) .32s both;
+    flex-wrap: wrap;
   }
 
-  .hero-stats strong { color: rgba(255,255,255,.82); font-weight: 600; }
-  .stat-sep { opacity: .4; font-size: 10px; }
+  .hero-trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    flex: 1;
+    min-width: 72px;
+    padding: 4px 8px;
+  }
+
+  .hero-trust-num {
+    font-family: var(--serif);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .hero-trust-label {
+    font-size: var(--t-xs);
+    color: rgba(255,255,255,.55);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .hero-trust-sep {
+    width: 1px;
+    height: 36px;
+    background: rgba(255,255,255,.15);
+    flex-shrink: 0;
+  }
 
   /* Wave */
   .hero-wave {
@@ -424,6 +464,61 @@
   }
 
   .hero-wave svg { width: 100%; display: block; }
+}
+
+/* ══ VOORDELEN-SECTIE ════════════════════════════════════════════ */
+@layer components {
+  .voordelen {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: clamp(32px, 5vw, 56px) var(--pad);
+  }
+
+  .voordelen-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+  }
+
+  .voordeel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 22px 20px;
+    background: var(--sand);
+    border-radius: var(--r-lg);
+    border: 1px solid var(--border);
+    transition: box-shadow var(--tb), transform var(--tb);
+  }
+
+  .voordeel-card:hover {
+    box-shadow: var(--sh-md);
+    transform: translateY(-2px);
+  }
+
+  .voordeel-icon {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+
+  .voordeel-card strong {
+    font-family: var(--serif);
+    font-size: var(--t-md);
+    font-weight: 700;
+    color: var(--green-dark);
+    line-height: 1.2;
+  }
+
+  .voordeel-card p {
+    font-size: var(--t-sm);
+    color: var(--text-mid);
+    line-height: 1.55;
+    margin: 0;
+  }
 }
 
 /* ══ KNOPPEN ════════════════════════════════════════════════════ */
@@ -720,9 +815,48 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    color: var(--text-light);
+    gap: 16px;
+    background: linear-gradient(135deg, var(--green-bg) 0%, #d9ecca 50%, var(--green-bg) 100%);
+    background-size: 200% 200%;
+    animation: mapShimmer 2.5s ease-in-out infinite;
+    color: var(--green-dark);
+  }
+
+  @keyframes mapShimmer {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .map-placeholder-icon {
+    font-size: 3.5rem;
+    animation: mapBounce 1.8s ease-in-out infinite;
+  }
+
+  @keyframes mapBounce {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-8px); }
+  }
+
+  .map-placeholder-text {
     font-size: var(--t-sm);
+    font-weight: 500;
+    color: var(--green-mid);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .map-placeholder-dots::after {
+    content: '';
+    animation: mapDots 1.4s steps(4,end) infinite;
+  }
+  @keyframes mapDots {
+    0%   { content: ''; }
+    25%  { content: '.'; }
+    50%  { content: '..'; }
+    75%  { content: '...'; }
+    100% { content: ''; }
   }
 
   .map-placeholder span { font-size: 3rem; opacity: .35; }
@@ -2336,8 +2470,12 @@
 
   @media (max-width: 480px) {
     .hero { padding-bottom: clamp(88px, 18vw, 130px); }
-    .hero-actions { flex-direction: column; align-items: stretch; width: 100%; max-width: 320px; }
-    .hero-stats   { flex-wrap: wrap; justify-content: center; gap: 7px; }
+    .hero-actions       { flex-direction: column; align-items: stretch; width: 100%; max-width: 320px; }
+    .hero-trust         { gap: 0; padding: 10px 12px; }
+    .hero-trust-sep     { height: 24px; }
+    .hero-trust-label   { font-size: .6rem; }
+    .voordelen-inner    { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .voordeel-card      { padding: 16px 14px; }
     .footer-cols  { flex-direction: column; }
     .adverteer-grid { grid-template-columns: 1fr; }
     .modal-footer   { flex-direction: column; }
