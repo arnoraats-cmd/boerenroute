@@ -1,7 +1,7 @@
-﻿[
+[
     {
         "id":  1,
-        "emoji":  "ðŸŒ±",
+        "emoji":  "🌱",
         "name":  "Boer in Natuur",
         "type":  "winkel",
         "premium":  false,
@@ -26,7 +26,7 @@
     },
     {
         "id":  2,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "De Volkelse Hooiberg",
         "type":  "winkel",
         "premium":  false,
@@ -53,7 +53,7 @@
     },
     {
         "id":  3,
-        "emoji":  "ðŸ›’",
+        "emoji":  "🛒",
         "name":  "Bram\u0027s Hofke",
         "type":  "winkel",
         "premium":  false,
@@ -80,7 +80,7 @@
     },
     {
         "id":  4,
-        "emoji":  "ðŸ¥š",
+        "emoji":  "🥚",
         "name":  "Cuppen-Ploegmakers",
         "type":  "winkel",
         "premium":  false,
@@ -104,7 +104,7 @@
     },
     {
         "id":  5,
-        "emoji":  "ðŸ§€",
+        "emoji":  "🧀",
         "name":  "Siebe\u0027s Kaas",
         "type":  "winkel",
         "premium":  false,
@@ -131,7 +131,7 @@
     },
     {
         "id":  6,
-        "emoji":  "ðŸ“",
+        "emoji":  "🍓",
         "name":  "Lusthoffruit van den Biggelaar",
         "type":  "automaat",
         "premium":  false,
@@ -155,7 +155,7 @@
     },
     {
         "id":  7,
-        "emoji":  "ðŸ—",
+        "emoji":  "🐗",
         "name":  "Het Maashorst Varken",
         "type":  "winkel",
         "premium":  false,
@@ -180,7 +180,7 @@
     },
     {
         "id":  8,
-        "emoji":  "ðŸ",
+        "emoji":  "🐐",
         "name":  "Op \u0027t Maxend",
         "type":  "winkel",
         "premium":  false,
@@ -207,7 +207,7 @@
     },
     {
         "id":  9,
-        "emoji":  "ðŸ„",
+        "emoji":  "🍄",
         "name":  "Muchamp â€” Versautomaat",
         "type":  "automaat",
         "premium":  false,
@@ -235,7 +235,7 @@
     },
     {
         "id":  10,
-        "emoji":  "ðŸª™",
+        "emoji":  "🪙",
         "name":  "Speelboerderij Het Gouden Woud",
         "type":  "onderweg",
         "premium":  false,
@@ -262,7 +262,7 @@
     },
     {
         "id":  11,
-        "emoji":  "ðŸ§€",
+        "emoji":  "🧀",
         "name":  "De Walhoeve boerderijwinkel",
         "type":  "winkel",
         "premium":  false,
@@ -291,7 +291,7 @@
     },
     {
         "id":  12,
-        "emoji":  "ðŸ¥š",
+        "emoji":  "🥚",
         "name":  "Eierautomaat De Leeuw De Laat",
         "type":  "automaat",
         "premium":  false,
@@ -319,7 +319,7 @@
     },
     {
         "id":  13,
-        "emoji":  "ðŸ¥©",
+        "emoji":  "🥩",
         "name":  "Boerderijwinkel Familie van den Kieboom",
         "type":  "winkel",
         "premium":  false,
@@ -347,7 +347,7 @@
     },
     {
         "id":  14,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Boerderijwinkel de Annahoeve",
         "type":  "winkel",
         "premium":  false,
@@ -376,7 +376,7 @@
     },
     {
         "id":  15,
-        "emoji":  "ðŸ§€",
+        "emoji":  "🧀",
         "name":  "Landwinkel Hop \u0026 Zo",
         "type":  "winkel",
         "premium":  false,
@@ -405,7 +405,7 @@
     },
     {
         "id":  16,
-        "emoji":  "ðŸ§€",
+        "emoji":  "🧀",
         "name":  "Boerderijwinkel Hoefhuys",
         "type":  "winkel",
         "premium":  false,
@@ -433,7 +433,7 @@
     },
     {
         "id":  17,
-        "emoji":  "ðŸ¥š",
+        "emoji":  "🥚",
         "name":  "Vermeulen Eieren",
         "type":  "automaat",
         "premium":  false,
@@ -456,7 +456,7 @@
     },
     {
         "id":  18,
-        "emoji":  "ðŸ¥š",
+        "emoji":  "🥚",
         "name":  "Eibaar",
         "type":  "automaat",
         "premium":  false,
@@ -481,7 +481,7 @@
     },
     {
         "id":  19,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Boerderijautomaat \u0027Kersvers\u0027",
         "type":  "automaat",
         "premium":  false,
@@ -510,7 +510,7 @@
     },
     {
         "id":  20,
-        "emoji":  "ðŸ“",
+        "emoji":  "🍓",
         "name":  "Asperges, aardbeien \u0026 eieren automaat",
         "type":  "automaat",
         "premium":  false,
@@ -539,7 +539,7 @@
     },
     {
         "id":  21,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Melkveehouderij Van Gastel",
         "type":  "automaat",
         "premium":  false,
@@ -569,7 +569,7 @@
     },
     {
         "id":  22,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Ulicoten",
         "type":  "automaat",
         "premium":  false,
@@ -595,7 +595,7 @@
     },
     {
         "id":  23,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap bij Boer Bloem",
         "type":  "automaat",
         "premium":  false,
@@ -620,7 +620,7 @@
     },
     {
         "id":  24,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap de Hugtenhoeve",
         "type":  "automaat",
         "premium":  false,
@@ -650,7 +650,7 @@
     },
     {
         "id":  25,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap de Leegvelder",
         "type":  "automaat",
         "premium":  false,
@@ -675,7 +675,7 @@
     },
     {
         "id":  26,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Boerderijwinkel van der Heijden",
         "type":  "winkel",
         "premium":  false,
@@ -703,7 +703,7 @@
     },
     {
         "id":  27,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "A2A2 De Puurste Zuivel",
         "type":  "winkel",
         "premium":  false,
@@ -733,7 +733,7 @@
     },
     {
         "id":  28,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Boerderijwinkel Ons Jos",
         "type":  "winkel",
         "premium":  false,
@@ -764,7 +764,7 @@
     },
     {
         "id":  29,
-        "emoji":  "ðŸ¥©",
+        "emoji":  "🥩",
         "name":  "Boerderijwinkel van Boer Jos",
         "type":  "winkel",
         "premium":  false,
@@ -788,7 +788,7 @@
     },
     {
         "id":  30,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Boerderijwinkel Piet van Meintjes Hoeve",
         "type":  "winkel",
         "premium":  false,
@@ -818,7 +818,7 @@
     },
     {
         "id":  31,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Biologische boerderij \u0027t Schop",
         "type":  "winkel",
         "premium":  false,
@@ -843,7 +843,7 @@
     },
     {
         "id":  32,
-        "emoji":  "ðŸ„",
+        "emoji":  "🐄",
         "name":  "De Genneper Hoeve",
         "type":  "winkel",
         "premium":  false,
@@ -873,7 +873,7 @@
     },
     {
         "id":  33,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "BOERDEREIKE",
         "type":  "winkel",
         "premium":  false,
@@ -902,7 +902,7 @@
     },
     {
         "id":  34,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Boerderijwinkel De Kruisbrink",
         "type":  "winkel",
         "premium":  false,
@@ -934,7 +934,7 @@
     },
     {
         "id":  35,
-        "emoji":  "ðŸŽ",
+        "emoji":  "🍎",
         "name":  "Fruitbedrijf Horstink",
         "type":  "winkel",
         "premium":  false,
@@ -963,7 +963,7 @@
     },
     {
         "id":  36,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Biologische Boerderij Veld en Beek",
         "type":  "winkel",
         "premium":  false,
@@ -990,7 +990,7 @@
     },
     {
         "id":  37,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Biologische boerderijwinkel De Nieuwenburgt",
         "type":  "winkel",
         "premium":  false,
@@ -1018,7 +1018,7 @@
     },
     {
         "id":  38,
-        "emoji":  "ðŸ§€",
+        "emoji":  "🧀",
         "name":  "Landwinkel IJsseloord",
         "type":  "winkel",
         "premium":  false,
@@ -1049,7 +1049,7 @@
     },
     {
         "id":  39,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Wilp / boerderij de Elshof",
         "type":  "automaat",
         "premium":  false,
@@ -1080,7 +1080,7 @@
     },
     {
         "id":  40,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Gelkenhorst",
         "type":  "automaat",
         "premium":  false,
@@ -1107,7 +1107,7 @@
     },
     {
         "id":  41,
-        "emoji":  "ðŸ¦",
+        "emoji":  "🍦",
         "name":  "Blij van de Boerderij",
         "type":  "automaat",
         "premium":  false,
@@ -1136,7 +1136,7 @@
     },
     {
         "id":  42,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Boerderijwinkel \u0027t Muldershuis",
         "type":  "automaat",
         "premium":  false,
@@ -1166,7 +1166,7 @@
     },
     {
         "id":  43,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "De Melktap Culemborg",
         "type":  "automaat",
         "premium":  false,
@@ -1197,7 +1197,7 @@
     },
     {
         "id":  44,
-        "emoji":  "ðŸŽ",
+        "emoji":  "🍎",
         "name":  "Country Store Green Ham",
         "type":  "winkel",
         "premium":  false,
@@ -1228,7 +1228,7 @@
     },
     {
         "id":  45,
-        "emoji":  "ðŸ’",
+        "emoji":  "🍒",
         "name":  "Country Store New Slagmaat",
         "type":  "winkel",
         "premium":  false,
@@ -1257,7 +1257,7 @@
     },
     {
         "id":  46,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Boerderijwinkel de Groenekan",
         "type":  "winkel",
         "premium":  false,
@@ -1285,7 +1285,7 @@
     },
     {
         "id":  47,
-        "emoji":  "ðŸŽ",
+        "emoji":  "🍎",
         "name":  "Plattelandswinkel De Haarse Gaard",
         "type":  "winkel",
         "premium":  false,
@@ -1312,7 +1312,7 @@
     },
     {
         "id":  48,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Verse melk automaat (Meerndijk)",
         "type":  "automaat",
         "premium":  false,
@@ -1340,7 +1340,7 @@
     },
     {
         "id":  49,
-        "emoji":  "ðŸ¥š",
+        "emoji":  "🥚",
         "name":  "Boer-Der-EI-Automaat",
         "type":  "automaat",
         "premium":  false,
@@ -1369,7 +1369,7 @@
     },
     {
         "id":  50,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Boerderijautomaat Waverveen",
         "type":  "automaat",
         "premium":  false,
@@ -1401,7 +1401,7 @@
     },
     {
         "id":  51,
-        "emoji":  "ðŸ§€",
+        "emoji":  "🧀",
         "name":  "Kaasautomaat Middelbroek",
         "type":  "automaat",
         "premium":  false,
@@ -1424,7 +1424,7 @@
     },
     {
         "id":  52,
-        "emoji":  "ðŸ¥©",
+        "emoji":  "🥩",
         "name":  "Landbouwbedrijf \u0026 boerderijwinkel Grooten",
         "type":  "winkel",
         "premium":  false,
@@ -1453,7 +1453,7 @@
     },
     {
         "id":  53,
-        "emoji":  "ðŸ¥š",
+        "emoji":  "🥚",
         "name":  "Boerderij Janssen Spaubeek",
         "type":  "automaat",
         "premium":  false,
@@ -1485,7 +1485,7 @@
     },
     {
         "id":  54,
-        "emoji":  "ðŸ¥©",
+        "emoji":  "🥩",
         "name":  "Boerderijwinkel Fromberg",
         "type":  "winkel",
         "premium":  false,
@@ -1513,7 +1513,7 @@
     },
     {
         "id":  55,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Biologische Tuinderij de Waog",
         "type":  "winkel",
         "premium":  false,
@@ -1542,7 +1542,7 @@
     },
     {
         "id":  56,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap \u0026 kaasautomaat Maria Hoop",
         "type":  "automaat",
         "premium":  false,
@@ -1571,7 +1571,7 @@
     },
     {
         "id":  57,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Farmshop Mechelen",
         "type":  "automaat",
         "premium":  false,
@@ -1601,7 +1601,7 @@
     },
     {
         "id":  58,
-        "emoji":  "ðŸ¥š",
+        "emoji":  "🥚",
         "name":  "Mergellandei",
         "type":  "automaat",
         "premium":  false,
@@ -1624,7 +1624,7 @@
     },
     {
         "id":  59,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Boerderijwinkel Smit\u0027s Boer\u0026Goed",
         "type":  "winkel",
         "premium":  false,
@@ -1651,7 +1651,7 @@
     },
     {
         "id":  60,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap \u0026 boerderijwinkel Durgerdam",
         "type":  "automaat",
         "premium":  false,
@@ -1677,7 +1677,7 @@
     },
     {
         "id":  61,
-        "emoji":  "ðŸ¦",
+        "emoji":  "🍦",
         "name":  "Boerderijwinkel Zijper Zuivel",
         "type":  "winkel",
         "premium":  false,
@@ -1706,7 +1706,7 @@
     },
     {
         "id":  62,
-        "emoji":  "ðŸ“",
+        "emoji":  "🍓",
         "name":  "by Broersen",
         "type":  "winkel",
         "premium":  false,
@@ -1734,7 +1734,7 @@
     },
     {
         "id":  63,
-        "emoji":  "ðŸ¦",
+        "emoji":  "🍦",
         "name":  "Melktap De Hoef",
         "type":  "automaat",
         "premium":  false,
@@ -1762,7 +1762,7 @@
     },
     {
         "id":  64,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Grosthuizen",
         "type":  "automaat",
         "premium":  false,
@@ -1789,7 +1789,7 @@
     },
     {
         "id":  65,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "de Melktap (Broekergouw)",
         "type":  "automaat",
         "premium":  false,
@@ -1812,7 +1812,7 @@
     },
     {
         "id":  66,
-        "emoji":  "ðŸ„",
+        "emoji":  "🐄",
         "name":  "Hoeve Biesland",
         "type":  "winkel",
         "premium":  false,
@@ -1844,7 +1844,7 @@
     },
     {
         "id":  67,
-        "emoji":  "ðŸ„",
+        "emoji":  "🐄",
         "name":  "Farm Het Lansingerland",
         "type":  "winkel",
         "premium":  false,
@@ -1872,7 +1872,7 @@
     },
     {
         "id":  68,
-        "emoji":  "ðŸŽ",
+        "emoji":  "🍎",
         "name":  "Zorgboerderij The Buytenhof",
         "type":  "winkel",
         "premium":  false,
@@ -1900,7 +1900,7 @@
     },
     {
         "id":  69,
-        "emoji":  "ðŸ§€",
+        "emoji":  "🧀",
         "name":  "Boerderij Nellesteijn",
         "type":  "winkel",
         "premium":  false,
@@ -1928,7 +1928,7 @@
     },
     {
         "id":  70,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Boerderijautomaat Elenbaas",
         "type":  "automaat",
         "premium":  false,
@@ -1957,7 +1957,7 @@
     },
     {
         "id":  71,
-        "emoji":  "ðŸŽ",
+        "emoji":  "🍎",
         "name":  "Maatschap Van Binsbergen",
         "type":  "automaat",
         "premium":  false,
@@ -1986,7 +1986,7 @@
     },
     {
         "id":  72,
-        "emoji":  "ðŸ’",
+        "emoji":  "🍒",
         "name":  "Fruitautomaat Puur Kattendijke",
         "type":  "automaat",
         "premium":  false,
@@ -2011,7 +2011,7 @@
     },
     {
         "id":  73,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Boerderijwinkel Erve \u0027t Overweg",
         "type":  "automaat",
         "premium":  false,
@@ -2041,7 +2041,7 @@
     },
     {
         "id":  74,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap de Beekhoek",
         "type":  "automaat",
         "premium":  false,
@@ -2066,7 +2066,7 @@
     },
     {
         "id":  75,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Weleveld (Huiskes-Beltman)",
         "type":  "automaat",
         "premium":  false,
@@ -2093,7 +2093,7 @@
     },
     {
         "id":  76,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap \u0027t Melkhuuske",
         "type":  "automaat",
         "premium":  false,
@@ -2116,7 +2116,7 @@
     },
     {
         "id":  77,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Boerderijwinkel Berkenwolde Silo",
         "type":  "winkel",
         "premium":  false,
@@ -2148,7 +2148,7 @@
     },
     {
         "id":  78,
-        "emoji":  "ðŸ¥¬",
+        "emoji":  "🥬",
         "name":  "Country Store Versluis",
         "type":  "winkel",
         "premium":  false,
@@ -2175,7 +2175,7 @@
     },
     {
         "id":  79,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Hoeve Vredeveld",
         "type":  "winkel",
         "premium":  false,
@@ -2203,7 +2203,7 @@
     },
     {
         "id":  80,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Zuidveld",
         "type":  "automaat",
         "premium":  false,
@@ -2229,7 +2229,7 @@
     },
     {
         "id":  81,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Geesbrug",
         "type":  "automaat",
         "premium":  false,
@@ -2253,7 +2253,7 @@
     },
     {
         "id":  82,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Grolloo",
         "type":  "automaat",
         "premium":  false,
@@ -2282,7 +2282,7 @@
     },
     {
         "id":  83,
-        "emoji":  "ðŸ¦",
+        "emoji":  "🍦",
         "name":  "Melktap Hunse (Rustpunt)",
         "type":  "automaat",
         "premium":  false,
@@ -2309,7 +2309,7 @@
     },
     {
         "id":  84,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melk Delicatesse Zuidveld",
         "type":  "automaat",
         "premium":  false,
@@ -2338,7 +2338,7 @@
     },
     {
         "id":  85,
-        "emoji":  "ðŸ§ˆ",
+        "emoji":  "🧈",
         "name":  "Melktap Siegerswoude",
         "type":  "automaat",
         "premium":  false,
@@ -2367,7 +2367,7 @@
     },
     {
         "id":  86,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "WÃ¢ldpleats",
         "type":  "winkel",
         "premium":  false,
@@ -2399,7 +2399,7 @@
     },
     {
         "id":  87,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Melktap Trimunt",
         "type":  "automaat",
         "premium":  false,
@@ -2426,7 +2426,7 @@
     },
     {
         "id":  88,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Biologische melktap Twijzel",
         "type":  "automaat",
         "premium":  false,
@@ -2451,7 +2451,7 @@
     },
     {
         "id":  89,
-        "emoji":  "ðŸ¦",
+        "emoji":  "🍦",
         "name":  "Melktap de Hemmen",
         "type":  "automaat",
         "premium":  false,
@@ -2481,7 +2481,7 @@
     },
     {
         "id":  90,
-        "emoji":  "ðŸ¥©",
+        "emoji":  "🥩",
         "name":  "Hoeve Zuidwending",
         "type":  "winkel",
         "premium":  false,
@@ -2512,7 +2512,7 @@
     },
     {
         "id":  91,
-        "emoji":  "ðŸ¥š",
+        "emoji":  "🥚",
         "name":  "Maatschap de Wie-Len",
         "type":  "automaat",
         "premium":  false,
@@ -2540,7 +2540,7 @@
     },
     {
         "id":  92,
-        "emoji":  "ðŸ¥©",
+        "emoji":  "🥩",
         "name":  "Hoeve Middelhorst",
         "type":  "winkel",
         "premium":  false,
@@ -2565,7 +2565,7 @@
     },
     {
         "id":  93,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Zandster Boerenzuivel",
         "type":  "winkel",
         "premium":  false,
@@ -2594,7 +2594,7 @@
     },
     {
         "id":  94,
-        "emoji":  "ðŸ¥›",
+        "emoji":  "🥛",
         "name":  "Zuivelboerderij De Driesprong",
         "type":  "winkel",
         "premium":  false,
