@@ -8,6 +8,7 @@ import { renderSeasonPage }                  from './season.js';
 import { initBoodschappenlijst }             from './boodschappenlijst.js';
 import { initStempelkaart, renderStempelkaart } from './stempelkaart.js';
 import { getCount }                          from './stamps.js';
+import { renderBlog }                        from './blog.js';
 
 /* ── Kaart + modals direct initialiseren ─────────────────── */
 initMap({ lat: DEFAULT.lat, lng: DEFAULT.lng });
@@ -63,6 +64,7 @@ const SECTIONS = {
   boodschappen:  'boodschappenSection',
   stempelkaart:  'stempelkaartSection',
   seizoen:       'seizoenSection',
+  verhalen:      'verhalenSection',
   over:          'overSection',
 };
 
@@ -92,8 +94,26 @@ document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
 
     if (page === 'seizoen')       renderSeasonPage('seizoenSection');
     if (page === 'stempelkaart') renderStempelkaart('stempelkaartSection');
+    if (page === 'verhalen')     renderBlog('verhalenSection');
     if (isMapPage) requestAnimationFrame(() => invalidateSize());
   });
+});
+
+/* Deep-link: ?verhaal=slug opent direct de Verhalen-tab */
+if (new URLSearchParams(location.search).has('verhaal')) {
+  document.querySelector('.nav-btn[data-page="verhalen"]')?.click();
+}
+
+/* Footer-hashlinks (#verhalen, #seizoen, …) schakelen naar de juiste tab */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  const page = a.getAttribute('href').slice(1);
+  if (SECTIONS[page]) {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(`.nav-btn[data-page="${page}"]`)?.click();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 });
 
 /* ── Drijvende tip-knop (mobiel) ─────────────────────────── */

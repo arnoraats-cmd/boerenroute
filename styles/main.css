@@ -767,6 +767,160 @@
   }
 }
 
+/* ══ VERHALEN / BLOG ═════════════════════════════════════════════ */
+@layer components {
+  .verhalen-section { background: var(--sand); min-height: 100vh; }
+
+  .blog-page {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: clamp(28px, 4vw, 52px) var(--pad);
+  }
+
+  .blog-header { text-align: center; margin-bottom: 32px; }
+  .blog-title {
+    font-family: var(--serif);
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+  }
+  .blog-sub { font-size: var(--t-md); color: var(--text-mid); }
+
+  /* Overzicht-grid */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .blog-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--tb), transform var(--tb);
+  }
+  .blog-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+  .blog-card:focus-visible { outline: 2px solid var(--green-mid); outline-offset: 2px; }
+
+  .blog-card-emoji {
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 28px 0;
+    background: linear-gradient(160deg, var(--green-bg) 0%, #dcecca 100%);
+  }
+
+  .blog-card-body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+
+  .blog-card-meta {
+    font-size: var(--t-xs);
+    color: var(--text-light);
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .blog-card-title {
+    font-family: var(--serif);
+    font-size: var(--t-lg);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+
+  .blog-card-excerpt {
+    font-size: var(--t-sm);
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin-bottom: 14px;
+    flex: 1;
+  }
+
+  .blog-card-link {
+    font-size: var(--t-sm);
+    font-weight: 600;
+    color: var(--green-mid);
+  }
+
+  /* Artikel */
+  .blog-article {
+    background: var(--white);
+    border-radius: var(--r-xl);
+    border: 1px solid var(--border);
+    padding: clamp(24px, 4vw, 48px);
+    box-shadow: var(--sh-sm);
+  }
+
+  .blog-back {
+    background: none;
+    border: none;
+    color: var(--green-mid);
+    font-size: var(--t-sm);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .blog-back:hover { color: var(--green-dark); }
+
+  .blog-article-header { text-align: center; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+  .blog-article-emoji { font-size: 3rem; margin-bottom: 12px; }
+  .blog-article-meta {
+    font-size: var(--t-xs);
+    color: var(--text-light);
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .blog-article-title {
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: var(--green-dark);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .blog-article-lead {
+    font-size: var(--t-md);
+    color: var(--text-mid);
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .blog-article-body { font-size: var(--t-md); line-height: 1.75; color: var(--text); }
+  .blog-article-body h2 {
+    font-family: var(--serif);
+    font-size: var(--t-lg);
+    font-weight: 700;
+    color: var(--green-dark);
+    margin: 28px 0 10px;
+  }
+  .blog-article-body p  { margin-bottom: 16px; }
+  .blog-article-body ul { margin: 0 0 16px; padding-left: 22px; }
+  .blog-article-body li { margin-bottom: 6px; }
+
+  .blog-article-footer {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media (max-width: 480px) {
+    .blog-grid { grid-template-columns: 1fr; }
+    .blog-article-footer .btn { width: 100%; justify-content: center; }
+  }
+}
+
 /* ══ KNOPPEN ════════════════════════════════════════════════════ */
 @layer components {
   .btn {
