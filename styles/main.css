@@ -1777,6 +1777,66 @@
   }
   .form-ok  { background: var(--green-bg); color: var(--green-dark); }
   .form-err { background: rgba(163,45,45,.08); color: var(--red); }
+}
+
+/* ══ GROENTE & FRUIT CONFETTI ════════════════════════════════════ */
+@layer components {
+  .emoji-burst {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+  }
+
+  .emoji-flake {
+    position: absolute;
+    top: -4rem;
+    display: block;
+    animation: emojifall ease-in forwards;
+    will-change: transform, opacity;
+    user-select: none;
+    line-height: 1;
+  }
+
+  @keyframes emojifall {
+    0%   { transform: translateY(0)     translateX(0)            rotate(0deg)   scale(1);   opacity: 1; }
+    20%  { opacity: 1; }
+    60%  { transform: translateY(60vh)  translateX(var(--drift)) rotate(320deg) scale(.85); opacity: .9; }
+    100% { transform: translateY(115vh) translateX(calc(var(--drift) * 1.4)) rotate(560deg) scale(.6); opacity: 0; }
+  }
+
+  /* Dankjewel-banner die boven de confetti verschijnt */
+  .bedankt-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10000;
+    background: var(--white);
+    border-radius: var(--r-xl);
+    box-shadow: var(--sh-lg);
+    padding: 28px 36px;
+    text-align: center;
+    animation: bedanktPop .45s var(--ease-spring) .3s forwards;
+    pointer-events: none;
+  }
+
+  .bedankt-banner-icon { font-size: 3rem; display: block; margin-bottom: 8px; }
+  .bedankt-banner-title {
+    font-family: var(--serif);
+    font-size: var(--t-xl);
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+  }
+  .bedankt-banner-sub { font-size: var(--t-sm); color: var(--text-mid); }
+
+  @keyframes bedanktPop {
+    0%   { transform: translate(-50%, -50%) scale(0);   opacity: 0; }
+    70%  { transform: translate(-50%, -50%) scale(1.06); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1);   opacity: 1; }
+  }
 
   /* Installeer-knop in header */
   .btn-install {

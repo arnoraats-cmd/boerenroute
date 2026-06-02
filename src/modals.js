@@ -175,7 +175,7 @@ export function openTipModal(shopName = '') {
       <p class="form-status" id="tipStatus" hidden></p>
     </form>`);
 
-  _bindForm('tipForm', 'tipSubmit', 'tipStatus', 'Verstuur tip', 'Bedankt voor je tip!');
+  _bindForm('tipForm', 'tipSubmit', 'tipStatus', 'Verstuur tip', 'Bedankt voor je tip!', true);
 }
 
 /* ══ Winkel aanmelden ════════════════════════════════════════════ */
@@ -228,9 +228,45 @@ export function openSignupModal() {
   _bindForm('signupForm', 'signupSubmit', 'signupStatus', 'Aanmelden', 'Aanmelding ontvangen! We nemen contact op.');
 }
 
+/* ══ Groente & fruit confetti ════════════════════════════════════ */
+
+function _celebrate() {
+  const EMOJIS = ['🥕','🍅','🥦','🌽','🍓','🍎','🍇','🥑','🍋','🥬','🫑','🥒','🍊','🫐','🍏','🥝','🍆','🧅','🥔','🌶️','🍑','🫒','🥜','🌿'];
+  const wrap = document.createElement('div');
+  wrap.className = 'emoji-burst';
+  wrap.setAttribute('aria-hidden', 'true');
+
+  for (let i = 0; i < 48; i++) {
+    const el = document.createElement('span');
+    const drift = (Math.random() - 0.5) * 260;
+    el.className   = 'emoji-flake';
+    el.textContent = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
+    el.style.left  = `${2 + Math.random() * 96}vw`;
+    el.style.setProperty('--drift', `${drift}px`);
+    el.style.animationDelay    = `${Math.random() * 1.4}s`;
+    el.style.animationDuration = `${2.2 + Math.random() * 2.2}s`;
+    el.style.fontSize = `${1.1 + Math.random() * 1.6}rem`;
+    wrap.appendChild(el);
+  }
+
+  /* Dankjewel-banner */
+  const banner = document.createElement('div');
+  banner.className = 'bedankt-banner';
+  banner.innerHTML = `
+    <span class="bedankt-banner-icon">🌾</span>
+    <div class="bedankt-banner-title">Bedankt!</div>
+    <div class="bedankt-banner-sub">Jouw tip helpt andere fietsers verse producten te vinden.</div>`;
+
+  document.body.appendChild(wrap);
+  document.body.appendChild(banner);
+
+  /* Opruimen na 4.5 seconden */
+  setTimeout(() => { wrap.remove(); banner.remove(); }, 4500);
+}
+
 /* ══ Generieke formulier-handler ════════════════════════════════ */
 
-function _bindForm(formId, btnId, statusId, btnLabel, successMsg) {
+function _bindForm(formId, btnId, statusId, btnLabel, successMsg, celebrate = false) {
   const form   = document.getElementById(formId);
   const btn    = document.getElementById(btnId);
   const status = document.getElementById(statusId);
@@ -252,6 +288,7 @@ function _bindForm(formId, btnId, statusId, btnLabel, successMsg) {
       status.className   = 'form-status form-ok';
       status.hidden      = false;
       form.reset();
+      if (celebrate) _celebrate();
       setTimeout(closeModal, 3500);
     } catch {
       status.textContent = '❌ Verzenden mislukt — probeer het later opnieuw.';
