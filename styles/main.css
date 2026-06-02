@@ -272,6 +272,28 @@
   /* Blob-achtergrond */
   .hero-bg { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 
+  /* Hero foto-achtergrond */
+  .hero-bg-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Overlay gradient voor tekstleesbaarheid */
+  .hero-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(39,80,10,.48) 0%,
+      rgba(39,80,10,.32) 45%,
+      rgba(39,80,10,.58) 100%
+    );
+    pointer-events: none;
+  }
+
   .hero-blob {
     position: absolute;
     border-radius: 50%;
