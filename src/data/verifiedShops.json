@@ -3363,5 +3363,1161 @@
         "googleReviews":  null,
         "dagVers":  null,
         "desc":  "Eierautomaat in Rijkevoort (Land van Cuijk) met verse eieren van eigen leghennen."
+    },
+    {
+        "premium":  false,
+        "id":  123,
+        "lat":  51.5649106,
+        "tags":  [
+                     "vlees"
+                 ],
+        "emoji":  "🥩",
+        "name":  "De Wessenhoeve",
+        "type":  "winkel",
+        "products":  [
+                         "vlees",
+                         "streekproducten",
+                         "bier",
+                         "wijn"
+                     ],
+        "seasonal":  false,
+        "lng":  5.3890907,
+        "hours":  "wo 8.30–18u · za 10–16u · automaat 24/7",
+        "desc":  "Boerderijwinkel en vleesautomaat in Liempde. Eigen vee, verse vleesproducten en Brabantse streekproducten.",
+        "address":  "Wessendijk 1, Liempde"
+    },
+    {
+        "premium":  false,
+        "id":  124,
+        "lat":  51.7079133,
+        "tags":  [
+                     "zuivel",
+                     "vlees"
+                 ],
+        "emoji":  "🧀",
+        "name":  "Rosmaalse Kaasshop",
+        "type":  "winkel",
+        "products":  [
+                         "schapenkaas",
+                         "koeienkaas",
+                         "geitenkaas",
+                         "lamsvlees",
+                         "groente",
+                         "fruit"
+                     ],
+        "seasonal":  false,
+        "lng":  5.3504242,
+        "hours":  "do–za 10–17u",
+        "desc":  "Kaasshop in Rosmalen met schapenkaas, koeienkaas en geitenkaas. Ook lam- en schapenvlees en verse groente.",
+        "address":  "Zuid Willemsdreef 15, Rosmalen"
+    },
+    {
+        "premium":  false,
+        "id":  125,
+        "lat":  51.7329872,
+        "tags":  [
+                     "vlees",
+                     "zuivel",
+                     "eieren"
+                 ],
+        "emoji":  "🌱",
+        "name":  "\u0027t Kleine Boerenwinkeltje",
+        "type":  "winkel",
+        "products":  [
+                         "vlees",
+                         "boerenkaas",
+                         "eieren",
+                         "melk",
+                         "zuivel",
+                         "brood",
+                         "aardappelen"
+                     ],
+        "seasonal":  false,
+        "lng":  5.398985,
+        "hours":  "dagelijks 8–20u",
+        "desc":  "Kleine maar volle boerderijwinkel in Rosmalen, dagelijks open. Vlees, kaas, eieren, zuivel en brood van de boer.",
+        "address":  "Kruisstraat 52, Rosmalen"
+    },
+    {
+        "premium":  false,
+        "id":  126,
+        "lat":  51.5999475,
+        "tags":  [
+                     "vlees"
+                 ],
+        "emoji":  "🥩",
+        "name":  "Boerderijwinkel Het Belvershuys",
+        "type":  "winkel",
+        "products":  [
+                         "vlees",
+                         "streekproducten"
+                     ],
+        "seasonal":  false,
+        "lng":  5.2487038,
+        "hours":  "wo 9–18u · do 9–19.30u · vr 9–18u · za 9–16u",
+        "desc":  "Duurzame boerderijwinkel in Haaren met vlees en streekproducten. Volledig dier- en milieuvriendelijk.",
+        "address":  "Belversestraat 31, Haaren"
+    },
+    {
+        "premium":  false,
+        "id":  127,
+        "lat":  51.6077358,
+        "tags":  [
+                     "groente",
+                     "eieren"
+                 ],
+        "emoji":  "🥔",
+        "name":  "Power to the Pieper",
+        "type":  "automaat",
+        "products":  [
+                         "aardappelen",
+                         "uien",
+                         "eieren"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4225404,
+        "hours":  "24/7",
+        "desc":  "24/7 versautomaat bij Zorghoeve \u0027t Binnenveld in Schijndel. Verse aardappelen, uien en eieren van eigen boerderij.",
+        "address":  "Boxtelseweg 5, Schijndel"
+    },
+    {
+        "premium":  false,
+        "id":  128,
+        "lat":  51.6440448,
+        "tags":  [
+                     "vlees",
+                     "kindvriendelijk"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Op het Erf",
+        "type":  "winkel",
+        "products":  [
+                         "biologisch vlees",
+                         "kip",
+                         "rundvlees",
+                         "zelfpluktuin"
+                     ],
+        "seasonal":  false,
+        "lng":  5.482934,
+        "hours":  "wo–vr 13–17u · za–zo 10–16u",
+        "desc":  "Biologische boerderij in Heeswijk-Dinther met eigen kip en rund. Winkel en zelfpluktuin voor bloemen en fruit.",
+        "address":  "Aabrugstraat 4A, Heeswijk-Dinther"
+    },
+    {
+        "premium":  false,
+        "id":  129,
+        "lat":  51.5850536,
+        "tags":  [
+                     "zuivel"
+                 ],
+        "emoji":  "🥛",
+        "name":  "Het Zuivelbos",
+        "type":  "automaat",
+        "products":  [
+                         "verse melk",
+                         "yoghurt",
+                         "desserts",
+                         "zuivel"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4792416,
+        "hours":  "ma 13–16u · wo 13–16u · za 10–15u · melktap dagelijks",
+        "desc":  "Melktap en zuivelwinkel in Sint-Oedenrode met verse melk, yoghurt en andere zuivelproducten van eigen koeien.",
+        "address":  "Sterrebos 13, Sint-Oedenrode"
+    },
+    {
+        "premium":  false,
+        "id":  130,
+        "lat":  51.6013758,
+        "tags":  [
+                     "groente",
+                     "fruit"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Gebroeders Van de Ven",
+        "type":  "winkel",
+        "products":  [
+                         "groente",
+                         "fruit",
+                         "aardappelen"
+                     ],
+        "seasonal":  false,
+        "lng":  5.5097446,
+        "hours":  "ma–di 8.30–12u \u0026 13–17.30u · wo 8.30–12u · do–vr 8.30–17.30u · za 8.30–16u",
+        "desc":  "Groente- en fruitkwekerij in Eerde (Veghel) met meer dan 40 soorten verse groente en fruit. Bijna dagelijks open.",
+        "address":  "Abenhoefweg 6, Eerde"
+    },
+    {
+        "premium":  false,
+        "id":  131,
+        "lat":  51.6608127,
+        "tags":  [
+                     "zuivel"
+                 ],
+        "emoji":  "🥛",
+        "name":  "Melktap Heeswijk-Dinther",
+        "type":  "automaat",
+        "products":  [
+                         "verse rauwe melk"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4859125,
+        "hours":  "dagelijks 8–20u",
+        "desc":  "Melktap in Heeswijk-Dinther met dagelijks verse rauwe melk rechtstreeks van de boer.",
+        "address":  "Koffiestraat 6, Heeswijk-Dinther"
+    },
+    {
+        "premium":  false,
+        "id":  132,
+        "lat":  51.6727867,
+        "tags":  [
+                     "vlees",
+                     "zuivel",
+                     "eieren",
+                     "groente"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Streekwinkel Boszicht",
+        "type":  "winkel",
+        "products":  [
+                         "Berkshire varkensvlees",
+                         "rundvlees",
+                         "groente",
+                         "honing",
+                         "kaas",
+                         "eieren",
+                         "brood"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4628992,
+        "hours":  "ma–vr 10–17u · za 10–16u",
+        "desc":  "Streekwinkel in Heeswijk-Dinther met Berkshire varkensvlees, Aadal Brandrood rundvlees en een breed assortiment streekproducten.",
+        "address":  "Kaathovensedijk 5, Heeswijk-Dinther"
+    },
+    {
+        "premium":  false,
+        "id":  133,
+        "lat":  51.5606669,
+        "tags":  [
+                     "groente",
+                     "fruit"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Streekwinkel \u0027t Dommeldal",
+        "type":  "winkel",
+        "products":  [
+                         "streekproducten",
+                         "groente",
+                         "fruit"
+                     ],
+        "seasonal":  true,
+        "lng":  5.4269926,
+        "hours":  "ma–za 8–18u · zo 12–17u (1 mei–1 nov)",
+        "desc":  "Seizoensstreekwinkel in Sint-Oedenrode, open van mei tot november. Zelfbediening buiten openingstijden.",
+        "address":  "Liempdeweg 12, Sint-Oedenrode"
+    },
+    {
+        "premium":  false,
+        "id":  134,
+        "lat":  51.5707133,
+        "tags":  [
+                     "vlees",
+                     "zuivel"
+                 ],
+        "emoji":  "🥩",
+        "name":  "De Klaproos",
+        "type":  "winkel",
+        "products":  [
+                         "biologisch rundvlees",
+                         "Black Angus",
+                         "melk",
+                         "ossewit",
+                         "streekproducten"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4878154,
+        "hours":  "zie website voor actuele tijden",
+        "desc":  "Boerderijwinkel en terras in Sint-Oedenrode met biologisch Black Angus rundvlees, melk van eigen koeien en streekproducten.",
+        "address":  "Achterstesteeg 2A, Sint-Oedenrode"
+    },
+    {
+        "premium":  false,
+        "id":  135,
+        "lat":  51.5726754,
+        "tags":  [
+                     "zuivel",
+                     "eieren"
+                 ],
+        "emoji":  "🥛",
+        "name":  "Melk \u0026 zo",
+        "type":  "automaat",
+        "products":  [
+                         "verse rauwe melk",
+                         "yoghurt",
+                         "karnemelk",
+                         "roomboter",
+                         "eieren",
+                         "aardappelen",
+                         "boerenijs"
+                     ],
+        "seasonal":  false,
+        "lng":  5.3694302,
+        "hours":  "dagelijks 7–20u",
+        "desc":  "Melktap en boerderijwinkel in Liempde. Verse melk, yoghurt, boter, eieren en boerenijs dagelijks verkrijgbaar.",
+        "address":  "Boxtelseweg 2, Liempde"
+    },
+    {
+        "premium":  false,
+        "id":  136,
+        "lat":  51.681497,
+        "tags":  [
+                     "zuivel",
+                     "eieren",
+                     "groente",
+                     "fruit"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Farmshop Berlicum",
+        "type":  "winkel",
+        "products":  [
+                         "verse melk",
+                         "yoghurt",
+                         "scharreleieren",
+                         "vlees",
+                         "appels",
+                         "aardappelen",
+                         "asperges",
+                         "aardbeien"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4079784,
+        "hours":  "dagelijks 8–20u",
+        "desc":  "Uitgebreide farmshop in Berlicum met melktap, eieren, vlees en seizoensgroente. Dagelijks open.",
+        "address":  "Werststeeg 17, Berlicum"
+    },
+    {
+        "premium":  false,
+        "id":  137,
+        "lat":  51.553423,
+        "tags":  [
+                     "vlees",
+                     "zuivel",
+                     "eieren",
+                     "honing"
+                 ],
+        "emoji":  "🥩",
+        "name":  "Boerderijwinkel Verhoeven",
+        "type":  "winkel",
+        "products":  [
+                         "kalfsvlees",
+                         "varkensvlees",
+                         "kippenvlees",
+                         "boerenkaas",
+                         "eieren",
+                         "honing",
+                         "groente",
+                         "fruit",
+                         "roomijs"
+                     ],
+        "seasonal":  false,
+        "lng":  5.3815204,
+        "hours":  "do 13–17u · vr 10–17u · za 9–16u",
+        "desc":  "Sfeervolle boerderijwinkel in Liempde met eigen vlees, kaas, eieren, honing en roomijs.",
+        "address":  "Hamsestraat 11, Liempde"
+    },
+    {
+        "premium":  false,
+        "id":  138,
+        "lat":  51.6948966,
+        "tags":  [
+                     "vlees",
+                     "zuivel",
+                     "eieren",
+                     "honing"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Boerderijwinkel van der Doelen",
+        "type":  "winkel",
+        "products":  [
+                         "vlees",
+                         "honing",
+                         "boerenkaas",
+                         "eieren",
+                         "streekproducten"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4479651,
+        "hours":  "za 10–16u · overige dagen op afspraak",
+        "desc":  "Boerderijwinkel in Vinkel met vlees, kaas, eieren en honing. Op zaterdag open of op afspraak.",
+        "address":  "Kaathoven 47, Vinkel"
+    },
+    {
+        "premium":  false,
+        "id":  139,
+        "lat":  51.6905892,
+        "tags":  [
+                     "zuivel",
+                     "eieren",
+                     "honing"
+                 ],
+        "emoji":  "🥛",
+        "name":  "Het Melkhuisje Roefs",
+        "type":  "automaat",
+        "products":  [
+                         "verse rauwe melk",
+                         "eieren",
+                         "honing"
+                     ],
+        "seasonal":  false,
+        "lng":  5.501188,
+        "hours":  "melktap 24/7",
+        "desc":  "Melkhuisje in Heesch met 24/7 melktap voor verse rauwe melk, plus eieren en honing.",
+        "address":  "Watergat 2, Heesch"
+    },
+    {
+        "premium":  false,
+        "id":  140,
+        "lat":  51.5346746,
+        "tags":  [
+                     "vlees"
+                 ],
+        "emoji":  "🥩",
+        "name":  "De Duroc Hoeve",
+        "type":  "automaat",
+        "products":  [
+                         "Duroc scharrelvarkens vlees",
+                         "Hereford rundvlees"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4285222,
+        "hours":  "zomer 8–20u · winter 8–18u · dagelijks",
+        "desc":  "Vleesautomaat in Son en Breugel met Duroc scharrelvarkens vlees en Hereford rundvlees. Dagelijks beschikbaar.",
+        "address":  "Jagerskampweg 1, Son en Breugel"
+    },
+    {
+        "premium":  false,
+        "id":  141,
+        "lat":  51.5759049,
+        "tags":  [
+                     "groente",
+                     "zuivel",
+                     "kindvriendelijk"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Biologische Boerderij De Schoffel",
+        "type":  "winkel",
+        "products":  [
+                         "biologisch brood",
+                         "zuivel",
+                         "groente",
+                         "fruit",
+                         "droogwaren"
+                     ],
+        "seasonal":  false,
+        "lng":  5.3099375,
+        "hours":  "wo 10–19.30u · do 13–17u · vr 11–17u · za 10–16u",
+        "desc":  "Biologische boerderij en winkel in Boxtel met speeltuin. Vers brood, zuivel, groente en fruit.",
+        "address":  "Mijlstraat 34, Boxtel"
+    },
+    {
+        "premium":  false,
+        "id":  142,
+        "lat":  51.6016059,
+        "tags":  [
+                     "zuivel",
+                     "vlees"
+                 ],
+        "emoji":  "🐄",
+        "name":  "D\u0027n Buff Waterbuffelboerderij",
+        "type":  "winkel",
+        "products":  [
+                         "waterbuffel mozzarella",
+                         "yoghurt",
+                         "ricotta",
+                         "buffelburgers"
+                     ],
+        "seasonal":  false,
+        "lng":  5.2890366,
+        "hours":  "vr 9–17u · automaat dagelijks 8–20u",
+        "desc":  "Waterbuffelboerderij in Boxtel met verse mozzarella, yoghurt en ricotta. Automaat dagelijks open.",
+        "address":  "Nergena 16, Boxtel"
+    },
+    {
+        "premium":  false,
+        "id":  143,
+        "lat":  51.5346637,
+        "tags":  [
+                     "vlees"
+                 ],
+        "emoji":  "🥩",
+        "name":  "Bos \u0026 Akker",
+        "type":  "winkel",
+        "products":  [
+                         "biologisch Angus rundvlees"
+                     ],
+        "seasonal":  false,
+        "lng":  5.3653148,
+        "hours":  "vr 13–17.30u · overige dagen op afspraak",
+        "desc":  "Kleine boerderijwinkel in Oirschot met biologisch Black Angus rundvlees van eigen weide.",
+        "address":  "Vering 2, Oirschot"
+    },
+    {
+        "premium":  false,
+        "id":  144,
+        "lat":  51.7129143,
+        "tags":  [
+                     "zuivel",
+                     "eieren",
+                     "groente"
+                 ],
+        "emoji":  "🥛",
+        "name":  "Melktap Vinkel",
+        "type":  "automaat",
+        "products":  [
+                         "verse melk",
+                         "kaas",
+                         "eieren",
+                         "honing",
+                         "aardbeien",
+                         "asperges"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4545859,
+        "hours":  "ma 9–19u · di–zo 8–22u",
+        "desc":  "Drukbezochte melktap in Vinkel met verse melk, soft-ijs, kaas, eieren, honing en seizoensproducten.",
+        "address":  "Van Rijckevorselweg 13, Vinkel"
+    },
+    {
+        "premium":  false,
+        "id":  145,
+        "lat":  51.5308208,
+        "tags":  [
+                     "eieren",
+                     "honing"
+                 ],
+        "emoji":  "🥚",
+        "name":  "\u0027t Boerder-Ei-tje",
+        "type":  "automaat",
+        "products":  [
+                         "verse eieren",
+                         "broedeieren",
+                         "jam",
+                         "honing",
+                         "vruchtenmoes"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4950706,
+        "hours":  "dagelijks 9–21u",
+        "desc":  "Eierautomaat en stalletje in Sint-Oedenrode met verse eieren, jam, honing en vruchtenmoes.",
+        "address":  "Wolfswinkel 4, Sint-Oedenrode"
+    },
+    {
+        "premium":  false,
+        "id":  146,
+        "lat":  51.5216075,
+        "tags":  [
+                     "zuivel",
+                     "vlees",
+                     "groente",
+                     "fruit"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Boerderijwinkel \u0026 automaat Tante Kay",
+        "type":  "winkel",
+        "products":  [
+                         "kaas",
+                         "vlees",
+                         "sappen",
+                         "groente",
+                         "fruit",
+                         "aardappelen",
+                         "ijs",
+                         "yoghurt"
+                     ],
+        "seasonal":  false,
+        "lng":  5.3604664,
+        "hours":  "vr 10–17u · za 10–16u · automaat overige tijden",
+        "desc":  "Boerderijwinkel en automaat bij Best. Breed assortiment: kaas, vlees, groente, fruit, sap en vers geroosterde noten.",
+        "address":  "Mosselaarweg 15, Best"
+    },
+    {
+        "premium":  false,
+        "id":  147,
+        "lat":  51.7307762,
+        "tags":  [
+                     "vlees",
+                     "groente"
+                 ],
+        "emoji":  "🌱",
+        "name":  "MaMa\u0027s Streekproducten",
+        "type":  "automaat",
+        "products":  [
+                         "vlees",
+                         "groente",
+                         "fruit",
+                         "brood",
+                         "delicatessen"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4322341,
+        "hours":  "dagelijks 8–21u",
+        "desc":  "Streekproductenautomaat in Nuland met vers vlees, groente, fruit en brood. Dagelijks bereikbaar.",
+        "address":  "Kerkstraat 23, Nuland"
+    },
+    {
+        "premium":  false,
+        "id":  148,
+        "lat":  51.6721273,
+        "tags":  [
+                     "vlees",
+                     "zuivel"
+                 ],
+        "emoji":  "🥩",
+        "name":  "Boerderijwinkel de Gement",
+        "type":  "winkel",
+        "products":  [
+                         "vlees",
+                         "worstenbrood",
+                         "kaas",
+                         "jam"
+                     ],
+        "seasonal":  false,
+        "lng":  5.2709561,
+        "hours":  "wo \u0026 vr 13–17.30u · za 10–17.30u",
+        "desc":  "Gezellige boerderijwinkel in Vught met eigen vlees, Brabants worstenbrood, Duingoed kaas en huisgemaakte jam.",
+        "address":  "Gementweg 4, Vught"
+    },
+    {
+        "premium":  false,
+        "id":  149,
+        "lat":  51.6142491,
+        "tags":  [
+                     "zuivel"
+                 ],
+        "emoji":  "🧀",
+        "name":  "Geitenhouderij Van Houtum",
+        "type":  "automaat",
+        "products":  [
+                         "harde geitenkaas",
+                         "jong belegen geitenkaas",
+                         "oude geitenkaas"
+                     ],
+        "seasonal":  false,
+        "lng":  5.2497728,
+        "hours":  "dagelijks 8–22u",
+        "desc":  "Geitenhouderij in Haaren met automaat voor harde geitenkaas in diverse rijpingen. Accepteert contant geld.",
+        "address":  "Noenes 16, Haaren"
+    },
+    {
+        "premium":  false,
+        "id":  150,
+        "lat":  51.7335598,
+        "tags":  [
+                     "groente",
+                     "vlees",
+                     "eieren",
+                     "honing"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Boerderijwinkel Valenkamp",
+        "type":  "winkel",
+        "products":  [
+                         "groente",
+                         "lamsvlees",
+                         "varkensvlees",
+                         "eieren",
+                         "honing"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4019524,
+        "hours":  "di–vr 10–17.30u · za 9.30–17u · mei–sept ook zo 11.30–17u",
+        "desc":  "Boerderijwinkel in Rosmalen met onbespoten groente uit eigen moestuin, lamsvlees, eieren en honing.",
+        "address":  "Kruisstraat 58, Rosmalen"
+    },
+    {
+        "premium":  false,
+        "id":  151,
+        "lat":  51.5313615,
+        "tags":  [
+                     "vlees"
+                 ],
+        "emoji":  "🥩",
+        "name":  "Annie\u0027s BoerderijWinkel",
+        "type":  "winkel",
+        "products":  [
+                         "vlees",
+                         "streekproducten"
+                     ],
+        "seasonal":  false,
+        "lng":  5.5668848,
+        "hours":  "vr 15–18u · za 10–18u",
+        "desc":  "Sfeervolle boerderijwinkel met terras in Mariahout. Eigen vlees en streekproducten, vrijdag en zaterdag open.",
+        "address":  "Knapersven 36, Mariahout"
+    },
+    {
+        "premium":  false,
+        "id":  152,
+        "lat":  51.6054375,
+        "tags":  [
+                     "vlees"
+                 ],
+        "emoji":  "🥩",
+        "name":  "De Ruijsbossche Hoeve",
+        "type":  "automaat",
+        "products":  [
+                         "Piemontese rundvlees",
+                         "Italiaanse streekproducten",
+                         "koffie",
+                         "ijs"
+                     ],
+        "seasonal":  false,
+        "lng":  5.236646,
+        "hours":  "dagelijks 7.30–22.30u",
+        "desc":  "Automaat in Haaren met Piemontese rundvlees en Italiaanse streekproducten. Unieke combinatie van Brabant en Italië.",
+        "address":  "Roonsestraat 3, Haaren"
+    },
+    {
+        "premium":  false,
+        "id":  153,
+        "lat":  51.5066958,
+        "tags":  [
+                     "eieren",
+                     "zuivel"
+                 ],
+        "emoji":  "🥚",
+        "name":  "Eierautomaat de Bollen",
+        "type":  "automaat",
+        "products":  [
+                         "eieren",
+                         "boerenkaas",
+                         "tomaten"
+                     ],
+        "seasonal":  false,
+        "lng":  5.3426572,
+        "hours":  "24/7",
+        "desc":  "24/7 automaat in Oirschot met verse eieren, boerenkaas en tomaten van eigen bedrijf.",
+        "address":  "De Bollen 1, Oirschot"
+    },
+    {
+        "premium":  false,
+        "id":  154,
+        "lat":  51.523142,
+        "tags":  [
+                     "vlees"
+                 ],
+        "emoji":  "🥩",
+        "name":  "Vers Vleesboerderij Polsdonk",
+        "type":  "winkel",
+        "products":  [
+                         "vers vlees"
+                     ],
+        "seasonal":  false,
+        "lng":  5.29512,
+        "hours":  "vr 13–19u · za 9–15u",
+        "desc":  "Vleesboerderij in Oirschot met vers vlees van eigen vee, ambachtelijk geslacht en verwerkt.",
+        "address":  "Polsdonken 3, Oirschot"
+    },
+    {
+        "premium":  false,
+        "id":  155,
+        "lat":  51.6653164,
+        "tags":  [
+                     "eieren"
+                 ],
+        "emoji":  "🥚",
+        "name":  "Pluimveebedrijf De Stipkip",
+        "type":  "automaat",
+        "products":  [
+                         "verse scharreleieren"
+                     ],
+        "seasonal":  false,
+        "lng":  5.6505669,
+        "hours":  "dagelijks 7–21u",
+        "desc":  "Eierautomaat in Uden met verse scharreleieren met Beter Leven 1 ster keurmerk.",
+        "address":  "Patersweg 9, Uden"
+    },
+    {
+        "premium":  false,
+        "id":  156,
+        "lat":  51.7717403,
+        "tags":  [
+                     "zuivel",
+                     "eieren"
+                 ],
+        "emoji":  "🥛",
+        "name":  "Melktap Kukeleboe",
+        "type":  "automaat",
+        "products":  [
+                         "verse rauwe melk",
+                         "yoghurt",
+                         "hangop",
+                         "vla",
+                         "chocolademelk",
+                         "kaas",
+                         "eieren",
+                         "boter",
+                         "ijs"
+                     ],
+        "seasonal":  false,
+        "lng":  5.3826918,
+        "hours":  "ma 7.30–22u · di–zo 7–21u",
+        "desc":  "Uitgebreide melktap in Maren-Kessel met melk, yoghurt, vla, kaas, eieren en boerenijs. Bijna altijd open.",
+        "address":  "Burgemeester Smitsweg 10, Maren-Kessel"
+    },
+    {
+        "premium":  false,
+        "id":  157,
+        "lat":  51.7788248,
+        "tags":  [
+                     "zuivel"
+                 ],
+        "emoji":  "🧀",
+        "name":  "IJS \u0026 KAAS Boerderijautomaat",
+        "type":  "automaat",
+        "products":  [
+                         "geitenkaas",
+                         "geitenijs",
+                         "verse geitenmelk"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4944945,
+        "hours":  "24/7 · verse melk dagelijks 18.30–19.30u",
+        "desc":  "Unieke automaat bij Oss met geitenkaas in meerdere rijpingen, geitenijs en dagelijks verse geitenmelk.",
+        "address":  "Mikkeldonkweg 17, Oss"
+    },
+    {
+        "premium":  false,
+        "id":  158,
+        "lat":  51.4723063,
+        "tags":  [
+                     "eieren"
+                 ],
+        "emoji":  "🥚",
+        "name":  "\u0027t Eiervrouwtje Nuenen",
+        "type":  "automaat",
+        "products":  [
+                         "vrije-uitloop eieren",
+                         "streekproducten"
+                     ],
+        "seasonal":  false,
+        "lng":  5.5607647,
+        "hours":  "dagelijks (zelfbediening)",
+        "desc":  "Eierautomaat in Nuenen met verse vrije-uitloop eieren en streekproducten.",
+        "address":  "Stephan Hanewinkellaan 20, Nuenen"
+    },
+    {
+        "premium":  false,
+        "id":  159,
+        "lat":  51.609813,
+        "tags":  [
+                     "groente",
+                     "eieren",
+                     "zuivel"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Boerderijwinkel De Zijp",
+        "type":  "winkel",
+        "products":  [
+                         "asperges",
+                         "aardbeien",
+                         "aardappelen",
+                         "scharreleieren",
+                         "kaas",
+                         "zuivel",
+                         "ijs"
+                     ],
+        "seasonal":  true,
+        "lng":  5.7027853,
+        "hours":  "ma–vr 13–17u · za 9–16u · automaat dagelijks 7–22u",
+        "desc":  "Seizoensboerderij in Boekel met asperges en aardbeien. Automaat jaarrond beschikbaar met ijs en eieren.",
+        "address":  "Zijp 7, Boekel"
+    },
+    {
+        "premium":  false,
+        "id":  160,
+        "lat":  51.6613609,
+        "tags":  [
+                     "vlees"
+                 ],
+        "emoji":  "🥩",
+        "name":  "De Margriethoeve",
+        "type":  "winkel",
+        "products":  [
+                         "Marchigiana rundvlees"
+                     ],
+        "seasonal":  false,
+        "lng":  5.1668529,
+        "hours":  "za 10–17u",
+        "desc":  "Boerderijwinkel in Helvoirt met vlees van Marchigiana vleesvee. Op zaterdag open.",
+        "address":  "Margrietweg 24, Helvoirt"
+    },
+    {
+        "premium":  false,
+        "id":  161,
+        "lat":  51.5783032,
+        "tags":  [
+                     "groente",
+                     "eieren"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Aspergekwekerij Schuurmans",
+        "type":  "winkel",
+        "products":  [
+                         "verse asperges",
+                         "eieren",
+                         "ham",
+                         "boter",
+                         "wijn",
+                         "streekproducten"
+                     ],
+        "seasonal":  true,
+        "lng":  5.1622636,
+        "hours":  "automaat 24/7 · seizoenswinkel apr–jun",
+        "desc":  "Aspergekwekerij in Heukelom met seizoenswinkel in april-juni. Automaat jaarrond met streekproducten.",
+        "address":  "Hoog Heukelom 3, Heukelom"
+    },
+    {
+        "premium":  false,
+        "id":  162,
+        "lat":  51.7534616,
+        "tags":  [
+                     "groente",
+                     "fruit"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Boerderijwinkel Wim Quik",
+        "type":  "winkel",
+        "products":  [
+                         "aardappelen",
+                         "groente",
+                         "fruit"
+                     ],
+        "seasonal":  false,
+        "lng":  5.2483158,
+        "hours":  "wo \u0026 do 13.30–17.30u · vr 10–17.30u · za 10–16u",
+        "desc":  "Boerderijwinkel in Hedel (Gelderland) met aardappelen, groente en fruit. Meerdere dagen per week open.",
+        "address":  "Hooiweg 35, Hedel"
+    },
+    {
+        "premium":  false,
+        "id":  163,
+        "lat":  51.7784683,
+        "tags":  [
+                     "zuivel"
+                 ],
+        "emoji":  "🥛",
+        "name":  "Zuivel-Automaat Johannahoeve",
+        "type":  "automaat",
+        "products":  [
+                         "A2A2 boerenzuivel",
+                         "melk",
+                         "yoghurt",
+                         "kaas"
+                     ],
+        "seasonal":  false,
+        "lng":  5.2841317,
+        "hours":  "24/7",
+        "desc":  "24/7 zuivelautomaat bij Velddriel met boerenzuivel van A2A2-melk. Hoge voedingskwaliteit rechtstreeks van de boer.",
+        "address":  "Vliertseweg 1, Velddriel"
+    },
+    {
+        "premium":  false,
+        "id":  164,
+        "lat":  51.7052462,
+        "tags":  [
+                     "zuivel",
+                     "eieren"
+                 ],
+        "emoji":  "🥛",
+        "name":  "Boerderijwinkel van Heesch",
+        "type":  "winkel",
+        "products":  [
+                         "zuivel",
+                         "vla",
+                         "yoghurt",
+                         "hangop",
+                         "melk",
+                         "chocolademelk",
+                         "boter",
+                         "kaas",
+                         "eieren",
+                         "soft-ijs"
+                     ],
+        "seasonal":  false,
+        "lng":  5.154015,
+        "hours":  "dagelijks 7–21u (melktap)",
+        "desc":  "Melktap en boerderijwinkel in Elshout met een compleet zuivelassortiment. Soft-ijs in het seizoen en dagelijks verse producten.",
+        "address":  "Mariëndonkstraat 47, Elshout"
+    },
+    {
+        "premium":  false,
+        "id":  165,
+        "lat":  51.4574887,
+        "tags":  [
+                     "eieren",
+                     "zuivel",
+                     "honing"
+                 ],
+        "emoji":  "🥚",
+        "name":  "Smolders Pluimvee en Eieren",
+        "type":  "automaat",
+        "products":  [
+                         "verse eieren",
+                         "boerenkaas",
+                         "honing",
+                         "aardbeien"
+                     ],
+        "seasonal":  false,
+        "lng":  5.2116209,
+        "hours":  "dagelijks 8–20u",
+        "desc":  "Eierautomaat in Middelbeers met verse eieren (Beter Leven 1 ster), kaas, honing en aardbeien in het seizoen.",
+        "address":  "Paardseheide 1, Oost West en Middelbeers"
+    },
+    {
+        "premium":  false,
+        "id":  166,
+        "lat":  51.6852045,
+        "tags":  [
+                     "zuivel",
+                     "vlees"
+                 ],
+        "emoji":  "🧀",
+        "name":  "Zuivelboerderij de Kern",
+        "type":  "winkel",
+        "products":  [
+                         "ambachtelijke zuivel",
+                         "kaas",
+                         "brood",
+                         "vlees",
+                         "ijs",
+                         "jam",
+                         "honing"
+                     ],
+        "seasonal":  false,
+        "lng":  5.1105303,
+        "hours":  "ma 9–13u · di 9–17u · wo 9–13u · do–vr 9–18u · za 9–16u",
+        "desc":  "Zuivelboerderij in Drunen met ambachtelijke zuivel van eigen melk, kaas, brood en streekproducten. Bijna dagelijks open.",
+        "address":  "Overstortweg 7, Drunen"
+    },
+    {
+        "premium":  false,
+        "id":  167,
+        "lat":  51.5353327,
+        "tags":  [
+                     "groente"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Versautomaat Aspergekwekerij Vissers",
+        "type":  "automaat",
+        "products":  [
+                         "verse asperges",
+                         "aardbeien",
+                         "frisdrank"
+                     ],
+        "seasonal":  true,
+        "lng":  5.1097827,
+        "hours":  "dagelijks bijgevuld tijdens seizoen",
+        "desc":  "Versautomaat in Hilvarenbeek van aspergekwekerij Vissers. Geschilde asperges en aardbeien vers geplukt.",
+        "address":  "Ambrosiusweg 13, Hilvarenbeek"
+    },
+    {
+        "premium":  false,
+        "id":  168,
+        "lat":  51.839005,
+        "tags":  [
+                     "eieren"
+                 ],
+        "emoji":  "🥚",
+        "name":  "Pluimveebedrijf Van Mourik",
+        "type":  "winkel",
+        "products":  [
+                         "biologische eieren",
+                         "scharreleieren"
+                     ],
+        "seasonal":  false,
+        "lng":  5.4524098,
+        "hours":  "ma–za bereikbaar",
+        "desc":  "Pluimveebedrijf in Dreumel (Gelderland) met biologische en bruine scharreleieren rechtstreeks van de boer.",
+        "address":  "Papesteeg 2, Dreumel"
+    },
+    {
+        "premium":  false,
+        "id":  169,
+        "lat":  51.6080646,
+        "tags":  [
+                     "vlees",
+                     "groente",
+                     "zuivel",
+                     "eieren"
+                 ],
+        "emoji":  "🌱",
+        "name":  "Streekwinkel Ons Erf",
+        "type":  "winkel",
+        "products":  [
+                         "vlees",
+                         "groente",
+                         "fruit",
+                         "zuivel",
+                         "brood",
+                         "kaas",
+                         "eieren",
+                         "ijs",
+                         "wijn",
+                         "bier"
+                     ],
+        "seasonal":  false,
+        "lng":  5.1241294,
+        "hours":  "wo 11–18u · do–vr 9–18u · za 9–15u",
+        "desc":  "Uitgebreide streekwinkel in Udenhout met eigen vlees, verse groente, zuivel, brood, kaas en meer. Alles lokaal.",
+        "address":  "Kuil 31, Udenhout"
+    },
+    {
+        "premium":  false,
+        "id":  170,
+        "lat":  51.5181201,
+        "tags":  [
+                     "eieren"
+                 ],
+        "emoji":  "🥚",
+        "name":  "Moergestels Weide-Ei",
+        "type":  "automaat",
+        "products":  [
+                         "weide-eieren",
+                         "scharreleieren"
+                     ],
+        "seasonal":  false,
+        "lng":  5.1898057,
+        "hours":  "dagelijks 8–20u",
+        "desc":  "Eierautomaat in Moergestel met weide-eieren van kippen die jaarrond buiten lopen.",
+        "address":  "Heizenschedijk 4, Moergestel"
+    },
+    {
+        "premium":  false,
+        "id":  171,
+        "lat":  51.4981833,
+        "tags":  [
+                     "zuivel",
+                     "eieren",
+                     "honing"
+                 ],
+        "emoji":  "🧀",
+        "name":  "PUUR\u0026genieten",
+        "type":  "winkel",
+        "products":  [
+                         "kaas",
+                         "yoghurt",
+                         "ijs",
+                         "eieren",
+                         "sap",
+                         "honing",
+                         "jam",
+                         "boerenboter",
+                         "streekproducten"
+                     ],
+        "seasonal":  false,
+        "lng":  5.2341704,
+        "hours":  "dagelijks 9–21u",
+        "desc":  "Boerderijwinkel in Middelbeers met kaas, yoghurt en ijs van eigen melk, plus eieren, honing en jam.",
+        "address":  "Kanaaldijk Zuid 7, Oost West en Middelbeers"
     }
 ]
