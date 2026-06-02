@@ -240,9 +240,13 @@ function _cardHTML(shop) {
     .map(t => `<span class="shop-tag">${_esc(t)}</span>`)
     .join('');
 
+  const isTopRated = shop.googleRating >= 4.8 && (shop.googleReviews || 0) >= 5;
+
   const badges = [];
   if (shop.premium)
     badges.push('<span class="shop-badge badge-premium">✨ Uitgelicht</span>');
+  if (isTopRated)
+    badges.push('<span class="shop-badge badge-toprated" title="Hoog gewaardeerd op Google">🏆 Top beoordeeld</span>');
   if (shop.dagVers)
     badges.push(`<span class="shop-badge badge-dagvers" title="${_esc(shop.dagVers)}">🌿 Vandaag vers</span>`);
   if (hasVisited(shop.id))
@@ -253,7 +257,9 @@ function _cardHTML(shop) {
     badges.push('<span class="shop-badge badge-closed">Gesloten</span>');
 
   const rating = shop.googleRating
-    ? `<span class="shop-rating">⭐ ${shop.googleRating.toFixed(1)}${
+    ? `<span class="shop-rating" title="${shop.googleRating.toFixed(1)} sterren op Google${
+        shop.googleReviews ? ` op basis van ${shop.googleReviews} beoordelingen` : ''
+      }">${_stars(shop.googleRating)} <strong>${shop.googleRating.toFixed(1)}</strong>${
         shop.googleReviews
           ? `<span class="shop-reviews">&thinsp;(${shop.googleReviews})</span>`
           : ''
@@ -348,6 +354,19 @@ function _formatDist(km) {
   if (km < 1)  return `${Math.round(km * 1000)} m`;
   if (km < 10) return `${km.toFixed(1)} km`;
   return `${Math.round(km)} km`;
+}
+
+/* Sterren-weergave: vol / half / leeg op basis van rating (0–5) */
+function _stars(rating) {
+  const full = Math.floor(rating);
+  const half = rating - full >= 0.5;
+  let out = '';
+  for (let i = 0; i < 5; i++) {
+    if (i < full)            out += '<span class="star star-full">★</span>';
+    else if (i === full && half) out += '<span class="star star-half">★</span>';
+    else                     out += '<span class="star star-empty">★</span>';
+  }
+  return `<span class="star-row" aria-hidden="true">${out}</span>`;
 }
 
 function _esc(str) {

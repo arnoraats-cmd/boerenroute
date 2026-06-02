@@ -1295,15 +1295,41 @@
   .shop-rating {
     display: inline-flex;
     align-items: center;
-    gap: 2px;
-    font-size: 11px;
+    gap: 4px;
+    font-size: 12px;
     font-weight: 600;
-    color: var(--amber);
+    color: var(--text);
+  }
+
+  .shop-rating strong { color: var(--text); font-weight: 700; }
+
+  .star-row { display: inline-flex; gap: 1px; font-size: 12px; line-height: 1; }
+  .star { color: var(--border-md); }
+  .star-full  { color: #F5A623; }
+  .star-half {
+    position: relative;
+    color: var(--border-md);
+  }
+  .star-half::before {
+    content: '★';
+    position: absolute;
+    left: 0; top: 0;
+    width: 50%;
+    overflow: hidden;
+    color: #F5A623;
   }
 
   .shop-reviews {
     color: var(--text-light);
     font-weight: 400;
+  }
+
+  /* Top beoordeeld-badge */
+  .badge-toprated {
+    background: linear-gradient(135deg, #FFF3D6 0%, #FFE6A8 100%);
+    color: #8A5A00;
+    border: 1px solid rgba(245,166,35,.35);
+    font-weight: 700;
   }
 
   /* Focus op kaart-rij (keyboard) */
