@@ -6,10 +6,24 @@ import { initModals, openSignupModal }       from './modals.js';
 import { loadOSMShops }                      from './osm.js';
 import { renderSeasonPage }                  from './season.js';
 import { initBoodschappenlijst }             from './boodschappenlijst.js';
+import { initStempelkaart, renderStempelkaart } from './stempelkaart.js';
+import { getCount }                          from './stamps.js';
 
 /* ── Kaart + modals direct initialiseren ─────────────────── */
 initMap({ lat: DEFAULT.lat, lng: DEFAULT.lng });
 initModals();
+
+/* ── Stempelkaart-badge in nav bijwerken ─────────────────── */
+function _updateStampBadge() {
+  const badge = document.getElementById('stampBadge');
+  if (!badge) return;
+  const n = getCount();
+  badge.textContent = n;
+  badge.hidden = n === 0;
+}
+_updateStampBadge();
+document.addEventListener('boerenroute:stampupdate', _updateStampBadge);
+document.addEventListener('boerenroute:stamp',       _updateStampBadge);
 
 /* ── Header glass-effect ─────────────────────────────────── */
 const header = document.getElementById('siteHeader');
@@ -47,6 +61,7 @@ const SECTIONS = {
   kaart:         'listSection',
   route:         'routeSection',
   boodschappen:  'boodschappenSection',
+  stempelkaart:  'stempelkaartSection',
   seizoen:       'seizoenSection',
   over:          'overSection',
 };
@@ -75,7 +90,8 @@ document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
       if (el) el.hidden = p !== page;
     });
 
-    if (page === 'seizoen') renderSeasonPage('seizoenSection');
+    if (page === 'seizoen')       renderSeasonPage('seizoenSection');
+    if (page === 'stempelkaart') renderStempelkaart('stempelkaartSection');
     if (isMapPage) requestAnimationFrame(() => invalidateSize());
   });
 });
@@ -280,6 +296,7 @@ fetch('src/data/verifiedShops.json')
     initShops(shops);
     initRoute(shops);
     initBoodschappenlijst(shops);
+    initStempelkaart(shops);
 
     /* Expose voor OSM-toevoeging */
     window._addOSMShops = extraShops => {

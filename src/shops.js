@@ -5,6 +5,7 @@
 import { renderMarkers, highlightMarker, flyTo } from './map.js';
 import { toggleStop, isInRoute } from './route.js';
 import { openShopModal } from './modals.js';
+import { hasVisited } from './stamps.js';
 
 /* ── State ──────────────────────────────────────────────────── */
 let allShops     = [];
@@ -28,6 +29,9 @@ const emptyEl = () => $('listEmpty');
 export function initShops(shops) {
   allShops = shops;
   _bindControls();
+
+  /* Stamp-update → herrender de lijst zodat bezocht-badges kloppen */
+  document.addEventListener('boerenroute:stampupdate', () => _render());
 
   /* Route-change → herrender knoppen op kaarten */
   document.addEventListener('boerenroute:routechange', () => {
@@ -241,6 +245,8 @@ function _cardHTML(shop) {
     badges.push('<span class="shop-badge badge-premium">✨ Uitgelicht</span>');
   if (shop.dagVers)
     badges.push(`<span class="shop-badge badge-dagvers" title="${_esc(shop.dagVers)}">🌿 Vandaag vers</span>`);
+  if (hasVisited(shop.id))
+    badges.push('<span class="shop-badge badge-visited" title="Bezocht — stempel ontvangen">🗂️ Bezocht</span>');
   if (openStatus === true)
     badges.push('<span class="shop-badge badge-open">Nu open</span>');
   else if (openStatus === false)

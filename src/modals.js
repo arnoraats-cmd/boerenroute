@@ -3,6 +3,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { toggleStop, isInRoute } from './route.js';
+import { checkIn, hasVisited } from './stamps.js';
 
 const FORMSPREE = 'https://formspree.io/f/xykvvprz';
 
@@ -65,6 +66,77 @@ export function openShopModal(shop) {
     closeModal();
     openTipModal(shop.name);
   });
+
+  /* Check-in knop */
+  const checkinBtn = _overlay.querySelector('#modalCheckinBtn');
+  if (checkinBtn) {
+    checkinBtn.addEventListener('click', () => _handleCheckin(shop, checkinBtn));
+  }
+}
+
+function _handleCheckin(shop, btn) {
+  /* Optioneel GPS-verificatie */
+  if (navigator.geolocation) {
+    btn.textContent = '📍 Locatie controleren…';
+    btn.disabled = true;
+
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        const d = _haversineM(pos.coords.latitude, pos.coords.longitude, shop.lat, shop.lng);
+        if (d < 500) {
+          _doCheckin(shop, btn, true);
+        } else {
+          /* Te ver weg — vraag bevestiging */
+          btn.textContent = '📍 Check in (je bent niet dichtbij)';
+          btn.disabled = false;
+          btn.classList.add('checkin-far');
+          btn.addEventListener('click', () => _doCheckin(shop, btn, false), { once: true });
+        }
+      },
+      () => {
+        /* GPS geweigerd → gewoon inchecken */
+        _doCheckin(shop, btn, false);
+      },
+      { timeout: 6000, maximumAge: 30000 }
+    );
+  } else {
+    _doCheckin(shop, btn, false);
+  }
+}
+
+function _doCheckin(shop, btn, verified) {
+  const isNew = checkIn(shop);
+  if (isNew) {
+    btn.textContent = '✅ Ingecheckt!';
+    btn.disabled = true;
+    btn.classList.remove('checkin-far');
+    btn.classList.add('checkin-done');
+    /* Kleine stempel-animatie */
+    _stampBurst(btn, verified);
+    document.dispatchEvent(new CustomEvent('boerenroute:stampupdate'));
+  } else {
+    btn.textContent = '✅ Al bezocht';
+    btn.disabled = true;
+  }
+}
+
+function _stampBurst(anchorEl, verified) {
+  const rect = anchorEl.getBoundingClientRect();
+  const burst = document.createElement('div');
+  burst.className = 'stamp-burst';
+  burst.style.left = `${rect.left + rect.width / 2}px`;
+  burst.style.top  = `${rect.top}px`;
+  burst.innerHTML  = verified
+    ? '<span class="stamp-burst-inner">📍<br><small>GPS ✓</small></span>'
+    : '<span class="stamp-burst-inner">🗂️</span>';
+  document.body.appendChild(burst);
+  setTimeout(() => burst.remove(), 1200);
+}
+
+function _haversineM(la1, lo1, la2, lo2) {
+  const R = 6371000, dL = (la2-la1)*Math.PI/180, dG = (lo2-lo1)*Math.PI/180;
+  const a = Math.sin(dL/2)**2 + Math.cos(la1*Math.PI/180)*Math.cos(la2*Math.PI/180)*Math.sin(dG/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 }
 
 function _refreshRouteBtn(id) {
@@ -141,6 +213,14 @@ function _shopHTML(shop) {
       </button>
       <a href="${mapsUrl}" target="_blank" rel="noopener" class="btn btn-ghost">🗺️ Navigeren</a>
       <button id="modalTipBtn" class="btn btn-ghost">💡 Tip</button>
+    </div>
+    <div class="modal-checkin-wrap">
+      <button id="modalCheckinBtn"
+        class="btn modal-checkin-btn ${hasVisited(shop.id) ? 'checkin-done' : ''}"
+        ${hasVisited(shop.id) ? 'disabled' : ''}>
+        ${hasVisited(shop.id) ? '✅ Al bezocht — stempel ontvangen!' : '📍 Check in — ik ben hier!'}
+      </button>
+      ${!hasVisited(shop.id) ? '<p class="modal-checkin-hint">Verdien een stempel op je digitale stempelkaart</p>' : ''}
     </div>`;
 }
 
