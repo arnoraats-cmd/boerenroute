@@ -18,6 +18,7 @@ let _routeLine  = null;
 let _routeNums  = new Map(); // id → routenummer (1-based)
 const _data     = new Map(); // id → { marker, shop }
 let _hl         = null;      // id van huidig uitgelicht marker
+let _drawVer    = 0;         // versieteller om stale OSRM-responses te negeren
 
 /* ══ Init ════════════════════════════════════════════════════════ */
 
@@ -113,13 +114,49 @@ export function invalidateSize() {
 
 /* ══ Route-polyline ═════════════════════════════════════════════ */
 
-export function drawRoute(stops) {
+export async function drawRoute(stops) {
   if (_routeLine) { _routeLine.remove(); _routeLine = null; }
-  if (!stops.length || !_map) return;
+  if (stops.length < 2 || !_map) return;
 
+  const ver = ++_drawVer;
+
+  try {
+    const coords  = stops.map(s => `${s.lng},${s.lat}`).join(';');
+    const timeout = new Promise((_, rej) =>
+      setTimeout(() => rej(new Error('timeout')), 8000)
+    );
+    const data = await Promise.race([
+      fetch(
+        `https://router.project-osrm.org/route/v1/cycling/${coords}` +
+        `?geometries=geojson&overview=full&steps=false`
+      ).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+      timeout,
+    ]);
+
+    if (ver !== _drawVer) return; // nieuwere aanvraag onderweg, negeer
+
+    if (data.code === 'Ok' && data.routes?.[0]) {
+      _routeLine = L.geoJSON(data.routes[0].geometry, {
+        style: { color: '#3B6D11', weight: 5, opacity: .9, lineJoin: 'round', lineCap: 'round' },
+      }).addTo(_map);
+      _map.fitBounds(_routeLine.getBounds(), { padding: [48, 48], maxZoom: 14 });
+
+      /* Stuur werkelijke wegafstand terug voor het routepaneel */
+      const km = data.routes[0].distance / 1000;
+      document.dispatchEvent(new CustomEvent('boerenroute:routedistance', { detail: { km } }));
+    } else {
+      _drawFallback(stops);
+    }
+  } catch {
+    if (ver !== _drawVer) return;
+    _drawFallback(stops);
+  }
+}
+
+function _drawFallback(stops) {
   _routeLine = L.polyline(
     stops.map(s => [s.lat, s.lng]),
-    { color: '#3B6D11', weight: 4, opacity: .85, lineJoin: 'round' }
+    { color: '#3B6D11', weight: 4, opacity: .6, dashArray: '10 8', lineJoin: 'round' }
   ).addTo(_map);
 }
 

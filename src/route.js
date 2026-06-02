@@ -73,6 +73,14 @@ function _bindPanel() {
   document.getElementById('optimizeBtn')?.addEventListener('click', _optimize);
   document.getElementById('gpxBtn')?.addEventListener('click', _downloadGPX);
   document.getElementById('shareBtn')?.addEventListener('click', _share);
+
+  /* Echte wegafstand van OSRM ontvangen */
+  document.addEventListener('boerenroute:routedistance', e => {
+    const distEl = document.getElementById('routeTotalDist');
+    if (distEl && _stops.length >= 2) {
+      distEl.textContent = `${_fmt(e.detail.km)} totaal`;
+    }
+  });
 }
 
 /* ══ Panel renderen ══════════════════════════════════════════════ */

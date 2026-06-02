@@ -685,7 +685,7 @@
    */
   .content-wrap {
     display: grid;
-    grid-template-columns: 3fr 2fr;   /* ~60% kaart, ~40% lijst */
+    grid-template-columns: 1fr 1fr;   /* 50/50: kaart en lijst even breed */
     min-height: calc(100dvh - var(--header-h) - var(--toolbar-h));
     max-width: var(--max-w);
     margin: 0 auto;
@@ -694,11 +694,17 @@
   /* Kaart */
   .map-section {
     position: sticky;
+    grid-column: 1;
+    grid-row: 1;
     top: calc(var(--header-h) + var(--toolbar-h));
-    height: min(calc(100dvh - var(--header-h) - var(--toolbar-h)), 78vh);
-    max-height: 820px;
+    height: min(calc(100dvh - var(--header-h) - var(--toolbar-h)), 68vh);
+    max-height: 720px;
     overflow: hidden;
   }
+
+  /* Lijst en routepaneel zitten altijd in kolom 2, rij 1 */
+  .list-section  { grid-column: 2; grid-row: 1; }
+  .route-section { grid-column: 2; grid-row: 1; }
 
   .map-container {
     width: 100%;
