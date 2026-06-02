@@ -1,0 +1,2621 @@
+[
+  {
+    "id": 1,
+    "emoji": "🌱",
+    "name": "Boer in Natuur",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6957874,
+    "lng": 5.6002557,
+    "address": "Erenakkerstraat 4, Uden",
+    "hours": "Bel/mail voor openingstijden",
+    "products": [
+      "groente",
+      "streekproducten",
+      "biologisch"
+    ],
+    "tags": [
+      "groente"
+    ],
+    "placeId": "ChIJa1IO12cdx0cRPzOtKfesfbU",
+    "googleRating": 5,
+    "googleReviews": 2,
+    "dagVers": null,
+    "desc": "Duurzame boerderij in Uden waar natuur en voedselproductie hand in hand gaan. Biologische teelt met respect voor mens en dier."
+  },
+  {
+    "id": 2,
+    "emoji": "🥛",
+    "name": "De Volkelse Hooiberg",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6512336,
+    "lng": 5.6635526,
+    "address": "Venstraat 3, Volkel",
+    "hours": "Bel voor openingstijden: 06-25544802",
+    "products": [
+      "verse melk",
+      "zuivel",
+      "kaas",
+      "streekproducten",
+      "overnachting"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJcXRgnxQcx0cRDEYTiBUFnwA",
+    "googleRating": 4.7,
+    "googleReviews": 75,
+    "dagVers": null,
+    "desc": "Boerderij in Volkel met verse koemelk, zuivelproducten en streekproducten. Ook overnachten mogelijk — ideaal als fietsvakantie-basis."
+  },
+  {
+    "id": 3,
+    "emoji": "🛒",
+    "name": "Bram's Hofke",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6805568,
+    "lng": 5.7023466,
+    "address": "Beemdsteeg 1, Zeeland",
+    "hours": "vr 14–18u · za 12–18u",
+    "products": [
+      "groente",
+      "fruit",
+      "streekproducten",
+      "eieren"
+    ],
+    "tags": [
+      "groente",
+      "eieren"
+    ],
+    "placeId": "ChIJ_5mmD18bx0cRdXtIy7HrMjU",
+    "googleRating": 4.7,
+    "googleReviews": 3,
+    "dagVers": null,
+    "desc": "Kleinschalig hofje in Zeeland met verse groente en fruit van eigen land. Vriendelijk personeel en goede kwaliteit."
+  },
+  {
+    "id": 4,
+    "emoji": "🥚",
+    "name": "Cuppen-Ploegmakers",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.7027201,
+    "lng": 5.6819502,
+    "address": "Kleine Graspeel 9, Zeeland",
+    "hours": "ma–zo 7–19u",
+    "products": [
+      "eieren",
+      "pluimvee"
+    ],
+    "tags": [
+      "eieren"
+    ],
+    "placeId": "ChIJ6TRWOqUcx0cRUujaNr-E-VQ",
+    "googleRating": 4.8,
+    "googleReviews": 6,
+    "dagVers": null,
+    "desc": "Al jaren dé plek voor verse eieren in Zeeland. Elke dag open van 7 tot 19u — ook in het weekend."
+  },
+  {
+    "id": 5,
+    "emoji": "🧀",
+    "name": "Siebe's Kaas",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6269512,
+    "lng": 5.6110823,
+    "address": "Kraanmeer 15, Erp",
+    "hours": "do 9.30–16u · vr 9.30–17.30u · za 9.30–16u",
+    "products": [
+      "kaas",
+      "verse melk",
+      "geitenkaas",
+      "streekproducten",
+      "cadeaus"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJDzDSgI8fx0cRyh60oflf4QM",
+    "googleRating": 4.9,
+    "googleReviews": 84,
+    "dagVers": null,
+    "desc": "Siebe maakt zijn kaas met passie, pal naast de koeien die de melk leveren. Proeven mag altijd. Uitstekend beoordeeld door 84 klanten."
+  },
+  {
+    "id": 6,
+    "emoji": "🍓",
+    "name": "Lusthoffruit van den Biggelaar",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": true,
+    "lat": 51.6279689,
+    "lng": 5.580605,
+    "address": "Heiakkerstraat 2-3, Veghel",
+    "hours": "dagelijks 8–21u",
+    "products": [
+      "aardbeien",
+      "seizoensfruit"
+    ],
+    "tags": [
+      "fruit"
+    ],
+    "placeId": "ChIJCXygeQQex0cRKI5DI3Pabhc",
+    "googleRating": 4.7,
+    "googleReviews": 17,
+    "dagVers": null,
+    "desc": "Versautomaat langs de weg met dagverse aardbeien voor maar €2 per bakje (400g). Meest besproken trekpleister voor fietsers in de regio. Contant betalen."
+  },
+  {
+    "id": 7,
+    "emoji": "🐗",
+    "name": "Het Maashorst Varken",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.7086081,
+    "lng": 5.5830558,
+    "address": "Loo 47, Nistelrode",
+    "hours": "Bel voor openingstijden: 06-13594425",
+    "products": [
+      "varkensvlees",
+      "worst",
+      "streekproducten"
+    ],
+    "tags": [
+      "vlees"
+    ],
+    "placeId": "ChIJhUNoObzjxkcRUlvMUsbjHsE",
+    "googleRating": 5,
+    "googleReviews": 1,
+    "dagVers": null,
+    "desc": "Varkens die vrij rondlopen in de Maashorst. Het vlees is te proeven — vol van smaak, eerlijk geproduceerd en lokaal."
+  },
+  {
+    "id": 8,
+    "emoji": "🐐",
+    "name": "Op 't Maxend",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6920516,
+    "lng": 5.5573767,
+    "address": "Maxend 69, Nistelrode",
+    "hours": "do–vr 10–17u · za 10–14u",
+    "products": [
+      "geitenkaas",
+      "verse eieren",
+      "streekproducten",
+      "minicamping"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren"
+    ],
+    "placeId": "ChIJGXXd7wjjxkcRtzLoObsNyxI",
+    "googleRating": 5,
+    "googleReviews": 8,
+    "dagVers": null,
+    "desc": "Charmant streekwinkeltje met geitenkaas, verse eieren en lokale producten. Ook minicamping voor fietsers. Bekroond met 5 sterren door 8 bezoekers."
+  },
+  {
+    "id": 9,
+    "emoji": "🍄",
+    "name": "Muchamp — Versautomaat",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.5888887,
+    "lng": 5.6747453,
+    "address": "Mutshoek 2a, Boekel",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "champignons",
+      "asperges",
+      "eieren",
+      "appelsap",
+      "vlierbessensap"
+    ],
+    "tags": [
+      "groente",
+      "eieren"
+    ],
+    "placeId": "ChIJ0Ww4CSoZx0cRi3EKBFkbg-U",
+    "googleRating": 4.6,
+    "googleReviews": 12,
+    "dagVers": null,
+    "desc": "Populaire versautomaat bij Boekel met verse champignons, eieren en seizoensproducten. Zelfs appelsap en vlierbessensap verkrijgbaar."
+  },
+  {
+    "id": 10,
+    "emoji": "🪙",
+    "name": "Speelboerderij Het Gouden Woud",
+    "type": "onderweg",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.557791,
+    "lng": 5.377612,
+    "address": "Hamsestraat 18, Liempde",
+    "hours": "wo, vr 10–18u · za, zo 10–19u",
+    "products": [
+      "speeltuin",
+      "goud zoeken",
+      "dieren",
+      "terras",
+      "lunch"
+    ],
+    "tags": [
+      "kindvriendelijk"
+    ],
+    "placeId": "ChIJSbC9HJfdxkcRKvLW8nFdcDs",
+    "googleRating": 4.5,
+    "googleReviews": 655,
+    "dagVers": null,
+    "desc": "Unieke speelboerderij midden in het Groene Woud. Goud zoeken, ravotten, dieren aaien. Perfecte stop tijdens een gezinsfietstocht. Neem reservekleding mee!"
+  },
+  {
+    "id": 11,
+    "emoji": "🧀",
+    "name": "De Walhoeve boerderijwinkel",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.5326403,
+    "lng": 5.0860769,
+    "address": "Hoge Wal 15, Goirle",
+    "hours": "di–vr 9–17.30u · za 9–16u",
+    "products": [
+      "zuivel",
+      "kaas",
+      "eieren",
+      "vlees",
+      "streekproducten"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "vlees"
+    ],
+    "placeId": "ChIJTXgayqq_xkcREgFfRAp5Dak",
+    "googleRating": 4.7,
+    "googleReviews": 245,
+    "dagVers": null,
+    "desc": "Boerderijwinkel in Goirle met kaas van eigen makelij, verse zuivel, eieren en vlees. Alles van het eigen bedrijf en van lokale boeren uit de regio."
+  },
+  {
+    "id": 12,
+    "emoji": "🥚",
+    "name": "Eierautomaat De Leeuw De Laat",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6859456,
+    "lng": 4.7808998,
+    "address": "Witteweg 12, Made",
+    "hours": "dagelijks 7–21u",
+    "products": [
+      "eieren",
+      "aardappelen",
+      "uien",
+      "zuivel"
+    ],
+    "tags": [
+      "eieren",
+      "groente",
+      "zuivel"
+    ],
+    "placeId": "ChIJqZM15sOdxkcR3UvwRckt9c8",
+    "googleRating": 4.9,
+    "googleReviews": 143,
+    "dagVers": null,
+    "desc": "Populaire versautomaat in Made met dagverse eieren (4.9 ⭐ uit 143 reviews). Ook aardappelen, uien en zuivelproducten verkrijgbaar. Dagelijks open van 7 tot 21u."
+  },
+  {
+    "id": 13,
+    "emoji": "🥩",
+    "name": "Boerderijwinkel Familie van den Kieboom",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6214178,
+    "lng": 4.7527676,
+    "address": "Rietdijk 4, Breda",
+    "hours": "ma–za 9–18u · zo 10–16u",
+    "products": [
+      "vlees",
+      "groente",
+      "fruit",
+      "streekproducten"
+    ],
+    "tags": [
+      "vlees",
+      "groente",
+      "fruit"
+    ],
+    "placeId": "ChIJmyiBAMifxkcRhM49hLHF3zw",
+    "googleRating": 4.4,
+    "googleReviews": 125,
+    "dagVers": null,
+    "desc": "Sfeervolle boerderijwinkel in de Haagse Beemden-polder, aan een fietspad. Ruime keuze vers vlees en streekproducten. Speeltuintje en konijnenhok aanwezig."
+  },
+  {
+    "id": 14,
+    "emoji": "🥛",
+    "name": "Boerderijwinkel de Annahoeve",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.628831,
+    "lng": 5.0132015,
+    "address": "Zijstraat 25, De Moer",
+    "hours": "dagelijks 7–23u (automaten)",
+    "products": [
+      "vlees",
+      "eieren",
+      "melk",
+      "ijs",
+      "kefir"
+    ],
+    "tags": [
+      "vlees",
+      "eieren",
+      "zuivel"
+    ],
+    "placeId": "ChIJV1suBfCWxkcRslfvgmUkua0",
+    "googleRating": 4.7,
+    "googleReviews": 127,
+    "dagVers": null,
+    "desc": "Boerderij in De Moer met verse producten en automaten. Bekend om verse eieren, ijs en kefir. Let op: winkel en automaten hebben verschillende openingstijden."
+  },
+  {
+    "id": 15,
+    "emoji": "🧀",
+    "name": "Landwinkel Hop & Zo",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6184024,
+    "lng": 4.7140012,
+    "address": "Grintweg 4, Breda",
+    "hours": "di–za 9–17u · zo 12–17u",
+    "products": [
+      "kaas",
+      "vlees",
+      "groente",
+      "jam",
+      "ijs"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "groente"
+    ],
+    "placeId": "ChIJYSaRaWchxEcRMPEXa9_kYo0",
+    "googleRating": 4.7,
+    "googleReviews": 81,
+    "dagVers": null,
+    "desc": "Prachtige winkel in een verbouwde varkensstal met een geweldige kaasafdeling. Vers, eerlijk en lokaal — kwaliteit tegen supermarktprijzen."
+  },
+  {
+    "id": 16,
+    "emoji": "🧀",
+    "name": "Boerderijwinkel Hoefhuys",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.7344928,
+    "lng": 5.0843858,
+    "address": "Hoefstraat 39, Genderen",
+    "hours": "ma/di/do 13–17u · vr 8–17u · za 8–14u",
+    "products": [
+      "kaas",
+      "groente",
+      "zuivel",
+      "vlees"
+    ],
+    "tags": [
+      "zuivel",
+      "groente",
+      "vlees"
+    ],
+    "placeId": "ChIJW0mfnW6TxkcRh_ltt8CBiGg",
+    "googleRating": 4.9,
+    "googleReviews": 18,
+    "dagVers": null,
+    "desc": "Kleinschalige boerderijwinkel in Genderen met zelfgemaakte boerenkaas, eigen vlees en verse groente. Veel eigen geteelde producten."
+  },
+  {
+    "id": 17,
+    "emoji": "🥚",
+    "name": "Vermeulen Eieren",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.5177331,
+    "lng": 4.9966627,
+    "address": "Schellebaan 2, Riel",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "eieren"
+    ],
+    "tags": [
+      "eieren"
+    ],
+    "placeId": "ChIJmYlGvEO8xkcR0dRQ2GrFVVQ",
+    "googleRating": 4.7,
+    "googleReviews": 48,
+    "dagVers": null,
+    "desc": "Eierautomaat in Riel, 24/7 open en altijd verse eieren. Al jaren een betrouwbaar adres — 10 eieren voor een vriendelijke prijs."
+  },
+  {
+    "id": 18,
+    "emoji": "🥚",
+    "name": "Eibaar",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": true,
+    "lat": 51.7025734,
+    "lng": 4.2605799,
+    "address": "Tilsedijk 6, Den Bommel",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "eieren",
+      "gerookte eieren",
+      "eierlikeur"
+    ],
+    "tags": [
+      "eieren"
+    ],
+    "placeId": "ChIJBe1fP7hGxEcRcb62KdQHBS4",
+    "googleRating": 4.9,
+    "googleReviews": 44,
+    "dagVers": null,
+    "desc": "Eierautomaat met vrij rondlopende kippen. Grote, verse eieren tegen een goede prijs. Probeer ook de bijzondere gerookte eieren en huisgemaakte eierlikeur!"
+  },
+  {
+    "id": 19,
+    "emoji": "🥬",
+    "name": "Boerderijautomaat 'Kersvers'",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.4746088,
+    "lng": 5.9241653,
+    "address": "Puttenweg 92, Ysselsteyn",
+    "hours": "dagelijks 7–21u",
+    "products": [
+      "eieren",
+      "groente",
+      "fruit",
+      "soep",
+      "saus"
+    ],
+    "tags": [
+      "eieren",
+      "groente",
+      "fruit"
+    ],
+    "placeId": "ChIJsbjfJG0_x0cRNB4M3P7jD7c",
+    "googleRating": 4.8,
+    "googleReviews": 20,
+    "dagVers": null,
+    "desc": "Mooie lokale automaatwinkel met verse, biologische producten. Eieren, groente, fruit, soepen en sauzen — alles vers en met zorg samengesteld. Altijd open."
+  },
+  {
+    "id": 20,
+    "emoji": "🍓",
+    "name": "Asperges, aardbeien & eieren automaat",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": true,
+    "lat": 51.4281479,
+    "lng": 5.7540604,
+    "address": "Busserdijk 7, Ommel",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "asperges",
+      "aardbeien",
+      "eieren",
+      "aardappelen",
+      "ijs"
+    ],
+    "tags": [
+      "groente",
+      "fruit",
+      "eieren"
+    ],
+    "placeId": "ChIJQbBAdhk7x0cRwd44KMCWCgI",
+    "googleRating": 4.6,
+    "googleReviews": 22,
+    "dagVers": null,
+    "desc": "Versautomaat met asperges, aardbeien, eieren, aardappelen en meer. Zelfgemaakt softijs uit de machine en een zandbak voor de kinderen. Contant betalen."
+  },
+  {
+    "id": 21,
+    "emoji": "🥛",
+    "name": "Melktap Melkveehouderij Van Gastel",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.5458685,
+    "lng": 4.5463365,
+    "address": "Rucphenseweg 31, Rucphen",
+    "hours": "dagelijks 6.30–22u",
+    "products": [
+      "verse melk",
+      "ijs",
+      "eieren",
+      "kaas",
+      "aardbeien",
+      "sap"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "fruit"
+    ],
+    "placeId": "ChIJTUOzLrYZxEcRfMDswXYpjFc",
+    "googleRating": 4.7,
+    "googleReviews": 220,
+    "dagVers": null,
+    "desc": "Melktap met heerlijke verse melk en romig softijs. Ook eieren, aardbeien, kaas en sappen. Bankjes buiten om van je ijsje te genieten."
+  },
+  {
+    "id": 22,
+    "emoji": "🥛",
+    "name": "Melktap Ulicoten",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.4458099,
+    "lng": 4.8487715,
+    "address": "Molenstraat 20, Ulicoten",
+    "hours": "dagelijks 7–20u",
+    "products": [
+      "verse melk",
+      "aardappelen",
+      "streekproducten"
+    ],
+    "tags": [
+      "zuivel",
+      "groente"
+    ],
+    "placeId": "ChIJEfHZSnulxkcRTOk0v0XA81w",
+    "googleRating": 4.8,
+    "googleReviews": 25,
+    "dagVers": null,
+    "desc": "Gezellige melktap met verse melk, aardappelen en huisgemaakte producten. Vriendelijke eigenaren die om het bedrijf geven. Rondleiding mogelijk."
+  },
+  {
+    "id": 23,
+    "emoji": "🥛",
+    "name": "Melktap bij Boer Bloem",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.682183,
+    "lng": 4.7577564,
+    "address": "Moerseweg 2a, Hooge Zwaluwe",
+    "hours": "dagelijks 7–22u",
+    "products": [
+      "verse melk",
+      "yoghurt",
+      "ijs"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJleoq0aOdxkcRfBE3ENmmujw",
+    "googleRating": 4.9,
+    "googleReviews": 77,
+    "dagVers": null,
+    "desc": "Melktap met verse melk, yoghurt en zelfs ijs. Een fijne plek, alle dagen van de week geopend. Topkwaliteit rechtstreeks van de boer."
+  },
+  {
+    "id": 24,
+    "emoji": "🥛",
+    "name": "Melktap de Hugtenhoeve",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.3213919,
+    "lng": 5.6667289,
+    "address": "Hugten 24, Maarheeze",
+    "hours": "dagelijks 7–22u",
+    "products": [
+      "verse melk",
+      "yoghurt",
+      "eieren",
+      "boter",
+      "aardappelen",
+      "sap"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "groente"
+    ],
+    "placeId": "ChIJ-5eyusIvx0cRaHB7tc_fkbk",
+    "googleRating": 4.8,
+    "googleReviews": 174,
+    "dagVers": null,
+    "desc": "Mooie melktap met verse melk, yoghurt, eieren, boter en aardappelen. Ook heerlijk ijs en appel- en kersensap. Makkelijk parkeren."
+  },
+  {
+    "id": 25,
+    "emoji": "🥛",
+    "name": "Melktap de Leegvelder",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.4428667,
+    "lng": 5.8598185,
+    "address": "Leegveld 6, Deurne",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "verse melk",
+      "kaas",
+      "ijs"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJW2PwhFA5x0cRI2ag8Mi-0Ow",
+    "googleRating": 4.8,
+    "googleReviews": 146,
+    "dagVers": null,
+    "desc": "Melktap met echte melk en kaas, 24/7 geopend. Romig en smaakvol ijs. Topkwaliteit zuivel rechtstreeks van de boerderij."
+  },
+  {
+    "id": 26,
+    "emoji": "🥬",
+    "name": "Boerderijwinkel van der Heijden",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": true,
+    "lat": 51.672851,
+    "lng": 5.359749,
+    "address": "Bosscheweg 54, Den Dungen",
+    "hours": "ma–vr 8.30–17.30u · za 8–16u",
+    "products": [
+      "asperges",
+      "aardbeien",
+      "groente",
+      "fruit",
+      "aardappelen"
+    ],
+    "tags": [
+      "groente",
+      "fruit"
+    ],
+    "placeId": "ChIJcyDA92XvxkcREe_2TH3KJ60",
+    "googleRating": 4.7,
+    "googleReviews": 233,
+    "dagVers": null,
+    "desc": "Ruime boerderijwinkel met eigen verse groente, fruit en aardappelen. Je kunt losse stuks kopen — geen verspilling. Onverslaanbare smaak en kwaliteit."
+  },
+  {
+    "id": 27,
+    "emoji": "🥛",
+    "name": "A2A2 De Puurste Zuivel",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6686462,
+    "lng": 5.3380683,
+    "address": "Nieuwe Dijk 2, 's-Hertogenbosch",
+    "hours": "do 10–18u · zo 10–16u",
+    "products": [
+      "melk",
+      "boter",
+      "eieren",
+      "ijs",
+      "kefir",
+      "yoghurt",
+      "kaas"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren"
+    ],
+    "placeId": "ChIJNf8gERbvxkcRrD-0cgL07Yw",
+    "googleRating": 4.7,
+    "googleReviews": 33,
+    "dagVers": null,
+    "desc": "Pure A2A2 rauwe melk, boter, eieren, kefir en kaas. Categorie 0 eieren van topkwaliteit. Altijd tijd voor een praatje. Ook op markten in Tilburg."
+  },
+  {
+    "id": 28,
+    "emoji": "🥬",
+    "name": "Boerderijwinkel Ons Jos",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.6464435,
+    "lng": 5.2194896,
+    "address": "Nieuwkuijkseweg 38, Helvoirt",
+    "hours": "di–vr 9–17.30u · za 9–16u",
+    "products": [
+      "kaas",
+      "groente",
+      "vlees",
+      "zuivel",
+      "fruit",
+      "brood"
+    ],
+    "tags": [
+      "zuivel",
+      "groente",
+      "vlees",
+      "fruit"
+    ],
+    "placeId": "ChIJp_CzY3_rxkcRBnZirNuwY2I",
+    "googleRating": 4.8,
+    "googleReviews": 84,
+    "dagVers": null,
+    "desc": "Sfeervolle boerderijwinkel met Grand Cru kaas, biologische groente en fruit, vlees, zuivel en vers brood. Vriendelijke bediening en een mooie tuin."
+  },
+  {
+    "id": 29,
+    "emoji": "🥩",
+    "name": "Boerderijwinkel van Boer Jos",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.5318026,
+    "lng": 5.0166463,
+    "address": "Zandeind 34, Riel",
+    "hours": "wo & vr 14–17u · za 10–16u",
+    "products": [
+      "vlees",
+      "streekproducten"
+    ],
+    "tags": [
+      "vlees"
+    ],
+    "placeId": "ChIJY2ainQC9xkcRKEaqHb5P3cM",
+    "googleRating": 5,
+    "googleReviews": 40,
+    "dagVers": null,
+    "desc": "Natuurvlees van eigen Lakenvelder- en Herefordrunderen, topkwaliteit voor op de barbecue of kamado. Ook streekproducten. Cow-cuddling workshops mogelijk."
+  },
+  {
+    "id": 30,
+    "emoji": "🥛",
+    "name": "Boerderijwinkel Piet van Meintjes Hoeve",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.5803136,
+    "lng": 5.16537,
+    "address": "Hoog Heukelom 11, Heukelom",
+    "hours": "wo–vr 9.30–17.30u · za 9.30–16u",
+    "products": [
+      "zuivel",
+      "yoghurt",
+      "kaas",
+      "honing",
+      "groente",
+      "sla"
+    ],
+    "tags": [
+      "zuivel",
+      "honing",
+      "groente"
+    ],
+    "placeId": "ChIJLe5vWUPrxkcRaY-z8HLYO9c",
+    "googleRating": 4.7,
+    "googleReviews": 43,
+    "dagVers": null,
+    "desc": "Boerderijwinkel met verse zuivel, yoghurt, kaas en honing. Sinds kort ook heerlijke groente en verse salades. Altijd een vriendelijk welkom."
+  },
+  {
+    "id": 31,
+    "emoji": "🥬",
+    "name": "Biologische boerderij 't Schop",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.4771095,
+    "lng": 5.140265,
+    "address": "Esbeekseweg 2, Hilvarenbeek",
+    "hours": "wo–vr 9–18u · za 9–16u",
+    "products": [
+      "biologisch",
+      "groente",
+      "streekproducten"
+    ],
+    "tags": [
+      "groente"
+    ],
+    "placeId": "ChIJXajuHVDHxkcRtY1zXUh8oS0",
+    "googleRating": 4.7,
+    "googleReviews": 34,
+    "dagVers": null,
+    "desc": "Biologische familieboerderij met winkel, kookworkshops en rondleidingen. Een eerlijk, authentiek bedrijf met een rijke geschiedenis van 100 jaar."
+  },
+  {
+    "id": 32,
+    "emoji": "🐄",
+    "name": "De Genneper Hoeve",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.4202755,
+    "lng": 5.4745052,
+    "address": "Tongelreeppad 1, Eindhoven",
+    "hours": "dagelijks 10–17u",
+    "products": [
+      "melk",
+      "kaas",
+      "vlees",
+      "eieren",
+      "ijs",
+      "biologisch"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "eieren"
+    ],
+    "placeId": "ChIJCUaswq3ZxkcRnlGBv9F9r0E",
+    "googleRating": 4.6,
+    "googleReviews": 620,
+    "dagVers": null,
+    "desc": "Kindvriendelijke biologische dierenboerderij midden in Eindhoven. Koeien en varkens aaien, verse producten kopen en heerlijk ijs proeven. Leuk dagje uit!"
+  },
+  {
+    "id": 33,
+    "emoji": "🥬",
+    "name": "BOERDEREIKE",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.4892633,
+    "lng": 5.4662513,
+    "address": "Aanschot 80, Eindhoven",
+    "hours": "ma 13–18u · di–vr 9–18u · za 9–17u",
+    "products": [
+      "eieren",
+      "boter",
+      "groente",
+      "fruit"
+    ],
+    "tags": [
+      "eieren",
+      "zuivel",
+      "groente",
+      "fruit"
+    ],
+    "placeId": "ChIJBVwiab_exkcRF_I9E_gaaRg",
+    "googleRating": 4.5,
+    "googleReviews": 133,
+    "dagVers": null,
+    "desc": "Fijne boerderijwinkel in Eindhoven met goede keuze aan producten. Verse eieren, boter, groente en fruit — altijd topkwaliteit en vriendelijke mensen."
+  },
+  {
+    "id": 34,
+    "emoji": "🥬",
+    "name": "Boerderijwinkel De Kruisbrink",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.0545176,
+    "lng": 6.21528,
+    "address": "Kruisbrinkseweg 7, Toldijk",
+    "hours": "ma 10–18u · di–vr 9–18u · za 9–16u",
+    "products": [
+      "groente",
+      "fruit",
+      "zuivel",
+      "vlees",
+      "kaas",
+      "brood",
+      "bier"
+    ],
+    "tags": [
+      "groente",
+      "fruit",
+      "zuivel",
+      "vlees"
+    ],
+    "placeId": "ChIJuTu1BMSQx0cRRxdSH6a7n4o",
+    "googleRating": 4.7,
+    "googleReviews": 108,
+    "dagVers": null,
+    "desc": "Een van de mooiste boerderijwinkels van Nederland: veel lokaal geteelde producten, ruime keuze groente, fruit, zuivel, vlees en lokaal bier. Zelfoogst-tuin aanwezig."
+  },
+  {
+    "id": 35,
+    "emoji": "🍎",
+    "name": "Fruitbedrijf Horstink",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": true,
+    "lat": 52.0538017,
+    "lng": 6.1631034,
+    "address": "Prinsenmaatweg 3, Rha",
+    "hours": "di–vr 9–18u · za 9–16u",
+    "products": [
+      "appels",
+      "peren",
+      "groente",
+      "noten",
+      "jam",
+      "brood"
+    ],
+    "tags": [
+      "fruit",
+      "groente"
+    ],
+    "placeId": "ChIJAaBgjBSXx0cR87Dfqk9gWeI",
+    "googleRating": 4.7,
+    "googleReviews": 338,
+    "dagVers": null,
+    "desc": "Boerderijwinkel met vers fruit en groente tussen de appelbomen. Geniet van een kop koffie op het terras. Ook ambachtelijk brood en streekproducten."
+  },
+  {
+    "id": 36,
+    "emoji": "🥛",
+    "name": "Biologische Boerderij Veld en Beek",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.9707784,
+    "lng": 5.7617851,
+    "address": "Fonteinallee 33, Doorwerth",
+    "hours": "24/7 (voor leden)",
+    "products": [
+      "biologische melk",
+      "kippenvlees",
+      "groente"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "groente"
+    ],
+    "placeId": "ChIJ2Uvv4q2ux0cRnLV4un6J-Kc",
+    "googleRating": 4.7,
+    "googleReviews": 85,
+    "dagVers": null,
+    "desc": "Biologische zuivel- en groenteboerderij. Beste biologische melk en grasgevoerd kippenvlees. Producten verkrijgbaar via lidmaatschap op de website."
+  },
+  {
+    "id": 37,
+    "emoji": "🥛",
+    "name": "Biologische boerderijwinkel De Nieuwenburgt",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.0680588,
+    "lng": 6.1090817,
+    "address": "Kappersweg 5, Spankeren",
+    "hours": "vr 14–18u · za 10–16u",
+    "products": [
+      "rauwe melk",
+      "meel",
+      "granen",
+      "zuivel",
+      "streekproducten"
+    ],
+    "tags": [
+      "zuivel",
+      "graan"
+    ],
+    "placeId": "ChIJZ7i45M6Xx0cRkh11fDCnxRg",
+    "googleRating": 4.8,
+    "googleReviews": 73,
+    "dagVers": null,
+    "desc": "Prachtige biologische boerderijwinkel met meel en granen van eigen land en veel zuivel van eigen Jersey-koeien. Heerlijke romige rauwe melk."
+  },
+  {
+    "id": 38,
+    "emoji": "🧀",
+    "name": "Landwinkel IJsseloord",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.9744072,
+    "lng": 5.9602822,
+    "address": "Schaapdijk 9, Arnhem",
+    "hours": "di–vr 9.30–17u · za 9–16u",
+    "products": [
+      "verse melk",
+      "kaas",
+      "worst",
+      "yoghurt",
+      "eieren",
+      "groente"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "eieren",
+      "groente"
+    ],
+    "placeId": "ChIJQ324VAqkx0cR8cwlKkUadSs",
+    "googleRating": 4.7,
+    "googleReviews": 607,
+    "dagVers": null,
+    "desc": "Perfecte boerderijwinkel met huisgemaakte kaas, worst en verse melk van het eigen melkveebedrijf. Goedkoper dan de supermarkt en topkwaliteit."
+  },
+  {
+    "id": 39,
+    "emoji": "🥛",
+    "name": "Melktap Wilp / boerderij de Elshof",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.2161161,
+    "lng": 6.1056856,
+    "address": "Zwarte Kolkstraat 22, Wilp",
+    "hours": "dagelijks 8–21u",
+    "products": [
+      "verse melk",
+      "eieren",
+      "ijs",
+      "kwark",
+      "worst",
+      "groente"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "vlees",
+      "groente"
+    ],
+    "placeId": "ChIJYZ7KUNTBx0cR4jT45EAcBPU",
+    "googleRating": 4.8,
+    "googleReviews": 230,
+    "dagVers": null,
+    "desc": "Melktap en boerderijwinkel met verse melk, eieren en ijs. Leuk voor kinderen — koeien kijken en mini-tractoren. Ruim parkeren, betalen via QR-code."
+  },
+  {
+    "id": 40,
+    "emoji": "🥛",
+    "name": "Melktap Gelkenhorst",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.1322016,
+    "lng": 5.6191454,
+    "address": "Valkseweg 167, Barneveld",
+    "hours": "ma–za 7–21u",
+    "products": [
+      "biologische melk",
+      "eieren",
+      "lasagne",
+      "pannenkoekmix"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren"
+    ],
+    "placeId": "ChIJPcPQr01NxkcR1EM38m0ySV8",
+    "googleRating": 4.8,
+    "googleReviews": 24,
+    "dagVers": null,
+    "desc": "Biologische verse melk en eieren rechtstreeks uit de automaat. Neem glazen flessen en muntgeld mee. Heerlijke verse boerderijmelk tegen een mooie prijs."
+  },
+  {
+    "id": 41,
+    "emoji": "🍦",
+    "name": "Blij van de Boerderij",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.9715861,
+    "lng": 6.6460954,
+    "address": "Manenschijnweg 2, Vragender",
+    "hours": "dagelijks 7–20u",
+    "products": [
+      "melk",
+      "kaas",
+      "softijs",
+      "rundvlees",
+      "eieren"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "eieren"
+    ],
+    "placeId": "ChIJf3pwexF7uEcR18zo7tkUYm4",
+    "googleRating": 5,
+    "googleReviews": 10,
+    "dagVers": null,
+    "desc": "Leuke boerderij waar je je eigen softijs mag scheppen — heerlijk romig! Ook melk, kaas, rundvlees en eieren. Fijne plek om te stoppen tijdens het fietsen."
+  },
+  {
+    "id": 42,
+    "emoji": "🥛",
+    "name": "Boerderijwinkel 't Muldershuis",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.1236988,
+    "lng": 6.3692252,
+    "address": "Galgengoorweg 17, Vorden",
+    "hours": "dagelijks 8–21u",
+    "products": [
+      "verse melk",
+      "koffie",
+      "vlees",
+      "softijs",
+      "bier",
+      "honing"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "honing"
+    ],
+    "placeId": "ChIJwbjv-l2Nx0cR4n8ybOnr9iY",
+    "googleRating": 4.8,
+    "googleReviews": 50,
+    "dagVers": null,
+    "desc": "Boerderijwinkel met melktap, verse koffie, gebak, vlees en softijs. Geniet van je koffie op het terras. Tegenover het hertenkamp gelegen — leuk met kinderen."
+  },
+  {
+    "id": 43,
+    "emoji": "🥛",
+    "name": "De Melktap Culemborg",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.9416159,
+    "lng": 5.1925397,
+    "address": "Wethouder Schoutenweg 6, Culemborg",
+    "hours": "ma–za 8.20–21u",
+    "products": [
+      "rauwe melk",
+      "boter",
+      "honing",
+      "eieren",
+      "fruit",
+      "vla"
+    ],
+    "tags": [
+      "zuivel",
+      "honing",
+      "eieren",
+      "fruit"
+    ],
+    "placeId": "ChIJsQnxpqRhxkcRWmL2BbZvYDw",
+    "googleRating": 4.8,
+    "googleReviews": 70,
+    "dagVers": null,
+    "desc": "Verse rauwe melk en meer rechtstreeks van de boer, opgehaald met een leuke robot-automaat. Ook boter, honing, eieren en vla. Leuk voor kinderen!"
+  },
+  {
+    "id": 44,
+    "emoji": "🍎",
+    "name": "Country Store Green Ham",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": true,
+    "lat": 52.1089318,
+    "lng": 4.9896454,
+    "address": "Parkweg 22A, Utrecht (Haarzuilens)",
+    "hours": "vr–za 9–17u",
+    "products": [
+      "groente",
+      "eieren",
+      "kaas",
+      "jam",
+      "fruit",
+      "ijs"
+    ],
+    "tags": [
+      "groente",
+      "eieren",
+      "zuivel",
+      "fruit"
+    ],
+    "placeId": "ChIJiQxHul1wxkcRt2RX6imAYDE",
+    "googleRating": 4.6,
+    "googleReviews": 215,
+    "dagVers": null,
+    "desc": "Gezellige winkel met verse groente, eieren, kaas en streekproducten bij Kasteel de Haar. Speeltuintje, dieren en in september appelplukdagen. Leuk dagje uit."
+  },
+  {
+    "id": 45,
+    "emoji": "🍒",
+    "name": "Country Store New Slagmaat",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": true,
+    "lat": 52.0547529,
+    "lng": 5.1566908,
+    "address": "Marsdijk 5, Bunnik",
+    "hours": "vr 10–18u · za 9–17u",
+    "products": [
+      "fruit",
+      "kersen",
+      "appels",
+      "worst",
+      "groente"
+    ],
+    "tags": [
+      "fruit",
+      "vlees",
+      "groente"
+    ],
+    "placeId": "ChIJaUz_zEFmxkcRWLRBhqztYNw",
+    "googleRating": 4.6,
+    "googleReviews": 205,
+    "dagVers": null,
+    "desc": "Fruitboerderij met zelfpluk van kersen en appels in het seizoen. Worst van eigen koeien, lokale groente en een kinderboerderij. Geweldig voor een gezinsuitje."
+  },
+  {
+    "id": 46,
+    "emoji": "🥬",
+    "name": "Boerderijwinkel de Groenekan",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.1397833,
+    "lng": 5.1752283,
+    "address": "Nieuwe Weteringseweg 139, Groenekan",
+    "hours": "ma–za 9–21u",
+    "products": [
+      "biologisch",
+      "worst",
+      "kaas",
+      "groente"
+    ],
+    "tags": [
+      "groente",
+      "vlees",
+      "zuivel"
+    ],
+    "placeId": "ChIJc6NXBBVpxkcRXiwz4o1rQds",
+    "googleRating": 4.4,
+    "googleReviews": 196,
+    "dagVers": null,
+    "desc": "Farm-to-table winkel met automaat (pin) en een mooie keuze biologische producten. Lekkere worst en diverse soorten kaas."
+  },
+  {
+    "id": 47,
+    "emoji": "🍎",
+    "name": "Plattelandswinkel De Haarse Gaard",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": true,
+    "lat": 52.118341,
+    "lng": 5.002303,
+    "address": "Thematerweg 8, Utrecht (Haarzuilens)",
+    "hours": "di–za 9–17u",
+    "products": [
+      "biologisch",
+      "appels",
+      "groente",
+      "fruit"
+    ],
+    "tags": [
+      "groente",
+      "fruit"
+    ],
+    "placeId": "ChIJg_XfSk9wxkcRyaQox_YTUnU",
+    "googleRating": 4.7,
+    "googleReviews": 134,
+    "dagVers": null,
+    "desc": "Charmante winkel met biologische, lokale producten bij Kasteel de Haar. Heerlijke appels. Eind september een appelplukdag met activiteiten voor kinderen."
+  },
+  {
+    "id": 48,
+    "emoji": "🥛",
+    "name": "Verse melk automaat (Meerndijk)",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.0669486,
+    "lng": 5.0246834,
+    "address": "Meerndijk 61, Utrecht (De Meern)",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "verse melk",
+      "eieren",
+      "yoghurt",
+      "groente"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "groente"
+    ],
+    "placeId": "ChIJ_dgcwbR6xkcRdIcSzuwAqJU",
+    "googleRating": 4.7,
+    "googleReviews": 152,
+    "dagVers": null,
+    "desc": "24/7 melkautomaat met heerlijke verse melk vol room voor maar €1 per liter. Ook eieren, yoghurt en groente. Glazen flessen ter plekke verkrijgbaar."
+  },
+  {
+    "id": 49,
+    "emoji": "🥚",
+    "name": "Boer-Der-EI-Automaat",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.0499291,
+    "lng": 5.4535777,
+    "address": "Haarweg 3, Woudenberg",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "eieren",
+      "kaas",
+      "aardappelen",
+      "honing"
+    ],
+    "tags": [
+      "eieren",
+      "zuivel",
+      "groente",
+      "honing"
+    ],
+    "placeId": "ChIJu-1kCeBRxkcRaoga12aazWM",
+    "googleRating": 4.9,
+    "googleReviews": 19,
+    "dagVers": null,
+    "desc": "Leuke automaat met grote biologische eieren tegen een goede prijs, plus kaas, aardappelen en honing. 24/7 open. Regelmatig dubbele dooiers!"
+  },
+  {
+    "id": 50,
+    "emoji": "🥬",
+    "name": "Boerderijautomaat Waverveen",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.2200764,
+    "lng": 4.8965685,
+    "address": "Cliffordweg 11, Waverveen",
+    "hours": "ma–za 7–21u",
+    "products": [
+      "groente",
+      "kaas",
+      "ijs",
+      "honing",
+      "fruit",
+      "vlees"
+    ],
+    "tags": [
+      "groente",
+      "zuivel",
+      "honing",
+      "fruit",
+      "vlees"
+    ],
+    "placeId": "ChIJAdagSv50xkcRBhmnDzS1GCY",
+    "googleRating": 4.7,
+    "googleReviews": 90,
+    "dagVers": null,
+    "desc": "Mooie automaatwinkel met lokale groente, kaas, ijs en honing. Goed bereikbaar te voet, per fiets of auto met gratis parkeerplek ervoor."
+  },
+  {
+    "id": 51,
+    "emoji": "🧀",
+    "name": "Kaasautomaat Middelbroek",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.1066635,
+    "lng": 5.4163597,
+    "address": "Leusbroekerweg 1, Leusden",
+    "hours": "ma–za 24u open",
+    "products": [
+      "kaas"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJR9CdbApFxkcRYCG2fE4Wmmk",
+    "googleRating": 5,
+    "googleReviews": 17,
+    "dagVers": null,
+    "desc": "Kaasautomaat langs de weg bij de boerderij. Heerlijke verse boerenkaas, goedkoper dan de supermarkt. Sinds wij hier kopen nooit meer supermarktkaas!"
+  },
+  {
+    "id": 52,
+    "emoji": "🥩",
+    "name": "Landbouwbedrijf & boerderijwinkel Grooten",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 50.9122179,
+    "lng": 5.9926462,
+    "address": "Heihoven 2, Heerlen",
+    "hours": "wo–vr 10–17.30u · za 9–16u",
+    "products": [
+      "groente",
+      "eieren",
+      "vlees",
+      "kippenvlees",
+      "ijs"
+    ],
+    "tags": [
+      "groente",
+      "eieren",
+      "vlees"
+    ],
+    "placeId": "ChIJbR6v8lm8wEcRxGMifDLRG1U",
+    "googleRating": 4.7,
+    "googleReviews": 189,
+    "dagVers": null,
+    "desc": "Boerderijwinkel met altijd verse groente, eieren en heerlijk vlees. Het kippenvlees maakt een groot verschil in smaak. Prettige bediening."
+  },
+  {
+    "id": 53,
+    "emoji": "🥚",
+    "name": "Boerderij Janssen Spaubeek",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 50.9353046,
+    "lng": 5.8360969,
+    "address": "Schoolstraat 26, Spaubeek",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "eieren",
+      "aardappelen",
+      "vlees",
+      "yoghurt",
+      "fruit",
+      "kaas"
+    ],
+    "tags": [
+      "eieren",
+      "groente",
+      "vlees",
+      "zuivel",
+      "fruit"
+    ],
+    "placeId": "ChIJmVlysKTAwEcRCiYH_qQ3fTc",
+    "googleRating": 4.8,
+    "googleReviews": 49,
+    "dagVers": null,
+    "desc": "Onbemande boerderijautomaat met verse eieren, aardappelen, vlees van eigen vee, zuivel en fruit. Eerlijke producten tegen eerlijke prijzen. Pin of contactloos."
+  },
+  {
+    "id": 54,
+    "emoji": "🥩",
+    "name": "Boerderijwinkel Fromberg",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 50.8515506,
+    "lng": 5.8714266,
+    "address": "Panhuis 12, Schin op Geul",
+    "hours": "ma 10–13u · di 10–17u · vr–za 9–17u",
+    "products": [
+      "vlees",
+      "eieren",
+      "ijs",
+      "vla",
+      "streekproducten"
+    ],
+    "tags": [
+      "vlees",
+      "eieren"
+    ],
+    "placeId": "ChIJAXpyXZiVwEcRf7keNQz2w3Y",
+    "googleRating": 4.5,
+    "googleReviews": 65,
+    "dagVers": null,
+    "desc": "Gezellig winkeltje vol streekproducten in het heuvelland. Vlees van eigen slacht, eieren van vrije-uitloopkippen, heerlijk ijs en vla. Enthousiaste eigenaar."
+  },
+  {
+    "id": 55,
+    "emoji": "🥬",
+    "name": "Biologische Tuinderij de Waog",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.2734301,
+    "lng": 6.0060514,
+    "address": "Dijk 2, Neer",
+    "hours": "vr–za 7–18u",
+    "products": [
+      "biologisch",
+      "groente",
+      "fruit",
+      "brood",
+      "vlees"
+    ],
+    "tags": [
+      "groente",
+      "fruit",
+      "vlees"
+    ],
+    "placeId": "ChIJySomvuNLx0cRJN4RbY56HzU",
+    "googleRating": 4.5,
+    "googleReviews": 41,
+    "dagVers": null,
+    "desc": "Grote biologische tuinderij met een enorme keuze: van vers brood tot biologische groente, fruit en vlees. Gedreven mensen met passie voor biologisch telen."
+  },
+  {
+    "id": 56,
+    "emoji": "🥛",
+    "name": "Melktap & kaasautomaat Maria Hoop",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.1064309,
+    "lng": 6.0007824,
+    "address": "Vuchterstraat 28, Maria Hoop",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "rauwe melk",
+      "kaas",
+      "softijs",
+      "honing",
+      "eieren"
+    ],
+    "tags": [
+      "zuivel",
+      "honing",
+      "eieren"
+    ],
+    "placeId": "ChIJnUfDvguxwEcRA82FCgEwMh0",
+    "googleRating": 4.7,
+    "googleReviews": 37,
+    "dagVers": null,
+    "desc": "Natuurlijke rauwe melk, boerenkaas en softijs uit de automaat, 24/7 open. Ook honing en eieren. Prachtig wandelgebied met grazende koeien rondom."
+  },
+  {
+    "id": 57,
+    "emoji": "🥛",
+    "name": "Farmshop Mechelen",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 50.7951589,
+    "lng": 5.9227529,
+    "address": "Hoofdstraat 22a, Mechelen",
+    "hours": "dagelijks 8.30–22u",
+    "products": [
+      "verse melk",
+      "eieren",
+      "vlees",
+      "kaas",
+      "yoghurt",
+      "boter"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "vlees"
+    ],
+    "placeId": "ChIJ8zGs6ZaXwEcRxjzdPFG2-60",
+    "googleRating": 4.8,
+    "googleReviews": 20,
+    "dagVers": null,
+    "desc": "Melktap met eieren en vlees in het Limburgse heuvelland. Makkelijk in gebruik en langer open dan de meeste plekken. Verse rauwe melk en zuivelproducten."
+  },
+  {
+    "id": 58,
+    "emoji": "🥚",
+    "name": "Mergellandei",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 50.8137242,
+    "lng": 5.7639642,
+    "address": "Keerestraat 3, Eckelrade",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "eieren"
+    ],
+    "tags": [
+      "eieren"
+    ],
+    "placeId": "ChIJFxs4EaTrwEcR7_4DqiV9aNE",
+    "googleRating": 4.9,
+    "googleReviews": 115,
+    "dagVers": null,
+    "desc": "De beste verse eieren van de regio uit de automaat, 24/7 open. Van 6 tot 90 eieren tegelijk. Van blije kippen — je proeft de kwaliteit. Vriendelijke eigenaar."
+  },
+  {
+    "id": 59,
+    "emoji": "🥛",
+    "name": "Boerderijwinkel Smit's Boer&Goed",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.6177413,
+    "lng": 4.7891192,
+    "address": "Noordervaart 188, Stompetoren",
+    "hours": "ma/do 14–18u · vr 9–18u · za 9–15u",
+    "products": [
+      "verse melk",
+      "ijs",
+      "sap",
+      "zuivel",
+      "streekproducten"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJ6Y9rjmlXz0cR_xuJIaHbzhU",
+    "googleRating": 4.8,
+    "googleReviews": 198,
+    "dagVers": null,
+    "desc": "Goed georganiseerde boerderij met verse producten. Verse melk rechtstreeks van de koe, huisgemaakt sap en ijs. Mooi assortiment lokale producten tegen eerlijke prijzen."
+  },
+  {
+    "id": 60,
+    "emoji": "🥛",
+    "name": "Melktap & boerderijwinkel Durgerdam",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.3895979,
+    "lng": 5.0016322,
+    "address": "Durgerdammergouw 20, Amsterdam",
+    "hours": "dagelijks 7–20u",
+    "products": [
+      "verse melk",
+      "kwark",
+      "ijs",
+      "zuivel"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJ7_POAGsPxkcRPH6khWt9b_A",
+    "googleRating": 4.7,
+    "googleReviews": 109,
+    "dagVers": null,
+    "desc": "Farm-to-table concept net buiten Amsterdam: kies wat je wilt en betaal via tikkie. Verse melk uit de automaat en heerlijke extra dikke kwark. Ook ijs."
+  },
+  {
+    "id": 61,
+    "emoji": "🍦",
+    "name": "Boerderijwinkel Zijper Zuivel",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.7975109,
+    "lng": 4.7498698,
+    "address": "Grote Sloot 274, Schagerbrug",
+    "hours": "dagelijks 8–21u",
+    "products": [
+      "ijs",
+      "kaas",
+      "melk",
+      "kwark",
+      "boter",
+      "eieren"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren"
+    ],
+    "placeId": "ChIJU8lxrS9Pz0cRypDdSV0Qzts",
+    "googleRating": 4.8,
+    "googleReviews": 35,
+    "dagVers": null,
+    "desc": "Heerlijk winkeltje met zelfbediening: ijs, kaas, melk, kwark, boter en eieren. Veel lekkerder dan de supermarkt en open tot 21u. Aai de vriendelijke hond en kippen!"
+  },
+  {
+    "id": 62,
+    "emoji": "🍓",
+    "name": "by Broersen",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": true,
+    "lat": 52.7205943,
+    "lng": 4.7683766,
+    "address": "Dergmeerweg 30, Warmenhuizen",
+    "hours": "ma–vr 8.30–17.30u · za 8.30–17u",
+    "products": [
+      "aardbeien",
+      "fruit",
+      "kaas",
+      "melk",
+      "streekproducten"
+    ],
+    "tags": [
+      "fruit",
+      "zuivel"
+    ],
+    "placeId": "ChIJjVdaF-JQz0cRq72Ydt2Bm1I",
+    "googleRating": 4.6,
+    "googleReviews": 473,
+    "dagVers": null,
+    "desc": "Geweldige streekwinkel met veel regionale producten. Verse aardbeien en zelfpluk in de vakanties. Ook romige kaas en melk. Een zelfbedieningsmuur op zondag."
+  },
+  {
+    "id": 63,
+    "emoji": "🍦",
+    "name": "Melktap De Hoef",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.193227,
+    "lng": 4.8247787,
+    "address": "De Hoef Oostzijde 115, De Hoef",
+    "hours": "dagelijks 7–22u",
+    "products": [
+      "verse melk",
+      "ijs",
+      "kaas",
+      "eieren",
+      "vla"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren"
+    ],
+    "placeId": "ChIJM8x5oDHfxUcR1eKT9W3Zk-c",
+    "googleRating": 4.8,
+    "googleReviews": 71,
+    "dagVers": null,
+    "desc": "Lokale familieboerderij met vers softijs, huisgemaakte kaas en eieren uit de automaat. Het beste softijs in de zomer. Betalen met pin of contactloos."
+  },
+  {
+    "id": 64,
+    "emoji": "🥛",
+    "name": "Melktap Grosthuizen",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.6184161,
+    "lng": 4.9841339,
+    "address": "Grosthuizen 50, Avenhorn",
+    "hours": "dagelijks 7–20u",
+    "products": [
+      "verse melk",
+      "eieren",
+      "kaas",
+      "yoghurt"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren"
+    ],
+    "placeId": "ChIJI34nwWmqyEcRnToZ9srhosg",
+    "googleRating": 4.8,
+    "googleReviews": 43,
+    "dagVers": null,
+    "desc": "Heerlijk verse, ijskoude melk uit de tap. Neem muntgeld en flessen mee (ook ter plekke te koop). Op zaterdag ook yoghurt, eieren en kaas in de koeling."
+  },
+  {
+    "id": 65,
+    "emoji": "🥛",
+    "name": "de Melktap (Broekergouw)",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.4132923,
+    "lng": 4.9722959,
+    "address": "Broekergouw 5, Amsterdam",
+    "hours": "dagelijks 8–21u",
+    "products": [
+      "rauwe melk"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJTxrEGi0JxkcR5CLqDTjILQc",
+    "googleRating": 4.8,
+    "googleReviews": 90,
+    "dagVers": null,
+    "desc": "Schattige melktap met heerlijke rauwe melk — je wilt geen supermarktmelk meer. Neem eigen fles en muntgeld mee. Prachtige omgeving om doorheen te fietsen."
+  },
+  {
+    "id": 66,
+    "emoji": "🐄",
+    "name": "Hoeve Biesland",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.0250811,
+    "lng": 4.3952474,
+    "address": "Bieslandseweg 1, Delfgauw",
+    "hours": "ma–vr 10–17u · za 9–17u",
+    "products": [
+      "biologisch",
+      "vlees",
+      "melk",
+      "kefir",
+      "eieren",
+      "kaas",
+      "groente"
+    ],
+    "tags": [
+      "vlees",
+      "zuivel",
+      "eieren",
+      "groente"
+    ],
+    "placeId": "ChIJWV6xFAC2xUcRPN1TJQFBwtQ",
+    "googleRating": 4.7,
+    "googleReviews": 428,
+    "dagVers": null,
+    "desc": "Fantastische biologische boerderijwinkel met heerlijk vlees, zuivel, eieren, kaas en groente. Wandel rond en zie hoe de dieren leven. Leuk voor het hele gezin."
+  },
+  {
+    "id": 67,
+    "emoji": "🐄",
+    "name": "Farm Het Lansingerland",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.97936,
+    "lng": 4.5199083,
+    "address": "Hoeksekade 146, Bergschenhoek",
+    "hours": "ma–vr 10–17u · za 9.30–17u",
+    "products": [
+      "verse melk",
+      "groente",
+      "jam",
+      "kaas",
+      "soep"
+    ],
+    "tags": [
+      "zuivel",
+      "groente"
+    ],
+    "placeId": "ChIJvTt00ljMxUcRqgU7JN5FofU",
+    "googleRating": 4.5,
+    "googleReviews": 180,
+    "dagVers": null,
+    "desc": "Verborgen pareltje met boerderijwinkel, terras en koeien. Verse groente, huisgemaakte jam en verse melk tegen mooie prijs. Leuk voor kinderen: koeien voeren."
+  },
+  {
+    "id": 68,
+    "emoji": "🍎",
+    "name": "Zorgboerderij The Buytenhof",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": true,
+    "lat": 51.856596,
+    "lng": 4.4497761,
+    "address": "Rijsdijk 98, Rhoon",
+    "hours": "di–za 9–17u",
+    "products": [
+      "appels",
+      "peren",
+      "bloemen",
+      "groente",
+      "fruit"
+    ],
+    "tags": [
+      "fruit",
+      "groente"
+    ],
+    "placeId": "ChIJ4xiopB40xEcRdm0OPwNEr-8",
+    "googleRating": 4.5,
+    "googleReviews": 708,
+    "dagVers": null,
+    "desc": "Sfeervolle zorgboerderij met zelfpluk van appels, peren en bloemen. Grote buitenspeeltuin, theehuis en dieren. Een heerlijk uitje met (klein)kinderen."
+  },
+  {
+    "id": 69,
+    "emoji": "🧀",
+    "name": "Boerderij Nellesteijn",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.1543061,
+    "lng": 4.4280448,
+    "address": "Maaldrift 6, Wassenaar",
+    "hours": "wo–za 11–17u",
+    "products": [
+      "kaas",
+      "melk",
+      "ijs",
+      "zuivel",
+      "honing"
+    ],
+    "tags": [
+      "zuivel",
+      "honing"
+    ],
+    "placeId": "ChIJi1rS-nbHxUcRpj5l3pHE8gY",
+    "googleRating": 4.7,
+    "googleReviews": 255,
+    "dagVers": null,
+    "desc": "Schone, gezellige boerderij met fantastische zuivel. De Italiaanse kaas is heerlijk en het karamel-koekjesijs onverslaanbaar. Kinderen genieten van de dieren."
+  },
+  {
+    "id": 70,
+    "emoji": "🥬",
+    "name": "Boerderijautomaat Elenbaas",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.4887647,
+    "lng": 3.710429,
+    "address": "Quarlespolderweg 7, Lewedorp",
+    "hours": "ma–za 7–21u",
+    "products": [
+      "appels",
+      "eieren",
+      "aardappelen",
+      "uien",
+      "sap"
+    ],
+    "tags": [
+      "fruit",
+      "eieren",
+      "groente"
+    ],
+    "placeId": "ChIJBbeR5M-PxEcR6WqDhKEoaL8",
+    "googleRating": 4.5,
+    "googleReviews": 28,
+    "dagVers": null,
+    "desc": "Fijne boerderijautomaat met verse appels, eieren, aardappelen, uien en sappen voor weinig geld. Modern, met pin of contant betalen. Heerlijk vers!"
+  },
+  {
+    "id": 71,
+    "emoji": "🍎",
+    "name": "Maatschap Van Binsbergen",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.5217632,
+    "lng": 4.2140674,
+    "address": "Mosselhoekseweg 2, Tholen",
+    "hours": "ma–za 7.30–22u",
+    "products": [
+      "eieren",
+      "appels",
+      "peren",
+      "fruit",
+      "aardappelen"
+    ],
+    "tags": [
+      "eieren",
+      "fruit",
+      "groente"
+    ],
+    "placeId": "ChIJzas46ABsxEcRI75c3FGSIWY",
+    "googleRating": 4.8,
+    "googleReviews": 40,
+    "dagVers": null,
+    "desc": "Goede automaatwinkel met verse eieren, appels, peren en aardappelen tegen mooie prijzen. In een rustige, prettige buurt. Vriendelijke service als je hulp nodig hebt."
+  },
+  {
+    "id": 72,
+    "emoji": "🍒",
+    "name": "Fruitautomaat Puur Kattendijke",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": true,
+    "lat": 51.501462,
+    "lng": 3.9514501,
+    "address": "Plasweg 2, Kattendijke",
+    "hours": "dagelijks 8–22u",
+    "products": [
+      "kersen",
+      "aardbeien",
+      "fruit"
+    ],
+    "tags": [
+      "fruit"
+    ],
+    "placeId": "ChIJa0oYRo1jxEcRjAVoL2RkqVM",
+    "googleRating": 4.4,
+    "googleReviews": 19,
+    "dagVers": null,
+    "desc": "Leuke fruitautomaat met heerlijke kersen en aardbeien. Een fijne theetuin en speeltuintje voor kinderen. Ook buiten openingstijden vers fruit uit de automaat."
+  },
+  {
+    "id": 73,
+    "emoji": "🥛",
+    "name": "Boerderijwinkel Erve 't Overweg",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.3125078,
+    "lng": 6.2047368,
+    "address": "Raalterweg 49, Diepenveen",
+    "hours": "dagelijks 7–19u",
+    "products": [
+      "rauwe melk",
+      "ijs",
+      "vlees",
+      "eieren",
+      "groente"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "eieren",
+      "groente"
+    ],
+    "placeId": "ChIJUwb1WULpx0cRGsHnDnMMbEI",
+    "googleRating": 4.9,
+    "googleReviews": 86,
+    "dagVers": null,
+    "desc": "Mooie boerderij met fantastische melk en ijs. Heerlijke rauwe volle melk, ijskoud en vol smaak. Ook verse eieren, groente en vlees zoals biefstuk tegen mooie prijs."
+  },
+  {
+    "id": 74,
+    "emoji": "🥛",
+    "name": "Melktap de Beekhoek",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.2271817,
+    "lng": 6.9816902,
+    "address": "Glanerbrugstraat 24, Glane",
+    "hours": "dagelijks 7–20u",
+    "products": [
+      "verse melk",
+      "eieren"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren"
+    ],
+    "placeId": "ChIJd6fu1zMVuEcR_wPC0y6x2lI",
+    "googleRating": 4.9,
+    "googleReviews": 137,
+    "dagVers": null,
+    "desc": "Superverse en koude melk uit de tap, je kunt het meteen ter plekke drinken. Neem muntgeld en flessen mee (ook te koop). Ook eieren. Kalfjes aaien kan!"
+  },
+  {
+    "id": 75,
+    "emoji": "🥛",
+    "name": "Melktap Weleveld (Huiskes-Beltman)",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.3231122,
+    "lng": 6.7527428,
+    "address": "Hertmerweg 35, Hertme",
+    "hours": "dagelijks 7–21u",
+    "products": [
+      "rauwe melk",
+      "chocolademelk",
+      "vla",
+      "kefir",
+      "yoghurt"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJq6w7BHYPuEcR1DUrVkjoTKg",
+    "googleRating": 4.7,
+    "googleReviews": 27,
+    "dagVers": null,
+    "desc": "Verse rauwe melk, romig en vol. Ook lekkere chocolademelk en veel huisgemaakte zuivel zoals Griekse yoghurt, kefir en hopjesvla. Echt Nederlandse smaak."
+  },
+  {
+    "id": 76,
+    "emoji": "🥛",
+    "name": "Melktap 't Melkhuuske",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.1724498,
+    "lng": 6.8167514,
+    "address": "Leppepaalweg 30, Enschede",
+    "hours": "dagelijks 7–19u",
+    "products": [
+      "verse melk"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJY7XRRjoTuEcR4bN4Pvo1lHE",
+    "googleRating": 4.9,
+    "googleReviews": 50,
+    "dagVers": null,
+    "desc": "Heerlijke verse, volle melk uit de tap tegen een lage prijs. Schone, fijne plek. Let op: alleen contant betalen, dus neem muntgeld mee."
+  },
+  {
+    "id": 77,
+    "emoji": "🥬",
+    "name": "Boerderijwinkel Berkenwolde Silo",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.2746067,
+    "lng": 5.3879584,
+    "address": "Nekkeveldweg 10, Zeewolde",
+    "hours": "ma–za 8–21u",
+    "products": [
+      "kefir",
+      "eieren",
+      "vlees",
+      "groente",
+      "honing",
+      "melk"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "vlees",
+      "groente",
+      "honing"
+    ],
+    "placeId": "ChIJ5cWTqe05xkcRfD02f0nNdJo",
+    "googleRating": 4.8,
+    "googleReviews": 53,
+    "dagVers": null,
+    "desc": "Heerlijke boerderijwinkel met de beste kefir, eieren, steak en verse melk. Kleinschalig met goede, betaalbare producten. Vriendelijke eigenaar die de winst inzet voor goede doelen."
+  },
+  {
+    "id": 78,
+    "emoji": "🥬",
+    "name": "Country Store Versluis",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.6953569,
+    "lng": 5.722629,
+    "address": "Urkerweg 16, Emmeloord",
+    "hours": "ma–vr 8–18u · za 8–17u",
+    "products": [
+      "groente",
+      "fruit",
+      "streekproducten",
+      "cadeaus"
+    ],
+    "tags": [
+      "groente",
+      "fruit"
+    ],
+    "placeId": "ChIJxdz-RViGyEcRvC1xHoTUTtk",
+    "googleRating": 4.6,
+    "googleReviews": 110,
+    "dagVers": null,
+    "desc": "Fijne boerderijwinkel in de Noordoostpolder met alles wat je nodig hebt: verse groente, fruit, streekproducten en leuke cadeauartikelen."
+  },
+  {
+    "id": 79,
+    "emoji": "🥛",
+    "name": "Hoeve Vredeveld",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.501815,
+    "lng": 5.5827938,
+    "address": "Zeeasterweg 15, Lelystad",
+    "hours": "ma–za 9–17u",
+    "products": [
+      "verse melk",
+      "vlees",
+      "groente",
+      "streekproducten"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "groente"
+    ],
+    "placeId": "ChIJvwTHiNsoxkcR6UNvXWPpmbY",
+    "googleRating": 4.6,
+    "googleReviews": 195,
+    "dagVers": null,
+    "desc": "Vriendelijke boerderijwinkel met verse melk, hoogwaardig vlees en verse groente tegen een mooie prijs. Leuk om met kinderen langs te gaan."
+  },
+  {
+    "id": 80,
+    "emoji": "🥛",
+    "name": "Melktap Zuidveld",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.8630057,
+    "lng": 6.6420233,
+    "address": "Oranjekanaal Zuidzijde 15, Zuidveld",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "biologische rauwe melk",
+      "eieren",
+      "pannenkoekmix"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren"
+    ],
+    "placeId": "ChIJiWgvTdghyEcRO55MRyg6z-8",
+    "googleRating": 4.8,
+    "googleReviews": 46,
+    "dagVers": null,
+    "desc": "Klein verkooppunt met biologische verse rauwe melk en eieren, 24/7 open. Glazen flessen verkrijgbaar. Heerlijk vers en je kunt een kijkje nemen bij de koeien."
+  },
+  {
+    "id": 81,
+    "emoji": "🥛",
+    "name": "Melktap Geesbrug",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.722764,
+    "lng": 6.6194082,
+    "address": "Coevorderstraatweg 25A, Geesbrug",
+    "hours": "dagelijks 7.30–20u",
+    "products": [
+      "verse melk",
+      "kaas"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJC1d0wnQdyEcRedJxQ9duXYU",
+    "googleRating": 4.8,
+    "googleReviews": 51,
+    "dagVers": null,
+    "desc": "Schone, fijne melktap met heerlijke melk en kaas uit de automaat — betaalt met pin of munten. Vriendelijke eigenaar die graag een rondleiding op de boerderij geeft."
+  },
+  {
+    "id": 82,
+    "emoji": "🥛",
+    "name": "Melktap Grolloo",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.9543517,
+    "lng": 6.6642074,
+    "address": "Rolderstraat 5, Grolloo",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "rauwe melk",
+      "vlees",
+      "eieren",
+      "honing"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "eieren",
+      "honing"
+    ],
+    "placeId": "ChIJ53eh_QcnyEcRQaHd4v3k6FM",
+    "googleRating": 5,
+    "googleReviews": 7,
+    "dagVers": null,
+    "desc": "Nette melktap met een mooie keuze lokale producten. Heerlijke melk, vlees, eieren en honing van topkwaliteit tegen een eerlijke prijs. Vriendelijke boer. Neem contant geld mee."
+  },
+  {
+    "id": 83,
+    "emoji": "🍦",
+    "name": "Melktap Hunse (Rustpunt)",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.8828842,
+    "lng": 6.5266366,
+    "address": "Eursing 31, Beilen",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "verse melk",
+      "softijs",
+      "eieren",
+      "kaas"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren"
+    ],
+    "placeId": "ChIJM-EMeJYiyEcRdZaLBesgXI4",
+    "googleRating": 4.9,
+    "googleReviews": 41,
+    "dagVers": null,
+    "desc": "Melk-, softijs-, eier- en kaasautomaat met rustpunt. Verse melk en kaas, heerlijk softijs in de zomer. Drie picknicktafels onder een grote eik om te genieten."
+  },
+  {
+    "id": 84,
+    "emoji": "🥛",
+    "name": "Melk Delicatesse Zuidveld",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 52.86414,
+    "lng": 6.6318576,
+    "address": "Tilbrugstraat 4, Zuidveld",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "verse melk",
+      "eieren",
+      "yoghurt",
+      "courgette",
+      "bloemen"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "groente"
+    ],
+    "placeId": "ChIJ8TKkgUYiyEcRK20FvI0v0zE",
+    "googleRating": 4.6,
+    "googleReviews": 56,
+    "dagVers": null,
+    "desc": "Verse rauwe melk, eieren en yoghurt uit de automaat, 24/7 open. Ideaal als je vergeten bent melk te halen. Ook courgettes en bloemen in het seizoen."
+  },
+  {
+    "id": 85,
+    "emoji": "🧈",
+    "name": "Melktap Siegerswoude",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.092597,
+    "lng": 6.2199607,
+    "address": "Binnenwei 23, Siegerswoude",
+    "hours": "24/7 — altijd open",
+    "products": [
+      "verse melk",
+      "boter",
+      "vlees",
+      "yoghurt",
+      "vla",
+      "ijs"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees"
+    ],
+    "placeId": "ChIJA9gp-wZJyEcRVcH0ngSrhhw",
+    "googleRating": 4.9,
+    "googleReviews": 39,
+    "dagVers": null,
+    "desc": "Automaatwinkel met heerlijke melk en — vooral — fantastische boter en ijs. Ook steak, Griekse yoghurt en vla. Kies zelf je producten. Vriendelijke bediening."
+  },
+  {
+    "id": 86,
+    "emoji": "🥛",
+    "name": "Wâldpleats",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.2062781,
+    "lng": 5.9778753,
+    "address": "Zomerweg 23, Burgum",
+    "hours": "24/7 (automaat) — winkel overdag",
+    "products": [
+      "verse melk",
+      "vla",
+      "yoghurt",
+      "kaas",
+      "vlees",
+      "eieren",
+      "honing"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees",
+      "eieren",
+      "honing"
+    ],
+    "placeId": "ChIJT58phPFUyEcRiZ1I7i4mEZA",
+    "googleRating": 4.8,
+    "googleReviews": 148,
+    "dagVers": null,
+    "desc": "Heerlijke boerderijwinkel met ruime keuze: vla, yoghurt, karnemelk, kaas, ijs, vlees van eigen koeien, eieren, honing en meel van de Sumarder molen. 24/7 automaat."
+  },
+  {
+    "id": 87,
+    "emoji": "🥛",
+    "name": "Melktap Trimunt",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.1363207,
+    "lng": 6.1953392,
+    "address": "Kloosterweg 5, Marum",
+    "hours": "ma–za 7–22u",
+    "products": [
+      "verse melk",
+      "ijs",
+      "boter",
+      "kaas",
+      "bouillon"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "placeId": "ChIJ2frFBwBPyEcRdhgl4R_7BFU",
+    "googleRating": 4.7,
+    "googleReviews": 53,
+    "dagVers": null,
+    "desc": "Gezellige melktap met goede producten: melk, cacao, kaas, ijs, honing en cakemix. Vriendelijke boer die graag een rondleiding geeft langs koeien, pony's en alpaca's."
+  },
+  {
+    "id": 88,
+    "emoji": "🥛",
+    "name": "Biologische melktap Twijzel",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.2445302,
+    "lng": 6.1108522,
+    "address": "Tsjerkebuorren 43, Twijzel",
+    "hours": "ma–za 8–20u",
+    "products": [
+      "biologische rauwe melk",
+      "vlees"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees"
+    ],
+    "placeId": "ChIJW6-ZpEityUcRuOA6EnaAqmg",
+    "googleRating": 4.7,
+    "googleReviews": 23,
+    "dagVers": null,
+    "desc": "Heerlijke verse biologische rauwe melk uit de automaat. Ook vlees van eigen vee. De boer legt alles graag persoonlijk uit. Zo hoort melk te smaken!"
+  },
+  {
+    "id": 89,
+    "emoji": "🍦",
+    "name": "Melktap de Hemmen",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.0585223,
+    "lng": 5.4175709,
+    "address": "Weersterweg 4, Makkum",
+    "hours": "ma–za 8.30–19.30u · zo 10–19.30u",
+    "products": [
+      "verse melk",
+      "eieren",
+      "yoghurt",
+      "vla",
+      "kaas",
+      "vlees"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "vlees"
+    ],
+    "placeId": "ChIJF7OLTXnDyEcRxE3x18-N1eo",
+    "googleRating": 4.8,
+    "googleReviews": 56,
+    "dagVers": null,
+    "desc": "Verse zuivel, eieren en vlees in een prachtige landelijke omgeving. De yoghurt en ijskoffie zijn heerlijk. Betalen met contant of pin. Heerlijk om even te ontspannen."
+  },
+  {
+    "id": 90,
+    "emoji": "🥩",
+    "name": "Hoeve Zuidwending",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.2227773,
+    "lng": 6.4321104,
+    "address": "Westerdijk 10, Den Horn",
+    "hours": "ma/do 13.30–18u · vr 10–18u · za 10–15u",
+    "products": [
+      "melk",
+      "kwark",
+      "eieren",
+      "boter",
+      "jam",
+      "vlees",
+      "brood"
+    ],
+    "tags": [
+      "zuivel",
+      "eieren",
+      "vlees"
+    ],
+    "placeId": "ChIJOeg7AEbNyUcRTKH0wX-BYEg",
+    "googleRating": 5,
+    "googleReviews": 49,
+    "dagVers": null,
+    "desc": "Charmant boerderijwinkeltje met topkwaliteit: melk, kwark, bruine eieren, boter, jam, vlees en brood. Heerlijke lokale producten tegen een eerlijke prijs."
+  },
+  {
+    "id": 91,
+    "emoji": "🥚",
+    "name": "Maatschap de Wie-Len",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.2779176,
+    "lng": 6.6067396,
+    "address": "Ellerhuizen 5, Bedum",
+    "hours": "ma–za 8–20u",
+    "products": [
+      "eieren",
+      "honing",
+      "aardappelen",
+      "uien"
+    ],
+    "tags": [
+      "eieren",
+      "honing",
+      "groente"
+    ],
+    "placeId": "ChIJJfTOIBLSyUcRMEvBmDKWl38",
+    "googleRating": 4.7,
+    "googleReviews": 55,
+    "dagVers": null,
+    "desc": "Mooie plek bij Groningen voor verse vrije-uitloopeieren, honing, aardappelen en uien. De eieren zijn ongeëvenaard van smaak en kleur. Vriendelijke eigenaren."
+  },
+  {
+    "id": 92,
+    "emoji": "🥩",
+    "name": "Hoeve Middelhorst",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.13902,
+    "lng": 6.5262272,
+    "address": "De Horst 13, Peize",
+    "hours": "24/7 (bestellen & afhalen)",
+    "products": [
+      "vlees",
+      "rundvlees",
+      "hamburgers"
+    ],
+    "tags": [
+      "vlees"
+    ],
+    "placeId": "ChIJ6wArniwzyEcRPROpm66tBC8",
+    "googleRating": 5,
+    "googleReviews": 15,
+    "dagVers": null,
+    "desc": "Puur en smaakvol rundvlees van eigen koeien. Je proeft het verschil met supermarktvlees. Eenvoudig bestellen via de website en ophalen in Peize. De ossenhaas is een aanrader!"
+  },
+  {
+    "id": 93,
+    "emoji": "🥛",
+    "name": "Zandster Boerenzuivel",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.374592,
+    "lng": 6.767784,
+    "address": "Zijldijksterweg 1, 't Zandt",
+    "hours": "dagelijks 6–22u",
+    "products": [
+      "melk",
+      "yoghurt",
+      "kefir",
+      "ijs",
+      "vla",
+      "vlees"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees"
+    ],
+    "placeId": "ChIJTQglIz3ZyUcRIzigK-2dnzo",
+    "googleRating": 4.8,
+    "googleReviews": 44,
+    "dagVers": null,
+    "desc": "Beste boerderijwinkel van Groningen volgens veel klanten. Heerlijke kefir, melk, yoghurt, eierlikeur, ijs en vlees. Ruime keuze en makkelijke zelfbediening."
+  },
+  {
+    "id": 94,
+    "emoji": "🥛",
+    "name": "Zuivelboerderij De Driesprong",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": false,
+    "lat": 53.2807405,
+    "lng": 6.5932337,
+    "address": "Noordwolderweg 6, Noordwolde",
+    "hours": "do–vr 9–17u · za 9–15u",
+    "products": [
+      "zuivel",
+      "melk",
+      "vlees"
+    ],
+    "tags": [
+      "zuivel",
+      "vlees"
+    ],
+    "placeId": "ChIJX4PmuwnSyUcRHR1C26Lfwcg",
+    "googleRating": 4.7,
+    "googleReviews": 52,
+    "dagVers": null,
+    "desc": "Eerlijk familiebedrijf met een wisselend aanbod zuivel en vlees. Gastvrij ontvangen en contactloos betalen mogelijk. Leuke educatieve rondleiding bij weidegang."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "Boerenroute.nl",
+  "short_name": "Boerenroute",
+  "description": "Verse producten van de boer bij jou in de buurt",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F3EC",
+  "theme_color": "#3B6D11",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/public/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/public/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/public/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "categories": ["food", "travel", "navigation"],
+  "lang": "nl",
+  "dir": "ltr",
+  "screenshots": [
+    { "src": "/public/og-image.png", "sizes": "1200x630", "type": "image/png" }
+  ]
+}

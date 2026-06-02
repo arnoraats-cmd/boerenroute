@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3B6D11">
+
+  <title>Boerenroute.nl — Boerderijwinkels, eierautomaten &amp; streekproducten in de buurt</title>
+  <meta name="description" content="Vind boerderijwinkels, eierautomaten, melktaps, zelfpluktuinen en streekproducten bij jou in de buurt. Plan er een fietstocht omheen.">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Boerenroute.nl">
+  <meta property="og:description" content="Verse producten, rechtstreeks van de boer. Vind winkels bij jou in de buurt en plan een fietstocht.">
+  <meta property="og:url"         content="https://www.boerenroute.nl">
+  <meta property="og:image"       content="/public/og-image.png">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="manifest" href="/public/manifest.json">
+  <link rel="apple-touch-icon" href="/public/icons/apple-touch-icon.png">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Boerenroute.nl",
+    "url": "https://www.boerenroute.nl",
+    "description": "Vind boerderijwinkels, eierautomaten, melktaps en zelfpluktuinen bij jou in de buurt en plan er een fietstocht omheen.",
+    "applicationCategory": "TravelApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "inLanguage": "nl",
+    "about": { "@type": "Thing", "name": "Boerderijwinkels en streekproducten Nederland" }
+  }
+  </script>
+
+  <script data-goatcounter="https://boerenroute.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+  <!-- ══ HEADER ══════════════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Boerenroute.nl home">
+        <span class="logo-icon" aria-hidden="true">🌾</span>
+        <span class="logo-text">Boeren<strong>route.nl</strong></span>
+      </a>
+
+      <nav class="header-nav" aria-label="Hoofdnavigatie">
+        <button class="nav-btn active" data-page="kaart">Kaart</button>
+        <button class="nav-btn" data-page="route">
+          Mijn route <span class="nav-badge" id="routeBadge" hidden>0</span>
+        </button>
+        <button class="nav-btn" data-page="boodschappen">🛒 Boodschappenlijst</button>
+        <button class="nav-btn" data-page="seizoen">Seizoen</button>
+        <button class="nav-btn" data-page="over">Over ons</button>
+      </nav>
+
+      <button class="btn-install" id="installBtn" hidden aria-label="Installeer app">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v13M7 10l5 5 5-5"/><path d="M3 19h18"/></svg>
+        Installeer
+      </button>
+      <button class="tip-btn" id="tipBtn" aria-label="Tip een winkel">
+        <span aria-hidden="true">＋</span> Tip een winkel
+      </button>
+    </div>
+  </header>
+
+  <!-- ══ HERO ════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Welkomssectie">
+
+    <!-- Achtergrond-lagen -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <!-- Inhoud -->
+    <div class="hero-inner">
+      <div class="hero-badge" aria-hidden="true">
+        <span>🌿</span> 94 geverifieerde locaties &middot; altijd gratis
+      </div>
+
+      <h1 class="hero-title">
+        Verse producten,<br>
+        <em>rechtstreeks</em> van de boer
+      </h1>
+
+      <p class="hero-sub">
+        Vind boerderijwinkels, eierautomaten en zelfpluktuinen bij jou in de buurt.<br>
+        Plan er een fietstocht omheen.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary" id="heroGpsBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="9" stroke-dasharray="3 0" opacity=".3"/></svg>
+          Vind winkels bij mij
+        </button>
+        <button class="btn btn-secondary" id="heroSearchBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          Zoek een plaats
+        </button>
+      </div>
+
+      <div class="hero-search" id="heroSearch" hidden>
+        <label for="heroSearchInput" class="sr-only">Zoek een plaats of postcode</label>
+        <input type="text" id="heroSearchInput" class="hero-search-input"
+               placeholder="Bijv. Utrecht, Wageningen, 5401…" autocomplete="off">
+        <button class="btn btn-primary" id="heroSearchSubmit">Zoeken</button>
+      </div>
+
+      <div class="hero-stats" role="list">
+        <span role="listitem"><strong>7</strong> provincies</span>
+        <span class="stat-sep" aria-hidden="true">·</span>
+        <span role="listitem"><strong>5</strong> categorieën</span>
+        <span class="stat-sep" aria-hidden="true">·</span>
+        <span role="listitem">op de <strong>fiets</strong></span>
+      </div>
+    </div>
+
+    <!-- Wave-overgang naar main -->
+    <div class="hero-wave" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 72" preserveAspectRatio="none">
+        <path d="M0,36 C240,72 480,0 720,36 C960,72 1200,12 1440,44 L1440,72 L0,72 Z" fill="#F7F3EC"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ══ MAIN ════════════════════════════════════════════════════ -->
+  <main id="mainLayout">
+
+    <!-- Toolbar -->
+    <div class="toolbar" id="toolbar">
+      <div class="toolbar-inner">
+        <div class="search-wrap">
+          <label for="searchInput" class="sr-only">Zoek op naam, product of plaats</label>
+          <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="search" id="searchInput" class="search-input"
+                 placeholder="Zoek naam, product of plaats…" autocomplete="off">
+        </div>
+
+        <div class="filter-chips" id="filterChips" role="group" aria-label="Filters op type">
+          <button class="chip chip-active" data-filter="all">Alles</button>
+          <button class="chip" data-filter="winkel">🏪 Winkel</button>
+          <button class="chip" data-filter="automaat">🥛 Automaat</button>
+          <button class="chip" data-filter="zelfpluk">🍓 Zelfpluk</button>
+          <button class="chip" data-filter="markt">🛒 Markt</button>
+          <button class="chip chip-subtle" data-filter="onderweg">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Onderweg (kids)
+          </button>
+        </div>
+
+        <div class="toolbar-right">
+          <label class="toggle-pill" title="Toon alleen nu open">
+            <input type="checkbox" id="openNowToggle">
+            <span>Nu open</span>
+          </label>
+          <div class="toolbar-divider" aria-hidden="true"></div>
+          <select class="sort-select" id="sortSelect" aria-label="Sorteren op">
+            <option value="afstand">Afstand</option>
+            <option value="rating">Beoordeling</option>
+            <option value="naam">Naam A–Z</option>
+          </select>
+          <select class="sort-select" id="osmRadius" aria-label="Extra winkels via OpenStreetMap">
+            <option value="0">Alleen geverifieerd</option>
+            <option value="25">+ OSM 25 km</option>
+            <option value="50" selected>+ OSM 50 km</option>
+            <option value="100">+ OSM 100 km</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- OSM-indicator (verschijnt na locatie-keuze) -->
+    <div class="osm-indicator" id="osmIndicator" hidden aria-live="polite"></div>
+
+    <!-- ══ KAART-MODUS: map + sidebar naast elkaar ════════════════ -->
+    <div id="mapView">
+    <div class="content-wrap">
+
+      <section class="map-section" aria-label="Kaart met locaties">
+        <div id="map" class="map-container">
+          <div class="map-placeholder" aria-hidden="true">
+            <span>🗺️</span>
+            <p>Kaart wordt geladen…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="list-section" id="listSection" aria-label="Lijst met verkooppunten">
+        <div class="list-header">
+          <span class="list-count" id="listCount">Locaties laden…</span>
+          <label class="toggle-pill toggle-pill-sm" title="Toon alleen favorieten">
+            <input type="checkbox" id="favToggle">
+            <span>♥ Favorieten</span>
+          </label>
+        </div>
+        <ul class="shop-list" id="shopList" aria-live="polite" aria-label="Verkooppunten"></ul>
+        <p class="list-empty" id="listEmpty" hidden>
+          Geen locaties gevonden.<br>
+          <span>Probeer een andere zoekterm of pas de filters aan.</span>
+        </p>
+      </section>
+
+      <!-- Route-paneel (verborgen totdat nav-tab "Mijn route" actief is) -->
+      <section class="route-section" id="routeSection" hidden aria-label="Mijn fietsroute">
+
+        <div class="route-header">
+          <div class="route-header-top">
+            <h2 class="route-title">🚴 Mijn route</h2>
+            <button class="btn btn-ghost btn-sm" id="clearRouteBtn">Wis alles</button>
+          </div>
+          <div class="route-meta" id="routeMeta" hidden>
+            <span class="route-total" id="routeTotalDist">0 km totaal</span>
+            <button class="btn btn-sm btn-green" id="optimizeBtn">
+              ⚡ Optimaliseer
+            </button>
+          </div>
+        </div>
+
+        <div class="route-empty" id="routeEmpty">
+          <div class="route-empty-icon">🚴</div>
+          <p>Je route is nog leeg.</p>
+          <p>Klik op <strong>+ Route</strong> bij een winkel.</p>
+        </div>
+
+        <ol class="route-stops" id="routeStops" aria-label="Route-stops"></ol>
+
+        <div class="route-actions" id="routeActions" hidden>
+          <button class="btn btn-ghost" id="gpxBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            GPX downloaden
+          </button>
+          <a class="btn btn-ghost" id="mapsLink" href="#" target="_blank" rel="noopener noreferrer">
+            🗺️ Google Maps
+          </a>
+          <button class="btn btn-ghost" id="shareBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            Delen
+          </button>
+        </div>
+
+      </section>
+
+    </div>
+    <!-- ══ BOODSCHAPPENLIJST-SECTIE ══════════════════════════════ -->
+    <section id="boodschappenSection" hidden aria-label="Boodschappenlijst" class="bood-section">
+      <div class="bood-container">
+        <h1 class="bood-title">🛒 Boodschappenlijst</h1>
+        <p class="bood-intro">Voeg producten toe die je zoekt — de app vindt welke winkels ze verkopen en maakt er een route van.</p>
+
+        <div class="bood-input-row">
+          <label for="boodInput" class="sr-only">Product toevoegen</label>
+          <input type="text" id="boodInput" class="form-input bood-input"
+            placeholder="Bijv. kaas, eieren, aardbeien…" autocomplete="off">
+          <button class="btn btn-primary" id="boodAddBtn">Toevoegen</button>
+        </div>
+
+        <div class="bood-suggestions" id="boodSuggestions" aria-label="Veelgekozen producten"></div>
+
+        <div class="bood-list" id="boodList" aria-label="Mijn boodschappenlijst"></div>
+
+        <p class="bood-empty" id="boodEmpty">
+          Nog niets toegevoegd. Typ een product of kies een suggestie hierboven.
+        </p>
+
+        <div class="bood-toolbar" id="boodToolbar">
+          <button class="btn btn-ghost btn-sm" id="boodClearBtn" hidden>Wis lijst</button>
+          <button class="btn btn-green" id="boodRouteBtn" hidden>
+            🚴 Maak route van winkels
+          </button>
+        </div>
+
+        <div id="boodResults" class="bood-results"></div>
+      </div>
+    </section>
+
+    <!-- ══ SEIZOENSKALENDER-SECTIE ═══════════════════════════════ -->
+    <section id="seizoenSection" hidden aria-label="Seizoenskalender"></section>
+
+    <!-- ══ OVER ONS-SECTIE ═══════════════════════════════════════ -->
+    <section id="overSection" hidden aria-label="Over Boerenroute.nl" class="over-section">
+      <div class="over-container">
+
+        <div class="over-grid">
+          <article class="over-intro">
+            <h1 class="over-title">Over Boerenroute.nl</h1>
+            <p>Boerenroute.nl helpt mensen verse producten vinden die rechtstreeks van de boer komen — boerderijwinkels, eierautomaten, melktaps en zelfpluktuinen bij hen in de buurt. En plan er meteen een fietstocht omheen.</p>
+            <p>We zijn in 2024 begonnen als een simpele kaart voor de regio Uden en groeien nu langzaam door heel Nederland. De vermeldingen zijn gratis. We verdienen aan een klein aantal betaalde uitlichtingen.</p>
+            <p>Geen cookies, geen trackers. We gebruiken <a href="https://www.goatcounter.com" rel="noopener" target="_blank">GoatCounter</a> voor privacyvriendelijke statistieken.</p>
+
+            <div class="over-stats">
+              <div class="stat-item"><strong>94+</strong><span>geverifieerde locaties</span></div>
+              <div class="stat-item"><strong>12</strong><span>provincies</span></div>
+              <div class="stat-item"><strong>0</strong><span>cookies</span></div>
+            </div>
+          </article>
+
+          <article class="over-adverteren" id="adverteren">
+            <h2>Adverteren</h2>
+            <p>Wil je jouw winkel uitlichten? We bieden drie niveaus:</p>
+            <div class="adverteer-grid">
+              <div class="adverteer-card">
+                <div class="adverteer-prijs">€9 <span>/maand</span></div>
+                <div class="adverteer-naam">✨ Badge</div>
+                <ul>
+                  <li>Uitgelicht-badge op de kaart</li>
+                  <li>Altijd bovenaan in de lijst</li>
+                  <li>Amber kleur in zoekresultaten</li>
+                </ul>
+              </div>
+              <div class="adverteer-card adverteer-featured">
+                <div class="adverteer-label">Populair</div>
+                <div class="adverteer-prijs">€15 <span>/maand</span></div>
+                <div class="adverteer-naam">🌟 Sponsorblok</div>
+                <ul>
+                  <li>Alles van Badge</li>
+                  <li>Sponsorblok op de homepage</li>
+                  <li>Logo + tagline + link</li>
+                </ul>
+              </div>
+              <div class="adverteer-card">
+                <div class="adverteer-prijs">€25 <span>/maand</span></div>
+                <div class="adverteer-naam">🏆 Sponsor+</div>
+                <ul>
+                  <li>Alles van Sponsorblok</li>
+                  <li>Weekend-feature in hero</li>
+                  <li>Vermeld in nieuwsbrief</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://formspree.io/f/xykvvprz" class="btn btn-green" target="_blank" rel="noopener" style="margin-top:16px">
+              📩 Neem contact op
+            </a>
+          </article>
+        </div>
+
+        <!-- Boerenroute van de maand -->
+        <div class="over-maand">
+          <h2>🗓️ Boerenroute van de maand</h2>
+          <p>Elke maand een kant-en-klare fietstocht langs 4–5 topwinkels. Handmatig samengesteld.</p>
+          <div id="maandRoute" class="maand-placeholder">Laden…</div>
+        </div>
+
+        <!-- Regiopagina's -->
+        <div class="over-regio">
+          <h2>🗺️ Winkels per provincie</h2>
+          <p>Op zoek naar boerderijwinkels in een specifieke regio?</p>
+          <div class="regio-links">
+            <a href="/public/regio/noord-brabant.html" class="regio-link">Noord-Brabant</a>
+            <a href="/public/regio/gelderland.html" class="regio-link">Gelderland</a>
+            <a href="/public/regio/utrecht.html" class="regio-link">Utrecht</a>
+            <a href="/public/regio/noord-holland.html" class="regio-link">Noord-Holland</a>
+            <a href="/public/regio/drenthe.html" class="regio-link">Drenthe</a>
+            <a href="/public/regio/friesland.html" class="regio-link">Friesland</a>
+            <a href="/public/regio/groningen.html" class="regio-link">Groningen</a>
+            <a href="/public/regio/limburg.html" class="regio-link">Limburg</a>
+            <a href="/public/regio/overijssel.html" class="regio-link">Overijssel</a>
+            <a href="/public/regio/zeeland.html" class="regio-link">Zeeland</a>
+            <a href="/public/regio/flevoland.html" class="regio-link">Flevoland</a>
+            <a href="/public/regio/zuid-holland.html" class="regio-link">Zuid-Holland</a>
+          </div>
+        </div>
+
+        <!-- Nieuwsbrief + contact -->
+        <div class="over-contact">
+          <div class="over-contact-col">
+            <h2>📬 Nieuwsbrief</h2>
+            <p>Maximaal één mail per maand. Geen spam.</p>
+            <form class="nieuwsbrief-form" action="https://formspree.io/f/xykvvprz" method="POST">
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1">
+              <input type="hidden" name="_subject" value="Nieuwsbrief aanmelding Boerenroute.nl">
+              <input type="hidden" name="type" value="nieuwsbrief">
+              <div class="nieuwsbrief-row">
+                <input type="email" name="email" class="form-input" required placeholder="jouw@email.nl">
+                <button type="submit" class="btn btn-primary">Aanmelden</button>
+              </div>
+            </form>
+          </div>
+          <div class="over-contact-col">
+            <h2>📩 Contact</h2>
+            <p>Vragen, fouten of ideeën? Stuur een bericht of gebruik de Tip-knop op de kaart.</p>
+            <a href="https://formspree.io/f/xykvvprz" class="btn btn-ghost" target="_blank" rel="noopener">Contact sturen →</a>
+            <p style="margin-top:8px;font-size:var(--t-sm);color:var(--text-light)">
+              Winkel aanmelden?
+              <a href="#" id="signupLink" class="modal-link">Klik hier →</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="Boerenroute.nl home">
+          <span aria-hidden="true">🌾</span>
+          Boeren<strong>route.nl</strong>
+        </a>
+        <p class="footer-tagline">Lokaal, vers en op de fiets.<br>Geen cookies. Geen trackers.</p>
+        <p class="footer-sponsor">
+          Mede mogelijk gemaakt door
+          <a href="https://www.toppy.nl" rel="noopener sponsored" target="_blank">Toppy.nl</a>
+        </p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3>Ontdekken</h3>
+          <ul>
+            <li><a href="#kaart">Kaart</a></li>
+            <li><a href="#route">Mijn route</a></li>
+            <li><a href="#seizoen">Seizoenskalender</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Over ons</h3>
+          <ul>
+            <li><a href="#over">Over Boerenroute</a></li>
+            <li><a href="#adverteren">Adverteren</a></li>
+            <li><a href="https://formspree.io/f/xykvvprz" rel="noopener">Contact &amp; tip</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Boerenroute.nl</p>
+      <a href="https://boerenroute.goatcounter.com" rel="noopener">Privacy-vriendelijke statistieken</a>
+    </div>
+  </footer>
+
+  <!-- ══ DRIJVENDE TIP-KNOP (mobiel) ════════════════════════════ -->
+  <button class="float-tip" id="floatTipBtn" aria-label="Tip een winkel">💡</button>
+
+  <!-- ══ IOS PWA-HINT ═════════════════════════════════════════════ -->
+  <div class="ios-hint" id="iosHint" hidden role="status" aria-live="polite">
+    <span class="ios-hint-icon">📲</span>
+    <p>Installeer Boerenroute als app: tik op
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Deel" style="display:inline;vertical-align:middle"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+      en kies <strong>Zet op beginscherm</strong>.
+    </p>
+    <button class="ios-hint-close" id="iosHintClose" aria-label="Sluit hint">&times;</button>
+  </div>
+
+  <!-- ══ MODAL ════════════════════════════════════════════════════ -->
+  <div id="modalOverlay" class="modal-overlay" hidden role="dialog" aria-modal="true"></div>
+
+  <!-- Leaflet JS (synchroon, vóór de module-scripts) -->
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
