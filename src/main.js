@@ -206,6 +206,7 @@ function _applyLocation(lat, lng, name) {
   hero.hidden = true;
   document.getElementById('voordelenBanner')?.setAttribute('hidden', '');
   document.getElementById('maandHomeBanner')?.setAttribute('hidden', '');
+  document.getElementById('popularRoutesBanner')?.setAttribute('hidden', '');
   document.getElementById('mainLayout')?.scrollIntoView({ behavior: 'smooth' });
   _showCrumb(name);
   _triggerOSM(lat, lng);
@@ -283,6 +284,7 @@ function _showCrumb(name) {
     hero.hidden = false;
     document.getElementById('voordelenBanner')?.removeAttribute('hidden');
     document.getElementById('maandHomeBanner')?.removeAttribute('hidden');
+    document.getElementById('popularRoutesBanner')?.removeAttribute('hidden');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
@@ -322,8 +324,12 @@ fetch('src/data/verifiedShops.json')
     initBoodschappenlijst(shops);
     initStempelkaart(shops);
 
-    /* Render maand-route op homepage zodra shops bekend zijn (race-safe) */
-    if (_maandData) _renderMaandHome(_maandData);
+    /* Render routes op homepage zodra shops bekend zijn (race-safe) */
+    if (_routesData) {
+      const featured = _routesData.routes.find(r => r.featured) || _routesData.routes[0];
+      _renderMaandHome(featured, _routesData.maand);
+      _renderPopularRoutes(_routesData);
+    }
 
     /* Expose voor OSM-toevoeging */
     window._addOSMShops = extraShops => {
@@ -338,49 +344,55 @@ fetch('src/data/verifiedShops.json')
     console.error(err);
   });
 
-/* ── Boerenroute van de maand laden ──────────────────────── */
-let _maandData = null;
-fetch('src/data/maandroute.json')
+/* ── Populaire routes laden ──────────────────────────────── */
+let _routesData = null;
+fetch('src/data/routes.json')
   .then(r => r.json())
-  .then(data => { _maandData = data; _renderMaandRoute(data); _renderMaandHome(data); })
+  .then(data => {
+    _routesData = data;
+    const featured = data.routes.find(r => r.featured) || data.routes[0];
+    _renderMaandRoute(featured, data.maand);
+    _renderMaandHome(featured, data.maand);
+    _renderPopularRoutes(data);
+  })
   .catch(() => {});
 
-function _loadMaandStops(data) {
+function _loadRouteStops(route) {
   document.querySelector('[data-page="route"]')?.click();
   import('./route.js').then(({ toggleStop, getStops }) => {
-    data.stopIds.forEach(id => {
+    route.stopIds.forEach(id => {
       if (!getStops().some(s => s.id === id)) toggleStop(id);
     });
   });
 }
 
 /* Compacte versie op de "Over ons"-pagina */
-function _renderMaandRoute(data) {
+function _renderMaandRoute(route, maand) {
   const el = document.getElementById('maandRoute');
   if (!el) return;
   el.innerHTML = `
     <div class="maand-card">
-      <div class="maand-badge">🗓️ ${_esc(data.maand)}</div>
-      <h3 class="maand-title">${data.emoji} ${_esc(data.titel)}</h3>
-      <p class="maand-sub">${_esc(data.subtitel)}</p>
-      <p class="maand-intro">${_esc(data.intro)}</p>
+      <div class="maand-badge">🗓️ ${_esc(maand)}</div>
+      <h3 class="maand-title">${route.emoji} ${_esc(route.titel)}</h3>
+      <p class="maand-sub">${_esc(route.subtitel)}</p>
+      <p class="maand-intro">${_esc(route.intro)}</p>
       <div class="maand-meta">
-        <span>📏 ${_esc(data.afstand)}</span>
-        <span>📍 ${data.stopIds.length} stops</span>
+        <span>📏 ${_esc(route.afstand)}</span>
+        <span>📍 ${route.stopIds.length} stops</span>
       </div>
       <button class="btn btn-green" id="loadMaandRoute">🚴 Laad deze route</button>
     </div>`;
   document.getElementById('loadMaandRoute')
-    ?.addEventListener('click', () => _loadMaandStops(data));
+    ?.addEventListener('click', () => _loadRouteStops(route));
 }
 
 /* Prominente showcase op de homepage met echte stops */
-function _renderMaandHome(data) {
+function _renderMaandHome(route, maand) {
   const el = document.getElementById('maandRouteHome');
   if (!el) return;
 
   /* Zoek de echte stop-winkels op naam/emoji */
-  const stops = data.stopIds
+  const stops = route.stopIds
     .map(id => _baseShops.find(s => s.id === id))
     .filter(Boolean);
 
@@ -394,12 +406,12 @@ function _renderMaandHome(data) {
   el.innerHTML = `
     <div class="maandhome-card">
       <div class="maandhome-left">
-        <div class="maandhome-badge">🗓️ Boerenroute van de maand &middot; ${_esc(data.maand)}</div>
-        <h2 class="maandhome-title">${data.emoji} ${_esc(data.titel)}</h2>
-        <p class="maandhome-sub">${_esc(data.subtitel)}</p>
-        <p class="maandhome-intro">${_esc(data.intro)}</p>
+        <div class="maandhome-badge">🗓️ Boerenroute van de maand &middot; ${_esc(maand)}</div>
+        <h2 class="maandhome-title">${route.emoji} ${_esc(route.titel)}</h2>
+        <p class="maandhome-sub">${_esc(route.subtitel)}</p>
+        <p class="maandhome-intro">${_esc(route.intro)}</p>
         <div class="maandhome-meta">
-          <span class="maandhome-meta-item">📏 <strong>${_esc(data.afstand)}</strong></span>
+          <span class="maandhome-meta-item">📏 <strong>${_esc(route.afstand)}</strong></span>
           <span class="maandhome-meta-item">📍 <strong>${stops.length}</strong> stops</span>
           <span class="maandhome-meta-item">🚴 op de fiets</span>
         </div>
@@ -414,5 +426,40 @@ function _renderMaandHome(data) {
     </div>`;
 
   document.getElementById('loadMaandRouteHome')
-    ?.addEventListener('click', () => _loadMaandStops(data));
+    ?.addEventListener('click', () => _loadRouteStops(route));
+}
+
+/* Grid met overige populaire routes op de homepage */
+function _renderPopularRoutes(data) {
+  const el = document.getElementById('popularRoutes');
+  if (!el) return;
+
+  const others = data.routes.filter(r => !r.featured);
+  if (others.length === 0) { el.closest('.poproutes')?.setAttribute('hidden', ''); return; }
+
+  el.innerHTML = others.map((route, idx) => {
+    const stops = route.stopIds
+      .map(id => _baseShops.find(s => s.id === id))
+      .filter(Boolean);
+    const emojis = stops.map(s => `<span class="poproute-stopemoji" title="${_esc(s.name)}">${s.emoji}</span>`).join('');
+    return `
+      <article class="poproute-card">
+        <div class="poproute-top">
+          <span class="poproute-emoji">${route.emoji}</span>
+          <span class="poproute-prov">${_esc(route.provincie)}</span>
+        </div>
+        <h3 class="poproute-title">${_esc(route.titel)}</h3>
+        <p class="poproute-sub">${_esc(route.subtitel)}</p>
+        <div class="poproute-stopemojis">${emojis}</div>
+        <div class="poproute-meta">
+          <span>📏 ${_esc(route.afstand)}</span>
+          <span>📍 ${stops.length} stops</span>
+        </div>
+        <button class="btn btn-ghost poproute-btn" data-route="${idx}">🚴 Laad route</button>
+      </article>`;
+  }).join('');
+
+  el.querySelectorAll('.poproute-btn').forEach(btn => {
+    btn.addEventListener('click', () => _loadRouteStops(others[+btn.dataset.route]));
+  });
 }

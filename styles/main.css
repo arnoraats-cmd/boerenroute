@@ -767,6 +767,81 @@
   }
 }
 
+/* ══ POPULAIRE ROUTES ════════════════════════════════════════════ */
+@layer components {
+  .poproutes {
+    background: var(--sand);
+    padding: clamp(8px, 2vw, 16px) var(--pad) clamp(32px, 5vw, 56px);
+  }
+  .poproutes-inner { max-width: var(--max-w); margin: 0 auto; }
+
+  .poproutes-header { text-align: center; margin-bottom: 26px; }
+  .poproutes-title {
+    font-family: var(--serif);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 6px;
+  }
+  .poproutes-sub { font-size: var(--t-sm); color: var(--text-mid); }
+
+  .poproutes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 18px;
+  }
+
+  .poproute-skeleton { color: var(--text-light); font-size: var(--t-sm); padding: 30px; text-align: center; }
+
+  .poproute-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: box-shadow var(--tb), transform var(--tb);
+  }
+  .poproute-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+
+  .poproute-top { display: flex; align-items: center; justify-content: space-between; }
+  .poproute-emoji { font-size: 1.8rem; line-height: 1; }
+  .poproute-prov {
+    font-size: var(--t-xs);
+    font-weight: 600;
+    color: var(--green-mid);
+    background: var(--green-bg);
+    padding: 3px 10px;
+    border-radius: var(--r-full);
+  }
+
+  .poproute-title {
+    font-family: var(--serif);
+    font-size: var(--t-md);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+  }
+  .poproute-sub { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.45; flex: 1; }
+
+  .poproute-stopemojis { display: flex; gap: 2px; font-size: 1.1rem; }
+  .poproute-stopemoji {
+    width: 30px; height: 30px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--sand); border-radius: 50%;
+  }
+
+  .poproute-meta {
+    display: flex;
+    gap: 14px;
+    font-size: var(--t-sm);
+    color: var(--text-mid);
+  }
+
+  .poproute-btn { width: 100%; justify-content: center; margin-top: 4px; }
+}
+
 /* ══ VERHALEN / BLOG ═════════════════════════════════════════════ */
 @layer components {
   .verhalen-section { background: var(--sand); min-height: 100vh; }
