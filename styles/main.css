@@ -89,6 +89,8 @@
   ul, ol { list-style: none; }
   a { text-decoration: none; color: inherit; }
   button { cursor: pointer; border: none; background: none; }
+  /* Zorg dat het hidden-attribuut altijd wint, ook van display:flex/grid */
+  [hidden] { display: none !important; }
 }
 
 /* ══ BASE ════════════════════════════════════════════════════════ */
