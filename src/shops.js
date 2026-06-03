@@ -26,33 +26,43 @@ const emptyEl = () => $('listEmpty');
 
 /* ══ Publiek API ════════════════════════════════════════════════ */
 
+let _bound = false;
+
 export function initShops(shops) {
   allShops = shops;
-  _bindControls();
 
-  /* Stamp-update → herrender de lijst zodat bezocht-badges kloppen */
-  document.addEventListener('boerenroute:stampupdate', () => _render());
+  /* Controls + globale listeners maar één keer binden.
+     initShops wordt opnieuw aangeroepen bij het toevoegen van OSM-winkels;
+     zonder deze guard stapelen de listeners zich op. */
+  if (!_bound) {
+    _bindControls();
 
-  /* Route-change → herrender knoppen op kaarten */
-  document.addEventListener('boerenroute:routechange', () => {
-    listEl()?.querySelectorAll('.card-route-btn').forEach(btn => {
-      const id   = +btn.dataset.id;
-      const inR  = isInRoute(id);
-      btn.classList.toggle('in-route', inR);
-      btn.setAttribute('aria-pressed', String(inR));
-      btn.textContent = inR ? '✓ In route' : '+ Route';
+    /* Stamp-update → herrender de lijst zodat bezocht-badges kloppen */
+    document.addEventListener('boerenroute:stampupdate', () => _render());
+
+    /* Route-change → herrender knoppen op kaarten */
+    document.addEventListener('boerenroute:routechange', () => {
+      listEl()?.querySelectorAll('.card-route-btn').forEach(btn => {
+        const id   = +btn.dataset.id;
+        const inR  = isInRoute(id);
+        btn.classList.toggle('in-route', inR);
+        btn.setAttribute('aria-pressed', String(inR));
+        btn.textContent = inR ? '✓ In route' : '+ Route';
+      });
     });
-  });
 
-  /* Marker-klik van map.js → selecteer kaart in lijst */
-  document.addEventListener('boerenroute:markerclick', e => {
-    const card = listEl()?.querySelector(`.shop-card[data-id="${e.detail.id}"]`);
-    if (card) {
-      listEl().querySelectorAll('.shop-card').forEach(c => c.classList.remove('selected'));
-      card.classList.add('selected');
-      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-  });
+    /* Marker-klik van map.js → selecteer kaart in lijst */
+    document.addEventListener('boerenroute:markerclick', e => {
+      const card = listEl()?.querySelector(`.shop-card[data-id="${e.detail.id}"]`);
+      if (card) {
+        listEl().querySelectorAll('.shop-card').forEach(c => c.classList.remove('selected'));
+        card.classList.add('selected');
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+
+    _bound = true;
+  }
 
   _render();
 }

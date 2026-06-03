@@ -11,9 +11,12 @@ let _allRef = [];    // referentie naar de volledige dataset
 
 /* ══ Init ════════════════════════════════════════════════════════ */
 
+let _bound = false;
+
 export function initRoute(allShops) {
   _allRef = allShops;
-  _bindPanel();
+  /* Panel-listeners maar één keer binden (initRoute draait opnieuw bij OSM-toevoeging) */
+  if (!_bound) { _bindPanel(); _bound = true; }
   _renderPanel();
 }
 

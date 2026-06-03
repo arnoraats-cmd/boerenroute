@@ -87,17 +87,31 @@ function _removeProduct(product) {
 /* ══ Matching ════════════════════════════════════════════════ */
 
 function _getMatchedShops() {
+  const ulat = window._brLat, ulng = window._brLng;
+  const hasLoc = typeof ulat === 'number' && typeof ulng === 'number';
+
   return _list.map(product => {
     const q = product.toLowerCase();
-    const hits = _allShops.filter(s =>
+    let hits = _allShops.filter(s =>
       s.type !== 'onderweg' && (
         (s.products || []).some(p => p.toLowerCase().includes(q)) ||
         (s.tags    || []).some(t => t.toLowerCase().includes(q)) ||
         s.name.toLowerCase().includes(q)
       )
     );
+    /* Dichtstbijzijnd eerst, zodat de auto-route de kortste winkels pakt */
+    if (hasLoc) {
+      hits = hits.slice().sort((a, b) =>
+        _dist(ulat, ulng, a.lat, a.lng) - _dist(ulat, ulng, b.lat, b.lng));
+    }
     return { product, shops: hits };
   });
+}
+
+function _dist(la1, lo1, la2, lo2) {
+  const R = 6371, dLa = (la2-la1)*Math.PI/180, dLo = (lo2-lo1)*Math.PI/180;
+  const a = Math.sin(dLa/2)**2 + Math.cos(la1*Math.PI/180)*Math.cos(la2*Math.PI/180)*Math.sin(dLo/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 }
 
 /* ══ Render ══════════════════════════════════════════════════ */
