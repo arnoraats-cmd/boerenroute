@@ -216,6 +216,18 @@ function _shopHTML(shop) {
         <div>${_e(shop.hours)}</div>
       </div>` : ''}
 
+      ${shop.phone ? `
+      <div class="modal-row">
+        <span class="modal-row-icon">📞</span>
+        <div><a href="tel:${_e(shop.phone.replace(/\s/g, ''))}" class="modal-link">${_e(shop.phone)}</a></div>
+      </div>` : ''}
+
+      ${shop.website ? `
+      <div class="modal-row">
+        <span class="modal-row-icon">🌐</span>
+        <div><a href="${_e(shop.website)}" target="_blank" rel="noopener nofollow" class="modal-link">Website bezoeken →</a></div>
+      </div>` : ''}
+
       ${prods ? `<div class="modal-products">${_e(prods)}</div>` : ''}
       ${tags  ? `<div class="modal-tags">${tags}</div>` : ''}
 
