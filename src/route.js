@@ -39,13 +39,10 @@ export function clearRoute() { _clear(); }
 function _add(shopId) {
   const shop = _allRef.find(s => s.id === shopId);
   if (!shop || isInRoute(shopId)) return;
-  const wasEmpty = _stops.length === 0;
   _stops.push(shop);
   _sync();
-  /* Schakel automatisch naar route-tab bij eerste stop */
-  if (wasEmpty) {
-    document.querySelector('.nav-btn[data-page="route"]')?.click();
-  }
+  /* Subtiele bevestiging i.p.v. de gebruiker naar de route-tab te slingeren */
+  _toast(`✓ ${shop.name} toegevoegd · ${_stops.length} in je route`);
 }
 
 function _remove(shopId) {
@@ -148,6 +145,24 @@ function _updateBadge() {
   if (!badge) return;
   badge.textContent = _stops.length;
   badge.hidden = _stops.length === 0;
+}
+
+/* Korte, niet-opdringerige bevestiging onderaan het scherm */
+let _toastTimer = null;
+function _toast(msg) {
+  let t = document.getElementById('brToast');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'brToast';
+    t.className = 'br-toast';
+    t.setAttribute('role', 'status');
+    t.setAttribute('aria-live', 'polite');
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  requestAnimationFrame(() => t.classList.add('br-toast-show'));
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => t.classList.remove('br-toast-show'), 2400);
 }
 
 /* ══ Nearest-neighbour optimalisatie ════════════════════════════ */
