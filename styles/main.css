@@ -3198,6 +3198,12 @@
     text-align: center;
     margin-top: 6px;
     opacity: .75;
+    line-height: 1.5;
+  }
+  .modal-checkin-hint.checkin-hint-warn {
+    color: var(--amber);
+    opacity: 1;
+    font-weight: 600;
   }
 
   /* ── Stempel-burst animatie ── */

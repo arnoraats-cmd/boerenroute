@@ -19,16 +19,17 @@ function _save(stamps) {
 
 /* ══ Publiek API ════════════════════════════════════════════════ */
 
-export function checkIn(shop) {
+export function checkIn(shop, verified = true) {
   const stamps = _load();
   if (stamps[shop.id]) return false; // al bezocht
   stamps[shop.id] = {
-    ts:      Date.now(),
-    name:    shop.name,
-    emoji:   shop.emoji,
-    address: shop.address,
-    type:    shop.type,
-    tags:    shop.tags || [],
+    ts:       Date.now(),
+    name:     shop.name,
+    emoji:    shop.emoji,
+    address:  shop.address,
+    type:     shop.type,
+    tags:     shop.tags || [],
+    verified,                       // op locatie geverifieerd
   };
   _save(stamps);
   document.dispatchEvent(new CustomEvent('boerenroute:stamp', { detail: { shop } }));

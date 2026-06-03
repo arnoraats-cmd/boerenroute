@@ -74,50 +74,73 @@ export function openShopModal(shop) {
   }
 }
 
-function _handleCheckin(shop, btn) {
-  /* Optioneel GPS-verificatie */
-  if (navigator.geolocation) {
-    btn.textContent = '📍 Locatie controleren…';
-    btn.disabled = true;
+/* Een stempel verdien je alleen ter plekke. Strikt op echte GPS-nabijheid. */
+const CHECKIN_MAX_DISTANCE = 600;  // meter: hoe dichtbij je moet zijn
+const CHECKIN_MAX_ACCURACY = 300;  // meter: grovere (laptop/IP) locatie weigeren
 
-    navigator.geolocation.getCurrentPosition(
-      pos => {
-        const d = _haversineM(pos.coords.latitude, pos.coords.longitude, shop.lat, shop.lng);
-        if (d < 500) {
-          _doCheckin(shop, btn, true);
-        } else {
-          /* Te ver weg — vraag bevestiging */
-          btn.textContent = '📍 Check in (je bent niet dichtbij)';
-          btn.disabled = false;
-          btn.classList.add('checkin-far');
-          btn.addEventListener('click', () => _doCheckin(shop, btn, false), { once: true });
-        }
-      },
-      () => {
-        /* GPS geweigerd → gewoon inchecken */
-        _doCheckin(shop, btn, false);
-      },
-      { timeout: 6000, maximumAge: 30000 }
-    );
-  } else {
-    _doCheckin(shop, btn, false);
+function _handleCheckin(shop, btn) {
+  if (!navigator.geolocation) {
+    _checkinBlock(btn, '📍 Dit toestel kan je locatie niet bepalen. Check-in lukt op je telefoon, bij de winkel.');
+    return;
+  }
+
+  btn.textContent = '📍 Locatie controleren…';
+  btn.disabled = true;
+  btn.classList.remove('checkin-far');
+
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      const d   = _haversineM(pos.coords.latitude, pos.coords.longitude, shop.lat, shop.lng);
+      const acc = pos.coords.accuracy || 99999;
+
+      if (acc > CHECKIN_MAX_ACCURACY) {
+        _checkinBlock(btn, '📍 Je locatie is te onnauwkeurig om je bezoek te bevestigen. Dit lukt het best op je telefoon (met GPS aan), bij de winkel.');
+      } else if (d <= CHECKIN_MAX_DISTANCE) {
+        _doCheckin(shop, btn);
+      } else {
+        _checkinBlock(btn, `📍 Je bent nog ${_fmtAfstand(d)} van ${shop.name}. Je verdient je stempel ter plekke!`);
+      }
+    },
+    err => {
+      const msg = err.code === err.PERMISSION_DENIED
+        ? '📍 Geef toegang tot je locatie om je bezoek te bevestigen.'
+        : '📍 We konden je locatie niet bepalen. Probeer het opnieuw bij de winkel.';
+      _checkinBlock(btn, msg);
+    },
+    { enableHighAccuracy: true, timeout: 9000, maximumAge: 8000 }
+  );
+}
+
+/* Blokkeer: reset de knop zodat opnieuw proberen kan + toon reden */
+function _checkinBlock(btn, msg) {
+  btn.disabled = false;
+  btn.classList.remove('checkin-far', 'checkin-done');
+  btn.textContent = '📍 Check in — ik ben hier!';
+  const hint = btn.parentElement?.querySelector('.modal-checkin-hint');
+  if (hint) {
+    hint.textContent = msg;
+    hint.classList.add('checkin-hint-warn');
   }
 }
 
-function _doCheckin(shop, btn, verified) {
+function _doCheckin(shop, btn) {
   const isNew = checkIn(shop);
   if (isNew) {
-    btn.textContent = '✅ Ingecheckt!';
+    btn.textContent = '✅ Ingecheckt — stempel verdiend!';
     btn.disabled = true;
     btn.classList.remove('checkin-far');
     btn.classList.add('checkin-done');
-    /* Kleine stempel-animatie */
-    _stampBurst(btn, verified);
+    _stampBurst(btn, true);
     document.dispatchEvent(new CustomEvent('boerenroute:stampupdate'));
   } else {
     btn.textContent = '✅ Al bezocht';
     btn.disabled = true;
   }
+}
+
+function _fmtAfstand(m) {
+  if (m < 1000) return `${Math.round(m / 50) * 50} m`;
+  return `${(m / 1000).toFixed(1).replace('.', ',')} km`;
 }
 
 function _stampBurst(anchorEl, verified) {
