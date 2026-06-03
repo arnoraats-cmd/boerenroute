@@ -26,6 +26,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.boerenroute.nl/blog/aardbeien-zelf-plukken</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.boerenroute.nl/blog/melk-uit-de-tap</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.boerenroute.nl/regio/noord-brabant</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

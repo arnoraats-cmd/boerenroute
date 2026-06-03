@@ -73,5 +73,59 @@
       { "type": "p", "text": "Download je route als GPX-bestand voor je fietscomputer of navigatie, of deel hem via WhatsApp met wie meefietst. Zo hoeft niemand te verdwalen." },
       { "type": "p", "text": "Klaar voor vertrek? Open de kaart, voeg je favoriete winkels toe aan een route en geniet van een dag op de fiets." }
     ]
+  },
+  {
+    "slug": "aardbeien-zelf-plukken",
+    "title": "Aardbeien zelf plukken: zo haal je de zoetste van het land",
+    "emoji": "🍓",
+    "date": "2026-06-01",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Juni is dé maand voor Nederlandse aardbeien. Bij een zelfpluktuin pluk je ze zonbewarmd en kakelvers van de plant. Zo pak je het slim aan.",
+    "tags": ["seizoen", "zelfpluk", "fruit"],
+    "body": [
+      { "type": "p", "text": "Er gaat niets boven een aardbei die je net zelf van de plant hebt geplukt: zonbewarmd, geurig en op het hoogtepunt van rijpheid. In juni staan de zelfpluktuinen op hun mooist. Een ochtendje plukken met het gezin is meteen een uitje — en je gaat naar huis met de lekkerste aardbeien van het jaar." },
+      { "type": "h2", "text": "Wanneer is het seizoen?" },
+      { "type": "p", "text": "De Nederlandse aardbei uit de volle grond piekt van eind mei tot in juli, met juni als topmaand. Vroege rassen onder folie of in kassen beginnen soms al in mei. Het seizoen is kort en weersafhankelijk, dus plan je plukdag op tijd en bel of kijk online of er die dag geplukt kan worden." },
+      { "type": "h2", "text": "Zo herken je een rijpe aardbei" },
+      { "type": "ul", "items": [
+        "Egaal diep rood, tot aan het kroontje — een witte of groene punt betekent nog niet rijp.",
+        "Een volle, zoete geur: rijpe aardbeien ruik je al van een afstand.",
+        "Stevig maar niet hard. Pluk met een stukje steel eraan, dan blijven ze langer goed.",
+        "Aardbeien rijpen ná het plukken niet door, dus pluk alleen wat al klaar is."
+      ]},
+      { "type": "h2", "text": "Handig om mee te nemen" },
+      { "type": "p", "text": "Een platte doos of mandje zodat de aardbeien niet pletten, zonnebrand en een hoedje voor de kinderen, en eventueel contant geld — niet elke tuin heeft pin. Plat verpakken en koel vervoeren houdt ze het langst goed." },
+      { "type": "h2", "text": "Waarom zelf plukken?" },
+      { "type": "p", "text": "Je betaalt vaak minder dan in de winkel, je weet precies waar je fruit vandaan komt, en je steunt de teler rechtstreeks. Bovendien is het een heerlijk uitje: kinderen vinden het geweldig en je bent lekker buiten. Wat je niet meteen opeet, maak je tot jam of vries je in voor de winter." },
+      { "type": "p", "text": "Op zoek naar een zelfpluktuin in de buurt? Filter op de kaart op 'Zelfpluk' en vind een aardbeienveld bij jou in de regio." }
+    ]
+  },
+  {
+    "slug": "melk-uit-de-tap",
+    "title": "Melk uit de tap: alles over de melktap bij de boer",
+    "emoji": "🥛",
+    "date": "2026-05-22",
+    "author": "Boerenroute",
+    "readMinutes": 4,
+    "excerpt": "Steeds meer melkveehouders hebben een melktap: verse melk uit de automaat, dag en nacht. Hoe werkt het, en moet je rauwe melk koken? We leggen het uit.",
+    "tags": ["zuivel", "automaat"],
+    "body": [
+      { "type": "p", "text": "Met je eigen fles naar de boer en die vullen met verse melk uit de tap — het is aan een flinke opmars bezig. Tientallen melkveehouders in het land hebben inmiddels een melktap of melkautomaat bij de boerderij. Maar hoe werkt zo'n tap precies, en waar moet je op letten?" },
+      { "type": "h2", "text": "Hoe werkt een melktap?" },
+      { "type": "p", "text": "De melk komt rechtstreeks van de koeien op de boerderij, wordt gekoeld bewaard en via een automaat getapt. Je neemt je eigen (glazen) fles mee of koopt er een ter plekke, zet 'm onder de tap, betaalt — meestal met munt of pin — en vult 'm met de hoeveelheid die je wilt. Veel tappen zijn dag en nacht bereikbaar." },
+      { "type": "h2", "text": "Rauwe melk: even verhitten" },
+      { "type": "p", "text": "De melk uit de tap is meestal rauwe (ongepasteuriseerde) melk: niet verhit, dus met al z'n natuurlijke smaak. Het advies is om rauwe melk vóór gebruik even tegen de kook aan te brengen en daarna weer af te koelen — zeker voor jonge kinderen, ouderen en zwangeren. Bij de tap hangt hierover doorgaans duidelijke informatie. Verhit je de melk niet, gebruik 'm dan snel en bewaar 'm goed gekoeld." },
+      { "type": "h2", "text": "Waarom melk uit de tap?" },
+      { "type": "ul", "items": [
+        "Onverslaanbaar vers — vaak van de ochtendmelk van diezelfde dag.",
+        "Geen wegwerpverpakking: je eigen fles gaat keer op keer mee.",
+        "Een eerlijke prijs die rechtstreeks naar de boer gaat.",
+        "Vollere smaak dan gestandaardiseerde supermarktmelk."
+      ]},
+      { "type": "h2", "text": "Tip: maak er je eigen yoghurt of kaas van" },
+      { "type": "p", "text": "Verse boerenmelk is een ideale basis voor zelfgemaakte yoghurt, kwark, karnemelk of een simpele verse kaas. Veel tappers verkopen daarnaast ook eigen zuivel, boerenkaas of ijs in de bijbehorende winkel of automaat." },
+      { "type": "p", "text": "Een melktap in de buurt vinden? Filter op de kaart op 'Automaat' of zoek op 'melk' — de melktappen staan ertussen, vaak dag en nacht open." }
+    ]
   }
 ]
