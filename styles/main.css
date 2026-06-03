@@ -12,16 +12,16 @@
 /* ══ TOKENS ══════════════════════════════════════════════════════ */
 @layer tokens {
   :root {
-    /* Brand */
-    --green-dark:   #27500A;
-    --green-mid:    #3B6D11;
-    --green-light:  #639922;
-    --green-bg:     #EAF3DE;
-    --amber:        #BA7517;
-    --amber-light:  #D4892A;
-    --amber-bg:     #FBF0DD;
-    --sand:         #F7F3EC;
-    --sand-dark:    #EDE8DF;
+    /* Brand — dieper bosgroen + warm-goud accent */
+    --green-dark:   #1C4109;
+    --green-mid:    #356611;
+    --green-light:  #5E9420;
+    --green-bg:     #E7F0D6;
+    --amber:        #B8720F;
+    --amber-light:  #E8981C;
+    --amber-bg:     #FBEFD6;
+    --sand:         #F8F4EC;
+    --sand-dark:    #EDE7DC;
     --white:        #FFFFFF;
     --text:         #1A1A18;
     --text-mid:     #555550;
@@ -252,7 +252,7 @@
 @layer layout {
   .hero {
     position: relative;
-    background: linear-gradient(148deg, #1e3608 0%, var(--green-dark) 30%, var(--green-mid) 65%, #4f8e1c 100%);
+    background: linear-gradient(148deg, #142D07 0%, var(--green-dark) 32%, var(--green-mid) 68%, #4A8519 100%);
     color: var(--white);
     padding: clamp(64px, 10vw, 108px) var(--pad) clamp(96px, 14vw, 140px);
     overflow: hidden;
@@ -287,9 +287,9 @@
     inset: 0;
     background: linear-gradient(
       180deg,
-      rgba(39,80,10,.48) 0%,
-      rgba(39,80,10,.32) 45%,
-      rgba(39,80,10,.58) 100%
+      rgba(20,45,7,.52) 0%,
+      rgba(20,45,7,.34) 45%,
+      rgba(20,45,7,.62) 100%
     );
     pointer-events: none;
   }

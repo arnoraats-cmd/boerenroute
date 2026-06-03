@@ -61,18 +61,19 @@ Pas dit gerust aan naar smaak — de kern is: **scheid data, kaart, winkels, rou
 
 ---
 
-## Huisstijl (exact overnemen)
+## Huisstijl
 
-Warme, aardse, landelijke uitstraling. CSS-variabelen:
+Warme, aardse, landelijke uitstraling. Sinds juni 2026 verdiept naar **bosgroen + warm-goud** (bewuste afwijking van het oorspronkelijke, blekere palet — op verzoek). CSS-variabelen:
 
 ```css
---green-dark:  #27500A;
---green-mid:   #3B6D11;
---green-light: #639922;
---green-bg:    #EAF3DE;
---amber:       #BA7517;
---amber-bg:    #FBF0DD;
---sand:        #F7F3EC;
+--green-dark:  #1C4109;   /* was #27500A */
+--green-mid:   #356611;   /* was #3B6D11 */
+--green-light: #5E9420;   /* was #639922 */
+--green-bg:    #E7F0D6;   /* was #EAF3DE */
+--amber:       #B8720F;   /* was #BA7517 */
+--amber-light: #E8981C;   /* warmer goud, was #D4892A */
+--amber-bg:    #FBEFD6;   /* was #FBF0DD */
+--sand:        #F8F4EC;   /* was #F7F3EC */
 --white:       #FFFFFF;
 --text:        #1A1A18;
 --text-mid:    #555550;
@@ -82,7 +83,7 @@ Warme, aardse, landelijke uitstraling. CSS-variabelen:
 
 - **Fonts:** Lora (koppen, serif) + DM Sans (tekst, sans-serif) via Google Fonts.
 - **Logo:** "Boeren**route.nl**" met 🌾, waarbij "route.nl" in `--green-light`.
-- **Theme color (PWA):** `#3B6D11`.
+- **Theme color (PWA):** `#356611`.
 
 ---
 
