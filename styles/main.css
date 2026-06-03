@@ -1993,7 +1993,7 @@
   .br-toast {
     position: fixed;
     left: 50%;
-    bottom: 26px;
+    bottom: 84px;            /* boven de zwevende route-balk */
     transform: translateX(-50%) translateY(16px);
     background: var(--green-dark);
     color: #fff;
@@ -2014,6 +2014,49 @@
   @media (prefers-reduced-motion: reduce) {
     .br-toast { transition: opacity .2s linear; transform: translateX(-50%); }
   }
+
+  /* Zwevende "route klaar"-balk */
+  .route-fab {
+    position: fixed;
+    left: 50%;
+    bottom: 22px;
+    transform: translateX(-50%);
+    z-index: 150;            /* boven content, onder de modal (200) */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: var(--green-mid);
+    color: #fff;
+    border: none;
+    border-radius: var(--r-full);
+    box-shadow: 0 6px 22px rgba(28,65,9,.4);
+    cursor: pointer;
+    font-family: var(--sans);
+    font-size: var(--t-sm);
+    max-width: calc(100vw - 28px);
+    animation: fabIn .3s var(--ease-spring);
+    transition: background var(--tf), transform var(--tf);
+  }
+  .route-fab:hover { background: var(--green-dark); transform: translateX(-50%) translateY(-2px); }
+
+  .route-fab-icon { font-size: 1.15rem; line-height: 1; }
+  .route-fab-text strong { font-weight: 700; }
+  .route-fab-cta {
+    font-weight: 700;
+    background: rgba(255,255,255,.18);
+    padding: 4px 12px;
+    border-radius: var(--r-full);
+    white-space: nowrap;
+  }
+
+  @keyframes fabIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(14px); }
+    to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+
+  /* Op de route-tab zelf overbodig (de echte knoppen staan er al) */
+  body[data-page="route"] .route-fab { display: none !important; }
 
   /* Kleine variant van btn-ghost en btn-sm */
   .btn-sm {

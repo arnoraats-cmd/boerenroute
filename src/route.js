@@ -41,8 +41,8 @@ function _add(shopId) {
   if (!shop || isInRoute(shopId)) return;
   _stops.push(shop);
   _sync();
-  /* Subtiele bevestiging i.p.v. de gebruiker naar de route-tab te slingeren */
-  _toast(`✓ ${shop.name} toegevoegd · ${_stops.length} in je route`);
+  /* Subtiele bevestiging; de zwevende balk toont de telling + route-actie */
+  _toast(`✓ ${shop.name} toegevoegd`);
 }
 
 function _remove(shopId) {
@@ -67,6 +67,7 @@ function _sync() {
   setRouteMarkers(_stops);
   _renderPanel();
   _updateBadge();
+  _updateFab();
   /* Informeer shops.js zodat kaart-knoppen updaten */
   document.dispatchEvent(new CustomEvent('boerenroute:routechange'));
 }
@@ -78,6 +79,11 @@ function _bindPanel() {
   document.getElementById('optimizeBtn')?.addEventListener('click', _optimize);
   document.getElementById('gpxBtn')?.addEventListener('click', _downloadGPX);
   document.getElementById('shareBtn')?.addEventListener('click', _share);
+
+  /* Zwevende balk → naar het routepaneel */
+  document.getElementById('routeFab')?.addEventListener('click', () => {
+    document.querySelector('.nav-btn[data-page="route"]')?.click();
+  });
 
   /* Echte wegafstand van OSRM ontvangen */
   document.addEventListener('boerenroute:routedistance', e => {
@@ -145,6 +151,15 @@ function _updateBadge() {
   if (!badge) return;
   badge.textContent = _stops.length;
   badge.hidden = _stops.length === 0;
+}
+
+/* Zwevende "route klaar"-balk bijwerken (CSS verbergt 'm op de route-tab zelf) */
+function _updateFab() {
+  const fab = document.getElementById('routeFab');
+  if (!fab) return;
+  const countEl = document.getElementById('routeFabCount');
+  if (countEl) countEl.textContent = _stops.length;
+  fab.hidden = _stops.length === 0;
 }
 
 /* Korte, niet-opdringerige bevestiging onderaan het scherm */

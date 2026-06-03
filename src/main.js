@@ -85,6 +85,7 @@ document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
 
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    document.body.dataset.page = page; // CSS gebruikt dit o.a. om de route-FAB te verbergen
 
     /* Hero + landingsbanners weg zodra je naar een tab navigeert,
        anders verschijnt de sectie ónder de hero en lijkt er niets te gebeuren */
