@@ -7,6 +7,8 @@
    - Standaard is dit een DRY-RUN: het toont alleen wat het zou vinden,
      en schrijft NIETS weg. Pas met --write wordt het opgeslagen.
    - Gebruik altijd eerst een kleine testbatch: --limit 3
+   - Alleen matches waarvan de plaats óf de naam overeenkomt worden
+     opgeslagen; twijfelgevallen worden gemarkeerd (⚠) en overgeslagen.
 
    Voorbeelden (PowerShell):
      $env:GOOGLE_PLACES_KEY="JOUW_SLEUTEL"
@@ -39,7 +41,13 @@ const todo   = zonder.slice(0, LIMIT);
 console.log(`Zonder rating: ${zonder.length}. Nu verwerken: ${todo.length}` +
             `${WRITE ? '  → OPSLAAN' : '  → dry-run (niets opslaan)'}\n`);
 
-let calls = 0, matches = 0;
+/* Normaliseer voor vergelijking: kleine letters, zonder accenten/leestekens */
+function norm(s) {
+  return (s || '').toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '')
+    .replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+let calls = 0, matches = 0, uncertain = 0;
 
 for (const shop of todo) {
   const textQuery = `${shop.name} ${shop.address}`;
@@ -66,21 +74,35 @@ for (const shop of todo) {
     }
 
     const p = (await res.json()).places?.[0];
-    if (!p) { console.log(`– ${shop.name} — geen match gevonden`); continue; }
+    if (!p) { console.log(`∅ ${shop.name} — geen match gevonden`); continue; }
 
     const rating  = p.rating ?? null;
     const reviews = p.userRatingCount ?? 0;
-    console.log(`✓ ${shop.name}`);
-    console.log(`    gevonden: ${p.displayName?.text ?? '?'} · ${p.formattedAddress ?? '?'}`);
-    console.log(`    rating:   ${rating ?? '—'}★  (${reviews})  placeId=${p.id}`);
+    const gName   = p.displayName?.text ?? '';
+    const gAddr   = p.formattedAddress ?? '';
 
-    if (rating != null) {
+    /* Vertrouwenscheck: plaats (laatste deel van adres) óf een woord uit de naam moet matchen */
+    const town      = norm(shop.address.split(',').pop());
+    const nameWords = norm(shop.name).split(' ').filter(w => w.length > 3);
+    const townOk    = town.length > 2 && norm(gAddr).includes(town);
+    const nameOk    = nameWords.some(w => norm(gName).includes(w));
+    const confident = townOk || nameOk;
+
+    const mark = rating == null ? '∅' : confident ? '✓' : '⚠';
+    console.log(`${mark} ${shop.name}`);
+    console.log(`    gevonden: ${gName} · ${gAddr}`);
+    console.log(`    rating:   ${rating ?? '—'}★ (${reviews})  placeId=${p.id}` +
+                `${rating != null && !confident ? '   ← ONZEKER, overgeslagen' : ''}`);
+
+    if (rating != null && confident) {
       matches++;
       if (WRITE) {
         shop.googleRating  = rating;
         shop.googleReviews = reviews;
         if (!shop.placeId) shop.placeId = p.id;
       }
+    } else if (rating != null && !confident) {
+      uncertain++;
     }
   } catch (e) {
     console.log(`✗ ${shop.name} — ${e.message}`);
@@ -89,11 +111,11 @@ for (const shop of todo) {
   await new Promise(r => setTimeout(r, 300)); // beleefde pauze tussen calls
 }
 
-console.log(`\nKlaar. API-calls: ${calls}. Gevonden met rating: ${matches}.`);
+console.log(`\nKlaar. API-calls: ${calls}. Zeker: ${matches}. Onzeker (overgeslagen): ${uncertain}.`);
 
 if (WRITE && matches > 0) {
   writeFileSync(FILE, JSON.stringify(shops, null, 2) + '\n', 'utf8');
-  console.log(`Opgeslagen in ${FILE}.`);
+  console.log(`Opgeslagen in ${FILE} (alleen de zekere matches).`);
 } else if (!WRITE) {
   console.log('Dry-run — er is niets gewijzigd. Voeg --write toe om op te slaan.');
 }
