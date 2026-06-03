@@ -10,7 +10,13 @@
       "emoji": "🌾",
       "afstand": "28 km",
       "intro": "Een rustige tocht door het glooiende Maashorstgebied langs een zelfkazerij, een fruitautomaat en een vrijloopboerderij met eigen vleesverkoop. Perfect voor een zaterdagochtend.",
-      "stopIds": [1, 5, 6, 7, 8]
+      "stopIds": [
+        1,
+        5,
+        6,
+        7,
+        8
+      ]
     },
     {
       "id": "achterhoekse-hoeventocht",
@@ -20,7 +26,12 @@
       "emoji": "🍎",
       "afstand": "23 km",
       "intro": "Een korte, sfeervolle rit door het Achterhoekse coulisselandschap langs een fruitbedrijf, een melktap en twee echte boerderijwinkels.",
-      "stopIds": [34, 238, 35, 37]
+      "stopIds": [
+        34,
+        238,
+        35,
+        37
+      ]
     },
     {
       "id": "utrechtse-buitenroute",
@@ -30,7 +41,12 @@
       "emoji": "🍒",
       "afstand": "21 km",
       "intro": "Verrassend landelijk, vlak bij Utrecht. Langs Haarzuilens en De Meern met country stores, een verse-melkautomaat en seizoensfruit.",
-      "stopIds": [44, 47, 48, 45]
+      "stopIds": [
+        44,
+        47,
+        48,
+        45
+      ]
     },
     {
       "id": "kempische-eitjesroute",
@@ -38,9 +54,13 @@
       "subtitel": "Eieren, vlees en weidse Kempen",
       "provincie": "Noord-Brabant",
       "emoji": "🥚",
-      "afstand": "39 km",
+      "afstand": "23 km",
       "intro": "Een wat langere tocht door de Brabantse Kempen met Black Angus-rundvlees, scharreleieren uit de automaat en volop ruimte.",
-      "stopIds": [196, 165, 153, 198]
+      "stopIds": [
+        196,
+        153,
+        198
+      ]
     }
   ]
 }

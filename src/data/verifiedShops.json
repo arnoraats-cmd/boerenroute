@@ -3462,38 +3462,6 @@
     "website": "https://ilyasbloemen.nl/"
   },
   {
-    "id": 119,
-    "emoji": "🍎",
-    "name": "Landwinkel Van Wagenberg",
-    "type": "winkel",
-    "premium": false,
-    "seasonal": false,
-    "lat": 51.765862,
-    "lng": 5.769038,
-    "address": "Rotsestraat 2, Overasselt",
-    "hours": "di/wo/vr 9–18u · za 9–16u",
-    "products": [
-      "appels",
-      "peren",
-      "jam",
-      "stroop",
-      "cider",
-      "wijn",
-      "likeuren",
-      "sap"
-    ],
-    "tags": [
-      "fruit"
-    ],
-    "placeId": "ChIJ1ejtJLEFx0cRQxZdoULkiq4",
-    "googleRating": 4.7,
-    "googleReviews": 75,
-    "dagVers": null,
-    "desc": "Landwinkel bij Nijmegen met vers fruit en een uitgebreide selectie verwerkte producten: sap, stroop, cider en wijn.",
-    "phone": "024 622 1264",
-    "website": "http://www.vanwagenbergfruit.nl/"
-  },
-  {
     "id": 120,
     "emoji": "🥛",
     "name": "Melktap Koezicht",
@@ -3838,33 +3806,6 @@
     "placeId": "ChIJjxmjffvlxkcRMzpnq4HV42I",
     "phone": "06 12789787",
     "website": "http://www.puurberkshire.nl/"
-  },
-  {
-    "premium": false,
-    "id": 133,
-    "lat": 51.5606669,
-    "tags": [
-      "groente",
-      "fruit"
-    ],
-    "emoji": "🌱",
-    "name": "Streekwinkel 't Dommeldal",
-    "type": "winkel",
-    "products": [
-      "streekproducten",
-      "groente",
-      "fruit"
-    ],
-    "seasonal": true,
-    "lng": 5.4269926,
-    "hours": "ma–za 8–18u · zo 12–17u (1 mei–1 nov)",
-    "desc": "Seizoensstreekwinkel in Sint-Oedenrode, open van mei tot november. Zelfbediening buiten openingstijden.",
-    "address": "Liempdeweg 12, Sint-Oedenrode",
-    "googleRating": 4.8,
-    "googleReviews": 41,
-    "placeId": "ChIJNZqU3l7nxkcRfiKRM1YKSPo",
-    "phone": "06 25331397",
-    "website": "https://www.streekwinkelhetdommeldal.nl/contact.html"
   },
   {
     "premium": false,
@@ -4728,33 +4669,6 @@
     "hours": "dagelijks 7–21u (melktap)",
     "desc": "Melktap en boerderijwinkel in Elshout met een compleet zuivelassortiment. Soft-ijs in het seizoen en dagelijks verse producten.",
     "address": "Mariëndonkstraat 47, Elshout"
-  },
-  {
-    "premium": false,
-    "id": 165,
-    "lat": 51.4574887,
-    "tags": [
-      "eieren",
-      "zuivel",
-      "honing"
-    ],
-    "emoji": "🥚",
-    "name": "Smolders Pluimvee en Eieren",
-    "type": "automaat",
-    "products": [
-      "verse eieren",
-      "boerenkaas",
-      "honing",
-      "aardbeien"
-    ],
-    "seasonal": false,
-    "lng": 5.2116209,
-    "hours": "dagelijks 8–20u",
-    "desc": "Eierautomaat in Middelbeers met verse eieren (Beter Leven 1 ster), kaas, honing en aardbeien in het seizoen.",
-    "address": "Paardseheide 1, Oost West en Middelbeers",
-    "googleRating": 5,
-    "googleReviews": 1,
-    "placeId": "ChIJp5EB8h7ExkcR1XCGLGiCDH0"
   },
   {
     "premium": false,
