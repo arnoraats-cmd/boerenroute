@@ -70,6 +70,14 @@ const SECTIONS = {
 
 const MAP_PAGES = new Set(['kaart', 'route']);
 
+/* Verberg de landingssectie (hero + uitgelichte banners) */
+function _hideLanding() {
+  if (hero) hero.hidden = true;
+  document.getElementById('voordelenBanner')?.setAttribute('hidden', '');
+  document.getElementById('maandHomeBanner')?.setAttribute('hidden', '');
+  document.getElementById('popularRoutesBanner')?.setAttribute('hidden', '');
+}
+
 document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
   btn.addEventListener('click', () => {
     const page    = btn.dataset.page;
@@ -77,6 +85,10 @@ document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
 
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+
+    /* Hero + landingsbanners weg zodra je naar een tab navigeert,
+       anders verschijnt de sectie ónder de hero en lijkt er niets te gebeuren */
+    _hideLanding();
 
     /* Toolbar + kaart alleen zichtbaar op kaart/route */
     const toolbar     = document.getElementById('toolbar');
@@ -96,6 +108,9 @@ document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
     if (page === 'stempelkaart') renderStempelkaart('stempelkaartSection');
     if (page === 'verhalen')     renderBlog('verhalenSection');
     if (isMapPage) requestAnimationFrame(() => invalidateSize());
+
+    /* Naar boven zodat de gekozen sectie meteen in beeld staat */
+    window.scrollTo({ top: 0, behavior: 'auto' });
   });
 });
 
@@ -203,10 +218,7 @@ function _applyLocation(lat, lng, name) {
   window._brLng = lng;
   setUserLocation(lat, lng);
   mapFlyTo(lat, lng, 12);
-  hero.hidden = true;
-  document.getElementById('voordelenBanner')?.setAttribute('hidden', '');
-  document.getElementById('maandHomeBanner')?.setAttribute('hidden', '');
-  document.getElementById('popularRoutesBanner')?.setAttribute('hidden', '');
+  _hideLanding();
   document.getElementById('mainLayout')?.scrollIntoView({ behavior: 'smooth' });
   _showCrumb(name);
   _triggerOSM(lat, lng);
