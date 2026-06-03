@@ -25,6 +25,30 @@ Belangrijk: **begin niet helemaal opnieuw met de inhoud.** Alle 94 geverifieerde
 - **Formulieren:** Formspree (endpoint: `https://formspree.io/f/xykvvprz`) — voor aanmeldingen, tips en nieuwsbrief.
 - **Statistieken:** GoatCounter (`boerenroute.goatcounter.com`) — privacyvriendelijk, geen cookiebanner nodig.
 
+> **Tot nu toe is alles gratis.** Nominatim, Overpass, OSRM, Formspree, GoatCounter en Cloudflare Pages draaien op gratis (tiers). Houd dat zo waar het kan.
+
+---
+
+## Externe API's & kosten — voorkom verrassingen (BELANGRIJK)
+
+De eigenaar is onervaren met betaalde API's en wil **geen onverwachte kosten**. Daarom geldt voor élke koppeling met een dienst die geld kán kosten (Google Places/Maps, of welke betaalde API dan ook):
+
+**Claude moet, vóór er ook maar één betaalde call wordt gedaan:**
+1. **Duidelijk waarschuwen** dat de dienst kosten kan veroorzaken, in gewone taal — geen jargon.
+2. **De kosten schatten** met een concrete rekensom (aantal calls × prijs per call) op basis van de *huidige* prijslijst (prijzen wijzigen; ga niet af op aannames).
+3. **Harde limieten laten instellen** zodat een fout of lek nooit kan ontsporen:
+   - In Google Cloud: een **Budget + budgetwaarschuwing** (Billing → Budgets & alerts), bijv. een alert op €1 en €5.
+   - Een **quota/daglimiet** op de API (APIs & Services → Quotas) zodat het aantal calls per dag gecapt is.
+4. **De API-key beveiligen:** beperk de key tot de specifieke API('s) én tot de juiste website/IP (HTTP-referrer- of IP-restrictie). Een onbeperkte key die uitlekt, kan door anderen worden misbruikt → rekening voor jou.
+5. **Secrets nooit committen of in de frontend zetten.** API-keys horen niet in de repo, niet in `index.html` en niet in JS die de browser laadt. Lokaal in een `.env` of als build-secret; `.env` staat al in `.gitignore`. Voor een eenmalige klus (zoals ratings ophalen) draait de key alleen lokaal in een script, niet op de live site.
+
+**Werkwijze bij een eenmalige bulk-klus (bv. de 147 ontbrekende Google-ratings):**
+- Eerst een **testbatch van 2–3** draaien en de respons + (geschatte) kosten tonen, vóór de volle 147.
+- Resultaten **wegschrijven naar `verifiedShops.json`** zodat ze nooit opnieuw opgehaald hoeven worden (geen herhaalde calls = geen herhaalde kosten).
+- Een eenmalige lookup van ~150 plaatsen valt ruim binnen het gratis maandtegoed van Google; het echte risico is een **uitgelekte/onbeperkte key** of een **loop die blijft callen** — vandaar de limieten hierboven.
+
+Korte vuistregel: **gratis tenzij echt nodig; bij betaald eerst schatten, dan caps instellen, dan pas koppelen.**
+
 ---
 
 ## Voorgestelde projectstructuur
