@@ -124,10 +124,22 @@ for (const s of shops) {
 
 mkdirSync(join(root, 'public/regio'), { recursive: true });
 
+/* Index van alle provincies voor onderlinge links (SEO: intern linknetwerk) */
+const provIndex = Object.entries(byProv)
+  .filter(([p]) => p !== 'Overig')
+  .map(([p, list]) => ({ prov: p, slug: p.toLowerCase().replace(/[^a-z]/g, '-'), count: list.length }))
+  .sort((a, b) => b.count - a.count);
+
 for (const [prov, shopList] of Object.entries(byProv)) {
   if (prov === 'Overig') continue; // sla overig over
   const slug  = prov.toLowerCase().replace(/[^a-z]/g, '-');
   const count = shopList.length;
+
+  /* Links naar de andere provincies + de blog */
+  const otherProvLinks = provIndex
+    .filter(p => p.slug !== slug)
+    .map(p => `<a href="/regio/${p.slug}" class="regio-link">${p.prov} <span class="regio-link-count">(${p.count})</span></a>`)
+    .join('');
 
   const rows = shopList.map(s => `
   <article class="regio-shop">
@@ -206,6 +218,12 @@ for (const [prov, shopList] of Object.entries(byProv)) {
         <a href="/" class="btn btn-green">🗺️ Bekijk alle locaties op de kaart</a>
         <p class="regio-cta-sub">Of zoek op een specifieke plaats, naam of product.</p>
       </div>
+
+      <nav class="regio-more" aria-label="Boerderijwinkels in andere provincies">
+        <h2 class="regio-more-title">Boerderijwinkels in andere provincies</h2>
+        <div class="regio-links">${otherProvLinks}</div>
+        <p class="regio-more-blog"><a href="/blog/">📖 Lees ook: verhalen &amp; seizoenstips →</a></p>
+      </nav>
     </div>
   </main>
 
@@ -219,7 +237,7 @@ for (const [prov, shopList] of Object.entries(byProv)) {
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Boerenroute.nl</p>
+      <p>© 2026 Boerenroute.nl</p>
       <a href="https://boerenroute.goatcounter.com" rel="noopener">Privacy-statistieken</a>
     </div>
   </footer>

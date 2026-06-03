@@ -1,0 +1,12 @@
+# Cloudflare Pages — schone URL's serveren vanaf de echte bestanden in /public.
+# Status 200 = rewrite (URL blijft schoon, inhoud komt van het doelbestand).
+# Eerste match wint, dus specifieke regels vóór wildcards.
+
+/robots.txt    /public/robots.txt          200
+/sitemap.xml   /public/sitemap.xml         200
+
+/blog          /public/blog/index.html     200
+/blog/         /public/blog/index.html     200
+/blog/*        /public/blog/:splat.html    200
+
+/regio/*       /public/regio/:splat.html   200

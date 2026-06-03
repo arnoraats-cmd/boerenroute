@@ -2928,6 +2928,20 @@
 
   .regio-cta { text-align: center; padding: 32px 0 16px; }
   .regio-cta-sub { font-size: var(--t-sm); color: var(--text-light); margin-top: 10px; }
+
+  /* Cross-links naar andere provincies (onderaan regiopagina) */
+  .regio-more { margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--border); }
+  .regio-more-title {
+    font-family: var(--serif);
+    font-size: var(--t-lg);
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 6px;
+  }
+  .regio-link-count { color: var(--text-light); font-weight: 400; }
+  .regio-more-blog { margin-top: 18px; }
+  .regio-more-blog a { color: var(--green-mid); font-weight: 600; }
+  .regio-more-blog a:hover { color: var(--green-dark); }
 }
 
 /* ══ RESPONSIEF ══════════════════════════════════════════════════ */
