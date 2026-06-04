@@ -3329,6 +3329,35 @@
   .sk-diploma-btn { font-size: var(--t-md); padding: 14px 24px; }
   .sk-clear-btn   { font-size: var(--t-sm); color: var(--text-light); }
 
+  /* Back-up: bewaar & herstel */
+  .sk-backup-intro { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.55; margin-bottom: 14px; }
+  .sk-backup-intro strong { color: var(--green-dark); }
+  .sk-backup-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .sk-backup-panel {
+    margin-top: 14px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 16px;
+  }
+  .sk-backup-label { display: block; font-size: var(--t-sm); font-weight: 600; margin-bottom: 8px; }
+  .sk-backup-code {
+    width: 100%;
+    font-family: ui-monospace, monospace;
+    font-size: var(--t-xs);
+    border: 1.5px solid var(--border-md);
+    border-radius: var(--r-sm);
+    padding: 8px 10px;
+    resize: vertical;
+    background: var(--sand);
+    color: var(--text-mid);
+  }
+  .sk-backup-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; align-items: center; }
+  .sk-file-label { cursor: pointer; }
+  .sk-backup-msg { margin-top: 10px; font-size: var(--t-sm); font-weight: 600; }
+  .sk-backup-ok  { color: var(--green-dark); }
+  .sk-backup-err { color: var(--red); }
+
   /* ── Check-in knop in modal ── */
   .modal-checkin-wrap {
     border-top: 1px solid var(--border);

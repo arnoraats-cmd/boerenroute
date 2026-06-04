@@ -53,6 +53,40 @@ export function clearAll() {
   document.dispatchEvent(new CustomEvent('boerenroute:stamp', { detail: null }));
 }
 
+/* ══ Back-up: exporteren / herstellen (geen account, geen server) ══ */
+
+/* Compacte, kopieerbare code (base64 van de stempels, UTF-8-veilig) */
+export function exportStamps() {
+  const data = { v: 1, app: 'boerenroute', stamps: _load() };
+  return btoa(unescape(encodeURIComponent(JSON.stringify(data))));
+}
+
+/* Leesbare JSON voor een downloadbaar back-upbestand */
+export function exportStampsJSON() {
+  return JSON.stringify({ v: 1, app: 'boerenroute', stamps: _load() }, null, 2);
+}
+
+/* Herstel uit een code (base64) óf uit de inhoud van een back-upbestand (JSON).
+   Voegt samen met bestaande stempels (overschrijft niets). Geeft aantal toegevoegd terug. */
+export function importStamps(input) {
+  const txt = String(input || '').trim();
+  if (!txt) throw new Error('Geen code opgegeven');
+  let data = null;
+  try { data = JSON.parse(txt); } catch {}                                   // ruwe JSON (bestand)
+  if (!data) { try { data = JSON.parse(decodeURIComponent(escape(atob(txt)))); } catch {} } // base64-code
+  if (!data || data.app !== 'boerenroute' || typeof data.stamps !== 'object') {
+    throw new Error('Dit lijkt geen geldige Boerenroute-stempelback-up');
+  }
+  const cur = _load();
+  let added = 0;
+  for (const [id, rec] of Object.entries(data.stamps)) {
+    if (rec && !cur[id]) { cur[id] = rec; added++; }
+  }
+  _save(cur);
+  document.dispatchEvent(new CustomEvent('boerenroute:stampupdate'));
+  return added;
+}
+
 /* ══ Rangensysteem ══════════════════════════════════════════════ */
 
 const RANKS = [

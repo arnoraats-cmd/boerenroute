@@ -5,6 +5,7 @@
 import {
   getRank, getAchievements, getRecentVisits,
   getCount, getVisited, clearAll, formatAge,
+  exportStamps, exportStampsJSON, importStamps,
 } from './stamps.js';
 
 let _allShops = [];
@@ -101,6 +102,35 @@ export function renderStempelkaart(containerId) {
     </div>
   </section>
 
+  <!-- ── Back-up: bewaar & herstel (geen account nodig) ── -->
+  <section class="sk-section sk-backup">
+    <h2 class="sk-section-title"><span>💾</span> Bewaar &amp; herstel</h2>
+    <p class="sk-backup-intro">Je stempels staan op dít apparaat. Maak een back-up om ze op je telefoon of een andere computer te zetten — <strong>geen account nodig</strong>.</p>
+    <div class="sk-backup-actions">
+      <button class="btn btn-green sk-backup-btn" id="skExportBtn">💾 Maak back-up</button>
+      <button class="btn btn-ghost sk-backup-btn" id="skImportToggle">📥 Herstel van back-up</button>
+    </div>
+
+    <div class="sk-backup-panel" id="skExportPanel" hidden>
+      <label class="sk-backup-label" for="skExportCode">Jouw herstelcode — kopieer 'm of download het bestand:</label>
+      <textarea class="sk-backup-code" id="skExportCode" readonly rows="3"></textarea>
+      <div class="sk-backup-row">
+        <button class="btn btn-ghost btn-sm" id="skCopyBtn">📋 Kopieer code</button>
+        <button class="btn btn-ghost btn-sm" id="skDownloadBtn">⬇️ Download bestand</button>
+      </div>
+    </div>
+
+    <div class="sk-backup-panel" id="skImportPanel" hidden>
+      <label class="sk-backup-label" for="skImportCode">Plak je herstelcode, of kies een back-upbestand:</label>
+      <textarea class="sk-backup-code" id="skImportCode" rows="3" placeholder="Plak hier je code…"></textarea>
+      <div class="sk-backup-row">
+        <button class="btn btn-green btn-sm" id="skImportBtn">📥 Herstel stempels</button>
+        <label class="btn btn-ghost btn-sm sk-file-label">📂 Kies bestand<input type="file" id="skImportFile" accept=".json,.txt" hidden></label>
+      </div>
+      <p class="sk-backup-msg" id="skImportMsg" hidden></p>
+    </div>
+  </section>
+
   <!-- ── Acties ── -->
   <section class="sk-section sk-actions-section">
     <button class="btn btn-green sk-diploma-btn" id="skDiplomaBtn">
@@ -122,6 +152,70 @@ export function renderStempelkaart(containerId) {
       renderStempelkaart(containerId);
     }
   });
+
+  /* Back-up: bewaar & herstel */
+  const exportPanel = document.getElementById('skExportPanel');
+  const importPanel = document.getElementById('skImportPanel');
+
+  document.getElementById('skExportBtn')?.addEventListener('click', () => {
+    if (getCount() === 0) { alert('Je hebt nog geen stempels om te bewaren.'); return; }
+    document.getElementById('skExportCode').value = exportStamps();
+    importPanel.hidden = true;
+    exportPanel.hidden = !exportPanel.hidden;
+  });
+  document.getElementById('skImportToggle')?.addEventListener('click', () => {
+    exportPanel.hidden = true;
+    importPanel.hidden = !importPanel.hidden;
+  });
+
+  document.getElementById('skCopyBtn')?.addEventListener('click', async () => {
+    const code = document.getElementById('skExportCode').value;
+    try { await navigator.clipboard.writeText(code); _flash('skCopyBtn', '✓ Gekopieerd!'); }
+    catch { document.getElementById('skExportCode').select(); }
+  });
+  document.getElementById('skDownloadBtn')?.addEventListener('click', () => {
+    const blob = new Blob([exportStampsJSON()], { type: 'application/json' });
+    const a = Object.assign(document.createElement('a'), {
+      href: URL.createObjectURL(blob), download: 'boerenroute-stempelkaart.json',
+    });
+    document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(a.href);
+  });
+
+  const doImport = (text) => {
+    const msg = document.getElementById('skImportMsg');
+    try {
+      const added = importStamps(text);
+      msg.textContent = added > 0
+        ? `✅ ${added} stempel${added === 1 ? '' : 's'} hersteld!`
+        : 'Niets nieuws — deze stempels had je al.';
+      msg.className = 'sk-backup-msg sk-backup-ok';
+      msg.hidden = false;
+      setTimeout(() => renderStempelkaart(containerId), 1200);
+    } catch (e) {
+      msg.textContent = `❌ ${e.message}`;
+      msg.className = 'sk-backup-msg sk-backup-err';
+      msg.hidden = false;
+    }
+  };
+  document.getElementById('skImportBtn')?.addEventListener('click', () => {
+    doImport(document.getElementById('skImportCode').value);
+  });
+  document.getElementById('skImportFile')?.addEventListener('change', e => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => doImport(reader.result);
+    reader.readAsText(file);
+  });
+}
+
+/* Kort knop-feedbackje */
+function _flash(btnId, text) {
+  const btn = document.getElementById(btnId);
+  if (!btn) return;
+  const orig = btn.textContent;
+  btn.textContent = text;
+  setTimeout(() => { btn.textContent = orig; }, 1500);
 }
 
 /* ══ Stempel-grid ════════════════════════════════════════════════ */
