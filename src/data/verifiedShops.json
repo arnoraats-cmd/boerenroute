@@ -18512,7 +18512,9 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Schettens met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Schettens met lokale producten.",
+    "phone": "0517 531 467",
+    "website": "https://nethermaps.org/details/t-foart-ChIJZSl"
   },
   {
     "id": 720,
@@ -18524,7 +18526,7 @@
     "lat": 51.548429,
     "lng": 5.221998,
     "address": "Zandstraat 24, Moergestel",
-    "hours": null,
+    "hours": "ma-zo 12-20u",
     "products": [
       "boerderijijs"
     ],
@@ -18532,10 +18534,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJc-BDHevBxkcRRPmJh_pNgXk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 771,
     "dagVers": null,
-    "desc": "Boerderij-ijs in Moergestel, vers van eigen koeien."
+    "desc": "Boerderij-ijs in Moergestel, vers van eigen koeien.",
+    "phone": "06 30391155",
+    "website": "http://www.ijsboerinneke-moergestel.nl/"
   },
   {
     "id": 721,
@@ -18547,7 +18551,7 @@
     "lat": 51.449465,
     "lng": 4.951242,
     "address": "Oordeelsestraat 66A, Baarle-Nassau",
-    "hours": null,
+    "hours": "ma-vr 0-23u · za 0-23.59u · zo 0-23u",
     "products": [
       "eieren"
     ],
@@ -18555,10 +18559,12 @@
       "eieren"
     ],
     "placeId": "ChIJya7RB-O6xkcRvbTS7V6KF_4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.5,
+    "googleReviews": 4,
     "dagVers": null,
-    "desc": "Verkooppunt in Baarle-Nassau met verse eieren en streekproducten."
+    "desc": "Verkooppunt in Baarle-Nassau met verse eieren en streekproducten.",
+    "phone": "06 25564309",
+    "website": "https://www.facebook.com/baarlesei"
   },
   {
     "id": 722,
@@ -18570,16 +18576,18 @@
     "lat": 52.692767,
     "lng": 4.850937,
     "address": "Middenweg 452, Heerhugowaard",
-    "hours": null,
+    "hours": "di-vr 9.30-17.30u · za 9.30-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJu-51xYtTz0cRYvLxC-65pfc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 154,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Heerhugowaard met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Heerhugowaard met lokale producten.",
+    "phone": "06 26880016",
+    "website": "http://www.bakkumsboetje.nl/"
   },
   {
     "id": 723,
@@ -18591,7 +18599,7 @@
     "lat": 52.780978,
     "lng": 6.094598,
     "address": "Koematen 23, Steenwijk",
-    "hours": null,
+    "hours": "ma-vr 9-17u",
     "products": [
       "vlees",
       "streekproducten"
@@ -18600,10 +18608,12 @@
       "vlees"
     ],
     "placeId": "ChIJ02PE75ZvyEcR2FhDC-oIK0E",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Boerderijslagerij/streekwinkel in Steenwijk met eigen vlees."
+    "desc": "Boerderijslagerij/streekwinkel in Steenwijk met eigen vlees.",
+    "phone": "06 14394507",
+    "website": "https://www.beeffet.nl/"
   },
   {
     "id": 724,
@@ -18621,10 +18631,12 @@
     ],
     "tags": [],
     "placeId": "ChIJD_zXKZROxkcRiwjPQkmQyGo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 23,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Barneveld met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Barneveld met lokale producten.",
+    "phone": "0342 416 583",
+    "website": "http://www.gvanbeekenzn.nl/"
   },
   {
     "id": 725,
@@ -18636,16 +18648,18 @@
     "lat": 52.748238,
     "lng": 4.847682,
     "address": "Doorbraakweg 6, 't Veld",
-    "hours": null,
+    "hours": "vr 9-17u · za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ4SHN_GNTz0cRwr5SnkpPd_8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 109,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in 't Veld met lokale producten."
+    "desc": "Boerderij- of streekwinkel in 't Veld met lokale producten.",
+    "phone": "06 29052090",
+    "website": "https://www.veldzichthoeve.nl/"
   },
   {
     "id": 726,
@@ -18657,16 +18671,18 @@
     "lat": 52.547484,
     "lng": 4.912614,
     "address": "Middenweg 176, Middenbeemster",
-    "hours": null,
+    "hours": "di-za 9-18u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJMYyUmjMBxkcRgcsNtMfvSDg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 146,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Middenbeemster met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Middenbeemster met lokale producten.",
+    "phone": "06 18640451",
+    "website": "http://www.bijmoeders.com/"
   },
   {
     "id": 727,
@@ -18678,16 +18694,18 @@
     "lat": 51.453319,
     "lng": 4.960961,
     "address": "Oordeelsestraat 17, Baarle-Nassau",
-    "hours": null,
+    "hours": "ma-do 10-16.30u · vr-za 10-20u · zo 10-16.30u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJVcup2Ua7xkcReGTFYytnYm4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 106,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Baarle-Nassau met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Baarle-Nassau met lokale producten.",
+    "phone": "06 45529293",
+    "website": "http://www.bijonsboerderijterras.nl/"
   },
   {
     "id": 728,
@@ -18699,16 +18717,18 @@
     "lat": 52.025548,
     "lng": 5.342749,
     "address": "Langbroekerweg 15 A, Doorn",
-    "hours": null,
+    "hours": "wo 12-17u · do-vr 10-17u · za 10-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJE7dxLoJbxkcRkC4vR7qpb5s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 102,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Doorn met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Doorn met verse streekproducten van het land.",
+    "phone": "06 24868589",
+    "website": "https://www.bijonsboerderijwinkel.nl/"
   },
   {
     "id": 729,
@@ -18720,16 +18740,18 @@
     "lat": 52.482977,
     "lng": 5.966294,
     "address": "Jan Boerswegje 27, Kamperveen",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJvQyIVV_Xx0cRZo5960YqGIA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 27,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Kamperveen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Kamperveen met lokale producten.",
+    "phone": "06 22445865",
+    "website": "http://www.biolaagzalk.com/"
   },
   {
     "id": 730,
@@ -18741,7 +18763,7 @@
     "lat": 52.484542,
     "lng": 6.353458,
     "address": "Achterveldsweg 3, Vilsteren",
-    "hours": null,
+    "hours": "ma-zo 9-20u",
     "products": [
       "streekproducten"
     ],
@@ -18750,7 +18772,8 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Vilsteren met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Vilsteren met lokale producten.",
+    "website": "http://www.ervemeijerink.nl/"
   },
   {
     "id": 731,
@@ -18762,7 +18785,7 @@
     "lat": 52.180605,
     "lng": 5.619475,
     "address": "Elzenkamperweg 4, Voorthuizen",
-    "hours": null,
+    "hours": "vr 9-17u · za 9-13u",
     "products": [
       "groente",
       "streekproducten"
@@ -18771,10 +18794,12 @@
       "groente"
     ],
     "placeId": "ChIJSeerKrRLxkcRUaVP-qypbNU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 41,
     "dagVers": null,
-    "desc": "Verse groente en streekproducten in Voorthuizen."
+    "desc": "Verse groente en streekproducten in Voorthuizen.",
+    "phone": "06 51899746",
+    "website": "https://www.elzenkamp.nl/"
   },
   {
     "id": 732,
@@ -18792,10 +18817,11 @@
     ],
     "tags": [],
     "placeId": "ChIJoyq358sZxEcR5z34q9nF9_4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 65,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Zegge met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Zegge met lokale producten.",
+    "website": "http://www.blijebuitenbeesten.nl/"
   },
   {
     "id": 733,
@@ -18807,7 +18833,7 @@
     "lat": 52.043719,
     "lng": 5.129955,
     "address": "Heemsteedseweg 2b, Houten",
-    "hours": null,
+    "hours": "za 10-16u",
     "products": [
       "boerderijijs"
     ],
@@ -18815,10 +18841,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJIcAd8G9nxkcRgBtF2_JFbJg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 11,
     "dagVers": null,
-    "desc": "Boerderij-ijs in Houten, vers van eigen koeien."
+    "desc": "Boerderij-ijs in Houten, vers van eigen koeien.",
+    "phone": "06 13864131",
+    "website": "https://www.boergijs.nl/"
   },
   {
     "id": 734,
@@ -18830,16 +18858,18 @@
     "lat": 52.63137,
     "lng": 4.688157,
     "address": "Egmondermeer 4, Egmond aan den Hoef",
-    "hours": null,
+    "hours": "ma-za 8-13u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ5wdVapVZz0cREvBYHgdHcmA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 134,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Egmond aan den Hoef met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Egmond aan den Hoef met lokale producten.",
+    "phone": "06 46422828",
+    "website": "https://www.boerjoep.nl/"
   },
   {
     "id": 735,
@@ -18851,16 +18881,18 @@
     "lat": 51.906294,
     "lng": 6.4371,
     "address": "Kroezendijk 12, Sinderen",
-    "hours": null,
+    "hours": "za 10-14u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJv_8f-KWBx0cRty5UomE5ixo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 8,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Sinderen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Sinderen met lokale producten.",
+    "phone": "06 42940716",
+    "website": "https://www.boerlubbers.nl/"
   },
   {
     "id": 736,
@@ -18872,16 +18904,18 @@
     "lat": 52.086586,
     "lng": 4.838829,
     "address": "Rietveld 78, Woerden",
-    "hours": null,
+    "hours": "vr-za 9-18u · zo 10-18u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJg9S09Rt5xkcRH-N6pBlc1lo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 8,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Woerden met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Woerden met lokale producten.",
+    "phone": "06 38512985",
+    "website": "https://www.boermetlust.nl/winkel"
   },
   {
     "id": 737,
@@ -18893,16 +18927,17 @@
     "lat": 51.533567,
     "lng": 4.633978,
     "address": "Groenstraat 8-A, Sprundel",
-    "hours": null,
+    "hours": "ma-vr 10-18u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJZUjAAsYexEcRtpvBps9Q3Ok",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.9,
+    "googleReviews": 16,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Sprundel met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Sprundel met lokale producten.",
+    "phone": "06 10216138"
   },
   {
     "id": 738,
@@ -18914,16 +18949,18 @@
     "lat": 52.522541,
     "lng": 4.696415,
     "address": "Ziendijk 4, Uitgeest",
-    "hours": null,
+    "hours": "ma-vr 16-18u · za 10-12u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJGfKJhXH7xUcRhD1L0p0WSk0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 18,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Uitgeest met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Uitgeest met lokale producten.",
+    "phone": "06 20045655",
+    "website": "http://groeneoerbron.nl/"
   },
   {
     "id": 739,
@@ -18935,16 +18972,18 @@
     "lat": 52.15711,
     "lng": 5.440409,
     "address": "Ruifweg 5, Stoutenburg",
-    "hours": null,
+    "hours": "di 10-16u · za 10-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJGajqgLZHxkcRM_WHWVzTOiE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Stoutenburg met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Stoutenburg met lokale producten.",
+    "phone": "06 12466926",
+    "website": "https://www.boerderijdeouderuif.nl/"
   },
   {
     "id": 740,
@@ -18956,16 +18995,18 @@
     "lat": 52.032232,
     "lng": 5.24024,
     "address": "Werkhovenseweg 21, Werkhoven",
-    "hours": null,
+    "hours": "wo 9-12u · za 10-15u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJI5wQeYJdxkcRfKZcya5REyQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 16,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Werkhoven met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Werkhoven met lokale producten.",
+    "phone": "06 47024550",
+    "website": "https://www.eetvandeboer.nl/"
   },
   {
     "id": 741,
@@ -18983,10 +19024,12 @@
     ],
     "tags": [],
     "placeId": "ChIJ65EDhrvvxUcR-ljGFxkm-ss",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 31,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Santpoort-Zuid met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Santpoort-Zuid met lokale producten.",
+    "phone": "06 11420989",
+    "website": "http://www.sinneveld.nl/"
   },
   {
     "id": 742,
@@ -18998,7 +19041,7 @@
     "lat": 52.6306,
     "lng": 6.699469,
     "address": "De Haandrik 5a, Holtheme",
-    "hours": null,
+    "hours": "do-vr 9-17u · za 9-13u",
     "products": [
       "kaas",
       "zuivel"
@@ -19007,10 +19050,12 @@
       "zuivel"
     ],
     "placeId": "ChIJQVbOvbL9t0cRkoe7nfWBjF8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 8,
     "dagVers": null,
-    "desc": "Kaasboerderij in Holtheme met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Holtheme met eigen kaas en zuivel.",
+    "phone": "0524 560 917",
+    "website": "https://www.kieftekaas.nl/"
   },
   {
     "id": 743,
@@ -19022,16 +19067,18 @@
     "lat": 52.955518,
     "lng": 6.185332,
     "address": "Bovenweg 23, Nijeberkoop",
-    "hours": null,
+    "hours": "ma-zo 8-20u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJERg-5V05yEcRBIabSj0wY-o",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 36,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Nijeberkoop met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Nijeberkoop met lokale producten.",
+    "phone": "06 20849099",
+    "website": "https://www.boereninhetbos.nl/"
   },
   {
     "id": 744,
@@ -19043,16 +19090,18 @@
     "lat": 51.626524,
     "lng": 5.281314,
     "address": "Esscheweg 274A, Vught",
-    "hours": null,
+    "hours": "vr-zo 10-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJdRlNQ2rpxkcRNwqgXtGnhoU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 75,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Vught met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Vught met lokale producten.",
+    "phone": "06 31949614",
+    "website": "http://www.buitenlustvught.nl/"
   },
   {
     "id": 745,
@@ -19070,10 +19119,11 @@
     ],
     "tags": [],
     "placeId": "ChIJiQrCrxEcxEcRTZzIiZu2m9I",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 2,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Zundert met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Zundert met lokale producten.",
+    "phone": "076 597 3213"
   },
   {
     "id": 746,
@@ -19085,7 +19135,7 @@
     "lat": 52.187886,
     "lng": 6.045375,
     "address": "Leigraaf 40",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "zuivel",
       "melk"
@@ -19094,10 +19144,12 @@
       "zuivel"
     ],
     "placeId": "ChIJEZ_aAwu_x0cRl5UtBZgcF-s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 175,
     "dagVers": null,
-    "desc": "Zuivelboerderij/streekwinkel in Leigraaf 40."
+    "desc": "Zuivelboerderij/streekwinkel in Leigraaf 40.",
+    "phone": "06 19327075",
+    "website": "https://www.camperplaats-en-melkveebedrijf-de-grote-leigraaf.nl/"
   },
   {
     "id": 747,
@@ -19109,7 +19161,7 @@
     "lat": 50.859102,
     "lng": 5.790243,
     "address": "Ingang rijksweg, tegenover Zorgcentrum Fonterhof, Rijksweg, Berg en Terblijt",
-    "hours": null,
+    "hours": "wo 9-17u · vr-za 9-12u",
     "products": [
       "groente",
       "streekproducten"
@@ -19118,10 +19170,12 @@
       "groente"
     ],
     "placeId": "ChIJC9w1GNHrwEcRlr4iFQ_6b7I",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.7,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Verse groente en streekproducten in Berg en Terblijt."
+    "desc": "Verse groente en streekproducten in Berg en Terblijt.",
+    "phone": "06 49291753",
+    "website": "http://www.moostuin.nl/"
   },
   {
     "id": 748,
@@ -19139,10 +19193,12 @@
     ],
     "tags": [],
     "placeId": "ChIJB-L-oaZbxEcRb55oiw1YN4g",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Dirksland met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Dirksland met lokale producten.",
+    "phone": "06 25273313",
+    "website": "https://www.debeestenboelvanverweij.nl/"
   },
   {
     "id": 749,
@@ -19154,7 +19210,7 @@
     "lat": 52.54868,
     "lng": 6.633807,
     "address": "Bruchterbeekweg 26, Brucht",
-    "hours": null,
+    "hours": "za 10-17u",
     "products": [
       "fruit"
     ],
@@ -19162,10 +19218,12 @@
       "fruit"
     ],
     "placeId": "ChIJT5RGLiYAyEcRndS1a_NUXS8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 47,
     "dagVers": null,
-    "desc": "Fruit en streekproducten in Brucht."
+    "desc": "Fruit en streekproducten in Brucht.",
+    "phone": "06 21514171",
+    "website": "http://www.bessentuin.nl/"
   },
   {
     "id": 750,
@@ -19177,16 +19235,18 @@
     "lat": 51.610778,
     "lng": 4.89853,
     "address": "Steenovensebaan 27, Dorst",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ1bg3gVmYxkcR9NKWOGv3w4M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 239,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Dorst met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Dorst met lokale producten.",
+    "phone": "06 41666655",
+    "website": "https://www.deduiventoren.nl/"
   },
   {
     "id": 751,
@@ -19198,7 +19258,7 @@
     "lat": 52.087283,
     "lng": 5.207238,
     "address": "Weteringlaan 1, De Bilt",
-    "hours": null,
+    "hours": "za 9-16u",
     "products": [
       "fruit",
       "groente"
@@ -19208,10 +19268,12 @@
       "groente"
     ],
     "placeId": "ChIJ9_zghE5pxkcRYH0qbN4Pmjc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 11,
     "dagVers": null,
-    "desc": "Verse groente en fruit in De Bilt, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in De Bilt, rechtstreeks van de teler.",
+    "phone": "06 30958789",
+    "website": "http://www.defruithut.nl/"
   },
   {
     "id": 752,
@@ -19223,7 +19285,7 @@
     "lat": 51.967273,
     "lng": 5.047981,
     "address": "Nieuwe Rijksweg 134, Lexmond",
-    "hours": null,
+    "hours": "ma-di 8-18u · do-vr 8-18u · za 8-14u",
     "products": [
       "fruit",
       "groente"
@@ -19233,10 +19295,12 @@
       "groente"
     ],
     "placeId": "ChIJacXq5A9jxkcRyRLbxhzaIZQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 12,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Lexmond, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Lexmond, rechtstreeks van de teler.",
+    "phone": "0347 341 350",
+    "website": "http://www.wilgenschutting.nl/"
   },
   {
     "id": 753,
@@ -19248,16 +19312,18 @@
     "lat": 52.375696,
     "lng": 5.747242,
     "address": "Rijnvis 46, Hulshorst",
-    "hours": null,
+    "hours": "ma-vr 9-16.30u · za 9-12u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJl3hUwUHNx0cRURe8dMfaF0M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 10,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Hulshorst met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Hulshorst met lokale producten.",
+    "phone": "0341 256 199",
+    "website": "http://www.degrotewiede.nl/"
   },
   {
     "id": 754,
@@ -19269,16 +19335,18 @@
     "lat": 52.234237,
     "lng": 6.677378,
     "address": "Hagmolenweg 13, Ambt Delden",
-    "hours": null,
+    "hours": "wo-zo 10-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJCd-CYHQMuEcRzkRsnEtTDTE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 123,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Ambt Delden met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Ambt Delden met lokale producten.",
+    "phone": "0547 388 407",
+    "website": "http://deheerlijkehuiskamer.nl/"
   },
   {
     "id": 755,
@@ -19290,16 +19358,18 @@
     "lat": 52.077705,
     "lng": 6.427334,
     "address": "Hengeloseweg 2, Ruurlo",
-    "hours": null,
+    "hours": "ma-zo 11-20u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ7XRKrTeJx0cRD_AQu0JWM-E",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 2168,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Ruurlo met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Ruurlo met lokale producten.",
+    "phone": "0573 452 090",
+    "website": "http://www.heikamp.nl/"
   },
   {
     "id": 756,
@@ -19311,7 +19381,7 @@
     "lat": 52.647232,
     "lng": 6.70511,
     "address": "Scheerseweg 11, Holthone",
-    "hours": null,
+    "hours": "vr-zo 13-19u",
     "products": [
       "boerderijijs"
     ],
@@ -19319,10 +19389,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJaZJMuOL9t0cRbHRwSHJomlA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 46,
     "dagVers": null,
-    "desc": "Boerderij-ijs in Holthone, vers van eigen koeien."
+    "desc": "Boerderij-ijs in Holthone, vers van eigen koeien.",
+    "phone": "06 20072372",
+    "website": "https://www.deijsbarones.nl/"
   },
   {
     "id": 757,
@@ -19334,7 +19406,7 @@
     "lat": 51.872608,
     "lng": 4.10192,
     "address": "Thijs Cornelisweg 2, Rockanje",
-    "hours": null,
+    "hours": "wo-zo 13-20.30u",
     "products": [
       "boerderijijs"
     ],
@@ -19342,10 +19414,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJo_EVXIFTxEcReEfwbe7yEQY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 294,
     "dagVers": null,
-    "desc": "Boerderij-ijs in Rockanje, vers van eigen koeien."
+    "desc": "Boerderij-ijs in Rockanje, vers van eigen koeien.",
+    "phone": "06 49749537",
+    "website": "http://www.deijsboerin.nl/"
   },
   {
     "id": 758,
@@ -19357,7 +19431,7 @@
     "lat": 52.953896,
     "lng": 6.289524,
     "address": "De Bult 6, Appelscha",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "zuivel",
       "melk"
@@ -19366,10 +19440,12 @@
       "zuivel"
     ],
     "placeId": "ChIJuz0S8qdAyEcR3-erqSRyecA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 26,
     "dagVers": null,
-    "desc": "Zuivelboerderij/streekwinkel in Appelscha."
+    "desc": "Zuivelboerderij/streekwinkel in Appelscha.",
+    "phone": "06 51891821",
+    "website": "http://www.dekoeienvansinnige.nl/"
   },
   {
     "id": 759,
@@ -19381,16 +19457,18 @@
     "lat": 51.739608,
     "lng": 5.077052,
     "address": "Kleibergsestraat 2, Genderen",
-    "hours": null,
+    "hours": "wo-vr 9-17u · za 9-15u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJbx5rJQGSxkcR-OxUCxfX5k0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 140,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Genderen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Genderen met lokale producten.",
+    "phone": "0416 352 751",
+    "website": "http://www.delangehoeve.nl/"
   },
   {
     "id": 760,
@@ -19402,16 +19480,18 @@
     "lat": 52.158507,
     "lng": 5.389819,
     "address": "Bloemendalsestraat 19, Amersfoort",
-    "hours": null,
+    "hours": "ma-vr 8.30-19.30u · za 8.30-18u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJR2tiM59GxkcRAGP4_zrmx8Q",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 122,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Amersfoort met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Amersfoort met lokale producten.",
+    "phone": "033 466 9686",
+    "website": "http://www.denieuwegraanschuur.nl/"
   },
   {
     "id": 761,
@@ -19429,10 +19509,12 @@
     ],
     "tags": [],
     "placeId": "ChIJn1vOicMFx0cRLBV8MF5zqPE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 51,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Overasselt met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Overasselt met lokale producten.",
+    "phone": "024 622 1214",
+    "website": "http://www.denieuweschatkuil.nl/Contact/"
   },
   {
     "id": 762,
@@ -19450,8 +19532,8 @@
     ],
     "tags": [],
     "placeId": "ChIJl_BB2X5fxEcR0RK1Rw_MgPs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 6,
     "dagVers": null,
     "desc": "Boerderij- of streekwinkel in Dreischor met lokale producten."
   },
@@ -19465,16 +19547,17 @@
     "lat": 51.337493,
     "lng": 6.014309,
     "address": "Dekeshorst 10, Helden",
-    "hours": null,
+    "hours": "ma-zo 8-21u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJawkqhwRJx0cRt-RaIaB5T6I",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 9,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Helden met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Helden met lokale producten.",
+    "website": "http://www.desjroetefarm.nl/"
   },
   {
     "id": 764,
@@ -19486,16 +19569,18 @@
     "lat": 52.507724,
     "lng": 4.852429,
     "address": "Dorpsstraat 35, Jisp",
-    "hours": null,
+    "hours": "vr 12-17u · za 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ0Q4kBND9xUcRTK_Ep6e7nd8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 65,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Jisp met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Jisp met lokale producten.",
+    "phone": "075 687 4280",
+    "website": "http://www.stoofaal.nl/"
   },
   {
     "id": 765,
@@ -19507,16 +19592,18 @@
     "lat": 51.315342,
     "lng": 5.971877,
     "address": "Rector Thomassenstraat 28, Egchel",
-    "hours": null,
+    "hours": "wo-vr 10-17.30u · za 9-15u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJBSm8g65Jx0cRZAZ9CRxGmyc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 57,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Egchel met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Egchel met lokale producten.",
+    "phone": "077 306 0938",
+    "website": "http://www.devleismeule.nl/"
   },
   {
     "id": 766,
@@ -19528,16 +19615,18 @@
     "lat": 53.252458,
     "lng": 6.593613,
     "address": "Beijumerweg 20, Groningen",
-    "hours": null,
+    "hours": "ma-do 8.30-18u · vr 8.30-19u · za 8.30-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJj7Ws9X3SyUcRA_4hdhy0y_A",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 23,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Groningen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Groningen met lokale producten.",
+    "phone": "050 541 1515",
+    "website": "https://www.dewiershoeck.nl/"
   },
   {
     "id": 767,
@@ -19549,16 +19638,18 @@
     "lat": 53.207333,
     "lng": 5.987948,
     "address": "Zomerweg 68A, Burgum",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJk3Ode5BVyEcROHucNj0ZEzI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 49,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Burgum met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Burgum met lokale producten.",
+    "phone": "06 12814812",
+    "website": "http://www.zomerschuur.nl/"
   },
   {
     "id": 768,
@@ -19570,16 +19661,18 @@
     "lat": 52.473254,
     "lng": 6.229266,
     "address": "Tibbensteeg 12, Dalfsen",
-    "hours": null,
+    "hours": "za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ13hhbd7gx0cRYh9iiy16sMg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 21,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Dalfsen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Dalfsen met lokale producten.",
+    "phone": "06 48239022",
+    "website": "https://www.decohof.nl/"
   },
   {
     "id": 769,
@@ -19591,16 +19684,18 @@
     "lat": 51.963986,
     "lng": 6.290799,
     "address": "Hamburgerstraat 67, Doetinchem",
-    "hours": null,
+    "hours": "ma-wo 16.30-20u · do-zo 12-20u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJK7kaHgCFx0cRyAaWbsa9vpQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 138,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Doetinchem met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Doetinchem met lokale producten.",
+    "phone": "0314 202 050",
+    "website": "https://www.deliciousandhealthy.nl/"
   },
   {
     "id": 770,
@@ -19612,7 +19707,7 @@
     "lat": 52.104382,
     "lng": 6.310806,
     "address": "Zutphenseweg 9, Vorden",
-    "hours": null,
+    "hours": "wo-vr 9-18u · za 9-17u",
     "products": [
       "groente",
       "streekproducten"
@@ -19621,10 +19716,12 @@
       "groente"
     ],
     "placeId": "ChIJ8c173zKPx0cRl7Dc589r2Jk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 10,
     "dagVers": null,
-    "desc": "Verse groente en streekproducten in Vorden."
+    "desc": "Verse groente en streekproducten in Vorden.",
+    "phone": "0575 474 225",
+    "website": "http://www.kaas-delicatessen-den4akker.nl/"
   },
   {
     "id": 771,
@@ -19645,7 +19742,8 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Barendrecht met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Barendrecht met lokale producten.",
+    "website": "https://www.dutchseaweedgroup.com/nl/"
   },
   {
     "id": 772,
@@ -19665,8 +19763,8 @@
       "eieren"
     ],
     "placeId": "ChIJx9fzSMk_x0cRt44Xf5e_m9M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 5,
     "dagVers": null,
     "desc": "Verkooppunt in Ysselsteyn met verse eieren en streekproducten."
   },
@@ -19686,10 +19784,12 @@
     ],
     "tags": [],
     "placeId": "ChIJM6xiXckeuEcRUUkNuwPnCac",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 830,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Lattrop-Breklenkamp met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Lattrop-Breklenkamp met lokale producten.",
+    "phone": "0541 221 392",
+    "website": "http://www.bossem.nl/"
   },
   {
     "id": 774,
@@ -19701,16 +19801,18 @@
     "lat": 52.113071,
     "lng": 5.702236,
     "address": "Matendijk 1, Wekerom",
-    "hours": null,
+    "hours": "ma-vr 8-16.30u · za 10-12u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ7wvfLBSzx0cR2p3hffxWeTE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 69,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Wekerom met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Wekerom met lokale producten.",
+    "phone": "0318 461 344",
+    "website": "https://www.farmfields.nl/"
   },
   {
     "id": 775,
@@ -19728,10 +19830,12 @@
     ],
     "tags": [],
     "placeId": "ChIJoYJCjP5suEcRrnE0BFwuyGQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 2,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Haaksbergen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Haaksbergen met lokale producten.",
+    "phone": "053 569 6494",
+    "website": "https://www.mtstermors.nl/"
   },
   {
     "id": 776,
@@ -19743,16 +19847,17 @@
     "lat": 52.7709,
     "lng": 6.329348,
     "address": "Vledders 15, Ruinen",
-    "hours": null,
+    "hours": "vr-za 8-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJVUWubWMRyEcRdLFsPdKvTqg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 9,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Ruinen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Ruinen met lokale producten.",
+    "phone": "06 14261430"
   },
   {
     "id": 777,
@@ -19764,7 +19869,7 @@
     "lat": 52.306486,
     "lng": 6.07942,
     "address": "Ossenkolkweg 3, Terwolde",
-    "hours": null,
+    "hours": "za 11-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -19773,10 +19878,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ4-tg1MjDx0cRdROsYoFbRAo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Kaasboerderij in Terwolde met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Terwolde met eigen kaas en zuivel.",
+    "phone": "0571 292 208",
+    "website": "http://www.geitenkaasboerderijdewolf.nl/"
   },
   {
     "id": 778,
@@ -19788,16 +19895,17 @@
     "lat": 53.248604,
     "lng": 6.50795,
     "address": "Zijlvesterweg 12, Groningen",
-    "hours": null,
+    "hours": "wo 14.30-18u · vr 14.30-18u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJizeVC_HMyUcRaNCJ1g-VC6M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 10,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Groningen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Groningen met lokale producten.",
+    "website": "https://www.facebook.com/geitenhouderijterveen/"
   },
   {
     "id": 779,
@@ -19809,7 +19917,7 @@
     "lat": 53.131483,
     "lng": 6.65856,
     "address": "Lageweg 7, Noordlaren",
-    "hours": null,
+    "hours": "do-vr 10-17u · za 9-16u",
     "products": [
       "groente",
       "streekproducten"
@@ -19818,10 +19926,12 @@
       "groente"
     ],
     "placeId": "ChIJTYrLHg8syEcRZ4fCEJ05UAU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 37,
     "dagVers": null,
-    "desc": "Verse groente en streekproducten in Noordlaren."
+    "desc": "Verse groente en streekproducten in Noordlaren.",
+    "phone": "050 406 1022",
+    "website": "https://groentekwekerijnoordlaren.nl/"
   },
   {
     "id": 780,
@@ -19833,16 +19943,18 @@
     "lat": 53.165843,
     "lng": 5.632248,
     "address": "Hasthemerwei 1, Baaium",
-    "hours": null,
+    "hours": "do 13.30-17.30u · vr-za 10-12u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJgY5fYpvkyEcRV88Xkp1zFtA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 15,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Baaium met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Baaium met lokale producten.",
+    "phone": "06 50554488",
+    "website": "http://www.hasthemhoeve.nl/"
   },
   {
     "id": 781,
@@ -19854,16 +19966,18 @@
     "lat": 52.136475,
     "lng": 6.580888,
     "address": "Kupersweg 1, Neede",
-    "hours": null,
+    "hours": "ma-zo 8-20u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ16q_PR51uEcRs9f9RkrfxtI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 79,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Neede met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Neede met lokale producten.",
+    "phone": "06 47162512",
+    "website": "http://www.buurtkupertje.nl/"
   },
   {
     "id": 782,
@@ -19875,16 +19989,18 @@
     "lat": 52.806893,
     "lng": 6.131292,
     "address": "Eesveenseweg 46, Eesveen",
-    "hours": null,
+    "hours": "ma-za 9-17u · zo 12-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJN0o0dU5pyEcRcuYH9XAgOIo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 22,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Eesveen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Eesveen met lokale producten.",
+    "phone": "0521 512 595",
+    "website": "https://www.heteesergroen.nl/"
   },
   {
     "id": 783,
@@ -19896,7 +20012,7 @@
     "lat": 51.694826,
     "lng": 5.219115,
     "address": "Plein 3A, Vlijmen",
-    "hours": null,
+    "hours": "di-zo 12-20u",
     "products": [
       "boerderijijs"
     ],
@@ -19904,10 +20020,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJGy28S-HsxkcRYCE3Y3YdXpc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 350,
     "dagVers": null,
-    "desc": "Boerderij-ijs in Vlijmen, vers van eigen koeien."
+    "desc": "Boerderij-ijs in Vlijmen, vers van eigen koeien.",
+    "phone": "073 888 5166",
+    "website": "http://ijsentaartmoment.nl/"
   },
   {
     "id": 784,
@@ -19919,14 +20037,14 @@
     "lat": 51.557761,
     "lng": 3.745436,
     "address": "Stekeldijk 15, Geersdijk",
-    "hours": null,
+    "hours": "ma-vr 9.30-17u · za 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJZUz2Nd-NxEcRQRzAdJv_JLU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 29,
     "dagVers": null,
     "desc": "Boerderij- of streekwinkel in Geersdijk met lokale producten."
   },
@@ -19940,16 +20058,18 @@
     "lat": 51.962443,
     "lng": 4.694165,
     "address": "Achterbroek 25, Berkenwoude",
-    "hours": null,
+    "hours": "vr 10-13u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJraAMTpvVxUcRx0KhrtlILoc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 22,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Berkenwoude met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Berkenwoude met lokale producten.",
+    "phone": "0182 240 040",
+    "website": "https://www.hetwildhuys.nl/"
   },
   {
     "id": 786,
@@ -19961,16 +20081,17 @@
     "lat": 53.139804,
     "lng": 5.475448,
     "address": "Monnikeweg 2, Arum",
-    "hours": null,
+    "hours": "di 19-20u · vr 19-20u · za 11-12u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ2ZEIcgvnyEcRBuX361EiXvI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Arum met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Arum met lokale producten.",
+    "phone": "06 13740957"
   },
   {
     "id": 787,
@@ -19982,7 +20103,7 @@
     "lat": 51.942654,
     "lng": 4.838289,
     "address": "Lekdijk West 85, Schoonhoven",
-    "hours": null,
+    "hours": "ma-za 9-18u",
     "products": [
       "fruit",
       "groente"
@@ -19992,10 +20113,12 @@
       "groente"
     ],
     "placeId": "ChIJ78iz6cl_xkcRjVMv6ml0OjQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 11,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Schoonhoven, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Schoonhoven, rechtstreeks van de teler.",
+    "phone": "06 38734721",
+    "website": "http://www.delekbongerd.nl/"
   },
   {
     "id": 788,
@@ -20007,16 +20130,18 @@
     "lat": 53.213457,
     "lng": 6.151179,
     "address": "It West 27, Augustinusga",
-    "hours": null,
+    "hours": "ma-di 8.30-15u · wo 8.30-12u · vr 8.30-15u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJVVUAujqzyUcRiqM6Nzl4y_g",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.7,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Augustinusga met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Augustinusga met lokale producten.",
+    "phone": "06 51735328",
+    "website": "http://www.hoevehoogland.nl/"
   },
   {
     "id": 789,
@@ -20028,16 +20153,18 @@
     "lat": 52.72411,
     "lng": 6.419542,
     "address": "Fluitenbergseweg 94, Fluitenberg",
-    "hours": null,
+    "hours": "ma-di 9-17u · wo-za 10-17u · zo 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJW3m7CEcQyEcRVfa5-hODI_8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 402,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Fluitenberg met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Fluitenberg met lokale producten.",
+    "phone": "0528 251 451",
+    "website": "https://www.sonneclaer.nl/"
   },
   {
     "id": 790,
@@ -20049,16 +20176,18 @@
     "lat": 52.036914,
     "lng": 6.590513,
     "address": "Steenbraakweg 6, Groenlo",
-    "hours": null,
+    "hours": "ma-vr 8.30-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJm-sTLRd3uEcRH1C8RFjvwxk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 26,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Groenlo met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Groenlo met lokale producten.",
+    "phone": "0544 461 444",
+    "website": "https://www.hommelink.nl/"
   },
   {
     "id": 791,
@@ -20070,7 +20199,7 @@
     "lat": 51.924301,
     "lng": 6.656191,
     "address": "Haart NL, Lieversdijk 4, Aalten",
-    "hours": null,
+    "hours": "ma-zo 9-20u",
     "products": [
       "boerderijijs"
     ],
@@ -20078,10 +20207,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJl-D_OXl7uEcRHg1__zccGtg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 133,
     "dagVers": null,
-    "desc": "Boerderij-ijs in Aalten, vers van eigen koeien."
+    "desc": "Boerderij-ijs in Aalten, vers van eigen koeien.",
+    "phone": "0543 565 287",
+    "website": "http://www.ijsboerderijoldepietepol.nl/"
   },
   {
     "id": 792,
@@ -20093,7 +20224,7 @@
     "lat": 51.843555,
     "lng": 5.034311,
     "address": "Poelweg 4, Vuren",
-    "hours": null,
+    "hours": "di-do 13-18u · vr 11-20u · za 11-18u · zo 13-18u",
     "products": [
       "boerderijijs"
     ],
@@ -20101,10 +20232,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJJ_W9IASJxkcRtK8RSuYcvbo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 462,
     "dagVers": null,
-    "desc": "Boerderij-ijs in Vuren, vers van eigen koeien."
+    "desc": "Boerderij-ijs in Vuren, vers van eigen koeien.",
+    "phone": "06 14892330",
+    "website": "https://ijsboerderijdeoudeschuur.nl/"
   },
   {
     "id": 793,
@@ -20124,10 +20257,12 @@
       "honing"
     ],
     "placeId": "ChIJEaD7GuFtyEcRpNEQaAUf9D0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Imker in Havelte met streekhoning en bijenproducten."
+    "desc": "Imker in Havelte met streekhoning en bijenproducten.",
+    "phone": "06 51156076",
+    "website": "http://imkerhermanjubbega.nl/"
   },
   {
     "id": 794,
@@ -20139,7 +20274,7 @@
     "lat": 52.033256,
     "lng": 5.908918,
     "address": "Koningsweg 35 Gebouw, H-1, Arnhem",
-    "hours": null,
+    "hours": "wo-vr 9-17u · za 9-13u",
     "products": [
       "honing"
     ],
@@ -20147,10 +20282,12 @@
       "honing"
     ],
     "placeId": "ChIJqcUx2rqwx0cRu5rKbv_H2do",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 164,
     "dagVers": null,
-    "desc": "Imker in Arnhem met streekhoning en bijenproducten."
+    "desc": "Imker in Arnhem met streekhoning en bijenproducten.",
+    "phone": "055 301 3893",
+    "website": "http://www.imkerijbijdaan.nl/"
   },
   {
     "id": 795,
@@ -20162,16 +20299,18 @@
     "lat": 52.242695,
     "lng": 4.793744,
     "address": "Vuurlijn 36, De Kwakel",
-    "hours": null,
+    "hours": "ma-do 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJKaw8UrXfxUcRqSOj4LAfaIc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 11,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in De Kwakel met lokale producten."
+    "desc": "Boerderij- of streekwinkel in De Kwakel met lokale producten.",
+    "phone": "0297 563 753",
+    "website": "https://www.inner-art.nl/"
   },
   {
     "id": 796,
@@ -20183,16 +20322,18 @@
     "lat": 52.669345,
     "lng": 5.101425,
     "address": "Noorderdracht 45, Oosterblokker",
-    "hours": null,
+    "hours": "wo-vr 10-14u · za 10-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJzdaQas-oyEcR0_fxhWOCPpA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 70,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Oosterblokker met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Oosterblokker met lokale producten.",
+    "phone": "06 15395050",
+    "website": "https://www.jamenzo.nl/"
   },
   {
     "id": 797,
@@ -20210,10 +20351,12 @@
     ],
     "tags": [],
     "placeId": "ChIJmxayrYwrxEcR0tqwFSHErv4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 11,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Lekkerkerk met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Lekkerkerk met lokale producten.",
+    "phone": "06 13173252",
+    "website": "http://www.jandewaardvisserij.nl/"
   },
   {
     "id": 798,
@@ -20225,16 +20368,18 @@
     "lat": 52.715643,
     "lng": 6.006496,
     "address": "Hevenweg 3, Blokzijl",
-    "hours": null,
+    "hours": "ma-vr 8-20u · za 9-17u · zo 8-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJdyzQ46p7yEcRbQ5DGq_n1JU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Blokzijl met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Blokzijl met lokale producten.",
+    "phone": "06 51121066",
+    "website": "https://www.jonenpadhoeve.nl/"
   },
   {
     "id": 799,
@@ -20246,16 +20391,17 @@
     "lat": 51.393868,
     "lng": 5.686216,
     "address": "Houtbroekstraat 8, Someren",
-    "hours": null,
+    "hours": "ma-zo 6-0u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJtRhgznUlx0cR1leMTqNLs50",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 27,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Someren met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Someren met lokale producten.",
+    "website": "http://www.jpfood.nl/"
   },
   {
     "id": 800,
@@ -20267,16 +20413,18 @@
     "lat": 53.033497,
     "lng": 6.387045,
     "address": "Hoofdweg 138, Veenhuizen",
-    "hours": null,
+    "hours": "di-za 11-17u · zo 12-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJlVIgusM5yEcRVS_KSrESrmc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 114,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Veenhuizen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Veenhuizen met lokale producten.",
+    "phone": "06 37408624",
+    "website": "http://www.kaaslust.nl/"
   },
   {
     "id": 801,
@@ -20288,16 +20436,18 @@
     "lat": 52.574924,
     "lng": 5.950929,
     "address": "Tuindersweg 2B, IJsselmuiden",
-    "hours": null,
+    "hours": "wo-za 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJVQKHSGh4yEcRqcuW4b8URQY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 106,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in IJsselmuiden met lokale producten."
+    "desc": "Boerderij- of streekwinkel in IJsselmuiden met lokale producten.",
+    "phone": "06 46593252",
+    "website": "http://www.kalterra.nl/"
   },
   {
     "id": 802,
@@ -20318,7 +20468,9 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Lienden met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Lienden met lokale producten.",
+    "phone": "06 20600800",
+    "website": "https://holbusidetails.org/details/karsten-berends-ChIJ0Wd"
   },
   {
     "id": 803,
@@ -20330,16 +20482,17 @@
     "lat": 52.8617,
     "lng": 4.717945,
     "address": "Helmweg 10, Groote Keeten",
-    "hours": null,
+    "hours": "do-zo 10-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJp1FnKVJFz0cRDmB7pexlU8M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 79,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Groote Keeten met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Groote Keeten met lokale producten.",
+    "phone": "06 34000067"
   },
   {
     "id": 804,
@@ -20351,16 +20504,18 @@
     "lat": 53.149346,
     "lng": 5.48061,
     "address": "Monnikenweg 20, Achlum",
-    "hours": null,
+    "hours": "ma-do 7-12u · ma-do 12.45-17u · vr 7-12u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJcfh3zxPnyEcRnxgkwAlVYIM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 52,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Achlum met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Achlum met lokale producten.",
+    "phone": "0517 642 262",
+    "website": "https://klafachocola.nl/"
   },
   {
     "id": 805,
@@ -20372,16 +20527,18 @@
     "lat": 52.282298,
     "lng": 6.422075,
     "address": "Zwartepad 6a, Holten",
-    "hours": null,
+    "hours": "di-vr 9.30-17.30u · za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJQ_vwZzvxx0cR0BZ0xPR0T08",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 7,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Holten met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Holten met lokale producten.",
+    "phone": "06 42736166",
+    "website": "https://www.kloasinthof.nl/"
   },
   {
     "id": 806,
@@ -20393,16 +20550,18 @@
     "lat": 52.25008,
     "lng": 6.284109,
     "address": "Brink 6, Bathmen",
-    "hours": null,
+    "hours": "ma 9-12.30u · di-vr 9-18u · za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJB8cqq0_sx0cRKu3U65-z71w",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 42,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Bathmen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Bathmen met lokale producten.",
+    "phone": "0570 543 139",
+    "website": "https://www.kloasinthof.nl/"
   },
   {
     "id": 807,
@@ -20414,16 +20573,18 @@
     "lat": 51.864514,
     "lng": 5.63433,
     "address": "Kloosterweg 31, Horssen",
-    "hours": null,
+    "hours": "wo 13-18u · vr 9-18u · za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJbZ81tCIAx0cRPh0RwzjdIY4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 74,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Horssen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Horssen met lokale producten.",
+    "phone": "06 40400264",
+    "website": "http://www.kloosterboerderijvanbuuren.nl/"
   },
   {
     "id": 808,
@@ -20435,16 +20596,18 @@
     "lat": 52.231495,
     "lng": 6.816616,
     "address": "Twekkelerweg 202, Enschede",
-    "hours": null,
+    "hours": "za 10-14u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJUyaJl8ETuEcR6QFkiOVRPes",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 45,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Enschede met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Enschede met lokale producten.",
+    "phone": "06 21805521",
+    "website": "http://koeienvanjelle.nl/"
   },
   {
     "id": 809,
@@ -20456,7 +20619,7 @@
     "lat": 52.01295,
     "lng": 4.355927,
     "address": "Oude Kerkstraat 9, Delft",
-    "hours": null,
+    "hours": "ma-vr 8-18u · za 8-16u",
     "products": [
       "vlees",
       "streekproducten"
@@ -20465,10 +20628,12 @@
       "vlees"
     ],
     "placeId": "ChIJ8XIVfsO1xUcRKLgsY2lnzXM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 295,
     "dagVers": null,
-    "desc": "Boerderijslagerij/streekwinkel in Delft met eigen vlees."
+    "desc": "Boerderijslagerij/streekwinkel in Delft met eigen vlees.",
+    "phone": "015 212 1878",
+    "website": "http://www.slagerijleovanvliet.nl/"
   },
   {
     "id": 810,
@@ -20480,7 +20645,7 @@
     "lat": 52.417977,
     "lng": 6.352178,
     "address": "Oude Twentseweg 30, Luttenberg",
-    "hours": null,
+    "hours": "ma 9-17u · di 0-0u · zo 9-20u",
     "products": [
       "aardbeien",
       "fruit"
@@ -20489,10 +20654,12 @@
       "fruit"
     ],
     "placeId": "ChIJIaPYMyXlx0cRV3nXR5GTG0c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 6,
     "dagVers": null,
-    "desc": "Aardbeien en seizoensfruit in Luttenberg, rechtstreeks van de teler."
+    "desc": "Aardbeien en seizoensfruit in Luttenberg, rechtstreeks van de teler.",
+    "phone": "06 51766519",
+    "website": "https://kwekerijbosch.nl/"
   },
   {
     "id": 811,
@@ -20504,16 +20671,18 @@
     "lat": 52.298909,
     "lng": 6.030571,
     "address": "Eeuwhorstweg 5, Emst",
-    "hours": null,
+    "hours": "wo 9-13u · za 9-13u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJS0h_XkLFx0cR_7bi7l5KbF0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Emst met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Emst met lokale producten.",
+    "phone": "0571 292 302",
+    "website": "http://www.eeuwhorst.nl/"
   },
   {
     "id": 812,
@@ -20525,16 +20694,18 @@
     "lat": 52.212576,
     "lng": 5.412562,
     "address": "Achterhoekerweg 19, Amersfoort",
-    "hours": null,
+    "hours": "wo-za 10-16.30u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJQ97OH7JHxkcRuSCDEQO0J5s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 33,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Amersfoort met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Amersfoort met lokale producten.",
+    "phone": "06 36410874",
+    "website": "https://www.landinzicht.net/"
   },
   {
     "id": 813,
@@ -20552,10 +20723,12 @@
     ],
     "tags": [],
     "placeId": "ChIJqbAfgGsrx0cR5VeeN3ctj7Q",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 20,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Soerendonk met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Soerendonk met lokale producten.",
+    "phone": "06 26794741",
+    "website": "https://www.limousinbedrijfvanlievenoogen.nl/"
   },
   {
     "id": 814,
@@ -20573,10 +20746,12 @@
     ],
     "tags": [],
     "placeId": "ChIJt91gNvp4yEcREdtypcPwdbo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 7,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Kampen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Kampen met lokale producten.",
+    "phone": "038 338 8262",
+    "website": "http://www.besteljeaardappel.nl/"
   },
   {
     "id": 815,
@@ -20588,16 +20763,18 @@
     "lat": 52.046378,
     "lng": 4.950019,
     "address": "Waterpoort 2, Montfoort",
-    "hours": null,
+    "hours": "ma-vr 8.30-18u · za 8.30-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJGajrYUt6xkcRPeSeshzpM5I",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 89,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Montfoort met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Montfoort met lokale producten.",
+    "phone": "0348 471 236",
+    "website": "https://www.mado.nl/"
   },
   {
     "id": 816,
@@ -20615,10 +20792,12 @@
     ],
     "tags": [],
     "placeId": "ChIJDzaO4LjExUcRVMk58EO4tF4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 204,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Woubrugge met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Woubrugge met lokale producten.",
+    "phone": "06 12954999",
+    "website": "http://www.mariahoeve-logies.nl/"
   },
   {
     "id": 817,
@@ -20630,7 +20809,7 @@
     "lat": 52.623794,
     "lng": 6.607372,
     "address": "De Lutteresweg, Lutten",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [
       "vlees",
       "streekproducten"
@@ -20639,10 +20818,12 @@
       "vlees"
     ],
     "placeId": "ChIJny-Il6sDyEcRTwSy4NQb_a4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 10,
     "dagVers": null,
-    "desc": "Boerderijslagerij/streekwinkel in Lutten met eigen vlees."
+    "desc": "Boerderijslagerij/streekwinkel in Lutten met eigen vlees.",
+    "phone": "0523 723 307",
+    "website": "https://mastermeat.nl/?utm_source=google%20business%20profile&utm_medium=organic&utm_campaign=lokale%20zichtbaarheid"
   },
   {
     "id": 818,
@@ -20654,7 +20835,7 @@
     "lat": 52.067132,
     "lng": 5.478226,
     "address": "Broekerweg 7, Woudenberg",
-    "hours": null,
+    "hours": "ma-za 6-22u",
     "products": [
       "zuivel",
       "melk"
@@ -20663,10 +20844,11 @@
       "zuivel"
     ],
     "placeId": "ChIJ__9bSd5PxkcReCC9cNfN28s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 93,
     "dagVers": null,
-    "desc": "Zuivelboerderij/streekwinkel in Woudenberg."
+    "desc": "Zuivelboerderij/streekwinkel in Woudenberg.",
+    "phone": "06 54274633"
   },
   {
     "id": 819,
@@ -20687,10 +20869,11 @@
       "zuivel"
     ],
     "placeId": "ChIJgfHIIDwEx0cRhB79s06cVfE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 31,
     "dagVers": null,
-    "desc": "Zuivelboerderij/streekwinkel in Wijchen."
+    "desc": "Zuivelboerderij/streekwinkel in Wijchen.",
+    "phone": "024 642 0842"
   },
   {
     "id": 820,
@@ -20711,10 +20894,11 @@
       "zuivel"
     ],
     "placeId": "ChIJMQGrf-UNyEcRptF2rilgbX0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 16,
     "dagVers": null,
-    "desc": "Zuivelboerderij/streekwinkel in Koekange."
+    "desc": "Zuivelboerderij/streekwinkel in Koekange.",
+    "phone": "0522 451 946"
   },
   {
     "id": 821,
@@ -20732,10 +20916,11 @@
     ],
     "tags": [],
     "placeId": "ChIJO2dO9BptxkcRhyq4kXxW1c4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 6,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Loosdrecht met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Loosdrecht met lokale producten.",
+    "website": "https://www.kipeigen.nl/"
   },
   {
     "id": 822,
@@ -20747,7 +20932,7 @@
     "lat": 52.749615,
     "lng": 5.131602,
     "address": "Onderdijk 249-A, Wervershoof",
-    "hours": null,
+    "hours": "ma-zo 9-21u",
     "products": [
       "honing"
     ],
@@ -20755,10 +20940,12 @@
       "honing"
     ],
     "placeId": "ChIJWX719TGvyEcRBnxpIJyXWdM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Imker in Wervershoof met streekhoning en bijenproducten."
+    "desc": "Imker in Wervershoof met streekhoning en bijenproducten.",
+    "phone": "06 39209468",
+    "website": "https://lekkerder.nl/newbee-honing"
   },
   {
     "id": 823,
@@ -20770,16 +20957,17 @@
     "lat": 52.140519,
     "lng": 6.700326,
     "address": "Aaftinksweg 7, Haaksbergen",
-    "hours": null,
+    "hours": "vr 16.30-18u · za 10-11u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJiaJCrJtzuEcRqQ33G0151Tc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Haaksbergen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Haaksbergen met lokale producten.",
+    "website": "http://www.noaberboeren.nl/"
   },
   {
     "id": 824,
@@ -20791,16 +20979,18 @@
     "lat": 52.338115,
     "lng": 5.334422,
     "address": "Goethelaan 163ab, Almere",
-    "hours": null,
+    "hours": "ma-za 8.30-19u · zo 11-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJlQLJ4U49xkcRBNWtgUssBGE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 128,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Almere met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Almere met lokale producten.",
+    "phone": "036 303 0998",
+    "website": "http://www.odin.nl/"
   },
   {
     "id": 825,
@@ -20812,7 +21002,7 @@
     "lat": 52.156268,
     "lng": 4.493957,
     "address": "Hogewoerd 8A, Leiden",
-    "hours": null,
+    "hours": "ma-zo 6-22u",
     "products": [
       "groente",
       "streekproducten"
@@ -20821,10 +21011,11 @@
       "groente"
     ],
     "placeId": "ChIJ1_980U_HxUcRceAhmV27IQE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 50,
     "dagVers": null,
-    "desc": "Verse groente en streekproducten in Leiden."
+    "desc": "Verse groente en streekproducten in Leiden.",
+    "website": "http://www.oogst.shop/"
   },
   {
     "id": 826,
@@ -20845,10 +21036,12 @@
       "groente"
     ],
     "placeId": "ChIJOdBgn8hHxEcR9Sb7v6nMjvs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Verse groente en streekproducten in Goudswaard."
+    "desc": "Verse groente en streekproducten in Goudswaard.",
+    "phone": "0186 661 568",
+    "website": "https://www.biofarmvandeerve.nl/"
   },
   {
     "id": 827,
@@ -20860,7 +21053,7 @@
     "lat": 52.672918,
     "lng": 6.598052,
     "address": "Jeulenwijk 110, Elim",
-    "hours": null,
+    "hours": "wo-do 14-16u",
     "products": [
       "vlees",
       "streekproducten"
@@ -20872,7 +21065,9 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Boerderijslagerij/streekwinkel in Elim met eigen vlees."
+    "desc": "Boerderijslagerij/streekwinkel in Elim met eigen vlees.",
+    "phone": "06 17234988",
+    "website": "https://www.puurvlees.nu/"
   },
   {
     "id": 828,
@@ -20890,10 +21085,12 @@
     ],
     "tags": [],
     "placeId": "ChIJp1p1NflJyEcRhTecBztkVNk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 2,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Jonkersvaart met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Jonkersvaart met lokale producten.",
+    "phone": "0594 612 616",
+    "website": "https://nlatlas.org/details/r-de-boer-ChIJp1p"
   },
   {
     "id": 829,
@@ -20911,10 +21108,11 @@
     ],
     "tags": [],
     "placeId": "ChIJezKTYQpNz0cR8UO5aiRTZpY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 13,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Kolhorn met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Kolhorn met lokale producten.",
+    "phone": "0224 533 090"
   },
   {
     "id": 830,
@@ -20926,16 +21124,18 @@
     "lat": 52.649196,
     "lng": 5.664079,
     "address": "Domineesweg 11, Nagele",
-    "hours": null,
+    "hours": "ma-za 8.30-17.30u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJe8ZVn_mDyEcRm5MgcyI9_rg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 329,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Nagele met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Nagele met lokale producten.",
+    "phone": "0527 681 458",
+    "website": "http://www.rennestreekproducten.nl/"
   },
   {
     "id": 831,
@@ -20947,16 +21147,18 @@
     "lat": 51.506019,
     "lng": 3.891235,
     "address": "Bocht van Guinea 6, Goes",
-    "hours": null,
+    "hours": "ma 18-21u · do-zo 18-21u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ79-NHtuJxEcRH1tdnZbhFgY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 224,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Goes met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Goes met lokale producten.",
+    "phone": "0113 227 405",
+    "website": "http://www.restauranthetbinnenhof.nl/"
   },
   {
     "id": 832,
@@ -20976,10 +21178,11 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJeWN4lfa1yUcRrcpUFx0cGpE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 7,
     "dagVers": null,
-    "desc": "Boerderij-ijs in Niehove, vers van eigen koeien."
+    "desc": "Boerderij-ijs in Niehove, vers van eigen koeien.",
+    "website": "https://riannesboerderijijs.nl/"
   },
   {
     "id": 833,
@@ -20997,10 +21200,12 @@
     ],
     "tags": [],
     "placeId": "ChIJbdwfPqsjxEcRKyxJTGk-EEo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 75,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Hoeven met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Hoeven met lokale producten.",
+    "phone": "06 10189963",
+    "website": "http://www.rommenskoeien.nl/"
   },
   {
     "id": 834,
@@ -21018,10 +21223,12 @@
     ],
     "tags": [],
     "placeId": "ChIJmZwvA0q8xEcR1UmNZYHEpac",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 41,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Westkapelle met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Westkapelle met lokale producten.",
+    "phone": "0118 571 216",
+    "website": "http://www.siergrindhandel.nl/"
   },
   {
     "id": 835,
@@ -21033,7 +21240,7 @@
     "lat": 53.13255,
     "lng": 6.651022,
     "address": "Vogelzangsteeg 15a, Noordlaren",
-    "hours": null,
+    "hours": "di-vr 9-17u · za 9-15u",
     "products": [
       "vlees",
       "streekproducten"
@@ -21042,10 +21249,12 @@
       "vlees"
     ],
     "placeId": "ChIJ85o3yhEsyEcRWXVuMqmC65A",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 54,
     "dagVers": null,
-    "desc": "Boerderijslagerij/streekwinkel in Noordlaren met eigen vlees."
+    "desc": "Boerderijslagerij/streekwinkel in Noordlaren met eigen vlees.",
+    "phone": "050 406 3812",
+    "website": "http://www.slagerijdebuurderij.nl/"
   },
   {
     "id": 836,
@@ -21057,16 +21266,18 @@
     "lat": 51.962735,
     "lng": 6.28891,
     "address": "IJsselkade 17, Doetinchem",
-    "hours": null,
+    "hours": "ma-vr 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJg0pjsAyKx0cR1ifpavyLA78",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 25,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Doetinchem met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Doetinchem met lokale producten.",
+    "phone": "085 029 4000",
+    "website": "http://www.achterhoek.nl/"
   },
   {
     "id": 837,
@@ -21078,16 +21289,17 @@
     "lat": 51.932213,
     "lng": 6.151266,
     "address": "Smallestraat 2A, Didam",
-    "hours": null,
+    "hours": "ma-zo 9-17.30u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJpf-QeImfx0cRFQgshiJpO8s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 2,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Didam met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Didam met lokale producten.",
+    "website": "https://sunnysoaps.nl/"
   },
   {
     "id": 838,
@@ -21099,16 +21311,17 @@
     "lat": 52.362554,
     "lng": 5.534061,
     "address": "Ossenkampweg 16, Zeewolde",
-    "hours": null,
+    "hours": "ma-zo 8-20u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJWV83a9gxxkcRVsb3MLlrqVQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 75,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Zeewolde met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Zeewolde met lokale producten.",
+    "website": "http://www.thebuffelcompany.com/"
   },
   {
     "id": 839,
@@ -21120,16 +21333,18 @@
     "lat": 52.148132,
     "lng": 6.508602,
     "address": "Geesterse Broekweg 1, Geesteren",
-    "hours": null,
+    "hours": "ma-wo 8-20u · do 8.01-20u · vr-zo 8-20u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJAxMeJfKKx0cRy_zLkbGUTak",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 182,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Geesteren met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Geesteren met lokale producten.",
+    "phone": "0545 481 221",
+    "website": "http://www.theehuisdebusker.nl/"
   },
   {
     "id": 840,
@@ -21141,16 +21356,18 @@
     "lat": 53.323344,
     "lng": 6.137193,
     "address": "Tempelsteed 1, Ingwierrum",
-    "hours": null,
+    "hours": "ma 10.30-18u · do 10.30-18u · za 9.30-14u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJa-OyIQauyUcRJ7cIuWszst0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 19,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Ingwierrum met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Ingwierrum met lokale producten.",
+    "phone": "06 10400656",
+    "website": "http://www.timpelsteed.nl/"
   },
   {
     "id": 841,
@@ -21162,7 +21379,7 @@
     "lat": 52.762542,
     "lng": 5.854022,
     "address": "Lindeweg 45, Luttelgeest",
-    "hours": null,
+    "hours": "za 9-12u",
     "products": [
       "groente",
       "streekproducten"
@@ -21171,10 +21388,12 @@
       "groente"
     ],
     "placeId": "ChIJ4cG4UftiyEcRvdq0ocba5Oc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 9,
     "dagVers": null,
-    "desc": "Verse groente en streekproducten in Luttelgeest."
+    "desc": "Verse groente en streekproducten in Luttelgeest.",
+    "phone": "06 53974515",
+    "website": "http://www.tuinboom.nl/"
   },
   {
     "id": 842,
@@ -21186,7 +21405,7 @@
     "lat": 51.933005,
     "lng": 6.118888,
     "address": "De Hogenend 85, Didam",
-    "hours": null,
+    "hours": "do-vr 9-12.30u · do-vr 13.30-18u · za 9-16u",
     "products": [
       "groente",
       "streekproducten"
@@ -21195,10 +21414,12 @@
       "groente"
     ],
     "placeId": "ChIJQ_WR5tiex0cR1_AmEgAVlxg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 14,
     "dagVers": null,
-    "desc": "Verse groente en streekproducten in Didam."
+    "desc": "Verse groente en streekproducten in Didam.",
+    "phone": "0316 221 821",
+    "website": "http://www.tuinderijgesthuizen.nl/"
   },
   {
     "id": 843,
@@ -21210,7 +21431,7 @@
     "lat": 52.245244,
     "lng": 6.241111,
     "address": "Rodijksweg 5, Deventer",
-    "hours": null,
+    "hours": "di 13-18u · do-vr 13-18u · za 9-17u",
     "products": [
       "groente",
       "streekproducten"
@@ -21219,10 +21440,11 @@
       "groente"
     ],
     "placeId": "ChIJlXzA0Xjsx0cRuCX3dsEZfr8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 31,
     "dagVers": null,
-    "desc": "Verse groente en streekproducten in Deventer."
+    "desc": "Verse groente en streekproducten in Deventer.",
+    "phone": "0570 654 356"
   },
   {
     "id": 844,
@@ -21240,10 +21462,12 @@
     ],
     "tags": [],
     "placeId": "ChIJl4Gf6BuFx0cRKSuzFv2y2Mg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Zelhem met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Zelhem met lokale producten.",
+    "phone": "06 10200828",
+    "website": "http://www.uutzellum.nl/"
   },
   {
     "id": 845,
@@ -21255,16 +21479,18 @@
     "lat": 53.226701,
     "lng": 6.354165,
     "address": "Bloemersmastraat 22, Niekerk",
-    "hours": null,
+    "hours": "di-do 8-18u · vr 8-20u · za 8-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJvY0rHarKyUcR_fgTsrxM8rk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 45,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Niekerk met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Niekerk met lokale producten.",
+    "phone": "0594 507 474",
+    "website": "http://www.barbequefeestjes.nl/"
   },
   {
     "id": 846,
@@ -21282,10 +21508,12 @@
     ],
     "tags": [],
     "placeId": "ChIJ8zjAIBXUyUcR3G18LMsat9o",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 8,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Woltersum met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Woltersum met lokale producten.",
+    "phone": "06 12634652",
+    "website": "https://boerderijlalkens.nl/"
   },
   {
     "id": 847,
@@ -21297,16 +21525,18 @@
     "lat": 52.10392,
     "lng": 6.316562,
     "address": "Dorpsstraat 15B, Vorden",
-    "hours": null,
+    "hours": "di-za 10-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJI3HWxwGOx0cRdTVmMs9KWTw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 83,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Vorden met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Vorden met lokale producten.",
+    "phone": "06 40569937",
+    "website": "http://www.vansinckel.nl/"
   },
   {
     "id": 848,
@@ -21327,10 +21557,12 @@
       "zuivel"
     ],
     "placeId": "ChIJX1WJaX0Qx0cRRkCzETbsYpU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 10,
     "dagVers": null,
-    "desc": "Zuivelboerderij/streekwinkel in Sint Hubert."
+    "desc": "Zuivelboerderij/streekwinkel in Sint Hubert.",
+    "phone": "06 51714396",
+    "website": "http://www.boerderijvermeulen.com/"
   },
   {
     "id": 849,
@@ -21342,16 +21574,18 @@
     "lat": 52.002384,
     "lng": 5.456228,
     "address": "Prins Bernhardlaan 13, Amerongen",
-    "hours": null,
+    "hours": "ma-vr 8.30-18u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJJ9JGapNQxkcROiiCPPUbuBU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Amerongen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Amerongen met lokale producten.",
+    "phone": "06 40350940",
+    "website": "http://www.villakakelbontamerongen.nl/"
   },
   {
     "id": 850,
@@ -21363,7 +21597,7 @@
     "lat": 51.414188,
     "lng": 5.756086,
     "address": "Planker 5, Asten",
-    "hours": null,
+    "hours": "ma-zo 7-18u",
     "products": [
       "vlees",
       "streekproducten"
@@ -21372,10 +21606,12 @@
       "vlees"
     ],
     "placeId": "ChIJsaTJY9M7x0cRV63BtR5hyCw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 129,
     "dagVers": null,
-    "desc": "Boerderijslagerij/streekwinkel in Asten met eigen vlees."
+    "desc": "Boerderijslagerij/streekwinkel in Asten met eigen vlees.",
+    "phone": "06 23496394",
+    "website": "https://www.vleesch.nl/"
   },
   {
     "id": 851,
@@ -21387,16 +21623,18 @@
     "lat": 52.270253,
     "lng": 6.094942,
     "address": "Rozendaalseweg 20, Terwolde",
-    "hours": null,
+    "hours": "ma-vr 7-22u · za 8-22u · zo 8-21u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJa5w-L5jBx0cRTMnYCsj-RJo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 4,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Terwolde met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Terwolde met lokale producten.",
+    "phone": "0571 292 013",
+    "website": "https://www.facebook.com/VOFHanekamp/"
   },
   {
     "id": 852,
@@ -21408,16 +21646,17 @@
     "lat": 51.953772,
     "lng": 5.698447,
     "address": "Knoppersweg 2, Randwijk",
-    "hours": null,
+    "hours": "ma-zo 7-22u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJwXWBEZyrx0cR7_hgJ3W-b94",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 29,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Randwijk met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Randwijk met lokale producten.",
+    "phone": "0488 491 291"
   },
   {
     "id": 853,
@@ -21429,7 +21668,7 @@
     "lat": 52.573507,
     "lng": 4.995801,
     "address": "Raadhuisstraat 27, Oosthuizen",
-    "hours": null,
+    "hours": "ma-vr 8-18u · za 8-16u",
     "products": [
       "vlees",
       "streekproducten"
@@ -21438,10 +21677,12 @@
       "vlees"
     ],
     "placeId": "ChIJd79BWJIBxkcRpEnJw_Uzw_M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 47,
     "dagVers": null,
-    "desc": "Boerderijslagerij/streekwinkel in Oosthuizen met eigen vlees."
+    "desc": "Boerderijslagerij/streekwinkel in Oosthuizen met eigen vlees.",
+    "phone": "0299 403 468",
+    "website": "http://www.natuurvlees.nl/"
   },
   {
     "id": 854,
@@ -21453,16 +21694,17 @@
     "lat": 52.128533,
     "lng": 6.360609,
     "address": "Grensweg 1, Lochem",
-    "hours": null,
+    "hours": "za 10-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJMRZbhJCNx0cRPLTXTVMgYeU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Lochem met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Lochem met lokale producten.",
+    "website": "http://www.welig.nl/"
   },
   {
     "id": 855,
@@ -21474,16 +21716,18 @@
     "lat": 53.019471,
     "lng": 7.031541,
     "address": "Scholtweg 9, Onstwedde",
-    "hours": null,
+    "hours": "wo 13-18u · vr 13-18u · za 9-15u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ3Ua27oLPt0cRAQin84fmSGs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 65,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Onstwedde met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Onstwedde met lokale producten.",
+    "phone": "0599 331 666",
+    "website": "http://www.westerwoldsgoud.nl/"
   },
   {
     "id": 856,
@@ -21495,16 +21739,18 @@
     "lat": 51.846823,
     "lng": 4.28265,
     "address": "Biertsedijk Oost 8, Simonshaven",
-    "hours": null,
+    "hours": "ma 11-16u · di-za 10-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJZW5XRjBJxEcRgrWvXpHmjCI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4,
+    "googleReviews": 76,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Simonshaven met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Simonshaven met lokale producten.",
+    "phone": "06 39020114",
+    "website": "http://www.domein-de-vier-ambachten.nl/"
   },
   {
     "id": 857,
@@ -21516,7 +21762,7 @@
     "lat": 51.791115,
     "lng": 4.033116,
     "address": "Damweg 5, Stellendam",
-    "hours": null,
+    "hours": "ma-zo 8-22u",
     "products": [
       "zuivel",
       "melk"
@@ -21525,10 +21771,12 @@
       "zuivel"
     ],
     "placeId": "ChIJS35A9VBXxEcRgY9BrkxZi3Q",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 38,
     "dagVers": null,
-    "desc": "Zuivelboerderij/streekwinkel in Stellendam."
+    "desc": "Zuivelboerderij/streekwinkel in Stellendam.",
+    "phone": "0187 491 208",
+    "website": "https://www.woutrinahoeve.nl/wou-zuivel/"
   },
   {
     "id": 858,
@@ -21546,10 +21794,12 @@
     ],
     "tags": [],
     "placeId": "ChIJg_pOOcgfxEcRKO5NgPnpQsk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 2.9,
+    "googleReviews": 7,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Breda met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Breda met lokale producten.",
+    "phone": "030 225 5555",
+    "website": "http://www.lievegoed.nl/debeukenhof/"
   },
   {
     "id": 859,
@@ -21561,7 +21811,7 @@
     "lat": 50.797458,
     "lng": 5.951296,
     "address": "Hilleshagerweg 116-1, Mechelen",
-    "hours": null,
+    "hours": "ma-vr 9-17u",
     "products": [
       "streekproducten"
     ],
@@ -21570,7 +21820,9 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Mechelen met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Mechelen met lokale producten.",
+    "phone": "043 455 2077",
+    "website": "http://www.hoeveschaffersberg.nl/"
   },
   {
     "id": 860,
@@ -21594,7 +21846,8 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Zuivelboerderij/streekwinkel in Ypecolsga."
+    "desc": "Zuivelboerderij/streekwinkel in Ypecolsga.",
+    "phone": "0514 571 359"
   },
   {
     "id": 861,
@@ -21606,15 +21859,17 @@
     "lat": 51.652601,
     "lng": 4.096733,
     "address": "Nijverheidsweg 39, Bruinisse",
-    "hours": null,
+    "hours": "ma-di 8.30-15u · wo 8.30-12u · do 8.30-15u · vr 8.30-14u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJSRLonUhdxEcRn6HQkIVgA5I",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 63,
     "dagVers": null,
-    "desc": "Boerderij- of streekwinkel in Bruinisse met lokale producten."
+    "desc": "Boerderij- of streekwinkel in Bruinisse met lokale producten.",
+    "phone": "0111 202 037",
+    "website": "https://zeeuwschezoute.nl/"
   }
 ]
