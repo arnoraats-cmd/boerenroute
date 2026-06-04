@@ -7,6 +7,8 @@ const cands = JSON.parse(readFileSync('scripts/kidfarm-candidates.json', 'utf8')
 const shops = JSON.parse(readFileSync('src/data/verifiedShops.json', 'utf8'));
 
 const NOISE = new Set(['lodging', 'campground', 'hotel', 'restaurant']);
+/* Alleen échte speel-/kinder-/beleefboerderijen (niet elke gewone hoeve) */
+const STRONG = /speelboerderij|belevenis|beleef|kinderboerderij|kinderpret|speelparadijs|natuurspeeltuin|doe-?boerderij|speeltuin/i;
 const isNL = a => /\d{4}\s?[A-Z]{2}/.test(a) && !/Belgi/i.test(a);
 function cleanAddr(a) {
   let s = a.replace(/,?\s*(Nederland|Netherlands)\s*$/i, '').trim();
@@ -27,7 +29,7 @@ let nextId = Math.max(...shops.map(s => s.id)) + 1;
 const added = [], placed = [];
 
 for (const c of cands) {
-  if (!isNL(c.address) || NOISE.has(c.primaryType)) continue;
+  if (!isNL(c.address) || NOISE.has(c.primaryType) || !STRONG.test(c.name)) continue;
   if (placed.some(p => km(p.lat, p.lng, c.lat, c.lng) < 0.08)) continue;
   const { address, plaats } = cleanAddr(c.address);
   const emoji = /speeltuin|pret|speel/i.test(c.name) ? '🛝' : '🐐';
