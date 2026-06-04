@@ -14603,16 +14603,18 @@
     "lat": 52.011288,
     "lng": 5.585575,
     "address": "Rauweveldseweg 1, Veenendaal",
-    "hours": null,
+    "hours": "di 9-17u · do-za 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJCSIS761TxkcRrbztAA6nKEc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 67,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Veenendaal met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Veenendaal met verse streekproducten van het land.",
+    "phone": "0318 516 206",
+    "website": "http://tboerenwinkeltje.nl/"
   },
   {
     "id": 564,
@@ -14633,10 +14635,12 @@
       "vlees"
     ],
     "placeId": "ChIJH3v7UXTJxkcRZZ7ozS352_c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Hooge Mierde met eigen vlees en streekproducten."
+    "desc": "Boerderijwinkel in Hooge Mierde met eigen vlees en streekproducten.",
+    "phone": "06 15042351",
+    "website": "http://www.brabantsehei.nl/"
   },
   {
     "id": 565,
@@ -14672,7 +14676,7 @@
     "lat": 52.230244,
     "lng": 4.752924,
     "address": "Dwarsweg 2, De Kwakel",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "aardappelen",
       "groente"
@@ -14681,8 +14685,8 @@
       "groente"
     ],
     "placeId": "ChIJmTjUmm3fxUcRJrvvQSeRcNc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 3,
     "dagVers": null,
     "desc": "Aardappelautomaat in De Kwakel met verse aardappelen."
   },
@@ -14696,7 +14700,7 @@
     "lat": 51.641952,
     "lng": 4.892741,
     "address": "Hoogstraat 71, Oosteind",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "fruit"
     ],
@@ -14704,10 +14708,11 @@
       "fruit"
     ],
     "placeId": "ChIJk6OOZl6ZxkcRjgFkJeAAh3M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 106,
     "dagVers": null,
-    "desc": "Fruitautomaat in Oosteind met vers fruit."
+    "desc": "Fruitautomaat in Oosteind met vers fruit.",
+    "website": "https://www.facebook.com/VermeulenZachtfruit2020"
   },
   {
     "id": 568,
@@ -14719,7 +14724,7 @@
     "lat": 52.94974,
     "lng": 6.789271,
     "address": "Borgerderstraat 10a, Drouwen",
-    "hours": null,
+    "hours": "do 13-17u · vr 9-17u · za 9-14u",
     "products": [
       "kaas",
       "zuivel"
@@ -14728,10 +14733,12 @@
       "zuivel"
     ],
     "placeId": "ChIJB3naC-HZt0cRE-FZ-cV6lYg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 43,
     "dagVers": null,
-    "desc": "Kaasboerderij in Drouwen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Drouwen met eigen kaas en zuivel.",
+    "phone": "06 28167285",
+    "website": "http://www.kaasmakerijmarelesch.nl/"
   },
   {
     "id": 569,
@@ -14743,7 +14750,7 @@
     "lat": 52.5247,
     "lng": 6.559181,
     "address": "Rheezerweg 127, Diffelen",
-    "hours": null,
+    "hours": "ma-vr 9-17.30u · za 9-17u",
     "products": [
       "asperges",
       "groente"
@@ -14752,10 +14759,12 @@
       "groente"
     ],
     "placeId": "ChIJUb0sUZwAyEcR0jbK6winOnU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 173,
     "dagVers": null,
-    "desc": "Asperges en seizoensgroente in Diffelen, vers van het land."
+    "desc": "Asperges en seizoensgroente in Diffelen, vers van het land.",
+    "phone": "0523 251 866",
+    "website": "http://www.hetnijenhuis.nl/"
   },
   {
     "id": 570,
@@ -14767,7 +14776,7 @@
     "lat": 52.039394,
     "lng": 6.294736,
     "address": "Steenderenseweg 6, Hengelo",
-    "hours": null,
+    "hours": "wo 14-16u · za 10-12.30u",
     "products": [
       "kaas",
       "zuivel"
@@ -14776,10 +14785,12 @@
       "zuivel"
     ],
     "placeId": "ChIJhVVaj_6Rx0cROpWXtYkx3NE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 7,
     "dagVers": null,
-    "desc": "Kaasboerderij in Hengelo met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Hengelo met eigen kaas en zuivel.",
+    "phone": "06 12292817",
+    "website": "https://bekvelder-zuivelboerderij-1.jimdosite.com/"
   },
   {
     "id": 571,
@@ -14791,16 +14802,18 @@
     "lat": 53.21333,
     "lng": 6.882549,
     "address": "Korengarst 4, Noordbroek",
-    "hours": null,
+    "hours": "ma-za 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ54PT0D8rtkcRmB2TmL7IsNk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 31,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Noordbroek met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Noordbroek met verse streekproducten van het land.",
+    "phone": "0598 451 206",
+    "website": "https://www.arkemavlees.nl/"
   },
   {
     "id": 572,
@@ -14818,8 +14831,8 @@
     ],
     "tags": [],
     "placeId": "ChIJTemnDQvSt0cRLRrpv9hT4SU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 2,
     "dagVers": null,
     "desc": "Boerderijwinkel in Winschoten met verse streekproducten van het land."
   },
@@ -14842,10 +14855,12 @@
       "zuivel"
     ],
     "placeId": "ChIJH0-OQ0UayEcRg9jkHizw3lI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 12,
     "dagVers": null,
-    "desc": "Kaasboerderij in Stuifzand met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Stuifzand met eigen kaas en zuivel.",
+    "phone": "0528 263 632",
+    "website": "https://www.justakaas.nl/"
   },
   {
     "id": 574,
@@ -14857,7 +14872,7 @@
     "lat": 52.15004,
     "lng": 4.901812,
     "address": "Van Teylingenweg 174, Kamerik",
-    "hours": null,
+    "hours": "za 8.30-13u",
     "products": [
       "kaas",
       "zuivel"
@@ -14866,10 +14881,12 @@
       "zuivel"
     ],
     "placeId": "ChIJgQkXxmp3xkcRouX-AMsyGIY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 18,
     "dagVers": null,
-    "desc": "Kaasboerderij in Kamerik met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Kamerik met eigen kaas en zuivel.",
+    "phone": "06 29333077",
+    "website": "http://www.kaasboerderijvredeoord.nl/"
   },
   {
     "id": 575,
@@ -14892,10 +14909,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJnXYmbLoBuEcRsDF37QcnMAg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 8,
     "dagVers": null,
-    "desc": "Zelfpluktuin in Bruinehaar. Pluk in het seizoen je eigen verse oogst."
+    "desc": "Zelfpluktuin in Bruinehaar. Pluk in het seizoen je eigen verse oogst.",
+    "phone": "06 15257987",
+    "website": "http://www.janmaatplantenteelt.nl/"
   },
   {
     "id": 576,
@@ -14913,8 +14932,8 @@
     ],
     "tags": [],
     "placeId": "ChIJ_yzAmSirx0cRzA8TwyUje-c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
     "desc": "Versautomaat in Opheusden met streekproducten, dag en nacht."
   },
@@ -14928,16 +14947,18 @@
     "lat": 51.286762,
     "lng": 5.784875,
     "address": "Bochtstraat 8, Ospel",
-    "hours": null,
+    "hours": "ma-vr 10-17.30u · za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJF1uSNzMzx0cRUqxEUh-H2GM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 18,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Ospel met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Ospel met verse streekproducten van het land.",
+    "phone": "06 18117813",
+    "website": "https://m.facebook.com/Boerderijwinkel-Bo-Vers-beej-Chantalle-107040028305010/?tsid=0.17350772242035672&source=result"
   },
   {
     "id": 578,
@@ -14949,16 +14970,18 @@
     "lat": 53.299631,
     "lng": 6.418838,
     "address": "Barnwerderweg 6, Oldehove",
-    "hours": null,
+    "hours": "wo-vr 13-18u · za 11-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJLaHJ0JvLyUcRkqilNYx-CqA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Oldehove met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Oldehove met verse streekproducten van het land.",
+    "phone": "06 27621400",
+    "website": "https://www.dekerstboomboerderij.nl/boerderij-winkel-de-blauwe-koe/"
   },
   {
     "id": 579,
@@ -14970,7 +14993,7 @@
     "lat": 51.792737,
     "lng": 4.94257,
     "address": "Bloemweg 7, Almkerk",
-    "hours": null,
+    "hours": "wo 13-17u · vr 13-17u · za 10-17u",
     "products": [
       "vlees",
       "streekproducten"
@@ -14979,10 +15002,11 @@
       "vlees"
     ],
     "placeId": "ChIJOw4Gx8uFxkcRbGJreBx_Zqs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 15,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Almkerk met eigen vlees en streekproducten."
+    "desc": "Boerderijwinkel in Almkerk met eigen vlees en streekproducten.",
+    "phone": "06 14028566"
   },
   {
     "id": 580,
@@ -14994,16 +15018,17 @@
     "lat": 52.173954,
     "lng": 6.064423,
     "address": "Henkenburgweg 4, Klarenbeek",
-    "hours": null,
+    "hours": "ma-zo 8.30-22u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJG0SxK6a_x0cRaDecMxjMwQg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 9,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Klarenbeek met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Klarenbeek met verse streekproducten van het land.",
+    "phone": "06 31575388"
   },
   {
     "id": 581,
@@ -15015,16 +15040,18 @@
     "lat": 51.89585,
     "lng": 5.259834,
     "address": "Langstraat 14, Tricht",
-    "hours": null,
+    "hours": "vr-za 10-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ6ZHp84L1xkcRuOZz8L0YAZc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 33,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Tricht met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Tricht met verse streekproducten van het land.",
+    "phone": "06 13731125",
+    "website": "http://www.bergjetricht.nl/"
   },
   {
     "id": 582,
@@ -15036,16 +15063,18 @@
     "lat": 52.503424,
     "lng": 6.25749,
     "address": "Molenstraat 16, Dalfsen",
-    "hours": null,
+    "hours": "wo-vr 9.30-17u · za 9.30-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJAcU3cKXhx0cR7FhmGwi_NjI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 15,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Dalfsen met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Dalfsen met verse streekproducten van het land.",
+    "phone": "0529 467 158",
+    "website": "http://www.bijdemolendalfsen.nl/"
   },
   {
     "id": 583,
@@ -15057,16 +15086,18 @@
     "lat": 52.660653,
     "lng": 6.740619,
     "address": "Bentheimerstraat 8, Coevorden",
-    "hours": null,
+    "hours": "wo-za 10-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJYZzQmlf9t0cRzIuIKs0xDOA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Coevorden met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Coevorden met verse streekproducten van het land.",
+    "phone": "06 22632717",
+    "website": "https://www.boerenland-winkel.nl/"
   },
   {
     "id": 584,
@@ -15078,16 +15109,17 @@
     "lat": 52.683243,
     "lng": 6.709841,
     "address": "Vossebelt 9, Dalen",
-    "hours": null,
+    "hours": "ma-zo 8-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJbWAfOJ39t0cRWb_g38esilw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Dalen met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Dalen met verse streekproducten van het land.",
+    "website": "https://nlroutes.org/details/boerderijwinkel-bosch-ChIJbWA"
   },
   {
     "id": 585,
@@ -15099,7 +15131,7 @@
     "lat": 51.461006,
     "lng": 4.592959,
     "address": "Blokenstraat 2a, Achtmaal",
-    "hours": null,
+    "hours": "za 10-15.30u",
     "products": [
       "streekproducten"
     ],
@@ -15108,7 +15140,9 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Achtmaal met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Achtmaal met verse streekproducten van het land.",
+    "phone": "06 48567346",
+    "website": "http://www.boerderijwinkel-de-geesthoef.nl/"
   },
   {
     "id": 586,
@@ -15120,7 +15154,7 @@
     "lat": 51.849272,
     "lng": 5.444616,
     "address": "Meerheuvelweg 1a, Dreumel",
-    "hours": null,
+    "hours": "di-vr 9-17u · za 9-16u",
     "products": [
       "vlees",
       "streekproducten"
@@ -15129,10 +15163,12 @@
       "vlees"
     ],
     "placeId": "ChIJI0EYvPH5xkcRvCE5zcddfUk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 25,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Dreumel met eigen vlees en streekproducten."
+    "desc": "Boerderijwinkel in Dreumel met eigen vlees en streekproducten.",
+    "phone": "06 10931490",
+    "website": "https://www.vleeskopenonline.nl/"
   },
   {
     "id": 587,
@@ -15144,16 +15180,18 @@
     "lat": 51.432494,
     "lng": 5.813003,
     "address": "Berktsedijk 4, Liessel",
-    "hours": null,
+    "hours": "do-vr 13-18u · za 8.30-12u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJu9lgpL07x0cRLl5enE6zmBM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Liessel met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Liessel met verse streekproducten van het land.",
+    "phone": "06 10619984",
+    "website": "http://deverkeshof.nl/"
   },
   {
     "id": 588,
@@ -15165,16 +15203,18 @@
     "lat": 52.120591,
     "lng": 6.332812,
     "address": "Reeoordweg 2A, Vorden",
-    "hours": null,
+    "hours": "ma 10-17u · di-za 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJo7mW2PGNx0cRUjpsgUOVWXA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 50,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Vorden met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Vorden met verse streekproducten van het land.",
+    "phone": "0575 471 043",
+    "website": "http://www.urticadevijfsprong.nl/"
   },
   {
     "id": 589,
@@ -15186,16 +15226,18 @@
     "lat": 51.657912,
     "lng": 5.068954,
     "address": "Duinlaan 3, Kaatsheuvel",
-    "hours": null,
+    "hours": "ma-zo 7-21u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJz2uYHS6VxkcRCVQaPLJoGLQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 38,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Kaatsheuvel met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Kaatsheuvel met verse streekproducten van het land.",
+    "phone": "06 27091596",
+    "website": "http://den-doorn.nl/"
   },
   {
     "id": 590,
@@ -15207,16 +15249,17 @@
     "lat": 52.736427,
     "lng": 6.428917,
     "address": "Domeinweg, Fluitenberg",
-    "hours": null,
+    "hours": "do-vr 15.30-17u · za 10-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJK1AYC24RyEcR3bxd2hTAL3k",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 8,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Fluitenberg met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Fluitenberg met verse streekproducten van het land.",
+    "phone": "06 27610959"
   },
   {
     "id": 591,
@@ -15228,16 +15271,18 @@
     "lat": 51.395931,
     "lng": 5.336292,
     "address": "Eerselseweg 15a, Knegsel",
-    "hours": null,
+    "hours": "wo 14-17.30u · vr 9-17.30u · za 9-15u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJzc1DBKfaxkcRkHAq3xCu5To",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 20,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Knegsel met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Knegsel met verse streekproducten van het land.",
+    "phone": "0497 515 996",
+    "website": "https://www.kempenlust.nl/"
   },
   {
     "id": 592,
@@ -15249,16 +15294,18 @@
     "lat": 52.849645,
     "lng": 6.26133,
     "address": "Ten Have 21, Wapse",
-    "hours": null,
+    "hours": "vr 13-17u · za 9-12u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJnRYT5XNryEcRq7oCtsyEfwk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Wapse met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Wapse met verse streekproducten van het land.",
+    "phone": "06 80046218",
+    "website": "http://www.boerderijdeveldhof.nl/boerderijwinkel"
   },
   {
     "id": 593,
@@ -15270,16 +15317,18 @@
     "lat": 52.115306,
     "lng": 4.700992,
     "address": "Kortsteekterweg 32, Alphen aan den Rijn",
-    "hours": null,
+    "hours": "ma-za 10-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJfzN57BbaxUcRjMlhXF-YfM8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 4,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Alphen aan den Rijn met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Alphen aan den Rijn met verse streekproducten van het land.",
+    "phone": "0172 494 409",
+    "website": "https://m.facebook.com/BoerderijwinkelOnderDeHooiberg"
   },
   {
     "id": 594,
@@ -15291,16 +15340,18 @@
     "lat": 51.585164,
     "lng": 3.985377,
     "address": "Dijkweg 1, Stavenisse",
-    "hours": null,
+    "hours": "vr 11-15u · za 10-15u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJLfPHtUxhxEcR13v9WCUh34M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Stavenisse met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Stavenisse met verse streekproducten van het land.",
+    "phone": "06 52286202",
+    "website": "http://www.boerderijwinkelstavenisse.nl/"
   },
   {
     "id": 595,
@@ -15312,16 +15363,17 @@
     "lat": 52.454286,
     "lng": 6.55436,
     "address": "Linderveld West 27, Vroomshoop",
-    "hours": null,
+    "hours": "wo-za 10.30-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJN0PRiN7-x0cR1ghNiMFWJco",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 30,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Vroomshoop met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Vroomshoop met verse streekproducten van het land.",
+    "phone": "0546 643 522"
   },
   {
     "id": 596,
@@ -15333,7 +15385,7 @@
     "lat": 52.893566,
     "lng": 5.84933,
     "address": "Marwei 122, Delfstrahuizen",
-    "hours": null,
+    "hours": "ma-za 9-20u · zo 10-20u",
     "products": [
       "streekproducten"
     ],
@@ -15354,16 +15406,18 @@
     "lat": 51.64749,
     "lng": 5.949087,
     "address": "Steenstraat 106, Boxmeer",
-    "hours": null,
+    "hours": "ma 10-18u · di-vr 8-18u · za 8-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJzQfuP28Tx0cRja3YS_pPUUk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 32,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Boxmeer met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Boxmeer met verse streekproducten van het land.",
+    "phone": "0485 384 719",
+    "website": "http://ikgavoorvers.nl/"
   },
   {
     "id": 598,
@@ -15375,14 +15429,14 @@
     "lat": 50.870747,
     "lng": 5.906769,
     "address": "Ransdalerweg 1, Voerendaal",
-    "hours": null,
+    "hours": "do-vr 10-18u · za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJB5wsnCO-wEcRULHiWVeYE5g",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 7,
     "dagVers": null,
     "desc": "Boerderijwinkel in Voerendaal met verse streekproducten van het land."
   },
@@ -15396,7 +15450,7 @@
     "lat": 51.993204,
     "lng": 4.193257,
     "address": "Opstalweg 21a, Naaldwijk",
-    "hours": null,
+    "hours": "ma 12-17u · di-vr 10-17u · za 9-14.30u",
     "products": [
       "fruit",
       "groente"
@@ -15406,10 +15460,12 @@
       "groente"
     ],
     "placeId": "ChIJWYCiLlOzxUcRiLNHzDwTvPQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 286,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Naaldwijk, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Naaldwijk, rechtstreeks van de teler.",
+    "phone": "0174 725 205",
+    "website": "http://www.boeregoed.nl/"
   },
   {
     "id": 600,
@@ -15421,7 +15477,7 @@
     "lat": 52.15426,
     "lng": 4.680932,
     "address": "Ridderbuurt 57, Alphen aan den Rijn",
-    "hours": null,
+    "hours": "ma-za 8-22u · zo 10-22u",
     "products": [
       "kaas",
       "zuivel"
@@ -15430,10 +15486,11 @@
       "zuivel"
     ],
     "placeId": "ChIJTbcVJG3bxUcRkmTLD2LekVk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 17,
     "dagVers": null,
-    "desc": "Kaasboerderij in Alphen aan den Rijn met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Alphen aan den Rijn met eigen kaas en zuivel.",
+    "website": "https://www.struinenenvorsen.nl/deelnemers/brentanos-kaasboerderij/"
   },
   {
     "id": 601,
@@ -15455,10 +15512,12 @@
       "groente"
     ],
     "placeId": "ChIJV4k8i9l_xEcRAeXE4w48HtI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Zaamslag, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Zaamslag, rechtstreeks van de teler.",
+    "phone": "0115 565 018",
+    "website": "http://www.cadsandfruit.nl/"
   },
   {
     "id": 602,
@@ -15470,7 +15529,7 @@
     "lat": 51.899333,
     "lng": 4.702972,
     "address": "Opperduit 386, Lekkerkerk",
-    "hours": null,
+    "hours": "do-za 9.30-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -15479,10 +15538,12 @@
       "zuivel"
     ],
     "placeId": "ChIJU5oQOmwrxEcRTY5nfBunz1M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 67,
     "dagVers": null,
-    "desc": "Kaasboerderij in Lekkerkerk met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Lekkerkerk met eigen kaas en zuivel.",
+    "phone": "0180 661 987",
+    "website": "https://www.cornelis-hoeve.nl/"
   },
   {
     "id": 603,
@@ -15494,16 +15555,17 @@
     "lat": 51.868625,
     "lng": 4.676979,
     "address": "Kortland 42, Alblasserdam",
-    "hours": null,
+    "hours": "di-do 9-17.30u · vr 9-18u · za 9-17.30u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJmV5CWXUsxEcRBob3lf89WmU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 171,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Alblasserdam met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Alblasserdam met verse streekproducten van het land.",
+    "website": "http://www.farmshop.nl/"
   },
   {
     "id": 604,
@@ -15515,7 +15577,7 @@
     "lat": 52.254877,
     "lng": 4.592018,
     "address": "Lisserweg 481a, Lisserbroek",
-    "hours": null,
+    "hours": "ma-zo 10-17u",
     "products": [
       "fruit",
       "groente"
@@ -15525,10 +15587,12 @@
       "groente"
     ],
     "placeId": "ChIJpzOIxMHDxUcRRcIcyC7ACkc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 128,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Lisserbroek, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Lisserbroek, rechtstreeks van de teler.",
+    "phone": "0252 413 165",
+    "website": "http://www.olmenhorst.nl/"
   },
   {
     "id": 605,
@@ -15540,7 +15604,7 @@
     "lat": 52.335667,
     "lng": 5.218906,
     "address": "Marktstraat 9, Almere",
-    "hours": null,
+    "hours": "di-do 9-18u · vr 8-18u · za 8-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -15549,10 +15613,12 @@
       "zuivel"
     ],
     "placeId": "ChIJb7jujJwWxkcRJAyTx-tuR-c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 128,
     "dagVers": null,
-    "desc": "Kaasboerderij in Almere met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Almere met eigen kaas en zuivel.",
+    "phone": "036 534 1903",
+    "website": "https://www.dekaasmakerij.nl/"
   },
   {
     "id": 606,
@@ -15564,16 +15630,18 @@
     "lat": 53.065046,
     "lng": 6.716196,
     "address": "Annerstreek 17, Annen",
-    "hours": null,
+    "hours": "vr-za 10-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJpZ5_rGkoyEcRvz-9gegxV6A",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 22,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Annen met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Annen met verse streekproducten van het land.",
+    "phone": "06 52298173",
+    "website": "http://www.kuddevananloo.nl/"
   },
   {
     "id": 607,
@@ -15585,7 +15653,7 @@
     "lat": 51.813768,
     "lng": 3.942492,
     "address": "Hofdijksweg 34, Ouddorp",
-    "hours": null,
+    "hours": "di-za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -15594,10 +15662,12 @@
       "zuivel"
     ],
     "placeId": "ChIJZW_wQnb4xEcRLTXe3LrHYIo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 3200,
     "dagVers": null,
-    "desc": "Kaasboerderij in Ouddorp met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Ouddorp met eigen kaas en zuivel.",
+    "phone": "0187 684 050",
+    "website": "http://www.demekkerstee.nl/"
   },
   {
     "id": 608,
@@ -15609,7 +15679,7 @@
     "lat": 51.921932,
     "lng": 4.447188,
     "address": "RFC-Weg 190, Rotterdam",
-    "hours": null,
+    "hours": "za 13-17u",
     "products": [
       "zelfpluk",
       "fruit",
@@ -15620,10 +15690,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJR9-ry8Y0xEcRYhArjaWj-RQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 38,
     "dagVers": null,
-    "desc": "Zelfpluktuin in Rotterdam. Pluk in het seizoen je eigen verse oogst."
+    "desc": "Zelfpluktuin in Rotterdam. Pluk in het seizoen je eigen verse oogst.",
+    "phone": "06 21444356",
+    "website": "http://www.de-pluktuin.nl/"
   },
   {
     "id": 609,
@@ -15635,7 +15707,7 @@
     "lat": 52.897951,
     "lng": 4.969195,
     "address": "Hippolytushoeverkruisweg 7, Hippolytushoef",
-    "hours": null,
+    "hours": "ma-za 8-20u · zo 9-20u",
     "products": [
       "kaas",
       "zuivel"
@@ -15644,10 +15716,11 @@
       "zuivel"
     ],
     "placeId": "ChIJw7Y8OUdLz0cRLzZr_Q8GaDE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 197,
     "dagVers": null,
-    "desc": "Kaasboerderij in Hippolytushoef met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Hippolytushoef met eigen kaas en zuivel.",
+    "website": "http://www.dewieringer.nl/"
   },
   {
     "id": 610,
@@ -15659,7 +15732,7 @@
     "lat": 51.469386,
     "lng": 4.984836,
     "address": "Het Sas 14, Alphen",
-    "hours": null,
+    "hours": "ma-vr 8-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -15668,10 +15741,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ-4Ks27y7xkcR_UeokfHiy3Q",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 61,
     "dagVers": null,
-    "desc": "Kaasboerderij in Alphen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Alphen met eigen kaas en zuivel.",
+    "phone": "013 508 1316",
+    "website": "https://www.dejongcheese.nl/"
   },
   {
     "id": 611,
@@ -15683,7 +15758,7 @@
     "lat": 52.941503,
     "lng": 7.033803,
     "address": "Musselweg 1, Mussel",
-    "hours": null,
+    "hours": "ma-zo 8-21u",
     "products": [
       "streekproducten"
     ],
@@ -15692,7 +15767,8 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Mussel met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Mussel met verse streekproducten van het land.",
+    "phone": "06 30813461"
   },
   {
     "id": 612,
@@ -15704,7 +15780,7 @@
     "lat": 52.66365,
     "lng": 4.669359,
     "address": "Herenweg 5, Bergen",
-    "hours": null,
+    "hours": "vr 9-18u · za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -15713,10 +15789,12 @@
       "zuivel"
     ],
     "placeId": "ChIJUx1cerBZz0cR91FTkEPHENw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 152,
     "dagVers": null,
-    "desc": "Kaasboerderij in Bergen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Bergen met eigen kaas en zuivel.",
+    "phone": "072 581 8246",
+    "website": "https://www.kaasboerderijdefranschman.nl/?y_source=1_Mzg1NTA4OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
   },
   {
     "id": 613,
@@ -15738,10 +15816,12 @@
       "groente"
     ],
     "placeId": "ChIJQZMUS0AVyEcRdtAL5Tkm-OY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Wittelte, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Wittelte, rechtstreeks van de teler.",
+    "phone": "06 27544747",
+    "website": "http://www.berkenbroek.nl/"
   },
   {
     "id": 614,
@@ -15753,7 +15833,7 @@
     "lat": 53.198486,
     "lng": 6.559195,
     "address": "Overwinningsplein 75, Groningen",
-    "hours": null,
+    "hours": "ma 10-17.30u · di-vr 8.30-17.30u · za 8.30-17u",
     "products": [
       "fruit",
       "groente"
@@ -15763,10 +15843,12 @@
       "groente"
     ],
     "placeId": "ChIJoS-IaaUyyEcRbN9alHeAsQk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 77,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Groningen, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Groningen, rechtstreeks van de teler.",
+    "phone": "050 526 3572",
+    "website": "https://www.oudeboschfruit.nl/"
   },
   {
     "id": 615,
@@ -15778,7 +15860,7 @@
     "lat": 51.924955,
     "lng": 5.73586,
     "address": "Bredestraat-Noord 24, Herveld",
-    "hours": null,
+    "hours": "ma-vr 13-17u · za 10-17u",
     "products": [
       "fruit",
       "groente"
@@ -15788,10 +15870,11 @@
       "groente"
     ],
     "placeId": "ChIJ-zVNqbSrx0cRwLFEX3gKD8c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 13,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Herveld, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Herveld, rechtstreeks van de teler.",
+    "website": "https://www.fruittuinvanholland.nl/"
   },
   {
     "id": 616,
@@ -15803,7 +15886,7 @@
     "lat": 51.541638,
     "lng": 4.667773,
     "address": "Fruitvoedselbos en Pluktuin, verkoop van fruitbomen en bessen, Bezoek na telefonische afspraak, Klappenberg 5, Etten-Leur",
-    "hours": null,
+    "hours": "ma-vr 9-17u · za-zo 10-17u",
     "products": [
       "fruit",
       "groente"
@@ -15813,10 +15896,12 @@
       "groente"
     ],
     "placeId": "ChIJx2pw37wfxEcRROkGK_dz2Bc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Etten-Leur, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Etten-Leur, rechtstreeks van de teler.",
+    "phone": "06 25185867",
+    "website": "https://www.fruitvoedselbos.nl/"
   },
   {
     "id": 617,
@@ -15828,7 +15913,7 @@
     "lat": 51.424429,
     "lng": 3.863501,
     "address": "Quistkostsedijk 8, Kwadendamme",
-    "hours": null,
+    "hours": "wo 12-17u · vr-za 10-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -15837,10 +15922,12 @@
       "zuivel"
     ],
     "placeId": "ChIJm62tw72HxEcRlMLXAIX9NhU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.9,
+    "googleReviews": 44,
     "dagVers": null,
-    "desc": "Kaasboerderij in Kwadendamme met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Kwadendamme met eigen kaas en zuivel.",
+    "phone": "06 22927393",
+    "website": "http://www.geitenkaasboerderijpollehof.com/"
   },
   {
     "id": 618,
@@ -15852,7 +15939,7 @@
     "lat": 51.488795,
     "lng": 5.053395,
     "address": "Turnhoutsebaan 15, Goirle",
-    "hours": null,
+    "hours": "ma-vr 9-18u · za 9-16u",
     "products": [
       "fruit",
       "groente"
@@ -15862,10 +15949,12 @@
       "groente"
     ],
     "placeId": "ChIJ64uwbDW5xkcRmdv-3upMO1k",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 138,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Goirle, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Goirle, rechtstreeks van de teler.",
+    "phone": "013 534 2115",
+    "website": "http://debraacken.nl/"
   },
   {
     "id": 619,
@@ -15877,7 +15966,7 @@
     "lat": 51.977871,
     "lng": 5.836896,
     "address": "Kerkpad 2, Oosterbeek",
-    "hours": null,
+    "hours": "wo-zo 10-17u",
     "products": [
       "zelfpluk",
       "fruit",
@@ -15888,10 +15977,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJI6_bUkGvx0cRoAFagjOFLYw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 13,
     "dagVers": null,
-    "desc": "Zelfpluktuin in Oosterbeek. Pluk in het seizoen je eigen verse oogst."
+    "desc": "Zelfpluktuin in Oosterbeek. Pluk in het seizoen je eigen verse oogst.",
+    "phone": "06 40760106",
+    "website": "http://www.henkspluktuin.com/"
   },
   {
     "id": 620,
@@ -15903,7 +15994,7 @@
     "lat": 51.464464,
     "lng": 5.65938,
     "address": "Goorsebaan 16, Helmond",
-    "hours": null,
+    "hours": "di 13-17.30u · za 8.30-16.30u",
     "products": [
       "fruit",
       "groente"
@@ -15913,10 +16004,12 @@
       "groente"
     ],
     "placeId": "ChIJZZMJjvcjx0cRf4cjQDB_vv0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 227,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Helmond, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Helmond, rechtstreeks van de teler.",
+    "phone": "06 13214422",
+    "website": "https://appelboer.nl/"
   },
   {
     "id": 621,
@@ -15928,7 +16021,7 @@
     "lat": 51.964209,
     "lng": 4.301601,
     "address": "Gaagweg 36, Schipluiden",
-    "hours": null,
+    "hours": "di 12.30-17.30u · vr 12.30-17.30u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -15937,10 +16030,12 @@
       "zuivel"
     ],
     "placeId": "ChIJUdyJ4b-0xUcRR33BHzzSLpQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 314,
     "dagVers": null,
-    "desc": "Kaasboerderij in Schipluiden met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Schipluiden met eigen kaas en zuivel.",
+    "phone": "015 380 9134",
+    "website": "http://zuivelvanwinden.com/"
   },
   {
     "id": 622,
@@ -15952,7 +16047,7 @@
     "lat": 52.431836,
     "lng": 6.806819,
     "address": "Uelserweg 113, Mander",
-    "hours": null,
+    "hours": "ma 13-17u · vr-za 10.30-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -15961,10 +16056,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ7WH2zlwDuEcRZ4Q38to0uXg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 88,
     "dagVers": null,
-    "desc": "Kaasboerderij in Mander met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Mander met eigen kaas en zuivel.",
+    "phone": "0541 680 377",
+    "website": "http://www.kaasboerderijhethoepel.nl/"
   },
   {
     "id": 623,
@@ -15976,7 +16073,7 @@
     "lat": 52.20671,
     "lng": 4.962625,
     "address": "Demmeriksekade 17, Vinkeveen",
-    "hours": null,
+    "hours": "di 9-17.30u · vr 9-17.30u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -15985,10 +16082,12 @@
       "zuivel"
     ],
     "placeId": "ChIJQcy9rJtzxkcRw8RGPlAdaYw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 77,
     "dagVers": null,
-    "desc": "Kaasboerderij in Vinkeveen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Vinkeveen met eigen kaas en zuivel.",
+    "phone": "06 83492203",
+    "website": "http://www.arendkaas.nl/"
   },
   {
     "id": 624,
@@ -16000,7 +16099,7 @@
     "lat": 52.10659,
     "lng": 5.42531,
     "address": "Leusbroekerweg 17, Leusden",
-    "hours": null,
+    "hours": "wo-vr 13-18u · za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16009,10 +16108,11 @@
       "zuivel"
     ],
     "placeId": "ChIJWVJGMwpFxkcRsGXCqaDsg14",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 62,
     "dagVers": null,
-    "desc": "Kaasboerderij in Leusden met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Leusden met eigen kaas en zuivel.",
+    "phone": "033 286 6677"
   },
   {
     "id": 625,
@@ -16033,8 +16133,8 @@
       "zuivel"
     ],
     "placeId": "ChIJMRWUDgD9xUcRiQRxipvu6Ds",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 23,
     "dagVers": null,
     "desc": "Kaasboerderij in Zaandam met eigen kaas en zuivel."
   },
@@ -16048,7 +16148,7 @@
     "lat": 52.066482,
     "lng": 6.456353,
     "address": "Arfmanssteeg 1, Ruurlo",
-    "hours": null,
+    "hours": "wo 10-16u · do 12-16u · vr 9-12u",
     "products": [
       "kaas",
       "zuivel"
@@ -16057,10 +16157,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ905HRwWJx0cRLuPNB-nq8tw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 44,
     "dagVers": null,
-    "desc": "Kaasboerderij in Ruurlo met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Ruurlo met eigen kaas en zuivel.",
+    "phone": "06 51901506",
+    "website": "https://www.nibink.nl/"
   },
   {
     "id": 627,
@@ -16072,7 +16174,7 @@
     "lat": 51.6668,
     "lng": 4.77932,
     "address": "Wagenbergsestraat 2, Made",
-    "hours": null,
+    "hours": "wo 13.30-17u · vr-za 9-12u · vr-za 13.30-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16081,10 +16183,12 @@
       "zuivel"
     ],
     "placeId": "ChIJi0Ren3aexkcRBMwBgBurEWg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 155,
     "dagVers": null,
-    "desc": "Kaasboerderij in Made met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Made met eigen kaas en zuivel.",
+    "phone": "0162 682 651",
+    "website": "https://kaasboerderijmade.nl/"
   },
   {
     "id": 628,
@@ -16096,7 +16200,7 @@
     "lat": 52.126897,
     "lng": 4.838443,
     "address": "Rondweg 15, Zegveld",
-    "hours": null,
+    "hours": "ma 13.30-16u · di 9-16u · do-za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16105,10 +16209,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ8zNV0tF3xkcR_BzymlrVfmQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 63,
     "dagVers": null,
-    "desc": "Kaasboerderij in Zegveld met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Zegveld met eigen kaas en zuivel.",
+    "phone": "0348 691 431",
+    "website": "http://lagebroek.nl/"
   },
   {
     "id": 629,
@@ -16120,7 +16226,7 @@
     "lat": 51.452995,
     "lng": 3.85728,
     "address": "Zuidweg 8, Nisse",
-    "hours": null,
+    "hours": "di-do 13-17u · vr 10-12.15u · vr 12.45-17u · za 9-15u",
     "products": [
       "kaas",
       "zuivel"
@@ -16129,10 +16235,12 @@
       "zuivel"
     ],
     "placeId": "ChIJicYmjXeIxEcRMnOwIkWa60o",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 141,
     "dagVers": null,
-    "desc": "Kaasboerderij in Nisse met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Nisse met eigen kaas en zuivel.",
+    "phone": "0113 649 797",
+    "website": "http://www.ternisse.nl/"
   },
   {
     "id": 630,
@@ -16144,7 +16252,7 @@
     "lat": 53.441179,
     "lng": 5.63723,
     "address": "Olfert Pieter Lapstraat 1a, Hollum",
-    "hours": null,
+    "hours": "ma-vr 9-17.30u · za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16153,10 +16261,12 @@
       "zuivel"
     ],
     "placeId": "ChIJm_9_LYQQyUcRkbKpWinLWVE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 773,
     "dagVers": null,
-    "desc": "Kaasboerderij in Hollum met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Hollum met eigen kaas en zuivel.",
+    "phone": "0519 554 459",
+    "website": "http://www.kaasboerderijameland.nl/"
   },
   {
     "id": 631,
@@ -16168,7 +16278,7 @@
     "lat": 52.369748,
     "lng": 5.55052,
     "address": "Ossenkampweg 2, Zeewolde",
-    "hours": null,
+    "hours": "wo 9-16u · vr-za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16177,10 +16287,12 @@
       "zuivel"
     ],
     "placeId": "ChIJeXMeP6wxxkcRyI3RJyQOwos",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 18,
     "dagVers": null,
-    "desc": "Kaasboerderij in Zeewolde met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Zeewolde met eigen kaas en zuivel.",
+    "phone": "06 23749632",
+    "website": "https://www.kaasboerderijbennesse.nl/"
   },
   {
     "id": 632,
@@ -16192,7 +16304,7 @@
     "lat": 52.716694,
     "lng": 4.96638,
     "address": "Gouwe 1B, Hoogwoud",
-    "hours": null,
+    "hours": "ma-za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16201,10 +16313,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ57bWhOasyEcRiSjgOQ98k5M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 364,
     "dagVers": null,
-    "desc": "Kaasboerderij in Hoogwoud met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Hoogwoud met eigen kaas en zuivel.",
+    "phone": "0229 592 220",
+    "website": "http://www.kaasboerderijberkhout.com/"
   },
   {
     "id": 633,
@@ -16216,7 +16330,7 @@
     "lat": 51.964622,
     "lng": 5.254129,
     "address": "Hamseweg 4, Culemborg",
-    "hours": null,
+    "hours": "ma-vr 9-18u · za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16225,10 +16339,12 @@
       "zuivel"
     ],
     "placeId": "ChIJlywwokNexkcRsRBH99jM2Q0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 160,
     "dagVers": null,
-    "desc": "Kaasboerderij in Culemborg met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Culemborg met eigen kaas en zuivel.",
+    "phone": "0345 524 098",
+    "website": "https://kaasboerderijculemborg.nl/"
   },
   {
     "id": 634,
@@ -16240,7 +16356,7 @@
     "lat": 51.997047,
     "lng": 5.297012,
     "address": "Ossenwaard 13, Cothen",
-    "hours": null,
+    "hours": "di-wo 9-12.30u · do-vr 9-12.30u · do-vr 13.30-18u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16249,10 +16365,12 @@
       "zuivel"
     ],
     "placeId": "ChIJgdnKWCNcxkcReLkA863-l7c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 49,
     "dagVers": null,
-    "desc": "Kaasboerderij in Cothen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Cothen met eigen kaas en zuivel.",
+    "phone": "0343 562 662",
+    "website": "http://www.debrienenshof.nl/"
   },
   {
     "id": 635,
@@ -16264,7 +16382,7 @@
     "lat": 52.46643,
     "lng": 5.041688,
     "address": "Hoogedijk 8, Katwoude",
-    "hours": null,
+    "hours": "ma-zo 9-18u",
     "products": [
       "kaas",
       "zuivel"
@@ -16273,10 +16391,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ1TPNPasFxkcRNRMx1Nf_nsE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 818,
     "dagVers": null,
-    "desc": "Kaasboerderij in Katwoude met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Katwoude met eigen kaas en zuivel.",
+    "phone": "0299 658 344",
+    "website": "https://henriwillig.com/bezoek-ons/kaasboerderij/katwoude/?utm_source=google&utm_medium=organic&utm_campaign=google_my_business"
   },
   {
     "id": 636,
@@ -16288,7 +16408,7 @@
     "lat": 53.351345,
     "lng": 6.076801,
     "address": "Humaldawei 40, Jouswier",
-    "hours": null,
+    "hours": "ma-za 10-13u · ma-za 15-20u",
     "products": [
       "kaas",
       "zuivel"
@@ -16297,10 +16417,12 @@
       "zuivel"
     ],
     "placeId": "ChIJhUIWBOmuyUcRbZd9hegqhGY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.9,
+    "googleReviews": 21,
     "dagVers": null,
-    "desc": "Kaasboerderij in Jouswier met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Jouswier met eigen kaas en zuivel.",
+    "phone": "06 27341838",
+    "website": "http://www.marlannerkaashuis.nl/"
   },
   {
     "id": 637,
@@ -16312,7 +16434,7 @@
     "lat": 51.999003,
     "lng": 5.271962,
     "address": "Molenspoor 6, Werkhoven",
-    "hours": null,
+    "hours": "ma-za 8-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16321,10 +16443,12 @@
       "zuivel"
     ],
     "placeId": "ChIJh2egCdJdxkcRIpXIox7Hd5o",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 252,
     "dagVers": null,
-    "desc": "Kaasboerderij in Werkhoven met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Werkhoven met eigen kaas en zuivel.",
+    "phone": "0343 561 361",
+    "website": "https://www.de-ossenwaard.nl/"
   },
   {
     "id": 638,
@@ -16336,7 +16460,7 @@
     "lat": 52.169753,
     "lng": 6.773032,
     "address": "Enschedesestraat 199, Haaksbergen",
-    "hours": null,
+    "hours": "ma 13-18u · di 10-18u · do-vr 10-18u · za 8.30-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16345,10 +16469,12 @@
       "zuivel"
     ],
     "placeId": "ChIJH0MaiKwSuEcR_oW1oAUf68A",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 49,
     "dagVers": null,
-    "desc": "Kaasboerderij in Haaksbergen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Haaksbergen met eigen kaas en zuivel.",
+    "phone": "06 10663253",
+    "website": "https://nlmapgui.org/details/kaasboerderij-de-siepezuivelboerderij-de-siepe-ChIJH0M"
   },
   {
     "id": 639,
@@ -16360,7 +16486,7 @@
     "lat": 52.162004,
     "lng": 5.329005,
     "address": "Birkstraat 123, Soest",
-    "hours": null,
+    "hours": "di-vr 9-12.30u · di-vr 13.30-18u · za 8.30-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16369,10 +16495,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ0dYAV2FBxkcRjWndWyAn09E",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 183,
     "dagVers": null,
-    "desc": "Kaasboerderij in Soest met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Soest met eigen kaas en zuivel.",
+    "phone": "035 601 3781",
+    "website": "http://www.destaelenhoef.nl/"
   },
   {
     "id": 640,
@@ -16384,7 +16512,7 @@
     "lat": 52.005804,
     "lng": 4.786424,
     "address": "Steinsedijk 37, Haastrecht",
-    "hours": null,
+    "hours": "ma 10-17u · wo 10-17u · vr-za 10-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16393,10 +16521,12 @@
       "zuivel"
     ],
     "placeId": "ChIJJ6bLxePVxUcRoHdzGPqZUZU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 127,
     "dagVers": null,
-    "desc": "Kaasboerderij in Haastrecht met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Haastrecht met eigen kaas en zuivel.",
+    "phone": "0182 501 244",
+    "website": "http://www.detweehoeven.nl/"
   },
   {
     "id": 641,
@@ -16408,7 +16538,7 @@
     "lat": 52.042264,
     "lng": 4.889265,
     "address": "Noord-Linschoterzandweg 19, Snelrewaard",
-    "hours": null,
+    "hours": "ma 9-14u · ma 16-18u · di 9-13u · wo 9-12u · vr 9-18u · za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16417,10 +16547,11 @@
       "zuivel"
     ],
     "placeId": "ChIJ20bwVwt5xkcR3U9Te0e2ChI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 37,
     "dagVers": null,
-    "desc": "Kaasboerderij in Snelrewaard met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Snelrewaard met eigen kaas en zuivel.",
+    "phone": "0348 561 826"
   },
   {
     "id": 642,
@@ -16432,7 +16563,7 @@
     "lat": 52.055303,
     "lng": 4.999279,
     "address": "Achthoven Oost 7, Montfoort",
-    "hours": null,
+    "hours": "do-za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16441,8 +16572,8 @@
       "zuivel"
     ],
     "placeId": "ChIJg6jDobl7xkcRhMeo8GFbt4g",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 52,
     "dagVers": null,
     "desc": "Kaasboerderij in Montfoort met eigen kaas en zuivel."
   },
@@ -16456,7 +16587,7 @@
     "lat": 52.030955,
     "lng": 4.952233,
     "address": "Blokland 95, Montfoort",
-    "hours": null,
+    "hours": "vr-za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16465,10 +16596,12 @@
       "zuivel"
     ],
     "placeId": "ChIJIXorPbt7xkcRjoZsvMWG6gI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 53,
     "dagVers": null,
-    "desc": "Kaasboerderij in Montfoort met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Montfoort met eigen kaas en zuivel.",
+    "phone": "0348 472 486",
+    "website": "http://doruvael.nl/"
   },
   {
     "id": 644,
@@ -16480,7 +16613,7 @@
     "lat": 52.04302,
     "lng": 5.003141,
     "address": "Stuivenbergweg 17, IJsselstein",
-    "hours": null,
+    "hours": "ma-di 9-17u · do-vr 9-17u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16489,10 +16622,12 @@
       "zuivel"
     ],
     "placeId": "ChIJSbC-pth6xkcRI6uGcbnq5zo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 38,
     "dagVers": null,
-    "desc": "Kaasboerderij in IJsselstein met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in IJsselstein met eigen kaas en zuivel.",
+    "phone": "030 687 7774",
+    "website": "http://www.boerderijzuivel.nl/locaties/kaasboerderij-elizabethhoeve/"
   },
   {
     "id": 645,
@@ -16504,7 +16639,7 @@
     "lat": 51.908847,
     "lng": 6.726739,
     "address": "Kulverweg 2-4, Woold",
-    "hours": null,
+    "hours": "wo-do 12-17u · vr 12-17.30u · za 12-18u · zo 11-18u",
     "products": [
       "kaas",
       "zuivel"
@@ -16513,10 +16648,12 @@
       "zuivel"
     ],
     "placeId": "ChIJi-7W3l1juEcRgjSlk3XwBlE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 574,
     "dagVers": null,
-    "desc": "Kaasboerderij in Woold met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Woold met eigen kaas en zuivel.",
+    "phone": "0543 564 208",
+    "website": "http://www.harmienehoeve.nl/"
   },
   {
     "id": 646,
@@ -16537,10 +16674,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ2ZTqtmw9uEcRpwmMKRoXoKc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 58,
     "dagVers": null,
-    "desc": "Melktap in Losser met verse melk rechtstreeks van de boer."
+    "desc": "Melktap in Losser met verse melk rechtstreeks van de boer.",
+    "phone": "06 12198987",
+    "website": "http://www.erve-iemhorst.com/"
   },
   {
     "id": 647,
@@ -16552,7 +16691,7 @@
     "lat": 52.291976,
     "lng": 5.0035,
     "address": "Gein Noord 62, Abcoude",
-    "hours": null,
+    "hours": "do-za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16561,10 +16700,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ-f51MfoMxkcR-3QMu1pnyb0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 261,
     "dagVers": null,
-    "desc": "Kaasboerderij in Abcoude met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Abcoude met eigen kaas en zuivel.",
+    "phone": "06 34435180",
+    "website": "http://www.kaasboerderij-geingenoegen.nl/"
   },
   {
     "id": 648,
@@ -16576,7 +16717,7 @@
     "lat": 52.537089,
     "lng": 4.906837,
     "address": "Middenweg 192B, Middenbeemster",
-    "hours": null,
+    "hours": "ma 8.30-12u · ma 17-18u · di 17-18u · do 17-18u · vr 8.30-18u · za 8.30-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16585,10 +16726,12 @@
       "zuivel"
     ],
     "placeId": "ChIJqSWr9pEAxkcR8MQWwOeULOg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 279,
     "dagVers": null,
-    "desc": "Kaasboerderij in Middenbeemster met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Middenbeemster met eigen kaas en zuivel.",
+    "phone": "0299 681 766",
+    "website": "https://www.facebook.com/Kaasboerderij-Groot-1554188358130126/"
   },
   {
     "id": 649,
@@ -16600,7 +16743,7 @@
     "lat": 51.936993,
     "lng": 4.75753,
     "address": "Benedenberg 90, Bergambacht",
-    "hours": null,
+    "hours": "ma-za 9-18u",
     "products": [
       "kaas",
       "zuivel"
@@ -16609,10 +16752,12 @@
       "zuivel"
     ],
     "placeId": "ChIJY0t3G-jVxUcRq6p0y-npr8s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 80,
     "dagVers": null,
-    "desc": "Kaasboerderij in Bergambacht met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Bergambacht met eigen kaas en zuivel.",
+    "phone": "0182 351 229",
+    "website": "http://www.jongenhoeve.nl/"
   },
   {
     "id": 650,
@@ -16624,7 +16769,7 @@
     "lat": 52.204909,
     "lng": 6.625321,
     "address": "Goorsestraat 45, Hengevelde",
-    "hours": null,
+    "hours": "vr 9-17u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16633,10 +16778,12 @@
       "zuivel"
     ],
     "placeId": "ChIJaRcxYBALuEcRHNmHa3akRVQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 28,
     "dagVers": null,
-    "desc": "Kaasboerderij in Hengevelde met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Hengevelde met eigen kaas en zuivel.",
+    "phone": "0547 333 217",
+    "website": "http://www.keuperkaas.nl/"
   },
   {
     "id": 651,
@@ -16648,7 +16795,7 @@
     "lat": 52.742274,
     "lng": 4.97845,
     "address": "Tropweere 22, De Weere",
-    "hours": null,
+    "hours": "wo 9-17u · vr 9-17u · za 9-12u",
     "products": [
       "kaas",
       "zuivel"
@@ -16657,10 +16804,12 @@
       "zuivel"
     ],
     "placeId": "ChIJvV2eYg6tyEcRCpLCh8H7FZQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 63,
     "dagVers": null,
-    "desc": "Kaasboerderij in De Weere met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in De Weere met eigen kaas en zuivel.",
+    "phone": "0229 581 486",
+    "website": "https://www.deboerenkaas.nl/"
   },
   {
     "id": 652,
@@ -16672,7 +16821,7 @@
     "lat": 52.104525,
     "lng": 4.637084,
     "address": "Compierekade 8, Alphen aan den Rijn",
-    "hours": null,
+    "hours": "di 13.30-16.30u · do 13.30-16.30u · za 11-16.30u",
     "products": [
       "kaas",
       "zuivel"
@@ -16681,10 +16830,12 @@
       "zuivel"
     ],
     "placeId": "ChIJc4Pe_0bbxUcRxlaSbwv79kA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 61,
     "dagVers": null,
-    "desc": "Kaasboerderij in Alphen aan den Rijn met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Alphen aan den Rijn met eigen kaas en zuivel.",
+    "phone": "0172 589 148",
+    "website": "http://www.lenashoeve.nl/"
   },
   {
     "id": 653,
@@ -16696,7 +16847,7 @@
     "lat": 51.526108,
     "lng": 3.527968,
     "address": "Mariekerke 24, Meliskerke",
-    "hours": null,
+    "hours": "ma-vr 9-17u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16705,10 +16856,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ9W_wk2qWxEcRaaJU-RaE3ZI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 344,
     "dagVers": null,
-    "desc": "Kaasboerderij in Meliskerke met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Meliskerke met eigen kaas en zuivel.",
+    "phone": "06 23072107",
+    "website": "http://www.mariekerke.nl/"
   },
   {
     "id": 654,
@@ -16720,7 +16873,7 @@
     "lat": 51.603478,
     "lng": 5.119071,
     "address": "Waalwijkseweg 16, Udenhout",
-    "hours": null,
+    "hours": "ma-vr 9-17u · za 9-12u",
     "products": [
       "kaas",
       "zuivel"
@@ -16729,10 +16882,12 @@
       "zuivel"
     ],
     "placeId": "ChIJizczWBeVxkcRQFnP4GM_Igs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 104,
     "dagVers": null,
-    "desc": "Kaasboerderij in Udenhout met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Udenhout met eigen kaas en zuivel.",
+    "phone": "013 511 1534",
+    "website": "http://www.kaasboerderijmathijssen.nl/"
   },
   {
     "id": 655,
@@ -16753,10 +16908,12 @@
       "zuivel"
     ],
     "placeId": "ChIJA3ur_eoOuEcRm9meZQztoHc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Kaasboerderij in Ambt Delden met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Ambt Delden met eigen kaas en zuivel.",
+    "phone": "06 15294885",
+    "website": "http://www.mollinkwoner.nl/contact"
   },
   {
     "id": 656,
@@ -16768,7 +16925,7 @@
     "lat": 51.754393,
     "lng": 4.061724,
     "address": "Schenkeldijk 1, Melissant",
-    "hours": null,
+    "hours": "vr 13-17u · za 10-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16777,10 +16934,12 @@
       "zuivel"
     ],
     "placeId": "ChIJk0rFHzlaxEcRK0erC8hXpyY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 50,
     "dagVers": null,
-    "desc": "Kaasboerderij in Melissant met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Melissant met eigen kaas en zuivel.",
+    "phone": "0187 603 901",
+    "website": "http://www.kaasboerderijmulder.nl/"
   },
   {
     "id": 657,
@@ -16792,7 +16951,7 @@
     "lat": 51.40393,
     "lng": 5.333755,
     "address": "Molenvelden 3, Knegsel",
-    "hours": null,
+    "hours": "ma-zo 7-21u",
     "products": [
       "kaas",
       "zuivel"
@@ -16801,10 +16960,12 @@
       "zuivel"
     ],
     "placeId": "ChIJWTi0hA_bxkcRHESJhCgz5fc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 44,
     "dagVers": null,
-    "desc": "Kaasboerderij in Knegsel met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Knegsel met eigen kaas en zuivel.",
+    "phone": "06 50628042",
+    "website": "https://nieuwerwets.nl/verkooppunt/kaasautomaat-knegsel/?utm_source=lokaal&utm_medium=organisch&utm_campaign=GMB"
   },
   {
     "id": 658,
@@ -16825,10 +16986,12 @@
       "zuivel"
     ],
     "placeId": "ChIJiy08tphGx0cRb7YdmKMaKlA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 23,
     "dagVers": null,
-    "desc": "Kaasboerderij in Sevenum met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Sevenum met eigen kaas en zuivel.",
+    "phone": "077 467 2623",
+    "website": "http://kaasboerderij.com/"
   },
   {
     "id": 659,
@@ -16840,7 +17003,7 @@
     "lat": 52.342435,
     "lng": 4.793419,
     "address": "Akersluis 6, Amsterdam",
-    "hours": null,
+    "hours": "wo-vr 9-18u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16849,10 +17012,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ4Zp4W2ThxUcRkKZiMvDAxZs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 116,
     "dagVers": null,
-    "desc": "Kaasboerderij in Amsterdam met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Amsterdam met eigen kaas en zuivel.",
+    "phone": "06 39685666",
+    "website": "http://www.kaasboerderijsloten.nl/"
   },
   {
     "id": 660,
@@ -16864,7 +17029,7 @@
     "lat": 52.101481,
     "lng": 4.607521,
     "address": "Voorweg 28A, Hazerswoude-Dorp",
-    "hours": null,
+    "hours": "di 9-12.30u · do-vr 9-12.30u · za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16873,10 +17038,12 @@
       "zuivel"
     ],
     "placeId": "ChIJa0O-9P7PxUcRtLi52cXG3kE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 21,
     "dagVers": null,
-    "desc": "Kaasboerderij in Hazerswoude-Dorp met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Hazerswoude-Dorp met eigen kaas en zuivel.",
+    "phone": "0172 588 537",
+    "website": "https://www.facebook.com/Melk-kaas-zorgboerderij-Sparnaaij-1536593016595712/"
   },
   {
     "id": 661,
@@ -16888,7 +17055,7 @@
     "lat": 52.296101,
     "lng": 7.002585,
     "address": "Hengelerheurneweg 2, De Lutte",
-    "hours": null,
+    "hours": "di-do 16-19u · vr 14-18u · za 10-18u",
     "products": [
       "kaas",
       "zuivel"
@@ -16897,10 +17064,12 @@
       "zuivel"
     ],
     "placeId": "ChIJyxmJ-RUXuEcRwAYAmJNmpSc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 12,
     "dagVers": null,
-    "desc": "Kaasboerderij in De Lutte met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in De Lutte met eigen kaas en zuivel.",
+    "phone": "06 23726562",
+    "website": "https://www.twentsetrots.nl/"
   },
   {
     "id": 662,
@@ -16912,7 +17081,7 @@
     "lat": 51.987622,
     "lng": 4.810045,
     "address": "Oost Vlisterdijk 4, Vlist",
-    "hours": null,
+    "hours": "di 9-17u · vr 9-17u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16921,10 +17090,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ2xAYjV1_xkcRY7d9WDLl0Jg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 94,
     "dagVers": null,
-    "desc": "Kaasboerderij in Vlist met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Vlist met eigen kaas en zuivel.",
+    "phone": "06 51681245",
+    "website": "http://kaasboerderijvaneijk.nl/"
   },
   {
     "id": 663,
@@ -16936,7 +17107,7 @@
     "lat": 52.046868,
     "lng": 4.413596,
     "address": "'s-Gravenweg 3, Nootdorp",
-    "hours": null,
+    "hours": "do 12-18u · vr 9-18u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -16945,10 +17116,12 @@
       "zuivel"
     ],
     "placeId": "ChIJb3kmicHJxUcRM4eNY-MSXUY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 81,
     "dagVers": null,
-    "desc": "Kaasboerderij in Nootdorp met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Nootdorp met eigen kaas en zuivel.",
+    "phone": "015 310 9749",
+    "website": "https://www.kaasboerderijvanleeuwen.nl/"
   },
   {
     "id": 664,
@@ -16960,7 +17133,7 @@
     "lat": 51.976896,
     "lng": 5.070899,
     "address": "Helsdingse Achterweg 20, Vianen",
-    "hours": null,
+    "hours": "di 9-12.30u · di 13.30-17u · vr-za 9-12.30u · vr-za 13.30-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16969,10 +17142,12 @@
       "zuivel"
     ],
     "placeId": "ChIJHd--kJhjxkcRqOzjvicEoZM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 109,
     "dagVers": null,
-    "desc": "Kaasboerderij in Vianen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Vianen met eigen kaas en zuivel.",
+    "phone": "0347 371 580",
+    "website": "http://www.kaasboerderijvanrossum.nl/"
   },
   {
     "id": 665,
@@ -16984,7 +17159,7 @@
     "lat": 52.113259,
     "lng": 4.523038,
     "address": "Weipoortseweg 72A, Zoeterwoude",
-    "hours": null,
+    "hours": "za 10-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -16993,10 +17168,12 @@
       "zuivel"
     ],
     "placeId": "ChIJBeO2aPDFxUcRBfPGMVXX_a0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 122,
     "dagVers": null,
-    "desc": "Kaasboerderij in Zoeterwoude met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Zoeterwoude met eigen kaas en zuivel.",
+    "phone": "071 580 1154",
+    "website": "https://www.kaasboerderijvanveen.nl/"
   },
   {
     "id": 666,
@@ -17008,7 +17185,7 @@
     "lat": 52.404374,
     "lng": 5.795451,
     "address": "Mezenbergerweg 11, Doornspijk",
-    "hours": null,
+    "hours": "di 8.30-18u · vr 8.30-18u · za 8.30-16.30u",
     "products": [
       "kaas",
       "zuivel"
@@ -17017,10 +17194,12 @@
       "zuivel"
     ],
     "placeId": "ChIJoTQfRmTSx0cR0ezxEC1fieE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 365,
     "dagVers": null,
-    "desc": "Kaasboerderij in Doornspijk met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Doornspijk met eigen kaas en zuivel.",
+    "phone": "0525 661 284",
+    "website": "http://www.echteboerenkaas.nl/"
   },
   {
     "id": 667,
@@ -17032,7 +17211,7 @@
     "lat": 51.979122,
     "lng": 4.633977,
     "address": "Tweede Tochtweg 37, Nieuwerkerk aan den IJssel",
-    "hours": null,
+    "hours": "wo-vr 10-17u · za 10-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -17041,10 +17220,12 @@
       "zuivel"
     ],
     "placeId": "ChIJVWiAp1bSxUcRnwHUES4AWPg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 139,
     "dagVers": null,
-    "desc": "Kaasboerderij in Nieuwerkerk aan den IJssel met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Nieuwerkerk aan den IJssel met eigen kaas en zuivel.",
+    "phone": "0180 315 769",
+    "website": "https://m.facebook.com/profile.php/?id=100063576231587"
   },
   {
     "id": 668,
@@ -17056,7 +17237,7 @@
     "lat": 51.986265,
     "lng": 4.877795,
     "address": "Zuidzijdseweg 142-A, Polsbroek",
-    "hours": null,
+    "hours": "ma-za 8-18u",
     "products": [
       "kaas",
       "zuivel"
@@ -17065,10 +17246,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ0civWsB-xkcRD1NZxj1J0Ew",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 37,
     "dagVers": null,
-    "desc": "Kaasboerderij in Polsbroek met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Polsbroek met eigen kaas en zuivel.",
+    "phone": "0182 307 262",
+    "website": "https://kaasboerderijverweij.nl/"
   },
   {
     "id": 669,
@@ -17080,7 +17263,7 @@
     "lat": 53.033175,
     "lng": 4.788398,
     "address": "Hoornderweg 29, Den Burg",
-    "hours": null,
+    "hours": "ma-za 9.30-17u · zo 11-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -17089,10 +17272,12 @@
       "zuivel"
     ],
     "placeId": "ChIJZW0290w3z0cR7fAwSb5_wM4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 1597,
     "dagVers": null,
-    "desc": "Kaasboerderij in Den Burg met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Den Burg met eigen kaas en zuivel.",
+    "phone": "0222 315 090",
+    "website": "http://www.wezenspyk.nl/"
   },
   {
     "id": 670,
@@ -17104,7 +17289,7 @@
     "lat": 51.517201,
     "lng": 4.510718,
     "address": "Langendijksestraat 27, Rucphen",
-    "hours": null,
+    "hours": "ma-zo 9-18.30u",
     "products": [
       "kaas",
       "zuivel"
@@ -17113,10 +17298,12 @@
       "zuivel"
     ],
     "placeId": "ChIJBbr2F1QXxEcRVzXPAYUKWEc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 52,
     "dagVers": null,
-    "desc": "Kaasboerderij in Rucphen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Rucphen met eigen kaas en zuivel.",
+    "phone": "0165 556 596",
+    "website": "https://www.facebook.com/Kaasmakerij-t-Wezeltje-104157534664492/"
   },
   {
     "id": 671,
@@ -17128,7 +17315,7 @@
     "lat": 52.977813,
     "lng": 5.445825,
     "address": "Begine 52, Workum",
-    "hours": null,
+    "hours": "ma-do 9-18u · vr 9-20u · za 8-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -17137,10 +17324,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ-3w21o3qyEcR6sahTgOduHE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 132,
     "dagVers": null,
-    "desc": "Kaasboerderij in Workum met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Workum met eigen kaas en zuivel.",
+    "phone": "0515 542 456",
+    "website": "http://www.nylander.nl/"
   },
   {
     "id": 672,
@@ -17152,7 +17341,7 @@
     "lat": 53.368041,
     "lng": 5.240619,
     "address": "Nieuwe Dijk 30, West-Terschelling",
-    "hours": null,
+    "hours": "ma-di 14-17u · do 14-17u · za 10-13u",
     "products": [
       "kaas",
       "zuivel"
@@ -17161,10 +17350,11 @@
       "zuivel"
     ],
     "placeId": "ChIJlctjTiIvyUcRDEuJtwD0bfc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 47,
     "dagVers": null,
-    "desc": "Kaasboerderij in West-Terschelling met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in West-Terschelling met eigen kaas en zuivel.",
+    "phone": "06 24414876"
   },
   {
     "id": 673,
@@ -17176,7 +17366,7 @@
     "lat": 53.131739,
     "lng": 7.110058,
     "address": "Tweekarspelenweg 20, Blijham",
-    "hours": null,
+    "hours": "vr 9-17u · za 9-13u",
     "products": [
       "kaas",
       "zuivel"
@@ -17185,10 +17375,12 @@
       "zuivel"
     ],
     "placeId": "ChIJQx9VQXzMt0cRB2yEagM54Fc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 106,
     "dagVers": null,
-    "desc": "Kaasboerderij in Blijham met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Blijham met eigen kaas en zuivel.",
+    "phone": "0597 424 759",
+    "website": "https://boerderijzuivel.nl/locaties/kaasmakerij-oldambt/"
   },
   {
     "id": 674,
@@ -17200,7 +17392,7 @@
     "lat": 53.199784,
     "lng": 6.15018,
     "address": "Reaskuorre 11, Augustinusga",
-    "hours": null,
+    "hours": "wo 9-12u · za 9-12u",
     "products": [
       "streekproducten"
     ],
@@ -17221,16 +17413,18 @@
     "lat": 51.863355,
     "lng": 5.285244,
     "address": "Rijksstraatweg 76, Meteren",
-    "hours": null,
+    "hours": "vr 14-19u · za 9-13u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJF-p6fcz1xkcRFhcMekNNFnU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 34,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Meteren met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Meteren met verse streekproducten van het land.",
+    "phone": "06 48463456",
+    "website": "http://www.koppelboerderijwinkel.nl/"
   },
   {
     "id": 676,
@@ -17242,16 +17436,18 @@
     "lat": 52.228176,
     "lng": 5.258451,
     "address": "Wakkerendijk 61, Eemnes",
-    "hours": null,
+    "hours": "do-vr 14-18u · za 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJKYVThAlrxkcRWKtdN73Z9So",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 16,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Eemnes met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Eemnes met verse streekproducten van het land.",
+    "phone": "06 23958135",
+    "website": "https://eemveld-angus.nl/"
   },
   {
     "id": 677,
@@ -17263,16 +17459,17 @@
     "lat": 52.186635,
     "lng": 4.585718,
     "address": "Pastoor van der Plaatstraat 40, Rijpwetering",
-    "hours": null,
+    "hours": "di-vr 10-13u · di-vr 13.30-18u · za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJgX5KWp3ExUcRkz6tGNGZUeQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 195,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Rijpwetering met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Rijpwetering met verse streekproducten van het land.",
+    "phone": "071 501 2559"
   },
   {
     "id": 678,
@@ -17284,16 +17481,18 @@
     "lat": 52.019193,
     "lng": 5.52799,
     "address": "Dijkstraat 115, Veenendaal",
-    "hours": null,
+    "hours": "ma-za 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ9fjVl51RxkcRn0rYtc8jioM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 938,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Veenendaal met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Veenendaal met verse streekproducten van het land.",
+    "phone": "0318 550 561",
+    "website": "http://www.eekhoeve.nl/"
   },
   {
     "id": 679,
@@ -17305,16 +17504,18 @@
     "lat": 51.70028,
     "lng": 3.752641,
     "address": "Bouwmansweg 1, Burgh-Haamstede",
-    "hours": null,
+    "hours": "wo-vr 9-17u · za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJU1NgXyLyxEcRlOG7YpYAjiw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 83,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Burgh-Haamstede met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Burgh-Haamstede met verse streekproducten van het land.",
+    "phone": "0111 651 610",
+    "website": "http://www.defruitgaard.nl/"
   },
   {
     "id": 680,
@@ -17326,16 +17527,18 @@
     "lat": 52.409742,
     "lng": 6.260728,
     "address": "Knapenveldsweg 29, Raalte",
-    "hours": null,
+    "hours": "di 9-17u · vr 9-17u · za 9-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJveHlPIjmx0cRdMZKPiGu6VQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 133,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Raalte met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Raalte met verse streekproducten van het land.",
+    "phone": "0572 352 238",
+    "website": "http://www.deknapenvelder.nl/"
   },
   {
     "id": 681,
@@ -17347,16 +17550,18 @@
     "lat": 51.794913,
     "lng": 4.521272,
     "address": "Zwanegatsedijk 1-A, Maasdam",
-    "hours": null,
+    "hours": "di-za 9.30-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJk20J8eExxEcRSg74SZ333Ek",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 11,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Maasdam met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Maasdam met verse streekproducten van het land.",
+    "phone": "078 762 0970",
+    "website": "https://www.landwinkelmaashoeve.nl/"
   },
   {
     "id": 682,
@@ -17368,16 +17573,18 @@
     "lat": 51.387695,
     "lng": 4.314143,
     "address": "Langeweg 20, Ossendrecht",
-    "hours": null,
+    "hours": "ma-wo 9.30-17.30u · vr 9.30-17.30u · za 9.30-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ_co8E24NxEcRIYW1SiIJriY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 2,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Ossendrecht met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Ossendrecht met verse streekproducten van het land.",
+    "phone": "06 12404578",
+    "website": "https://www.hoevemelsen.nl/"
   },
   {
     "id": 683,
@@ -17389,16 +17596,18 @@
     "lat": 51.80339,
     "lng": 4.011461,
     "address": "Damweg 1A, Stellendam",
-    "hours": null,
+    "hours": "ma 13-17.30u · di 8.30-17u · wo-vr 8.30-17.30u · za 8-16.45u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJmQahH21XxEcRYPbY29RQZUE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 375,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Stellendam met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Stellendam met verse streekproducten van het land.",
+    "phone": "0187 492 904",
+    "website": "https://landwinkelkeizer.nl/"
   },
   {
     "id": 684,
@@ -17410,16 +17619,18 @@
     "lat": 51.760357,
     "lng": 5.924251,
     "address": "Klein Amerika 3, Groesbeek",
-    "hours": null,
+    "hours": "ma-zo 7-19u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJ0SpOlCYMx0cR-m-gvK0X0vw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 161,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Groesbeek met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Groesbeek met verse streekproducten van het land.",
+    "phone": "024 397 5839",
+    "website": "http://beijergroesbeek.nl/"
   },
   {
     "id": 685,
@@ -17431,16 +17642,18 @@
     "lat": 51.13413,
     "lng": 6.080963,
     "address": "aan de Roerbrug, Grootestraat 49, Vlodrop",
-    "hours": null,
+    "hours": "di-za 9-17.30u · zo 10-17.30u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJF6VP5W6ywEcRE0w9fwtk98Q",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 550,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Vlodrop met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Vlodrop met verse streekproducten van het land.",
+    "phone": "0475 403 393",
+    "website": "http://www.schurenhof.nl/"
   },
   {
     "id": 686,
@@ -17452,16 +17665,17 @@
     "lat": 51.932182,
     "lng": 5.562104,
     "address": "Nedereindsestraat 36A, Kesteren",
-    "hours": null,
+    "hours": "ma 9-18u · di 8.30-17u · wo-vr 9-18u · za 8.30-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJtVg5qLRVxkcRQSRmPNaus8M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 19,
     "dagVers": null,
-    "desc": "Versautomaat in Kesteren met streekproducten, dag en nacht."
+    "desc": "Versautomaat in Kesteren met streekproducten, dag en nacht.",
+    "phone": "0488 482 141"
   },
   {
     "id": 687,
@@ -17473,7 +17687,7 @@
     "lat": 51.860356,
     "lng": 5.587774,
     "address": "Neersteindsestraat 8, Horssen",
-    "hours": null,
+    "hours": "wo 15-16.30u · vr 9.30-13u · za 9.30-16u",
     "products": [
       "vlees",
       "streekproducten"
@@ -17482,10 +17696,12 @@
       "vlees"
     ],
     "placeId": "ChIJ62bRND3_xkcROqbE8TgSJ_c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 13,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Horssen met eigen vlees en streekproducten."
+    "desc": "Boerderijwinkel in Horssen met eigen vlees en streekproducten.",
+    "phone": "06 11705092",
+    "website": "http://www.deleentjeshoeve.nl/"
   },
   {
     "id": 688,
@@ -17506,10 +17722,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJwQsnbrWryEcR5RCHpgcH4H0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 2,
     "dagVers": null,
-    "desc": "Zelfpluk-bloementuin in Spierdijk. Pluk je eigen boeket in het seizoen."
+    "desc": "Zelfpluk-bloementuin in Spierdijk. Pluk je eigen boeket in het seizoen.",
+    "phone": "06 13785322",
+    "website": "https://marjabloemenpluktuin.nl/"
   },
   {
     "id": 689,
@@ -17521,16 +17739,18 @@
     "lat": 51.673266,
     "lng": 4.744126,
     "address": "Zonzeelseweg 8, Hooge Zwaluwe",
-    "hours": null,
+    "hours": "vr 13-18u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJDQUjuxInxEcRXSmr3M3oUio",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 30,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Hooge Zwaluwe met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Hooge Zwaluwe met verse streekproducten van het land.",
+    "phone": "06 53420135",
+    "website": "https://meatnature.nl/"
   },
   {
     "id": 690,
@@ -17542,7 +17762,7 @@
     "lat": 52.165826,
     "lng": 6.697323,
     "address": "Kattendamsweg 24, Haaksbergen",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "verse melk",
       "zuivel"
@@ -17551,10 +17771,12 @@
       "zuivel"
     ],
     "placeId": "ChIJyflpHl5zuEcRsffYEwz-Uhw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 4,
     "dagVers": null,
-    "desc": "Melktap in Haaksbergen met verse melk rechtstreeks van de boer."
+    "desc": "Melktap in Haaksbergen met verse melk rechtstreeks van de boer.",
+    "phone": "06 23075057",
+    "website": "https://www.impactboerderij.nl/"
   },
   {
     "id": 691,
@@ -17566,7 +17788,7 @@
     "lat": 52.799301,
     "lng": 6.178261,
     "address": "Kallenkote 41, Kallenkote",
-    "hours": null,
+    "hours": "ma-zo 8-22u",
     "products": [
       "verse melk",
       "zuivel"
@@ -17575,10 +17797,11 @@
       "zuivel"
     ],
     "placeId": "ChIJjTnYyV5tyEcRLGFfl01UBS8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 6,
     "dagVers": null,
-    "desc": "Melktap in Kallenkote met verse melk rechtstreeks van de boer."
+    "desc": "Melktap in Kallenkote met verse melk rechtstreeks van de boer.",
+    "phone": "06 11270717"
   },
   {
     "id": 692,
@@ -17590,7 +17813,7 @@
     "lat": 52.436914,
     "lng": 6.927718,
     "address": "Laagseweg 80, Hezingen",
-    "hours": null,
+    "hours": "ma-zo 8-20u",
     "products": [
       "verse melk",
       "zuivel"
@@ -17599,10 +17822,12 @@
       "zuivel"
     ],
     "placeId": "ChIJrT-nYGkduEcR0cCJfQrghI4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 130,
     "dagVers": null,
-    "desc": "Melktap in Hezingen met verse melk rechtstreeks van de boer."
+    "desc": "Melktap in Hezingen met verse melk rechtstreeks van de boer.",
+    "phone": "0541 293 371",
+    "website": "https://nlmaphub.org/details/melktapperij-hoogboer-ChIJrT-"
   },
   {
     "id": 693,
@@ -17614,7 +17839,7 @@
     "lat": 52.020667,
     "lng": 4.439852,
     "address": "Pijnacker",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "zelfpluk",
       "fruit",
@@ -17625,10 +17850,11 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJI5AG5yrKxUcRmO0A2qF7zp4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 16,
     "dagVers": null,
-    "desc": "Zelfpluktuin in Pijnacker. Pluk in het seizoen je eigen verse oogst."
+    "desc": "Zelfpluktuin in Pijnacker. Pluk in het seizoen je eigen verse oogst.",
+    "website": "http://www.facebook.com/pluktuinaandebrink/"
   },
   {
     "id": 694,
@@ -17651,8 +17877,8 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJfarMHdetyUcRzIHxfxuoVBw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 4,
     "dagVers": null,
     "desc": "Zelfpluktuin in Twijzel. Pluk in het seizoen je eigen verse oogst."
   },
@@ -17666,7 +17892,7 @@
     "lat": 51.623676,
     "lng": 5.008358,
     "address": "Middelstraat 41, De Moer",
-    "hours": null,
+    "hours": "vr 13-17u · za 9-16u",
     "products": [
       "zelfpluk",
       "fruit",
@@ -17677,10 +17903,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJlbEPYRGXxkcRVAEul5Ja8dE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 14,
     "dagVers": null,
-    "desc": "Zelfpluktuin in De Moer. Pluk in het seizoen je eigen verse oogst."
+    "desc": "Zelfpluktuin in De Moer. Pluk in het seizoen je eigen verse oogst.",
+    "phone": "06 24408688",
+    "website": "http://www.utouwgoed.nl/"
   },
   {
     "id": 696,
@@ -17692,7 +17920,7 @@
     "lat": 51.669088,
     "lng": 4.900311,
     "address": "Rijsdijk 31, Oosteind",
-    "hours": null,
+    "hours": "ma-zo 8-22u",
     "products": [
       "verse melk",
       "zuivel"
@@ -17701,10 +17929,11 @@
       "zuivel"
     ],
     "placeId": "ChIJzRx7WQCbxkcRT7sNkGczGO0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 16,
     "dagVers": null,
-    "desc": "Melktap in Oosteind met verse melk rechtstreeks van de boer."
+    "desc": "Melktap in Oosteind met verse melk rechtstreeks van de boer.",
+    "website": "http://www.rijsdijkhoeve.nl/"
   },
   {
     "id": 697,
@@ -17716,7 +17945,7 @@
     "lat": 52.700858,
     "lng": 5.204694,
     "address": "Horn 60, Lutjebroek",
-    "hours": null,
+    "hours": "ma-za 8-17u",
     "products": [
       "fruit",
       "groente"
@@ -17726,10 +17955,12 @@
       "groente"
     ],
     "placeId": "ChIJJeUPTEmkyEcRmIMjPr05G2U",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 6,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Lutjebroek, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Lutjebroek, rechtstreeks van de teler.",
+    "phone": "06 54695700",
+    "website": "https://nlroutes.org/details/robs-aardappelen-en-fruithandel-ChIJJeU"
   },
   {
     "id": 698,
@@ -17741,16 +17972,18 @@
     "lat": 53.226544,
     "lng": 5.91137,
     "address": "Binnendijk 57, Ryptsjerk",
-    "hours": null,
+    "hours": "ma-za 8-17u · zo 9-17u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJXRbT6l5VyEcRpoPK9Y-WdMc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 101,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Ryptsjerk met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Ryptsjerk met verse streekproducten van het land.",
+    "phone": "0511 431 166",
+    "website": "https://www.johanna-hoeve.nl/"
   },
   {
     "id": 699,
@@ -17762,7 +17995,7 @@
     "lat": 51.478149,
     "lng": 3.559544,
     "address": "Vlissingsestraat 3, Koudekerke",
-    "hours": null,
+    "hours": "di-za 10-17u",
     "products": [
       "zelfpluk",
       "fruit",
@@ -17773,10 +18006,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJ9yOuSA2XxEcRs3T8pIeEH54",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 144,
     "dagVers": null,
-    "desc": "Zelfpluktuin in Koudekerke. Pluk in het seizoen je eigen verse oogst."
+    "desc": "Zelfpluktuin in Koudekerke. Pluk in het seizoen je eigen verse oogst.",
+    "phone": "06 33968408",
+    "website": "https://theeschenkerij-depluktuin.nl/"
   },
   {
     "id": 700,
@@ -17788,7 +18023,7 @@
     "lat": 52.164052,
     "lng": 4.572433,
     "address": "Doespolderkade 1, Hoogmade",
-    "hours": null,
+    "hours": "ma-di 9-17u · wo-vr 10-17u · za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -17797,10 +18032,12 @@
       "zuivel"
     ],
     "placeId": "ChIJj0cqAfXExUcRhzbzSp4YSMQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 100,
     "dagVers": null,
-    "desc": "Kaasboerderij in Hoogmade met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Hoogmade met eigen kaas en zuivel.",
+    "phone": "071 501 8469",
+    "website": "http://www.kleine-kazenboerderij.com/"
   },
   {
     "id": 701,
@@ -17812,7 +18049,7 @@
     "lat": 51.935982,
     "lng": 4.724758,
     "address": "Zuidbroek 153, Bergambacht",
-    "hours": null,
+    "hours": "ma-za 8.30-18u",
     "products": [
       "kaas",
       "zuivel"
@@ -17821,10 +18058,12 @@
       "zuivel"
     ],
     "placeId": "ChIJkchcCs_UxUcRki7Vg7ejcQU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 207,
     "dagVers": null,
-    "desc": "Kaasboerderij in Bergambacht met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Bergambacht met eigen kaas en zuivel.",
+    "phone": "0182 367 880",
+    "website": "http://www.kaasboerderijschep.nl/"
   },
   {
     "id": 702,
@@ -17836,7 +18075,7 @@
     "lat": 52.304663,
     "lng": 5.568444,
     "address": "Zeeweg 148, Ermelo",
-    "hours": null,
+    "hours": "ma-za 7-22u",
     "products": [
       "verse eieren"
     ],
@@ -17844,8 +18083,8 @@
       "eieren"
     ],
     "placeId": "ChIJeWZnyhs3xkcRNmJ_B7WpqJU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 9,
     "dagVers": null,
     "desc": "Eierautomaat in Ermelo met verse eieren, vaak dag en nacht bereikbaar."
   },
@@ -17859,7 +18098,7 @@
     "lat": 52.591099,
     "lng": 6.281965,
     "address": "Burgemeester Backxlaan 339, Nieuwleusen",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "vlees"
     ],
@@ -17867,8 +18106,8 @@
       "vlees"
     ],
     "placeId": "ChIJk6XuykALyEcRnNf0bl-yDQ4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 6,
     "dagVers": null,
     "desc": "Vleesautomaat in Nieuwleusen met vlees van eigen boerderij."
   },
@@ -17882,7 +18121,7 @@
     "lat": 50.821979,
     "lng": 5.900183,
     "address": "Kapolder 12, Wijlre",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "vlees"
     ],
@@ -17890,8 +18129,8 @@
       "vlees"
     ],
     "placeId": "ChIJrfOXZwCVwEcRCzrzUG5DOTI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 3,
     "dagVers": null,
     "desc": "Vleesautomaat in Wijlre met vlees van eigen boerderij."
   },
@@ -17905,7 +18144,7 @@
     "lat": 51.839076,
     "lng": 5.345957,
     "address": "Bommelsestraat 82, Ophemert",
-    "hours": null,
+    "hours": "ma-zo 8-20u",
     "products": [
       "vlees"
     ],
@@ -17916,7 +18155,9 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Vleesautomaat in Ophemert met vlees van eigen boerderij."
+    "desc": "Vleesautomaat in Ophemert met vlees van eigen boerderij.",
+    "phone": "0344 652 719",
+    "website": "http://bommelbeef.nl/"
   },
   {
     "id": 706,
@@ -17928,7 +18169,7 @@
     "lat": 51.799049,
     "lng": 5.018686,
     "address": "Veldweg 2, Rijswijk",
-    "hours": null,
+    "hours": "ma 13-18u · wo-vr 10-18u · za 9-17u",
     "products": [
       "fruit",
       "groente"
@@ -17938,10 +18179,12 @@
       "groente"
     ],
     "placeId": "ChIJ6Vkx5DKPxkcRXxRs__H9tMU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 27,
     "dagVers": null,
-    "desc": "Verse groente en fruit in Rijswijk, rechtstreeks van de teler."
+    "desc": "Verse groente en fruit in Rijswijk, rechtstreeks van de teler.",
+    "phone": "06 20488559",
+    "website": "http://www.boerderijwinkeldebranderij.nl/"
   },
   {
     "id": 707,
@@ -17953,7 +18196,7 @@
     "lat": 52.441897,
     "lng": 4.778146,
     "address": "Zuideinde 260, Westzaan",
-    "hours": null,
+    "hours": "wo-vr 10-12.15u · wo-vr 13-18u · za 10-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -17962,10 +18205,12 @@
       "zuivel"
     ],
     "placeId": "ChIJQaUcnqn8xUcRQZ1OYq7O6sY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 88,
     "dagVers": null,
-    "desc": "Kaasboerderij in Westzaan met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Westzaan met eigen kaas en zuivel.",
+    "phone": "075 616 9780",
+    "website": "https://www.westzaansezuivelboerderij.nl/"
   },
   {
     "id": 708,
@@ -17977,7 +18222,7 @@
     "lat": 52.388641,
     "lng": 4.907571,
     "address": "Magnoliastraat, Amsterdam",
-    "hours": null,
+    "hours": "24/7",
     "products": [
       "zelfpluk",
       "fruit",
@@ -17988,10 +18233,11 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJo71fr64JxkcRWalnKNCL6Eo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Zelfpluktuin in Amsterdam. Pluk in het seizoen je eigen verse oogst."
+    "desc": "Zelfpluktuin in Amsterdam. Pluk in het seizoen je eigen verse oogst.",
+    "website": "http://zelfpluktuinen.nl/"
   },
   {
     "id": 709,
@@ -18003,16 +18249,18 @@
     "lat": 51.799242,
     "lng": 5.748257,
     "address": "Oosterweg 263, Wijchen",
-    "hours": null,
+    "hours": "ma-zo 8-22u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJGZu5FfoHx0cRD4p7Uq9jC8I",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 4,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Wijchen met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Wijchen met verse streekproducten van het land.",
+    "phone": "024 820 0210",
+    "website": "https://www.scharrelnest.nl/"
   },
   {
     "id": 710,
@@ -18024,7 +18272,7 @@
     "lat": 51.494337,
     "lng": 3.582865,
     "address": "Breeweg 21, Koudekerke",
-    "hours": null,
+    "hours": "ma 13.30-16.30u · di 9-16.30u · wo 13.30-16.30u · do-vr 9-16.30u · za 9-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -18033,10 +18281,12 @@
       "zuivel"
     ],
     "placeId": "ChIJu8hzCyWXxEcRp7MwLrUy3kI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 184,
     "dagVers": null,
-    "desc": "Kaasboerderij in Koudekerke met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Koudekerke met eigen kaas en zuivel.",
+    "phone": "0118 596 031",
+    "website": "http://www.pitteperk.nl"
   },
   {
     "id": 711,
@@ -18048,16 +18298,18 @@
     "lat": 52.65504,
     "lng": 5.152228,
     "address": "Hemweg 8, Wijdenes",
-    "hours": null,
+    "hours": "vr-za 10-16u",
     "products": [
       "streekproducten"
     ],
     "tags": [],
     "placeId": "ChIJWSunYVOnyEcRzuUChHF2C3s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 20,
     "dagVers": null,
-    "desc": "Boerderijwinkel in Wijdenes met verse streekproducten van het land."
+    "desc": "Boerderijwinkel in Wijdenes met verse streekproducten van het land.",
+    "phone": "06 41187848",
+    "website": "http://www.zuiderzeeboerderijwinkel.nl/"
   },
   {
     "id": 712,
@@ -18069,7 +18321,7 @@
     "lat": 51.461199,
     "lng": 5.851979,
     "address": "Bosrandweg 3, Deurne",
-    "hours": null,
+    "hours": "ma-zo 7-23u",
     "products": [
       "kaas",
       "zuivel"
@@ -18078,10 +18330,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ0yrwVwI8x0cRHXefEQVgs0M",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 75,
     "dagVers": null,
-    "desc": "Kaasboerderij in Deurne met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Deurne met eigen kaas en zuivel.",
+    "phone": "06 30158388",
+    "website": "http://devrolijkekoe.nl/"
   },
   {
     "id": 713,
@@ -18102,10 +18356,12 @@
       "zuivel"
     ],
     "placeId": "ChIJQ2yXLNsXyEcRaBdOOo8Xkxo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 17,
     "dagVers": null,
-    "desc": "Kaasboerderij in Beilen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Beilen met eigen kaas en zuivel.",
+    "phone": "0593 526 036",
+    "website": "https://zuivelboerderijbolhuis.nl/"
   },
   {
     "id": 714,
@@ -18117,7 +18373,7 @@
     "lat": 52.686293,
     "lng": 6.754672,
     "address": "Oude Coevorderweg 30, Dalen",
-    "hours": null,
+    "hours": "ma-zo 9-21u",
     "products": [
       "kaas",
       "zuivel"
@@ -18126,10 +18382,12 @@
       "zuivel"
     ],
     "placeId": "ChIJ5wzWH47jt0cRtxQEgLjwoyU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 16,
     "dagVers": null,
-    "desc": "Kaasboerderij in Dalen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Dalen met eigen kaas en zuivel.",
+    "phone": "06 82870426",
+    "website": "http://www.zuivelboerderijdalen.nl/"
   },
   {
     "id": 715,
@@ -18141,7 +18399,7 @@
     "lat": 52.114508,
     "lng": 6.181054,
     "address": "Cortenoeverseweg 125, Brummen",
-    "hours": null,
+    "hours": "ma-za 7-19u · zo 7-20u",
     "products": [
       "kaas",
       "zuivel"
@@ -18150,10 +18408,12 @@
       "zuivel"
     ],
     "placeId": "ChIJsZmFomOVx0cR8VBXRLxzCfg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 10,
     "dagVers": null,
-    "desc": "Kaasboerderij in Brummen met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Brummen met eigen kaas en zuivel.",
+    "phone": "06 14368585",
+    "website": "https://www.zuivelboerderijdebrummenaer.nl/"
   },
   {
     "id": 716,
@@ -18165,7 +18425,7 @@
     "lat": 52.629078,
     "lng": 6.331773,
     "address": "Hoofdweg 22, Balkbrug",
-    "hours": null,
+    "hours": "vr 13-17u · za 9-16u",
     "products": [
       "kaas",
       "zuivel"
@@ -18174,10 +18434,12 @@
       "zuivel"
     ],
     "placeId": "ChIJU1SUvqgOyEcRWhMIe5_PYL0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 47,
     "dagVers": null,
-    "desc": "Kaasboerderij in Balkbrug met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Balkbrug met eigen kaas en zuivel.",
+    "phone": "0523 649 485",
+    "website": "http://www.zuivelboerderijdewaard.nl/"
   },
   {
     "id": 717,
@@ -18189,7 +18451,7 @@
     "lat": 51.842501,
     "lng": 5.178385,
     "address": "Meikampgraaf 10, Hellouw",
-    "hours": null,
+    "hours": "ma 13.30-17.30u · do 13.30-17.30u · vr 9-12u · vr 13.30-17.30u · za 9-14u",
     "products": [
       "kaas",
       "zuivel"
@@ -18198,10 +18460,12 @@
       "zuivel"
     ],
     "placeId": "ChIJd1TbD0eLxkcRBoYSqT259mY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 161,
     "dagVers": null,
-    "desc": "Kaasboerderij in Hellouw met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Hellouw met eigen kaas en zuivel.",
+    "phone": "0418 594 075",
+    "website": "http://www.zuivelboerderijnoordam.nl/"
   },
   {
     "id": 718,
@@ -18213,7 +18477,7 @@
     "lat": 51.687825,
     "lng": 4.923182,
     "address": "Luiten Ambachtstraat 27, Raamsdonk",
-    "hours": null,
+    "hours": "vr 13-17u",
     "products": [
       "kaas",
       "zuivel"
@@ -18222,9 +18486,11 @@
       "zuivel"
     ],
     "placeId": "ChIJrzSLFkeaxkcRyu9NBqDr_Hg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 26,
     "dagVers": null,
-    "desc": "Kaasboerderij in Raamsdonk met eigen kaas en zuivel."
+    "desc": "Kaasboerderij in Raamsdonk met eigen kaas en zuivel.",
+    "phone": "06 57843957",
+    "website": "http://ambachtshoevezuivel.nl/"
   }
 ]
