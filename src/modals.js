@@ -410,7 +410,7 @@ export function openWerkplaatsModal() {
     </div>`);
 
   document.getElementById('wpRepair')?.addEventListener('click', _repair);
-  _bindForm('bugForm', 'bugSubmit', 'bugStatus', '📨 Versturen naar de boer', 'Bedankt! De boer gaat ermee aan de slag. 🚜');
+  _bindForm('bugForm', 'bugSubmit', 'bugStatus', '📨 Versturen naar de boer', 'Bedankt! De boer gaat ermee aan de slag. 🚜', 'fix');
 }
 
 async function _repair() {
@@ -468,8 +468,11 @@ function _detectRegio(lat, lng) {
   return 'default';
 }
 
-function _celebrate() {
-  const EMOJIS = ['🥕','🍅','🥦','🌽','🍓','🍎','🍇','🥑','🍋','🥬','🫑','🥒','🍊','🫐','🍏','🥝','🍆','🧅','🥔','🌶️','🍑','🫒','🥜','🌿'];
+function _celebrate(mode = 'tip') {
+  const isFix = mode === 'fix';
+  const EMOJIS = isFix
+    ? ['🔧','🔨','🪛','🛠️','⚙️','🧰','📏','🪚','🔩','🧲','🪜']
+    : ['🥕','🍅','🥦','🌽','🍓','🍎','🍇','🥑','🍋','🥬','🫑','🥒','🍊','🫐','🍏','🥝','🍆','🧅','🥔','🌶️','🍑','🫒','🥜','🌿'];
   const DURATION = 7500; // ms — langer hangen
 
   /* Regioboodschap */
@@ -496,11 +499,18 @@ function _celebrate() {
 
   /* Dankjewel-banner met regiotekst */
   const banner = document.createElement('div');
-  banner.className = 'bedankt-banner';
-  banner.innerHTML = `
-    <span class="bedankt-banner-icon">${msg.icon}</span>
-    <div class="bedankt-banner-title">${msg.title}</div>
-    <div class="bedankt-banner-sub">${msg.sub}</div>`;
+  banner.className = 'bedankt-banner' + (isFix ? ' fix-banner' : '');
+  banner.innerHTML = isFix
+    ? `<div class="fix-anim" aria-hidden="true">
+         <span class="fix-bug">🪲</span>
+         <span class="fix-splat">💥</span>
+         <span class="fix-done">✅</span>
+       </div>
+       <div class="bedankt-banner-title">${msg.title}</div>
+       <div class="bedankt-banner-sub">Bedankt voor je melding — de boer pakt de gereedschapskist erbij. 🛠️</div>`
+    : `<span class="bedankt-banner-icon">${msg.icon}</span>
+       <div class="bedankt-banner-title">${msg.title}</div>
+       <div class="bedankt-banner-sub">${msg.sub}</div>`;
 
   document.body.appendChild(wrap);
   document.body.appendChild(banner);
@@ -541,7 +551,7 @@ function _bindForm(formId, btnId, statusId, btnLabel, successMsg, celebrate = fa
       status.className   = 'form-status form-ok';
       status.hidden      = false;
       form.reset();
-      if (celebrate) _celebrate();
+      if (celebrate) _celebrate(celebrate === true ? 'tip' : celebrate);
       setTimeout(closeModal, 3500);
     } catch {
       status.textContent = '❌ Verzenden mislukt — probeer het later opnieuw.';

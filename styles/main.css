@@ -2565,6 +2565,35 @@
     100% { transform: translate(-50%, -50%) scale(1);   opacity: 1; }
   }
 
+  /* Bug-pletter-animatie (Reparatieschuur) */
+  .fix-anim { position: relative; height: 60px; margin-bottom: 6px; }
+  .fix-anim span { position: absolute; left: 50%; top: 0; transform: translateX(-50%); font-size: 3rem; line-height: 1; }
+  .fix-bug   { animation: fixBugWalk .6s ease-in-out 2, fixBugSquash .35s ease-in 1.3s forwards; }
+  .fix-splat { opacity: 0; animation: fixSplat .5s ease-out 1.45s forwards; }
+  .fix-done  { opacity: 0; animation: fixDone .45s var(--ease-spring) 2.1s forwards; }
+
+  @keyframes fixBugWalk {
+    0%,100% { transform: translateX(-50%) rotate(-7deg); }
+    50%     { transform: translateX(-50%) rotate(7deg) translateY(-4px); }
+  }
+  @keyframes fixBugSquash {
+    to { transform: translateX(-50%) scaleY(.22) scaleX(1.35) translateY(18px); opacity: .25; }
+  }
+  @keyframes fixSplat {
+    0%   { opacity: 0; transform: translateX(-50%) scale(.3); }
+    60%  { opacity: 1; transform: translateX(-50%) scale(1.25); }
+    100% { opacity: .85; transform: translateX(-50%) scale(1); }
+  }
+  @keyframes fixDone {
+    0%   { opacity: 0; transform: translateX(-50%) scale(0) rotate(-20deg); }
+    100% { opacity: 1; transform: translateX(-50%) scale(1) rotate(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fix-bug, .fix-splat, .fix-done { animation-duration: .01s; }
+    .fix-done { opacity: 1; }
+  }
+
   /* Installeer-knop in header */
   .btn-install {
     display: inline-flex;
