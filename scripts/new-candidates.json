@@ -1,0 +1,5450 @@
+[
+  {
+    "name": "'Bij Verhoeven' Melktap",
+    "address": "Haarensebaan 3, 5071 NG Udenhout",
+    "lat": 51.603342299999994,
+    "lng": 5.1653151,
+    "placeId": "ChIJFwQvB2XrxkcRB1G-Zcnt7vU",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "'t eierboerke® 🥚🍳 LeRoyTrading",
+    "address": "zetel:, 9770 Kruisem, België",
+    "lat": 50.9044866,
+    "lng": 3.5281124,
+    "placeId": "ChIJW1Y5iGQRw0cRZRJXpRYqggY",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "‘t Eierhokje Lhee - Eieren verkoop",
+    "address": "Lhee 103, 7991 PK Dwingeloo",
+    "lat": 52.825431699999996,
+    "lng": 6.3895352,
+    "placeId": "ChIJ8RhVp6QXyEcRfoy9u0lpSzw",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "'t Land van Rhoode - CSA zelfoogstboerderij",
+    "address": "Rhoode, 2360 Oud-Turnhout, België",
+    "lat": 51.3062219,
+    "lng": 5.0452688,
+    "placeId": "ChIJ0w9kFom1xkcRZt_IqBYZzEc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "aa-dal streekproducten",
+    "address": "AA-Brugstraat 4a, 5473 GG Heeswijk Dinther",
+    "lat": 51.6417882,
+    "lng": 5.4797131,
+    "placeId": "ChIJJQg2v_3jxkcRmbja7pYKUiM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Aan de Melkautomaat - Distributeur du lait",
+    "address": "Luikersteenweg 680, 3700 Tongeren-Borgloon, België",
+    "lat": 50.7355191,
+    "lng": 5.5065702000000005,
+    "placeId": "ChIJS6_hZkzlwEcR7JhSUoCs8Sg",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Aardappelautomaat",
+    "address": "Drielindenstraat, 8550 Zwevegem, België",
+    "lat": 50.7882842,
+    "lng": 3.346958,
+    "placeId": "ChIJ1WggC3ojw0cRyAd7RkHgiMk",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Aardappelautomaat",
+    "address": "Turfspoor 160, 2165 AX Lisserbroek",
+    "lat": 52.2445369,
+    "lng": 4.5727351,
+    "placeId": "ChIJffIjNgXDxUcRnKVksztwqBQ",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Aardappelautomaat \"ons Èrpelhokske\" / VOF Pruijsen",
+    "address": "Vrouwkensvaartsestraat 45, 5165 NN Waspik",
+    "lat": 51.6719303,
+    "lng": 4.9696495,
+    "placeId": "ChIJcW6CP7CQxkcR64D6sLTtxks",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Aardappelautomaat & aardappelhandel Fokke de Jong",
+    "address": "Nesserwei 9, 9145 CE Ternaard",
+    "lat": 53.385656499999996,
+    "lng": 5.9813372,
+    "placeId": "ChIJWW7nbfaoyUcRASQ1VzwmE14",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Aardappelautomaat Capiau - Van Tricht",
+    "address": "Valleistraat 7, 9402 Ninove, België",
+    "lat": 50.818045399999995,
+    "lng": 4.0464633999999995,
+    "placeId": "ChIJzXkOJWu7w0cRaA0LtdJa3cc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "aardappelen automaat Siegers",
+    "address": "Lindsterlaan 50, 9363 XB Marum",
+    "lat": 53.1361567,
+    "lng": 6.2689805,
+    "placeId": "ChIJZdKeUKpJyEcRDhpOMDcrnMM",
+    "primaryType": "store"
+  },
+  {
+    "name": "Aardbeien Plukken",
+    "address": "Kanaalpad Noord-West 1, 2231 NX Rijnsburg",
+    "lat": 52.1967271,
+    "lng": 4.442376299999999,
+    "placeId": "ChIJo7DPlLXAxUcRd85vsD7bmds",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "Aardbeienautomaat",
+    "address": "Buurtweg 5, 4635 RN Huijbergen",
+    "lat": 51.4384035,
+    "lng": 4.387151,
+    "placeId": "ChIJQd-frz8TxEcRHXaAnmswXlA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Aardbeienautomaat hoeve kempiko",
+    "address": "Weidestraat 52, 2450 Meerhout, België",
+    "lat": 51.121444999999994,
+    "lng": 5.0301608,
+    "placeId": "ChIJe0YayUFJwUcRhZ5WMDHQPNc",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Akker Ei Heesch",
+    "address": "Bosschebaan 27, 5384 VX Heesch",
+    "lat": 51.7319223,
+    "lng": 5.503671799999999,
+    "placeId": "ChIJwYpMMbD8xkcRzYRRQbTbxME",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Akkerhof",
+    "address": "Lemierserberg 7, 6291 NM Vaals",
+    "lat": 50.778301,
+    "lng": 6.0065937,
+    "placeId": "ChIJuxN7vU2XwEcR3j30yvjuFsk",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Akkerwikke",
+    "address": "Wanweg tegenover, Oude Molenweg 36, 6227 XV Maastricht",
+    "lat": 50.837591599999996,
+    "lng": 5.736911,
+    "placeId": "ChIJWaHHKi7qwEcRqa1646tyAiA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "André Hoeve",
+    "address": "Noord-Spierdijkerweg 179, 1643 NM Spierdijk",
+    "lat": 52.656481299999996,
+    "lng": 4.9498076,
+    "placeId": "ChIJbXJ79xaryEcRDjnxVyI7x0Y",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Annemieke's Pluktuin",
+    "address": "Haarlemmerstraat 15A, 2182 HA Hillegom",
+    "lat": 52.3123577,
+    "lng": 4.5882149,
+    "placeId": "ChIJM8sXLKrpxUcRuRBleoXxv2E",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Appeltje - Eitje (boerderijautomaat)",
+    "address": "Stadspoort, 6716 RH Ede",
+    "lat": 52.017970299999995,
+    "lng": 5.6508766999999995,
+    "placeId": "ChIJtYSyrB1TxkcRowIVy-ck3fg",
+    "primaryType": "market"
+  },
+  {
+    "name": "Appeltje - Eitje (boerderijwinkel)",
+    "address": "Kleine Oord 175, 6811 HZ Arnhem",
+    "lat": 51.980073399999995,
+    "lng": 5.9059928,
+    "placeId": "ChIJywIanGylx0cRu9guFuYdmMg",
+    "primaryType": "store"
+  },
+  {
+    "name": "Asperges Limburg A2",
+    "address": "Mildert 5, 6031 SM Nederweert",
+    "lat": 51.24071970000001,
+    "lng": 5.7948227,
+    "placeId": "ChIJpSuXU3czx0cRtdnB7UtQTgk",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Automaat voor Aardbeien - 't Raakske",
+    "address": "Rakestraat 2, 8750 Wingene, België",
+    "lat": 51.069312599999996,
+    "lng": 3.300728,
+    "placeId": "ChIJz-Y9-4tFw0cRTfKiw01P81g",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Automaat- aardbeien en aardappelen Evers Rudy",
+    "address": "Blandenstraat 200, 3053 Haasrode, België",
+    "lat": 50.8302011,
+    "lng": 4.7197749,
+    "placeId": "ChIJ7djpb39lwUcRF16BKRzloWA",
+    "primaryType": "service"
+  },
+  {
+    "name": "Automaat2Go",
+    "address": "Napoleonsweg 119, 6081 AC Haelen",
+    "lat": 51.2334404,
+    "lng": 5.9627097,
+    "placeId": "ChIJj9zyHTxLx0cRn2GU5V61gKE",
+    "primaryType": "store"
+  },
+  {
+    "name": "B&B De Fruithoeve",
+    "address": "Hertstraat 48, 3732 Bilzen-Hoeselt, België",
+    "lat": 50.8380556,
+    "lng": 5.4461110999999995,
+    "placeId": "ChIJRWGdf7bhwEcRk83OeG2bkSo",
+    "primaryType": "bed_and_breakfast"
+  },
+  {
+    "name": "Baalse Hoef Bloemenboerderij & Pluktuin",
+    "address": "Oordeelstraat 10, 2387 Baarle-Hertog, België",
+    "lat": 51.44932190000001,
+    "lng": 4.9488636999999995,
+    "placeId": "ChIJGUyf-JS7xkcRwb-PgSvQF04",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Baarbeekhoeve",
+    "address": "Baarbeekstraat 24, 2812 Mechelen, België",
+    "lat": 51.005505799999995,
+    "lng": 4.523865,
+    "placeId": "ChIJkXjM9qjmw0cRYjROYapFFGc",
+    "primaryType": "store"
+  },
+  {
+    "name": "Baas Boerderijautomaat",
+    "address": "Leliëndaalseweg 6, 4333 RC Middelburg",
+    "lat": 51.5202294,
+    "lng": 3.6015167,
+    "placeId": "ChIJBQdD2DSRxEcRo1xEqx3SXVo",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Beeren Groenteteelt & Boerderij Automaat | Asperges - Aardbeien",
+    "address": "Brumholt 4, 6086 PW Neer",
+    "lat": 51.2704301,
+    "lng": 5.9660106,
+    "placeId": "ChIJpxYbyjxLx0cRLfLd-aLWmjI",
+    "primaryType": "store"
+  },
+  {
+    "name": "Belevingscentrum Veldzicht Hoeve",
+    "address": "Doorbraakweg 6, 1735 EK 't Veld",
+    "lat": 52.7482385,
+    "lng": 4.847682,
+    "placeId": "ChIJ4SHN_GNTz0cRwr5SnkpPd_8",
+    "primaryType": ""
+  },
+  {
+    "name": "Bij Den Boer | Groente en fruit De Winter",
+    "address": "Vilvoordsesteenweg 53, 1820 Steenokkerzeel, België",
+    "lat": 50.9348113,
+    "lng": 4.4901029,
+    "placeId": "ChIJ0R_gxmXnw0cRrnNqDAaxsxs",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Bij Peer l Boerderijautomaat",
+    "address": "Ingenieur van Meelweg 9, 5512 NN Vessem",
+    "lat": 51.4308518,
+    "lng": 5.2404696,
+    "placeId": "ChIJQZCMPorFxkcRGMGgIIgGzEc",
+    "primaryType": "store"
+  },
+  {
+    "name": "Bio boerderij de Jong Melktap",
+    "address": "Mariadijk 4, 4671 PB Dinteloord",
+    "lat": 51.6068405,
+    "lng": 4.340209499999999,
+    "placeId": "ChIJKy7nDuM_xEcR6PeKh-xD-cE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bio Boerderij Keuper | Puur & Smaakvol",
+    "address": "Nieuweweg 14, 7078 AC Megchelen",
+    "lat": 51.8424956,
+    "lng": 6.3789666,
+    "placeId": "ChIJ59rYYZt_x0cRR5arZ3Hr9_k",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bio-boerderij Den Diepen Boomgaard",
+    "address": "Rijkenhoekstraat 80, 1850 Grimbergen, België",
+    "lat": 50.937954,
+    "lng": 4.373678,
+    "placeId": "ChIJyx0-2Szow0cRb4UxI8Fpwls",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bioboerderij De Kleinaart",
+    "address": "Kleinaartstraat 32, 3832 Ulbeek, België",
+    "lat": 50.8408611,
+    "lng": 5.299545000000001,
+    "placeId": "ChIJNVgppycZwUcRmH5xoj_MLpI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bioboerderij Goedinge",
+    "address": "Goedingenstraat 8, 9051 Gent, België",
+    "lat": 51.037500699999995,
+    "lng": 3.6530974999999994,
+    "placeId": "ChIJVfnDDB1yw0cRpcYkeyeMldI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bioboerderij Het Polderveld",
+    "address": "Westkapellestraat 418, 8300 Knokke-Heist, België",
+    "lat": 51.3183011,
+    "lng": 3.283581,
+    "placeId": "ChIJNaQOROenxEcR_1lXSgeA16s",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bioboerderij Laag Zalk",
+    "address": "Jan Boerswegje 27, 8278 AM Kamperveen",
+    "lat": 52.482977299999995,
+    "lng": 5.9662943,
+    "placeId": "ChIJvQyIVV_Xx0cRZo5960YqGIA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bioboerderij Verduyn / Polderkoeienkaas",
+    "address": "Priempad 12, 3896 LJ Zeewolde",
+    "lat": 52.30668800000001,
+    "lng": 5.37115,
+    "placeId": "ChIJ_8SfFbk-xkcRbqqpYIPtS1c",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologisch melkveebedrijf Hylkema vof",
+    "address": "Westerskatting 8, 8614 AP Oudega",
+    "lat": 53.00208440000001,
+    "lng": 5.546044,
+    "placeId": "ChIJB1zdkR3syEcR9H0RZI7u8rY",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Biologisch Melkveebedrijf Maasland",
+    "address": "Nieuweweg 3, 5106 RA Dongen",
+    "lat": 51.6244264,
+    "lng": 4.9959606999999995,
+    "placeId": "ChIJN1jZhQGXxkcRJvj0q9-auis",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Biologische Boerderij \"Vliervelden\"",
+    "address": "Goethelaan, 1349 EG Almere",
+    "lat": 52.337912499999995,
+    "lng": 5.3341473,
+    "placeId": "ChIJqwaLqhU9xkcRkPkxEe71Kvs",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische Boerderij het Vertrouwen - Wendy de Koning",
+    "address": "Verlengde Roemersdijk 6, 1921 CR Akersloot",
+    "lat": 52.567482999999996,
+    "lng": 4.732137,
+    "placeId": "ChIJG8ordVL4xUcRaKqyISQ7Qg0",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Biologische boerderij Martinizicht",
+    "address": "Westerseweg 2, 9738 AH Groningen",
+    "lat": 53.2593703,
+    "lng": 6.5746924,
+    "placeId": "ChIJS1YgjYTNyUcR27CfH-Her_k",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische Boerderijwinkel & Slager Frohnenbruch",
+    "address": "Schloßallee 81, 47475 Kamp-Lintfort, Duitsland",
+    "lat": 51.507999999999996,
+    "lng": 6.45731,
+    "placeId": "ChIJKyexGX2fuEcRPi5SbgmeR7I",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Biologische boerderijwinkel De Vierslag",
+    "address": "Noorder Hoofddiep 28 A, 7912 TR Nieuweroord",
+    "lat": 52.728690300000004,
+    "lng": 6.5559394,
+    "placeId": "ChIJk8zfF3EbyEcRcAkJ2mDIvkw",
+    "primaryType": "store"
+  },
+  {
+    "name": "Biologische Boerderijwinkel Doelwyck",
+    "address": "Zuidzijdsedijk 31, 3264 LG Nieuw-Beijerland",
+    "lat": 51.7820652,
+    "lng": 4.3665261,
+    "placeId": "ChIJT1grZ3w3xEcRwm2hTDJwgGY",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Biologische Boerderijwinkel Loverendale Ter Linde",
+    "address": "Oranjezonweg 1, 4356 EH Oostkapelle",
+    "lat": 51.576239799999996,
+    "lng": 3.5822996999999996,
+    "placeId": "ChIJSzGUqkKUxEcRVjjNukvehSo",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Biologische Boerderijwinkel Tammer Selfkant GmbH",
+    "address": "Selfkantstraße 146, 52538 Selfkant, Duitsland",
+    "lat": 51.0305895,
+    "lng": 5.9573379,
+    "placeId": "ChIJn55Xylm3wEcRZx_3AMtSHcI",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Biologische eierenautomaat",
+    "address": "Broomsedijk 7, 5684 LM Best",
+    "lat": 51.5077218,
+    "lng": 5.3596318,
+    "placeId": "ChIJHa10dvXdxkcRgX0i6uY6U5U",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Biologische kaasboerderij De Vierhuizen",
+    "address": "Ondermeerweg 10, 2266 HZ Leidschendam",
+    "lat": 52.0952853,
+    "lng": 4.4834799,
+    "placeId": "ChIJh3VygqXIxUcRA7cl_wz4oYk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische melktap",
+    "address": "Groenwegh 1, 2355 CW Hoogmade",
+    "lat": 52.1647836,
+    "lng": 4.5850634999999995,
+    "placeId": "ChIJIaHRGlrFxUcRFcjjtaGXqPw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische Melktap Oene",
+    "address": "Grote Weteringdijk 16, 8167 PR Oene",
+    "lat": 52.3513837,
+    "lng": 6.0606309,
+    "placeId": "ChIJNafiwkDDx0cR9UNfN5jsOVU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische Schapenboerderij De Zeekraal",
+    "address": "Oosterend 17, 8897 HW Oosterend Terschelling",
+    "lat": 53.4039302,
+    "lng": 5.3756968,
+    "placeId": "ChIJB98cZoYkyUcRxdBTQGniVKA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische Tuinderij Land en Boschzigt",
+    "address": "Leeuwenlaan 34, 1243 KB 's-Graveland",
+    "lat": 52.2377828,
+    "lng": 5.1320596,
+    "placeId": "ChIJebg6tMdsxkcRdhCaH67T2lw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische Tuinderij Rafelder",
+    "address": "Driekoningenweg 1, 7075 DX Etten",
+    "lat": 51.8980155,
+    "lng": 6.3297275,
+    "placeId": "ChIJ64AbE6yDx0cRBYOKsNydLyk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biotuin Dijklandhoeve",
+    "address": "Luttekeweg 1, 8031 LL Zwolle",
+    "lat": 52.5356821,
+    "lng": 6.0831498999999996,
+    "placeId": "ChIJe4VjwtrZx0cRAgUQdPzjmMA",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "BioTuinderij G. van Brakel",
+    "address": "Ceciliaweg 11, 4697 RV Sint-Annaland",
+    "lat": 51.592032599999996,
+    "lng": 4.1101715,
+    "placeId": "ChIJ7a7fPudnxEcRgWGQQoHU0Tg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Blauwe bessen 't Gijsbemdenhof Hoeveautomaat",
+    "address": "Vlimmersendijk 60, 2390 Malle, België",
+    "lat": 51.2971139,
+    "lng": 4.7666099,
+    "placeId": "ChIJjyOAnJ6rxkcR-Dq-41H4_I0",
+    "primaryType": "store"
+  },
+  {
+    "name": "Blauwe Bessen Boerderij",
+    "address": "Gasselterboerveen 30, 9514 BS Gasselternijveen",
+    "lat": 53.004185899999996,
+    "lng": 6.8417007,
+    "placeId": "ChIJqR0EPuzZt0cRihL6VtmRy8c",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Blauwebessenkwekerij en bloemenpluktuin \"zeldenrust\"",
+    "address": "Wapserauwen 6, 7983 KE Wapse",
+    "lat": 52.8440322,
+    "lng": 6.243023399999999,
+    "placeId": "ChIJ0X_Yo95qyEcR7kmfoEVfP-I",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Blij op de Boerderij Zorgboerderij Dagbesteding volwassenen en ouderenzorg",
+    "address": "Keinsmerweg 88a, 1756 CE 't Zand",
+    "lat": 52.8275892,
+    "lng": 4.7684974,
+    "placeId": "ChIJT1dLpw5Pz0cRZbTjP3kWID0",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Blije Zuivel & Bonthuis Angus Beef",
+    "address": "Hebbrodweg 3, 7625 RB Zenderen",
+    "lat": 52.3153358,
+    "lng": 6.7418116,
+    "placeId": "ChIJWVouAbYIuEcRWSNPxrXHD-M",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bloemenboerderij",
+    "address": "Dikemaweg 10, 9957 NB Saaxumhuizen",
+    "lat": 53.382767699999995,
+    "lng": 6.5031875,
+    "placeId": "ChIJAbWgyVTPyUcRmnTgOYrTeSk",
+    "primaryType": "event_venue"
+  },
+  {
+    "name": "Bloemenboerderij Pluktuin Hof Zjevernie",
+    "address": "Korte Heerenstraat 5, 4501 PE Oostburg",
+    "lat": 51.3354594,
+    "lng": 3.5099527,
+    "placeId": "ChIJQ0t6rzGfxEcRh0aDr_SRBi8",
+    "primaryType": "florist"
+  },
+  {
+    "name": "Bloemenboerderij, Theetuin & Pluktuin Hemmekink",
+    "address": "Keijenborgseweg 24, 7021 LW Zelhem",
+    "lat": 52.020204,
+    "lng": 6.293583,
+    "placeId": "ChIJ_98uDn6bx0cRbjb5KdB0nCY",
+    "primaryType": "tea_house"
+  },
+  {
+    "name": "Bloemenpluktuin en Mini-kwekerij Volvelds",
+    "address": "Dorpsstraat 28A, 6998 AB Laag-Keppel",
+    "lat": 51.9944839,
+    "lng": 6.2238967999999995,
+    "placeId": "ChIJ1S5FUm2bx0cRl_Ai0uIGA88",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Boederijautomaat Favorite",
+    "address": "Dillingsweg 3, 4308 NV Sirjansland",
+    "lat": 51.6794513,
+    "lng": 4.0336798,
+    "placeId": "ChIJIyTbjvpdxEcRorRupteRUSQ",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boer en Goed Streekwinkel",
+    "address": "Poort Groene Hart, Groene Hartplein 4, 2381 GS Zoeterwoude",
+    "lat": 52.1280925,
+    "lng": 4.4948825999999995,
+    "placeId": "ChIJWeKV-WzGxUcRSYI3LunCYQs",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderij / Veehouderij Dros - Van Sambeek",
+    "address": "Harkebuurt 4, 1794 HM Oosterend",
+    "lat": 53.087494299999996,
+    "lng": 4.861422699999999,
+    "placeId": "ChIJ12EskOgxz0cRYew1l9aKkwo",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderij Achtervennen",
+    "address": "Monnickendammerrijweg 54, 1452 PN Ilpendam",
+    "lat": 52.457535799999995,
+    "lng": 4.9655667,
+    "placeId": "ChIJtcwTNmgGxkcRrqpAfIZGZqI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij automaat",
+    "address": "Rietgoorsestraat 90, 4708 PE Roosendaal",
+    "lat": 51.4956926,
+    "lng": 4.4243996999999995,
+    "placeId": "ChIJZd_zuZQRxEcRX0Qa5yBsai4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij automaat",
+    "address": "Hoogedijk 16, 1145 PM Katwoude",
+    "lat": 52.4672317,
+    "lng": 5.0442276,
+    "placeId": "ChIJUSrEvggFxkcRveeIQ__jkXw",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "Boerderij automaat",
+    "address": "Heawei 42, 8406 AW Tijnje",
+    "lat": 53.0176782,
+    "lng": 5.9880538,
+    "placeId": "ChIJGfZ1NwBbyEcRqhSRDlEfsUc",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderij Automaat",
+    "address": "Postelsedijk 13A, 5541 NM Reusel",
+    "lat": 51.3253877,
+    "lng": 5.171485,
+    "placeId": "ChIJLwXYfm3JxkcRQD0CBW0CDS0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij automaat Breda",
+    "address": "Rithsestraat 100, 4838 GC Breda",
+    "lat": 51.5664034,
+    "lng": 4.7292464999999995,
+    "placeId": "ChIJQzMDM94fxEcRl985iu9VKC8",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "Boerderij automaat de Klispoel",
+    "address": "Kasteelselaan 2, 6574 AJ Ubbergen",
+    "lat": 51.8355154,
+    "lng": 5.9112769,
+    "placeId": "ChIJiXGXThMJx0cRu9H7kAnk8Ic",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderij Automaat Prinsen",
+    "address": "Borculoseweg 40, 7273 SJ Haarlo",
+    "lat": 52.111093499999996,
+    "lng": 6.5672529,
+    "placeId": "ChIJb0F9QgB1uEcRDQOrYn_zu4E",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij automaat Timmermans",
+    "address": "Overloonseweg 11c, 5821 EE Vierlingsbeek",
+    "lat": 51.58906520000001,
+    "lng": 5.990719899999999,
+    "placeId": "ChIJvcDLU4Rrx0cRu9W5yDTXprc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Automaat van Haperen",
+    "address": "Rithsestraat 100, 4838 GC Breda",
+    "lat": 51.5664034,
+    "lng": 4.7292464999999995,
+    "placeId": "ChIJvQWwbAAfxEcRO4jpioMtLLw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Boterhuys",
+    "address": "Zijldijk 7, 2362 AE Warmond",
+    "lat": 52.1866105,
+    "lng": 4.5276127,
+    "placeId": "ChIJPS5r1AbExUcRzz3i4FMk-LM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij de Jong",
+    "address": "Noorddammerweg 93, 1187 ZS Amstelveen",
+    "lat": 52.265396499999994,
+    "lng": 4.8127040999999995,
+    "placeId": "ChIJv1ysJQ7hxUcRlVbV3lzgJ2E",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderij De Kikkershoek",
+    "address": "Maasweg 3, 3271 LH Mijnsheerenland",
+    "lat": 51.8079988,
+    "lng": 4.4828844,
+    "placeId": "ChIJHxEbmN8wxEcRN5M7DzIJg8Q",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij de Oude Ruif",
+    "address": "Ruifweg 5, 3835 PN Stoutenburg",
+    "lat": 52.1571101,
+    "lng": 5.4404091999999995,
+    "placeId": "ChIJGajqgLZHxkcRM_WHWVzTOiE",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderij Den Hollander",
+    "address": "Ammonslaantje 40, 2241 BR Wassenaar",
+    "lat": 52.1510509,
+    "lng": 4.4227361,
+    "placeId": "ChIJNQSbB3jHxUcR0Jx1nrmjWEk",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderij Eetmeerbosch 🚜",
+    "address": "Scherpenkampweg 50, 6545 AL Nijmegen",
+    "lat": 51.8441677,
+    "lng": 5.7978622,
+    "placeId": "ChIJy4IG8LYHx0cReXNOkh602_4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Föllings",
+    "address": "Hatertseweg 37, 6581 KD Malden",
+    "lat": 51.798849399999995,
+    "lng": 5.828502599999999,
+    "placeId": "ChIJi-S7lq4Ix0cReA1MWPNK7cc",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderij Groeizaam Winkel",
+    "address": "Pilotenweg 7A, 8303 EG Emmeloord",
+    "lat": 52.70825920000001,
+    "lng": 5.7225243,
+    "placeId": "ChIJI7mVLUSGyEcRmMtN7ExxNlk",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderij Hof van Heden Geervliet",
+    "address": "Ringdijk 14, 3211 LG Geervliet",
+    "lat": 51.8482518,
+    "lng": 4.2605946,
+    "placeId": "ChIJleXyQU1JxEcRwxsWdOVtOf0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Hoitsma",
+    "address": "Getswerderdyk 2, 8802 PL Franeker",
+    "lat": 53.201026899999995,
+    "lng": 5.5285778,
+    "placeId": "ChIJrcFssRfhyEcRuW8OG0gLHik",
+    "primaryType": ""
+  },
+  {
+    "name": "Boerderij Koldermelk",
+    "address": "Kolderveense Bovenboer 4, 7948 LV Nijeveen",
+    "lat": 52.744755299999994,
+    "lng": 6.1546397,
+    "placeId": "ChIJh33q3VxtyEcRS9ydjManC1k",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderij Landzicht Biologisch Groentenabonnement",
+    "address": "Broekseweg 2A, 3291 LA Strijen",
+    "lat": 51.743669,
+    "lng": 4.5801752,
+    "placeId": "ChIJJdVJzxQlxEcRf1ssutz7QvI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Migchels",
+    "address": "Veenhuizerweg 6, 9591 TB Onstwedde",
+    "lat": 53.0250531,
+    "lng": 7.0110917,
+    "placeId": "ChIJeYJaU5LPt0cRvV73JQQXcWg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Op den goede weg",
+    "address": "Noorderweg 3, 7936 TR Tiendeveen",
+    "lat": 52.746052,
+    "lng": 6.549738,
+    "placeId": "ChIJfx7hNpgbyEcR5mCuihdLOxI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Polderzicht",
+    "address": "Polderweg 23, 1191 JR Ouderkerk aan de Amstel",
+    "lat": 52.290979099999994,
+    "lng": 4.898909499999999,
+    "placeId": "ChIJBYokueQKxkcR5CC1ghen3Lg",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderij Ruimzicht",
+    "address": "Bielemansdijk 11A, 7025 CN Halle",
+    "lat": 52.0110847,
+    "lng": 6.4138103,
+    "placeId": "ChIJ1-lIogSGx0cRPkT-eiiKAHA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Sinneveld",
+    "address": "De Veenen 14, 2082 VS Santpoort-Zuid",
+    "lat": 52.412934199999995,
+    "lng": 4.63342,
+    "placeId": "ChIJ65EDhrvvxUcR-ljGFxkm-ss",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij te Winkel",
+    "address": "Vredenseweg 176, 7105 CC Winterswijk Huppel",
+    "lat": 51.994448,
+    "lng": 6.773637399999999,
+    "placeId": "ChIJNbdfrH9luEcRoto9qE9N6WQ",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderij Ter Coulster/V.O.F. Brouwer De Koning",
+    "address": "Kennemerstraatweg 432, 1851 BL Heiloo",
+    "lat": 52.598423,
+    "lng": 4.7179334,
+    "placeId": "ChIJqwAJhw34xUcR68mOjY40QzA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Tober",
+    "address": "Busterweg 30, 4153 RJ Beesd",
+    "lat": 51.916377399999995,
+    "lng": 5.1912517,
+    "placeId": "ChIJbf7LGlthxkcRcoJOKe-m07w",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderij Weidegoed",
+    "address": "Rijksstraatweg 168, 1968 LM Heemskerk",
+    "lat": 52.526008399999995,
+    "lng": 4.6504968,
+    "placeId": "ChIJk6E1PtzxxUcRIZHwqoSrZpg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijautomaat",
+    "address": "Rietstraat 21, 4561 SK Hulst",
+    "lat": 51.305469200000005,
+    "lng": 4.0589869,
+    "placeId": "ChIJ8yPHFgB5xEcRddRyPdR9aCo",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijautomaat",
+    "address": "Provincialeweg 8, 3329 KP Dordrecht",
+    "lat": 51.7901148,
+    "lng": 4.750839,
+    "placeId": "ChIJ600v9sopxEcR0PlX7Z-asQ8",
+    "primaryType": "supermarket"
+  },
+  {
+    "name": "Boerderijautomaat Aan de baan",
+    "address": "Roosendaalseweg 44, 4741 TV Hoeven",
+    "lat": 51.5573838,
+    "lng": 4.5700761,
+    "placeId": "ChIJkc0LjdkZxEcR6lQEVg6Yigo",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijautomaat BoerenGeluk",
+    "address": "Rijnlanderweg 1547, 2153 KG Nieuw-Vennep",
+    "lat": 52.2425748,
+    "lng": 4.6412583,
+    "placeId": "ChIJ_4Y6X67dxUcRdaB5ST3W5ik",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijautomaat De Kievit",
+    "address": "Zuiderzeestraatweg 23, 3882 NC Putten",
+    "lat": 52.267286500000004,
+    "lng": 5.5579209,
+    "placeId": "ChIJ1yUYF843xkcR-6TkeiAC0n4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijautomaat Grimme",
+    "address": "Paradijsvogelweg 6, 1349 CB Almere",
+    "lat": 52.3533605,
+    "lng": 5.3181416,
+    "placeId": "ChIJj23x5YQ9xkcRv2iVsSirps8",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "Boerderijautomaat Hooijer",
+    "address": "Barneveldseweg 6a, 6731 EK Otterlo",
+    "lat": 52.1044385,
+    "lng": 5.7528115,
+    "placeId": "ChIJkdClPCSzx0cR8eT8qtlGycY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijautomaat Lerop",
+    "address": "Leropperweg 19, 6077 NW Sint Odiliënberg",
+    "lat": 51.1689395,
+    "lng": 5.9852761999999995,
+    "placeId": "ChIJwc8T7HW1wEcRcU-Z62mVSfE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijautomaat Minnen",
+    "address": "Lunterseweg 57, 6718 WD Ede",
+    "lat": 52.0657777,
+    "lng": 5.6366686,
+    "placeId": "ChIJP5P-aF1NxkcRmxs8OdFvd_k",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijautomaat van de Boerr",
+    "address": "Hofmanssteeg 7, 7722 SC Dalfsen",
+    "lat": 52.523779499999996,
+    "lng": 6.2873494999999995,
+    "placeId": "ChIJQSJFidDhx0cR9pEIgLPYVVk",
+    "primaryType": ""
+  },
+  {
+    "name": "Boerderijautomaat Van Ginkel's fruitteeltbedrijf",
+    "address": "Emelaarseweg 5, 3791 PS Achterveld",
+    "lat": 52.1486808,
+    "lng": 5.457614,
+    "placeId": "ChIJwzIHwf1FxkcRiAEcWx2LPCM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijautomaat Walbroek",
+    "address": "Heumenseweg 83, 6603 KT Wijchen",
+    "lat": 51.800177,
+    "lng": 5.7620621,
+    "placeId": "ChIJywgyT_oHx0cRm86HzFtrY84",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijproducten",
+    "address": "Tarpanweg 21, 8255 RT Swifterbant",
+    "lat": 52.5694181,
+    "lng": 5.6590796,
+    "placeId": "ChIJ6ZUtmzktxkcRWeiP1zqBrto",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijshop",
+    "address": "Watervlietseweg 22a, 4515 SB IJzendijke",
+    "lat": 51.312206100000004,
+    "lng": 3.6175031,
+    "placeId": "ChIJCXp3BXOdxEcRlT9sQmlxJ0c",
+    "primaryType": "garden_center"
+  },
+  {
+    "name": "Boerderijwinkel",
+    "address": "1795 KL De Cocksdorp",
+    "lat": 53.134398000000004,
+    "lng": 4.821086,
+    "placeId": "ChIJMaTxg8Mvz0cRqQ0qLeaBC9U",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "Boerderijwinkel - N. de Jong Ternaard",
+    "address": "Hantumerwei 10, 9145 CL Ternaard",
+    "lat": 53.377148999999996,
+    "lng": 5.964251,
+    "placeId": "ChIJJe5bJDSoyUcRXiwaZSF88cs",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel 'Nooit Gedacht'",
+    "address": "Overeindseweg 35, 3439 LP Nieuwegein",
+    "lat": 52.038474,
+    "lng": 5.1247243,
+    "placeId": "ChIJpYylONVlxkcRgNal04LEmIk",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel 't Koehotel",
+    "address": "Laanweg 9, 1847 LM Zuidschermer",
+    "lat": 52.598402099999994,
+    "lng": 4.798905899999999,
+    "placeId": "ChIJzZ1t5dj5xUcRGi2Fbcz0Kiw",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel 't Loopt in de Soep, ook verkoop van kalfsvlees",
+    "address": "Oude Baan 1, 4861 RM Chaam",
+    "lat": 51.4887337,
+    "lng": 4.8630797,
+    "placeId": "ChIJNas1RnukxkcRzbw7-YAX0vE",
+    "primaryType": "market"
+  },
+  {
+    "name": "Boerderijwinkel 't Zwaantje",
+    "address": "Rijksstraatweg 167, 3222 KD Hellevoetsluis",
+    "lat": 51.8466331,
+    "lng": 4.1388523,
+    "placeId": "ChIJB43uxqtRxEcRHqrYFxXWRPA",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel 't Zwien Drents (H)eerlijk scharrelvarkensvlees",
+    "address": "Lutmarsweg 6, 7863 PX Gees",
+    "lat": 52.7525544,
+    "lng": 6.6901103,
+    "placeId": "ChIJx3amjW3jt0cR_B4o0cDihm4",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderijwinkel \"De Veldmaat\"",
+    "address": "Veldmatenweg 5, 7581 PP Losser",
+    "lat": 52.285430899999994,
+    "lng": 6.9993,
+    "placeId": "ChIJd9z3hswXuEcRxb_9r5eTRfg",
+    "primaryType": "butcher_shop"
+  },
+  {
+    "name": "Boerderijwinkel \"in 't Anker\"",
+    "address": "Schoorse Bredeweg 1, 4423 PA Schore",
+    "lat": 51.471963,
+    "lng": 3.9872373000000003,
+    "placeId": "ChIJ6YA5OWZjxEcRINZda6eEV8I",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel \"ut èèrepelschuurke\"",
+    "address": "Achterdijk 89, 4761 RC Zevenbergen",
+    "lat": 51.657097199999995,
+    "lng": 4.626346,
+    "placeId": "ChIJ91ghyfEjxEcRckuNQiMgFR4",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel & Asperges Godrie",
+    "address": "Zwart Moerken 3, 4891 TK Rijsbergen",
+    "lat": 51.527354599999995,
+    "lng": 4.6963357,
+    "placeId": "ChIJJWfTh04fxEcRrp625Hp6aB8",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel & Bakkerij",
+    "address": "Noordstraat 44, 4493 AH Kamperland",
+    "lat": 51.5740206,
+    "lng": 3.7053165999999993,
+    "placeId": "ChIJozl-tHmSxEcRCeKrz9JFyN8",
+    "primaryType": "bakery"
+  },
+  {
+    "name": "Boerderijwinkel Appeltje-Eitje",
+    "address": "Zeestraat 48a, 2211 XJ Noordwijkerhout",
+    "lat": 52.266755599999996,
+    "lng": 4.4832658,
+    "placeId": "ChIJxeJ6t3rBxUcRgJ2RAUAuFvI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel Bakkenes",
+    "address": "Veenstraat 7, 6741 EC Lunteren",
+    "lat": 52.0770439,
+    "lng": 5.6371381,
+    "placeId": "ChIJS2Apu2pNxkcRUOp4vH1RLcQ",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Berkelaar",
+    "address": "Heiweg 1, 6101 XS Echt",
+    "lat": 51.1229464,
+    "lng": 5.8722517,
+    "placeId": "ChIJi6TYERvKwEcROdvcmsKxHZU",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel Boltahûs",
+    "address": "Boltawei 8, 9133 DZ Eanjum",
+    "lat": 53.3863462,
+    "lng": 6.110505799999999,
+    "placeId": "ChIJv7Ek6RSvyUcResRmyYcjbrM",
+    "primaryType": "market"
+  },
+  {
+    "name": "Boerderijwinkel Bosheurne",
+    "address": "Ruurloseweg 47, 7244 PC Barchem",
+    "lat": 52.1150202,
+    "lng": 6.445134599999999,
+    "placeId": "ChIJe-8pPSCLx0cRDKhPk9GU1sg",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel brouwer nieuwaal",
+    "address": "Middelkampseweg 36, 5313 BE Nieuwaal",
+    "lat": 51.8012744,
+    "lng": 5.1632842,
+    "placeId": "ChIJp72Wc1SNxkcRzn9AErxOhuI",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Claassen",
+    "address": "Gastelsedijk West 37, 4754 RA Stampersgat",
+    "lat": 51.6028691,
+    "lng": 4.429583099999999,
+    "placeId": "ChIJLbZoVP49xEcRAjLYksrykk4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Cools",
+    "address": "Neerstraat 82, 2440 Geel, België",
+    "lat": 51.1043375,
+    "lng": 4.9541740999999995,
+    "placeId": "ChIJHxRYRTJPwUcRSM4zeVn7SKE",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel Daalhoeve",
+    "address": "Alesiahof 40, 6215 SX Maastricht",
+    "lat": 50.8431402,
+    "lng": 5.652721,
+    "placeId": "ChIJ7e6KdnfpwEcR5bjBFNwKdUE",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel De Beemster Kaaswagen",
+    "address": "Purmerenderweg 23a, 1461 DB Zuidoostbeemster",
+    "lat": 52.556053,
+    "lng": 4.967741999999999,
+    "placeId": "ChIJz-9P9gcBxkcRuQuy7TF7YfQ",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel de Deel",
+    "address": "Vlieterweg 11, 3925 GA Scherpenzeel",
+    "lat": 52.076389199999994,
+    "lng": 5.4884844,
+    "placeId": "ChIJAzpCAcVPxkcRl9TeNV_h0OY",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "boerderijwinkel De Geer",
+    "address": "Flierensestraat 5, 6691 GA Gendt",
+    "lat": 51.8883916,
+    "lng": 5.956357499999999,
+    "placeId": "ChIJGxdfFregx0cR3ZzqbHeTzKA",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel De Grote Koekoek",
+    "address": "Jhr. Dr. J.C, Jonkheer Doctor C.J. Sandbergweg 68, 3852 PV Ermelo",
+    "lat": 52.301366599999994,
+    "lng": 5.7199908,
+    "placeId": "ChIJs1Flz4_Lx0cRx2xEfpNFS0U",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel De Kleine Hope",
+    "address": "Hopeseweg 25, 3927 CS Renswoude",
+    "lat": 52.058237299999995,
+    "lng": 5.5015046,
+    "placeId": "ChIJ_Wx_rtRRxkcR_l1IepKeuEg",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel De Koeboer",
+    "address": "Slagsteeg 33, 3853 MA Ermelo",
+    "lat": 52.3114369,
+    "lng": 5.580959,
+    "placeId": "ChIJ8XcP7Ig3xkcRbcGJMXhfYLM",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel De Lutte-Esch",
+    "address": "Diphoorn 22, 7842 TB Diphoorn",
+    "lat": 52.769431999999995,
+    "lng": 6.820563,
+    "placeId": "ChIJUeqj0jrnt0cRUIg4nnnMF94",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel De Maargies Hoeve",
+    "address": "Kallenkote 19, 8345 HB Kallenkote",
+    "lat": 52.79038190000001,
+    "lng": 6.1613672,
+    "placeId": "ChIJbUBHPwBtyEcRCjuGGBpv8ao",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel de Mosselhoeve",
+    "address": "Hartogsweg 16, 4694 PG Scherpenisse",
+    "lat": 51.53473820000001,
+    "lng": 4.0831916,
+    "placeId": "ChIJP-p8TQFnxEcRWmTya9IWDFI",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel De Poldermeester",
+    "address": "Molenweg 10, 1646 WK Ursem Gem Schermer",
+    "lat": 52.61862180000001,
+    "lng": 4.8735265,
+    "placeId": "ChIJ92TVgNRVz0cReUQy2YbcMss",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel de Vlegert",
+    "address": "Lorbaan 41, 5985 NX Grashoek",
+    "lat": 51.3656492,
+    "lng": 5.9643169,
+    "placeId": "ChIJx7lnZOBHx0cRAw1a72YK--M",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel de Zwaluwhoeve",
+    "address": "Broeklanderweg 24, 7341 PJ Beemte Broekland",
+    "lat": 52.265191099999996,
+    "lng": 5.9990179,
+    "placeId": "ChIJ1S6g16jHx0cRKdZetrKs3Rc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel Dols",
+    "address": "Daalstraat 45, 6181 JP Elsloo",
+    "lat": 50.941133900000004,
+    "lng": 5.769782999999999,
+    "placeId": "ChIJ4z61WknBwEcRacLiuBwlINc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel Els Hoeve",
+    "address": "Van Elzelingenweg 4, 3329 KS Dordrecht",
+    "lat": 51.7609232,
+    "lng": 4.7221467,
+    "placeId": "ChIJ4zPAjQ4pxEcRYrh_690krZ0",
+    "primaryType": "supermarket"
+  },
+  {
+    "name": "Boerderijwinkel en kaasautomaat Noordeloos",
+    "address": "Middenweg 3, 4225 SK Noordeloos",
+    "lat": 51.889697,
+    "lng": 4.9505535,
+    "placeId": "ChIJlXu59_KHxkcRVoKW-slYTtY",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderijwinkel erve Olthof",
+    "address": "Bekkenhaarsweg 8, 7645 AH Hoge Hexel",
+    "lat": 52.402801399999994,
+    "lng": 6.5741938,
+    "placeId": "ChIJuffmWO34x0cROhCam_RAQ7w",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Erve Trees / Melkveebedrijf Winterman",
+    "address": "Achter ‘t Holthuis 3, 7391 TN Twello",
+    "lat": 52.2385448,
+    "lng": 6.1241139,
+    "placeId": "ChIJeYZfNynBx0cR5ckqjA-V-gg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel Feintsje fan Menaam",
+    "address": "Bitgumerdyk 24, 9036 VS Menaam",
+    "lat": 53.2234328,
+    "lng": 5.6761289,
+    "placeId": "ChIJz4uqAc7iyEcRgqnLPT3sVSI",
+    "primaryType": "general_store"
+  },
+  {
+    "name": "Boerderijwinkel Gebr. Spee",
+    "address": "Oude Schoolstraat 2-c, 6367 HD Voerendaal",
+    "lat": 50.8562503,
+    "lng": 5.9434559,
+    "placeId": "ChIJuTLdiAOWwEcRDIMDsUajDr4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Géron",
+    "address": "Pastoor Ruttenstraat 2, 6281 AB Mechelen",
+    "lat": 50.7992249,
+    "lng": 5.9277121,
+    "placeId": "ChIJJ3EH4aGWwEcReTuHGZyGkVI",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Groenteschuurtje",
+    "address": "Oostkapelseweg 87, 4353 EG Serooskerke",
+    "lat": 51.5562092,
+    "lng": 3.5847684,
+    "placeId": "ChIJsawoQBeUxEcRoiTrg1Kz5ok",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Heuts",
+    "address": "Kloosterstraat 16, 6051 JC Maasbracht",
+    "lat": 51.1474811,
+    "lng": 5.898549399999999,
+    "placeId": "ChIJmVNobYa1wEcRSAo-lGvUDyA",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel Heuven",
+    "address": "Reutseplein 10, 5264 PC Vught",
+    "lat": 51.672617900000006,
+    "lng": 5.2884394,
+    "placeId": "ChIJtXwAo9jvxkcRcEQ6rQNUORQ",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Hoeve Ravenstein",
+    "address": "Ravensteinselaan 3, 3744 ML Baarn",
+    "lat": 52.2161609,
+    "lng": 5.2558247,
+    "placeId": "ChIJRVaWs5tqxkcRMj9A2InirEk",
+    "primaryType": "supermarket"
+  },
+  {
+    "name": "boerderijwinkel hogehoeve",
+    "address": "Nieuweweg 4, 4493 PA Kamperland",
+    "lat": 51.5835856,
+    "lng": 3.7210883999999997,
+    "placeId": "ChIJgSzmC3iNxEcRAmyA6OvQqjY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel Hoorn",
+    "address": "Kolonievaart 16, 9336 TC Huis Ter Heide",
+    "lat": 53.0152778,
+    "lng": 6.4338888999999995,
+    "placeId": "ChIJe4-srzs6yEcRpgz95m4oA2s",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Horsting",
+    "address": "Mr, Meester Harm Smeengeweg 20, 9439 TB Witteveen",
+    "lat": 52.8182956,
+    "lng": 6.6470910000000005,
+    "placeId": "ChIJpcFUwL8fyEcRWeYy0UT_ua8",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel Jansen",
+    "address": "Westdijk 8, 3271 LM Mijnsheerenland",
+    "lat": 51.795366599999994,
+    "lng": 4.4732364,
+    "placeId": "ChIJt8gbtMUwxEcRLhz-xp3SDt0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel Kik",
+    "address": "Korte Blokweg 3, 4301 NV Zierikzee",
+    "lat": 51.661070699999996,
+    "lng": 3.9277878000000004,
+    "placeId": "ChIJYa3-bX9fxEcROojohKl_V8Q",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel Klaren",
+    "address": "Boudewijnlaan 15, 8251 RS Dronten",
+    "lat": 52.5222628,
+    "lng": 5.740353499999999,
+    "placeId": "ChIJx9o7sZcrxkcR26uEV6khGs8",
+    "primaryType": "farm"
+  },
+  {
+    "name": "boerderijwinkel Koemkolk V.O.F.",
+    "address": "Koemkolkweg 5, 8097 PG Oosterwolde",
+    "lat": 52.4591783,
+    "lng": 5.907691799999999,
+    "placeId": "ChIJzSa6H9jQx0cR9Z2Eqlkfuk8",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Kokkie's",
+    "address": "Hogeweg 24, 3212 LG Simonshaven",
+    "lat": 51.833053799999995,
+    "lng": 4.297028399999999,
+    "placeId": "ChIJS_ak0lpJxEcRkX8gukAhQzw",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Lenders",
+    "address": "Grubbenvorsterweg 34, 5975 RB Sevenum",
+    "lat": 51.416084299999994,
+    "lng": 6.054134100000001,
+    "placeId": "ChIJQxy05J1Gx0cRxiyoHFF8MvQ",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Manders",
+    "address": "Biesheuvelweg 20, 5752 RH Deurne",
+    "lat": 51.478648299999996,
+    "lng": 5.8064534,
+    "placeId": "ChIJdaj-j188x0cRy_FoAkCwZG0",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel Mertens - Urlings",
+    "address": "Rolduckerweg 43, 6369 GS Simpelveld",
+    "lat": 50.84057,
+    "lng": 5.992264,
+    "placeId": "ChIJQxK_AMmXwEcRvNZaLFO0Y5A",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Natuurlijk!",
+    "address": "Kanaalweg 76, 8171 LT Vaassen",
+    "lat": 52.3019149,
+    "lng": 6.0040776,
+    "placeId": "ChIJ2VF-vhfFx0cRAEfI69xTEP0",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Nieuwenhuis",
+    "address": "Smeenholtenweg 2, 7975 RC Uffelte",
+    "lat": 52.7948599,
+    "lng": 6.258568299999999,
+    "placeId": "ChIJQY9JzbsTyEcRzZvoKmyurpI",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Oer de Wiel",
+    "address": "Bûtefjild 3, 9269 TV Feanwâlden",
+    "lat": 53.250221499999995,
+    "lng": 5.9664518,
+    "placeId": "ChIJ3XZkojqryUcRHtAO6qI4xQE",
+    "primaryType": "health_food_store"
+  },
+  {
+    "name": "Boerderijwinkel Onder de Eik",
+    "address": "Groeneweg 7, 6351 JG Bocholtz",
+    "lat": 50.817018,
+    "lng": 5.9904663,
+    "placeId": "ChIJ9elHqi-XwEcRY7wKXs3vpM0",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Ons Boer'n Erf",
+    "address": "Almeloseweg 110, 7615 NB Harbrinkhoek",
+    "lat": 52.3866947,
+    "lng": 6.728408399999999,
+    "placeId": "ChIJBSfHxTMEuEcRuxt3EXg0eZU",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel oppe Baan",
+    "address": "Waldfeuchterbaan 4, 6105 BM Maria Hoop",
+    "lat": 51.0828304,
+    "lng": 5.938318199999999,
+    "placeId": "ChIJD5v6VSq3wEcRvSjM39IAJes",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel P.J.Smit AGF",
+    "address": "Zuiderweg 81, 1461 GE Zuidoostbeemster",
+    "lat": 52.5163982,
+    "lng": 4.928805,
+    "placeId": "ChIJ9UtaljABxkcRGuBYxHgMjqQ",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel Paulissen",
+    "address": "Prinsenbaan 46, 6104 BG Koningsbosch",
+    "lat": 51.0621717,
+    "lng": 5.966859599999999,
+    "placeId": "ChIJKZoEbi-3wEcRUqxvNNEvQFY",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel Peters",
+    "address": "Hanenbergweg 30, 5753 RC Deurne",
+    "lat": 51.445526099999995,
+    "lng": 5.8235227,
+    "placeId": "ChIJ-ycCr_k7x0cR99XifCvYBrQ",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Petri",
+    "address": "Nagelbeek 17, 6365 EH Schinnen",
+    "lat": 50.936853,
+    "lng": 5.8731868,
+    "placeId": "ChIJzYZ07Ee_wEcRcKiM9tbmgFg",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Piershil",
+    "address": "Buitenom 7, 3265 LM Piershil",
+    "lat": 51.791776899999995,
+    "lng": 4.3204189,
+    "placeId": "ChIJmYqTYa5JxEcRUZTyFM2q-0E",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Pleegsterhof",
+    "address": "Nieuwe Deventerweg 26a, 8101 PL Raalte",
+    "lat": 52.3625654,
+    "lng": 6.256809,
+    "placeId": "ChIJ_QdpMRTpx0cRgBT4C6wuLso",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Runder-Lust",
+    "address": "Eilandseweg 16, 1394 JE Nederhorst Den Berg",
+    "lat": 52.2695188,
+    "lng": 5.0258316999999995,
+    "placeId": "ChIJp7vecTsNxkcRyXB-ozexiF4",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Schaepkens",
+    "address": "Kerkstraat 24b, 6336 BB Hulsberg",
+    "lat": 50.889703999999995,
+    "lng": 5.8586629,
+    "placeId": "ChIJQS57cJS_wEcRGvbPQvA65Sg",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Schout",
+    "address": "Absdaalseweg 82, 4561 RE Hulst",
+    "lat": 51.2719014,
+    "lng": 4.0173692,
+    "placeId": "ChIJn1vu3XiHw0cRLsQW_UI3sl8",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel Smilande",
+    "address": "Eekhoutswijk 5, 9422 VD Smilde",
+    "lat": 52.952922199999996,
+    "lng": 6.4776384,
+    "placeId": "ChIJs5PNzZ08yEcRd8H04CuRaQI",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Suykerbuyk",
+    "address": "Halsterseweg 82, 4661 RN Halsteren",
+    "lat": 51.512747999999995,
+    "lng": 4.277676,
+    "placeId": "ChIJR8-zOppsxEcRogQW-2cxbo8",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel t Duvelshofke",
+    "address": "Duivelsdijk 21, 7574 PB Oldenzaal",
+    "lat": 52.2850113,
+    "lng": 6.9363224,
+    "placeId": "ChIJ4dsMMB4XuEcR_CwA9lS6hUg",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Ten Haaf",
+    "address": "Bredeweg 40, 6595 AT Ottersum",
+    "lat": 51.7105818,
+    "lng": 5.991779800000001,
+    "placeId": "ChIJecIFSkMNx0cRHofcz_lg8uI",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Tielemans",
+    "address": "Leijweg 3, 4854 NT Bavel",
+    "lat": 51.5807065,
+    "lng": 4.8505158,
+    "placeId": "ChIJOS2zufKjxkcRo7sS_QhOt2c",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Tsiis & Sa",
+    "address": "Van Aylvaleane 25, 9027 BM Hijlaard",
+    "lat": 53.1658562,
+    "lng": 5.7161614,
+    "placeId": "ChIJueXf4tP7yEcRGnhqpBe2iCU",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Uitland",
+    "address": "Oost 44, 9285 XL Buitenpost",
+    "lat": 53.2638119,
+    "lng": 6.1998961,
+    "placeId": "ChIJOznGkOyzyUcRCg00hM2J_wk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel van Damme",
+    "address": "Oudekamerseweg 7, 4451 NC Heinkenszand",
+    "lat": 51.462660199999995,
+    "lng": 3.8206422,
+    "placeId": "ChIJF2UMD5iIxEcRxc8qoeE8PXs",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel van den Hurk",
+    "address": "Kesselseweg 11, 5398 HC Maren-Kessel",
+    "lat": 51.7774228,
+    "lng": 5.4074515,
+    "placeId": "ChIJFwvq3zD7xkcRyFhyL1yx860",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel van Harten",
+    "address": "Oudendijkseweg 4, 2481 KE Woubrugge",
+    "lat": 52.1607054,
+    "lng": 4.6253578,
+    "placeId": "ChIJje1yn6rbxUcRYKGMpTiV4SY",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Van Kempen",
+    "address": "Duivenwaardseweg 7, 3244 LH Nieuwe-Tonge",
+    "lat": 51.716939700000005,
+    "lng": 4.1578441999999995,
+    "placeId": "ChIJP3aBt6dFxEcRWwgc-m1wmRU",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel van Wijdhe",
+    "address": "Lindedijk 8, 8374 EA Kuinre",
+    "lat": 52.803533200000004,
+    "lng": 5.862209699999999,
+    "placeId": "ChIJs9EqevxjyEcRJOLEu_-T5Ok",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel van Wijlick",
+    "address": "Krommenhoek 2a, 5953 JV Reuver",
+    "lat": 51.2841725,
+    "lng": 6.0978416,
+    "placeId": "ChIJj0YYbW5Ox0cRjwGkpJkLPS4",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Boerderijwinkel VanHier",
+    "address": "Spookverlaat 2, 2394 MZ Hazerswoude-Rijndijk",
+    "lat": 52.1176135,
+    "lng": 4.608426199999999,
+    "placeId": "ChIJ1RupqQvFxUcRWToocRWzL6A",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Verdaasdonk, Sint Anthonis",
+    "address": "Stevensbeekseweg 3-A, 5845 ER Sint Anthonis",
+    "lat": 51.621376899999994,
+    "lng": 5.8997152999999996,
+    "placeId": "ChIJg8bh8vgTx0cRYpALHA0a-_g",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Vrielink's Zuivel & Vlees te Deurningen",
+    "address": "Oude Deurningerstraat 8, 7561 PJ Deurningen",
+    "lat": 52.3227729,
+    "lng": 6.8610171,
+    "placeId": "ChIJQW6FNtgRuEcRaYgjDnlAIiU",
+    "primaryType": "market"
+  },
+  {
+    "name": "Boerderijwinkel Wierenga",
+    "address": "Stadsweg 3, 9885 PA Lauwerzijl",
+    "lat": 53.3088796,
+    "lng": 6.294042999999999,
+    "placeId": "ChIJuUfztCC0yUcRxJpHSTULpQk",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderijwinkel Woestenenk",
+    "address": "Marsmansteeg 2, 7245 WG Laren",
+    "lat": 52.195901,
+    "lng": 6.373894,
+    "placeId": "ChIJ5W8nZ87yx0cRkzZkPRA3fI0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel Zevenbergen",
+    "address": "Koekendorpseweg 1, 3214 LE Zuidland",
+    "lat": 51.8163049,
+    "lng": 4.254097799999999,
+    "placeId": "ChIJt0HcyipPxEcRMDe1xr33LIQ",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel Zuiderhof",
+    "address": "Heensedijk 18, 4655 AL De Heen",
+    "lat": 51.609874299999994,
+    "lng": 4.2735388,
+    "placeId": "ChIJN5J4CURBxEcRAQD5dhkL8VY",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerderijwinkel, Zorg en Educatie Dijk43",
+    "address": "Krommedijk 43, 7381 BT",
+    "lat": 52.1849047,
+    "lng": 6.0383271999999995,
+    "placeId": "ChIJ56DWOxW_x0cRFVoDTP8Hgno",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderijwinkel: Bij ons thuis",
+    "address": "Stoppelveldseweg 4, 5473 RR Heeswijk Dinther",
+    "lat": 51.666342799999995,
+    "lng": 5.493688199999999,
+    "placeId": "ChIJ48Y60HnjxkcRQ0JZdp-UQvs",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkel/ Rustpunt 't Hedevelds Bio Ei. /pluimveebedrijf mts Jannink-Schabbink",
+    "address": "Lodiek Landen 2, 7626 NA Hertme",
+    "lat": 52.3166605,
+    "lng": 6.7543622,
+    "placeId": "ChIJOV4BhqEPuEcRBGE6bL18wHU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijwinkeltje",
+    "address": "Postweg 17, 1795 JJ De Cocksdorp",
+    "lat": 53.1056878,
+    "lng": 4.8105965,
+    "placeId": "ChIJhUTEk60xz0cR8tphuFN993w",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boeren in het Bos",
+    "address": "Bovenweg 23, 8422 DG Nijeberkoop",
+    "lat": 52.9555181,
+    "lng": 6.1853318999999995,
+    "placeId": "ChIJERg-5V05yEcRBIabSj0wY-o",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boeren Pitstop",
+    "address": "Erkemederpad 2, 3896 LX Zeewolde",
+    "lat": 52.2732454,
+    "lng": 5.4804409,
+    "placeId": "ChIJlZ-ONSw4xkcR6R6eg3HYqEY",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boeren softijs automaat",
+    "address": "Neervenweg 68, 2990 Wuustwezel, België",
+    "lat": 51.394521700000006,
+    "lng": 4.6310356,
+    "placeId": "ChIJyyt0N44DxEcR4YBANezAl1Y",
+    "primaryType": "ice_cream_shop"
+  },
+  {
+    "name": "Boeren softijs en eierenautomaat",
+    "address": "Coelhorsterweg 31, 3828 PA Hoogland",
+    "lat": 52.183368900000005,
+    "lng": 5.3491453,
+    "placeId": "ChIJm1BrFwBBxkcRo44ohR_fRLw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "BoerEnCompagnie",
+    "address": "Abdijstraat 114, 3001 Leuven, België",
+    "lat": 50.859071899999996,
+    "lng": 4.723840099999999,
+    "placeId": "ChIJncTR_pNnwUcRnJYL-_WWKAg",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Boerenlandwinkel en zorgboerderij Riekjeshoeve",
+    "address": "Brandwijksedijk 28A, 2974 LC Brandwijk",
+    "lat": 51.8920189,
+    "lng": 4.8206020999999994,
+    "placeId": "ChIJO5kFm0WAxkcRf2ELTQbCUrU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerenzuivel van Claudia",
+    "address": "Warfslatweg 5, 7152 CA Eibergen",
+    "lat": 52.090103299999996,
+    "lng": 6.652139399999999,
+    "placeId": "ChIJHz14wOJzuEcRVyHhadP9vZw",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Boerket zelfpluktuin Beringen",
+    "address": "Hagelsteenstraat 28, 3580 Beringen, België",
+    "lat": 51.036611,
+    "lng": 5.234916999999999,
+    "placeId": "ChIJ-_Cu98w7wUcRf2Y_lUWGo34",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Bosjes Fruit",
+    "address": "Bosje 3, 9511 PH Gieterveen",
+    "lat": 53.0230543,
+    "lng": 6.868337,
+    "placeId": "ChIJXShqG6vQt0cRZJELdoWk6g4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boter-Kaas-Eieren Vlooswijk",
+    "address": "IJsselveld 13, 3417 XH Montfoort",
+    "lat": 52.0461872,
+    "lng": 4.9379136,
+    "placeId": "ChIJzUW5lYB7xkcRMQOQkEZO7Ck",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bouwmeester Eieren",
+    "address": "Schuttestraat 26, 7251 MZ Vorden",
+    "lat": 52.0813996,
+    "lng": 6.3825525999999995,
+    "placeId": "ChIJPyBVv-yOx0cR6yFe07_1nZQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Buk en Pluk-Open pluktuin met bloemen en bessen",
+    "address": "Lindestraat 53,het verlengde, 3220 Holsbeek, België",
+    "lat": 50.9126343,
+    "lng": 4.7794053,
+    "placeId": "ChIJcQhBG8tnwUcRXugKqUs7zQI",
+    "primaryType": "florist"
+  },
+  {
+    "name": "Creemers Eieren",
+    "address": "Brandvenstraat 3, 6011 SH Ell",
+    "lat": 51.2106127,
+    "lng": 5.787979399999999,
+    "placeId": "ChIJd9UkFk4zx0cRQnfikQQ36GQ",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Crijns boerderijwinkel",
+    "address": "Bergerweg 108, 6167 RH Geleen",
+    "lat": 50.999592899999996,
+    "lng": 5.7971468999999995,
+    "placeId": "ChIJ53thmpzHwEcRBV07ZWn7jOE",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "CSA – Hoeve Het Blokhuis",
+    "address": "Herkkantstraat 28, 3540 Herk-de-Stad, België",
+    "lat": 50.9373229,
+    "lng": 5.2026429,
+    "placeId": "ChIJlfT5Ph49wUcR3wwkULtuHo4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "CSA boerderij 't Lekkerland",
+    "address": "37J8+2W, 2870 Puurs-Sint-Amands, België",
+    "lat": 51.0800572,
+    "lng": 4.267373399999999,
+    "placeId": "ChIJLz4S-7Xtw0cRSb9cW642Djs",
+    "primaryType": "farm"
+  },
+  {
+    "name": "CSA De Moeiakker",
+    "address": "Moeie 49, 9900 Eeklo, België",
+    "lat": 51.1815388,
+    "lng": 3.5554938999999997,
+    "placeId": "ChIJqWk9dJ5mw0cR8F-mcNAFZvI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Cultura Fruit",
+    "address": "Keldenaar 1, 6155 NM Puth",
+    "lat": 50.9610899,
+    "lng": 5.8618412,
+    "placeId": "ChIJJSXKuKW4wEcRyOkb3w7hu7o",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "De Aardappelautomaat",
+    "address": "Prinsenpolderstraat 140, 4921 KZ Made",
+    "lat": 51.685028599999995,
+    "lng": 4.784368199999999,
+    "placeId": "ChIJIwt4R8SdxkcRkjspP9aRsXQ",
+    "primaryType": "store"
+  },
+  {
+    "name": "De Bergense Melk Salon",
+    "address": "Baakmeerdijk 15, 1862 PZ Bergen",
+    "lat": 52.6737554,
+    "lng": 4.7333975,
+    "placeId": "ChIJS07nuSJXz0cR7KEqOCptz7o",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Boer op Automaat",
+    "address": "Halvinkhuizerweg 125, 3882 LA Putten",
+    "lat": 52.2482125,
+    "lng": 5.597321399999999,
+    "placeId": "ChIJkyVP2Wg1xkcRObdP0Lyqyok",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "De Boerderijwinkel",
+    "address": "Staatsbaan 99, 3460 Bekkevoort, België",
+    "lat": 50.9516582,
+    "lng": 4.995826999999999,
+    "placeId": "ChIJWbZOE_RBwUcRDYAYwJ0r9Gk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Boerenstreek",
+    "address": "Hoofdstraat 109, 7921 AG Zuidwolde",
+    "lat": 52.6712673,
+    "lng": 6.4295605,
+    "placeId": "ChIJydICB84PyEcRsBGlUuAUFhg",
+    "primaryType": "store"
+  },
+  {
+    "name": "De Borkeldzuivel",
+    "address": "Borkeldsweg 22, 7451 SM Holten",
+    "lat": 52.2846537,
+    "lng": 6.4702803,
+    "placeId": "ChIJO-HBOEX3x0cRG9k2OmvH-Ek",
+    "primaryType": "market"
+  },
+  {
+    "name": "De Daalkouter fruitboerderij",
+    "address": "Houtemstraat 98, 9550 Herzele, België",
+    "lat": 50.904525,
+    "lng": 3.8736441999999998,
+    "placeId": "ChIJgUbkrJ-hw0cRjYqca3g1Ggo",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Dijlehoeve bij Evelyn",
+    "address": "Dijlestraat 147, 3140 Keerbergen, België",
+    "lat": 50.994602699999994,
+    "lng": 4.6157821,
+    "placeId": "ChIJCylzIi_hw0cRAGMIzgvyXCk",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "de Eierboerderij",
+    "address": "Nieuwesteeg 56, 4171 LG Herwijnen",
+    "lat": 51.8345644,
+    "lng": 5.1310405,
+    "placeId": "ChIJrcp4IYWLxkcR_bkybAnwSvQ",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "De Fleckiehoeve",
+    "address": "Rheezerweg 115, 7795 DB Diffelen",
+    "lat": 52.5352922,
+    "lng": 6.5669964,
+    "placeId": "ChIJgYnT6mgByEcRBQc66ijwjZw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Fruitben",
+    "address": "Kerkstraat 1, 6661 NS Elst",
+    "lat": 51.932437,
+    "lng": 5.8592381,
+    "placeId": "ChIJe2Kg6CSmx0cRL4DslvZdmpk",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "De Fruitschuur Nieuwendijk",
+    "address": "Parallelweg 3, 4255 KC Nieuwendijk",
+    "lat": 51.7714729,
+    "lng": 4.931261999999999,
+    "placeId": "ChIJ-egEaBiFxkcRPk0QYRkwIrc",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "De Gerdeneer Streekwinkel, Terras en Ciderie",
+    "address": "Sitterskampweg 105, 5927 NJ Venlo",
+    "lat": 51.3788257,
+    "lng": 6.1097253,
+    "placeId": "ChIJsaczcA1Fx0cRB1bMMYS1eog",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "De Greftenhoeve",
+    "address": "Greftenweg 16, 7671 PC Vriezenveen",
+    "lat": 52.4294964,
+    "lng": 6.673502099999999,
+    "placeId": "ChIJE5kkziwBuEcRwicHC9V4ZKY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Grenshoeve CSA Plukboerderij",
+    "address": "Beerbosstraat 1, 8510 Kortrijk, België",
+    "lat": 50.7702166,
+    "lng": 3.3160323,
+    "placeId": "ChIJG1eFfWQjw0cRfahfwZ_FdXk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Hazelaarshoeve",
+    "address": "Oudenaardsestraat 237, 9500 Geraardsbergen, België",
+    "lat": 50.7746983,
+    "lng": 3.8599281000000003,
+    "placeId": "ChIJrb4SLwKpw0cR-_OL6OnBlxg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Heerenhoeve Zuivelboerderij en IJssalon",
+    "address": "Korte Heerenstraat 8, 4501 PE Oostburg",
+    "lat": 51.334069899999996,
+    "lng": 3.5135548,
+    "placeId": "ChIJW1E_wtifxEcRWQl59p7xOTo",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "De Hoezekouter Zelfpluk bij Bioboer Dirk",
+    "address": "W2HG+4V, 9300 Aalst, België",
+    "lat": 50.927818699999996,
+    "lng": 4.0272046999999995,
+    "placeId": "ChIJ9z4FQE-9w0cRCrcovs9OoeY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Jachthoeve (zorg)boerderijwinkel, theeschenkerij,pluktuin",
+    "address": "Roekelse Zandweg 7a, 6733 BS Wekerom",
+    "lat": 52.098157099999995,
+    "lng": 5.7271434,
+    "placeId": "ChIJEyIho6uzx0cR02VWBPQ3eAk",
+    "primaryType": "cafe"
+  },
+  {
+    "name": "De Klepper CSA, Zelfoogstboerderij",
+    "address": "Klepperstraat 21, 1860 Meise, België",
+    "lat": 50.941504099999996,
+    "lng": 4.3103924,
+    "placeId": "ChIJ11n-YAXqw0cRgzW6iYOC_hg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Kuipers Hoeve",
+    "address": "Burggraaf 30, 7461SJ Rijssen",
+    "lat": 52.308478799999996,
+    "lng": 6.543646799999999,
+    "placeId": "ChIJ84CDW7b3x0cRcfNkIGYLylQ",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "De Landwinkel V.O.F.",
+    "address": "Eyserheide 1, 6287 NB Eys",
+    "lat": 50.839704999999995,
+    "lng": 5.9346290999999995,
+    "placeId": "ChIJdSYcY3rrwEcRJAh_fRhKnBQ",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "De Langveldhoeve",
+    "address": "Langveldstraat 56, 2220 Heist-op-den-Berg, België",
+    "lat": 51.0580953,
+    "lng": 4.7188418,
+    "placeId": "ChIJq75j_L1ZwUcRtf_DvaFaQ5M",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Linkertse Aardbeienautomaat Linkhout",
+    "address": "Kapelstraat 34 B, 3560 Lummen, België",
+    "lat": 50.9730653,
+    "lng": 5.1378528,
+    "placeId": "ChIJc_kUZIc_wUcR0KOdxQ6oIBA",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "De Marwijkshof: Pluktuin, Landwinkel, groente en fruit, cadeaus, kerstpakketten",
+    "address": "Marwijksoord 21a, 9448 XA Marwijksoord",
+    "lat": 52.961597399999995,
+    "lng": 6.6606542,
+    "placeId": "ChIJJ_UnBcEmyEcR1-jnYaVgnok",
+    "primaryType": "store"
+  },
+  {
+    "name": "De Melkbrouwerij | Huis in 't Veld | Biologische Boerderij |",
+    "address": "Doldermansweg 1a, 7434 RD Lettele",
+    "lat": 52.273263500000006,
+    "lng": 6.2554438,
+    "placeId": "ChIJ1_p2_wTsx0cRWI6-CUUfFQY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Melktap",
+    "address": "Nettelhorsterweg 21, 7274 EA Geesteren",
+    "lat": 52.134143699999996,
+    "lng": 6.513221199999999,
+    "placeId": "ChIJJRjeNGeKx0cR4WLdSD1APNY",
+    "primaryType": "farmstay"
+  },
+  {
+    "name": "De Melktap",
+    "address": "Korte Waarder 68, 2415 AV Nieuwerbrug aan den Rijn",
+    "lat": 52.075182899999994,
+    "lng": 4.8260881,
+    "placeId": "ChIJbc6LSAx4xkcRgKRdrrSQFLE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Morshoeve Fam. Stamsnijder",
+    "address": "Morslaan 3, 7468 MN Enter",
+    "lat": 52.288184799999996,
+    "lng": 6.5886689,
+    "placeId": "ChIJux1azNwJuEcR3RjDNPlXOPg",
+    "primaryType": ""
+  },
+  {
+    "name": "De Paardebloemhoeve - BIO Melk & eier-automaat - Zelfpluk Bloemenweide - CSA Groenten en Fruit -",
+    "address": "Brechtsesteenweg 143, 2390 Malle, België",
+    "lat": 51.315791999999995,
+    "lng": 4.6821961,
+    "placeId": "ChIJoxgFvCUBxEcR6U7f8D70qHU",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "de Pieperautomaat - Boer Buitenhuis",
+    "address": "Turfspoor 160, 2165 AX Lisserbroek",
+    "lat": 52.2445549,
+    "lng": 4.5728672,
+    "placeId": "ChIJh2gkXFnCxUcR6p_VFCZjZGg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Pluimhoeve - Geel",
+    "address": "Meeuwstraat 4/A, 2440 Geel, België",
+    "lat": 51.1448604,
+    "lng": 4.9673508,
+    "placeId": "ChIJPbAicU1JwUcRx2LPEhRwvOM",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "De Pluimhoeve — Merksplas",
+    "address": "Hoekeinde 95, 2330 Merksplas, België",
+    "lat": 51.3902335,
+    "lng": 4.8584932,
+    "placeId": "ChIJqUVQV_-vxkcRb7kOxcIuogY",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "de Plukheyde veld",
+    "address": "Kampenhoutsebaan, 1910 Kampenhout, België",
+    "lat": 50.958429599999995,
+    "lng": 4.53282,
+    "placeId": "ChIJy1suK9Lgw0cRDcTbL8pS8Wg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Pluktuin - het Natuur Atelier",
+    "address": "Kleine Achterweg 28, 2671 LT Naaldwijk",
+    "lat": 52.0025212,
+    "lng": 4.2002694,
+    "placeId": "ChIJj8vWjGmyxUcRBEtLceuA0X8",
+    "primaryType": "florist"
+  },
+  {
+    "name": "De Sophiahoeve",
+    "address": "Wasbeeklaan 7, 2361 HG Warmond",
+    "lat": 52.209317299999995,
+    "lng": 4.515100599999999,
+    "placeId": "ChIJIWV5qF3BxUcRLcKt5Tsh34I",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Streekschuur",
+    "address": "Stwg. op Dendermonde 115, 1745 Opwijk, België",
+    "lat": 50.9633433,
+    "lng": 4.1541371,
+    "placeId": "ChIJDdDZFiyVw0cR9YeA-WryLKM",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "de Texelse Boerderijwinkel",
+    "address": "Schapenboerderij Westerweg Texel, Westerweg 80, 1797 RH Den Hoorn Texel",
+    "lat": 53.0418033,
+    "lng": 4.7486009,
+    "placeId": "ChIJ-6ayFsM7z0cRg-FTpJq8Ut0",
+    "primaryType": "store"
+  },
+  {
+    "name": "De Willemshoeve",
+    "address": "Jacoba van Beierenweg 132B, 2215 KX Voorhout",
+    "lat": 52.232892899999996,
+    "lng": 4.4963146,
+    "placeId": "ChIJg7pfDwrBxUcR9qQAEaf9Cgk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Wit - Self-service zuivel",
+    "address": "Oud Reeuwijkseweg 11, 2811 KB Reeuwijk",
+    "lat": 52.0545749,
+    "lng": 4.7191279999999995,
+    "placeId": "ChIJ4S10KCjXxUcRJHbpMsNmwEw",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "De Witte Hoeve",
+    "address": "Hoofstraat 17, 6031 AC Nederweert",
+    "lat": 51.284075099999995,
+    "lng": 5.769711099999999,
+    "placeId": "ChIJVwqpdtQzx0cRcSz5plBqr3o",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "De Wylde Boerinne melktap en meer",
+    "address": "De Terpen 1, 8651 NG IJlst",
+    "lat": 53.011772,
+    "lng": 5.631080799999999,
+    "placeId": "ChIJR6whcxvuyEcRlumg59qQMys",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "De Zwaluw Bioboerderij",
+    "address": "Verbindingsweg 66, 9920 Lievegem, België",
+    "lat": 51.10987730000001,
+    "lng": 3.6260441999999995,
+    "placeId": "ChIJUzCi-exvw0cRQkdTf4JObuk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Decemberhoeve",
+    "address": "IJweg 1389, 2152 NB Nieuw-Vennep",
+    "lat": 52.2877076,
+    "lng": 4.6265401,
+    "placeId": "ChIJR2NjPfHpxUcRM8DMOcDpwUM",
+    "primaryType": "market"
+  },
+  {
+    "name": "Ecologisch Erf Emst",
+    "address": "Westendorperweg 8, 8166 GM Emst",
+    "lat": 52.326066999999995,
+    "lng": 5.991548,
+    "placeId": "ChIJ_xU27k3Ex0cRqF_YwRSG_fs",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Ecologische Boerderij de Boterbloem",
+    "address": "Lutkemeerweg 262 B, 1067 TH Amsterdam",
+    "lat": 52.3602687,
+    "lng": 4.7662433,
+    "placeId": "ChIJE7EVrjDjxUcRhdAd37iCens",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Ei-automaat",
+    "address": "5465 RH Veghel",
+    "lat": 51.595921499999996,
+    "lng": 5.5405456,
+    "placeId": "ChIJjfE5NA7hxkcRfh7JmbRg1yg",
+    "primaryType": ""
+  },
+  {
+    "name": "Eiboerderij Smid",
+    "address": "Elfde Wijk 13, 7796 HP Heemserveen",
+    "lat": 52.599526399999995,
+    "lng": 6.5596099,
+    "placeId": "ChIJY8k9hVsByEcR4lrU7ThFi6k",
+    "primaryType": "store"
+  },
+  {
+    "name": "Eier automaat",
+    "address": "Langeraarseweg 194, 2461 CP Ter Aar",
+    "lat": 52.1892717,
+    "lng": 4.7010713,
+    "placeId": "ChIJiwgbPzvdxUcRnNb1uEe9FsM",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eier Automaat",
+    "address": "5 +5A, Hooge Mierdseweg, 5541 PL Reusel",
+    "lat": 51.372495,
+    "lng": 5.1525194,
+    "placeId": "ChIJO3dFLlrIxkcR3mF9DjQMowY",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Eier- & Aspergeboerderij Fam. Latijnhouwers",
+    "address": "Kapelweg 25, 5684 NT Best",
+    "lat": 51.5105168,
+    "lng": 5.358045499999999,
+    "placeId": "ChIJOWvGHNvcxkcRhQPSLMp_fgc",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Eier-Frische-Automat Eierhof Jansen Gangelt",
+    "address": "Mercatorstraße 9, 52538 Gangelt, Duitsland",
+    "lat": 50.9935433,
+    "lng": 6.0011515,
+    "placeId": "ChIJB31ejU-6wEcRXRcnNRTlcQ4",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierautomaat",
+    "address": "Nijnselseweg 21, 5492 HD Sint-Oedenrode",
+    "lat": 51.5581864,
+    "lng": 5.4703401,
+    "placeId": "ChIJu5KjGyjhxkcRnL0NSfakcJ4",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierautomaat",
+    "address": "'s-Gravensloot 28, 3471 BN Kamerik",
+    "lat": 52.09343,
+    "lng": 4.874173,
+    "placeId": "ChIJkQrtQAB3xkcRFzyBuY6QGVc",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierautomaat",
+    "address": "Van Teylingenweg 168, 3471 GJ Kamerik",
+    "lat": 52.1471106,
+    "lng": 4.8931566,
+    "placeId": "ChIJSQx_dQB3xkcR6yhZkBcYUB0",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "Eierautomaat Amersfoort Soest Bremer",
+    "address": "Birkstraat 135, 3768 HE Soest",
+    "lat": 52.1611561,
+    "lng": 5.3368047999999995,
+    "placeId": "ChIJ22FL2V1BxkcR9s_0xg490VA",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Eierautomaat Booijink",
+    "address": "9418 PW Wijster",
+    "lat": 52.80714,
+    "lng": 6.5191871,
+    "placeId": "ChIJL6BZzCIZyEcRT_0oRuabsZY",
+    "primaryType": ""
+  },
+  {
+    "name": "Eierautomaat De pluimhoeve",
+    "address": "Meeuwstraat 4a, 2440 Geel, België",
+    "lat": 51.144722699999996,
+    "lng": 4.9671937999999995,
+    "placeId": "ChIJ9acHJc5JwUcRtVqRfZ1KStc",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierautomaat Haulerwijk",
+    "address": "Tonckensweg 20, 8432 PJ Haule",
+    "lat": 53.057285699999994,
+    "lng": 6.3335379,
+    "placeId": "ChIJ4ctkJqU3yEcRHmQnLHMH4bQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Eierautomaat Heuvel Eieren",
+    "address": "Zuiderzeestraatweg 34, 8051 SN Hattem",
+    "lat": 52.482107600000006,
+    "lng": 6.0309441,
+    "placeId": "ChIJuXty5aHZx0cRhNidkVXXAws",
+    "primaryType": "store"
+  },
+  {
+    "name": "Eierautomaat Houtsberg",
+    "address": "Houtsberg 23A, 6091 NA Leveroy",
+    "lat": 51.2484118,
+    "lng": 5.8128221,
+    "placeId": "ChIJ7XbqfAA1x0cRB7HKNIFK-sY",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierautomaat Kamerik",
+    "address": "Van Teylingenweg 166, 3471 GJ Kamerik",
+    "lat": 52.147409700000004,
+    "lng": 4.902502,
+    "placeId": "ChIJB-Vpy213xkcRvRECjEcrriA",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierautomaat Maatman",
+    "address": "Hoofdweg 97, 8474 CB Oldeholtpade",
+    "lat": 52.889458999999995,
+    "lng": 6.0351258,
+    "placeId": "ChIJR5j1hcxnyEcRSu3aHNZnYzI",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierautomaat Molenheide - Best",
+    "address": "Oude Baan 25, 5681 PS Best",
+    "lat": 51.5224063,
+    "lng": 5.4248368,
+    "placeId": "ChIJU0tLfAbdxkcRhyfGh-PCsnQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Eierautomaat Neplenbroek",
+    "address": "Oude Twentseweg 41, 8102 SB Raalte",
+    "lat": 52.4261134,
+    "lng": 6.3311496,
+    "placeId": "ChIJ78G83G3lx0cRB44pWPbws2o",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierautomaat Soest",
+    "address": "Birkstraat 142, 3768 HP Soest",
+    "lat": 52.158374699999996,
+    "lng": 5.337835999999999,
+    "placeId": "ChIJyewoAF9BxkcRxBnXdqS6T4I",
+    "primaryType": "store"
+  },
+  {
+    "name": "Eierautomaat t'Hennehof - Ten Aard",
+    "address": "Roerdompstraat 1A, 2440 Geel, België",
+    "lat": 51.212226699999995,
+    "lng": 4.9723181,
+    "placeId": "ChIJ5z_9_JxMwUcRrCDZrqbkRog",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierautomaat W. ten Ham Pluimvee",
+    "address": "Radonstraat 10, 6718 WS Ede",
+    "lat": 52.041525799999995,
+    "lng": 5.609837499999999,
+    "placeId": "ChIJa_ivNSRTxkcRJ9snNlKJ4TU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Eierautomat Sindorf",
+    "address": "Reiterhof im Jagdfeld 0, 50170 Kerpen, Duitsland",
+    "lat": 50.9056312,
+    "lng": 6.6581148,
+    "placeId": "ChIJZ736w7JAv0cRA87DmyXM8ao",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Eierbox Willms",
+    "address": "Jülicher Str. 149, 52249 Eschweiler, Duitsland",
+    "lat": 50.83483280000001,
+    "lng": 6.2715384,
+    "placeId": "ChIJ-yv7kSdhv0cRC9UoytGLDV4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Eieren aan de weg",
+    "address": "Concordiastraat, 2406 XZ Alphen aan den Rijn",
+    "lat": 52.1263389,
+    "lng": 4.6639115,
+    "placeId": "ChIJ9cithYDbxUcRNEMUBXhtTWM",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eieren automaat (Kakelvers)",
+    "address": "Zuidelijke Meentsteeg 30, 3911 TD Rhenen",
+    "lat": 51.991626399999994,
+    "lng": 5.592401199999999,
+    "placeId": "ChIJHYt0l1xTxkcRD9RJhlCIXiU",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eieren boerderij",
+    "address": "Muikemstraat 26, 9968 Assenede, België",
+    "lat": 51.200846299999995,
+    "lng": 3.719931,
+    "placeId": "ChIJw2JQlid7w0cRB4zgyde-FkI",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Eieren Peetermans",
+    "address": "Oude Baan 21, 2230 Herselt, België",
+    "lat": 51.0657025,
+    "lng": 4.8959035,
+    "placeId": "ChIJ385teHdFwUcRVusGNUinD_0",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eieren van Pake's Boerderij",
+    "address": "De Sylroede 69, 8615 LB Blauwhuis",
+    "lat": 53.024485000000006,
+    "lng": 5.535102,
+    "placeId": "ChIJUeIgG_7vyEcRxk5SAIGzTsQ",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eieren VOF van der Molen Kip&Ei",
+    "address": "Paadje 2A, 1733 NE Nieuwe Niedorp",
+    "lat": 52.7334483,
+    "lng": 4.9027354,
+    "placeId": "ChIJ7WQattpTz0cRpL3bw5yqkNU",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eieren-automaat Vervoort-van Dooren V.O.F.",
+    "address": "Heisteeg 8, 5465 NZ Veghel",
+    "lat": 51.580108599999996,
+    "lng": 5.5433243999999995,
+    "placeId": "ChIJH__jbTngxkcRizycCXCvBo8",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eieren-Automaat.nl",
+    "address": "Utrechtseweg 1, 3927 AT Renswoude",
+    "lat": 52.0755582,
+    "lng": 5.528676099999999,
+    "placeId": "ChIJASsbrD1OxkcRLhZLMSI4L_M",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Eierenkraam",
+    "address": "Boerdijk 10, 7918 TB Nieuwlande",
+    "lat": 52.6978017,
+    "lng": 6.616350499999999,
+    "placeId": "ChIJDZvXRcgdyEcR6O8Fujw19kc",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierfarm De Zoom BV",
+    "address": "Heltenbosdijk 6B, 6006 RZ Weert",
+    "lat": 51.214675299999996,
+    "lng": 5.690184599999999,
+    "placeId": "ChIJ71EPZVEtx0cRj3SC76RkI0Q",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Eierfarm Marienberg",
+    "address": "Pallegarsteweg 7, 7692 PC Marienberg",
+    "lat": 52.5119239,
+    "lng": 6.587969300000001,
+    "placeId": "ChIJ0UbPftr_x0cRuvHbb1vorBw",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Eierhandel Holemans",
+    "address": "Langdonkenstraat 13, 2230 Herselt, België",
+    "lat": 51.028755200000006,
+    "lng": 4.8924642,
+    "placeId": "ChIJ20CSlfpEwUcRSODkJQHnuKY",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierhandel Wessels",
+    "address": "Ypeloweg 11, 7468 RA Enter",
+    "lat": 52.3073439,
+    "lng": 6.5859302,
+    "placeId": "ChIJSVleaCsIuEcRQ2QCjVfA8_s",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Eierhäuschen Bauernhof Lucke",
+    "address": "Herweg 86A, 51429 Bergisch Gladbach, Duitsland",
+    "lat": 50.966989899999994,
+    "lng": 7.205295899999999,
+    "placeId": "ChIJyYCXzJ_XvkcRdK9l8ARV20c",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Elsbroekerwei Boerderijwinkel",
+    "address": "Leidsestraat 189, 2182 DM Hillegom",
+    "lat": 52.2788882,
+    "lng": 4.5722265,
+    "placeId": "ChIJoZ09VNrpxUcRQaMpAcYCEv8",
+    "primaryType": "store"
+  },
+  {
+    "name": "Eric's Landwinkel",
+    "address": "Nesdijk 20B, 1861 MK Bergen",
+    "lat": 52.65917400000001,
+    "lng": 4.7128578,
+    "placeId": "ChIJrWjAjntXz0cRGXfjl-_XS8M",
+    "primaryType": "store"
+  },
+  {
+    "name": "Even Fruit Halen V.O.F.",
+    "address": "Paterstraat 38, 5275 AJ Den Dungen",
+    "lat": 51.6651641,
+    "lng": 5.3766145,
+    "placeId": "ChIJ3_N9ufTlxkcRXyp_bZgLT28",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Fam. Groenenboom Boerderijwinkel \"Alexandershof\"",
+    "address": "Rijksstraatweg 92, 3281 LW Numansdorp",
+    "lat": 51.753549,
+    "lng": 4.444725,
+    "placeId": "ChIJp1CtTfE5xEcRbUvutO2jrLk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fleurderij bloemenplukveld",
+    "address": "Opvelpsestraat 64, 3360 Bierbeek, België",
+    "lat": 50.8171477,
+    "lng": 4.7767973999999995,
+    "placeId": "ChIJg_WAihdlwUcREcZqAOhcjC8",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fleurig bij Hoeve Het Blokhuis - zelfpluk bloementuin",
+    "address": "Herkkantstraat tgo 31, 3540 Herk-de-Stad, België",
+    "lat": 50.9372611,
+    "lng": 5.202659,
+    "placeId": "ChIJEcR-bvw9wUcRwdcDDcqeJ8s",
+    "primaryType": "florist"
+  },
+  {
+    "name": "Fruit en Zo",
+    "address": "Loensweg 24, 4306 NB Nieuwerkerk",
+    "lat": 51.6471588,
+    "lng": 3.9847514000000004,
+    "placeId": "ChIJNXEzXclfxEcRESLJgNulnpM",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Fruitautomaat J.E. van Eck",
+    "address": "Dreef 1, 4014 MJ Wadenoijen",
+    "lat": 51.8725078,
+    "lng": 5.373279999999999,
+    "placeId": "ChIJCQbD9Ln3xkcRGE9_OM9wbAQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruitbedrijf - Gezond van bij Ons",
+    "address": "Heide 97, 3800 Sint-Truiden, België",
+    "lat": 50.8674513,
+    "lng": 5.2196408,
+    "placeId": "ChIJGXHz04kXwUcRb07cpiGsMtA",
+    "primaryType": "manufacturer"
+  },
+  {
+    "name": "Fruitbedrijf De Esch / Kremer Fruit",
+    "address": "Eschberg 6, 6291 NK Vaals",
+    "lat": 50.7689561,
+    "lng": 6.0036762999999995,
+    "placeId": "ChIJDYirhbGQwEcROj_V2QvryAc",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Fruitbedrijf De Proeftuin",
+    "address": "Oostdijk 4, 1463 PP Noordbeemster",
+    "lat": 52.5719517,
+    "lng": 4.9919630999999995,
+    "placeId": "ChIJhSCf8ZMBxkcRioc_7tTsQ5g",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Fruitbedrijf De Stolp",
+    "address": "Blokdijk 36, 1608 HG Wijdenes",
+    "lat": 52.6507973,
+    "lng": 5.1218105,
+    "placeId": "ChIJJWMsIpqoyEcRsAgz0Ag3DUg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruitbedrijf Hoekstra BV",
+    "address": "Oosterringweg 24/ I, 8315 PT Luttelgeest",
+    "lat": 52.749118800000005,
+    "lng": 5.8496405,
+    "placeId": "ChIJj5O6at1iyEcRP75kScMh_UI",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Fruitbedrijf I. Westeneng",
+    "address": "Tolakkerlaan 15, 3704 JA Zeist",
+    "lat": 52.08495320000001,
+    "lng": 5.1942115,
+    "placeId": "ChIJ_ZAgfnxoxkcRWBEZG8qw5ps",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruitbedrijf J.G. Bosschaart",
+    "address": "Pastorieweg 16, 9635 TD Noordbroek",
+    "lat": 53.2131426,
+    "lng": 6.9258241,
+    "placeId": "ChIJ6dTMR5gstkcRDYD7gMkEdng",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruitbedrijf Snoeck",
+    "address": "Dorpsweg 16, 1697 KA Schellinkhout",
+    "lat": 52.6475777,
+    "lng": 5.122242099999999,
+    "placeId": "ChIJS7SA45qoyEcRuk_YBidrV0Q",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Fruitbedrijf W.D. van Kranenburg / De Fruitboertjes Boerderijautomaat",
+    "address": "Burensedijk 19a, 4197 RG Buurmalsen",
+    "lat": 51.8915966,
+    "lng": 5.297994399999999,
+    "placeId": "ChIJB4OboPr1xkcR3yoywruHUZU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruitbedrijf Wim Notermans",
+    "address": "Hoogcruts 5, 6255 NS Noorbeek",
+    "lat": 50.7765874,
+    "lng": 5.839874000000001,
+    "placeId": "ChIJo-YO7V2TwEcRyIiO4A1WXdQ",
+    "primaryType": "store"
+  },
+  {
+    "name": "Fruitboerderij (Görtz Fruit)",
+    "address": "Ingweg 7, 5991 RE Baarlo",
+    "lat": 51.3372082,
+    "lng": 6.1049491,
+    "placeId": "ChIJ7eflXb1Px0cRVEdTmgvwrnA",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Fruitboerderij DE WEST- Land van Maas en Webbink",
+    "address": "Vinckenweg 86, 7678 TB Geesteren",
+    "lat": 52.435397599999995,
+    "lng": 6.6761167,
+    "placeId": "ChIJ4159YS4BuEcRZELO2WWcoMA",
+    "primaryType": "store"
+  },
+  {
+    "name": "Fruitboerderij Fruitsappen automaat",
+    "address": "De Berckt 12A, 5991 PD Baarlo",
+    "lat": 51.3401758,
+    "lng": 6.1097057999999995,
+    "placeId": "ChIJE1fkXQBPx0cRGaJ-EWcPOG0",
+    "primaryType": "juice_shop"
+  },
+  {
+    "name": "Fruitboerderij Oold Bleank",
+    "address": "Reimerweg 13, 7596 NP Rossum",
+    "lat": 52.3609237,
+    "lng": 6.9122886,
+    "placeId": "ChIJ48-AniUauEcR6Wk_nOJzVHQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "fruitboertje",
+    "address": "Kleihoogt 40F, 2651 KV Berkel en Rodenrijs",
+    "lat": 52.0214387,
+    "lng": 4.470283,
+    "placeId": "ChIJo2hwJODLxUcRKE23ipYvcrY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruitbos",
+    "address": "Veldegemsestraat 141, 8210 Zedelgem, België",
+    "lat": 51.1226263,
+    "lng": 3.1627332,
+    "placeId": "ChIJX1beLqtPw0cRTKnNF4_1oac",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruithal Smits",
+    "address": "Sterappellaan 29, 3897 LL Zeewolde",
+    "lat": 52.3733333,
+    "lng": 5.4747221999999995,
+    "placeId": "ChIJrcqpIO46xkcRlEgB2pUU4Ng",
+    "primaryType": "farm"
+  },
+  {
+    "name": "FRUITHOEVE PICARD",
+    "address": "Kromstraat 30, 9667 Horebeke, België",
+    "lat": 50.8596702,
+    "lng": 3.6928938,
+    "placeId": "ChIJu3Aqz7wOw0cRm8_9E0ZtrSs",
+    "primaryType": "store"
+  },
+  {
+    "name": "Fruithof De struikrover",
+    "address": "Achter Basisschool De Striepe (Hoofdweg 193, Hoofdweg 193B, 8474 CE Oldeholtpade",
+    "lat": 52.8951472,
+    "lng": 6.049936499999999,
+    "placeId": "ChIJafy1J1RdyEcRe4dFD-kgsBA",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Fruitkwekerij 't Keetje",
+    "address": "Kadijkweg 65a, 1614 MA Lutjebroek",
+    "lat": 52.704656799999995,
+    "lng": 5.2097242999999995,
+    "placeId": "ChIJ5d5ibealyEcRTpnlDeLZFH4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Fruitkwekerij Borkenhôf",
+    "address": "Boarkensloane 23, 9104 AJ Rinsumageest",
+    "lat": 53.2985864,
+    "lng": 5.965220599999999,
+    "placeId": "ChIJueTodE-qyUcRZl4wFiOj4SU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruitpluktuin en terrassen reinigingsbedrijf",
+    "address": "Hopweg 64, 8313 RM Rutten",
+    "lat": 52.8355051,
+    "lng": 5.7324591,
+    "placeId": "ChIJ4Wz-vzOLyEcRz9UT0VSWjBg",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Fruitteeltbedrijf Oudebosch",
+    "address": "Heereburen 17, 9884 TC Niehove",
+    "lat": 53.2867951,
+    "lng": 6.3348819999999995,
+    "placeId": "ChIJQ36Ter-1yUcRJL9BiqANGrM",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Fruitteeltbedrijf Van den Bosse",
+    "address": "Plantlustweg 1, 4353 SC Serooskerke",
+    "lat": 51.5598968,
+    "lng": 3.6055539999999997,
+    "placeId": "ChIJzympAAqUxEcR3G4_Oz3OU4k",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruittuin van West",
+    "address": "Tom Schreursweg 48, 1067 MC Amsterdam",
+    "lat": 52.3817678,
+    "lng": 4.7732199,
+    "placeId": "ChIJec01r5DjxUcRZKRSsnsFsp4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Fruittuin Verbeek",
+    "address": "Vierhuizenweg 5, 8096 RP Oldebroek",
+    "lat": 52.452023999999994,
+    "lng": 5.925745999999999,
+    "placeId": "ChIJT2ynXMHQx0cRe_wXOeJJO1Q",
+    "primaryType": "store"
+  },
+  {
+    "name": "Fruitweelde",
+    "address": "P. van Westrhenenweg 16, 4031 JP Ingen",
+    "lat": 51.974900999999996,
+    "lng": 5.4738603,
+    "placeId": "ChIJg_PgSyhXxkcRtUBYqznPaw0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Gelukkige Groentes Ooij (pluktuin)",
+    "address": "Leuthsestraat 3, 6576 JJ Ooij",
+    "lat": 51.8508394,
+    "lng": 5.9337349999999995,
+    "placeId": "ChIJW_es15YJx0cRH0Fszn9cBeU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Gelukkige Groentes pluktuin Malden",
+    "address": "Hatertseweg, 6581 KD Malden",
+    "lat": 51.7972982,
+    "lng": 5.8293079,
+    "placeId": "ChIJfQ3ClBgPx0cRLnLGuWycw1g",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Gerwin van Maanen Kleinfruit en de Kleinfruitboerderij",
+    "address": "Kalkestraat 34d, 6669 CM Dodewaard",
+    "lat": 51.906082,
+    "lng": 5.637772000000001,
+    "placeId": "ChIJK-3ozMeqx0cRMQpDcHTwXzM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Graasboerderij",
+    "address": "Sondelerleane 5, 8565 HG Sondel",
+    "lat": 52.863260999999994,
+    "lng": 5.6041514999999995,
+    "placeId": "ChIJT4VmdHmSyEcRVNgNsVLrK3Y",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Greidelân zuivel",
+    "address": "Froonackerdyk 1, 8636 VZ Britswert",
+    "lat": 53.118454299999996,
+    "lng": 5.675633599999999,
+    "placeId": "ChIJN816Jd_7yEcRSSbX0rk8cvQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Groentenautomaat",
+    "address": "Stuiverstraat 7, 1840 Londerzeel, België",
+    "lat": 51.0066808,
+    "lng": 4.3302419,
+    "placeId": "ChIJf41R-5_rw0cReHgTWY3Z1X0",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Groentepluktuin De Meulenhof",
+    "address": "Laverdonk 3, 5473 KX Heeswijk Dinther",
+    "lat": 51.6407947,
+    "lng": 5.4866217,
+    "placeId": "ChIJQ1pkkeLjxkcRLUiEnvE-F8A",
+    "primaryType": "manufacturer"
+  },
+  {
+    "name": "Gullegaard Zelfoogstboerderij",
+    "address": "Kruisbos, 2920 Kalmthout, België",
+    "lat": 51.389113099999996,
+    "lng": 4.479995499999999,
+    "placeId": "ChIJGfVHihIPxEcRYn8X-dIY-4A",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Happy-ei eierautomaat",
+    "address": "Strateris 55, 6031 PB Nederweert",
+    "lat": 51.2909644,
+    "lng": 5.7419369,
+    "placeId": "ChIJjwSlDwAxx0cRq59FIj030nM",
+    "primaryType": "store"
+  },
+  {
+    "name": "Hearda State boerderijwinkel",
+    "address": "Hearewei 46, 8854 AB Sexbierum",
+    "lat": 53.232840499999995,
+    "lng": 5.5078632,
+    "placeId": "ChIJbUViDvbhyEcRP8b1UdMhJ14",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Heidi's Hoeve Eieren",
+    "address": "Blotingstraat 1, 8740 Pittem, België",
+    "lat": 50.9912806,
+    "lng": 3.2952887,
+    "placeId": "ChIJt8Ll4E1Hw0cRsFA1WQ5k6uQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Heidi's melktap & Heidi's Rustpunt& Heidi's Softijs",
+    "address": "Markeweg 17, 9307 PC Steenbergen",
+    "lat": 53.102461899999994,
+    "lng": 6.4185649,
+    "placeId": "ChIJUfomsBs3yEcRgHUF9heWJBw",
+    "primaryType": "restaurant"
+  },
+  {
+    "name": "Hereford fokkerij Paependaalhoeve",
+    "address": "Neervelpsestraat 50, 3370 Boutersem, België",
+    "lat": 50.828426099999994,
+    "lng": 4.818124,
+    "placeId": "ChIJpw35A0ZlwUcRq8fEwHV2PCI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Het Boerdereitje, Eierhandel, Streekproduct",
+    "address": "Schuineslootweg 142I, 7777 ST Schuinesloot",
+    "lat": 52.6567412,
+    "lng": 6.567993599999999,
+    "placeId": "ChIJC5yPhXADyEcRyCaT8OoGKAs",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Het Gezonde Plukveld",
+    "address": "Galgestraat 33, 1785 Merchtem, België",
+    "lat": 50.9680657,
+    "lng": 4.2304138,
+    "placeId": "ChIJq71tZNLqw0cRO_UoEMsHe9w",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Het Melkhuis",
+    "address": "Rietstraat 23, 4583 SK Ter Hole",
+    "lat": 51.3068576,
+    "lng": 4.053471399999999,
+    "placeId": "ChIJu3X5Szh4xEcRaDC3Et8W1Lw",
+    "primaryType": "ice_cream_shop"
+  },
+  {
+    "name": "Het melkhuisje",
+    "address": "Oordeel Heikant 6, 5111 PC Baarle-Nassau",
+    "lat": 51.4508928,
+    "lng": 4.9583467,
+    "placeId": "ChIJo3HjXru7xkcR8GAC-RzKFR8",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeve Automaat Vantieghem",
+    "address": "Wagenmakerstraat 1, 8553 Zwevegem, België",
+    "lat": 50.814271999999995,
+    "lng": 3.4016382,
+    "placeId": "ChIJ9Ro0ggo9w0cRRWLMadfofbc",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Hoeve Avondrust",
+    "address": "Zuidbuurt 46, 3132 KB Vlaardingen",
+    "lat": 51.9098719,
+    "lng": 4.2983156,
+    "placeId": "ChIJN-Y6ow1LxEcRr1GapCMi9lc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeve Corisberg",
+    "address": "Corisbergweg 1, 6416 HJ Heerlen",
+    "lat": 50.8743115,
+    "lng": 5.9993336,
+    "placeId": "ChIJ0QCx1nO9wEcRu_Z_7Qa7n0o",
+    "primaryType": "farm"
+  },
+  {
+    "name": "HOEVE DE DRIE LINDEN",
+    "address": "Drielindenstraat 3, 8554 Zwevegem, België",
+    "lat": 50.787856999999995,
+    "lng": 3.3471226,
+    "placeId": "ChIJo9KuJMgjw0cRdTgONALsY1k",
+    "primaryType": "general_store"
+  },
+  {
+    "name": "Hoeve De Werkhorst",
+    "address": "Werkhorstlaan 12, 8381 XP Vledder",
+    "lat": 52.879796,
+    "lng": 6.2130336,
+    "placeId": "ChIJ-dNM6n5qyEcRjMZqqqDfTbQ",
+    "primaryType": "tea_house"
+  },
+  {
+    "name": "Hoeve Hazerswoude / Gebr. Gijzenberg Landbouwbedrijf",
+    "address": "Hoofdweg Oostzijde 152, 1175 LD Lijnden",
+    "lat": 52.344462,
+    "lng": 4.7493701,
+    "placeId": "ChIJxR8q6q7mxUcR5KdE2qKPgb0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeve Hoge Kempen",
+    "address": "Oeleinderheide 7, 3665 As, België",
+    "lat": 50.9908186,
+    "lng": 5.5885697,
+    "placeId": "ChIJocBEUFHbwEcRBUmpoGMojnQ",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Hoeve Kazan",
+    "address": "Blokland 28, 2441 GG Nieuwveen",
+    "lat": 52.2118208,
+    "lng": 4.7821856,
+    "placeId": "ChIJoTYXrvzexUcRcanOLrd1fOA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeve Keverberg - Abels groenten en fruit",
+    "address": "Wijnstraat 21, 6369 GJ Simpelveld",
+    "lat": 50.8514519,
+    "lng": 5.9725572,
+    "placeId": "ChIJzSmFuW2XwEcRza_hm5SI_OM",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Hoeve Lambrecht - Baart",
+    "address": "Leiegoeddreef 9, 8793 Waregem, België",
+    "lat": 50.8987482,
+    "lng": 3.3843874,
+    "placeId": "ChIJkes8yWc-w0cRD6VpawcXCu0",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Hoeve Lemaire",
+    "address": "Jan Vandersteenstraat 1, 1600 Oudenaken, België",
+    "lat": 50.779326999999995,
+    "lng": 4.1985833,
+    "placeId": "ChIJlx-V-ge4w0cRzWOAsaiUY60",
+    "primaryType": "food"
+  },
+  {
+    "name": "Hoeve Nijverdal - Rund- Pluimveebedrijf",
+    "address": "Nijverheidsweg 45, 2102 LK Heemstede",
+    "lat": 52.349668099999995,
+    "lng": 4.6313021999999995,
+    "placeId": "ChIJo6tOTrboxUcRc4wESgOvUds",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeve Overa",
+    "address": "Overaseweg 188, 4836 BD Breda",
+    "lat": 51.54664,
+    "lng": 4.74599,
+    "placeId": "ChIJcbpyWtofxEcRLwe_x-4TLsI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeve Overleg Alles",
+    "address": "Bennebroekerdijk 164, 2136 LX Zwaanshoek",
+    "lat": 52.329268899999995,
+    "lng": 4.6180034999999995,
+    "placeId": "ChIJWWMBYAfpxUcRqAbLlmmai9g",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeve Pontweg 15",
+    "address": "Pontweg 15, 9820 Merelbeke-Melle, België",
+    "lat": 50.992654099999996,
+    "lng": 3.7310778,
+    "placeId": "ChIJfzF1sh9zw0cRdVwHWGBgxLM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeve Rust-hoff",
+    "address": "Broekpolderweg 3, 3155 EP Maasland",
+    "lat": 51.924230699999995,
+    "lng": 4.2952967,
+    "placeId": "ChIJJ31AZkBLxEcRolLwbE1aJUo",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Hoeve Vanneste - Hoeve Automaten",
+    "address": "Kapellestraat 36, 8851 Ardooie, België",
+    "lat": 51.009152,
+    "lng": 3.215769,
+    "placeId": "ChIJJWnYIwBJw0cRvvj3tgPr7fc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeveautomaat Schollier-Vynckier Izegem",
+    "address": "Beiaardstraat 49, 8870 Izegem, België",
+    "lat": 50.9051687,
+    "lng": 3.2136598,
+    "placeId": "ChIJPaugtzA3w0cRJ3Oll-GZJrc",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Hoeveproducten Haerinck",
+    "address": "Harelbekestraat 13, 8790 Waregem, België",
+    "lat": 50.8670702,
+    "lng": 3.3935073,
+    "placeId": "ChIJ1YQkj8I9w0cRTTV7v6IDHWU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeveproducten van Boer Steven",
+    "address": "Moerstraat 28, 9982 Sint-Laureins, België",
+    "lat": 51.241312,
+    "lng": 3.5968709999999997,
+    "placeId": "ChIJb7kSxbBjw0cR7A4cGQ215tg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeveproducten Vindevoghel",
+    "address": "Tempeliersstraat 20, 8570 Anzegem, België",
+    "lat": 50.850786899999996,
+    "lng": 3.4483251,
+    "placeId": "ChIJAcmFGEQWw0cRo1PBnTV02t4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Hoeveslagerij Groenenberg",
+    "address": "Eksterstraat 1, 1750 Lennik, België",
+    "lat": 50.814172299999996,
+    "lng": 4.2043574999999995,
+    "placeId": "ChIJiVIpgkjHw0cRM4ddU7t3mAM",
+    "primaryType": "butcher_shop"
+  },
+  {
+    "name": "Hoeveslagerij Leeuwenhorn",
+    "address": "Grote Sloot 418, 1751 LM Schagerbrug",
+    "lat": 52.8099953,
+    "lng": 4.7774744,
+    "placeId": "ChIJy_1fpitOz0cRsxpiRDnMdU4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Hoevevlees de Bieshoop",
+    "address": "Fijnestraat 16, 1741 Ternat, België",
+    "lat": 50.8541935,
+    "lng": 4.1730257,
+    "placeId": "ChIJD0won8e5w0cRWOplSCK8tNc",
+    "primaryType": "butcher_shop"
+  },
+  {
+    "name": "Hoevewinkel",
+    "address": "Oude Tiensestraat 29, 3473 Kortenaken, België",
+    "lat": 50.9056164,
+    "lng": 4.9994917999999995,
+    "placeId": "ChIJTVdCripBwUcRKth5aAbhMXg",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Hoevewinkel ‘t Hertsveld",
+    "address": "Hertstraat 6, 2811 Mechelen, België",
+    "lat": 51.037680400000006,
+    "lng": 4.4001189,
+    "placeId": "ChIJkUrCcJfvw0cRdwSNhhM6icc",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Hoevewinkel 't Waterbos",
+    "address": "Schoonstraat 9, 3020 Herent, België",
+    "lat": 50.9357335,
+    "lng": 4.6140719,
+    "placeId": "ChIJOd--QBrgw0cRXGSWI01X2oU",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Hoevewinkel boerkenijs",
+    "address": "Rillaarsebaan 127, 3200 Aarschot, België",
+    "lat": 50.9631798,
+    "lng": 4.8007045999999995,
+    "placeId": "ChIJfYJKld1dwUcR-Ic52FpAL0Q",
+    "primaryType": "store"
+  },
+  {
+    "name": "Hoevewinkel De Wikke",
+    "address": "Abdij van Park 7, 3001 Leuven, België",
+    "lat": 50.8649798,
+    "lng": 4.7153694,
+    "placeId": "ChIJt9esY81mwUcRBKgvpo5z-ps",
+    "primaryType": "health_food_store"
+  },
+  {
+    "name": "Hoevewinkel en automaat",
+    "address": "Luipaardstraat 53, 8550 Zwevegem, België",
+    "lat": 50.816984299999994,
+    "lng": 3.3147721999999997,
+    "placeId": "ChIJGyF-hl87w0cRsCMGT82TTaQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Hoevewinkel Grasheide",
+    "address": "Zandweg 12, 2580 Putte, België",
+    "lat": 51.0234239,
+    "lng": 4.6648228,
+    "placeId": "ChIJTY9RGcBYwUcR85OvViZimU4",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Hoevewinkel joeri en caroline",
+    "address": "Spitsberg 23, 3040 Huldenberg, België",
+    "lat": 50.79896300000001,
+    "lng": 4.592069899999999,
+    "placeId": "ChIJQ71Z2nLZw0cRCcX08wdzQSQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoevewinkel milk & more",
+    "address": "Poiel 62, 2440 Geel, België",
+    "lat": 51.155075,
+    "lng": 4.9606857,
+    "placeId": "ChIJIYt_dflPwUcRgtC7o_p-djo",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Hoevewinkel Nathalie",
+    "address": "Ninoofsesteenweg 30, 1670 Pepingen, België",
+    "lat": 50.757247899999996,
+    "lng": 4.1681848,
+    "placeId": "ChIJYWA-T5O3w0cRtR-iOEROTiA",
+    "primaryType": "supermarket"
+  },
+  {
+    "name": "Hoevewinkel Van Den Boer",
+    "address": "Wuytjesstraat 12a, 2223 Schriek, België",
+    "lat": 51.0293077,
+    "lng": 4.7191806,
+    "placeId": "ChIJ3QKUGvNZwUcRrQlK_iGLOIs",
+    "primaryType": "butcher_shop"
+  },
+  {
+    "name": "Hof van Geervliet Biologisch melkveebedrijf zorgboerderij",
+    "address": "Polderweg 10, 3211 LE Geervliet",
+    "lat": 51.8543886,
+    "lng": 4.2674316,
+    "placeId": "ChIJJwmGlfhJxEcRbuzLlszj9qM",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Hof van Gunterstein | Biologische boerderij | Hofwinkel | Overnachten | Zelfoogsttuin | Zelfpluktuin | Vrijwilligerswerk",
+    "address": "Laan van Gunterstein 2, 3621 VA Breukelen",
+    "lat": 52.1728963,
+    "lng": 5.0077378999999995,
+    "placeId": "ChIJYc0NoSZzxkcRB0ebcXYsOoA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hooilaarthoeve - De Blaiser Eddy",
+    "address": "Beukenstraat 96, 9255 Buggenhout, België",
+    "lat": 51.018549199999995,
+    "lng": 4.1763525999999995,
+    "placeId": "ChIJoWe0PHmUw0cRUr5V5HHDPZU",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Houtekamer Fruitbedrijf",
+    "address": "Hageweg 3, 4311 NB Bruinisse",
+    "lat": 51.6778584,
+    "lng": 4.0595267999999995,
+    "placeId": "ChIJK4BMGGpcxEcR6Rwd0xeGFc4",
+    "primaryType": "store"
+  },
+  {
+    "name": "Hugo Bogers Boerderijwinkel",
+    "address": "Fianestraat 2, 4625 DN Bergen op Zoom",
+    "lat": 51.4684029,
+    "lng": 4.3034661,
+    "placeId": "ChIJmyAgCekTxEcRZw-Vg_W1OMU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Jari`s eieren",
+    "address": "Skelte van Aysmastrjitte 17, Aooartement, 8744 EN Schettens",
+    "lat": 53.081400699999996,
+    "lng": 5.4833551,
+    "placeId": "ChIJ0Qb9-nTpyEcR1IAxq3S2Mlg",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Jersey A2 Melktap Klein Slendebroek",
+    "address": "Blauwedijk 2, 7722 JR Dalfsen",
+    "lat": 52.476718999999996,
+    "lng": 6.2408147,
+    "placeId": "ChIJVRnjvcfhx0cRa9zUYqVPFo0",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Juwel Fruithof",
+    "address": "Tereykenstraat 9, 3832 Sint-Truiden, België",
+    "lat": 50.834367,
+    "lng": 5.2835791,
+    "placeId": "ChIJUX7kZnIZwUcRURP9cc0JXJw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Kaas- en Zuivelboerderij 'De Diervoort'",
+    "address": "Staddijk 17, 6603 LM Wijchen",
+    "lat": 51.7948204,
+    "lng": 5.7997508,
+    "placeId": "ChIJA1738AkGx0cRzNFJsqDi_Io",
+    "primaryType": "store"
+  },
+  {
+    "name": "Kaas- en Zuivelboerderij Kuiper",
+    "address": "Heideweg 2, 3381 KH Giessenburg",
+    "lat": 51.865169099999996,
+    "lng": 4.864323199999999,
+    "placeId": "ChIJoy6hYDyBxkcR7W33WRV2uEY",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "kaasautomaat \"De Kaashoek\" Melkveebedrijf T.Kuiper",
+    "address": "Oosteinde 23, 3366 BG Wijngaarden",
+    "lat": 51.845594999999996,
+    "lng": 4.786588699999999,
+    "placeId": "ChIJ39t6Nn2BxkcR4KwzyD9Cp30",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Kaasboerderij 't Groene Hart",
+    "address": "Groenwegh 17, 2355 CW Hoogmade",
+    "lat": 52.1561649,
+    "lng": 4.5875728,
+    "placeId": "ChIJKdefTe_ExUcRDsL1FFznqX0",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kaasboerderij \"De Westplaat\"",
+    "address": "Heuvelweg 15, 3245 LN Sommelsdijk",
+    "lat": 51.7692361,
+    "lng": 4.1687672000000005,
+    "placeId": "ChIJKQVxQl1FxEcRmhsgf5kSu5s",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Kaasboerderij Captein",
+    "address": "Weipoortseweg 29b, 2381 NC Zoeterwoude",
+    "lat": 52.122172000000006,
+    "lng": 4.526268,
+    "placeId": "ChIJW9bu4-jFxUcRl0XKR5geIY4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kaasboerderij de Deelen C.V.",
+    "address": "Warrewei 43, 8406 AD Tijnje",
+    "lat": 53.0425505,
+    "lng": 5.9428844,
+    "placeId": "ChIJKT0OALxZyEcRU9RkHmkGPEc",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kaasboerderij De Gelder",
+    "address": "Heawei 42, 8406 AW Tijnje",
+    "lat": 53.0177359,
+    "lng": 5.9877443999999995,
+    "placeId": "ChIJWex_as5byEcRuzGs5JchM1k",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kaasboerderij de Graaf 🧀",
+    "address": "Buitenkerk 56, 2411 PC Bodegraven",
+    "lat": 52.0926729,
+    "lng": 4.7395128,
+    "placeId": "ChIJ-RFkQV7XxUcRIBdVTKKWfng",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kaasboerderij De Stelp",
+    "address": "Wolvegasterweg 49, 8421 PS Oldeberkoop",
+    "lat": 52.932853599999994,
+    "lng": 6.1187901,
+    "placeId": "ChIJm3TRoKpDyEcRvgXQfVfb1HU",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kaasboerderij De Vos",
+    "address": "Helenaweg 4, 4521 GR Biervliet",
+    "lat": 51.345168699999995,
+    "lng": 3.6707549999999993,
+    "placeId": "ChIJYx1RjM6cxEcRifWu1Y9onj0",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kaasboerderij Schellach",
+    "address": "Prooijenseweg 26, 4332 RD Middelburg",
+    "lat": 51.52228230000001,
+    "lng": 3.626741,
+    "placeId": "ChIJY_yqrWqRxEcR2rvOWdpSpic",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kaasboerderij Spruithoeve kaasautomaat",
+    "address": "Willeskop 123, 3421 GV Oudewater",
+    "lat": 52.0216625,
+    "lng": 4.8869586,
+    "placeId": "ChIJbRKZGSZ5xkcRYsCDvOMonNs",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kaasboerderij VOF J.P. den Besten",
+    "address": "Melkweg 1C, 2967 LA Langerak",
+    "lat": 51.9201002,
+    "lng": 4.8925955000000005,
+    "placeId": "ChIJl1LD-qeAxkcR1dyaa0r_H6w",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Kaasboerderij Weenink",
+    "address": "Eimersweg 3, 7137 HG Lievelde",
+    "lat": 52.019920799999994,
+    "lng": 6.590201599999999,
+    "placeId": "ChIJMwgZSWh3uEcRMEscz8tgKG8",
+    "primaryType": "store"
+  },
+  {
+    "name": "Kaasmakerij Dijkgoud / Melkveehouderij Holtland",
+    "address": "Blokzijlerdijk 26, 8373 EL Blankenham",
+    "lat": 52.744887999999996,
+    "lng": 5.9327755,
+    "placeId": "ChIJT7_70r1kyEcRrMThC5v9HtY",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Kartoffel- & Eierautomat Oidtweiler",
+    "address": "Kloshaus 24, 52499 Baesweiler, Duitsland",
+    "lat": 50.8922795,
+    "lng": 6.1754771,
+    "placeId": "ChIJFWYgvw-hwEcRcsF4K4Mzqcs",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Kasteelboerderij Waalre",
+    "address": "Dommelseweg 5, 5581 VA Waalre",
+    "lat": 51.368283399999996,
+    "lng": 5.4359315,
+    "placeId": "ChIJiyrmq0rXxkcRq5qwiF6HXv0",
+    "primaryType": "store"
+  },
+  {
+    "name": "Kippenboerderij",
+    "address": "Horendonk 344, 2910 Essen, België",
+    "lat": 51.474692000000005,
+    "lng": 4.5128271,
+    "placeId": "ChIJR0yexH4axEcRKp3aK-OMT8Q",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "Klarenbeek Zorgboerderij",
+    "address": "Ouderkerkerdijk 225, 1096 CR Amsterdam",
+    "lat": 52.322073499999995,
+    "lng": 4.8984828,
+    "placeId": "ChIJMRkqe0cKxkcRVTJlkMSG-l4",
+    "primaryType": "monument"
+  },
+  {
+    "name": "Kleinfruithoeve Vervenne",
+    "address": "Zandweg 25, 8930 Menen, België",
+    "lat": 50.8211078,
+    "lng": 3.1205404,
+    "placeId": "ChIJybFUamwxw0cRvSaltQPydsY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Koeweidehof - Hoeveautomaat",
+    "address": "Koeweidestraat 25, 1785 Merchtem, België",
+    "lat": 50.9455149,
+    "lng": 4.2352061,
+    "placeId": "ChIJY_cH76_qw0cR0r9wN9_vkW0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "korenbloemhoeve",
+    "address": "Korenbloemstraat 53, 8820 Torhout, België",
+    "lat": 51.0811159,
+    "lng": 3.1344135000000004,
+    "placeId": "ChIJy8czQ0pNw0cRW79CpDK8FRA",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Kraats Eieren",
+    "address": "Langesteeg 14, 6721 NC Bennekom",
+    "lat": 52.000459199999995,
+    "lng": 5.656049299999999,
+    "placeId": "ChIJ3f1Djnitx0cRp-cBv1tIeMk",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Lakenvelder Boerderij Boterhuispolder",
+    "address": "De Willigen F G, Zijldijk 8, 2362 AE Warmond",
+    "lat": 52.191371999999994,
+    "lng": 4.535000699999999,
+    "placeId": "ChIJnU9lhvfDxUcR55DpR4taWAg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Landwinkel 't Zand",
+    "address": "Lageweg 6, 3258 LK Den Bommel",
+    "lat": 51.697236,
+    "lng": 4.272408899999999,
+    "placeId": "ChIJn6xCR85GxEcR4MP_vHW50R0",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel Arkelandshoeve",
+    "address": "Telgterweg 200, 3853 NR Ermelo",
+    "lat": 52.2996311,
+    "lng": 5.5907450999999995,
+    "placeId": "ChIJM-6juKQ2xkcRzFcBUo-i2MM",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel Berkelaarshof",
+    "address": "Maasbrachterweg 76, 6101 XZ Echt",
+    "lat": 51.12361430000001,
+    "lng": 5.8723391,
+    "placeId": "ChIJi6TYERvKwEcRaz5P3Wrne_Y",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Landwinkel Boer Spierings",
+    "address": "Oijenseweg 284, 5346 JG Oss",
+    "lat": 51.7873494,
+    "lng": 5.5189217,
+    "placeId": "ChIJ_e-gRBP8xkcRY6cneDgFCYI",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel De Hooierij",
+    "address": "Universiteitsweg 1, 3732 HX De Bilt",
+    "lat": 52.100683800000006,
+    "lng": 5.1852066,
+    "placeId": "ChIJQ27Yj_RoxkcRxkaXIKXjHbU",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel De Kopermolen",
+    "address": "Hessenweg 2, 3835 PJ Stoutenburg",
+    "lat": 52.1579591,
+    "lng": 5.4261949,
+    "placeId": "ChIJjR5NEnpGxkcRYgr46SSw2fk",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Landwinkel De Munnikenhof",
+    "address": "Brinkweg 30 a, 6991 JP Rheden",
+    "lat": 52.0038279,
+    "lng": 6.0148883,
+    "placeId": "ChIJl9I89ASjx0cR0FrVCNAGgeA",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel de Overscharen 🥦🍎🧀",
+    "address": "Overscharenweg 3, 5328 JM Rossum",
+    "lat": 51.7907233,
+    "lng": 5.3102889,
+    "placeId": "ChIJp0_6Lm_xxkcRd5a5u8NS5k8",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel De Plantage",
+    "address": "Kaasgat 4A, 4416 PP Kruiningen",
+    "lat": 51.468956899999995,
+    "lng": 4.0445367999999995,
+    "placeId": "ChIJ30Yn4uBkxEcRDAa_KpLQjOk",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel De Verse Kers",
+    "address": "Bleeksestraat 2, 7031 EL Wehl",
+    "lat": 51.9591717,
+    "lng": 6.2231062999999995,
+    "placeId": "ChIJs5XmlZ6bx0cR-qrb5x6drA0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Landwinkel De Vrolijke Geit",
+    "address": "Klunenweg 4, 3882 TK Putten",
+    "lat": 52.231956399999994,
+    "lng": 5.602716,
+    "placeId": "ChIJI5i5Yvc1xkcRALx4s4B3irE",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel de Woerdt",
+    "address": "Woerdsestraat 4, 6684 DL Ressen",
+    "lat": 51.8884614,
+    "lng": 5.8720891,
+    "placeId": "ChIJr8yyfpGnx0cRXJOwTaBynKk",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel doesburgererf",
+    "address": "Lunterseweg, 6718 WH Ede",
+    "lat": 52.0670894,
+    "lng": 5.639343,
+    "placeId": "ChIJ1YNb1VxNxkcR4GmCUEgNnds",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel en Kinderboerderij",
+    "address": "Klaverlaan 37, 9753 BZ Haren",
+    "lat": 53.1798134,
+    "lng": 6.6257439,
+    "placeId": "ChIJGQiL2uIsyEcRhibmj6SmwDo",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel Exloo / Streekmarkt Exloo",
+    "address": "Hoofdstraat 49, 7875 AB Exloo",
+    "lat": 52.8828483,
+    "lng": 6.8667146,
+    "placeId": "ChIJz2mldOrdt0cRBL6EhTTKZGA",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel Kaasboerderij Speksnijder",
+    "address": "Tiendweg West 28b, 2941 ER Lekkerkerk",
+    "lat": 51.9014618,
+    "lng": 4.6628036999999996,
+    "placeId": "ChIJTw3K4JMsxEcRI1uST-7aRo4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Landwinkel Luemes",
+    "address": "Het Goor 59, 7071 PC Ulft",
+    "lat": 51.8977412,
+    "lng": 6.3582404,
+    "placeId": "ChIJiywZKsyDx0cRmyzu0q6ieaA",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel Ol Diek",
+    "address": "Hoofdweg West 26, 9944 EB Nieuwolda",
+    "lat": 53.235633,
+    "lng": 6.965555999999999,
+    "placeId": "ChIJqQPE1VYstkcRmgKJBwr5t0w",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Landwinkel Oude Stoof",
+    "address": "Zuiddijk 6, 4585 PP Hengstdijk",
+    "lat": 51.3473671,
+    "lng": 3.9775829000000003,
+    "placeId": "ChIJYzyih7R-xEcRkrjcNJ6vobc",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Landwinkel Pennings",
+    "address": "Hellegatspolder 1, 2361 NA Warmond",
+    "lat": 52.2213229,
+    "lng": 4.5530102,
+    "placeId": "ChIJ67DkyM_DxUcRbtKVx-UPYCI",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel Risseeuw-van 't Westeinde",
+    "address": "Lange Heerenstraat 83, 4507 KR Schoondijke",
+    "lat": 51.346040300000006,
+    "lng": 3.5358886,
+    "placeId": "ChIJcxLeTvuexEcRGhp_HjswLOE",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel Schenkerij De Kastanjeboom",
+    "address": "Als bestemmingsverkeer mag u de straat in, Zevenhuizerstraat 281, 3751 LC Bunschoten-Spakenburg",
+    "lat": 52.217251,
+    "lng": 5.389152999999999,
+    "placeId": "ChIJy0s4gEdHxkcRSn_inisoePU",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Landwinkel Smits",
+    "address": "Lage Heurnseweg 35, 7095 AL De Heurne",
+    "lat": 51.8857662,
+    "lng": 6.4856395,
+    "placeId": "ChIJ0-nWXX9_uEcRkcPJU-qSO4M",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel Vanelly",
+    "address": "Achterveldseweg 26, 3772 NB Barneveld",
+    "lat": 52.1342609,
+    "lng": 5.5415982999999995,
+    "placeId": "ChIJDxVT68dOxkcRA-rgdU5vxNY",
+    "primaryType": "store"
+  },
+  {
+    "name": "Landwinkel Weststrate",
+    "address": "Sandberglaan 10, 4333 SB Middelburg",
+    "lat": 51.5101819,
+    "lng": 3.6011918999999994,
+    "placeId": "ChIJJalLHi2RxEcR3M1wJXMLekQ",
+    "primaryType": "general_store"
+  },
+  {
+    "name": "Landwinkel/Camping de waterbuffelfarm Oldemarkt",
+    "address": "tomtom adres Hareweg 6a De toegang is achterom via Ossenzijlerweg GPS: 52° 48' 59\" N 5° 58' 36\" E 52.8165, 5.9767, 8375 EA Oldemarkt",
+    "lat": 52.81648,
+    "lng": 5.9767031,
+    "placeId": "ChIJx9G2vYZmyEcRPG1Qqvc1Kv4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Lekker Verse rauwe Melk en eieren bij Veehouderij van Bergen",
+    "address": "Heihoekstraat 13, 5345 HC Oss",
+    "lat": 51.7572463,
+    "lng": 5.4952049999999995,
+    "placeId": "ChIJfW_C4WL9xkcRrJVPrtlUCdM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Loei Lekker; melktap, softijs en streekproducten",
+    "address": "Pijlstaartweg 5, 5721 SK Asten",
+    "lat": 51.3985074,
+    "lng": 5.8225829,
+    "placeId": "ChIJH2IjcWg7x0cRZzJGDN9Vpxc",
+    "primaryType": "ice_cream_shop"
+  },
+  {
+    "name": "Luc & Rita Salens - Van der Elst Hoevewinkel",
+    "address": "Vosseputten 10, 3071 Erps_Kwerps, België",
+    "lat": 50.8968169,
+    "lng": 4.5402414,
+    "placeId": "ChIJfePnr2few0cRzjg08GJrBg8",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Maasland Eieren",
+    "address": "Maastrichtersteenweg 104, 3680 Maaseik, België",
+    "lat": 51.0902513,
+    "lng": 5.769927200000001,
+    "placeId": "ChIJAwXYI87OwEcRwayxW9v-Ckw",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Maassen Eieren Homoet",
+    "address": "Homoetsestraat 27, 6676 LA Homoet",
+    "lat": 51.935891999999996,
+    "lng": 5.789820499999999,
+    "placeId": "ChIJLxtdZhypx0cRneBvENS13ck",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Maatschap Jeuken Oostrum / Boerderijwinkel Jeuken",
+    "address": "Stationsweg 82, 5807 AC Oostrum",
+    "lat": 51.5282768,
+    "lng": 6.000854599999999,
+    "placeId": "ChIJu4PbPCBAx0cRGh76-8gZbBg",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Maatschap van Liere - Dijkwels Fruit",
+    "address": "Dijkwelseweg 25, 4421 PN Kapelle",
+    "lat": 51.481854899999995,
+    "lng": 3.9376132000000004,
+    "placeId": "ChIJocqifGRjxEcRBSdQrhHZTPo",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Maatschap Verstappen boerderijwinkel",
+    "address": "Rijksweg Noord 157, 6071 KV Swalmen",
+    "lat": 51.243972199999995,
+    "lng": 6.0507887,
+    "placeId": "ChIJLaAepkRMx0cRB1zPFjSy0_c",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Melk & Meer Sleen",
+    "address": "Schaapstreek 46, 7841 BS Sleen",
+    "lat": 52.7719374,
+    "lng": 6.7773045,
+    "placeId": "ChIJP4pd9ubht0cRTddO6Ebpb6o",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Melk automaat",
+    "address": "N461 56, 9031 Gent, België",
+    "lat": 51.0666936,
+    "lng": 3.6162326000000005,
+    "placeId": "ChIJNzggD9tvw0cR_QlZQ2mveYI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "melk en pluimveehouderij de Kooyen",
+    "address": "7683 RR Den Ham",
+    "lat": 52.467164000000004,
+    "lng": 6.5292555,
+    "placeId": "ChIJBRZQFif_x0cRIgpEWYxXSpQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melk Kan",
+    "address": "Raamdijk 5, 3640 Kinrooi, België",
+    "lat": 51.133952799999996,
+    "lng": 5.7402739,
+    "placeId": "ChIJQVDkGzLMwEcRqdGVfecL_2c",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melk, kaas en eierenverkoop familie Kuijt",
+    "address": "Hogebiezendijk 23, 3401 RS IJsselstein",
+    "lat": 52.0058101,
+    "lng": 5.05126,
+    "placeId": "ChIJkc_TaGllxkcRxXGPQ6WLPlY",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkautomaat",
+    "address": "Parijsestraat 58, 9800 Deinze, België",
+    "lat": 50.972186799999996,
+    "lng": 3.5631758999999996,
+    "placeId": "ChIJGUak7VJtw0cRnZZXojrTarQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkautomaat",
+    "address": "Mechelsesteenweg, 3020 Veltem-Beisem, België",
+    "lat": 50.922899799999996,
+    "lng": 4.6422631999999995,
+    "placeId": "ChIJndZ98-dfwUcRW93p8WlDqkk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melkautomaat",
+    "address": "Steenbergstraat 7, 1602 Sint-Pieters-Leeuw, België",
+    "lat": 50.8108843,
+    "lng": 4.2550332,
+    "placeId": "ChIJTTj2VgDHw0cRsFzTYyzQslk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melkautomaat",
+    "address": "Vissenheuvel 45, 2910 Essen, België",
+    "lat": 51.435892599999995,
+    "lng": 4.4899024,
+    "placeId": "ChIJQRxhxlARxEcRwfRzR4kgpkQ",
+    "primaryType": "bar"
+  },
+  {
+    "name": "Melkautomaat Aalter",
+    "address": "Charlestonstraat 38, 9880 Aalter, België",
+    "lat": 51.0923162,
+    "lng": 3.4305871999999997,
+    "placeId": "ChIJLfh0mVtDw0cRzmhY0PF077M",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkautomaat Goossens Paul en Stef",
+    "address": "Vinkenstraat 26, 2500 Lier, België",
+    "lat": 51.1386975,
+    "lng": 4.5269398,
+    "placeId": "ChIJ21qEyWj7w0cRKE4mifbEe94",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkautomaat Hove for milk",
+    "address": "Boshoekstraat 93, 2530 Hove, België",
+    "lat": 51.138221699999995,
+    "lng": 4.4999401,
+    "placeId": "ChIJG7CxGJ37w0cREWyETmzH9lE",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Melkautomaat Ruiselede",
+    "address": "Kraaienbroekdreef 1, 8755 Wingene, België",
+    "lat": 51.0516562,
+    "lng": 3.4007158,
+    "placeId": "ChIJefgDerlDw0cRJurraWef5G8",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkerhei een boerderij met oog voor biodiversiteit, rauwmelkse kazen en een grote liefde voor de korte keten",
+    "address": "Heidestraat 163, 3350 Linter, België",
+    "lat": 50.8553443,
+    "lng": 5.0308987,
+    "placeId": "ChIJMU1UddwUwUcR9ucD7ZwAZ7c",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Melktap",
+    "address": "Valgaersteeg 4, 3570 Alken, België",
+    "lat": 50.8853625,
+    "lng": 5.264889999999999,
+    "placeId": "ChIJYV-kXQAZwUcRX5wVja1hX4A",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melktap",
+    "address": "Tankweg 6, 7137 HA Lievelde",
+    "lat": 52.0167538,
+    "lng": 6.5891733,
+    "placeId": "ChIJexSQfLt3uEcRVRD0_1RTKa0",
+    "primaryType": "ice_cream_shop"
+  },
+  {
+    "name": "Melktap",
+    "address": "Kruisbergseweg, 7021 KK Zelhem",
+    "lat": 52.0037283,
+    "lng": 6.3089238000000005,
+    "placeId": "ChIJsUzpiWyFx0cRzTL6Ax3JypA",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap",
+    "address": "Westerskatting 8, 8614 AP Oudega",
+    "lat": 53.0021725,
+    "lng": 5.546143799999999,
+    "placeId": "ChIJCdQUbc7tyEcRnw2x_n-ot_4",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Melktap 't Melkboertje",
+    "address": "Broekermolenweg 7, 3882 MG Putten",
+    "lat": 52.246312599999996,
+    "lng": 5.5518635,
+    "placeId": "ChIJOX1IW3g3xkcRSEyCKzAWC20",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap & softijs",
+    "address": "Groeneweg 2, 3611 AT Oud Zuilen",
+    "lat": 52.1276569,
+    "lng": 5.0751478,
+    "placeId": "ChIJubBwIgBvxkcRQkzpYw6EImE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melktap 013",
+    "address": "Nieuwelijn 1, 5032 PB Tilburg",
+    "lat": 51.557601899999995,
+    "lng": 4.9875362,
+    "placeId": "ChIJsZK1wma9xkcRwd_W4O3mUrY",
+    "primaryType": ""
+  },
+  {
+    "name": "Melktap Biologische melkveehouderij Doortjeshoeve",
+    "address": "Neterselsedijk 33, 5094 BC Lage Mierde",
+    "lat": 51.4058946,
+    "lng": 5.1835507,
+    "placeId": "ChIJuUYHo9PHxkcR4RHVdg0yEGE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melktap Burgh-Haamstede",
+    "address": "Meeldijk 14, 4328 NG Burgh-Haamstede",
+    "lat": 51.6789402,
+    "lng": 3.748259,
+    "placeId": "ChIJ49-Ql97zxEcR2ruPGwa9Qg4",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap De Bloemplaat Hoeve",
+    "address": "Duijlweg 6a, 4286 LX Almkerk",
+    "lat": 51.7588472,
+    "lng": 4.9715314,
+    "placeId": "ChIJ0ZUiWEiFxkcRz-wwqYf6QhQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "melktap de oude melkstal",
+    "address": "De Schafterekker 8, 5556 WJ Valkenswaard",
+    "lat": 51.2938245,
+    "lng": 5.4530788,
+    "placeId": "ChIJC-DKX2PVxkcRU-s2OHtkFkQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap de Rietstulp",
+    "address": "Nieuwe Wetering 18, 8294 PC Mastenbroek",
+    "lat": 52.5832773,
+    "lng": 6.051679099999999,
+    "placeId": "ChIJ5eYDoZt3yEcREFmYNoIZHek",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Melktap De Zuyderzee",
+    "address": "Elburgerweg 15, 8251 RJ Dronten",
+    "lat": 52.5004955,
+    "lng": 5.7892588,
+    "placeId": "ChIJO1APUIfVx0cRePeQNc_4Qb8",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Melktap Elburg",
+    "address": "Nieuwstadspad 6, 8081 AC Elburg",
+    "lat": 52.441286399999996,
+    "lng": 5.824631999999999,
+    "placeId": "ChIJ5W0gd3bTx0cR9ycMVCyolz0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melktap Eldriksche weide",
+    "address": "Eldrikseweg 10, 6998 CC Laag-Keppel",
+    "lat": 51.9864466,
+    "lng": 6.1995992,
+    "placeId": "ChIJ52Rsebmbx0cRyK1i1wGEDyI",
+    "primaryType": ""
+  },
+  {
+    "name": "Melktap Emst",
+    "address": "Schobbertsweg 3, 8166 KK Emst",
+    "lat": 52.313346499999994,
+    "lng": 5.9885889,
+    "placeId": "ChIJWW7e0uvFx0cRhJJGQVdIW-I",
+    "primaryType": ""
+  },
+  {
+    "name": "Melktap en Boerderijautomaat Harmelen",
+    "address": "Harmelerwaard 3, 3481 LB Harmelen",
+    "lat": 52.0893126,
+    "lng": 4.972993799999999,
+    "placeId": "ChIJlf4fri9xxkcR0pImarhc0wI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melktap Ens",
+    "address": "Drietorensweg 16, 8307 PE Ens",
+    "lat": 52.653966999999994,
+    "lng": 5.8185394,
+    "placeId": "ChIJC52OZh99yEcRKq6AxSK6tsw",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Erve Schüppert",
+    "address": "Kemperweg 17, 7475 SX Markelo",
+    "lat": 52.2625457,
+    "lng": 6.525983500000001,
+    "placeId": "ChIJC8vq7jz1x0cRIED8C03OcFE",
+    "primaryType": ""
+  },
+  {
+    "name": "Melktap familie Koning",
+    "address": "Oosterbrinkweg 2, 7973 JK Darp",
+    "lat": 52.7789085,
+    "lng": 6.217081599999999,
+    "placeId": "ChIJHXVxYJRsyEcRokZEmLu7PgE",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Haule",
+    "address": "Dorpsstraat 81, 8432 PL Haule",
+    "lat": 53.037591500000005,
+    "lng": 6.3103598,
+    "placeId": "ChIJna93LQg4yEcRAhODMX2vXro",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap het Laarzenpad",
+    "address": "Dorpsstraat 667, 1566 EC Assendelft",
+    "lat": 52.478736899999994,
+    "lng": 4.7499534,
+    "placeId": "ChIJZYzDSS37xUcRfWYNrBH5ZYg",
+    "primaryType": "store"
+  },
+  {
+    "name": "Melktap Het Rode Huis",
+    "address": "Roodhuizerpad 1, 8024 PL Zwolle",
+    "lat": 52.5165059,
+    "lng": 6.1315383,
+    "placeId": "ChIJl9t3aQnfx0cRZaG6f8yHCeA",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Hof Espelo Enschede/Melkveebedrijf Voogd",
+    "address": "Weerseloseweg 235, 7522 PS Enschede",
+    "lat": 52.2548778,
+    "lng": 6.8664961,
+    "placeId": "ChIJu98FC2cRuEcRXdS1nMdoieE",
+    "primaryType": "corporate_office"
+  },
+  {
+    "name": "Melktap Hogenhout",
+    "address": "Korte Dwarsweg 8, 1191 LE Ouderkerk aan de Amstel",
+    "lat": 52.303465100000004,
+    "lng": 4.9261371,
+    "placeId": "ChIJjZLsqKcLxkcRHv9ZfCSbwqQ",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Melktap Hoogland-West, Meer dan alleen melk!",
+    "address": "Monseigneur van de Weteringstraat 22, 3828 PH Hoogland",
+    "lat": 52.1934847,
+    "lng": 5.3607613999999995,
+    "placeId": "ChIJefY6wGhBxkcRgfCkTNMcEHM",
+    "primaryType": "store"
+  },
+  {
+    "name": "Melktap Jellum",
+    "address": "Hegedyk 58, 9026 BB Jellum",
+    "lat": 53.168701899999995,
+    "lng": 5.740234999999999,
+    "placeId": "ChIJl4Iefeb9yEcRpm__7hNo2Gw",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Juul",
+    "address": "4641 RA Ossendrecht",
+    "lat": 51.384613699999996,
+    "lng": 4.313936,
+    "placeId": "ChIJe8wqG9QNxEcRPeohJ5WkhpA",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Melktap kleinigeitje",
+    "address": "Geelsebaan 188, 2470 Retie, België",
+    "lat": 51.224835,
+    "lng": 5.0570197,
+    "placeId": "ChIJGTz34RdLwUcRVo0YNLY1O38",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Melktap Koops",
+    "address": "Broeklanden 15, 7856 TK Benneveld",
+    "lat": 52.760944699999996,
+    "lng": 6.7608947,
+    "placeId": "ChIJeRSGO-Pjt0cRimx8m3oB2P0",
+    "primaryType": ""
+  },
+  {
+    "name": "Melktap Maarheeze",
+    "address": "Ulkedonken 4, 6026 RP Maarheeze",
+    "lat": 51.3258802,
+    "lng": 5.588585999999999,
+    "placeId": "ChIJ16dzWRYpx0cRghU4vwKwZEs",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "Melktap Maria's Hoeve",
+    "address": "Bovenmeerweg 11, 2266 HX Leidschendam",
+    "lat": 52.0910168,
+    "lng": 4.4759623,
+    "placeId": "ChIJ1RFivKLJxUcRsfF8ViMfRck",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Marum",
+    "address": "Kruisweg 96, 9363 AG Marum",
+    "lat": 53.149817399999996,
+    "lng": 6.2858405,
+    "placeId": "ChIJuTgUOlZLyEcROR4s2e9oU9w",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Melktap Melkzusjes Eemnes",
+    "address": "Wakkerendijk 29, 3755 DA Eemnes",
+    "lat": 52.2490172,
+    "lng": 5.267149400000001,
+    "placeId": "ChIJI_4gVgMVxkcReobEOJE0fyw",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap met picknicktafel",
+    "address": "Brobbelbiesweg 2, 5374 SZ Schaijk",
+    "lat": 51.705898399999995,
+    "lng": 5.609441299999999,
+    "placeId": "ChIJoQ99vHsdx0cRgTytGcllaAQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Midden Dronkelaar",
+    "address": "Dronkelaarseweg 12, 3784 WB Terschuur",
+    "lat": 52.156292300000004,
+    "lng": 5.548032999999999,
+    "placeId": "ChIJzcH9EGFJxkcRVNKywFzIfwk",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Nunspeet / Melkveebedrijf van de Streek",
+    "address": "Vreeweg 120, 8071 SK Nunspeet",
+    "lat": 52.386093499999994,
+    "lng": 5.7416277,
+    "placeId": "ChIJ6QStoVDNx0cRIfYgPrg6CCY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melktap Oogst van eigen erf",
+    "address": "Stoutenburgerlaan 3, 3835 PB Stoutenburg",
+    "lat": 52.154410899999995,
+    "lng": 5.4482947,
+    "placeId": "ChIJl-_3EkBHxkcRlrq5o7wrhKY",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Paterswolde",
+    "address": "Hooiweg 202, 9765 EM Paterswolde",
+    "lat": 53.1510251,
+    "lng": 6.5556881,
+    "placeId": "ChIJYy0gKHQyyEcRUploPsbQIVI",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Roden",
+    "address": "Oosteinde 17, 9301 ZP Roden",
+    "lat": 53.1451407,
+    "lng": 6.4539912,
+    "placeId": "ChIJXxyf6XkzyEcRWgt6QtMvjUs",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Melktap Strikke",
+    "address": "Strikkeweg 7, 2330 Merksplas, België",
+    "lat": 51.3978276,
+    "lng": 4.8810167,
+    "placeId": "ChIJDdxbqOyvxkcR81diFDlXW64",
+    "primaryType": "store"
+  },
+  {
+    "name": "Melktap Ter Leenen",
+    "address": "Dam 33, 9950 Eeklo, België",
+    "lat": 51.1615995,
+    "lng": 3.5888788000000003,
+    "placeId": "ChIJDWm7_7Blw0cRqTdWVLTy25c",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Tolhoek",
+    "address": "Quacksedijk 6, 3235 KX Rockanje",
+    "lat": 51.8565329,
+    "lng": 4.1105789999999995,
+    "placeId": "ChIJqbMoZ6xRxEcRz4pwf0oQVnE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melktap Veessen",
+    "address": "De Stege 14, 8194 LP Veessen",
+    "lat": 52.388474099999996,
+    "lng": 6.0990223,
+    "placeId": "ChIJi2tEGu3dx0cR4rvkP4qGi0o",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Veldhuis",
+    "address": "Kraaienjagersweg 29, 7341 PT Beemte Broekland",
+    "lat": 52.251970899999996,
+    "lng": 6.0156279999999995,
+    "placeId": "ChIJhZhdpIPHx0cRhx8kj7SFrzU",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Verbij",
+    "address": "Kanaalweg 21, 1121 DP Landsmeer",
+    "lat": 52.4687262,
+    "lng": 4.9462782999999995,
+    "placeId": "ChIJm2m5kYcHxkcRDwFJEU0SwX4",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktap Wijngaarden",
+    "address": "Oosteinde 33A, 3366 BG Wijngaarden",
+    "lat": 51.8468829,
+    "lng": 4.7800842999999995,
+    "placeId": "ChIJlTGTsP2BxkcRgm4qwPjuyG0",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "melktaplithoijen",
+    "address": "Lutterstraat 15, 5396 PB Lithoijen",
+    "lat": 51.7819218,
+    "lng": 5.4766439,
+    "placeId": "ChIJ_-tgjJb7xkcRmUgefntY9UM",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melktapperij Prinsenhof",
+    "address": "4421 RK Kapelle",
+    "lat": 51.4602523,
+    "lng": 3.9256613,
+    "placeId": "ChIJC008BcZixEcRW0N1Ijdttv0",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Melkveebedrijf Dijkveld Stol",
+    "address": "Gemaalweg 4, 8313 PS Rutten",
+    "lat": 52.811541399999996,
+    "lng": 5.6984694000000005,
+    "placeId": "ChIJsSeUyLGOyEcRwDAAmfhTFRY",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveebedrijf Eierland",
+    "address": "Postweg 17, 1795 JJ De Cocksdorp",
+    "lat": 53.1057725,
+    "lng": 4.8113918,
+    "placeId": "ChIJ6_zo6T0wz0cR6Xqt7DdK7Pw",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveebedrijf Noordzigt",
+    "address": "Middelweg-West 239, 9079 MK Sint Jacobiparochie",
+    "lat": 53.2735652,
+    "lng": 5.6214372,
+    "placeId": "ChIJvzuX25AdyUcRkuFBviaibwc",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveebedrijf Oonk",
+    "address": "Misterweg 225A, 7109 BA Winterswijk Miste",
+    "lat": 51.9401535,
+    "lng": 6.6372955,
+    "placeId": "ChIJMU1ubQx7uEcRKGKCypO-cXo",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveebedrijf Peek & Fokker",
+    "address": "Kuilsestraat 6, 6674 MD Herveld",
+    "lat": 51.930262199999994,
+    "lng": 5.7493791,
+    "placeId": "ChIJa6sKmHupx0cRroZb3vCmvYI",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveebedrijf van Leeuwen",
+    "address": "Drieëndijk 15, 3218 LB Heenvliet",
+    "lat": 51.8527522,
+    "lng": 4.2098807,
+    "placeId": "ChIJEU91vodOxEcRLpMtq-_PLpI",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveebedrijf, Hoeveijs Vandebrouck-Vanheusden",
+    "address": "Leenstraat 8, 3721 Hasselt, België",
+    "lat": 50.8654248,
+    "lng": 5.439921200000001,
+    "placeId": "ChIJVQvqFT3gwEcRrWSV1QmONLA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melkveebedrijf/Melktap Pijls-Ortmans",
+    "address": "Steenstraat 22, 6155 KH Puth",
+    "lat": 50.9537106,
+    "lng": 5.883339100000001,
+    "placeId": "ChIJvZmsjRC5wEcR-U6orRCXHLU",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveehouderij 't Zoekerveld",
+    "address": "Weerselerveldweg 10, 7595 KC Weerselo",
+    "lat": 52.3382253,
+    "lng": 6.846044999999999,
+    "placeId": "ChIJ8X-arwcbuEcRdOqcDAp3TTQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveehouderij & Boerderijwinkel Hoogerwerf",
+    "address": "Kladseweg 1, 4664 RB Lepelstraat",
+    "lat": 51.5492918,
+    "lng": 4.2726377,
+    "placeId": "ChIJly9wmPxrxEcRLxnEEKXXshY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Melkveehouderij De Alblashoeve",
+    "address": "Oosteinde 21a, 2969 AS Oud-Alblas",
+    "lat": 51.8598779,
+    "lng": 4.7275138,
+    "placeId": "ChIJ-cfAKMsrxEcRTh82MXtrBrY",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveehouderij De Waal",
+    "address": "Kon. Wilhelminalaan 137, 3372 AC Hardinxveld-Giessendam",
+    "lat": 51.8280633,
+    "lng": 4.8831755999999995,
+    "placeId": "ChIJ6b949AaExkcRqmmWVNDi4cs",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveehouderij Eikelenboom",
+    "address": "Katerwaalsedijk 13, 3216 LE Abbenbroek",
+    "lat": 51.8483989,
+    "lng": 4.2024761,
+    "placeId": "ChIJcckHjKdPxEcRQT_KspjimIE",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Melkveehouderij Haredale",
+    "address": "Groot Haasdal 7, 6333 AV Schimmert",
+    "lat": 50.892885899999996,
+    "lng": 5.8219844,
+    "placeId": "ChIJCxCtJWzAwEcRFfhQtmPeK-k",
+    "primaryType": "store"
+  },
+  {
+    "name": "Neerpedehoeve",
+    "address": "Neerpedestraat 958, 1070 Anderlecht, België",
+    "lat": 50.827833299999995,
+    "lng": 4.2622694,
+    "placeId": "ChIJA04pkivHw0cRh4M-2V6c1wY",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Noaber Eieren",
+    "address": "Ypeloweg 11, 7468 RA Enter",
+    "lat": 52.3072988,
+    "lng": 6.585820999999999,
+    "placeId": "ChIJSVleaCsIuEcRLPAgY8ZMx0I",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Noordwateringshoeve",
+    "address": "Noordwateringsweg 26, 2990 Wuustwezel, België",
+    "lat": 51.417914700000004,
+    "lng": 4.598598,
+    "placeId": "ChIJJY3Sq6kExEcRQ1OsJlSwOCk",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Novalishoeve",
+    "address": "Hoornderweg 46, 1797 RA Den Hoorn Texel",
+    "lat": 53.0269444,
+    "lng": 4.7613889,
+    "placeId": "ChIJ-7cEW_s5z0cRqdMGqwL9hL0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "O'Bio zelfpluktuin",
+    "address": "Driekoningenstraat 36, A, 8710 Wielsbeke, België",
+    "lat": 50.939189,
+    "lng": 3.380999,
+    "placeId": "ChIJF4qO9uE_w0cR7bGuN2GPUtQ",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Onze Winkel boerderijwinkel, groenten fruit winkel, cadeau winkel, theeschenkerij, B&B en kinderboerderij",
+    "address": "Verlaat 3, 8428 RS Appelscha",
+    "lat": 52.964945799999995,
+    "lng": 6.3382743,
+    "placeId": "ChIJ6W1XN885yEcR4RqkBGy2jy0",
+    "primaryType": "supermarket"
+  },
+  {
+    "name": "Ooijs Moois, de pluktuin in de Ooijpolder",
+    "address": "Leuthsestraat 3, 6576 JJ Ooij",
+    "lat": 51.8499333,
+    "lng": 5.9339974,
+    "placeId": "ChIJU9-Y3ooJx0cRR38ZigQaIRk",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Oosterom Kersen - Boerderijwinkel De Ooievaar",
+    "address": "Breudijk 56 B, 3481 LR Harmelen",
+    "lat": 52.1080556,
+    "lng": 4.975,
+    "placeId": "ChIJDR8kWIxwxkcR-JaJ0NnZBmA",
+    "primaryType": "store"
+  },
+  {
+    "name": "Op De Him Boerderijwinkel",
+    "address": "De Him 4, 9023 BC Jorwert",
+    "lat": 53.139467499999995,
+    "lng": 5.688663699999999,
+    "placeId": "ChIJO-pz_-77yEcRgvdvYrX7-1o",
+    "primaryType": "supermarket"
+  },
+  {
+    "name": "Paillart Boerderij",
+    "address": "Paillartcamp 9, 9600 Renaix, België",
+    "lat": 50.7402428,
+    "lng": 3.5541776,
+    "placeId": "ChIJ9bMxLAYbw0cRN8Pu9ATGbNQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Pluk en theetuin in de 7e Hemel",
+    "address": "Belgenhoek 7, 5985 NJ Grashoek",
+    "lat": 51.371187799999994,
+    "lng": 5.9186751,
+    "placeId": "ChIJ2fN7NBk4x0cRbxq7UL0Vexw",
+    "primaryType": "restaurant"
+  },
+  {
+    "name": "Pluk Je Fruit",
+    "address": "Drie Eikenstraat 13, 2650 Edegem, België",
+    "lat": 51.1588213,
+    "lng": 4.4401687,
+    "placeId": "ChIJ0e378r3ww0cRaKe-qDXbfzY",
+    "primaryType": "service"
+  },
+  {
+    "name": "PLUK zorgtuinderij",
+    "address": "Marisstraat 13a, 5986 NC Beringe",
+    "lat": 51.3488998,
+    "lng": 5.943200099999999,
+    "placeId": "ChIJLT6o4axJx0cRTuc26pSzdiw",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Pluk! Boterbloem CSA 🥬🥕",
+    "address": "Lutkemeerweg 262, 1067 TH Amsterdam",
+    "lat": 52.359012,
+    "lng": 4.7667905,
+    "placeId": "ChIJo3ePM8PjxUcR8ZMvaVZmTic",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Pluk! Groenten van West",
+    "address": "Tom Schreursweg 48, 1067 MC Amsterdam",
+    "lat": 52.3828344,
+    "lng": 4.774163100000001,
+    "placeId": "ChIJVVVVYY_jxUcRX6hpA2Mf_jc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Plukboerderij GRONDIG",
+    "address": "Veerdreef, 9070 Destelbergen, België",
+    "lat": 51.027423,
+    "lng": 3.7956157999999998,
+    "placeId": "ChIJk8kcwDx1w0cRpsQsKYvQq1I",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Plukboerderij Zinckval",
+    "address": "Zinkvalstraat 1, 2627 Schelle, België",
+    "lat": 51.129152999999995,
+    "lng": 4.3564531,
+    "placeId": "ChIJb6UhbYTxw0cRKmL_qg3oCjk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Plukhof",
+    "address": "Heerweg 50 W, 2222 Heist-op-den-Berg, België",
+    "lat": 51.1128839,
+    "lng": 4.774240499999999,
+    "placeId": "ChIJ3SOZqcRQwUcRQt8h5hLKBpU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Plukhof Beernem",
+    "address": "Kasteeldreef 9, 8730 Beernem, België",
+    "lat": 51.143858699999996,
+    "lng": 3.347028,
+    "placeId": "ChIJDea9dVpbw0cRi2FlI10GRZI",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Plukkerij Framblij",
+    "address": "Zwartendijk 11, 2681 LM Monster",
+    "lat": 52.019945299999996,
+    "lng": 4.1864311,
+    "placeId": "ChIJ_8A46giyxUcRVr77x93Viv4",
+    "primaryType": "event_venue"
+  },
+  {
+    "name": "PlukPlek",
+    "address": "Heirbaan 80, 1740 Ternat, België",
+    "lat": 50.8652757,
+    "lng": 4.1893633,
+    "placeId": "ChIJWwnJNEa_w0cR0tUt6bwieH8",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Plukrijp",
+    "address": "Trommelstraat 24, 2223 Schriek, België",
+    "lat": 51.0271282,
+    "lng": 4.723914499999999,
+    "placeId": "ChIJ8wlW1G5ZwUcRd-mBzjgCcFc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Pluktuin Amstelveen",
+    "address": "Amsteldijk Zuid 183b, 1188 VN Amstelveen",
+    "lat": 52.2524581,
+    "lng": 4.8683359,
+    "placeId": "ChIJ0ZysF0t1xkcRXmm9aaraMPM",
+    "primaryType": "florist"
+  },
+  {
+    "name": "Pluktuin Bakkum",
+    "address": "Limmerweg 5 C, 1901 ME Castricum",
+    "lat": 52.5848869,
+    "lng": 4.6657397,
+    "placeId": "ChIJqxjXD773xUcRcIgnuHkv_88",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Pluktuin Bloemfontein Bergen",
+    "address": "Groeneweg 8 A, 1861 PH Bergen",
+    "lat": 52.654538099999996,
+    "lng": 4.6924277,
+    "placeId": "ChIJGwVCH-9Zz0cRJ37Qap1iAVw",
+    "primaryType": "market"
+  },
+  {
+    "name": "Pluktuin Componistenlaan Voorhout",
+    "address": "Componistenlaan, 2216 EG Voorhout",
+    "lat": 52.2278052,
+    "lng": 4.483594699999999,
+    "placeId": "ChIJDQ5yZ07BxUcRp8LnSSCZQ-Y",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Pluktuin de Bosrand",
+    "address": "Dorskampweg, t/o 15, 6704 PB Wageningen",
+    "lat": 51.973313,
+    "lng": 5.690983,
+    "placeId": "ChIJbXfzUeisx0cR5AG3BMc1GwI",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Pluktuin Dijkerhoek",
+    "address": "Oude Deventerweg 49, 7451 LT Holten",
+    "lat": 52.279561699999995,
+    "lng": 6.3661416,
+    "placeId": "ChIJzX33gNjxx0cRWm6sU_Dy6CU",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Pluktuin Gewoon Buiten",
+    "address": "Overasebaan 10, 4891 RG Rijsbergen",
+    "lat": 51.516089799999996,
+    "lng": 4.7223821,
+    "placeId": "ChIJ-VadfI2hxkcR1YESXBnk62Q",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Pluktuin Hellevoetsluis: Leijnes Plukland",
+    "address": "Langeweg 7, 3222 LD Hellevoetsluis",
+    "lat": 51.8638562,
+    "lng": 4.1452433,
+    "placeId": "ChIJpWNTMMNRxEcR_nHpJ4tdlIY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Pluktuin Het Platteland",
+    "address": "Engersteeg 14, 3882 RJ Putten",
+    "lat": 52.2730983,
+    "lng": 5.571584199999999,
+    "placeId": "ChIJDf3JwIo2xkcRmjxA-Df9Xx8",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Pluktuin Hof Hazenberg",
+    "address": "Prelaatweg 81, 4363 ND Aagtekerke",
+    "lat": 51.5358333,
+    "lng": 3.4841667,
+    "placeId": "ChIJv57mQO-9xEcRb8Ka7Zrf5fg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Pluktuin IJzendoorn",
+    "address": "Molenstraat 46b, 4053 HE IJzendoorn",
+    "lat": 51.912310000000005,
+    "lng": 5.515008,
+    "placeId": "ChIJb9oBsehWxkcRltc6kDj3yk8",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Pluktuin Kardinge",
+    "address": "Kardingerplein, 9735 AE Groningen",
+    "lat": 53.2422532,
+    "lng": 6.5958369999999995,
+    "placeId": "ChIJ0UijVPLTyUcR1PHKjsAEeU8",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Pluktuin Marina Poussart",
+    "address": "Luxemburghof 2, 6137 LK Sittard",
+    "lat": 50.996986,
+    "lng": 5.903896,
+    "placeId": "ChIJ-b8GBAC5wEcRZI-V91ttdYw",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Pluktuin PlukWad",
+    "address": "Alde Leane, 8861 KD Wijnaldum",
+    "lat": 53.1937271,
+    "lng": 5.4617549,
+    "placeId": "ChIJm4yLaNjdyEcRw0uSo4cy7Lc",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Pluktuin Stoutenburg",
+    "address": "Stoutenburgerlaan 6, 3835 PB Stoutenburg",
+    "lat": 52.1540666,
+    "lng": 5.4524471,
+    "placeId": "ChIJH2_TkAhGxkcRRrOgBITnYhY",
+    "primaryType": "tea_house"
+  },
+  {
+    "name": "Pluktuinderij Aardbei en zo",
+    "address": "Middenweg 13, 1394 AC Nederhorst Den Berg",
+    "lat": 52.2494075,
+    "lng": 5.0620332999999995,
+    "placeId": "ChIJp32yS8ttxkcRNqfADxhLwgA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Polak's Tuinderij",
+    "address": "Albrandswaardsedijk 177, 3172 VA Poortugaal",
+    "lat": 51.8464707,
+    "lng": 4.4110121,
+    "placeId": "ChIJ00Akrq83xEcR1aoL4hBFy2k",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Polderkip Boerderijautomaat",
+    "address": "Vogelweg 20, 8218 ND Lelystad",
+    "lat": 52.4275691,
+    "lng": 5.5197614999999995,
+    "placeId": "ChIJT73ey2ElxkcRF5CTRAjMtk0",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Polderzuivel",
+    "address": "Noordpolder 2, 2731 PZ Benthuizen",
+    "lat": 52.1038642,
+    "lng": 4.5416241,
+    "placeId": "ChIJpTu2bKvPxUcRm6Lo6iVE3mM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Pure (rauwe) melk",
+    "address": "Valkkogerdijk 9, 1744 HE Sint Maarten",
+    "lat": 52.7734482,
+    "lng": 4.748227099999999,
+    "placeId": "ChIJUbk-2RhQz0cRG495G6XSfmY",
+    "primaryType": "store"
+  },
+  {
+    "name": "Rauwe Melktap de Groene Grens",
+    "address": "Zuiderkade 24A, 6718 PH Ede",
+    "lat": 52.0224857,
+    "lng": 5.595762499999999,
+    "placeId": "ChIJR_mDsNFTxkcRBQRX6utF5OU",
+    "primaryType": ""
+  },
+  {
+    "name": "Rauwe melktap Van Bree",
+    "address": "De Steeg 8, 5827 AE Vortum-Mullem",
+    "lat": 51.6211163,
+    "lng": 5.9847481,
+    "placeId": "ChIJXfr2DAATx0cR2PtFvNx_p-Y",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Rosita's Boerderijwinkel",
+    "address": "Noorderweg 10, 9356 TH Tolbert",
+    "lat": 53.1890794,
+    "lng": 6.3683685,
+    "placeId": "ChIJxcw2nZk1yEcRAXSCjh8K4_w",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Rustpunt/Boerderijwinkel De Eierkast",
+    "address": "Kraaienjagersweg 18, 7341 PS Beemte Broekland",
+    "lat": 52.248035099999996,
+    "lng": 6.0155726,
+    "placeId": "ChIJo1SXbB7Hx0cRqVM9XwMzPkI",
+    "primaryType": "store"
+  },
+  {
+    "name": "Schapenboerderij Texel - Lammetjes knuffelen",
+    "address": "Pontweg 77, 1791 LA Den Burg",
+    "lat": 53.041373,
+    "lng": 4.7956199999999995,
+    "placeId": "ChIJqcouqykxz0cR6y6K66j1ORM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Schapenkaasboerderij Tusken Bosk en Mar",
+    "address": "Ige Galamawei 23, 8582 KR Oudega Gaast Sleat",
+    "lat": 52.900557500000005,
+    "lng": 5.5160105,
+    "placeId": "ChIJEVomQFyTyEcRiIk0CFqBMPM",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Simmerfruit",
+    "address": "Zomerweg 94, 9257 MG Noardburgum",
+    "lat": 53.2147934,
+    "lng": 6.0122124,
+    "placeId": "ChIJwXk8q59UyEcRwOLg2LOFPLw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Slikgatse Hoeve",
+    "address": "Hokkenberg 1, 4772 PD Langeweg",
+    "lat": 51.6381267,
+    "lng": 4.6713027,
+    "placeId": "ChIJMwGalkshxEcR5JJlo0bo-gI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Stadsakker Tienen",
+    "address": "Unnamed Road, 3300 Tienen, België",
+    "lat": 50.8136343,
+    "lng": 4.9418263,
+    "placeId": "ChIJtS_zLnBswUcRxhmfc8m8O0Q",
+    "primaryType": "garden"
+  },
+  {
+    "name": "StadsAkkers",
+    "address": "Dommeweg 5b, 7323 RD Apeldoorn",
+    "lat": 52.2333371,
+    "lng": 6.0094942,
+    "placeId": "ChIJfXIFHTfHx0cRE5xFxqfLumA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Stadstuinderij Het Zoete Land",
+    "address": "Zoeterwoudsesingel, 2313 GX Leiden",
+    "lat": 52.1524131,
+    "lng": 4.4981745,
+    "placeId": "ChIJawE7JonGxUcRu07o40X5bAg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Steege's Erf",
+    "address": "Zwartendijk 3, 8265 PD Kampen",
+    "lat": 52.5303131,
+    "lng": 5.9064497,
+    "placeId": "ChIJPTNGFkbWx0cRo05Dr4kMZzs",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Streekstra Aardappelboerderij",
+    "address": "Koaiwei 3, 9145 RC Ternaard",
+    "lat": 53.3854921,
+    "lng": 5.9520618999999995,
+    "placeId": "ChIJJfBHzySoyUcR8JoirVQWyxg",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Streekwinkel 't Verst",
+    "address": "Grindweg 128A, 8485 JG Munnekeburen",
+    "lat": 52.840505799999995,
+    "lng": 5.8754145,
+    "placeId": "ChIJ1ZUAL3VhyEcRSxurHuS9ZtM",
+    "primaryType": "store"
+  },
+  {
+    "name": "Streekwinkel De Lingegaerdt",
+    "address": "Grote Molenstraat 116, 6661 NG Elst",
+    "lat": 51.9317784,
+    "lng": 5.840143299999999,
+    "placeId": "ChIJGcqubZuox0cRtzizn_fbSjQ",
+    "primaryType": "supermarket"
+  },
+  {
+    "name": "Streekwinkel en Zorgboerderij Kooghuis",
+    "address": "Provincialeweg 3a, 1911 MZ Uitgeest",
+    "lat": 52.52562770000001,
+    "lng": 4.6980686,
+    "placeId": "ChIJsy5tv_f5xUcRR8IfVkEpxOU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Sturm Zeeuwse Eieren",
+    "address": "Frederik Barbarossaweg 1, 4364 SG Grijpskerke",
+    "lat": 51.5145828,
+    "lng": 3.5725759,
+    "placeId": "ChIJV1zDaeiWxEcRr0aIzIKPllQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "t Zuivelhuisje",
+    "address": "Hoogedijk 58, 1145 PR Katwoude",
+    "lat": 52.4844576,
+    "lng": 5.0574218,
+    "placeId": "ChIJJTBKerQFxkcRPjkubS3F34I",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Texelse IJsboerderij Labora",
+    "address": "Hollandseweg 2, 1795 LE De Cocksdorp",
+    "lat": 53.143976,
+    "lng": 4.866237,
+    "placeId": "ChIJr8mXEUEuz0cRIX2RQt_6txQ",
+    "primaryType": "ice_cream_shop"
+  },
+  {
+    "name": "The Barn Boerderij Automaat",
+    "address": "Nonnetjesweg 2, 8256 RC Biddinghuizen",
+    "lat": 52.4181132,
+    "lng": 5.617927,
+    "placeId": "ChIJLYgVgpAvxkcRaZc7HUrBOaE",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Theeschenkerij Bij ons op de Boerderij",
+    "address": "Tarpanweg 20, 8255 RS Swifterbant",
+    "lat": 52.5739806,
+    "lng": 5.6626993,
+    "placeId": "ChIJO5SOzueByEcRafNXPIxcVfE",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Tromp Eierenhandel en Levensmiddelen",
+    "address": "Dorpsstraat 261, 1689 GD Zwaag",
+    "lat": 52.672439999999995,
+    "lng": 5.0869384,
+    "placeId": "ChIJO284aGupyEcRxTCRHvrrx3o",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "TUIN pluktuin & pauzeplaats",
+    "address": "Rulerweg 12, 6741 GW Lunteren",
+    "lat": 52.1285101,
+    "lng": 5.6287898,
+    "placeId": "ChIJlXFVgLZNxkcRQR4dOvzYI4Q",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Tuinderij De Groenteboer Biologische zelfoogsttuin",
+    "address": "Mijzijde 6, 3471 GM Kamerik",
+    "lat": 52.1054435,
+    "lng": 4.8855124,
+    "placeId": "ChIJXQKuIoZ1xkcRCEWZC8JC04o",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Tuinderij de Marlequi",
+    "address": "Trambaan 5a, 1749 CZ Warmenhuizen",
+    "lat": 52.7272913,
+    "lng": 4.7260205,
+    "placeId": "ChIJTcTxR4VQz0cR1rgh0Hd0ZZE",
+    "primaryType": "florist"
+  },
+  {
+    "name": "Tuinderij Klein Alma Zelfoogsttuin",
+    "address": "Oude Dijk 2, 9781 BL Bedum",
+    "lat": 53.3008702,
+    "lng": 6.5887279,
+    "placeId": "ChIJA63_AATOyUcRE1RnzyAWa-Q",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Twentse Boerderijwinkel Zunakaas",
+    "address": "Smalendijk 4, 7466 PM Zuna",
+    "lat": 52.3352599,
+    "lng": 6.4851408,
+    "placeId": "ChIJ99N80vX3x0cReCoXrQVq36Y",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Ut eierkapelke",
+    "address": "Bloemerstraat 8, 6031 NW Nederweert",
+    "lat": 51.299396099999996,
+    "lng": 5.7410657,
+    "placeId": "ChIJXTdvJx0xx0cR5xzO3EFEfOY",
+    "primaryType": "wholesaler"
+  },
+  {
+    "name": "Utopia Hoeve",
+    "address": "Grote Sloot 411a, 1751 LE Schagerbrug",
+    "lat": 52.808974199999994,
+    "lng": 4.7730762,
+    "placeId": "ChIJXW9aarBPz0cRXH347TVtbEA",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "V.O.F. Boerderijwinkel Indemans",
+    "address": "Maaseikerweg 13, 6114 JN Susteren",
+    "lat": 51.0777399,
+    "lng": 5.833185599999999,
+    "placeId": "ChIJBafqmhzJwEcRVwXQu0wVGLU",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "V.O.F. Gebr. Van Leeuwen kaasboerderij met kaasautomaat",
+    "address": "Lagewaard 47, 2396 AW Koudekerk aan den Rijn",
+    "lat": 52.1395852,
+    "lng": 4.60673,
+    "placeId": "ChIJReb8xSjFxUcRcO5BSu40VKs",
+    "primaryType": ""
+  },
+  {
+    "name": "V.O.F. M.C.P. Wijnker & Wijnker Streekproducten",
+    "address": "Zwarteweg 19, 1735 EH 't Veld",
+    "lat": 52.7442418,
+    "lng": 4.848305,
+    "placeId": "ChIJXd1X8jlSz0cRBHwqm1SEriE",
+    "primaryType": ""
+  },
+  {
+    "name": "Van Hoof - Martinushoeve, Boerderijwinkel + 24/7 versautomaat",
+    "address": "Pastoor Smitsstraat 36, 5491 XN Sint-Oedenrode",
+    "lat": 51.579652499999995,
+    "lng": 5.4102109,
+    "placeId": "ChIJH7_D1QrnxkcRfXq0io-aGnM",
+    "primaryType": "market"
+  },
+  {
+    "name": "van Nieuwenhoven Melk- en Pluimvee",
+    "address": "Heide 7, 6088 PC Roggel",
+    "lat": 51.286524,
+    "lng": 5.922149,
+    "placeId": "ChIJjySs_wE2x0cRZbfIBDzWO-s",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Van Reeuwijk Fruit & Flowers",
+    "address": "Hoofdweg 1475, 2157 PA Abbenes",
+    "lat": 52.243623899999996,
+    "lng": 4.6031759,
+    "placeId": "ChIJFaUSN-nCxUcRvDLNyxZocZs",
+    "primaryType": "florist"
+  },
+  {
+    "name": "Van Rijn Boerderijwinkel",
+    "address": "Kruisweg 10, 2481 KV Woubrugge",
+    "lat": 52.167765599999996,
+    "lng": 4.6418156,
+    "placeId": "ChIJgZvoyUbbxUcR2XY3X4BdMZE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Van Wees Boerenkaas",
+    "address": "Rijnlanderweg 1166, 2153 KC Nieuw-Vennep",
+    "lat": 52.2637947,
+    "lng": 4.6736599,
+    "placeId": "ChIJZZaSiWPdxUcRxrzQgoQHldE",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Vechtdal Eieren",
+    "address": "Hardenbergerweg 29, 7691 PC Bergentheim",
+    "lat": 52.525657599999995,
+    "lng": 6.5909149,
+    "placeId": "ChIJpR35r7zix0cRVq3_SgXtuog",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Veelon Melkvee & Melktap",
+    "address": "Bredestraat 67, 5121 PE Rijen",
+    "lat": 51.605630899999994,
+    "lng": 4.9430296,
+    "placeId": "ChIJ6XUpqiCYxkcR9Qqj5fmvQTc",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Veluwse Asperge Boerderij",
+    "address": "Apeldoornseweg 198, 6731 SC Otterlo",
+    "lat": 52.100370999999996,
+    "lng": 5.755763,
+    "placeId": "ChIJDZfPNsmzx0cRLL_PPvf-0pk",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Verhage Fruit",
+    "address": "Oosterringweg 33, 8315 PS Luttelgeest",
+    "lat": 52.7556209,
+    "lng": 5.8363008,
+    "placeId": "ChIJO_ryoOtiyEcRLk6y7ieeyCQ",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "Verkoop verse eieren",
+    "address": "Carl Fellingerweg 3, 8755 JL Idsegahuizum",
+    "lat": 53.049886,
+    "lng": 5.431603,
+    "placeId": "ChIJg_Yr4SroyEcRI3IvzJqMzIg",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "Vers boeren-softijs (automaat)",
+    "address": "Vossenhoek 4, 9550 Herzele, België",
+    "lat": 50.8531352,
+    "lng": 3.8665417,
+    "placeId": "ChIJrc1KBQCnw0cRJhuN32PF0lg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Vers fruitautomaat Frijns & Zelftap Softijs",
+    "address": "Rijksweg 38, 6286 AG Wittem",
+    "lat": 50.809481,
+    "lng": 5.9360795,
+    "placeId": "ChIJhaVjNYWWwEcRFNpjaPXkJfY",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Versautomaat",
+    "address": "Middenheideveldweg 3a, 6105 BA Maria Hoop",
+    "lat": 51.093472899999995,
+    "lng": 6.0128303999999995,
+    "placeId": "ChIJ_xDURbaxwEcReg-BPjktt5Y",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "Versautomaat",
+    "address": "Leeuwerik 9, 5993 PZ Maasbree",
+    "lat": 51.3481701,
+    "lng": 6.0472125,
+    "placeId": "ChIJTzb06RFPx0cRfukyTmXhltM",
+    "primaryType": "store"
+  },
+  {
+    "name": "Versautomaat Van Hoof Zachtfruit & Asperges",
+    "address": "Schootsedijk 35, 5491 TD Sint-Oedenrode",
+    "lat": 51.5832683,
+    "lng": 5.426699999999999,
+    "placeId": "ChIJu5dOHJ_nxkcRl-uRqvOF7ns",
+    "primaryType": "market"
+  },
+  {
+    "name": "Versautomaat VERZ Maasbree",
+    "address": "Lange Heide 14, 5993 PB Maasbree",
+    "lat": 51.372607099999996,
+    "lng": 6.0583638,
+    "placeId": "ChIJn3VtSBFFx0cRrRP94r9zXug",
+    "primaryType": "store"
+  },
+  {
+    "name": "Versboerderij Daalwiek",
+    "address": "Oude Diepenheimseweg 3a, 7274 AB Geesteren",
+    "lat": 52.13222220000001,
+    "lng": 6.5283333,
+    "placeId": "ChIJKX0RnXuKx0cRWqtwN-6rdAY",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Versboerderij Hoeve Elisabeth",
+    "address": "Molenweg Zuid 77, 6129 PH Urmond",
+    "lat": 50.995282499999995,
+    "lng": 5.7725965,
+    "placeId": "ChIJo3h3nWLGwEcRLcu3V1B69lg",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Versboerderij Keulen",
+    "address": "Provincialeweg Noord 27-A, 6438 AA Oirsbeek",
+    "lat": 50.95802870000001,
+    "lng": 5.9089763,
+    "placeId": "ChIJvem0Pia5wEcRYWk3AUOUsGA",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Verse Eieren Automaat",
+    "address": "Apeldoornsestraat 65, 3781 BH Voorthuizen",
+    "lat": 52.1889733,
+    "lng": 5.6150173,
+    "placeId": "ChIJ6VoFcUxKxkcR3f-LXX8LeXE",
+    "primaryType": "store"
+  },
+  {
+    "name": "Verse melk en eieren hilvarenbeek",
+    "address": "Veldhoven 7, 5081 NK Hilvarenbeek",
+    "lat": 51.480133599999995,
+    "lng": 5.130271899999999,
+    "placeId": "ChIJJQU5_SbHxkcR0J5gldkMu-E",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Vershal De Frambozenboerderij",
+    "address": "Handwerkerszijde 90-100, 9201 CP Drachten",
+    "lat": 53.1143667,
+    "lng": 6.0915357,
+    "placeId": "ChIJmUPsFMJRyEcRJY-Zl-aBUm8",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Vierdaagse Camping en Boerderij Automaat De Plak",
+    "address": "Leuthsestraat 2, 6576 JK Ooij",
+    "lat": 51.8539531,
+    "lng": 5.9189777999999995,
+    "placeId": "ChIJXQplpQoJx0cRHzEpeIzHiDQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Vink Fruitboerderij",
+    "address": "Zuiderringweg 13-II, 8317 RA Kraggenburg",
+    "lat": 52.660624999999996,
+    "lng": 5.887802,
+    "placeId": "ChIJFcWegAt8yEcROtdNqn7P2t4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Vlees en eierautomaat De Boskeelen",
+    "address": "Laagstraat 4, 4641 SP Ossendrecht",
+    "lat": 51.382984099999994,
+    "lng": 4.3364999,
+    "placeId": "ChIJOyA5JG8NxEcRvDGBjAeeiOk",
+    "primaryType": "store"
+  },
+  {
+    "name": "Vlees van Scholten, boerderijautomaten 24/7 geopend",
+    "address": "JF7X+45, 7701 BA Dedemsvaart",
+    "lat": 52.612838499999995,
+    "lng": 6.4979625,
+    "placeId": "ChIJl7d9HgAFyEcRP5Lu5pVbgh4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Vleesboerderij Veluws Land",
+    "address": "Kanaalweg 76, 8171 LT Vaassen",
+    "lat": 52.301915,
+    "lng": 6.004078,
+    "placeId": "ChIJ6a2hqyPEx0cROatUcwWrCI0",
+    "primaryType": "butcher_shop"
+  },
+  {
+    "name": "Vleit eierautomaat Barneveld",
+    "address": "Kapteijnstraat, 3771 HE Barneveld",
+    "lat": 52.1419529,
+    "lng": 5.5869935,
+    "placeId": "ChIJ6xtgagBNxkcRyfPMSl5_dMY",
+    "primaryType": "store"
+  },
+  {
+    "name": "Vleit Verse Eieren Automaat",
+    "address": "Lankerenseweg 28a, 3781 NB Voorthuizen",
+    "lat": 52.184427199999995,
+    "lng": 5.5729127,
+    "placeId": "ChIJmTNTu3xJxkcRpMoM6g-I1SE",
+    "primaryType": "store"
+  },
+  {
+    "name": "Voedselautomaat vers van de boer",
+    "address": "Drielindenbaan 108, 1785 Merchtem, België",
+    "lat": 50.9506739,
+    "lng": 4.218915,
+    "placeId": "ChIJtZ3NF0yVw0cRqvASPAr4ICk",
+    "primaryType": "farmers_market"
+  },
+  {
+    "name": "Voskuilerhoef eierautomaat",
+    "address": "Voskuilerdijk 2, 3931 MZ Woudenberg",
+    "lat": 52.106770999999995,
+    "lng": 5.443799,
+    "placeId": "ChIJa4_UaHdFxkcRjI8yC2AaecE",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Wambeekhoeve",
+    "address": "Massestraat 50, 1741 Ternat, België",
+    "lat": 50.8465557,
+    "lng": 4.169622500000001,
+    "placeId": "ChIJo4MHDtC4w0cREXi9EckTI3E",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Wegdam Eieren",
+    "address": "Kappellenweg 2, 7241 PC Lochem",
+    "lat": 52.168793,
+    "lng": 6.457925899999999,
+    "placeId": "ChIJlfMf-EOLx0cR70qhf1cpxrc",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Wenum Hoeve",
+    "address": "Wenumsedwarsweg 99, 7345 AS Wenum-Wiesel",
+    "lat": 52.2494181,
+    "lng": 5.9723501,
+    "placeId": "ChIJPwwL8gDHx0cR5lJwpOnEDrM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Wijngaard & Boerderijwinkel Maronesse",
+    "address": "Steenwijkerweg 23, 8316 RH Marknesse",
+    "lat": 52.7214587,
+    "lng": 5.9249208,
+    "placeId": "ChIJG2F61017yEcRc7BWreFkpwg",
+    "primaryType": "vineyard"
+  },
+  {
+    "name": "Wikkerink Zuivel B.V.",
+    "address": "Eskesweg 6, 7121 LZ Aalten",
+    "lat": 51.9299287,
+    "lng": 6.6146617999999995,
+    "placeId": "ChIJm7vrR_B7uEcRJZIiFwj_EEg",
+    "primaryType": "supermarket"
+  },
+  {
+    "name": "Wilde Melk",
+    "address": "Tienboerenweg 22, 3641 RA Mijdrecht",
+    "lat": 52.2360215,
+    "lng": 4.8617335,
+    "placeId": "ChIJHZ9eQdh1xkcRqDBAwzF32Yo",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Winsect Boerderijwinkel | Tuinmest & Meelwormen",
+    "address": "Barloseweg 24A, 7122 PV Aalten",
+    "lat": 51.9558894,
+    "lng": 6.5735383,
+    "placeId": "ChIJcyqiTG15uEcRu1vmgMCVxBk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Winsumer Zuivel en Rundvlees",
+    "address": "Netlaan 3, 9951 SG Winsum",
+    "lat": 53.3269884,
+    "lng": 6.5414927,
+    "placeId": "ChIJJbEK8PbOyUcRJ-_pmAIlFj8",
+    "primaryType": ""
+  },
+  {
+    "name": "Wou! (h)eerlijke zuivel",
+    "address": "Damweg 5, 3251 LB Stellendam",
+    "lat": 51.7911155,
+    "lng": 4.033116199999999,
+    "placeId": "ChIJS35A9VBXxEcRgY9BrkxZi3Q",
+    "primaryType": "store"
+  },
+  {
+    "name": "WR Eierautomaat Rutten",
+    "address": "Lemsterweg, 8313 RC Rutten",
+    "lat": 52.810452899999994,
+    "lng": 5.7319388,
+    "placeId": "ChIJsdQnEACJyEcRW7w177Luz2Q",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zachtfruitbedrijf H. en H. Sturing",
+    "address": "De Streek 13, 9414 VL Hooghalen",
+    "lat": 52.921096999999996,
+    "lng": 6.5206119,
+    "placeId": "ChIJp42ptTojyEcRhzo0Oc_5OsY",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Zelfoogstboerderij Gezonde Goesting",
+    "address": "Zandstraat, 2360 Oud-Turnhout, België",
+    "lat": 51.3084324,
+    "lng": 4.9847475,
+    "placeId": "ChIJBUqakKSzxkcR_xSXt3EXpv0",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Zelfoogsttuin Nieuwe Akker",
+    "address": "Lobbertsweg 1, 7433 PT Schalkhaar",
+    "lat": 52.2697216,
+    "lng": 6.2119222999999995,
+    "placeId": "ChIJK-_SnsPrx0cR7Ip4hkY0b6E",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zelfpluk Groentetuin",
+    "address": "Lutmarsweg 6, 7863 PX Gees",
+    "lat": 52.7525799,
+    "lng": 6.6901136999999995,
+    "placeId": "ChIJTxji-Arit0cRUCfXJH91PUw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zelfplukboomgaard 't Straatje / WTE Fruitadvies",
+    "address": "Kerkstraat 39 (woonadres) / het Straatje (boomgaard, 5301 LZ Zaltbommel",
+    "lat": 51.812940999999995,
+    "lng": 5.251352,
+    "placeId": "ChIJ5QXESITzxkcR4L86Ce0Mow4",
+    "primaryType": ""
+  },
+  {
+    "name": "Zelfpluktuin Groenhof",
+    "address": "Dorpsstraat 111, 8896 JA Hoorn",
+    "lat": 53.4005477,
+    "lng": 5.356399199999999,
+    "placeId": "ChIJm2sC44gkyUcRL4929HENIYE",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Zorgboerderij De Hoop / Boerderijautomaat",
+    "address": "Ringdijk 2, 2461 BZ Ter Aar",
+    "lat": 52.17680240000001,
+    "lng": 4.7043254999999995,
+    "placeId": "ChIJGdYmavPbxUcRD_-DU46huUE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "zorgpluktuin het voortje",
+    "address": "Voortje 55, 5731 PP Mierlo",
+    "lat": 51.423806,
+    "lng": 5.638176,
+    "placeId": "ChIJR4yEjyokx0cRgxtJCW2G31M",
+    "primaryType": "service"
+  },
+  {
+    "name": "Zorgtuinderij Kaate",
+    "address": "Zandberg 10 a, 5988 NW Helden",
+    "lat": 51.3365364,
+    "lng": 6.021039399999999,
+    "placeId": "ChIJh4mTyY5Jx0cRHBAylVAc130",
+    "primaryType": "garden"
+  },
+  {
+    "name": "Zuivel ijs en kampeer Boerderij",
+    "address": "Surmerhuizerweg 10, 1744 JC Sint Maarten",
+    "lat": 52.74235480000001,
+    "lng": 4.7261318,
+    "placeId": "ChIJox3urX5Qz0cRzLEfpa0HJTA",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Zuivelboerderij Bij de Boerin",
+    "address": "Zijdstukkerweg 8, 9501 LB Stadskanaal",
+    "lat": 53.0167369,
+    "lng": 6.9838346,
+    "placeId": "ChIJvdMsMivPt0cRXXqvmocDSy8",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zuivelboerderij de Krasserij",
+    "address": "Veneweg 129, 7946 LJ Wanneperveen",
+    "lat": 52.700297,
+    "lng": 6.1148086,
+    "placeId": "ChIJtYfzRm5xyEcRaAgljbcJ-w0",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Zuivelboerderij en melktap Kronenburgh",
+    "address": "Gooyer Wetering 8, 3972 MB Driebergen-Rijsenburg",
+    "lat": 52.037409100000005,
+    "lng": 5.285372199999999,
+    "placeId": "ChIJH72Kjv1cxkcRWnHg4tO6REY",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Zuivelboerderij Hof zum Walde 'Van nature smaakvol!'",
+    "address": "Spijkerweg 3, 6917 BH Spijk",
+    "lat": 51.8545721,
+    "lng": 6.151785299999999,
+    "placeId": "ChIJHxvDeGF3x0cRGAsDBQu63i0",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Zuivelboerderij Holterhof | Boerderijwinkel en boerderijautomaat",
+    "address": "Holterhofweg 310, 7534 PT Enschede",
+    "lat": 52.1952534,
+    "lng": 6.9375184,
+    "placeId": "ChIJS1MvuRcVuEcR6h56GNW_x-s",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Zuivelboerderij Mergelland",
+    "address": "Reijmerstokkerdorpsstraat 60, 6274 NM Reijmerstok",
+    "lat": 50.802582799999996,
+    "lng": 5.842662,
+    "placeId": "ChIJYSGfc7-UwEcRAU40HAU4hQ8",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Zuivelboerderij Plexat",
+    "address": "Pade 22, 1716 KA Opmeer",
+    "lat": 52.7027086,
+    "lng": 4.938769499999999,
+    "placeId": "ChIJDWyhO7esyEcR7E08s61mh2c",
+    "primaryType": ""
+  },
+  {
+    "name": "Zuivelboerderij Vrouwenakker",
+    "address": "Drechtdijk 90, 1424 RJ De Kwakel",
+    "lat": 52.22922440000001,
+    "lng": 4.7843415,
+    "placeId": "ChIJj35iY1HexUcR4iTRMpDLhMc",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Zuivelhoeve Zwanenburg (Melktap, Boerderijwinkel, Zuivelautomaat)",
+    "address": "Zwanenburgstraat 5, 4708 PC Roosendaal",
+    "lat": 51.4937213,
+    "lng": 4.4261066,
+    "placeId": "ChIJY3i7yGkRxEcRZXG2U4nMrdM",
+    "primaryType": ""
+  },
+  {
+    "name": "Zuylenhoeve",
+    "address": "Kreekweg 1, 4794 ST Heijningen",
+    "lat": 51.6507199,
+    "lng": 4.4001639,
+    "placeId": "ChIJf3d5DvE-xEcRcVlQ5f15sIc",
+    "primaryType": "food_store"
+  }
+]

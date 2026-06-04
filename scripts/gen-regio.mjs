@@ -112,12 +112,29 @@ const TYPE_LABEL = {
   zelfpluk: 'Zelfpluk', markt: 'Boerenmarkt', onderweg: 'Uitje',
 };
 
-// Koppel provinciie aan elk shop
+/* Provincie uit coördinaten (ruwe boxes) — fallback als de plaats onbekend is */
+function provByCoords(lat, lng) {
+  if (lat > 52.95 && lng > 6.4)                          return 'Groningen';
+  if (lat > 52.7  && lng < 6.4)                          return 'Friesland';
+  if (lat > 52.45 && lat < 53.0  && lng > 6.3)           return 'Drenthe';
+  if (lat > 52.2  && lat < 52.8  && lng > 5.2 && lng < 6.05) return 'Flevoland';
+  if (lat > 52.1  && lat < 52.85 && lng > 6.05)          return 'Overijssel';
+  if (lat > 51.7  && lat < 52.5  && lng > 5.5)           return 'Gelderland';
+  if (lat > 51.9  && lat < 52.35 && lng > 4.8 && lng < 5.55) return 'Utrecht';
+  if (lat > 52.2  && lng > 4.45  && lng < 5.4)           return 'Noord-Holland';
+  if (lat > 51.7  && lat < 52.25 && lng > 3.85 && lng < 5.1) return 'Zuid-Holland';
+  if (lat < 51.75 && lng < 4.35)                         return 'Zeeland';
+  if (lat < 51.8  && lng > 5.5)                          return 'Limburg';
+  if (lat < 51.95)                                        return 'Noord-Brabant';
+  return 'Overig';
+}
+
+// Koppel provincie aan elk shop (plaatsnaam eerst, anders coördinaten)
 const byProv = {};
 for (const s of shops) {
   if (s.type === 'onderweg') continue;
   const place = s.address.replace(/^.*,\s*/, '').trim();
-  const prov  = PLACE_TO_PROV[place] ?? 'Overig';
+  const prov  = PLACE_TO_PROV[place] ?? provByCoords(s.lat, s.lng);
   if (!byProv[prov]) byProv[prov] = [];
   byProv[prov].push({ ...s, _place: place });
 }
