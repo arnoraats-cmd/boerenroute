@@ -2,7 +2,7 @@ import { initShops, setUserLocation }        from './shops.js';
 import { geocode, getGPS, DEFAULT }          from './location.js';
 import { initMap, flyTo as mapFlyTo, invalidateSize } from './map.js';
 import { initRoute }                         from './route.js';
-import { initModals, openSignupModal }       from './modals.js';
+import { initModals, openSignupModal, openWerkplaatsModal } from './modals.js';
 import { loadOSMShops }                      from './osm.js';
 import { renderSeasonPage }                  from './season.js';
 import { initBoodschappenlijst }             from './boodschappenlijst.js';
@@ -135,6 +135,12 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 /* ── Drijvende tip-knop (mobiel) ─────────────────────────── */
 document.getElementById('floatTipBtn')?.addEventListener('click', () => {
   import('./modals.js').then(({ openTipModal }) => openTipModal());
+});
+
+/* ── Reparatieschuur (probleem melden + snelle reparatie) ── */
+document.getElementById('werkplaatsLink')?.addEventListener('click', e => {
+  e.preventDefault();
+  openWerkplaatsModal();
 });
 
 /* ── iOS PWA-hint ────────────────────────────────────────── */

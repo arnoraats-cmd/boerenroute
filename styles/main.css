@@ -2444,6 +2444,25 @@
   /* Formulieren */
   .modal-form { padding: 16px 24px 24px; display: flex; flex-direction: column; gap: 14px; }
 
+  /* Reparatieschuur */
+  .werkplaats { padding: 8px 20px 22px; display: flex; flex-direction: column; gap: 16px; }
+  .werkplaats-card {
+    background: var(--sand);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 18px 18px 20px;
+  }
+  .werkplaats-fix {
+    background: linear-gradient(160deg, var(--green-bg) 0%, #dcecca 100%);
+    border-color: color-mix(in srgb, var(--green-mid) 25%, transparent);
+  }
+  .werkplaats-h { font-family: var(--serif); font-size: var(--t-md); font-weight: 700; color: var(--green-dark); margin-bottom: 6px; }
+  .werkplaats-p { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.55; margin-bottom: 14px; }
+  .werkplaats-p strong { color: var(--green-dark); }
+  .werkplaats-fix .btn { width: 100%; justify-content: center; }
+  .werkplaats-hint { font-size: var(--t-sm); color: var(--green-dark); font-weight: 600; margin-top: 10px; text-align: center; }
+  .werkplaats .modal-form { padding: 0; }
+
   .form-label {
     display: flex;
     flex-direction: column;

@@ -343,6 +343,94 @@ export function openSignupModal() {
   _bindForm('signupForm', 'signupSubmit', 'signupStatus', 'Aanmelden', 'Aanmelding ontvangen! We nemen contact op.');
 }
 
+/* ══ Reparatieschuur: probleem melden + snelle reparatie ════════ */
+
+export function openWerkplaatsModal() {
+  const page = document.querySelector('.nav-btn.active')?.textContent.trim() || 'Kaart';
+  const sw = ('serviceWorker' in navigator);
+  const diag = [
+    `URL: ${location.href}`,
+    `Pagina: ${page}`,
+    `Scherm: ${window.innerWidth}x${window.innerHeight}`,
+    `Online: ${navigator.onLine ? 'ja' : 'nee'}`,
+    `Service worker: ${sw ? 'ja' : 'nee'}`,
+    `Browser: ${navigator.userAgent}`,
+  ].join('\n');
+
+  _open(`
+    <button class="modal-close" aria-label="Sluit">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-emoji" aria-hidden="true">🛠️</span>
+      <div>
+        <h2 class="modal-title" id="modalTitle">De Reparatieschuur</h2>
+        <div class="modal-meta">Hapert er iets? De boer helpt je op weg.</div>
+      </div>
+    </div>
+
+    <div class="werkplaats">
+      <div class="werkplaats-card werkplaats-fix">
+        <h3 class="werkplaats-h">🔧 Snelle reparatie</h3>
+        <p class="werkplaats-p">Werkt de site traag, oud of raar? Vaak helpt het om alles te verversen. <strong>Je opgeslagen stempels en favorieten blijven bewaard.</strong></p>
+        <button class="btn btn-green" id="wpRepair">🚜 Repareer &amp; ververs</button>
+        <p class="werkplaats-hint" id="wpHint" hidden></p>
+      </div>
+
+      <div class="werkplaats-card">
+        <h3 class="werkplaats-h">📣 Melden bij de boer</h3>
+        <p class="werkplaats-p">Klopt er iets niet, of blijft het haperen? Laat het weten — dan gaan we ermee aan de slag.</p>
+        <form id="bugForm" class="modal-form">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="🛠️ Probleemmelding Boerenroute.nl">
+          <input type="hidden" name="technische_info" value="${_e(diag)}">
+          <label class="form-label">Wat is er aan de hand? <span class="form-req">*</span>
+            <select name="soort" class="form-input">
+              <option>Verkeerde winkelinfo (adres/producten)</option>
+              <option>Openingstijden kloppen niet</option>
+              <option>Kapotte link of knop</option>
+              <option>Kaart of route werkt niet</option>
+              <option>Winkel bestaat niet meer</option>
+              <option>Iets anders</option>
+            </select>
+          </label>
+          <label class="form-label">Welke winkel of waar? <span class="form-opt">(optioneel)</span>
+            <input name="waar" class="form-input" type="text" placeholder="Naam van de winkel of plek op de site">
+          </label>
+          <label class="form-label">Omschrijving <span class="form-req">*</span>
+            <textarea name="omschrijving" class="form-textarea" rows="3" required placeholder="Beschrijf kort wat er misgaat…"></textarea>
+          </label>
+          <label class="form-label">Jouw e-mail <span class="form-opt">(optioneel, voor terugkoppeling)</span>
+            <input name="email" class="form-input" type="email" placeholder="jij@email.nl">
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="bugSubmit">📨 Versturen naar de boer</button>
+          </div>
+          <p class="form-status" id="bugStatus" hidden></p>
+        </form>
+      </div>
+    </div>`);
+
+  document.getElementById('wpRepair')?.addEventListener('click', _repair);
+  _bindForm('bugForm', 'bugSubmit', 'bugStatus', '📨 Versturen naar de boer', 'Bedankt! De boer gaat ermee aan de slag. 🚜');
+}
+
+async function _repair() {
+  const btn  = document.getElementById('wpRepair');
+  const hint = document.getElementById('wpHint');
+  if (btn) { btn.disabled = true; btn.textContent = '🔧 Bezig met repareren…'; }
+  try {
+    if ('serviceWorker' in navigator) {
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r => r.unregister()));
+    }
+    if ('caches' in window) {
+      const keys = await caches.keys();
+      await Promise.all(keys.map(k => caches.delete(k)));
+    }
+  } catch { /* niets — we herladen sowieso */ }
+  if (hint) { hint.textContent = '✅ Opgeschoond! De pagina wordt opnieuw geladen…'; hint.hidden = false; }
+  setTimeout(() => location.reload(), 900);
+}
+
 /* ══ Groente & fruit confetti ════════════════════════════════════ */
 
 /* Regiospecifieke bedankteksten */
