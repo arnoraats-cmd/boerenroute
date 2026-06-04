@@ -108,7 +108,9 @@ function _renderArticle(el, post) {
     </div>
 
     <footer class="blog-article-footer">
-      <a class="btn btn-green" href="#" id="blogToMap">🗺️ Ontdek winkels bij jou</a>
+      ${post.regioSlug
+        ? `<a class="btn btn-green" href="/regio/${post.regioSlug}">🗺️ Alle boerderijwinkels in ${_e(post.regioName || '')}</a>`
+        : `<a class="btn btn-green" href="#" id="blogToMap">🗺️ Ontdek winkels bij jou</a>`}
       <button class="btn btn-ghost" id="blogBack2">← Terug naar verhalen</button>
     </footer>
   </article>

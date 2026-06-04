@@ -7,22 +7,67 @@
     "author": "Boerenroute",
     "readMinutes": 4,
     "excerpt": "Verser, lekkerder en eerlijker — maar er zijn nog meer redenen om je boodschappen rechtstreeks bij de boer te halen. We zetten de zes belangrijkste op een rij.",
-    "tags": ["lokaal", "duurzaam"],
+    "tags": [
+      "lokaal",
+      "duurzaam"
+    ],
     "body": [
-      { "type": "p", "text": "Een dozijn eieren uit de automaat om de hoek, kaas van een boerderij verderop, aardbeien die diezelfde ochtend zijn geplukt. Steeds meer mensen ontdekken hoe fijn het is om rechtstreeks bij de boer te kopen. Maar waarom eigenlijk? Hier zijn zes redenen." },
-      { "type": "h2", "text": "1. Het is gewoon verser" },
-      { "type": "p", "text": "Producten van de boer hebben geen dagenlange reis door distributiecentra achter de rug. Wat je koopt is vaak diezelfde dag geoogst of gemolken. Dat proef je — en het blijft langer goed in je koelkast." },
-      { "type": "h2", "text": "2. Je weet waar het vandaan komt" },
-      { "type": "p", "text": "Geen anonieme verpakking, maar een gezicht en een verhaal. Je ziet de koeien in de wei staan, de kippen scharrelen en het land waarop je groente groeit. Die transparantie geeft vertrouwen." },
-      { "type": "h2", "text": "3. Eerlijke prijs voor de boer" },
-      { "type": "p", "text": "Bij directe verkoop houdt de boer een groter deel van de opbrengst zelf, zonder tussenhandel. Jouw aankoop steunt rechtstreeks het gezinsbedrijf in jouw regio." },
-      { "type": "h2", "text": "4. Beter voor het milieu" },
-      { "type": "p", "text": "Korte ketens betekenen minder transport, minder verpakking en minder voedselverspilling. En als je op de fiets gaat, is je boodschappenrondje helemaal klimaatneutraal." },
-      { "type": "h2", "text": "5. Smaak met seizoen" },
-      { "type": "p", "text": "Bij de boer koop je wat er nú groeit. Daardoor eet je vanzelf met de seizoenen mee: asperges in het voorjaar, aardbeien in de zomer, pompoen in de herfst. Elk seizoen heeft zijn eigen smaak." },
-      { "type": "h2", "text": "6. Het is een uitje" },
-      { "type": "p", "text": "Een ritje naar de boerderijwinkel is meer dan boodschappen doen. Even buiten, de kinderen die de dieren bekijken, een praatje met de boer. Het maakt van een verplichting een klein avontuur." },
-      { "type": "p", "text": "Benieuwd wat er bij jou in de buurt is? Zoek je plaats op de kaart en ontdek de boerderijwinkels, automaten en zelfpluktuinen om de hoek." }
+      {
+        "type": "p",
+        "text": "Een dozijn eieren uit de automaat om de hoek, kaas van een boerderij verderop, aardbeien die diezelfde ochtend zijn geplukt. Steeds meer mensen ontdekken hoe fijn het is om rechtstreeks bij de boer te kopen. Maar waarom eigenlijk? Hier zijn zes redenen."
+      },
+      {
+        "type": "h2",
+        "text": "1. Het is gewoon verser"
+      },
+      {
+        "type": "p",
+        "text": "Producten van de boer hebben geen dagenlange reis door distributiecentra achter de rug. Wat je koopt is vaak diezelfde dag geoogst of gemolken. Dat proef je — en het blijft langer goed in je koelkast."
+      },
+      {
+        "type": "h2",
+        "text": "2. Je weet waar het vandaan komt"
+      },
+      {
+        "type": "p",
+        "text": "Geen anonieme verpakking, maar een gezicht en een verhaal. Je ziet de koeien in de wei staan, de kippen scharrelen en het land waarop je groente groeit. Die transparantie geeft vertrouwen."
+      },
+      {
+        "type": "h2",
+        "text": "3. Eerlijke prijs voor de boer"
+      },
+      {
+        "type": "p",
+        "text": "Bij directe verkoop houdt de boer een groter deel van de opbrengst zelf, zonder tussenhandel. Jouw aankoop steunt rechtstreeks het gezinsbedrijf in jouw regio."
+      },
+      {
+        "type": "h2",
+        "text": "4. Beter voor het milieu"
+      },
+      {
+        "type": "p",
+        "text": "Korte ketens betekenen minder transport, minder verpakking en minder voedselverspilling. En als je op de fiets gaat, is je boodschappenrondje helemaal klimaatneutraal."
+      },
+      {
+        "type": "h2",
+        "text": "5. Smaak met seizoen"
+      },
+      {
+        "type": "p",
+        "text": "Bij de boer koop je wat er nú groeit. Daardoor eet je vanzelf met de seizoenen mee: asperges in het voorjaar, aardbeien in de zomer, pompoen in de herfst. Elk seizoen heeft zijn eigen smaak."
+      },
+      {
+        "type": "h2",
+        "text": "6. Het is een uitje"
+      },
+      {
+        "type": "p",
+        "text": "Een ritje naar de boerderijwinkel is meer dan boodschappen doen. Even buiten, de kinderen die de dieren bekijken, een praatje met de boer. Het maakt van een verplichting een klein avontuur."
+      },
+      {
+        "type": "p",
+        "text": "Benieuwd wat er bij jou in de buurt is? Zoek je plaats op de kaart en ontdek de boerderijwinkels, automaten en zelfpluktuinen om de hoek."
+      }
     ]
   },
   {
@@ -33,21 +78,48 @@
     "author": "Boerenroute",
     "readMinutes": 3,
     "excerpt": "Van eind april tot Sint-Jan (24 juni) is het aspergeseizoen. Zo herken je topkwaliteit en haal je de lekkerste rechtstreeks bij de teler.",
-    "tags": ["seizoen", "groente"],
+    "tags": [
+      "seizoen",
+      "groente"
+    ],
     "body": [
-      { "type": "p", "text": "Het 'witte goud' van het zuiden: de Nederlandse asperge. Tussen eind april en 24 juni — traditioneel Sint-Jan, het einde van de oogst — kun je dit seizoensproduct op zijn best eten. En nergens is hij verser dan rechtstreeks bij de teler." },
-      { "type": "h2", "text": "Waar let je op bij verse asperges?" },
-      { "type": "ul", "items": [
-        "Stevige, rechte stengels die niet doorbuigen.",
-        "Een gesloten, compacte kop zonder uitlopers.",
-        "Een vochtig, fris snijvlak — niet verdroogd of bruin.",
-        "Het 'pieptest': verse asperges piepen als je ze tegen elkaar wrijft."
-      ]},
-      { "type": "h2", "text": "Wit, paars of groen?" },
-      { "type": "p", "text": "Witte asperges groeien onder de grond en zien daardoor nooit zonlicht — vandaar de bleke kleur en milde smaak. Steekt de kop boven de grond uit, dan kleurt hij paars. Groene asperges groeien volledig bovengronds en hebben een krachtigere, nootachtige smaak." },
-      { "type": "h2", "text": "Direct van het land" },
-      { "type": "p", "text": "Veel aspergetelers hebben een eigen verkooppunt of automaat aan de weg. Daar koop je ze het verst — vaak nog dezelfde ochtend gestoken. Vraag gerust naar de dikke 'AA'-sortering voor op het bord en de dunnere voor soep of roerbak." },
-      { "type": "p", "text": "Zoek op de kaart naar 'asperges' of filter op zelfpluk en automaten om een aspergeteler bij jou in de buurt te vinden." }
+      {
+        "type": "p",
+        "text": "Het 'witte goud' van het zuiden: de Nederlandse asperge. Tussen eind april en 24 juni — traditioneel Sint-Jan, het einde van de oogst — kun je dit seizoensproduct op zijn best eten. En nergens is hij verser dan rechtstreeks bij de teler."
+      },
+      {
+        "type": "h2",
+        "text": "Waar let je op bij verse asperges?"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Stevige, rechte stengels die niet doorbuigen.",
+          "Een gesloten, compacte kop zonder uitlopers.",
+          "Een vochtig, fris snijvlak — niet verdroogd of bruin.",
+          "Het 'pieptest': verse asperges piepen als je ze tegen elkaar wrijft."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Wit, paars of groen?"
+      },
+      {
+        "type": "p",
+        "text": "Witte asperges groeien onder de grond en zien daardoor nooit zonlicht — vandaar de bleke kleur en milde smaak. Steekt de kop boven de grond uit, dan kleurt hij paars. Groene asperges groeien volledig bovengronds en hebben een krachtigere, nootachtige smaak."
+      },
+      {
+        "type": "h2",
+        "text": "Direct van het land"
+      },
+      {
+        "type": "p",
+        "text": "Veel aspergetelers hebben een eigen verkooppunt of automaat aan de weg. Daar koop je ze het verst — vaak nog dezelfde ochtend gestoken. Vraag gerust naar de dikke 'AA'-sortering voor op het bord en de dunnere voor soep of roerbak."
+      },
+      {
+        "type": "p",
+        "text": "Zoek op de kaart naar 'asperges' of filter op zelfpluk en automaten om een aspergeteler bij jou in de buurt te vinden."
+      }
     ]
   },
   {
@@ -58,20 +130,59 @@
     "author": "Boerenroute",
     "readMinutes": 3,
     "excerpt": "Een fietsrondje langs boerderijwinkels is het perfecte weekenduitje. Met deze vijf tips maak je er een geslaagde tocht van.",
-    "tags": ["fietsen", "uitje"],
+    "tags": [
+      "fietsen",
+      "uitje"
+    ],
     "body": [
-      { "type": "p", "text": "Verse lucht, het platteland en onderweg lekkers inslaan bij de boer — een boerenfietstocht combineert het beste van beweging en genieten. Met deze tips wordt je rondje een succes." },
-      { "type": "h2", "text": "1. Plan je stops vooraf" },
-      { "type": "p", "text": "Kies vier tot vijf winkels die niet te ver uit elkaar liggen. Met de routeplanner van Boerenroute zet je ze in de juiste volgorde en zie je meteen de totale afstand. Reken op zo'n 20 tot 40 kilometer voor een ontspannen ochtend." },
-      { "type": "h2", "text": "2. Check de openingstijden" },
-      { "type": "p", "text": "Niet elke boerderijwinkel is elke dag open, en automaten zijn juist vaak 24/7 bereikbaar. Gebruik het 'Nu open'-filter zodat je niet voor een dichte deur staat." },
-      { "type": "h2", "text": "3. Neem een koeltas mee" },
-      { "type": "p", "text": "Koop je zuivel, vlees of eieren? Een koeltas met koelelement houdt je aankopen vers tot je weer thuis bent. Handig bij de bagagedrager of in de fietstas." },
-      { "type": "h2", "text": "4. Begin bij de verste stop" },
-      { "type": "p", "text": "Doe je zwaarste of meest bederfelijke boodschappen op de terugweg. Zo fiets je niet de hele tocht met een volle, warme tas rond." },
-      { "type": "h2", "text": "5. Exporteer je route" },
-      { "type": "p", "text": "Download je route als GPX-bestand voor je fietscomputer of navigatie, of deel hem via WhatsApp met wie meefietst. Zo hoeft niemand te verdwalen." },
-      { "type": "p", "text": "Klaar voor vertrek? Open de kaart, voeg je favoriete winkels toe aan een route en geniet van een dag op de fiets." }
+      {
+        "type": "p",
+        "text": "Verse lucht, het platteland en onderweg lekkers inslaan bij de boer — een boerenfietstocht combineert het beste van beweging en genieten. Met deze tips wordt je rondje een succes."
+      },
+      {
+        "type": "h2",
+        "text": "1. Plan je stops vooraf"
+      },
+      {
+        "type": "p",
+        "text": "Kies vier tot vijf winkels die niet te ver uit elkaar liggen. Met de routeplanner van Boerenroute zet je ze in de juiste volgorde en zie je meteen de totale afstand. Reken op zo'n 20 tot 40 kilometer voor een ontspannen ochtend."
+      },
+      {
+        "type": "h2",
+        "text": "2. Check de openingstijden"
+      },
+      {
+        "type": "p",
+        "text": "Niet elke boerderijwinkel is elke dag open, en automaten zijn juist vaak 24/7 bereikbaar. Gebruik het 'Nu open'-filter zodat je niet voor een dichte deur staat."
+      },
+      {
+        "type": "h2",
+        "text": "3. Neem een koeltas mee"
+      },
+      {
+        "type": "p",
+        "text": "Koop je zuivel, vlees of eieren? Een koeltas met koelelement houdt je aankopen vers tot je weer thuis bent. Handig bij de bagagedrager of in de fietstas."
+      },
+      {
+        "type": "h2",
+        "text": "4. Begin bij de verste stop"
+      },
+      {
+        "type": "p",
+        "text": "Doe je zwaarste of meest bederfelijke boodschappen op de terugweg. Zo fiets je niet de hele tocht met een volle, warme tas rond."
+      },
+      {
+        "type": "h2",
+        "text": "5. Exporteer je route"
+      },
+      {
+        "type": "p",
+        "text": "Download je route als GPX-bestand voor je fietscomputer of navigatie, of deel hem via WhatsApp met wie meefietst. Zo hoeft niemand te verdwalen."
+      },
+      {
+        "type": "p",
+        "text": "Klaar voor vertrek? Open de kaart, voeg je favoriete winkels toe aan een route en geniet van een dag op de fiets."
+      }
     ]
   },
   {
@@ -82,23 +193,57 @@
     "author": "Boerenroute",
     "readMinutes": 3,
     "excerpt": "Juni is dé maand voor Nederlandse aardbeien. Bij een zelfpluktuin pluk je ze zonbewarmd en kakelvers van de plant. Zo pak je het slim aan.",
-    "tags": ["seizoen", "zelfpluk", "fruit"],
+    "tags": [
+      "seizoen",
+      "zelfpluk",
+      "fruit"
+    ],
     "body": [
-      { "type": "p", "text": "Er gaat niets boven een aardbei die je net zelf van de plant hebt geplukt: zonbewarmd, geurig en op het hoogtepunt van rijpheid. In juni staan de zelfpluktuinen op hun mooist. Een ochtendje plukken met het gezin is meteen een uitje — en je gaat naar huis met de lekkerste aardbeien van het jaar." },
-      { "type": "h2", "text": "Wanneer is het seizoen?" },
-      { "type": "p", "text": "De Nederlandse aardbei uit de volle grond piekt van eind mei tot in juli, met juni als topmaand. Vroege rassen onder folie of in kassen beginnen soms al in mei. Het seizoen is kort en weersafhankelijk, dus plan je plukdag op tijd en bel of kijk online of er die dag geplukt kan worden." },
-      { "type": "h2", "text": "Zo herken je een rijpe aardbei" },
-      { "type": "ul", "items": [
-        "Egaal diep rood, tot aan het kroontje — een witte of groene punt betekent nog niet rijp.",
-        "Een volle, zoete geur: rijpe aardbeien ruik je al van een afstand.",
-        "Stevig maar niet hard. Pluk met een stukje steel eraan, dan blijven ze langer goed.",
-        "Aardbeien rijpen ná het plukken niet door, dus pluk alleen wat al klaar is."
-      ]},
-      { "type": "h2", "text": "Handig om mee te nemen" },
-      { "type": "p", "text": "Een platte doos of mandje zodat de aardbeien niet pletten, zonnebrand en een hoedje voor de kinderen, en eventueel contant geld — niet elke tuin heeft pin. Plat verpakken en koel vervoeren houdt ze het langst goed." },
-      { "type": "h2", "text": "Waarom zelf plukken?" },
-      { "type": "p", "text": "Je betaalt vaak minder dan in de winkel, je weet precies waar je fruit vandaan komt, en je steunt de teler rechtstreeks. Bovendien is het een heerlijk uitje: kinderen vinden het geweldig en je bent lekker buiten. Wat je niet meteen opeet, maak je tot jam of vries je in voor de winter." },
-      { "type": "p", "text": "Op zoek naar een zelfpluktuin in de buurt? Filter op de kaart op 'Zelfpluk' en vind een aardbeienveld bij jou in de regio." }
+      {
+        "type": "p",
+        "text": "Er gaat niets boven een aardbei die je net zelf van de plant hebt geplukt: zonbewarmd, geurig en op het hoogtepunt van rijpheid. In juni staan de zelfpluktuinen op hun mooist. Een ochtendje plukken met het gezin is meteen een uitje — en je gaat naar huis met de lekkerste aardbeien van het jaar."
+      },
+      {
+        "type": "h2",
+        "text": "Wanneer is het seizoen?"
+      },
+      {
+        "type": "p",
+        "text": "De Nederlandse aardbei uit de volle grond piekt van eind mei tot in juli, met juni als topmaand. Vroege rassen onder folie of in kassen beginnen soms al in mei. Het seizoen is kort en weersafhankelijk, dus plan je plukdag op tijd en bel of kijk online of er die dag geplukt kan worden."
+      },
+      {
+        "type": "h2",
+        "text": "Zo herken je een rijpe aardbei"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Egaal diep rood, tot aan het kroontje — een witte of groene punt betekent nog niet rijp.",
+          "Een volle, zoete geur: rijpe aardbeien ruik je al van een afstand.",
+          "Stevig maar niet hard. Pluk met een stukje steel eraan, dan blijven ze langer goed.",
+          "Aardbeien rijpen ná het plukken niet door, dus pluk alleen wat al klaar is."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Handig om mee te nemen"
+      },
+      {
+        "type": "p",
+        "text": "Een platte doos of mandje zodat de aardbeien niet pletten, zonnebrand en een hoedje voor de kinderen, en eventueel contant geld — niet elke tuin heeft pin. Plat verpakken en koel vervoeren houdt ze het langst goed."
+      },
+      {
+        "type": "h2",
+        "text": "Waarom zelf plukken?"
+      },
+      {
+        "type": "p",
+        "text": "Je betaalt vaak minder dan in de winkel, je weet precies waar je fruit vandaan komt, en je steunt de teler rechtstreeks. Bovendien is het een heerlijk uitje: kinderen vinden het geweldig en je bent lekker buiten. Wat je niet meteen opeet, maak je tot jam of vries je in voor de winter."
+      },
+      {
+        "type": "p",
+        "text": "Op zoek naar een zelfpluktuin in de buurt? Filter op de kaart op 'Zelfpluk' en vind een aardbeienveld bij jou in de regio."
+      }
     ]
   },
   {
@@ -109,23 +254,680 @@
     "author": "Boerenroute",
     "readMinutes": 4,
     "excerpt": "Steeds meer melkveehouders hebben een melktap: verse melk uit de automaat, dag en nacht. Hoe werkt het, en moet je rauwe melk koken? We leggen het uit.",
-    "tags": ["zuivel", "automaat"],
+    "tags": [
+      "zuivel",
+      "automaat"
+    ],
     "body": [
-      { "type": "p", "text": "Met je eigen fles naar de boer en die vullen met verse melk uit de tap — het is aan een flinke opmars bezig. Tientallen melkveehouders in het land hebben inmiddels een melktap of melkautomaat bij de boerderij. Maar hoe werkt zo'n tap precies, en waar moet je op letten?" },
-      { "type": "h2", "text": "Hoe werkt een melktap?" },
-      { "type": "p", "text": "De melk komt rechtstreeks van de koeien op de boerderij, wordt gekoeld bewaard en via een automaat getapt. Je neemt je eigen (glazen) fles mee of koopt er een ter plekke, zet 'm onder de tap, betaalt — meestal met munt of pin — en vult 'm met de hoeveelheid die je wilt. Veel tappen zijn dag en nacht bereikbaar." },
-      { "type": "h2", "text": "Rauwe melk: even verhitten" },
-      { "type": "p", "text": "De melk uit de tap is meestal rauwe (ongepasteuriseerde) melk: niet verhit, dus met al z'n natuurlijke smaak. Het advies is om rauwe melk vóór gebruik even tegen de kook aan te brengen en daarna weer af te koelen — zeker voor jonge kinderen, ouderen en zwangeren. Bij de tap hangt hierover doorgaans duidelijke informatie. Verhit je de melk niet, gebruik 'm dan snel en bewaar 'm goed gekoeld." },
-      { "type": "h2", "text": "Waarom melk uit de tap?" },
-      { "type": "ul", "items": [
-        "Onverslaanbaar vers — vaak van de ochtendmelk van diezelfde dag.",
-        "Geen wegwerpverpakking: je eigen fles gaat keer op keer mee.",
-        "Een eerlijke prijs die rechtstreeks naar de boer gaat.",
-        "Vollere smaak dan gestandaardiseerde supermarktmelk."
-      ]},
-      { "type": "h2", "text": "Tip: maak er je eigen yoghurt of kaas van" },
-      { "type": "p", "text": "Verse boerenmelk is een ideale basis voor zelfgemaakte yoghurt, kwark, karnemelk of een simpele verse kaas. Veel tappers verkopen daarnaast ook eigen zuivel, boerenkaas of ijs in de bijbehorende winkel of automaat." },
-      { "type": "p", "text": "Een melktap in de buurt vinden? Filter op de kaart op 'Automaat' of zoek op 'melk' — de melktappen staan ertussen, vaak dag en nacht open." }
+      {
+        "type": "p",
+        "text": "Met je eigen fles naar de boer en die vullen met verse melk uit de tap — het is aan een flinke opmars bezig. Tientallen melkveehouders in het land hebben inmiddels een melktap of melkautomaat bij de boerderij. Maar hoe werkt zo'n tap precies, en waar moet je op letten?"
+      },
+      {
+        "type": "h2",
+        "text": "Hoe werkt een melktap?"
+      },
+      {
+        "type": "p",
+        "text": "De melk komt rechtstreeks van de koeien op de boerderij, wordt gekoeld bewaard en via een automaat getapt. Je neemt je eigen (glazen) fles mee of koopt er een ter plekke, zet 'm onder de tap, betaalt — meestal met munt of pin — en vult 'm met de hoeveelheid die je wilt. Veel tappen zijn dag en nacht bereikbaar."
+      },
+      {
+        "type": "h2",
+        "text": "Rauwe melk: even verhitten"
+      },
+      {
+        "type": "p",
+        "text": "De melk uit de tap is meestal rauwe (ongepasteuriseerde) melk: niet verhit, dus met al z'n natuurlijke smaak. Het advies is om rauwe melk vóór gebruik even tegen de kook aan te brengen en daarna weer af te koelen — zeker voor jonge kinderen, ouderen en zwangeren. Bij de tap hangt hierover doorgaans duidelijke informatie. Verhit je de melk niet, gebruik 'm dan snel en bewaar 'm goed gekoeld."
+      },
+      {
+        "type": "h2",
+        "text": "Waarom melk uit de tap?"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Onverslaanbaar vers — vaak van de ochtendmelk van diezelfde dag.",
+          "Geen wegwerpverpakking: je eigen fles gaat keer op keer mee.",
+          "Een eerlijke prijs die rechtstreeks naar de boer gaat.",
+          "Vollere smaak dan gestandaardiseerde supermarktmelk."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip: maak er je eigen yoghurt of kaas van"
+      },
+      {
+        "type": "p",
+        "text": "Verse boerenmelk is een ideale basis voor zelfgemaakte yoghurt, kwark, karnemelk of een simpele verse kaas. Veel tappers verkopen daarnaast ook eigen zuivel, boerenkaas of ijs in de bijbehorende winkel of automaat."
+      },
+      {
+        "type": "p",
+        "text": "Een melktap in de buurt vinden? Filter op de kaart op 'Automaat' of zoek op 'melk' — de melktappen staan ertussen, vaak dag en nacht open."
+      }
     ]
+  },
+  {
+    "slug": "noord-brabant",
+    "title": "Boerderijwinkels in Noord-Brabant: vers van het land",
+    "emoji": "🌾",
+    "date": "2026-02-10",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Van de Kempen tot de Maashorst: Brabant is een van de rijkste provincies voor wie vers van de boer wil kopen. Ontdek de boerderijwinkels, automaten en zelfpluktuinen.",
+    "tags": [
+      "regio",
+      "noord-brabant"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Noord-Brabant heeft een gemengd, kleinschalig boerenland: zandgronden in de Kempen, het glooiende Maashorstgebied en de rivierklei langs de Maas. Die afwisseling proef je terug in het aanbod — van rauwmelkse kaas tot scharreleieren, van asperges tot eigen rundvlees."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Brabant is sterk in zuivel en vlees. Veel melkveehouders hebben een melktap of maken eigen kaas, en steeds meer boeren verkopen vlees van eigen vee rechtstreeks aan de deur. Daarnaast bloeien de zelfpluktuinen op in het voorjaar en de zomer."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "De Genneper Hoeve in Eindhoven — stadsboerderij met eigen zuivel, midden in de stad.",
+          "Zuivelboerderij de Kern in Drunen — verse kaas en zuivel van eigen koeien."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "Brabant leent zich uitstekend voor een fietsrondje langs meerdere stops: de winkels en automaten liggen vaak op korte afstand van elkaar. Veel automaten zijn dag en nacht open, dus ook een avondritje langs de eierautomaat hoort erbij."
+      },
+      {
+        "type": "p",
+        "text": "Bekijk hieronder alle geverifieerde boerderijwinkels en automaten in Noord-Brabant, of plan er meteen een fietstocht omheen."
+      }
+    ],
+    "regioSlug": "noord-brabant",
+    "regioName": "Noord-Brabant"
+  },
+  {
+    "slug": "limburg",
+    "title": "Boerderijwinkels in Limburg: vers van het land",
+    "emoji": "🍇",
+    "date": "2026-02-24",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Heuvelland, Maasvallei en het beroemde aspergeseizoen: in Limburg koop je seizoensproducten op hun mooist, rechtstreeks van de teler.",
+    "tags": [
+      "regio",
+      "limburg"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Limburg is anders dan de rest van Nederland — en dat zie je terug in het boerenland. Het Zuid-Limburgse heuvelland met zijn hellingen en holle wegen, de vruchtbare Maasvallei en de weidse Peel leveren elk hun eigen streekproducten."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Het Limburgse voorjaar staat in het teken van de asperge — het \"witte goud\" dat je nergens verser eet dan bij de teler aan de weg. Daarnaast is Limburg fruitland: appels, peren en zacht fruit, vaak te koop in landwinkels en boomgaardwinkels."
+      },
+      {
+        "type": "h2",
+        "text": "Een plek om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Landwinkel Schurenhof in Vlodrop — streekproducten in het Midden-Limburgse landschap.",
+          "Volop aspergetelers met eigen verkoop in de Peel rond Nederweert en omgeving."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Seizoenstip"
+      },
+      {
+        "type": "p",
+        "text": "Het aspergeseizoen loopt van eind april tot 24 juni (Sint-Jan). Plan je bezoek in die periode voor de verste steeltjes, en combineer het met een fietstocht door het glooiende landschap."
+      },
+      {
+        "type": "p",
+        "text": "Hieronder vind je alle boerderijwinkels en automaten in Limburg op een rij."
+      }
+    ],
+    "regioSlug": "limburg",
+    "regioName": "Limburg"
+  },
+  {
+    "slug": "gelderland",
+    "title": "Boerderijwinkels in Gelderland: vers van het land",
+    "emoji": "🍎",
+    "date": "2026-03-09",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "De Veluwe, de Achterhoek en de Betuwe: drie heel verschillende landschappen, elk met hun eigen boerderijwinkels, kaasmakerijen en fruittelers.",
+    "tags": [
+      "regio",
+      "gelderland"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Gelderland is de grootste provincie en heeft drie gezichten: de bosrijke Veluwe, het coulisselandschap van de Achterhoek en het fruitrijke rivierengebied van de Betuwe. Voor wie lokaal eten zoekt, is er overal wat te halen."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "De Achterhoek is kaasland bij uitstek — veel boerderijen maken er rauwmelkse boerenkaas. De Betuwe staat bekend om appels, peren en zacht fruit, en rond de Veluwe vind je volop melktaps, eieren en vlees van eigen erf."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Kaasboerderij Weenink in Lievelde — ambachtelijke kaas in de Achterhoek.",
+          "Landwinkel IJsseloord bij Arnhem — streekproducten langs de IJssel."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "De Achterhoek en de Betuwe zijn geliefd fietsgebied. Stippel een route uit langs een paar kaasboerderijen en fruittelers en maak er een dag van — met een koeltas voor je aankopen."
+      },
+      {
+        "type": "p",
+        "text": "Ontdek hieronder alle geverifieerde adressen in Gelderland."
+      }
+    ],
+    "regioSlug": "gelderland",
+    "regioName": "Gelderland"
+  },
+  {
+    "slug": "friesland",
+    "title": "Boerderijwinkels in Friesland: vers van het land",
+    "emoji": "🧀",
+    "date": "2026-03-23",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Weidse weilanden, eigenzinnige kaas en de Waddeneilanden: Friesland is zuivelland in hart en nieren. Ontdek de boerderijwinkels en melktaps.",
+    "tags": [
+      "regio",
+      "friesland"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Friesland is de provincie van de weidsheid: eindeloze weilanden, koeien tot aan de horizon en een sterke zuiveltraditie. Nergens voelt \"vers van de boer\" zo vanzelfsprekend als hier."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Kaas en melk zijn de specialiteit. Veel Friese boerderijen hebben een melktap of maken eigen kaas, soms van bijzondere rassen of zelfs schapen- en geitenmelk. Ook op de Waddeneilanden vind je verrassend veel ambachtelijke kaasmakers."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Kaasboerderij Ameland in Hollum — eilandkaas, gemaakt op het Wad.",
+          "Kaasboerderij de Deelen in Tijnje — boerenkaas in het Friese veenweidegebied."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "Fietsen door Friesland is genieten van de ruimte. Combineer een paar melktaps en kaasboerderijen tot een ontspannen route — en neem je eigen fles mee voor de verse melk."
+      },
+      {
+        "type": "p",
+        "text": "Bekijk hieronder alle boerderijwinkels en automaten in Friesland."
+      }
+    ],
+    "regioSlug": "friesland",
+    "regioName": "Friesland"
+  },
+  {
+    "slug": "overijssel",
+    "title": "Boerderijwinkels in Overijssel: vers van het land",
+    "emoji": "🌿",
+    "date": "2026-04-06",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Het coulisselandschap van Twente en de essen van Salland: Overijssel zit vol kleine boerderijwinkels en melktaps met topbeoordelingen.",
+    "tags": [
+      "regio",
+      "overijssel"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Overijssel is een provincie om doorheen te dwalen: het kleinschalige coulisselandschap van Twente, met houtwallen en oude boerderijen, en de glooiende essen en weilanden van Salland. Juist die kleinschaligheid maakt het ideaal boerderijwinkel-land."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Melktaps zijn hier talrijk en geliefd — sommige met bijna perfecte beoordelingen. Daarnaast vind je veel gemengde boerderijwinkels met groente, eieren, vlees en zuivel van eigen erf."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Melktap de Beekhoek in Glane — verse melk in het Twentse grensland.",
+          "Landwinkel De Knapenvelder in Raalte — streekproducten in Salland."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "Twente en Salland behoren tot de mooiste fietsgebieden van het land. Rijg een paar melktaps en boerderijwinkels aaneen tot een route door de coulissen."
+      },
+      {
+        "type": "p",
+        "text": "Hieronder alle geverifieerde adressen in Overijssel."
+      }
+    ],
+    "regioSlug": "overijssel",
+    "regioName": "Overijssel"
+  },
+  {
+    "slug": "zeeland",
+    "title": "Boerderijwinkels in Zeeland: vers van het land",
+    "emoji": "🦪",
+    "date": "2026-04-20",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Zilte klei, zoet fruit en het water altijd dichtbij: Zeeland levert bijzondere streekproducten. Ontdek de boerderijwinkels van Walcheren tot Schouwen.",
+    "tags": [
+      "regio",
+      "zeeland"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Zeeland is een provincie van eilanden, dijken en zilte wind. De vruchtbare zeeklei en het milde zeeklimaat geven groente en fruit hier een eigen, volle smaak — en het water levert mosselen en oesters."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Zeeland is sterk in fruit en groente van de klei, en in ambachtelijke kaas. Op Walcheren, Zuid-Beveland en Schouwen-Duiveland vind je veel landwinkels en kaasboerderijen, vaak met Zeeuwse specialiteiten."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Kaasboerderij Schellach bij Middelburg — boerenkaas op Walcheren.",
+          "Landwinkel De Plantage in Kruiningen — Zeeuwse streekproducten van de klei."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "Zeeland is gemaakt om te fietsen: vlak, weids en altijd met uitzicht op het water. Plan een route langs een paar landwinkels en kaasboerderijen en proef het verschil dat de zeeklei maakt."
+      },
+      {
+        "type": "p",
+        "text": "Bekijk hieronder alle boerderijwinkels en automaten in Zeeland."
+      }
+    ],
+    "regioSlug": "zeeland",
+    "regioName": "Zeeland"
+  },
+  {
+    "slug": "utrecht",
+    "title": "Boerderijwinkels in Utrecht: vers van het land",
+    "emoji": "🍒",
+    "date": "2026-05-04",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Tussen de Kromme Rijn, het Groene Hart en de Heuvelrug: Utrecht is verrassend landelijk, met fruittelers, kaasboerderijen en zelfpluktuinen.",
+    "tags": [
+      "regio",
+      "utrecht"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Utrecht is klein maar gevarieerd: de fruitstreek langs de Kromme Rijn, het weidse Groene Hart met zijn kaasboerderijen, het Eemland en de bosranden van de Heuvelrug. Vaak op een steenworp van de stad ligt er een boerderijwinkel."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "De Kromme Rijnstreek staat bekend om kersen en ander fruit. In het Groene Hart maken boeren rauwmelkse kaas, en rond Amersfoort en het Eemland vind je gemengde landwinkels en zelfpluktuinen."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Kaasboerderij Gein Genoegen in Abcoude — boerenkaas in het Groene Hart.",
+          "Landwinkel De Kopermolen in Stoutenburg — streekproducten bij Amersfoort."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Seizoenstip"
+      },
+      {
+        "type": "p",
+        "text": "In juni en juli is het kersentijd in de Kromme Rijnstreek. Veel telers verkopen dan rechtstreeks — soms zelfs met zelfpluk. Een mooie reden voor een fietstocht."
+      },
+      {
+        "type": "p",
+        "text": "Hieronder alle geverifieerde adressen in Utrecht."
+      }
+    ],
+    "regioSlug": "utrecht",
+    "regioName": "Utrecht"
+  },
+  {
+    "slug": "zuid-holland",
+    "title": "Boerderijwinkels in Zuid-Holland: vers van het land",
+    "emoji": "🐄",
+    "date": "2026-05-18",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Het Groene Hart, de Zuid-Hollandse eilanden en polders vol koeien: dichtbij de stad vind je verrassend veel boerderijwinkels en kaasmakerijen.",
+    "tags": [
+      "regio",
+      "zuid-holland"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Zuid-Holland is dichtbevolkt, maar tussen de steden ligt verrassend veel boerenland: het weidse Groene Hart, de polders rond Delft en de eilanden Goeree-Overflakkee en Voorne. Juist dáár vind je de boer om de hoek."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Het Groene Hart is kaasland: rauwmelkse boerenkaas hoort hier bij de streek. Op de eilanden vind je akkerbouw, groente en fruit, en overal duiken melktaps en boerderijwinkels op met zuivel en vlees van eigen erf."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Hoeve Biesland in Delfgauw — biologische boerderij met eigen winkel, vlakbij Delft.",
+          "Kaasboerderij Captein in Zoeterwoude — hooggewaardeerde boerenkaas."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "Het Groene Hart is ideaal voor een rustig fietsrondje langs kaasboerderijen — zo ontsnap je binnen een kwartier aan de stad."
+      },
+      {
+        "type": "p",
+        "text": "Bekijk hieronder alle boerderijwinkels en automaten in Zuid-Holland."
+      }
+    ],
+    "regioSlug": "zuid-holland",
+    "regioName": "Zuid-Holland"
+  },
+  {
+    "slug": "noord-holland",
+    "title": "Boerderijwinkels in Noord-Holland: vers van het land",
+    "emoji": "🧀",
+    "date": "2026-01-19",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Van de Beemster tot West-Friesland: Noord-Holland is wereldberoemd om zijn kaas, maar er is veel meer te halen vers van het land.",
+    "tags": [
+      "regio",
+      "noord-holland"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Noord-Holland is kaasprovincie bij uitstek — denk aan de droogmakerij de Beemster en het vruchtbare West-Friesland. Maar tussen de polders, duinen en de bollenstreek vind je ook fruit, groente en zuivel rechtstreeks van de boer."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Kaas is de specialiteit, met beroemde namen en kleine ambachtelijke makers. Daarnaast levert de vruchtbare klei van West-Friesland volop groente, en rond de steden duiken stadsboerderijen en fruittuinen op."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Kaasboerderij Groot in Middenbeemster — kaas uit de wereldberoemde Beemsterpolder.",
+          "Fruittuin van West in Amsterdam — biologisch fruit en groente binnen de stadsgrens."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "De Beemster en West-Friesland zijn prachtig fietsgebied met rechte dijken en weidse luchten. Een route langs een paar kaasboerderijen is zo gemaakt."
+      },
+      {
+        "type": "p",
+        "text": "Hieronder alle geverifieerde adressen in Noord-Holland."
+      }
+    ],
+    "regioSlug": "noord-holland",
+    "regioName": "Noord-Holland"
+  },
+  {
+    "slug": "flevoland",
+    "title": "Boerderijwinkels in Flevoland: vers van het land",
+    "emoji": "🌷",
+    "date": "2026-01-05",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "De jongste provincie van Nederland: ruime polders, moderne akkerbouw en boerderijautomaten met volop verse aardappelen, fruit en eieren.",
+    "tags": [
+      "regio",
+      "flevoland"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Flevoland is letterlijk het jongste land van Nederland — drooggelegd in de vorige eeuw. De ruime, rechte polders zijn gemaakt voor grootschalige, maar verrassend diverse landbouw. En de boer verkoopt er graag rechtstreeks."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Akkerbouw is koning: aardappelen, uien en granen, vaak te koop uit ruime automaten langs de weg. Daarnaast vind je in de Noordoostpolder en bij Zeewolde en Dronten volop fruittelers met eigen verkoop."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Eierautomaat Zeeasterweg in Lelystad — verse eieren en aardappelen, dag en nacht.",
+          "Vink Fruitboerderij in Kraggenburg — fruit uit de Noordoostpolder."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "De wijde polders fietsen heerlijk weg. Volg de lange dijken en stop bij de automaten — handig met pin of munt, en vaak 24/7 open."
+      },
+      {
+        "type": "p",
+        "text": "Bekijk hieronder alle boerderijwinkels en automaten in Flevoland."
+      }
+    ],
+    "regioSlug": "flevoland",
+    "regioName": "Flevoland"
+  },
+  {
+    "slug": "drenthe",
+    "title": "Boerderijwinkels in Drenthe: vers van het land",
+    "emoji": "🌲",
+    "date": "2026-06-01",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Esdorpen, bos en weidse heide: Drenthe is een provincie om in te dwalen. Onderweg vind je sfeervolle boerderijwinkels en melktaps met topbeoordelingen.",
+    "tags": [
+      "regio",
+      "drenthe"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Drenthe is rust, ruimte en natuur: brinkdorpen, oude essen, uitgestrekte bossen en heidevelden. Het is een provincie om langzaam doorheen te trekken — en onderweg kom je verrassend veel boerderijwinkels en melktaps tegen."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Melktaps en gemengde boerderijwinkels zijn hier talrijk, vaak met uitstekende beoordelingen. Je vindt er zuivel, eieren, vlees en streekproducten, soms met een theeschenkerij of rustpunt erbij."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Landwinkel Exloo — streekproducten in een van de mooiste esdorpen.",
+          "Melktap Geesbrug — verse melk in het Drentse coulisselandschap."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "Drenthe is fietsprovincie nummer één, met een fijnmazig netwerk van fietspaden. Plan een route langs een paar melktaps en boerderijwinkels en geniet onderweg van de natuur."
+      },
+      {
+        "type": "p",
+        "text": "Hieronder alle geverifieerde adressen in Drenthe."
+      }
+    ],
+    "regioSlug": "drenthe",
+    "regioName": "Drenthe"
+  },
+  {
+    "slug": "groningen",
+    "title": "Boerderijwinkels in Groningen: vers van het land",
+    "emoji": "🌾",
+    "date": "2026-06-02",
+    "author": "Boerenroute",
+    "readMinutes": 3,
+    "excerpt": "Weidse akkers, wierden en de hoogste luchten van Nederland: in Groningen koop je akkerbouwproducten, zuivel en eieren rechtstreeks van het Hoge Land.",
+    "tags": [
+      "regio",
+      "groningen"
+    ],
+    "body": [
+      {
+        "type": "p",
+        "text": "Groningen is weids en eigenzinnig: het vruchtbare Hogeland met zijn eeuwenoude wierden, het Westerwold en de Veenkoloniën. De luchten zijn er hoog en de akkers eindeloos — en de boer verkoopt graag aan de deur."
+      },
+      {
+        "type": "h2",
+        "text": "Wat vind je hier?"
+      },
+      {
+        "type": "p",
+        "text": "Akkerbouw bepaalt het beeld: granen, aardappelen en uien. Daarnaast vind je melktaps, eieren en gemengde landwinkels, vaak in karakteristieke boerderijen op het wijde land."
+      },
+      {
+        "type": "h2",
+        "text": "Een paar plekken om te ontdekken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Landwinkel Ol Diek in Nieuwolda — streekproducten in het Oldambt.",
+          "Landwinkel met kinderboerderij in Haren — vlakbij de stad Groningen."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Tip voor onderweg"
+      },
+      {
+        "type": "p",
+        "text": "Het Hogeland en het Oldambt fietsen weids en rustig. Volg de oude dijken langs de akkers en stop bij de landwinkels en automaten onderweg."
+      },
+      {
+        "type": "p",
+        "text": "Bekijk hieronder alle boerderijwinkels en automaten in Groningen."
+      }
+    ],
+    "regioSlug": "groningen",
+    "regioName": "Groningen"
   }
 ]

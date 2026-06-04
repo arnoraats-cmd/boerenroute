@@ -100,7 +100,9 @@ for (const post of posts) {
 ${post.body.map(blockHTML).join('\n')}
         </div>
         <footer class="blog-article-footer">
-          <a class="btn btn-green" href="/">🗺️ Ontdek winkels bij jou</a>
+          ${post.regioSlug
+            ? `<a class="btn btn-green" href="/regio/${post.regioSlug}">🗺️ Alle boerderijwinkels in ${esc(post.regioName || '')}</a>`
+            : `<a class="btn btn-green" href="/">🗺️ Ontdek winkels bij jou</a>`}
           <a class="btn btn-ghost" href="/blog/">← Terug naar verhalen</a>
         </footer>
       </div>
