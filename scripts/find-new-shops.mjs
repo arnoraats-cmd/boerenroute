@@ -51,6 +51,31 @@ function km(a, blat, blng) {
 }
 const nearExisting = (lat, lng) => existing.some(s => km({ lat: s.lat, lng: s.lng }, lat, lng) < 0.15);
 
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+/* Zoek met automatische herhaling bij tijdelijke fouten (500/503/429) */
+async function searchText(q, pt) {
+  const body = JSON.stringify({
+    textQuery: q, languageCode: 'nl', regionCode: 'NL', maxResultCount: 20,
+    locationBias: { circle: { center: { latitude: pt.lat, longitude: pt.lng }, radius: 26000 } },
+  });
+  const headers = {
+    'Content-Type':     'application/json',
+    'X-Goog-Api-Key':   KEY,
+    'X-Goog-FieldMask': 'places.id,places.displayName,places.formattedAddress,places.location,places.primaryType,places.businessStatus',
+  };
+  for (let attempt = 1; attempt <= 4; attempt++) {
+    const res = await fetch('https://places.googleapis.com/v1/places:searchText', { method: 'POST', headers, body });
+    if (res.ok) return res;
+    if (res.status === 403) return res;                 // sleutel-/rechtenprobleem → niet herhalen
+    if ((res.status >= 500 || res.status === 429) && attempt < 4) {
+      await sleep(1000 * attempt);                       // 1s, 2s, 3s wachten en opnieuw
+      continue;
+    }
+    return res;
+  }
+}
+
 const found = new Map(); // placeId → kandidaat
 let calls = 0;
 
@@ -59,25 +84,13 @@ console.log(`Raster: ${points.length} punten × ${QUERIES.length} zoektermen = m
 for (const pt of points) {
   for (const q of QUERIES) {
     try {
-      const res = await fetch('https://places.googleapis.com/v1/places:searchText', {
-        method: 'POST',
-        headers: {
-          'Content-Type':     'application/json',
-          'X-Goog-Api-Key':   KEY,
-          'X-Goog-FieldMask': 'places.id,places.displayName,places.formattedAddress,places.location,places.primaryType,places.businessStatus',
-        },
-        body: JSON.stringify({
-          textQuery: q,
-          languageCode: 'nl', regionCode: 'NL', maxResultCount: 20,
-          locationBias: { circle: { center: { latitude: pt.lat, longitude: pt.lng }, radius: 26000 } },
-        }),
-      });
+      const res = await searchText(q, pt);
       calls++;
       if (!res.ok) {
         const t = await res.text();
         console.log(`✗ ${q} @ ${pt.lat},${pt.lng} — HTTP ${res.status}: ${t.slice(0, 90)}`);
-        if (res.status === 403 || res.status === 429) { console.log('\n⚠ Gestopt (sleutel/limiet).'); pt.stop = true; break; }
-        continue;
+        if (res.status === 403) { console.log('\n⚠ Gestopt (sleutelprobleem).'); pt.stop = true; break; }
+        continue; // 5xx/429 na alle pogingen: deze overslaan, doorgaan
       }
       for (const p of (await res.json()).places ?? []) {
         const name = p.displayName?.text ?? '';
