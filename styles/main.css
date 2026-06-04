@@ -2987,6 +2987,34 @@
   .regio-more-blog { margin-top: 18px; }
   .regio-more-blog a { color: var(--green-mid); font-weight: 600; }
   .regio-more-blog a:hover { color: var(--green-dark); }
+
+  /* Provincie-fietsroute op de regiopagina */
+  .regioroute {
+    margin: 32px 0 8px;
+    padding: 24px;
+    background: linear-gradient(160deg, var(--green-bg) 0%, #dcecca 100%);
+    border-radius: var(--r-xl);
+    border: 1px solid var(--border);
+  }
+  .regioroute-title {
+    font-family: var(--serif);
+    font-size: var(--t-lg);
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 6px;
+  }
+  .regioroute-intro { font-size: var(--t-sm); color: var(--text-mid); margin-bottom: 16px; }
+  .regioroute-intro strong { color: var(--text); }
+  .regioroute-stops { list-style: none; margin: 0 0 18px; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  .regioroute-stop { display: flex; align-items: center; gap: 10px; }
+  .regioroute-num {
+    width: 26px; height: 26px; flex-shrink: 0;
+    background: var(--green-mid); color: #fff; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: var(--t-xs); font-weight: 700; border: 2px solid #fff;
+  }
+  .regioroute-emoji { font-size: 1.1rem; }
+  .regioroute-name { font-size: var(--t-sm); font-weight: 500; }
 }
 
 /* ══ RESPONSIEF ══════════════════════════════════════════════════ */

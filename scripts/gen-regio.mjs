@@ -2,11 +2,17 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { provByCoords } from './province.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root  = join(__dir, '..');
 
 const shops = JSON.parse(readFileSync(join(root, 'src/data/verifiedShops.json'), 'utf8'));
+const byId  = Object.fromEntries(shops.map(s => [s.id, s]));
+const provRoutes = (() => {
+  try { return JSON.parse(readFileSync(join(root, 'src/data/routes.json'), 'utf8')).provincieRoutes || []; }
+  catch { return []; }
+})();
 
 const PLACE_TO_PROV = {
   // ── Noord-Brabant ──────────────────────────────────────────────
@@ -112,23 +118,6 @@ const TYPE_LABEL = {
   zelfpluk: 'Zelfpluk', markt: 'Boerenmarkt', onderweg: 'Uitje',
 };
 
-/* Provincie uit coördinaten (ruwe boxes) — fallback als de plaats onbekend is */
-function provByCoords(lat, lng) {
-  if (lat > 52.95 && lng > 6.4)                          return 'Groningen';
-  if (lat > 52.7  && lng < 6.4)                          return 'Friesland';
-  if (lat > 52.45 && lat < 53.0  && lng > 6.3)           return 'Drenthe';
-  if (lat > 52.2  && lat < 52.8  && lng > 5.2 && lng < 6.05) return 'Flevoland';
-  if (lat > 52.1  && lat < 52.85 && lng > 6.05)          return 'Overijssel';
-  if (lat > 51.7  && lat < 52.5  && lng > 5.5)           return 'Gelderland';
-  if (lat > 51.9  && lat < 52.35 && lng > 4.8 && lng < 5.55) return 'Utrecht';
-  if (lat > 52.2  && lng > 4.45  && lng < 5.4)           return 'Noord-Holland';
-  if (lat > 51.7  && lat < 52.25 && lng > 3.85 && lng < 5.1) return 'Zuid-Holland';
-  if (lat < 51.75 && lng < 4.35)                         return 'Zeeland';
-  if (lat < 51.8  && lng > 5.5)                          return 'Limburg';
-  if (lat < 51.95)                                        return 'Noord-Brabant';
-  return 'Overig';
-}
-
 // Koppel provincie aan elk shop (plaatsnaam eerst, anders coördinaten)
 const byProv = {};
 for (const s of shops) {
@@ -157,6 +146,23 @@ for (const [prov, shopList] of Object.entries(byProv)) {
     .filter(p => p.slug !== slug)
     .map(p => `<a href="/regio/${p.slug}" class="regio-link">${p.prov} <span class="regio-link-count">(${p.count})</span></a>`)
     .join('');
+
+  /* Provincie-fietsroute (indien beschikbaar) */
+  const route = provRoutes.find(r => r.provincie === prov);
+  const routeBlock = route ? (() => {
+    const stops = route.stopIds.map(id => byId[id]).filter(Boolean);
+    const items = stops.map((s, i) => `
+          <li class="regioroute-stop"><span class="regioroute-num">${i + 1}</span>
+            <span class="regioroute-emoji">${s.emoji}</span>
+            <span class="regioroute-name">${esc(s.name)}</span></li>`).join('');
+    return `
+      <section class="regioroute" aria-label="Fietsroute in ${prov}">
+        <h2 class="regioroute-title">${route.emoji} Fietsroute: ${esc(route.titel)}</h2>
+        <p class="regioroute-intro">${esc(route.intro)} <strong>${esc(route.afstand)}</strong> · ${stops.length} stops.</p>
+        <ol class="regioroute-stops">${items}</ol>
+        <a class="btn btn-green" href="/?route=${route.stopIds.join(',')}">🚴 Laad deze route in de planner</a>
+      </section>`;
+  })() : '';
 
   const rows = shopList.map(s => `
   <article class="regio-shop">
@@ -230,7 +236,7 @@ for (const [prov, shopList] of Object.entries(byProv)) {
       <div class="regio-shops">
         ${rows}
       </div>
-
+${routeBlock}
       <div class="regio-cta">
         <a href="/" class="btn btn-green">🗺️ Bekijk alle locaties op de kaart</a>
         <p class="regio-cta-sub">Of zoek op een specifieke plaats, naam of product.</p>

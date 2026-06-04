@@ -344,6 +344,16 @@ fetch('src/data/verifiedShops.json')
       _renderPopularRoutes(_routesData);
     }
 
+    /* Deep-link: ?route=1,5,6 laadt die winkels in de route (vanaf een regiopagina) */
+    const routeParam = new URLSearchParams(location.search).get('route');
+    if (routeParam) {
+      const ids = routeParam.split(',').map(Number).filter(Boolean);
+      import('./route.js').then(({ toggleStop, getStops }) => {
+        ids.forEach(id => { if (!getStops().some(s => s.id === id)) toggleStop(id); });
+        document.querySelector('.nav-btn[data-page="route"]')?.click();
+      });
+    }
+
     /* Expose voor OSM-toevoeging */
     window._addOSMShops = extraShops => {
       const all = [...shops, ...extraShops];

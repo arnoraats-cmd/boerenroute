@@ -62,5 +62,199 @@
         198
       ]
     }
+  ],
+  "provincieRoutes": [
+    {
+      "id": "prov-noord-brabant",
+      "provincie": "Noord-Brabant",
+      "slug": "noord-brabant",
+      "titel": "Brabantse Hoevelus",
+      "emoji": "🌾",
+      "afstand": "19 km",
+      "intro": "Een rondje door het Brabantse zandland langs zuivel, vlees en streekproducten.",
+      "stopIds": [
+        28,
+        744,
+        142,
+        175,
+        184
+      ]
+    },
+    {
+      "id": "prov-limburg",
+      "provincie": "Limburg",
+      "slug": "limburg",
+      "titel": "Limburgse Streekroute",
+      "emoji": "🍇",
+      "afstand": "22 km",
+      "intro": "Langs telers en landwinkels door het Maasland en heuvelland.",
+      "stopIds": [
+        559,
+        704,
+        369,
+        313,
+        328
+      ]
+    },
+    {
+      "id": "prov-gelderland",
+      "provincie": "Gelderland",
+      "slug": "gelderland",
+      "titel": "Gelderse Hoevetocht",
+      "emoji": "🍎",
+      "afstand": "21 km",
+      "intro": "Langs kaasboerderijen, fruittelers en boerderijwinkels.",
+      "stopIds": [
+        819,
+        279,
+        761,
+        416,
+        267
+      ]
+    },
+    {
+      "id": "prov-friesland",
+      "provincie": "Friesland",
+      "slug": "friesland",
+      "titel": "Friese Zuivelroute",
+      "emoji": "🧀",
+      "afstand": "28 km",
+      "intro": "Langs melktaps en kaasboerderijen in het weidse Friese land.",
+      "stopIds": [
+        408,
+        327,
+        528,
+        694,
+        788
+      ]
+    },
+    {
+      "id": "prov-overijssel",
+      "provincie": "Overijssel",
+      "slug": "overijssel",
+      "titel": "Twents-Sallandse Route",
+      "emoji": "🌿",
+      "afstand": "22 km",
+      "intro": "Door het coulisselandschap langs melktaps en boerderijwinkels.",
+      "stopIds": [
+        582,
+        277,
+        217,
+        730,
+        425
+      ]
+    },
+    {
+      "id": "prov-zeeland",
+      "provincie": "Zeeland",
+      "slug": "zeeland",
+      "titel": "Zeeuwse Kleiroute",
+      "emoji": "🦪",
+      "afstand": "29 km",
+      "intro": "Langs fruit, kaas en streekproducten van de zeeklei.",
+      "stopIds": [
+        653,
+        314,
+        436,
+        710,
+        209
+      ]
+    },
+    {
+      "id": "prov-utrecht",
+      "provincie": "Utrecht",
+      "slug": "utrecht",
+      "titel": "Utrechtse Hoeveroute",
+      "emoji": "🍒",
+      "afstand": "21 km",
+      "intro": "Langs kaas, fruit en landwinkels rond het Groene Hart en de Heuvelrug.",
+      "stopIds": [
+        359,
+        379,
+        760,
+        739,
+        812
+      ]
+    },
+    {
+      "id": "prov-zuid-holland",
+      "provincie": "Zuid-Holland",
+      "slug": "zuid-holland",
+      "titel": "Groene Hart-route",
+      "emoji": "🐄",
+      "afstand": "20 km",
+      "intro": "Langs kaasboerderijen en landwinkels in de Zuid-Hollandse polders.",
+      "stopIds": [
+        825,
+        431,
+        533,
+        346,
+        257
+      ]
+    },
+    {
+      "id": "prov-noord-holland",
+      "provincie": "Noord-Holland",
+      "slug": "noord-holland",
+      "titel": "Noord-Hollandse Kaasroute",
+      "emoji": "🧀",
+      "afstand": "39 km",
+      "intro": "Langs kaasboerderijen van de Beemster en West-Friesland.",
+      "stopIds": [
+        688,
+        64,
+        394,
+        697,
+        234
+      ]
+    },
+    {
+      "id": "prov-flevoland",
+      "provincie": "Flevoland",
+      "slug": "flevoland",
+      "titel": "Flevolandse Polderroute",
+      "emoji": "🌷",
+      "afstand": "38 km",
+      "intro": "Door de jonge polders langs automaten en fruittelers.",
+      "stopIds": [
+        830,
+        78,
+        483,
+        543,
+        395
+      ]
+    },
+    {
+      "id": "prov-drenthe",
+      "provincie": "Drenthe",
+      "slug": "drenthe",
+      "titel": "Drentse Esdorpenroute",
+      "emoji": "🌲",
+      "afstand": "30 km",
+      "intro": "Langs melktaps en boerderijwinkels door brink en bos.",
+      "stopIds": [
+        691,
+        485,
+        326,
+        776,
+        229
+      ]
+    },
+    {
+      "id": "prov-groningen",
+      "provincie": "Groningen",
+      "slug": "groningen",
+      "titel": "Groninger Wierderoute",
+      "emoji": "🌾",
+      "afstand": "30 km",
+      "intro": "Langs landwinkels en automaten op het wijde Hogeland.",
+      "stopIds": [
+        778,
+        766,
+        91,
+        614,
+        454
+      ]
+    }
   ]
 }
