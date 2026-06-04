@@ -12,11 +12,13 @@
 import { readFileSync, writeFileSync } from 'fs';
 
 const WRITE = process.argv.includes('--write');
+const INCLUSIVE = process.argv.includes('--inclusive'); // gecurateerde lijst: ook generieke namen meenemen
 const cands = JSON.parse(readFileSync('scripts/new-candidates.json', 'utf8'));
 const shops = JSON.parse(readFileSync('src/data/verifiedShops.json', 'utf8'));
 
-/* Filters: NL-adres, geen ruis-types */
-const NOISE = new Set(['supermarket', 'wholesaler', 'florist', 'garden', 'grocery_store', 'market']);
+/* Filters: NL-adres, geen ruis-types, geen duidelijke niet-food */
+const NOISE = new Set(['supermarket', 'wholesaler', 'florist', 'garden', 'grocery_store', 'market', 'campground', 'lodging']);
+const NONFOOD = /\b(zeep|soap|camping|camper|kampeer|manege|stable|stables|brouwerij|brewery|distiller|spiritus|cider)\b/i;
 const isNL = a => /\d{4}\s?[A-Z]{2}/.test(a) && !/Belgi/i.test(a);
 
 /* Categorie uit naam (specifiek vóór algemeen) */
@@ -63,6 +65,15 @@ function derive(cat, nm, plaats) {
       if (has(/asperge/i)) return { emoji:'🌱', type:'winkel', products:['asperges','groente'], tags:['groente'], seasonal:true, desc:`Asperges en seizoensgroente in ${plaats}, vers van het land.` };
       return { emoji:'🍎', type:'winkel', products:['fruit','groente'], tags:['fruit','groente'], seasonal:false, desc:`Verse groente en fruit in ${plaats}, rechtstreeks van de teler.` };
     case 'imker':        return { emoji:'🍯', type:'winkel', products:['honing'], tags:['honing'], seasonal:false, desc:`Imker in ${plaats} met streekhoning en bijenproducten.` };
+    case 'algemeen':
+      if (has(/slagerij|vlees|rund|lam|varken|kalf|beef|meat/i)) return { emoji:'🥩', type:'winkel', products:['vlees','streekproducten'], tags:['vlees'], seasonal:false, desc:`Boerderijslagerij/streekwinkel in ${plaats} met eigen vlees.` };
+      if (has(/eier|eitje|pluimvee|\bei\b|\beieren\b/i))         return { emoji:'🥚', type:'winkel', products:['eieren'], tags:['eieren'], seasonal:false, desc:`Verkooppunt in ${plaats} met verse eieren en streekproducten.` };
+      if (has(/melk|zuivel/i))                                    return { emoji:'🥛', type:'winkel', products:['zuivel','melk'], tags:['zuivel'], seasonal:false, desc:`Zuivelboerderij/streekwinkel in ${plaats}.` };
+      if (has(/ijs|softijs/i))                                    return { emoji:'🍦', type:'winkel', products:['boerderijijs'], tags:['kindvriendelijk'], seasonal:true, desc:`Boerderij-ijs in ${plaats}, vers van eigen koeien.` };
+      if (has(/fruit|appel|peer|bes|aardbei|boomgaard|pluk/i))    return { emoji:'🍎', type:'winkel', products:['fruit'], tags:['fruit'], seasonal:false, desc:`Fruit en streekproducten in ${plaats}.` };
+      if (has(/groente|tuinderij|tuin|akker|oogst/i))             return { emoji:'🥬', type:'winkel', products:['groente','streekproducten'], tags:['groente'], seasonal:false, desc:`Verse groente en streekproducten in ${plaats}.` };
+      if (has(/honing|imker/i))                                   return { emoji:'🍯', type:'winkel', products:['honing'], tags:['honing'], seasonal:false, desc:`Imker/streekwinkel in ${plaats} met honing.` };
+      return { emoji:'🌱', type:'winkel', products:['streekproducten'], tags:[], seasonal:false, desc:`Boerderij- of streekwinkel in ${plaats} met lokale producten.` };
     case 'automaat':
       if (has(/aardappel|piep/i)) return { emoji:'🥔', type:'automaat', products:['aardappelen','groente'], tags:['groente'], seasonal:false, desc:`Aardappelautomaat in ${plaats} met verse aardappelen.` };
       if (has(/vlees|worst/i))    return { emoji:'🥩', type:'automaat', products:['vlees'], tags:['vlees'], seasonal:false, desc:`Vleesautomaat in ${plaats} met vlees van eigen boerderij.` };
@@ -86,8 +97,9 @@ const perCat = {};
 const placed = []; // {lat,lng} van nieuw toegevoegde (voor onderlinge dedup)
 
 for (const c of cands) {
-  if (!isNL(c.address) || NOISE.has(c.primaryType)) continue;
-  const cat = categorize(c.name);
+  if (!isNL(c.address) || NOISE.has(c.primaryType) || NONFOOD.test(c.name)) continue;
+  let cat = categorize(c.name);
+  if (!cat && INCLUSIVE) cat = 'algemeen'; // gecurateerde lijst: generieke namen tóch toevoegen
   if (!cat) continue;
   // onderlinge dedup: niet binnen 80m van een al toegevoegde kandidaat
   if (placed.some(p => km(p.lat, p.lng, c.lat, c.lng) < 0.08)) continue;
