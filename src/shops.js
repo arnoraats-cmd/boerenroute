@@ -18,6 +18,10 @@ let showOpenOnly = false;
 let showFavOnly  = false;
 const favorites  = new Set();
 
+/* Render-limiet: niet honderden kaartjes/markers tegelijk (mobiel-performance) */
+const BASE_LIMIT = 80;
+let _limit = BASE_LIMIT;
+
 /* ── DOM ────────────────────────────────────────────────────── */
 const $       = id => document.getElementById(id);
 const listEl  = () => $('shopList');
@@ -161,7 +165,8 @@ function _getFiltered() {
 
 /* ══ Render ══════════════════════════════════════════════════════ */
 
-function _render() {
+function _render(reset = true) {
+  if (reset) _limit = BASE_LIMIT;
   const shops = _getFiltered();
   const list  = listEl();
   if (!list) return;
@@ -184,10 +189,22 @@ function _render() {
   const emp = emptyEl();
   if (emp) emp.hidden = true;
 
-  list.innerHTML = shops.map(_cardHTML).join('');
+  /* Toon maximaal _limit kaartjes/markers tegelijk (mobiel-performance) */
+  const shown   = shops.slice(0, _limit);
+  const restant = shops.length - shown.length;
 
-  /* Kaart: markers bijwerken */
-  renderMarkers(shops);
+  list.innerHTML = shown.map(_cardHTML).join('')
+    + (restant > 0
+        ? `<li class="shop-more"><button class="btn btn-ghost" id="shopMoreBtn">Toon meer (${restant} resterend)</button></li>`
+        : '');
+
+  /* Kaart: alleen de getoonde markers (lichter op de telefoon) */
+  renderMarkers(shown);
+
+  document.getElementById('shopMoreBtn')?.addEventListener('click', () => {
+    _limit += BASE_LIMIT;
+    _render(false);
+  });
 
   /* Fav-knoppen */
   list.querySelectorAll('.shop-fav').forEach(btn => {

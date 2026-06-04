@@ -3072,6 +3072,22 @@
     .content-wrap { grid-template-columns: 1fr 1fr; }  /* 50/50 */
   }
 
+  /* Mobiel: voorkom dat iOS Safari inzoomt zodra je een veld aantikt
+     (gebeurt bij invoer < 16px). Geldt voor alle formuliervelden. */
+  @media (max-width: 640px) {
+    input, select, textarea,
+    .form-input, .hero-search-input, .search-input, .sort-select,
+    .diploma-name-input, .sk-backup-code, .bood-input {
+      font-size: 16px;
+    }
+  }
+
+  /* Notch / home-indicator: houd zwevende knoppen vrij van de schermranden */
+  .float-tip   { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+  .route-fab   { bottom: calc(22px + env(safe-area-inset-bottom, 0px)); }
+  .br-toast    { bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
+  .site-footer { padding-bottom: env(safe-area-inset-bottom, 0px); }
+
   @media (max-width: 900px) {
     :root { --header-h: 106px; }
 
