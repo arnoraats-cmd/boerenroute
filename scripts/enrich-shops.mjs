@@ -85,7 +85,7 @@ if (isMain) {
   console.log(`Met placeId: ${shops.filter(s => s.placeId && !s.osm).length}. Verwerken: ${todo.length}` +
               `${WRITE ? '  → OPSLAAN' : '  → dry-run'}\n`);
 
-  let calls = 0, hoursSet = 0, phoneSet = 0, webSet = 0;
+  let calls = 0, hoursSet = 0, phoneSet = 0, webSet = 0, ratingSet = 0;
   const closed = [];
 
   for (const shop of todo) {
@@ -94,7 +94,7 @@ if (isMain) {
       const res = await fetch(url, {
         headers: {
           'X-Goog-Api-Key':   KEY,
-          'X-Goog-FieldMask': 'displayName,regularOpeningHours.periods,nationalPhoneNumber,websiteUri,businessStatus',
+          'X-Goog-FieldMask': 'displayName,regularOpeningHours.periods,nationalPhoneNumber,websiteUri,businessStatus,rating,userRatingCount',
         },
       });
       calls++;
@@ -124,6 +124,11 @@ if (isMain) {
         if (WRITE) shop.website = d.websiteUri;
         webSet++;
       }
+      if (d.rating != null && shop.googleRating == null) {
+        changes.push(`${d.rating}★ (${d.userRatingCount ?? 0})`);
+        if (WRITE) { shop.googleRating = d.rating; shop.googleReviews = d.userRatingCount ?? 0; }
+        ratingSet++;
+      }
       if (d.businessStatus && d.businessStatus !== 'OPERATIONAL') {
         closed.push(`${shop.name} (id ${shop.id}) — ${d.businessStatus}`);
       }
@@ -135,13 +140,13 @@ if (isMain) {
     await new Promise(r => setTimeout(r, 300));
   }
 
-  console.log(`\nKlaar. Calls: ${calls}. Uren: ${hoursSet}, telefoon: ${phoneSet}, website: ${webSet}.`);
+  console.log(`\nKlaar. Calls: ${calls}. Uren: ${hoursSet}, telefoon: ${phoneSet}, website: ${webSet}, rating: ${ratingSet}.`);
   if (closed.length) {
     console.log(`\n⚠ Mogelijk gesloten (${closed.length}) — handmatig nakijken:`);
     closed.forEach(c => console.log('   ' + c));
   }
 
-  if (WRITE && (hoursSet || phoneSet || webSet)) {
+  if (WRITE && (hoursSet || phoneSet || webSet || ratingSet)) {
     writeFileSync(FILE, JSON.stringify(shops, null, 2) + '\n', 'utf8');
     console.log(`\nOpgeslagen in ${FILE}.`);
   } else if (!WRITE) {
