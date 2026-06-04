@@ -25,12 +25,16 @@ const li = args.indexOf('--limit');
 if (li !== -1 && args[li + 1]) LIMIT = parseInt(args[li + 1], 10);
 
 /* Zoektermen die de naamgeving van deze zaken goed vangen */
-const QUERIES = ['boerderijwinkel', 'eierautomaat', 'melktap', 'zelfpluk boerderij', 'boerderij automaat'];
+const QUERIES = [
+  'boerderijwinkel', 'eierautomaat', 'melktap', 'zelfpluk', 'hoevewinkel',
+  'streekproducten boerderij', 'kaasboerderij', 'vleesautomaat',
+  'zuivelautomaat', 'aardappelautomaat',
+];
 
-/* Raster over (bewoond) Nederland */
+/* Fijn raster over (bewoond) Nederland — kleinere cellen voor dichte gebieden */
 const GRID = [];
-for (let lat = 50.8; lat <= 53.45; lat += 0.5)
-  for (let lng = 3.6; lng <= 7.05; lng += 0.6)
+for (let lat = 50.75; lat <= 53.5; lat += 0.35)
+  for (let lng = 3.4; lng <= 7.1; lng += 0.4)
     GRID.push({ lat: +lat.toFixed(3), lng: +lng.toFixed(3) });
 const points = GRID.slice(0, LIMIT);
 
@@ -65,7 +69,7 @@ for (const pt of points) {
         body: JSON.stringify({
           textQuery: q,
           languageCode: 'nl', regionCode: 'NL', maxResultCount: 20,
-          locationBias: { circle: { center: { latitude: pt.lat, longitude: pt.lng }, radius: 35000 } },
+          locationBias: { circle: { center: { latitude: pt.lat, longitude: pt.lng }, radius: 26000 } },
         }),
       });
       calls++;
