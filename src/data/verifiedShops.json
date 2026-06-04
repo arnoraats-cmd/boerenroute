@@ -21882,16 +21882,18 @@
     "lat": 50.870816,
     "lng": 5.843579,
     "address": "Hekerbeekweg 84, Valkenburg",
-    "hours": null,
+    "hours": "wo 12-17.30u · vr 12-17.30u · za-zo 10-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJNe3Y1FS_wEcRZrcfeilDm9U",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 498,
     "dagVers": null,
-    "desc": "Speelboerderij in Valkenburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Valkenburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "043 311 2880",
+    "website": "https://hetbukske.nl/"
   },
   {
     "id": 863,
@@ -21903,16 +21905,18 @@
     "lat": 53.316498,
     "lng": 5.996088,
     "address": "Parklaan 10, Dokkum",
-    "hours": null,
+    "hours": "ma-vr 9.30-17u · za-zo 13-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJu_1WadqryUcR1wtYfF73PbM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 100,
     "dagVers": null,
-    "desc": "Speelboerderij in Dokkum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Dokkum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "088 166 3607",
+    "website": "https://www.annazijlstrahoeve.nl/"
   },
   {
     "id": 864,
@@ -21924,16 +21928,18 @@
     "lat": 53.264782,
     "lng": 5.783118,
     "address": "Truerderdyk 14, Stiens",
-    "hours": null,
+    "hours": "ma-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJd-lXbhECyUcRvyVLlq8Q12Q",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 539,
     "dagVers": null,
-    "desc": "Speelboerderij in Stiens — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Stiens — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "088 166 3658",
+    "website": "https://m.facebook.com/kinderboerderijdoniastatestiens/"
   },
   {
     "id": 865,
@@ -21945,16 +21951,18 @@
     "lat": 53.037421,
     "lng": 5.648155,
     "address": "Harste 11B, Sneek",
-    "hours": null,
+    "hours": "ma-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJLRk-bNXxyEcRhdCTzn13DRI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 340,
     "dagVers": null,
-    "desc": "Speelboerderij in Sneek — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Sneek — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "088 166 3602",
+    "website": "http://www.kinderboerderijsneek.nl/"
   },
   {
     "id": 866,
@@ -21966,16 +21974,18 @@
     "lat": 52.167317,
     "lng": 5.280645,
     "address": "Vedelaarpad 53, Soest",
-    "hours": null,
+    "hours": "ma-vr 9.30-17u · za-zo 13-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJtZ9-8vJBxkcRPKC_LTQ28uI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 338,
     "dagVers": null,
-    "desc": "Speelboerderij in Soest — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Soest — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 86864387",
+    "website": "http://www.stichtingbalans.nl/kinderboerderij/"
   },
   {
     "id": 867,
@@ -21987,16 +21997,17 @@
     "lat": 53.015637,
     "lng": 6.591271,
     "address": "Andrej Sacharovweg 2, Assen",
-    "hours": null,
+    "hours": "ma-vr 8.30-16u · za-zo 14.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJk__xyJglyEcRsGODqdUEws8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 101,
     "dagVers": null,
-    "desc": "Speelboerderij in Assen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Assen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.beekdalhoeve.nl/"
   },
   {
     "id": 868,
@@ -22008,16 +22019,18 @@
     "lat": 53.263486,
     "lng": 6.572569,
     "address": "Westerseweg 23, Zuidwolde",
-    "hours": null,
+    "hours": "ma-za 9-19u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJa6PR5MnNyUcRnQdyTMFzZEc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 28,
     "dagVers": null,
-    "desc": "Speelboerderij in Zuidwolde — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zuidwolde — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "050 301 5411",
+    "website": "http://famgroendijk.nl/"
   },
   {
     "id": 869,
@@ -22029,14 +22042,14 @@
     "lat": 52.674797,
     "lng": 6.772455,
     "address": "Reindersdijk 859, Dalen",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ1U5kh3f9t0cRgswafM0FvkQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 15,
     "dagVers": null,
     "desc": "Speelboerderij in Dalen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -22050,16 +22063,17 @@
     "lat": 52.008128,
     "lng": 5.171124,
     "address": "Kanaaldijk Zuid 12, Schalkwijk",
-    "hours": null,
+    "hours": "wo-do 9.30-17.30u · vr 0.30-17.30u · za-zo 9.30-17.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ2zGuDQBnxkcRH3N-zgZ2YSg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 36,
     "dagVers": null,
-    "desc": "Speelboerderij in Schalkwijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Schalkwijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.beleefboerderijbuiten.nl/"
   },
   {
     "id": 871,
@@ -22071,7 +22085,7 @@
     "lat": 52.034724,
     "lng": 4.885351,
     "address": "Noord-Linschoterzandweg 35, Snelrewaard",
-    "hours": null,
+    "hours": "ma-vr 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
@@ -22080,7 +22094,9 @@
     "googleRating": null,
     "googleReviews": null,
     "dagVers": null,
-    "desc": "Speelboerderij in Snelrewaard — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Snelrewaard — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 24219741",
+    "website": "http://www.vergaderwei.com/"
   },
   {
     "id": 872,
@@ -22092,16 +22108,18 @@
     "lat": 52.229001,
     "lng": 6.398337,
     "address": "Koebushorst 7, Laren",
-    "hours": null,
+    "hours": "ma 10-17u · wo-vr 10-17u · za-zo 10-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ7fM3hJ7zx0cR6Ov5ZQAGAsI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 257,
     "dagVers": null,
-    "desc": "Speelboerderij in Laren — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Laren — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0573 221 306",
+    "website": "http://www.dekleinecarrousel.nl/"
   },
   {
     "id": 873,
@@ -22113,16 +22131,18 @@
     "lat": 52.469029,
     "lng": 5.779434,
     "address": "Ellerweg 22a, Biddinghuizen",
-    "hours": null,
+    "hours": "wo-za 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJya_iAXnTx0cRYXimJhyChjE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 9,
     "dagVers": null,
-    "desc": "Speelboerderij in Biddinghuizen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Biddinghuizen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 47020008",
+    "website": "https://www.beleeftuindrakensteyn.nl/"
   },
   {
     "id": 874,
@@ -22134,16 +22154,17 @@
     "lat": 51.965885,
     "lng": 4.44089,
     "address": "Oude Bovendijk 220, Rotterdam",
-    "hours": null,
+    "hours": "wo-zo 10-17.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJNZsRlRvLxUcRFETcqkZoBLA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 1421,
     "dagVers": null,
-    "desc": "Speelboerderij in Rotterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Rotterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.belevenisboerderij.nl/"
   },
   {
     "id": 875,
@@ -22155,16 +22176,18 @@
     "lat": 52.580741,
     "lng": 6.016014,
     "address": "Oude Wetering 139a, Mastenbroek",
-    "hours": null,
+    "hours": "ma-za 9-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJVUbUD713yEcRvBxlVgKp3TM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.7,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Speelboerderij in Mastenbroek — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Mastenbroek — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 21270958",
+    "website": "http://www.boerpelleboer.nl/"
   },
   {
     "id": 876,
@@ -22176,16 +22199,18 @@
     "lat": 51.949698,
     "lng": 5.216509,
     "address": "Prijsseweg 1, Culemborg",
-    "hours": null,
+    "hours": "ma-zo 10-20u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJESAuvCpexkcRoQFNb3KFnyY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 94,
     "dagVers": null,
-    "desc": "Speelboerderij in Culemborg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Culemborg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 83525110",
+    "website": "https://bolderburen.com/"
   },
   {
     "id": 877,
@@ -22197,16 +22222,18 @@
     "lat": 52.480057,
     "lng": 4.769112,
     "address": "Vaartdijk 25B, Assendelft",
-    "hours": null,
+    "hours": "wo-zo 10-17.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJuce7x4L7xUcRRlvNPeTIk40",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 511,
     "dagVers": null,
-    "desc": "Speelboerderij in Assendelft — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Assendelft — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 53246372",
+    "website": "http://www.bontebelevenis.nl/"
   },
   {
     "id": 878,
@@ -22218,14 +22245,14 @@
     "lat": 51.513584,
     "lng": 3.898104,
     "address": "Houtkade 24, Goes",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ1c5Hb5mJxEcRmFEVfkvhA_w",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 11,
     "dagVers": null,
     "desc": "Speelboerderij in Goes — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -22239,16 +22266,18 @@
     "lat": 53.152866,
     "lng": 7.041563,
     "address": "Bovenburen 96, Winschoten",
-    "hours": null,
+    "hours": "ma-vr 9-16.30u · zo 13-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJq6BR3hLNt0cRLI0rYmuZEC8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 491,
     "dagVers": null,
-    "desc": "Speelboerderij in Winschoten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Winschoten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0597 415 730",
+    "website": "https://www.facebook.com/profile.php?id=100063658294246"
   },
   {
     "id": 880,
@@ -22260,16 +22289,17 @@
     "lat": 51.455535,
     "lng": 5.953408,
     "address": "Laagheideweg 11, America",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJR2VOElY_x0cRRFyD3XgSN40",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 20,
     "dagVers": null,
-    "desc": "Speelboerderij in America — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in America — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.centerparcs.nl/nl-nl/nederland/fp_MD_vakantiepark-het-meerdal/alle-activiteiten"
   },
   {
     "id": 881,
@@ -22281,16 +22311,18 @@
     "lat": 52.734004,
     "lng": 6.276823,
     "address": "Wolddijk 23, Ruinerwold",
-    "hours": null,
+    "hours": "ma-zo 10-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ80mfPuwSyEcRoJdtK6T9P3o",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 2829,
     "dagVers": null,
-    "desc": "Speelboerderij in Ruinerwold — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Ruinerwold — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 40418828",
+    "website": "https://www.drentsekoe.nl/"
   },
   {
     "id": 882,
@@ -22302,16 +22334,18 @@
     "lat": 52.177128,
     "lng": 6.678396,
     "address": "Ellenbroekweg 12, Haaksbergen",
-    "hours": null,
+    "hours": "ma-vr 7.30-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJJRoeCLQMuEcRPNT11_QVHbk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3,
+    "googleReviews": 4,
     "dagVers": null,
-    "desc": "Speelboerderij in Haaksbergen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Haaksbergen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 23488268",
+    "website": "http://www.de-speelboerderij.nl/"
   },
   {
     "id": 883,
@@ -22329,10 +22363,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJY_bAvOsmyEcRR1PE6dbEdv0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 36,
     "dagVers": null,
-    "desc": "Speelboerderij in Nooitgedacht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nooitgedacht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0592 247 606",
+    "website": "https://www.detrans.nl/wonen-werken-dagbesteding-kinderdagcentrum/dagbesteding/de-kinderboerderij-nooitgedacht.aspx"
   },
   {
     "id": 884,
@@ -22344,16 +22380,18 @@
     "lat": 53.228018,
     "lng": 6.521254,
     "address": "Kornalijnlaan 7, Groningen",
-    "hours": null,
+    "hours": "ma-vr 9.30-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJsT1-RSfNyUcRfSCvtR2BvFI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 106,
     "dagVers": null,
-    "desc": "Speelboerderij in Groningen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Groningen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 13839310",
+    "website": "https://dezijlen.nl/locatie/eelderbaan/"
   },
   {
     "id": 885,
@@ -22365,16 +22403,17 @@
     "lat": 51.103959,
     "lng": 5.879827,
     "address": "Oranjestraat 67, Echt",
-    "hours": null,
+    "hours": "ma-vr 10-14u · za-zo 10-13u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJXRsfF-PJwEcRsg-xtOu5VEI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 208,
     "dagVers": null,
-    "desc": "Speelboerderij in Echt — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Echt — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 19698332"
   },
   {
     "id": 886,
@@ -22386,16 +22425,18 @@
     "lat": 51.652509,
     "lng": 5.854038,
     "address": "Walsert 6, Rijkevoort-de Walsert",
-    "hours": null,
+    "hours": "ma-do 9-16.30u · vr 9-15u · za 9.30-13.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJGWag2hoRx0cRXuEZ9kvy5SU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 82,
     "dagVers": null,
-    "desc": "Speelboerderij in Rijkevoort-de Walsert — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Rijkevoort-de Walsert — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 51620561",
+    "website": "https://ant-hoag.nl/"
   },
   {
     "id": 887,
@@ -22407,16 +22448,18 @@
     "lat": 52.280453,
     "lng": 6.791461,
     "address": "27, Van Alphenstraat 25, Hengelo",
-    "hours": null,
+    "hours": "ma-vr 9-16u · zo 10-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ3cfMcCcOuEcRpUv4BEoCVvQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 440,
     "dagVers": null,
-    "desc": "Speelboerderij in Hengelo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hengelo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 15619003",
+    "website": "https://www.erveweusthag.nl/"
   },
   {
     "id": 888,
@@ -22428,16 +22471,18 @@
     "lat": 51.9608,
     "lng": 4.598157,
     "address": "Fransezoom 14-16, Nieuwerkerk aan den IJssel",
-    "hours": null,
+    "hours": "ma-vr 9-15.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJvS2fVJrSxUcRgT47VFiYbD4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 26,
     "dagVers": null,
-    "desc": "Speelboerderij in Nieuwerkerk aan den IJssel — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nieuwerkerk aan den IJssel — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0180 331 947",
+    "website": "http://www.gemiva-svg.nl/"
   },
   {
     "id": 889,
@@ -22449,16 +22494,18 @@
     "lat": 51.34986,
     "lng": 5.398793,
     "address": "Heiereind 11, Riethoven",
-    "hours": null,
+    "hours": "di-zo 11-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJkZrzZtjQxkcRqcpJl5-j0xg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4,
+    "googleReviews": 407,
     "dagVers": null,
-    "desc": "Speelboerderij in Riethoven — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Riethoven — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "040 204 2721",
+    "website": "http://www.heierhof.nl/"
   },
   {
     "id": 890,
@@ -22470,16 +22517,18 @@
     "lat": 51.672073,
     "lng": 5.581141,
     "address": "Canadasweg 3A, Uden",
-    "hours": null,
+    "hours": "wo 10-19u · vr-zo 10-19u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJlXFxTn_ixkcRV2TPrDI4iWo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 2105,
     "dagVers": null,
-    "desc": "Speelboerderij in Uden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Uden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0413 257 534",
+    "website": "http://www.hullie.nl/"
   },
   {
     "id": 891,
@@ -22491,16 +22540,18 @@
     "lat": 51.423977,
     "lng": 5.558657,
     "address": "Mierloseweg 1G, Geldrop",
-    "hours": null,
+    "hours": "ma-vr 10-16.30u · za-zo 11-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJdyCUIKAnx0cRgLFaQEmO7B0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 584,
     "dagVers": null,
-    "desc": "Speelboerderij in Geldrop — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Geldrop — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "040 285 8252",
+    "website": "https://kasteelgeldrop.nl/over-de-kasteel-kinderboerderij/"
   },
   {
     "id": 892,
@@ -22512,14 +22563,14 @@
     "lat": 50.868412,
     "lng": 6.079944,
     "address": "Unnamed Road, Kerkrade",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJlRl1cwqjwEcRAbzKR5HLnpU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 5,
     "dagVers": null,
     "desc": "Speelboerderij in Kerkrade — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -22539,8 +22590,8 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJUcVOKgC3wEcRszv7RJz1w3s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4,
+    "googleReviews": 3,
     "dagVers": null,
     "desc": "Speelboerderij in Susteren — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -22554,14 +22605,14 @@
     "lat": 51.648588,
     "lng": 3.909078,
     "address": "Scheldestraat 3, Zierikzee",
-    "hours": null,
+    "hours": "ma-vr 10-15u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJA_hPRJL1xEcR7fVOxaRtLhg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 4,
     "dagVers": null,
     "desc": "Speelboerderij in Zierikzee — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -22575,16 +22626,17 @@
     "lat": 52.266464,
     "lng": 4.538359,
     "address": "Keukenhof 7, Lisse",
-    "hours": null,
+    "hours": "ma-zo 10-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJX3LWoAPCxUcRQLmWtfnJDug",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 119,
     "dagVers": null,
-    "desc": "Speelboerderij in Lisse — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Lisse — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://kasteelkeukenhof.nl/nl/faciliteiten/kinderboerderij/"
   },
   {
     "id": 896,
@@ -22596,14 +22648,14 @@
     "lat": 52.731587,
     "lng": 6.901843,
     "address": "Unnamed Road, 7828, Emmen",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ7SJGnYvlt0cRXzufgRpiGd8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 30,
     "dagVers": null,
     "desc": "Speelboerderij in Emmen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -22623,8 +22675,8 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJUdBF4ndJz0cR6VhJbAjk6ow",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 60,
     "dagVers": null,
     "desc": "Speelboerderij in Julianadorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -22638,16 +22690,17 @@
     "lat": 52.375645,
     "lng": 4.79297,
     "address": "Cort van der Lindenkade 5, Amsterdam",
-    "hours": null,
+    "hours": "di-vr 9-14u · za-zo 10-14u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJYU7ufL7jxUcRwpV_NgAi0mU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 66,
     "dagVers": null,
-    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "020 614 8154"
   },
   {
     "id": 899,
@@ -22659,16 +22712,18 @@
     "lat": 51.828323,
     "lng": 5.809148,
     "address": "Nocturnestraat 201, Nijmegen",
-    "hours": null,
+    "hours": "ma-wo 10-16.30u · do 10-17u · vr 10-16.30u · za-zo 10.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJtblhAjEGx0cRyuvKRORPYHM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 115,
     "dagVers": null,
-    "desc": "Speelboerderij in Nijmegen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nijmegen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 11700739",
+    "website": "https://m.facebook.com/KinderboerderijBoerke/"
   },
   {
     "id": 900,
@@ -22680,16 +22735,18 @@
     "lat": 52.549713,
     "lng": 4.657117,
     "address": "Duinenboschweg 1-A, Castricum",
-    "hours": null,
+    "hours": "di-zo 11-15u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJgcLIpRb3xUcRbbjPbnPWIL4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 145,
     "dagVers": null,
-    "desc": "Speelboerderij in Castricum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Castricum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 49955847",
+    "website": "http://www.dierenduintje.nl/"
   },
   {
     "id": 901,
@@ -22701,16 +22758,17 @@
     "lat": 52.483164,
     "lng": 6.059471,
     "address": "Brugge 1, Hattem",
-    "hours": null,
+    "hours": "ma-za 10-17u · zo 11-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJlzju80fZx0cRjR6w2LRvrjc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 157,
     "dagVers": null,
-    "desc": "Speelboerderij in Hattem — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hattem — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://kinderboerderijhattem.nl/"
   },
   {
     "id": 902,
@@ -22722,16 +22780,18 @@
     "lat": 51.681748,
     "lng": 5.064026,
     "address": "Mendelssohnstraat 6, Waalwijk",
-    "hours": null,
+    "hours": "ma-do 9-17u · vr 9-13u · za-zo 10-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJiceitN-TxkcRQms9rzA1UB0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 250,
     "dagVers": null,
-    "desc": "Speelboerderij in Waalwijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Waalwijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 39688646",
+    "website": "https://www.kinderboerderij-erf.nl/"
   },
   {
     "id": 903,
@@ -22743,16 +22803,18 @@
     "lat": 51.93047,
     "lng": 4.387442,
     "address": "Pr. Beatrixpark 7, Schiedam",
-    "hours": null,
+    "hours": "di-zo 10-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ09JZF1A1xEcRIMZlBwarHwk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 327,
     "dagVers": null,
-    "desc": "Speelboerderij in Schiedam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Schiedam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "010 470 7844",
+    "website": "https://www.irado.nl/schiedam/kinderboerderij-t-hoefblad"
   },
   {
     "id": 904,
@@ -22764,16 +22826,17 @@
     "lat": 52.235693,
     "lng": 4.437664,
     "address": "Oude Zeeweg 3, Noordwijk",
-    "hours": null,
+    "hours": "wo 9.30-11u · wo 12-16.30u · vr 12-16.30u · za 10-14.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJlwypV5TBxUcRE-orBkR_ULs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 122,
     "dagVers": null,
-    "desc": "Speelboerderij in Noordwijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Noordwijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://kinderboerderijnoordwijk.nl/"
   },
   {
     "id": 905,
@@ -22785,16 +22848,17 @@
     "lat": 51.723462,
     "lng": 5.355716,
     "address": "Abraham Kuyperborch 2, Rosmalen",
-    "hours": null,
+    "hours": "ma-di 10-12u · wo 10-12u · wo 14-16u · do-vr 10-12u · za-zo 14-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ7yrEj93vxkcR-B5CLRN6KV8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 135,
     "dagVers": null,
-    "desc": "Speelboerderij in Rosmalen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Rosmalen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.veldje.nl/"
   },
   {
     "id": 906,
@@ -22806,16 +22870,18 @@
     "lat": 52.053179,
     "lng": 5.268018,
     "address": "Boterbloem 3, Driebergen-Rijsenburg",
-    "hours": null,
+    "hours": "di-vr 10-16.30u · za 15-16u · zo 14.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJuftY5D1dxkcRKZcP0KJ9-3s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 147,
     "dagVers": null,
-    "desc": "Speelboerderij in Driebergen-Rijsenburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Driebergen-Rijsenburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0343 521 351",
+    "website": "http://www.kinderboerderij-driebergen.nl/"
   },
   {
     "id": 907,
@@ -22827,16 +22893,18 @@
     "lat": 52.700138,
     "lng": 4.821088,
     "address": "Potjesdam 2, Zuid-Scharwoude",
-    "hours": null,
+    "hours": "wo 14-17u · za-zo 14-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJm99zQf1Tz0cRDotIqY3YGss",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 97,
     "dagVers": null,
-    "desc": "Speelboerderij in Zuid-Scharwoude — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zuid-Scharwoude — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 50125026",
+    "website": "http://www.de-beestenboel.nl/"
   },
   {
     "id": 908,
@@ -22848,14 +22916,14 @@
     "lat": 51.512493,
     "lng": 3.897995,
     "address": "Kattendijksedijk 23, Goes",
-    "hours": null,
+    "hours": "wo 13-16.30u · za-zo 13-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJdx6tn-CJxEcRJAP_rGy6Hzw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.7,
+    "googleReviews": 6,
     "dagVers": null,
     "desc": "Speelboerderij in Goes — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -22869,14 +22937,14 @@
     "lat": 52.558,
     "lng": 4.845035,
     "address": "Fluytschip 26a, De Rijp",
-    "hours": null,
+    "hours": "ma-zo 9-19u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJj97Gsf_-xUcRftRJDx-b5So",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 90,
     "dagVers": null,
     "desc": "Speelboerderij in De Rijp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -22890,16 +22958,18 @@
     "lat": 52.129167,
     "lng": 6.199167,
     "address": "Schouwlaaksweg 2, Zutphen",
-    "hours": null,
+    "hours": "ma-vr 9-16u · za-zo 10-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJuZnf_RGUx0cREXKZ3tQV3zQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 300,
     "dagVers": null,
-    "desc": "Speelboerderij in Zutphen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zutphen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0575 528 921",
+    "website": "http://www.kinderboerderijdeschouw.nl/"
   },
   {
     "id": 911,
@@ -22911,16 +22981,17 @@
     "lat": 51.802542,
     "lng": 5.762118,
     "address": "Wijchen",
-    "hours": null,
+    "hours": "ma-vr 8-15.45u · za 0-0u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJsXulje4Hx0cRZdvc5WGpF24",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 16,
     "dagVers": null,
-    "desc": "Speelboerderij in Wijchen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Wijchen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://elkerweide.nl/"
   },
   {
     "id": 912,
@@ -22932,16 +23003,18 @@
     "lat": 52.602455,
     "lng": 4.709022,
     "address": "Ter Coulsterlaan 1A, Heiloo, 1851 LA Heiloo",
-    "hours": null,
+    "hours": "ma-di 8.30-11u · wo 8.30-11u · wo 12-17u · do-za 8.30-11u · zo 8.30-11u · zo 13-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJZac7Yg_4xUcRu-PV9rSppd8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 83,
     "dagVers": null,
-    "desc": "Speelboerderij in , Heiloo, 1851 LA Heiloo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in , Heiloo, 1851 LA Heiloo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "072 520 1885",
+    "website": "http://www.beestenboetje.nl/"
   },
   {
     "id": 913,
@@ -22953,16 +23026,17 @@
     "lat": 52.523797,
     "lng": 6.145826,
     "address": "Van Het Hoffpad 1, Zwolle",
-    "hours": null,
+    "hours": "wo 15-17u · zo 15-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJUwWzwZjfx0cR5QSwlvFPN3E",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 51,
     "dagVers": null,
-    "desc": "Speelboerderij in Zwolle — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zwolle — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://wijkverenigingberkum.nl/"
   },
   {
     "id": 914,
@@ -22974,16 +23048,18 @@
     "lat": 51.801441,
     "lng": 4.518778,
     "address": "Vrouwe Huisjesweg 9, Mijnsheerenland",
-    "hours": null,
+    "hours": "ma-zo 9.30-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJPXyycVEwxEcRrrz81n68Dxg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 220,
     "dagVers": null,
-    "desc": "Speelboerderij in Mijnsheerenland — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Mijnsheerenland — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0186 603 834",
+    "website": "http://www.recreatieoordbinnenmaas.nl/"
   },
   {
     "id": 915,
@@ -22995,16 +23071,18 @@
     "lat": 52.255818,
     "lng": 4.772229,
     "address": "Beethovenlaan 118, Aalsmeer",
-    "hours": null,
+    "hours": "di-vr 9.30-16.30u · za-zo 10-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJryOU4CLexUcRg2varClIKhM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 515,
     "dagVers": null,
-    "desc": "Speelboerderij in Aalsmeer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Aalsmeer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0297 345 902",
+    "website": "http://www.boerenvreugd.nl/"
   },
   {
     "id": 916,
@@ -23016,16 +23094,18 @@
     "lat": 52.131755,
     "lng": 4.655678,
     "address": "Parklaan 2, Alphen aan den Rijn",
-    "hours": null,
+    "hours": "ma-za 14-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJx9eTU-XaxUcRLa-2W0iWwYY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 121,
     "dagVers": null,
-    "desc": "Speelboerderij in Alphen aan den Rijn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Alphen aan den Rijn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0172 422 303",
+    "website": "http://www.kinderboerderijalphen.nl/"
   },
   {
     "id": 917,
@@ -23037,16 +23117,18 @@
     "lat": 51.58771,
     "lng": 5.342644,
     "address": "Apollopad 1, Boxtel",
-    "hours": null,
+    "hours": "ma-vr 9-16.30u · za-zo 14-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ1fdv8G3oxkcRxJMrLvG2R6U",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 236,
     "dagVers": null,
-    "desc": "Speelboerderij in Boxtel — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Boxtel — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0411 672 927",
+    "website": "http://www.kinderboerderijboxtel.nl/"
   },
   {
     "id": 918,
@@ -23058,16 +23140,18 @@
     "lat": 52.556298,
     "lng": 5.909317,
     "address": "Buitensingel 3, Kampen",
-    "hours": null,
+    "hours": "ma-za 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJAZTCmp14yEcR2bwldTe9w4A",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 421,
     "dagVers": null,
-    "desc": "Speelboerderij in Kampen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Kampen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 30123777",
+    "website": "http://www.cantecleer.com/"
   },
   {
     "id": 919,
@@ -23079,16 +23163,18 @@
     "lat": 51.266894,
     "lng": 4.093315,
     "address": "Hoevedreef 2, Clinge",
-    "hours": null,
+    "hours": "di-vr 9.30-12u · di-vr 13-16u · zo 13.30-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJWcOduSKIw0cR9R8Tl0kVn_E",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 108,
     "dagVers": null,
-    "desc": "Speelboerderij in Clinge — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Clinge — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0114 382 150",
+    "website": "https://nlmapsnov.top/details/kinderboerderij-cantecleerhoeve-ChIJWcO"
   },
   {
     "id": 920,
@@ -23100,16 +23186,18 @@
     "lat": 52.207446,
     "lng": 5.298206,
     "address": "Piet Heinlaan 13, Baarn",
-    "hours": null,
+    "hours": "di-vr 14-17u · zo 14-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJd5zez05AxkcRb56AnDkosLE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 83,
     "dagVers": null,
-    "desc": "Speelboerderij in Baarn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Baarn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "035 542 2738",
+    "website": "http://www.kinderboerderijcanton.nl/"
   },
   {
     "id": 921,
@@ -23121,16 +23209,18 @@
     "lat": 51.822512,
     "lng": 4.783133,
     "address": "Burg. Feitsmapark 1, Sliedrecht",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJlyqSBA2DxkcRoGbbDz6dHTg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 58,
     "dagVers": null,
-    "desc": "Speelboerderij in Sliedrecht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Sliedrecht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0184 417 993",
+    "website": "http://www.feitsmapark.nl/"
   },
   {
     "id": 922,
@@ -23142,16 +23232,18 @@
     "lat": 51.925785,
     "lng": 6.586749,
     "address": "Polstraat 9, Aalten",
-    "hours": null,
+    "hours": "ma-vr 9-11.30u · ma-vr 14-17u · za-zo 14-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJA2xFKNl5uEcRRHfS8D6BxMs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 70,
     "dagVers": null,
-    "desc": "Speelboerderij in Aalten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Aalten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0543 473 993",
+    "website": "https://www.belevingsboerderijdeahof.nl/"
   },
   {
     "id": 923,
@@ -23163,16 +23255,18 @@
     "lat": 52.481266,
     "lng": 4.64182,
     "address": "Westerhoutweg 18, Beverwijk",
-    "hours": null,
+    "hours": "ma-zo 10-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJbW5r1FjwxUcRYciDFTDoVw8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 465,
     "dagVers": null,
-    "desc": "Speelboerderij in Beverwijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Beverwijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0251 256 256",
+    "website": "https://www.beverwijk.nl/kinderboerderij"
   },
   {
     "id": 924,
@@ -23184,16 +23278,18 @@
     "lat": 52.39342,
     "lng": 5.260598,
     "address": "M.J. Granpré Molièrestraat 1, Almere",
-    "hours": null,
+    "hours": "di-vr 10-16.30u · za 14-16.30u · zo 10-12.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJq9f5yJcXxkcRRmVYZNkTYp0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 343,
     "dagVers": null,
-    "desc": "Speelboerderij in Almere — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Almere — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "036 532 2731",
+    "website": "http://www.stadennatuur.nl/de-beestenbende.nl/"
   },
   {
     "id": 925,
@@ -23205,16 +23301,18 @@
     "lat": 52.717084,
     "lng": 6.443842,
     "address": "Korenstraat 47, Hoogeveen",
-    "hours": null,
+    "hours": "ma-vr 8.30-16u · za-zo 10.30-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJe_GIjg0QyEcR7YRilv-fRHU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 241,
     "dagVers": null,
-    "desc": "Speelboerderij in Hoogeveen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hoogeveen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "088 878 9469",
+    "website": "https://www.cosis.nu/alles-over-cosis/locaties/beestenbult"
   },
   {
     "id": 926,
@@ -23226,16 +23324,18 @@
     "lat": 52.298992,
     "lng": 4.701189,
     "address": "Boslaan 5, Hoofddorp",
-    "hours": null,
+    "hours": "di-vr 9.30-16.30u · za-zo 10-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJF8HBjgjnxUcRltF6UsZ7aF8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 301,
     "dagVers": null,
-    "desc": "Speelboerderij in Hoofddorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hoofddorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "023 562 6535",
+    "website": "http://kinderboerderijdeboerenzwaluw.nl/"
   },
   {
     "id": 927,
@@ -23247,16 +23347,18 @@
     "lat": 52.669011,
     "lng": 4.856448,
     "address": "Van Veenweg 96, Heerhugowaard",
-    "hours": null,
+    "hours": "ma-vr 10-16.30u · za-zo 10.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ9-u082dUz0cREk248l9jTvc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 365,
     "dagVers": null,
-    "desc": "Speelboerderij in Heerhugowaard — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Heerhugowaard — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 10969492",
+    "website": "http://www.kinderboerderijdebongelaar.nl/"
   },
   {
     "id": 928,
@@ -23268,16 +23370,17 @@
     "lat": 52.067563,
     "lng": 4.643943,
     "address": "Snijdelwijklaan 6, Boskoop",
-    "hours": null,
+    "hours": "ma-vr 14-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJMdfzkk_QxUcRUOrIoAcmqPs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.9,
+    "googleReviews": 99,
     "dagVers": null,
-    "desc": "Speelboerderij in Boskoop — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Boskoop — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.kinderboerderijalphen.nl/"
   },
   {
     "id": 929,
@@ -23289,16 +23392,17 @@
     "lat": 52.267484,
     "lng": 4.48816,
     "address": "Sint Marielaan 10, Noordwijkerhout",
-    "hours": null,
+    "hours": "ma-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJMwYYAOLBxUcRZDcXzt3b5Dg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 194,
     "dagVers": null,
-    "desc": "Speelboerderij in Noordwijkerhout — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Noordwijkerhout — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.dierenhoeve.nl/"
   },
   {
     "id": 930,
@@ -23310,16 +23414,18 @@
     "lat": 51.644444,
     "lng": 4.598056,
     "address": "Vlimmeren 1, Zevenbergen",
-    "hours": null,
+    "hours": "ma 13.30-16.30u · wo 13.30-16.30u · vr-zo 13.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ30zdpa8jxEcRpBibFZXwSjo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 142,
     "dagVers": null,
-    "desc": "Speelboerderij in Zevenbergen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zevenbergen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0168 335 227",
+    "website": "http://www.dedierenploeg.nl/"
   },
   {
     "id": 931,
@@ -23331,14 +23437,14 @@
     "lat": 52.02426,
     "lng": 4.345536,
     "address": "Jaagpad 148D, Rijswijk",
-    "hours": null,
+    "hours": "zo 10-12u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ9UopINO1xUcRvkZPpk_eXJQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 15,
     "dagVers": null,
     "desc": "Speelboerderij in Rijswijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -23352,16 +23458,18 @@
     "lat": 51.825927,
     "lng": 5.839705,
     "address": "Slotemaker de Bruïneweg 268, Nijmegen",
-    "hours": null,
+    "hours": "ma-vr 10-16.30u · za-zo 11-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJn_jTmo8Ix0cRvD5Hvk71kvA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 750,
     "dagVers": null,
-    "desc": "Speelboerderij in Nijmegen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nijmegen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "024 356 0371",
+    "website": "https://boerderijdegoffert.nl/"
   },
   {
     "id": 933,
@@ -23373,16 +23481,18 @@
     "lat": 52.032301,
     "lng": 4.696312,
     "address": "Bloemendaalseweg 34a, Gouda",
-    "hours": null,
+    "hours": "ma 13-17u · di-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJKaNFu0nRxUcRuGYZYDEiag8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 1079,
     "dagVers": null,
-    "desc": "Speelboerderij in Gouda — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Gouda — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0182 514 219",
+    "website": "http://www.kinderboerderijgouda.nl/"
   },
   {
     "id": 934,
@@ -23394,16 +23504,18 @@
     "lat": 51.418212,
     "lng": 5.38162,
     "address": "De Twijnder 40, Veldhoven",
-    "hours": null,
+    "hours": "ma-zo 9.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ51nihVvaxkcRU-JyG3wZjpU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 818,
     "dagVers": null,
-    "desc": "Speelboerderij in Veldhoven — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Veldhoven — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "14 040",
+    "website": "https://www.veldhoven.nl/kinderboerderij-de-hazewinkel"
   },
   {
     "id": 935,
@@ -23415,16 +23527,18 @@
     "lat": 50.818704,
     "lng": 5.724662,
     "address": "Maastrichterweg 2b, Maastricht",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ8xu9ltnrwEcRVRGgV_MKxMs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 240,
     "dagVers": null,
-    "desc": "Speelboerderij in Maastricht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Maastricht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 82693639",
+    "website": "https://www.kinderboerderijdeheeg.com/"
   },
   {
     "id": 936,
@@ -23436,16 +23550,18 @@
     "lat": 51.955652,
     "lng": 5.252325,
     "address": "Weithusen 63, Culemborg",
-    "hours": null,
+    "hours": "di-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJSdGvCE9exkcRJU2j-h2QhAY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 427,
     "dagVers": null,
-    "desc": "Speelboerderij in Culemborg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Culemborg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 11109297",
+    "website": "https://www.facebook.com/p/Kinderboerderij-De-Heuvel-100057192800048"
   },
   {
     "id": 937,
@@ -23457,16 +23573,18 @@
     "lat": 52.342058,
     "lng": 4.771981,
     "address": "Snelliuslaan 31, Badhoevedorp",
-    "hours": null,
+    "hours": "di-vr 9.30-16.30u · za-zo 10-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJCU_URAnhxUcREgFwpYmg9zY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 124,
     "dagVers": null,
-    "desc": "Speelboerderij in Badhoevedorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Badhoevedorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "020 659 7637",
+    "website": "http://www.facebook.com/kinderboerderijdehoeve"
   },
   {
     "id": 938,
@@ -23478,16 +23596,17 @@
     "lat": 51.973106,
     "lng": 4.319236,
     "address": "Schipluiden",
-    "hours": null,
+    "hours": "ma-di 16-17u · wo 15-17u · do-vr 16-17u · za-zo 15-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJnW-RRzW1xUcR3OmY21GnwWg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 81,
     "dagVers": null,
-    "desc": "Speelboerderij in Schipluiden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Schipluiden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.facebook.com/Kinderboerderij-de-Kakelenburg-Schipluiden-813574002123604/"
   },
   {
     "id": 939,
@@ -23499,16 +23618,18 @@
     "lat": 51.829663,
     "lng": 4.154092,
     "address": "Plattendijk 1, Hellevoetsluis",
-    "hours": null,
+    "hours": "ma-zo 9.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJVcy9LShOxEcRdFlrO4cCpbY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 595,
     "dagVers": null,
-    "desc": "Speelboerderij in Hellevoetsluis — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hellevoetsluis — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0181 311 484",
+    "website": "http://www.dekerkestee.nl/"
   },
   {
     "id": 940,
@@ -23520,16 +23641,17 @@
     "lat": 52.221781,
     "lng": 4.486639,
     "address": "Klaprooshof 22, Voorhout",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ_bcnuxrBxUcR94L4CsZ6lGg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 50,
     "dagVers": null,
-    "desc": "Speelboerderij in Voorhout — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Voorhout — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.kinderboerderijvoorhout.nl/"
   },
   {
     "id": 941,
@@ -23541,16 +23663,18 @@
     "lat": 52.689945,
     "lng": 5.229865,
     "address": "Dam 20A, Grootebroek",
-    "hours": null,
+    "hours": "ma 13-14.30u · wo 13-16u · vr 13-14.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJaZg42VSlyEcRRS-yPG6WMHk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4,
+    "googleReviews": 4,
     "dagVers": null,
-    "desc": "Speelboerderij in Grootebroek — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Grootebroek — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 30477076",
+    "website": "https://www.kinderboerderij-dekleineweide.nl/"
   },
   {
     "id": 942,
@@ -23562,16 +23686,18 @@
     "lat": 52.37712,
     "lng": 4.742057,
     "address": "Van Hallstraat 4A, Zwanenburg",
-    "hours": null,
+    "hours": "di-vr 11-16u · za 10-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJa4z06WvkxUcRIBEhnkUdxac",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 128,
     "dagVers": null,
-    "desc": "Speelboerderij in Zwanenburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zwanenburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "020 497 4108",
+    "website": "http://www.kinderboerderijdeknuffelweide.nl/"
   },
   {
     "id": 943,
@@ -23583,16 +23709,17 @@
     "lat": 52.000892,
     "lng": 4.175759,
     "address": "Prins Clausstraat 2, 's-Gravenzande",
-    "hours": null,
+    "hours": "ma-do 10-12.30u · vr 10-12u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJVQuj9IitxUcRyQ_2FWBcHGo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 34,
     "dagVers": null,
-    "desc": "Speelboerderij in 's-Gravenzande — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in 's-Gravenzande — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0174 420 883"
   },
   {
     "id": 944,
@@ -23604,16 +23731,18 @@
     "lat": 53.150994,
     "lng": 4.860726,
     "address": "Roggeslootweg 4, De Cocksdorp",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJFa6_OUUuz0cRNbB2FwiLCh4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 70,
     "dagVers": null,
-    "desc": "Speelboerderij in De Cocksdorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in De Cocksdorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0222 390 112",
+    "website": "https://www.krim.nl/texel/natuuravontuur"
   },
   {
     "id": 945,
@@ -23625,16 +23754,18 @@
     "lat": 51.705227,
     "lng": 4.847205,
     "address": "Burggravenlaan 3, Geertruidenberg",
-    "hours": null,
+    "hours": "di-zo 12-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJPbq6gHycxkcRD3D8mZpPwbU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 157,
     "dagVers": null,
-    "desc": "Speelboerderij in Geertruidenberg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Geertruidenberg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 17693346",
+    "website": "http://kinderboerderijdongemond.nl/"
   },
   {
     "id": 946,
@@ -23646,16 +23777,18 @@
     "lat": 52.198991,
     "lng": 6.000132,
     "address": "Pallietergaarde 25, Apeldoorn",
-    "hours": null,
+    "hours": "ma-zo 8.30-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ04WO6K-4x0cRdeDHa6dyjXY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 603,
     "dagVers": null,
-    "desc": "Speelboerderij in Apeldoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Apeldoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "055 541 7050",
+    "website": "https://kinderboerderijenapeldoorn.nl/de-maten"
   },
   {
     "id": 947,
@@ -23667,16 +23800,18 @@
     "lat": 52.264725,
     "lng": 5.132063,
     "address": "Melkmeent 9, Hilversum",
-    "hours": null,
+    "hours": "wo-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJM4MWmTsTxkcRVS-Pa62H2gM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 411,
     "dagVers": null,
-    "desc": "Speelboerderij in Hilversum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hilversum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 42430990",
+    "website": "http://www.kinderboerderijdemeent.nl/"
   },
   {
     "id": 948,
@@ -23688,16 +23823,18 @@
     "lat": 52.71476,
     "lng": 6.930297,
     "address": "Omhaal 39, Erica",
-    "hours": null,
+    "hours": "ma-zo 9-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJh2relKHvt0cRj_Hg4vRm67c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 75,
     "dagVers": null,
-    "desc": "Speelboerderij in Erica — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Erica — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0591 789 048",
+    "website": "http://naoberhoeve-erica.nl/"
   },
   {
     "id": 949,
@@ -23709,16 +23846,18 @@
     "lat": 53.0934,
     "lng": 6.07149,
     "address": "Oude Slingeweg 4, Drachten",
-    "hours": null,
+    "hours": "ma 12-18u · di-zo 9-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJZVHShkdQyEcR_DxqcngddsI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 2080,
     "dagVers": null,
-    "desc": "Speelboerderij in Drachten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Drachten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0512 517 744",
+    "website": "http://www.naturij.nl/"
   },
   {
     "id": 950,
@@ -23730,16 +23869,18 @@
     "lat": 52.243393,
     "lng": 4.838977,
     "address": "Johan Enschedeweg 600, Uithoorn",
-    "hours": null,
+    "hours": "wo 13-17u · vr 13-17u · zo 13-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJS671efPfxUcR1NoWYvTmoxo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 122,
     "dagVers": null,
-    "desc": "Speelboerderij in Uithoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Uithoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 34201943",
+    "website": "http://olievaar.nl/"
   },
   {
     "id": 951,
@@ -23751,16 +23892,18 @@
     "lat": 52.016183,
     "lng": 5.663588,
     "address": "Bovenbuurtweg 35, Ede",
-    "hours": null,
+    "hours": "ma 10-17u · wo-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJBT677Sitx0cRD8EdeE8YtgU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 582,
     "dagVers": null,
-    "desc": "Speelboerderij in Ede — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Ede — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0318 630 869",
+    "website": "http://www.deoudehofstede.nl/"
   },
   {
     "id": 952,
@@ -23772,16 +23915,18 @@
     "lat": 52.349305,
     "lng": 4.892896,
     "address": "Lizzy Ansinghstraat 82, Amsterdam",
-    "hours": null,
+    "hours": "ma-vr 11-16.45u · za 12-16.45u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJF_WZaosJxkcRVag2U7-Cv34",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 497,
     "dagVers": null,
-    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "020 664 8303",
+    "website": "http://www.kinderboerderijdepijp.nl/"
   },
   {
     "id": 953,
@@ -23793,16 +23938,18 @@
     "lat": 52.502671,
     "lng": 4.970701,
     "address": "Leeghwaterpark 4, Purmerend",
-    "hours": null,
+    "hours": "ma-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJgxWv5scGxkcRTT-etefHloA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 412,
     "dagVers": null,
-    "desc": "Speelboerderij in Purmerend — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Purmerend — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0299 642 979",
+    "website": "https://kinderboerderij.purmerend.nl/"
   },
   {
     "id": 954,
@@ -23814,16 +23961,17 @@
     "lat": 51.492029,
     "lng": 5.141254,
     "address": "Uilenburg 6, Hilvarenbeek",
-    "hours": null,
+    "hours": "ma-vr 10-19u · za-zo 10.30-19u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJkygWeq7AxkcROBRbDLQfPsY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 28,
     "dagVers": null,
-    "desc": "Speelboerderij in Hilvarenbeek — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hilvarenbeek — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://kinderboerderij-uilenburg.nl/"
   },
   {
     "id": 955,
@@ -23835,16 +23983,18 @@
     "lat": 52.367473,
     "lng": 4.845066,
     "address": "Staalmeesterslaan 420, Amsterdam",
-    "hours": null,
+    "hours": "ma-wo 10-17u · vr-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJnw6yyxTixUcRIoib28NKwEM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 344,
     "dagVers": null,
-    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 13200266",
+    "website": "https://www.impulskinderopvang.nl/locaties/kinderboerderij-de-uylenburg/"
   },
   {
     "id": 956,
@@ -23856,16 +24006,18 @@
     "lat": 52.138857,
     "lng": 5.04904,
     "address": "Van Lingelaan 1A, Maarssen",
-    "hours": null,
+    "hours": "ma-wo 10-17u · vr-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJL8M-wyVuxkcRiD5vX08CamE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 461,
     "dagVers": null,
-    "desc": "Speelboerderij in Maarssen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Maarssen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 17080149",
+    "website": "http://kinderboerderijdevechtsehoeve.nl/"
   },
   {
     "id": 957,
@@ -23877,16 +24029,18 @@
     "lat": 51.978544,
     "lng": 5.33169,
     "address": "Droogoven 1, Wijk bij Duurstede",
-    "hours": null,
+    "hours": "ma-vr 8.30-17u · za-zo 11-13u · za-zo 14-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJNTGhyFNZxkcRWAMam6go6R8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 213,
     "dagVers": null,
-    "desc": "Speelboerderij in Wijk bij Duurstede — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Wijk bij Duurstede — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0343 572 682",
+    "website": "http://www.kinderboerderijdevliert.nl/"
   },
   {
     "id": 958,
@@ -23898,16 +24052,18 @@
     "lat": 52.466589,
     "lng": 6.013197,
     "address": "Honingweg 16a, Wezep",
-    "hours": null,
+    "hours": "ma-zo 10-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJdwvSW4DZx0cRAfLBL-3QZQM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 69,
     "dagVers": null,
-    "desc": "Speelboerderij in Wezep — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Wezep — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 49160839",
+    "website": "http://voskuilerhoeve.nl/"
   },
   {
     "id": 959,
@@ -23919,16 +24075,18 @@
     "lat": 52.060021,
     "lng": 4.552859,
     "address": "Burgemeester Middelberglaan 2, Zoetermeer",
-    "hours": null,
+    "hours": "ma-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJOXjXXlXOxUcRkvHypVSKo58",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 527,
     "dagVers": null,
-    "desc": "Speelboerderij in Zoetermeer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zoetermeer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "079 343 4181",
+    "website": "https://stadsboerderijen.org/stadsboerderijen/stadsboerderij-de-weidemolen/"
   },
   {
     "id": 960,
@@ -23940,16 +24098,18 @@
     "lat": 52.353918,
     "lng": 4.945172,
     "address": "Archimedeslaan 59, Amsterdam",
-    "hours": null,
+    "hours": "ma-zo 11-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ-_-rB2gJxkcRBtUfZ-U-idY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 250,
     "dagVers": null,
-    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "020 694 2694",
+    "website": "http://www.kinderboerderij-de-werf.nl/"
   },
   {
     "id": 961,
@@ -23961,16 +24121,18 @@
     "lat": 52.653065,
     "lng": 5.045676,
     "address": "Koperslager 9A, Hoorn",
-    "hours": null,
+    "hours": "ma-vr 8-16.30u · za-zo 10-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJF3Z5mG6pyEcRv8e15eAJfV0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 265,
     "dagVers": null,
-    "desc": "Speelboerderij in Hoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0229 240 074",
+    "website": "https://dewoid.nl/"
   },
   {
     "id": 962,
@@ -23982,16 +24144,17 @@
     "lat": 51.573963,
     "lng": 4.778928,
     "address": "Marijke Meustraat 1, Breda",
-    "hours": null,
+    "hours": "ma-zo 9-17.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJLyds5TKgxkcRgfvN_UyBy64",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 58,
     "dagVers": null,
-    "desc": "Speelboerderij in Breda — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Breda — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.kinderboerderijzandberg.nl/"
   },
   {
     "id": 963,
@@ -24003,16 +24166,18 @@
     "lat": 52.370817,
     "lng": 5.207148,
     "address": "Bezoekadres: Heerenveenpad 43 Parkeerplaats:, Amsterdamweg 1, Almere",
-    "hours": null,
+    "hours": "di-vr 10-16.30u · za 10-12.30u · zo 14-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJu4QBFtkWxkcR47vZxQVRXhk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 313,
     "dagVers": null,
-    "desc": "Speelboerderij in Almere — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Almere — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "036 530 3145",
+    "website": "http://www.stadennatuur.nl/den-uylpark.nl/"
   },
   {
     "id": 964,
@@ -24024,16 +24189,18 @@
     "lat": 52.258084,
     "lng": 4.630348,
     "address": "Zuiderdreef 1, Nieuw-Vennep",
-    "hours": null,
+    "hours": "di-vr 9.30-16.30u · za-zo 10-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ35WYj7HCxUcRuT5OhHQyvEI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 210,
     "dagVers": null,
-    "desc": "Speelboerderij in Nieuw-Vennep — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nieuw-Vennep — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0252 672 785",
+    "website": "https://m.facebook.com/Kinderboerderij.Dierenvreugd"
   },
   {
     "id": 965,
@@ -24045,16 +24212,17 @@
     "lat": 51.888962,
     "lng": 6.357024,
     "address": "Achter de Molen, Varsselder",
-    "hours": null,
+    "hours": "ma-zo 8.30-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJbeO5BjOCx0cR-PlE1uX1xJk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 129,
     "dagVers": null,
-    "desc": "Speelboerderij in Varsselder — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Varsselder — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.varsselderveldhunten.nl/index.php/home-gbr"
   },
   {
     "id": 966,
@@ -24066,16 +24234,17 @@
     "lat": 51.1814,
     "lng": 6.009911,
     "address": "Bachstraat 62, Roermond",
-    "hours": null,
+    "hours": "ma-zo 9.30-11.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJM908MbyzwEcRbm7m2nBLjJA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 7,
     "dagVers": null,
-    "desc": "Speelboerderij in Roermond — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Roermond — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 41994825"
   },
   {
     "id": 967,
@@ -24087,16 +24256,18 @@
     "lat": 52.310891,
     "lng": 6.530777,
     "address": "Albertsdijk 20, Rijssen",
-    "hours": null,
+    "hours": "ma-vr 9-12u · ma-vr 13-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJo6IeDqv3x0cRNnZYTKy1wXA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 26,
     "dagVers": null,
-    "desc": "Speelboerderij in Rijssen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Rijssen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0548 789 518",
+    "website": "https://www.facebook.com/kbEigenErf"
   },
   {
     "id": 968,
@@ -24108,14 +24279,14 @@
     "lat": 53.318504,
     "lng": 6.808554,
     "address": "Alberdaweg, Appingedam",
-    "hours": null,
+    "hours": "ma-vr 9.30-15.30u · zo 13-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJfSUG3AjXyUcRihjHN8E2Zj4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.7,
+    "googleReviews": 71,
     "dagVers": null,
     "desc": "Speelboerderij in Appingedam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -24129,16 +24300,18 @@
     "lat": 52.721333,
     "lng": 5.756886,
     "address": "Banterweg 2C, Emmeloord",
-    "hours": null,
+    "hours": "di-vr 10-16.30u · za-zo 12-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJK-w8iM-HyEcRiX-acSv8Ekg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 664,
     "dagVers": null,
-    "desc": "Speelboerderij in Emmeloord — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Emmeloord — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0527 699 852",
+    "website": "http://www.emmelerbos.nl/"
   },
   {
     "id": 970,
@@ -24150,16 +24323,18 @@
     "lat": 51.239395,
     "lng": 5.666145,
     "address": "Geurtsvenweg 6, Weert",
-    "hours": null,
+    "hours": "ma-vr 10-16u · za-zo 10-15u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ-cOcWbYtx0cRTxy7G2PqHyY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 66,
     "dagVers": null,
-    "desc": "Speelboerderij in Weert — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Weert — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 11388648",
+    "website": "http://www.ijzerenmanweert.nl/"
   },
   {
     "id": 971,
@@ -24171,16 +24346,18 @@
     "lat": 51.354227,
     "lng": 6.163319,
     "address": "Hagerlei 1, Venlo",
-    "hours": null,
+    "hours": "di-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJU1xo-AlQx0cRl-paT0w8mGA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 1092,
     "dagVers": null,
-    "desc": "Speelboerderij in Venlo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Venlo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "077 326 6540",
+    "website": "http://www.kinderboerderijhagerhof.nl/"
   },
   {
     "id": 972,
@@ -24192,16 +24369,18 @@
     "lat": 51.986775,
     "lng": 4.354209,
     "address": "Bezoekersingang; langs restaurant Farmhouse, Kalfjeslaan 135, Delft",
-    "hours": null,
+    "hours": "di-zo 10-17.15u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJp8gU5KC1xUcRtmdwcTRuQEw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 691,
     "dagVers": null,
-    "desc": "Speelboerderij in Delft — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Delft — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "015 820 0428",
+    "website": "http://www.kinderboerderijtanthof.nl/"
   },
   {
     "id": 973,
@@ -24213,16 +24392,18 @@
     "lat": 51.874507,
     "lng": 6.386041,
     "address": "Ulftseweg 4b, Gendringen",
-    "hours": null,
+    "hours": "ma-zo 9-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJmxWCPZKBx0cRugYvvH-EFm8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 320,
     "dagVers": null,
-    "desc": "Speelboerderij in Gendringen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Gendringen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 53134908",
+    "website": "http://www.kinderboerderij-engbergen.nl/"
   },
   {
     "id": 974,
@@ -24234,16 +24415,18 @@
     "lat": 52.316357,
     "lng": 5.603548,
     "address": "Enckerkamp, Ermelo",
-    "hours": null,
+    "hours": "ma-vr 10-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ5TQdB1UxxkcRB5ipHFrYOak",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 85,
     "dagVers": null,
-    "desc": "Speelboerderij in Ermelo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Ermelo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "088 036 7116",
+    "website": "https://www.sheerenloo.nl/-/de-klinkboerderij"
   },
   {
     "id": 975,
@@ -24255,16 +24438,18 @@
     "lat": 51.809073,
     "lng": 4.901179,
     "address": "Voorstevliet 29, Werkendam",
-    "hours": null,
+    "hours": "ma-vr 9-12u · ma-vr 13.30-17u · za 13.30-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJcYsHH0KExkcRzbtZXkdBVeU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 148,
     "dagVers": null,
-    "desc": "Speelboerderij in Werkendam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Werkendam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 27151944",
+    "website": "https://kinderboerderij-werkendam.nl/"
   },
   {
     "id": 976,
@@ -24276,14 +24461,14 @@
     "lat": 51.980877,
     "lng": 6.709624,
     "address": "Frerikshof 15, Winterswijk",
-    "hours": null,
+    "hours": "ma-vr 9-16u · za-zo 10-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJs08Dlbd6uEcR5PsG36Mj0t0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 154,
     "dagVers": null,
     "desc": "Speelboerderij in Winterswijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -24297,16 +24482,17 @@
     "lat": 52.148486,
     "lng": 6.72941,
     "address": "Scholtenhagenweg 23, Haaksbergen",
-    "hours": null,
+    "hours": "ma-zo 9-16.15u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJYY0iLw1zuEcRhYsJvL1Q9Nw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 69,
     "dagVers": null,
-    "desc": "Speelboerderij in Haaksbergen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Haaksbergen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.scholtenhagen.nl/Kinderboerderij/"
   },
   {
     "id": 978,
@@ -24318,16 +24504,17 @@
     "lat": 51.67347,
     "lng": 5.998308,
     "address": "Het Heijderbos, Heijen",
-    "hours": null,
+    "hours": "ma-zo 9-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJKUUYV8kSx0cRRdyc9YBS3wU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 134,
     "dagVers": null,
-    "desc": "Speelboerderij in Heijen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Heijen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.centerparcs.nl/nl-nl/nederland/fp_HB_vakantiepark-het-heijderbos?pl=nav"
   },
   {
     "id": 979,
@@ -24339,16 +24526,18 @@
     "lat": 52.079755,
     "lng": 4.298287,
     "address": "Tivolistraat, Den Haag",
-    "hours": null,
+    "hours": "ma 9-16u · di-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJOX-muS23xUcRH_9sObbBwSQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 84,
     "dagVers": null,
-    "desc": "Speelboerderij in Den Haag — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Den Haag — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "070 356 2918",
+    "website": "https://nlmaphub.org/details/petting-farm-beestenspul-ChIJOX-"
   },
   {
     "id": 980,
@@ -24360,16 +24549,17 @@
     "lat": 51.360707,
     "lng": 5.441381,
     "address": "Valkenswaard",
-    "hours": null,
+    "hours": "ma-zo 10-20u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJDfqcsofXxkcR3E85rW26QfE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 115,
     "dagVers": null,
-    "desc": "Speelboerderij in Valkenswaard — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Valkenswaard — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://nlmapsnov.top/details/kinderboerderij-het-gegraaf-ChIJDfq"
   },
   {
     "id": 981,
@@ -24387,10 +24577,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJy2wxZEAKuEcRYqXiyaqiKrM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 338,
     "dagVers": null,
-    "desc": "Speelboerderij in Goor — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Goor — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0547 273 027",
+    "website": "https://www.hetkukelnest.nl/"
   },
   {
     "id": 982,
@@ -24402,16 +24594,18 @@
     "lat": 52.37169,
     "lng": 4.815116,
     "address": "President Allendelaan 2, Amsterdam",
-    "hours": null,
+    "hours": "di-zo 9-14u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJxQvcMLXjxUcRIYy1x03sqJ4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 159,
     "dagVers": null,
-    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "020 611 8851",
+    "website": "http://stichtingkinderboerderijendestrohalmenhetsloterpark.nl/"
   },
   {
     "id": 983,
@@ -24423,16 +24617,18 @@
     "lat": 52.880229,
     "lng": 7.054713,
     "address": "Havenstraat 99, Ter Apel",
-    "hours": null,
+    "hours": "ma-vr 9-15.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJJ25FKnjDt0cR9c5O8CrX4o8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 13,
     "dagVers": null,
-    "desc": "Speelboerderij in Ter Apel — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Ter Apel — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0599 481 160",
+    "website": "https://www.cosis.nu/alles-over-cosis/locaties/1514/dierenweide-viaduct"
   },
   {
     "id": 984,
@@ -24444,16 +24640,18 @@
     "lat": 51.974227,
     "lng": 4.13441,
     "address": "Willem van Houtenstraat 71, Hoek van Holland",
-    "hours": null,
+    "hours": "ma-wo 9-11.30u · do 9-15.30u · vr-zo 9-11.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJpQL3vxmtxUcRce1ByF-p5EM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 102,
     "dagVers": null,
-    "desc": "Speelboerderij in Hoek van Holland — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hoek van Holland — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 41777401",
+    "website": "http://www.kinderboerderijhvh.nl/"
   },
   {
     "id": 985,
@@ -24465,16 +24663,17 @@
     "lat": 51.949382,
     "lng": 5.994468,
     "address": "Horsterparklaan 2, Duiven",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJAe5XnWOhx0cRwtpcvIGstLE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 998,
     "dagVers": null,
-    "desc": "Speelboerderij in Duiven — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Duiven — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.horsterpark.nl/"
   },
   {
     "id": 986,
@@ -24486,14 +24685,14 @@
     "lat": 52.15732,
     "lng": 4.531838,
     "address": "Leiderdorp",
-    "hours": null,
+    "hours": "ma-vr 9-16u · za-zo 14-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJKYB_TPTFxUcRrOHzX9lGC-c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 71,
     "dagVers": null,
     "desc": "Speelboerderij in Leiderdorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -24507,16 +24706,18 @@
     "lat": 52.020964,
     "lng": 5.082789,
     "address": "Geinoord 9-12, Nieuwegein",
-    "hours": null,
+    "hours": "di-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJxQC33GZkxkcRctkc8_q1b00",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 497,
     "dagVers": null,
-    "desc": "Speelboerderij in Nieuwegein — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nieuwegein — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "14 030",
+    "website": "http://www.natuurkwartier.nl/"
   },
   {
     "id": 988,
@@ -24528,16 +24729,18 @@
     "lat": 52.120022,
     "lng": 5.507312,
     "address": "Rudolphlaan 6, De Glind",
-    "hours": null,
+    "hours": "ma-wo 9.30-16.30u · za 9.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ_7MfDRxPxkcRWreHvjNTqBk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.6,
+    "googleReviews": 204,
     "dagVers": null,
-    "desc": "Speelboerderij in De Glind — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in De Glind — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0342 451 705",
+    "website": "https://kinderboerderijdeglind.nl/"
   },
   {
     "id": 989,
@@ -24549,16 +24752,18 @@
     "lat": 52.655207,
     "lng": 4.785894,
     "address": "Janspad 2, Sint Pancras",
-    "hours": null,
+    "hours": "ma-di 9-12u · ma-di 14-16u · wo 9-16u · do-vr 9-12u · do-vr 14-16u · za-zo 10-12u · za-zo 14-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJk5kus4xWz0cRGcUDq3fR-PE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 186,
     "dagVers": null,
-    "desc": "Speelboerderij in Sint Pancras — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Sint Pancras — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 12255393",
+    "website": "http://www.kbjongleven.nl/"
   },
   {
     "id": 990,
@@ -24576,8 +24781,8 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJxZlAzbKVwEcReOxMCQjy8Yk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 10,
     "dagVers": null,
     "desc": "Speelboerderij in Valkenburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -24591,16 +24796,18 @@
     "lat": 51.837308,
     "lng": 5.842876,
     "address": "Floraweg 51, Nijmegen",
-    "hours": null,
+    "hours": "ma-vr 10-16.30u · za-zo 10.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ49x3GGMIx0cRSj8KCKY2xuA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 141,
     "dagVers": null,
-    "desc": "Speelboerderij in Nijmegen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nijmegen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 46212489",
+    "website": "http://facebook.com/KinderboerderijKobus"
   },
   {
     "id": 992,
@@ -24612,16 +24819,17 @@
     "lat": 51.951219,
     "lng": 6.32254,
     "address": "Koekendaalseweg 7, Doetinchem",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJC9E0f3SFx0cRyHG3qZRiDpo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 13,
     "dagVers": null,
-    "desc": "Speelboerderij in Doetinchem — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Doetinchem — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://vvvdoetinchem.nl/Kinderboerderij-speeltuin-Koekendaal"
   },
   {
     "id": 993,
@@ -24633,16 +24841,18 @@
     "lat": 51.966206,
     "lng": 6.245013,
     "address": "Belderstraat 30, Doetinchem",
-    "hours": null,
+    "hours": "ma-zo 10-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJdSpFFRKbx0cRhzFL3CF120c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 377,
     "dagVers": null,
-    "desc": "Speelboerderij in Doetinchem — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Doetinchem — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0314 361 350",
+    "website": "http://www.kokiezier.nl/"
   },
   {
     "id": 994,
@@ -24654,16 +24864,18 @@
     "lat": 52.222593,
     "lng": 6.003056,
     "address": "Homerusstraat 8, Apeldoorn",
-    "hours": null,
+    "hours": "ma-zo 8.30-17.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJEyLTeUXHx0cRpD8K9pJYDt0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 716,
     "dagVers": null,
-    "desc": "Speelboerderij in Apeldoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Apeldoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "055 366 5293",
+    "website": "https://kinderboerderijenapeldoorn.nl/laag-buurlo/"
   },
   {
     "id": 995,
@@ -24681,8 +24893,8 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJ-3ql-Lf3x0cRD_PKIU_rptg",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 6,
     "dagVers": null,
     "desc": "Speelboerderij in Enter — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -24696,14 +24908,14 @@
     "lat": 51.938076,
     "lng": 5.841868,
     "address": "De Park 12, Elst",
-    "hours": null,
+    "hours": "ma-zo 12-13.30u · ma-zo 14.15-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJqVEL10mpx0cRbTtCUR7uPLk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 12,
     "dagVers": null,
     "desc": "Speelboerderij in Elst — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -24717,16 +24929,18 @@
     "lat": 53.212167,
     "lng": 5.79396,
     "address": "Jeugdweg 3, Leeuwarden",
-    "hours": null,
+    "hours": "ma-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ34j3Mn_-yEcRTURdOMwqDTE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 527,
     "dagVers": null,
-    "desc": "Speelboerderij in Leeuwarden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Leeuwarden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "058 212 9256",
+    "website": "http://www.kinderboerderijleeuwarden.nl/"
   },
   {
     "id": 998,
@@ -24738,16 +24952,18 @@
     "lat": 51.519535,
     "lng": 4.685882,
     "address": "Amanduspad, Rijsbergen",
-    "hours": null,
+    "hours": "ma-vr 10-16u · za 13-16u · zo 11-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ0dXE424exEcRf3fKLLKwC8Q",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 352,
     "dagVers": null,
-    "desc": "Speelboerderij in Rijsbergen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Rijsbergen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "088 611 7544",
+    "website": "http://leijhoeve.nl/"
   },
   {
     "id": 999,
@@ -24759,16 +24975,18 @@
     "lat": 53.302985,
     "lng": 6.608077,
     "address": "Bedum",
-    "hours": null,
+    "hours": "ma-vr 9-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJx9P3SRDRyUcRJtae25koojs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 13,
     "dagVers": null,
-    "desc": "Speelboerderij in Bedum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Bedum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 30656916",
+    "website": "https://www.sheerenloo.nl/in-de-buurt/de-kaart/leeuwerik-14"
   },
   {
     "id": 1000,
@@ -24780,16 +24998,18 @@
     "lat": 52.177968,
     "lng": 4.509398,
     "address": "Parkzicht 100, Leiden",
-    "hours": null,
+    "hours": "ma-zo 8-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJucgiCqXGxUcR6JJCFtcnSGA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 910,
     "dagVers": null,
-    "desc": "Speelboerderij in Leiden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Leiden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "071 516 7720",
+    "website": "https://www.facebook.com/kinderboerderijmerenwijk/"
   },
   {
     "id": 1001,
@@ -24801,16 +25021,18 @@
     "lat": 51.762155,
     "lng": 4.172675,
     "address": "Westerschelde 12, Middelharnis",
-    "hours": null,
+    "hours": "ma-vr 10-11.30u · ma-vr 13-15.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJHxBTJgFFxEcRI0s2Mt8Eq1U",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 54,
     "dagVers": null,
-    "desc": "Speelboerderij in Middelharnis — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Middelharnis — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0187 898 976",
+    "website": "http://www.kinderboerderijmiddelharnis.nl/"
   },
   {
     "id": 1002,
@@ -24822,16 +25044,18 @@
     "lat": 52.074486,
     "lng": 5.121951,
     "address": "Briljantlaan 101, Utrecht",
-    "hours": null,
+    "hours": "ma-vr 11-17u · za-zo 13-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJs3MxJPplxkcRikKI0Oegvsk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 295,
     "dagVers": null,
-    "desc": "Speelboerderij in Utrecht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Utrecht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "030 254 1662",
+    "website": "http://www.nieuwrotsoord.nl/"
   },
   {
     "id": 1003,
@@ -24843,16 +25067,17 @@
     "lat": 51.812907,
     "lng": 4.342955,
     "address": "'s-Gravenweg 27, Nieuw-Beijerland",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJzbp8jjJIxEcRdSDgf--ZgXQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4,
+    "googleReviews": 83,
     "dagVers": null,
-    "desc": "Speelboerderij in Nieuw-Beijerland — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nieuw-Beijerland — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.kinderboerderijnieuwbeijerland.jouwweb.nl/"
   },
   {
     "id": 1004,
@@ -24864,16 +25089,18 @@
     "lat": 52.361992,
     "lng": 6.492457,
     "address": "Derde Kampsweg 51, Nijverdal",
-    "hours": null,
+    "hours": "ma 9.30-12u · di 9.30-12.30u · wo-vr 9.30-15u · za-zo 10.30-14.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJS3fBc5v5x0cRKpES4NdLjHY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 3.6,
+    "googleReviews": 31,
     "dagVers": null,
-    "desc": "Speelboerderij in Nijverdal — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nijverdal — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 40780623",
+    "website": "http://www.kinderboerderijnijverdal.nl/"
   },
   {
     "id": 1005,
@@ -24885,16 +25112,18 @@
     "lat": 52.515336,
     "lng": 6.414617,
     "address": "Het Laar 2c, Ommen",
-    "hours": null,
+    "hours": "ma-vr 9.30-17u · za-zo 14-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ269PXVb9x0cRwA6K7jBTvwI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 379,
     "dagVers": null,
-    "desc": "Speelboerderij in Ommen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Ommen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 59113077",
+    "website": "https://www.kinderboerderijommen.nl/"
   },
   {
     "id": 1006,
@@ -24906,14 +25135,14 @@
     "lat": 51.480934,
     "lng": 6.213644,
     "address": "Dorperheideweg 12, Arcen",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJy1y3GJhdx0cRexy1k_abvO8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 3,
     "dagVers": null,
     "desc": "Speelboerderij in Arcen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -24927,16 +25156,18 @@
     "lat": 53.13142,
     "lng": 6.432229,
     "address": "Norgerweg 2, Roden",
-    "hours": null,
+    "hours": "ma-vr 9-16.45u · za-zo 10-16.45u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ_Q5RjwI0yEcR5cFqkHUvy1s",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 533,
     "dagVers": null,
-    "desc": "Speelboerderij in Roden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Roden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "050 501 0275",
+    "website": "https://volksvermaken.nl/kinderboerderij/"
   },
   {
     "id": 1008,
@@ -24948,16 +25179,18 @@
     "lat": 51.936963,
     "lng": 6.060095,
     "address": "Methen 2b, Zevenaar",
-    "hours": null,
+    "hours": "di-vr 8.30-16.30u · za-zo 10-13u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ7eDvUOKhx0cR8IJsYN8MsQI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 293,
     "dagVers": null,
-    "desc": "Speelboerderij in Zevenaar — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zevenaar — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0316 529 290",
+    "website": "http://www.kinderboerderijrosorum.nl/"
   },
   {
     "id": 1009,
@@ -24969,16 +25202,17 @@
     "lat": 52.225641,
     "lng": 4.524719,
     "address": "Passage 20A, Sassenheim",
-    "hours": null,
+    "hours": "ma-zo 9.30-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJZQ3ox33BxUcRfrDL21_nWEE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 52,
     "dagVers": null,
-    "desc": "Speelboerderij in Sassenheim — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Sassenheim — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.parkrusthoff.nl/index.php?option=com_content&view=article&id=52&Itemid=58"
   },
   {
     "id": 1010,
@@ -24990,16 +25224,18 @@
     "lat": 52.650126,
     "lng": 6.201931,
     "address": "Admiraal W.G. van Nesstraat 8a, Staphorst",
-    "hours": null,
+    "hours": "di-vr 10-16.30u · za 13-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJNT2n3jhzyEcRRZLYRAb1nfQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 258,
     "dagVers": null,
-    "desc": "Speelboerderij in Staphorst — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Staphorst — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "088 238 5680",
+    "website": "https://kinderboerderijstaphorst.nl/"
   },
   {
     "id": 1011,
@@ -25011,16 +25247,18 @@
     "lat": 53.206066,
     "lng": 6.547324,
     "address": "Stadspark 3, Groningen",
-    "hours": null,
+    "hours": "ma-zo 9.30-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJYWSt3bUyyEcRVvqoJaH7uCw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 1483,
     "dagVers": null,
-    "desc": "Speelboerderij in Groningen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Groningen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 53966607",
+    "website": "https://nde.groningen.nl/locaties/kinderboerderij-stadspark"
   },
   {
     "id": 1012,
@@ -25032,16 +25270,18 @@
     "lat": 51.325129,
     "lng": 3.852692,
     "address": "Evertsenlaan 88, Terneuzen",
-    "hours": null,
+    "hours": "di-vr 9-16.45u · za-zo 13.30-16.45u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJJWChXmCAxEcRzetZqVo6QgU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 295,
     "dagVers": null,
-    "desc": "Speelboerderij in Terneuzen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Terneuzen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 21263834",
+    "website": "http://www.tragel.nl/"
   },
   {
     "id": 1013,
@@ -25053,16 +25293,18 @@
     "lat": 53.061291,
     "lng": 4.802292,
     "address": "Paelwerck 9, Den Burg",
-    "hours": null,
+    "hours": "ma-zo 9.30-17.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJsVCrspQwz0cRphK4PjyCBBM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 74,
     "dagVers": null,
-    "desc": "Speelboerderij in Den Burg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Den Burg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 26220956",
+    "website": "http://kinderboerderijtexel.nl/"
   },
   {
     "id": 1014,
@@ -25074,16 +25316,18 @@
     "lat": 51.672281,
     "lng": 5.624051,
     "address": "Artillerieweg 3, Uden",
-    "hours": null,
+    "hours": "ma-vr 10-17u · za-zo 13.30-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJG8bajKgdx0cRzdfCr5GsHZA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 497,
     "dagVers": null,
-    "desc": "Speelboerderij in Uden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Uden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0413 250 047",
+    "website": "https://www.kbuden.nl/"
   },
   {
     "id": 1015,
@@ -25095,16 +25339,17 @@
     "lat": 53.096955,
     "lng": 6.846515,
     "address": "Woldlaan 5, Veendam",
-    "hours": null,
+    "hours": "ma-vr 10-16u · za-zo 12-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJSweEd5rWt0cRIL8s4y17Kvo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 332,
     "dagVers": null,
-    "desc": "Speelboerderij in Veendam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Veendam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://veendam.nl/"
   },
   {
     "id": 1016,
@@ -25116,16 +25361,17 @@
     "lat": 51.9817,
     "lng": 6.574131,
     "address": "Wentholtstraat 4, Lichtenvoorde",
-    "hours": null,
+    "hours": "wo 13-17u · za-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJEW4_3Xp5uEcR9NeoStzs3ag",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 12,
     "dagVers": null,
-    "desc": "Speelboerderij in Lichtenvoorde — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Lichtenvoorde — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://wentholtpark.com/"
   },
   {
     "id": 1017,
@@ -25137,16 +25383,17 @@
     "lat": 52.191156,
     "lng": 4.435114,
     "address": "Spinozalaan 40, Rijnsburg",
-    "hours": null,
+    "hours": "ma-za 10-12u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ8cIApcrHxUcR1hZ-ETR6f04",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 12,
     "dagVers": null,
-    "desc": "Speelboerderij in Rijnsburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Rijnsburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://westerweide.nl/"
   },
   {
     "id": 1018,
@@ -25158,16 +25405,18 @@
     "lat": 52.505823,
     "lng": 6.113702,
     "address": "Almelose Kanaal 33, Zwolle",
-    "hours": null,
+    "hours": "ma-zo 9-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJF_mfJxzfx0cR_9LiYuYmGJI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 857,
     "dagVers": null,
-    "desc": "Speelboerderij in Zwolle — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zwolle — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "038 458 1843",
+    "website": "https://kinderboerderijenzwolle.nl/"
   },
   {
     "id": 1019,
@@ -25185,10 +25434,11 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJa6B7azXnt0cR3HjY0VxeEPs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 3,
     "dagVers": null,
-    "desc": "Speelboerderij in Emmen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Emmen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://wijkverenigingemmermeer.nl/"
   },
   {
     "id": 1020,
@@ -25200,16 +25450,18 @@
     "lat": 51.498109,
     "lng": 5.390624,
     "address": "Pr. Beatrixlaan 3, Best",
-    "hours": null,
+    "hours": "di-vr 9-11.30u · di-vr 14-16.30u · za 14-16.30u · zo 10-14u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJx3z2ZvXcxkcRRp6Y7VKoFGI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 202,
     "dagVers": null,
-    "desc": "Speelboerderij in Best — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Best — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 52870131",
+    "website": "https://www.gemeentebest.nl/kinderboerderij"
   },
   {
     "id": 1021,
@@ -25221,16 +25473,18 @@
     "lat": 52.141243,
     "lng": 4.689166,
     "address": "Burgemeester Bruins Slotsingel 11, Alphen aan den Rijn",
-    "hours": null,
+    "hours": "ma-vr 9-16.30u · za-zo 14-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJiVs0T7PbxUcR1hHhCoElqaI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 363,
     "dagVers": null,
-    "desc": "Speelboerderij in Alphen aan den Rijn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Alphen aan den Rijn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0172 422 303",
+    "website": "http://www.kinderboerderijalphen.nl/"
   },
   {
     "id": 1022,
@@ -25242,16 +25496,18 @@
     "lat": 51.687514,
     "lng": 5.335519,
     "address": "IJsselsingel 1, 's-Hertogenbosch",
-    "hours": null,
+    "hours": "ma-vr 9-16u · za 9-12u · zo 10-12u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ_VT8egnvxkcRz9wxCzVRwLo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 151,
     "dagVers": null,
-    "desc": "Speelboerderij in 's-Hertogenbosch — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in 's-Hertogenbosch — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 23910121",
+    "website": "http://www.stichting-oosterhoeve.nl/"
   },
   {
     "id": 1023,
@@ -25263,16 +25519,17 @@
     "lat": 51.941326,
     "lng": 6.132164,
     "address": "Polstraat 2A, Didam",
-    "hours": null,
+    "hours": "wo 13.30-16u · vr 14-17u · zo 9-12u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ5V1d5s2ex0cRbz6tVUSF3WM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 68,
     "dagVers": null,
-    "desc": "Speelboerderij in Didam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Didam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.kinderboerderijdidam.com/"
   },
   {
     "id": 1024,
@@ -25284,16 +25541,18 @@
     "lat": 52.999625,
     "lng": 6.542697,
     "address": "Laak 1a, Assen",
-    "hours": null,
+    "hours": "ma-vr 8.30-12u · ma-vr 13-16.30u · za-zo 8.30-10u · za-zo 13-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJp_HpmSYlyEcRI432sxMLIKE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 101,
     "dagVers": null,
-    "desc": "Speelboerderij in Assen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Assen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "085 086 1414",
+    "website": "http://kinderboerderijdelariks.nl/"
   },
   {
     "id": 1025,
@@ -25311,10 +25570,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJ1YT3J10MuEcRYWFqenWf3Ms",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 366,
     "dagVers": null,
-    "desc": "Speelboerderij in Bentelo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Bentelo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0547 292 354",
+    "website": "http://www.kinderspeelboerderij.nl/"
   },
   {
     "id": 1026,
@@ -25332,8 +25593,8 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJkYf2TOqzxUcR9BLIcLdYQrQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 2,
     "dagVers": null,
     "desc": "Speelboerderij in De Lier — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -25347,16 +25608,18 @@
     "lat": 51.954622,
     "lng": 5.478202,
     "address": "Provincialeweg 45, Ingen",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJJQjFnxtXxkcRoSbC1PZpCZo",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 50,
     "dagVers": null,
-    "desc": "Speelboerderij in Ingen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Ingen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 20377136",
+    "website": "http://kinderboerderij-donkeypronkie.nl/"
   },
   {
     "id": 1028,
@@ -25368,14 +25631,14 @@
     "lat": 52.71136,
     "lng": 4.940917,
     "address": "Kerkepad 6, Hoogwoud",
-    "hours": null,
+    "hours": "ma-zo 8-21u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJtdRDv8isyEcRVT2Nc47usFw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 70,
     "dagVers": null,
     "desc": "Speelboerderij in Hoogwoud — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -25389,16 +25652,18 @@
     "lat": 52.416248,
     "lng": 4.887786,
     "address": "Molenwijk 11, Amsterdam",
-    "hours": null,
+    "hours": "ma 12-18u · di-do 10-18u · vr 12-18u · za-zo 12-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJfYblQxAIxkcRVDNZcJ1TtsU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 100,
     "dagVers": null,
-    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Amsterdam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "020 492 0464",
+    "website": "https://stichting-spin.nl/locaties/speeltuin-diereneiland/"
   },
   {
     "id": 1030,
@@ -25410,16 +25675,18 @@
     "lat": 52.302567,
     "lng": 6.390074,
     "address": "Meester Bosweg 1-5, Holten",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJmyPDwh3xx0cR1xcb3npIAPk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Speelboerderij in Holten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Holten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0548 361 169",
+    "website": "http://www.speelboerderijdondertman.nl/"
   },
   {
     "id": 1031,
@@ -25431,16 +25698,18 @@
     "lat": 52.044048,
     "lng": 6.282262,
     "address": "Bekveldseweg 5, Hengelo",
-    "hours": null,
+    "hours": "wo-zo 13-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ5wYEExaQx0cRUe3sbm2sLk0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 157,
     "dagVers": null,
-    "desc": "Speelboerderij in Hengelo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hengelo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0575 228 006",
+    "website": "http://www.feltsigt.nl/"
   },
   {
     "id": 1032,
@@ -25452,16 +25721,18 @@
     "lat": 52.22616,
     "lng": 5.5714,
     "address": "Beulekampersteeg 31, Putten",
-    "hours": null,
+    "hours": "wo 9-17.30u · do 9-13u · vr-za 9-17.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ5-6WCuNJxkcRuZ5OXdVymUM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 221,
     "dagVers": null,
-    "desc": "Speelboerderij in Putten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Putten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 44357162",
+    "website": "http://www.deroosendaal.nl/"
   },
   {
     "id": 1033,
@@ -25479,10 +25750,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJUR22T_kfuEcR1W0EI2GySrM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.1,
+    "googleReviews": 11,
     "dagVers": null,
-    "desc": "Speelboerderij in Lattrop-Breklenkamp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Lattrop-Breklenkamp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0541 229 368",
+    "website": "http://www.rammelbeek.nl/"
   },
   {
     "id": 1034,
@@ -25494,16 +25767,18 @@
     "lat": 52.183753,
     "lng": 5.96367,
     "address": "Dubbelbeek 4, Apeldoorn",
-    "hours": null,
+    "hours": "ma-vr 10-17u · za-zo 10-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJcyEQZ_G4x0cRVPXVz-Wb0xc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 2447,
     "dagVers": null,
-    "desc": "Speelboerderij in Apeldoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Apeldoorn — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "055 533 2803",
+    "website": "https://www.binky.nl/"
   },
   {
     "id": 1035,
@@ -25515,16 +25790,18 @@
     "lat": 52.158603,
     "lng": 5.542557,
     "address": "Dronkelaarseweg 28, Terschuur",
-    "hours": null,
+    "hours": "wo 10-18u · vr 12-18u · za 11-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJkRkvjDlJxkcR6qGo2aKJO1E",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 303,
     "dagVers": null,
-    "desc": "Speelboerderij in Terschuur — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Terschuur — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0342 234 432",
+    "website": "http://www.dehappyfarm.nl/"
   },
   {
     "id": 1036,
@@ -25536,16 +25813,18 @@
     "lat": 51.515176,
     "lng": 4.574589,
     "address": "Scherpenbergsebaan 53, Rucphen",
-    "hours": null,
+    "hours": "wo 9.30-19u · vr-zo 9.30-19u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJrdd_an4ZxEcRfh2uFFqpqWI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 877,
     "dagVers": null,
-    "desc": "Speelboerderij in Rucphen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Rucphen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0165 342 478",
+    "website": "http://www.denscherpenberg.nl/"
   },
   {
     "id": 1037,
@@ -25557,16 +25836,18 @@
     "lat": 52.297087,
     "lng": 4.888853,
     "address": "Bankrasweg 1, Amstelveen",
-    "hours": null,
+    "hours": "di-za 10-17u · zo 14-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJEU6T_fMKxkcROQKcbNQMQQQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 770,
     "dagVers": null,
-    "desc": "Speelboerderij in Amstelveen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Amstelveen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "020 545 7166",
+    "website": "http://www.elsenhove.nl/"
   },
   {
     "id": 1038,
@@ -25578,16 +25859,18 @@
     "lat": 51.57819,
     "lng": 3.690382,
     "address": "Baas Huisweg 11, Kamperland",
-    "hours": null,
+    "hours": "wo-zo 10-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJlX3wWnGTxEcRmalUfhtSgGs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 346,
     "dagVers": null,
-    "desc": "Speelboerderij in Kamperland — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Kamperland — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0113 371 972",
+    "website": "http://www.fivestarfarm.nl/"
   },
   {
     "id": 1039,
@@ -25599,16 +25882,18 @@
     "lat": 52.059354,
     "lng": 4.476674,
     "address": "Belvédèrebos 270, Zoetermeer",
-    "hours": null,
+    "hours": "di-vr 10-17.30u · za-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJpcUw1CPJxUcRUMEjh_RSaKY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 835,
     "dagVers": null,
-    "desc": "Speelboerderij in Zoetermeer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zoetermeer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "079 346 9525",
+    "website": "https://stadsboerderijen.org/stadsboerderijen/speelboerderij-het-buitenbeest/"
   },
   {
     "id": 1040,
@@ -25620,16 +25905,18 @@
     "lat": 51.373068,
     "lng": 3.46844,
     "address": "Mettenijedijk 16a, Nieuwvliet",
-    "hours": null,
+    "hours": "wo 12-19u · do-za 10-19u · zo 10-19.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJQbGBxvChxEcRW6kYfI7V23U",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 793,
     "dagVers": null,
-    "desc": "Speelboerderij in Nieuwvliet — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nieuwvliet — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 18269282",
+    "website": "http://www.pierewiet.nl/"
   },
   {
     "id": 1041,
@@ -25641,14 +25928,14 @@
     "lat": 53.125881,
     "lng": 5.941582,
     "address": "Koaidyk 12, Earnewâld",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJnzMqPjpXyEcRw8IcdUfJlZk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 7,
     "dagVers": null,
     "desc": "Speelboerderij in Earnewâld — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -25662,14 +25949,14 @@
     "lat": 50.884662,
     "lng": 5.924611,
     "address": "Parallelweg, Voerendaal",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJyTksuKG_wEcRsXn2m_dZj58",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 45,
     "dagVers": null,
     "desc": "Speelboerderij in Voerendaal — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -25689,10 +25976,12 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJlRfudUqryUcRWLChCgM_v78",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 26,
     "dagVers": null,
-    "desc": "Speelboerderij in Feanwâlden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Feanwâlden — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 38930211",
+    "website": "https://www.facebook.com/Boartersplak/"
   },
   {
     "id": 1044,
@@ -25704,16 +25993,18 @@
     "lat": 52.626677,
     "lng": 4.719686,
     "address": "Mesdaglaan 180, Alkmaar",
-    "hours": null,
+    "hours": "ma-di 15-17.30u · wo 13.30-17u · do-vr 15-17.30u · za-zo 13.30-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJz6dpiOtXz0cREoqbznbA_sM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 62,
     "dagVers": null,
-    "desc": "Speelboerderij in Alkmaar — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Alkmaar — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 23480575",
+    "website": "https://www.speeltuindehoef.nl/"
   },
   {
     "id": 1045,
@@ -25725,16 +26016,18 @@
     "lat": 51.471297,
     "lng": 3.600171,
     "address": "Koopmansvoetpad 73, Oost-Souburg",
-    "hours": null,
+    "hours": "ma 13-17.30u · di 10-12u · di 14-16.30u · wo 10-16.30u · do 10-12u · do 13.30-16.30u · vr 10-12u · vr 14.30-16.30u · za 13-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJraL1G7KQxEcR0NrDJZf99JY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 94,
     "dagVers": null,
-    "desc": "Speelboerderij in Oost-Souburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Oost-Souburg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 54271181",
+    "website": "https://souburgt.nl/"
   },
   {
     "id": 1046,
@@ -25746,16 +26039,18 @@
     "lat": 53.172955,
     "lng": 7.098262,
     "address": "Buitenlandenstraat 5, Beerta",
-    "hours": null,
+    "hours": "ma-vr 9.30-17u · za-zo 13-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJIdBPQsnMt0cRJIMb5veSw_o",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 1004,
     "dagVers": null,
-    "desc": "Speelboerderij in Beerta — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Beerta — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0597 792 072",
+    "website": "https://www.speeltuinbeerta.nl/"
   },
   {
     "id": 1047,
@@ -25767,16 +26062,17 @@
     "lat": 52.86803,
     "lng": 4.852629,
     "address": "Van Ewijckskade 1, Anna Paulowna",
-    "hours": null,
+    "hours": "ma-zo 9.30-17.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJgYlH6s1Lz0cRET0jIykEuS0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 5,
     "dagVers": null,
-    "desc": "Speelboerderij in Anna Paulowna — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Anna Paulowna — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.hoenderdaell.nl/het-park/"
   },
   {
     "id": 1048,
@@ -25788,14 +26084,14 @@
     "lat": 53.16106,
     "lng": 5.425398,
     "address": "Harlingen",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJGfYE4urdyEcR6CfVVCtmJJM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 14,
     "dagVers": null,
     "desc": "Speelboerderij in Harlingen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -25809,14 +26105,14 @@
     "lat": 53.009418,
     "lng": 6.068768,
     "address": "Brouwerij 13, Gorredijk",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJkaO2jsZbyEcREFlieOBHYtE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 5,
     "dagVers": null,
     "desc": "Speelboerderij in Gorredijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -25830,14 +26126,14 @@
     "lat": 53.144224,
     "lng": 4.866777,
     "address": "1795, De Cocksdorp",
-    "hours": null,
+    "hours": "ma 12-17u · wo-zo 12-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJTwL249svz0cRldGCtIWfZmM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 32,
     "dagVers": null,
     "desc": "Speelboerderij in De Cocksdorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -25851,16 +26147,18 @@
     "lat": 51.384703,
     "lng": 5.452909,
     "address": "Eikenlaan 11, Waalre",
-    "hours": null,
+    "hours": "wo 13-17.30u · vr 13-17.30u · za-zo 10.30-17.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJbc7PaGHXxkcRoupf2rRRZBw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 545,
     "dagVers": null,
-    "desc": "Speelboerderij in Waalre — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Waalre — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "040 888 0786",
+    "website": "https://klimbim.nl/"
   },
   {
     "id": 1052,
@@ -25872,16 +26170,18 @@
     "lat": 53.221919,
     "lng": 6.954497,
     "address": "Pastorieweg 14, Nieuw Scheemda",
-    "hours": null,
+    "hours": "wo 12-18u · vr 12-18u · za-zo 10-18u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJwdbhsPEstkcR9ws4O_es7aw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 343,
     "dagVers": null,
-    "desc": "Speelboerderij in Nieuw Scheemda — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nieuw Scheemda — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0598 446 464",
+    "website": "http://www.deleeuwenborg.nl/"
   },
   {
     "id": 1053,
@@ -25893,16 +26193,18 @@
     "lat": 52.502311,
     "lng": 5.063901,
     "address": "Boezelgracht 2-A, Volendam",
-    "hours": null,
+    "hours": "ma-vr 10-12u · ma-vr 13.30-17u · za-zo 12-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJy7QmmIQExkcROPOX1J4lk5I",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 104,
     "dagVers": null,
-    "desc": "Speelboerderij in Volendam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Volendam — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 23249665",
+    "website": "https://www.speelderij.nl/"
   },
   {
     "id": 1054,
@@ -25914,16 +26216,17 @@
     "lat": 51.823178,
     "lng": 4.784013,
     "address": "Burg. Feitsmapark 1, Sliedrecht",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJoT42GRaDxkcRoSHU2xbLpUI",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 435,
     "dagVers": null,
-    "desc": "Speelboerderij in Sliedrecht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Sliedrecht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.feitsmapark.nl/"
   },
   {
     "id": 1055,
@@ -25935,14 +26238,14 @@
     "lat": 52.949745,
     "lng": 5.937696,
     "address": "Heerenveen",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ6749gQlfyEcR4zOIHf0ohd8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 55,
     "dagVers": null,
     "desc": "Speelboerderij in Heerenveen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -25956,16 +26259,18 @@
     "lat": 50.928026,
     "lng": 5.904912,
     "address": "Tulpstraat 59E, Nuth",
-    "hours": null,
+    "hours": "ma-di 14.30-17.30u · wo 14-17.30u · do-vr 14.30-17.30u · za 11-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJucsC0d2-wEcRFtA7OhootYs",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 135,
     "dagVers": null,
-    "desc": "Speelboerderij in Nuth — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nuth — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "045 524 5070",
+    "website": "https://www.speeltuinvaesrade.nl/"
   },
   {
     "id": 1057,
@@ -25977,16 +26282,17 @@
     "lat": 51.762126,
     "lng": 4.174357,
     "address": "Middelharnis",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJPZ2E5GtFxEcR9dN7um0z_E8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 45,
     "dagVers": null,
-    "desc": "Speelboerderij in Middelharnis — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Middelharnis — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.kinderboerderijmiddelharnis.nl/"
   },
   {
     "id": 1058,
@@ -25998,14 +26304,14 @@
     "lat": 52.203449,
     "lng": 4.865952,
     "address": "Johannes van Lochemstraat 1, Mijdrecht",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ0-NKZ0t1xkcRX7DZHYrMDy4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 43,
     "dagVers": null,
     "desc": "Speelboerderij in Mijdrecht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -26019,14 +26325,14 @@
     "lat": 53.061668,
     "lng": 5.525831,
     "address": "Elandslaagte 9, Bolsward",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJB5PfZb_pyEcRn-8iN5Cnads",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 3,
     "dagVers": null,
     "desc": "Speelboerderij in Bolsward — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -26040,16 +26346,18 @@
     "lat": 51.365189,
     "lng": 6.14086,
     "address": "Tollensstraat 1b, Venlo",
-    "hours": null,
+    "hours": "wo 13-17u · vr-zo 13-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ89sFIk5Fx0cRj8kR10wFGjw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 71,
     "dagVers": null,
-    "desc": "Speelboerderij in Venlo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Venlo — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 83945503",
+    "website": "https://www.osblieriek.nl/"
   },
   {
     "id": 1061,
@@ -26061,14 +26369,14 @@
     "lat": 51.575525,
     "lng": 3.614227,
     "address": "Pelgrimstraat 22, Vrouwenpolder",
-    "hours": null,
+    "hours": "ma-zo 8-21u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJUVTiZs2TxEcRAI8cZlwSfCY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 14,
     "dagVers": null,
     "desc": "Speelboerderij in Vrouwenpolder — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -26082,16 +26390,18 @@
     "lat": 52.017346,
     "lng": 4.374977,
     "address": "Korftlaan 3a, Delft",
-    "hours": null,
+    "hours": "ma-zo 9.30-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJoTWPLOW1xUcRPmWug8W1cPE",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 1244,
     "dagVers": null,
-    "desc": "Speelboerderij in Delft — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Delft — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "015 214 0263",
+    "website": "http://www.buytendelft.nl/"
   },
   {
     "id": 1063,
@@ -26103,16 +26413,18 @@
     "lat": 51.730035,
     "lng": 4.52683,
     "address": "Kruisdijk 4b, Strijen",
-    "hours": null,
+    "hours": "ma-zo 9-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJl3PR_Nw6xEcR-Txs3BZ7Tk0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 82,
     "dagVers": null,
-    "desc": "Speelboerderij in Strijen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Strijen — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "078 369 0505",
+    "website": "https://depeerdegaerdt.nl/"
   },
   {
     "id": 1064,
@@ -26124,16 +26436,18 @@
     "lat": 52.494612,
     "lng": 4.805158,
     "address": "Spatterstraat 105A, Wormer",
-    "hours": null,
+    "hours": "di-vr 10-17u · za 10-14u · zo 10-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJffTCFUL8xUcRPs9Id4nsKe0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 148,
     "dagVers": null,
-    "desc": "Speelboerderij in Wormer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Wormer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 39605440",
+    "website": "http://www.hetweidje.nl/"
   },
   {
     "id": 1065,
@@ -26151,10 +26465,11 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJP8DEsTnst0cR9iFnGBb1FcY",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 27,
     "dagVers": null,
-    "desc": "Speelboerderij in Zwartemeer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Zwartemeer — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.beatrixhoeve.nl/"
   },
   {
     "id": 1066,
@@ -26172,10 +26487,11 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJ_5OswPjCx0cRoJzogpPJXhc",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 8,
     "dagVers": null,
-    "desc": "Speelboerderij in Olst — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Olst — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "http://www.vijverhof-olst.nl/"
   },
   {
     "id": 1067,
@@ -26187,16 +26503,18 @@
     "lat": 52.216427,
     "lng": 6.914926,
     "address": "Lorentzlaan 22, Enschede",
-    "hours": null,
+    "hours": "ma-vr 8.30-16u · za-zo 9-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJo3p4FEIUuEcRelxIRFbTyOw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 296,
     "dagVers": null,
-    "desc": "Speelboerderij in Enschede — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Enschede — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "053 432 2932",
+    "website": "https://www.wooldrikpark.nl/het-park/kinderboerderij/"
   },
   {
     "id": 1068,
@@ -26208,16 +26526,18 @@
     "lat": 51.613932,
     "lng": 4.791936,
     "address": "via Kasterleestraat, Tussen de Dijken 101, Breda",
-    "hours": null,
+    "hours": "wo-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJaW0vyA2fxkcR5jHVc5Jxu8w",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 518,
     "dagVers": null,
-    "desc": "Speelboerderij in Breda — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Breda — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "076 571 6449",
+    "website": "https://www.parkhoevebredanoord.nl/"
   },
   {
     "id": 1069,
@@ -26229,16 +26549,18 @@
     "lat": 51.746077,
     "lng": 5.709836,
     "address": "Beukenlaan 8, Velp",
-    "hours": null,
+    "hours": "ma-vr 11-16u · za-zo 14-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJrzGGX48Ex0cRni_sovQ3alQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 129,
     "dagVers": null,
-    "desc": "Speelboerderij in Velp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Velp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0486 472 492",
+    "website": "http://www.kinderboerderijvelp.nl/"
   },
   {
     "id": 1070,
@@ -26250,16 +26572,18 @@
     "lat": 52.649104,
     "lng": 4.756474,
     "address": "Krielenzand 5, Alkmaar",
-    "hours": null,
+    "hours": "di 10-14u · vr-za 10-14u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJje3mUgBXz0cRN_W0D-QaCsQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.2,
+    "googleReviews": 176,
     "dagVers": null,
-    "desc": "Speelboerderij in Alkmaar — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Alkmaar — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "072 562 0587",
+    "website": "https://www.kinderboerderijderekerhout.nl/"
   },
   {
     "id": 1071,
@@ -26277,8 +26601,8 @@
       "kindvriendelijk"
     ],
     "placeId": "ChIJYRfLoyDXxkcRBxd48HsMN9g",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.4,
+    "googleReviews": 12,
     "dagVers": null,
     "desc": "Speelboerderij in Valkenswaard — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
   },
@@ -26292,16 +26616,18 @@
     "lat": 52.242641,
     "lng": 6.888787,
     "address": "Vanekerbeekweg 15, Enschede",
-    "hours": null,
+    "hours": "ma-zo 8-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJgWO7-_4TuEcR9BGA2jMDXvw",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 522,
     "dagVers": null,
-    "desc": "Speelboerderij in Enschede — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Enschede — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 16143435",
+    "website": "http://www.kinderboerderijnoord.nl/"
   },
   {
     "id": 1073,
@@ -26313,16 +26639,18 @@
     "lat": 51.683664,
     "lng": 5.980824,
     "address": "Sneeuwheide 21, Gennep",
-    "hours": null,
+    "hours": "wo 14-17u · za-zo 14-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ-y5_gIQSx0cRz2oA9i6EsCk",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 70,
     "dagVers": null,
-    "desc": "Speelboerderij in Gennep — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Gennep — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 42222700",
+    "website": "http://kinderboerderijgennep.nl/"
   },
   {
     "id": 1074,
@@ -26334,16 +26662,17 @@
     "lat": 53.10357,
     "lng": 6.993258,
     "address": "Hugo de Grootstraat 79, Oude Pekela",
-    "hours": null,
+    "hours": "ma 9-12u · ma 13.30-16u · di 9-12u · wo 13-16u · do 9-12u · vr 9-12u · vr 13.30-16u · za 13.30-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ_wdD-rbTt0cRc9rBj1FdmHU",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.9,
+    "googleReviews": 11,
     "dagVers": null,
-    "desc": "Speelboerderij in Oude Pekela — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Oude Pekela — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.stichtingkinderboerderijpekela.nl/"
   },
   {
     "id": 1075,
@@ -26355,16 +26684,18 @@
     "lat": 50.943691,
     "lng": 5.98799,
     "address": "Heidestraat 2, Brunssum",
-    "hours": null,
+    "hours": "ma-zo 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ_wSW24m7wEcRPAiZW0uCSI0",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 737,
     "dagVers": null,
-    "desc": "Speelboerderij in Brunssum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Brunssum — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 18122357",
+    "website": "http://kinderboerderij-schutterspark.nl/"
   },
   {
     "id": 1076,
@@ -26376,16 +26707,18 @@
     "lat": 51.139589,
     "lng": 5.996234,
     "address": "Bosserveldweg 54, Sint Odiliënberg",
-    "hours": null,
+    "hours": "ma-zo 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ96lbmJW1wEcR2K_fFIdGE_8",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 5,
+    "googleReviews": 1,
     "dagVers": null,
-    "desc": "Speelboerderij in Sint Odiliënberg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Sint Odiliënberg — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 18501794",
+    "website": "https://www.kinderboerderijstodilienberg.nl/"
   },
   {
     "id": 1077,
@@ -26397,16 +26730,18 @@
     "lat": 53.155376,
     "lng": 6.727907,
     "address": "Burgemeester van Royenstraat West 11 a, Hoogezand",
-    "hours": null,
+    "hours": "ma-vr 8.30-16u · za-zo 13.30-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJEfNjl6oryEcRQpIiFYmp50c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 50,
     "dagVers": null,
-    "desc": "Speelboerderij in Hoogezand — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Hoogezand — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0598 323 040",
+    "website": "http://www.nme-hs.nl/"
   },
   {
     "id": 1078,
@@ -26418,16 +26753,18 @@
     "lat": 51.036087,
     "lng": 5.807622,
     "address": "Florianstraat 3a, Born",
-    "hours": null,
+    "hours": "ma-di 14.45-17u · wo 13-17u · do 14.45-17u · vr-za 13-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJNbcXhoLIwEcREw4aXPgSikA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 267,
     "dagVers": null,
-    "desc": "Speelboerderij in Born — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Born — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "046 485 3806",
+    "website": "https://www.speeltuindepaddestoel.nl/"
   },
   {
     "id": 1079,
@@ -26439,16 +26776,18 @@
     "lat": 51.573765,
     "lng": 5.450975,
     "address": "Klothal 1, Sint-Oedenrode",
-    "hours": null,
+    "hours": "ma-vr 9-16u · za 9-12u · zo 13.30-16u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJq5BBB0nnxkcRtGGMQV2s_7c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 79,
     "dagVers": null,
-    "desc": "Speelboerderij in Sint-Oedenrode — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Sint-Oedenrode — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0413 478 912",
+    "website": "https://www.streekparkkienehoef.nl/park/kinderboerderij-kienehoeve"
   },
   {
     "id": 1080,
@@ -26460,16 +26799,17 @@
     "lat": 52.965773,
     "lng": 6.674602,
     "address": "Nooitgedacht",
-    "hours": null,
+    "hours": "24/7",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJl3V1IAonyEcR3eda6yjOV6c",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.8,
+    "googleReviews": 38,
     "dagVers": null,
-    "desc": "Speelboerderij in Nooitgedacht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Nooitgedacht — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "website": "https://www.hofvansaksen.nl/"
   },
   {
     "id": 1081,
@@ -26481,16 +26821,18 @@
     "lat": 53.030962,
     "lng": 4.738996,
     "address": "Rommelpot 11, Den Hoorn Texel",
-    "hours": null,
+    "hours": "di-za 10-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJL7TCX4w5z0cRkriu8RBfVB4",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.3,
+    "googleReviews": 589,
     "dagVers": null,
-    "desc": "Speelboerderij in Den Hoorn Texel — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Den Hoorn Texel — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0222 314 180",
+    "website": "http://www.landgoeddebontebelevenis.nl/"
   },
   {
     "id": 1082,
@@ -26502,16 +26844,18 @@
     "lat": 52.031468,
     "lng": 5.14452,
     "address": "Keercamp 15, Houten",
-    "hours": null,
+    "hours": "ma-zo 9.30-16.30u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJqfuaVIlmxkcRkMA7Vp-hsZM",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.6,
+    "googleReviews": 250,
     "dagVers": null,
-    "desc": "Speelboerderij in Houten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Houten — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "030 276 5555",
+    "website": "https://www.zomozorg.nl/dagbesteding/locaties/speelboerderij-houten/"
   },
   {
     "id": 1083,
@@ -26523,16 +26867,18 @@
     "lat": 52.261857,
     "lng": 5.337751,
     "address": "Eemdijk 17, Eemdijk",
-    "hours": null,
+    "hours": "wo 12-17u · vr-za 12-19u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJVziRRntAxkcR986UV-8hKRQ",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.7,
+    "googleReviews": 78,
     "dagVers": null,
-    "desc": "Speelboerderij in Eemdijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Eemdijk — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "06 48885085",
+    "website": "https://www.zorgboerderijdeveldmuis.nl/"
   },
   {
     "id": 1084,
@@ -26544,15 +26890,17 @@
     "lat": 51.485689,
     "lng": 3.77593,
     "address": "Oude Zandweg 15, Lewedorp",
-    "hours": null,
+    "hours": "ma-za 9-17u",
     "products": [],
     "tags": [
       "kindvriendelijk"
     ],
     "placeId": "ChIJ__MH1DyPxEcRBdVPMEgQxIA",
-    "googleRating": null,
-    "googleReviews": null,
+    "googleRating": 4.5,
+    "googleReviews": 14,
     "dagVers": null,
-    "desc": "Speelboerderij in Lewedorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt."
+    "desc": "Speelboerderij in Lewedorp — een leuk uitje met kinderen: boerderijdieren, spelen en ravotten. Combineer met een boerderijwinkel in de buurt.",
+    "phone": "0113 223 972",
+    "website": "http://www.hosvazze.nl/"
   }
 ]
