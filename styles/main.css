@@ -3061,6 +3061,51 @@
   .regio-more-blog a { color: var(--green-mid); font-weight: 600; }
   .regio-more-blog a:hover { color: var(--green-dark); }
 
+  /* Homepage FAQ-sectie (altijd zichtbaar, boven footer) */
+  .faq-section {
+    background: var(--sand);
+    border-top: 1px solid var(--border);
+    padding: 48px 20px 56px;
+  }
+  .faq-container {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .faq-section-title {
+    font-family: var(--serif);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+  }
+  .faq-list .faq-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 18px 22px;
+  }
+  .faq-list dt {
+    font-weight: 700;
+    font-size: var(--t-md);
+    color: var(--green-dark);
+    margin-bottom: 6px;
+  }
+  .faq-list dd {
+    margin: 0;
+    font-size: var(--t-sm);
+    color: var(--text-mid);
+    line-height: 1.6;
+  }
+  .faq-list dd a { color: var(--green-mid); font-weight: 600; }
+  .faq-list dd a:hover { color: var(--green-dark); }
+
   /* Categoriepagina: provinciegroep */
   .categ-prov { margin-bottom: 44px; }
   .categ-prov-link { font-size: var(--t-sm); margin-top: -4px; margin-bottom: 12px; }

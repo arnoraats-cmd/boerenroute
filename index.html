@@ -36,6 +36,39 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is Boerenroute.nl?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Boerenroute.nl is een gratis kaart van boerderijwinkels, eierautomaten, zelfpluktuinen en melktappen in Nederland. Je vindt er verse producten rechtstreeks van de boer bij jou in de buurt en plant er een fietstocht omheen." }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe vind ik een boerderijwinkel bij mij in de buurt?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Voer je postcode of plaatsnaam in of klik op 'Gebruik mijn locatie'. De kaart toont direct alle winkels en automaten in jouw omgeving, gesorteerd op afstand." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is een versautomaat of eierautomaat?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Een versautomaat is een zelfbedieningsautomaat bij een boerderij waar je 24/7 verse producten kunt kopen, zoals eieren, melk, kaas of groente. Een eierautomaat verkoopt specifiek verse scharrel- of vrije-uitloopeieren." }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik een fietsroute plannen via Boerenroute.nl?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja, je kunt winkels als stops aan je route toevoegen. De app berekent de kortste volgorde en je kunt de route exporteren als GPX-bestand voor Garmin, Komoot of Strava, of delen via Google Maps en WhatsApp." }
+      },
+      {
+        "@type": "Question",
+        "name": "Zijn vermeldingen op Boerenroute.nl gratis?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja, een basislisting is altijd gratis. Boeren en tuinders kunnen hun winkel, automaat of zelfpluktuin aanmelden via het aanmeldformulier op boerenroute.nl/aanmelden." }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Boerenroute.nl",
     "url": "https://www.boerenroute.nl",
@@ -379,7 +412,7 @@
     <!-- ══ BOODSCHAPPENLIJST-SECTIE ══════════════════════════════ -->
     <section id="boodschappenSection" hidden aria-label="Boodschappenlijst" class="bood-section">
       <div class="bood-container">
-        <h1 class="bood-title">🛒 Boodschappenlijst</h1>
+        <h2 class="bood-title">🛒 Boodschappenlijst</h2>
         <p class="bood-intro">Voeg producten toe die je zoekt — de app vindt welke winkels ze verkopen en maakt er een route van.</p>
 
         <div class="bood-input-row">
@@ -423,7 +456,7 @@
 
         <div class="over-grid">
           <article class="over-intro">
-            <h1 class="over-title">Over Boerenroute.nl</h1>
+            <h2 class="over-title">Over Boerenroute.nl</h2>
             <p>Boerenroute.nl helpt mensen verse producten vinden die rechtstreeks van de boer komen — boerderijwinkels, eierautomaten, melktaps en zelfpluktuinen bij hen in de buurt. En plan er meteen een fietstocht omheen.</p>
             <p>We zijn in 2024 begonnen als een simpele kaart voor de regio Uden en groeien nu langzaam door heel Nederland. De vermeldingen zijn gratis. We verdienen aan een klein aantal betaalde uitlichtingen.</p>
             <p>Geen cookies, geen trackers. We gebruiken <a href="https://www.goatcounter.com" rel="noopener" target="_blank">GoatCounter</a> voor privacyvriendelijke statistieken.</p>
@@ -529,6 +562,37 @@
 
       </div>
     </section>
+
+  <!-- ══ FAQ ═══════════════════════════════════════════════════════
+       Altijd zichtbaar (geen hidden). FAQPage-schema staat in <head>.
+  ══════════════════════════════════════════════════════════════════ -->
+  <section class="faq-section" aria-label="Veelgestelde vragen">
+    <div class="faq-container">
+      <h2 class="faq-section-title">Veelgestelde vragen</h2>
+      <dl class="faq-list">
+        <div class="faq-item">
+          <dt>Wat is Boerenroute.nl?</dt>
+          <dd>Boerenroute.nl is een gratis kaart van boerderijwinkels, eierautomaten, zelfpluktuinen en melktappen in Nederland. Je vindt er verse producten rechtstreeks van de boer bij jou in de buurt en plant er een fietstocht omheen.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>Hoe vind ik een boerderijwinkel bij mij in de buurt?</dt>
+          <dd>Voer je postcode of plaatsnaam in of klik op <em>Gebruik mijn locatie</em>. De kaart toont direct alle winkels en automaten in jouw omgeving, gesorteerd op afstand.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>Wat is een versautomaat of eierautomaat?</dt>
+          <dd>Een versautomaat is een zelfbedieningsautomaat bij een boerderij waar je 24/7 verse producten kunt kopen, zoals eieren, melk, kaas of groente. Een eierautomaat verkoopt specifiek verse scharrel- of vrije-uitloopeieren. <a href="/eierautomaten">Alle eierautomaten →</a></dd>
+        </div>
+        <div class="faq-item">
+          <dt>Kan ik een fietsroute plannen via Boerenroute.nl?</dt>
+          <dd>Ja, je kunt winkels als stops aan je route toevoegen. De app berekent de kortste volgorde en je kunt de route exporteren als GPX-bestand voor Garmin, Komoot of Strava, of delen via Google Maps en WhatsApp.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>Zijn vermeldingen op Boerenroute.nl gratis?</dt>
+          <dd>Ja, een basislisting is altijd gratis. Boeren en tuinders kunnen hun winkel, automaat of zelfpluktuin aanmelden via <a href="/aanmelden">het aanmeldformulier</a>.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
 
   </main>
 
