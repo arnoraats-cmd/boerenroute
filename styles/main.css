@@ -3308,17 +3308,18 @@
 
   /* Mobiel: voorkom dat iOS Safari inzoomt zodra je een veld aantikt
      (gebeurt bij invoer < 16px). Geldt voor alle formuliervelden. */
-  /* iOS zoomt in op invoervelden met font-size < 16px — fix voor alle touch-schermen */
+  /* Touch-schermen: iOS zoom-fix + 44px tap targets */
   @media (hover: none) {
     input, select, textarea,
     .form-input, .hero-search-input, .search-input, .sort-select,
     .diploma-name-input, .sk-backup-code, .bood-input {
       font-size: 16px !important;
     }
-    /* Knoppen: minimaal 44px hoog voor comfortabel tikken */
-    button, .btn, .nav-btn, .chip, .tip-btn, .route-nav-btn {
+    button, .btn, .nav-btn, .chip, .tip-btn, .route-nav-btn,
+    .nav-meer-item, .sheet-map-btn {
       min-height: 44px;
     }
+    a.regio-shop-link, a.blog-card { min-height: 44px; }
   }
 
   /* Notch / home-indicator: houd zwevende knoppen vrij van de schermranden */
@@ -3355,12 +3356,51 @@
     .tip-btn span { display: none; }
     .tip-btn { padding: 8px 12px; }
     .btn-install { display: none; }
+    /* Verberg uitgebreide nav-items op mobiel */
+    .nav-btn-desktop { display: none !important; }
   }
+
+  /* Meer-dropdown */
+  .nav-btn-meer { display: none; }
+  @media (max-width: 900px) { .nav-btn-meer { display: inline-flex; } }
+
+  .nav-meer-panel {
+    position: fixed;
+    top: var(--header-h);
+    right: 8px;
+    z-index: 200;
+    background: var(--white);
+    border-radius: var(--r-xl);
+    box-shadow: 0 8px 32px rgba(0,0,0,.18);
+    padding: 8px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .nav-meer-panel[hidden] { display: none; }
+
+  .nav-meer-item {
+    text-align: left;
+    padding: 12px 16px;
+    font-size: var(--t-md);
+    font-weight: 500;
+    color: var(--text);
+    border-radius: var(--r-lg);
+    width: 100%;
+    transition: background var(--tf);
+  }
+  .nav-meer-item:hover { background: var(--green-bg); color: var(--green-dark); }
 
   /* Mobiel: basis (altijd) */
   @media (max-width: 720px) {
     .toolbar-inner { flex-wrap: wrap; padding-block: 8px; gap: 8px; }
-    .filter-chips  { order: 3; width: 100%; padding-bottom: 4px; overflow-x: auto; scrollbar-width: none; }
+    .filter-chips  {
+      order: 3; width: 100%; padding-bottom: 4px;
+      overflow-x: auto; scrollbar-width: none;
+      -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+      mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    }
     .filter-chips::-webkit-scrollbar { display: none; }
     .toolbar-right { order: 2; margin-left: auto; flex-shrink: 0; max-width: calc(100vw - var(--pad) * 2); overflow: hidden; }
     .sort-select { max-width: min(140px, calc(50vw - 20px)); }
@@ -3368,6 +3408,16 @@
     .footer-inner { grid-template-columns: 1fr; gap: 28px; }
     .footer-cols  { gap: 24px; }
     .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+
+    /* Winkelkaartjes luchtiger op mobiel */
+    .shop-card { padding: 16px 14px 14px; }
+    .shop-emoji { font-size: 28px; }
+    .shop-name { font-size: 16px; white-space: normal; line-height: 1.25; }
+    .shop-address { font-size: 13px; white-space: normal; }
+    .shop-meta { margin-top: 10px; gap: 6px; }
+    .shop-tag { font-size: 12px; padding: 3px 10px; }
+    /* Verberg extra tags op mobiel — houd het scanbaar */
+    .shop-tag:nth-child(n+4) { display: none; }
   }
 
   /* Mobiel: bottom sheet layout — alleen actief na locatiekeuze */
@@ -3407,70 +3457,85 @@
       border-top: none;
       border-radius: 20px 20px 0 0;
       background: var(--white);
-      box-shadow: 0 -4px 24px rgba(0,0,0,.13);
+      box-shadow: 0 -4px 24px rgba(0,0,0,.15);
       max-height: 92dvh;
       overflow: hidden;
-      transform: translateY(calc(100% - 72px));
-      transition: transform .35s cubic-bezier(.32,.72,0,1);
+      transition: transform .36s cubic-bezier(.32,.72,0,1);
       will-change: transform;
       touch-action: none;
     }
 
-    body.map-active .list-section.sheet-half     { transform: translateY(40%); }
-    body.map-active .list-section.sheet-open     { transform: translateY(0); }
-    body.map-active .list-section.sheet-peek     { transform: translateY(calc(100% - 72px - env(safe-area-inset-bottom, 0px))); }
-    body.map-active .list-section.sheet-dragging { transition: none; }
+    body.map-active .list-section.sheet-half { transform: translateY(48%); }
+    body.map-active .list-section.sheet-open { transform: translateY(0); }
+    body.map-active .list-section.sheet-no-transition { transition: none !important; }
 
     /* Sleepgreep */
     .sheet-handle {
       display: none;
       flex-direction: column;
       align-items: center;
-      gap: 6px;
+      gap: 4px;
       padding: 10px 16px 8px;
-      cursor: grab;
+      cursor: pointer;
       user-select: none;
       background: var(--white);
       border-radius: 20px 20px 0 0;
       flex-shrink: 0;
+      touch-action: none;
     }
     body.map-active .sheet-handle { display: flex; }
     .sheet-handle-bar { width: 40px; height: 4px; background: var(--border-md); border-radius: 2px; }
-    .sheet-handle-label { font-size: var(--t-xs); color: var(--text-light); font-weight: 600; letter-spacing: .02em; }
+    .sheet-handle-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .sheet-handle-label { font-size: var(--t-sm); color: var(--text-mid); font-weight: 600; }
+    .sheet-map-btn {
+      position: absolute;
+      right: 0;
+      font-size: var(--t-xs);
+      color: var(--green-mid);
+      font-weight: 600;
+      background: var(--green-bg);
+      border-radius: var(--r-full);
+      padding: 3px 10px;
+      display: none;
+    }
 
     /* Scrollbaar deel */
     .sheet-scroll {
       overflow-y: auto;
       overflow-x: hidden;
       -webkit-overflow-scrolling: touch;
-      height: calc(92dvh - 72px);
+      height: calc(92dvh - 64px);
       overscroll-behavior: contain;
     }
 
     .list-header { border-radius: 0; border-top: 1px solid var(--border); }
 
-    /* FAB: "X winkels ↑" knop */
-    .sheet-fab {
-      display: none;
+    /* Onboarding-tooltip */
+    .sheet-onboard {
       position: fixed;
-      bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+      bottom: calc(52% + 12px);
       left: 50%;
       transform: translateX(-50%);
-      z-index: 25;
+      z-index: 35;
       background: var(--green-dark);
       color: var(--white);
-      border-radius: var(--r-full);
-      padding: 10px 20px;
-      gap: 8px;
-      align-items: center;
       font-size: var(--t-sm);
       font-weight: 600;
-      box-shadow: 0 4px 16px rgba(0,0,0,.25);
+      padding: 8px 18px;
+      border-radius: var(--r-full);
+      box-shadow: 0 4px 16px rgba(0,0,0,.22);
       white-space: nowrap;
+      pointer-events: none;
+      animation: fade-up .3s var(--ease) both, fadeout .4s 3.5s ease both;
     }
-    body.map-active .sheet-fab:not([hidden]) { display: flex; }
-    .sheet-fab-icon { font-size: 1rem; }
-    .sheet-fab-arrow { font-size: 1rem; opacity: .7; }
+    .sheet-onboard[hidden] { display: none; }
+    @keyframes fadeout { to { opacity: 0; } }
   }
 
   @media (max-width: 480px) {

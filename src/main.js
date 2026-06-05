@@ -83,7 +83,35 @@ function _hideLanding() {
   // Activeer bottom-sheet layout op mobiel
   document.body.classList.add('map-active');
   requestAnimationFrame(() => invalidateSize());
+  // Onboarding-tooltip (eenmalig, verdwijnt na 4 sec)
+  if (window.innerWidth <= 720 && !sessionStorage.getItem('sheet-hint-shown')) {
+    sessionStorage.setItem('sheet-hint-shown', '1');
+    const tip = document.getElementById('sheetOnboardTip');
+    if (tip) {
+      tip.removeAttribute('hidden');
+      setTimeout(() => tip.setAttribute('hidden', ''), 4000);
+    }
+  }
 }
+
+/* ── Meer-menu (mobiel) ──────────────────────────────────── */
+const meerBtn   = document.getElementById('navMeerBtn');
+const meerPanel = document.getElementById('navMeerPanel');
+meerBtn?.addEventListener('click', e => {
+  e.stopPropagation();
+  const open = !meerPanel.hidden;
+  meerPanel.hidden = open;
+  meerBtn.setAttribute('aria-expanded', String(!open));
+});
+document.addEventListener('click', () => { if (meerPanel) meerPanel.hidden = true; });
+document.querySelectorAll('.nav-meer-item').forEach(item => {
+  item.addEventListener('click', () => {
+    meerPanel.hidden = true;
+    // Trigger dezelfde logica als nav-btn
+    const page = item.dataset.page;
+    document.querySelector(`.nav-btn[data-page="${page}"]`)?.click();
+  });
+});
 
 document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
   btn.addEventListener('click', () => {

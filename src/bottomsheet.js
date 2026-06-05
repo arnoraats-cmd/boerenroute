@@ -1,171 +1,121 @@
-/* Bottom sheet voor mobiel — sleepbaar paneel over de kaart */
+/* Bottom sheet voor mobiel — 2 standen: half (standaard) en open */
 export function initBottomSheet() {
-  if (window.innerWidth > 720) return; // alleen op mobiel
+  if (window.innerWidth > 720) return;
 
-  const sheet    = document.querySelector('.list-section');
-  const toolbar  = document.querySelector('.toolbar');
+  const sheet   = document.querySelector('.list-section');
+  const toolbar = document.querySelector('.toolbar');
   if (!sheet) return;
 
-  /* ── Injecteer sleepgreep bovenaan het sheet ─────────────────── */
+  /* ── Sleepgreep injecteren ───────────────────────────────────── */
   const handle = document.createElement('div');
   handle.className = 'sheet-handle';
-  handle.setAttribute('aria-label', 'Sleep omhoog voor de winkellijst');
+  handle.setAttribute('aria-label', 'Sleep omhoog voor de volledige winkellijst');
   handle.innerHTML = `
     <div class="sheet-handle-bar"></div>
-    <span class="sheet-handle-label" id="sheetLabel">Sleep omhoog voor winkels</span>`;
+    <div class="sheet-handle-row">
+      <span class="sheet-handle-label" id="sheetLabel">Winkels</span>
+      <button class="sheet-map-btn" id="sheetMapBtn" aria-label="Terug naar kaart">← Kaart</button>
+    </div>`;
 
-  /* Wrap de bestaande inhoud in een scrollbaar div */
+  /* Bestaande inhoud in scrollbare wrapper */
   const scroll = document.createElement('div');
   scroll.className = 'sheet-scroll';
   while (sheet.firstChild) scroll.appendChild(sheet.firstChild);
   sheet.appendChild(handle);
   sheet.appendChild(scroll);
 
-  /* ── Dynamische toolbar-hoogte ───────────────────────────────── */
+  /* ── State ───────────────────────────────────────────────────── */
+  let state = 'half';
+
   function toolbarH() {
     return toolbar ? toolbar.getBoundingClientRect().height : 0;
   }
 
-  /* ── Driestandenmachine ──────────────────────────────────────── */
-  // peek = onderkant zichtbaar (standaard)
-  // half = halverwege
-  // open = volledig open
-  let state = 'peek';
-
-  const PEEK_VISIBLE = 72; // hoogte van de greep in peek-stand
-
-  function setToolbarOffset() {
+  function applyMapTop() {
     const h = toolbarH();
-    sheet.style.setProperty('--tb-h', h + 'px');
     const mapEl = document.querySelector('.map-section');
     if (mapEl) mapEl.style.top = `calc(var(--header-h) + ${h}px)`;
     if (toolbar) toolbar.style.top = 'var(--header-h)';
-    // Custom event — voorkomt recursieve resize-lus
-    window.dispatchEvent(new CustomEvent('boerenroute:relayout'));
   }
 
   function setState(s, animate = true) {
     state = s;
-    sheet.classList.toggle('sheet-dragging', false);
-    sheet.classList.remove('sheet-peek', 'sheet-half', 'sheet-open');
-
-    if (!animate) sheet.classList.add('sheet-dragging');
+    if (!animate) sheet.classList.add('sheet-no-transition');
+    sheet.classList.remove('sheet-half', 'sheet-open');
     sheet.classList.add('sheet-' + s);
-
-    const label = document.getElementById('sheetLabel');
-    if (label) {
-      if (s === 'peek') label.textContent = 'Sleep omhoog voor winkels';
-      if (s === 'half') label.textContent = 'Winkels';
-      if (s === 'open') label.textContent = 'Winkels';
+    if (!animate) {
+      sheet.getBoundingClientRect(); // force reflow
+      sheet.classList.remove('sheet-no-transition');
     }
-    if (s === 'peek') scroll.scrollTop = 0;
+    // Toon/verberg "← Kaart" knop
+    const mapBtn = document.getElementById('sheetMapBtn');
+    if (mapBtn) mapBtn.style.display = s === 'open' ? 'inline-flex' : 'none';
 
+    if (s === 'half') scroll.scrollTop = 0;
     // Leaflet hertekenen na animatie
-    setTimeout(() => window.dispatchEvent(new CustomEvent('boerenroute:relayout')), 380);
+    setTimeout(() => window.dispatchEvent(new CustomEvent('boerenroute:relayout')), 360);
   }
 
-  /* ── FAB declaraties (vroeg, zodat updateFab ze kan gebruiken) ── */
-  const fab = document.getElementById('sheetFab');
-  const fabCount = document.getElementById('sheetFabCount');
-
-  function updateFab() {
-    if (!fab) return;
-    if (state === 'peek') fab.removeAttribute('hidden');
-    else fab.setAttribute('hidden', '');
-  }
-
-  fab?.addEventListener('click', () => { setState('half'); updateFab(); });
-
-  /* Start in half-stand zodat gebruiker meteen winkels ziet */
   setState('half', false);
-  setToolbarOffset();
-  updateFab();
+  requestAnimationFrame(() => applyMapTop());
 
-  /* ── Touch / Pointer drag ────────────────────────────────────── */
-  let startY = 0, startTranslate = 0, currentTranslate = 0, dragging = false;
+  /* ── Tik op greep ────────────────────────────────────────────── */
+  handle.addEventListener('click', e => {
+    if (e.target.id === 'sheetMapBtn') return; // knop heeft eigen handler
+    setState(state === 'half' ? 'open' : 'half');
+  });
 
-  function getTranslate() {
-    const m = new DOMMatrixReadOnly(getComputedStyle(sheet).transform);
-    return m.m42; // translateY
+  document.getElementById('sheetMapBtn')?.addEventListener('click', () => setState('half'));
+
+  /* ── Sleep ───────────────────────────────────────────────────── */
+  let startY = 0, startT = 0, dragging = false;
+
+  function getTranslateY() {
+    return new DOMMatrixReadOnly(getComputedStyle(sheet).transform).m42;
   }
-
-  function sheetH() { return sheet.getBoundingClientRect().height; }
 
   handle.addEventListener('pointerdown', e => {
     if (e.pointerType === 'mouse' && e.button !== 0) return;
     dragging = true;
     startY = e.clientY;
-    startTranslate = getTranslate();
-    sheet.classList.add('sheet-dragging');
+    startT = getTranslateY();
+    sheet.classList.add('sheet-no-transition');
     handle.setPointerCapture(e.pointerId);
   });
 
   handle.addEventListener('pointermove', e => {
     if (!dragging) return;
     const dy = e.clientY - startY;
-    currentTranslate = Math.max(0, startTranslate + dy);
-    sheet.style.transform = `translateY(${currentTranslate}px)`;
+    const t  = Math.max(0, startT + dy);
+    sheet.style.transform = `translateY(${t}px)`;
   });
 
-  handle.addEventListener('pointerup', () => {
+  handle.addEventListener('pointerup', e => {
     if (!dragging) return;
     dragging = false;
+    sheet.classList.remove('sheet-no-transition');
     sheet.style.transform = '';
-    sheet.classList.remove('sheet-dragging');
-
-    const h = sheetH();
-    const peekY  = h - PEEK_VISIBLE;
-    const halfY  = h * 0.40;
-    const openY  = 0;
-
-    const distPeek = Math.abs(currentTranslate - peekY);
-    const distHalf = Math.abs(currentTranslate - halfY);
-    const distOpen = Math.abs(currentTranslate - openY);
-
-    if (distOpen <= distHalf && distOpen <= distPeek) setState('open');
-    else if (distHalf <= distPeek)                    setState('half');
-    else                                               setState('peek');
-    updateFab();
+    const dy = e.clientY - startY;
+    // Swipe omlaag > 60px → half; omhoog > 60px → open; anders behoud staat
+    if (dy > 60)       setState('half');
+    else if (dy < -60) setState('open');
+    else               setState(state);
   });
 
-  /* Tik op greep → cyclus door standen */
-  handle.addEventListener('click', () => {
-    if (state === 'peek') setState('half');
-    else if (state === 'half') setState('open');
-    else setState('peek');
-  });
-
-  // Houd shopcount bij via de bestaande teller in de DOM
-  const observer = new MutationObserver(() => {
-    const countEl = document.getElementById('shopCount') || document.querySelector('.shop-count');
-    if (countEl && fabCount) fabCount.textContent = countEl.textContent.trim().replace(/\D+.*/, '') || '…';
-  });
-  const shopList = document.querySelector('.shop-list') || document.getElementById('shopList');
-  if (shopList) observer.observe(shopList, { childList: true, subtree: false });
-
-  const origSetState = setState;
-  // Overschrijf setState om FAB bij te werken
-  // (kan niet herschrijven, gebruik wrapper)
-  window.__updateSheetFab = updateFab;
-
-  /* ── Sluit sheet als gebruiker op de kaart tikt ─────────────── */
+  /* ── Tik op kaart → terug naar half ─────────────────────────── */
   document.querySelector('.map-section')?.addEventListener('click', e => {
-    if (e.target.closest('.leaflet-control, .br-popup')) return;
-    if (state !== 'peek') { setState('peek'); updateFab(); }
+    if (e.target.closest('.leaflet-control, .br-popup, .leaflet-marker-icon')) return;
+    if (state === 'open') setState('half');
   });
 
-  /* ── Herbereken bij rotate / resize ─────────────────────────── */
+  /* ── Resize / rotate ─────────────────────────────────────────── */
   window.addEventListener('resize', () => {
     if (window.innerWidth > 720) {
-      // Herstel desktop layout
       sheet.style.transform = '';
-      sheet.classList.remove('sheet-peek','sheet-half','sheet-open');
+      sheet.classList.remove('sheet-half', 'sheet-open', 'sheet-no-transition');
       return;
     }
-    setToolbarOffset();
+    applyMapTop();
     setState(state, false);
   });
-
-  /* Wacht op toolbar render */
-  requestAnimationFrame(() => setToolbarOffset());
 }
