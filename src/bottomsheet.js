@@ -61,8 +61,10 @@ export function initBottomSheet() {
     if (s === 'peek') scroll.scrollTop = 0;
   }
 
-  setState('peek', false);
+  /* Start in half-stand zodat gebruiker meteen winkels ziet */
+  setState('half', false);
   setToolbarOffset();
+  updateFab();
 
   /* ── Touch / Pointer drag ────────────────────────────────────── */
   let startY = 0, startTranslate = 0, currentTranslate = 0, dragging = false;
@@ -108,6 +110,7 @@ export function initBottomSheet() {
     if (distOpen <= distHalf && distOpen <= distPeek) setState('open');
     else if (distHalf <= distPeek)                    setState('half');
     else                                               setState('peek');
+    updateFab();
   });
 
   /* Tik op greep → cyclus door standen */
@@ -117,9 +120,36 @@ export function initBottomSheet() {
     else setState('peek');
   });
 
+  /* ── FAB: zwevende knop op de kaart ─────────────────────────── */
+  const fab = document.getElementById('sheetFab');
+  const fabCount = document.getElementById('sheetFabCount');
+
+  function updateFab() {
+    if (!fab) return;
+    // Toon FAB alleen in peek-stand
+    if (state === 'peek') fab.removeAttribute('hidden');
+    else fab.setAttribute('hidden', '');
+  }
+
+  fab?.addEventListener('click', () => setState('half'));
+
+  // Houd shopcount bij via de bestaande teller in de DOM
+  const observer = new MutationObserver(() => {
+    const countEl = document.getElementById('shopCount') || document.querySelector('.shop-count');
+    if (countEl && fabCount) fabCount.textContent = countEl.textContent.trim().replace(/\D+.*/, '') || '…';
+  });
+  const shopList = document.querySelector('.shop-list') || document.getElementById('shopList');
+  if (shopList) observer.observe(shopList, { childList: true, subtree: false });
+
+  const origSetState = setState;
+  // Overschrijf setState om FAB bij te werken
+  // (kan niet herschrijven, gebruik wrapper)
+  window.__updateSheetFab = updateFab;
+
   /* ── Sluit sheet als gebruiker op de kaart tikt ─────────────── */
-  document.querySelector('.map-section')?.addEventListener('click', () => {
-    if (state !== 'peek') setState('peek');
+  document.querySelector('.map-section')?.addEventListener('click', e => {
+    if (e.target.closest('.leaflet-control, .br-popup')) return;
+    if (state !== 'peek') { setState('peek'); updateFab(); }
   });
 
   /* ── Herbereken bij rotate / resize ─────────────────────────── */

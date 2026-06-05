@@ -3407,7 +3407,7 @@
 
     .list-section.sheet-half   { transform: translateY(40%); }
     .list-section.sheet-open   { transform: translateY(0); }
-    .list-section.sheet-peek   { transform: translateY(calc(100% - 72px)); }
+    .list-section.sheet-peek   { transform: translateY(calc(100% - 72px - env(safe-area-inset-bottom, 0px))); }
     .list-section.sheet-dragging { transition: none; }
 
     /* Sleepgreep */
@@ -3445,6 +3445,30 @@
     }
 
     .list-header { border-radius: 0; border-top: 1px solid var(--border); }
+
+    /* Zwevende "X winkels"-knop op de kaart */
+    .sheet-fab {
+      display: none;
+      position: fixed;
+      bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 25;
+      background: var(--green-dark);
+      color: var(--white);
+      border-radius: var(--r-full);
+      padding: 10px 20px;
+      gap: 8px;
+      align-items: center;
+      font-size: var(--t-sm);
+      font-weight: 600;
+      box-shadow: 0 4px 16px rgba(0,0,0,.25);
+      white-space: nowrap;
+    }
+    .sheet-fab[hidden] { display: none !important; }
+    .sheet-fab:not([hidden]) { display: flex; }
+    .sheet-fab-icon { font-size: 1rem; }
+    .sheet-fab-arrow { font-size: 1rem; opacity: .7; }
 
     .footer-inner { grid-template-columns: 1fr; gap: 28px; }
     .footer-cols  { gap: 24px; }
