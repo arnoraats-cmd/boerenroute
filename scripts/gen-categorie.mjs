@@ -146,7 +146,8 @@ function provSection(prov, list) {
     </section>`;
 }
 
-function pageHtml({ slug, title, metaDesc, h1, intro, list, faq }) {
+function pageHtml({ slug, title, metaDesc, h1, intro, list }) {
+  const faq = null; // FAQ alleen op homepage, niet per categoriepagina
   const provGroups = groupByProv(list);
   const count = list.length;
 
