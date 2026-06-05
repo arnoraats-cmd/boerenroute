@@ -15,6 +15,7 @@ import { initBottomSheet }                   from './bottomsheet.js';
 initMap({ lat: DEFAULT.lat, lng: DEFAULT.lng });
 initModals();
 initBottomSheet();
+window.addEventListener('boerenroute:relayout', () => invalidateSize());
 
 
 /* ── Stempelkaart-badge in nav bijwerken ─────────────────── */
@@ -81,10 +82,7 @@ function _hideLanding() {
   document.getElementById('popularRoutesBanner')?.setAttribute('hidden', '');
   // Activeer bottom-sheet layout op mobiel
   document.body.classList.add('map-active');
-  // Geef Leaflet de nieuwe afmetingen door (kaart is nu fixed fullscreen)
-  requestAnimationFrame(() => {
-    invalidateSize();
-  });
+  requestAnimationFrame(() => invalidateSize());
 }
 
 document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {

@@ -40,8 +40,8 @@ export function initBottomSheet() {
     const mapEl = document.querySelector('.map-section');
     if (mapEl) mapEl.style.top = `calc(var(--header-h) + ${h}px)`;
     if (toolbar) toolbar.style.top = 'var(--header-h)';
-    // Vertel Leaflet dat de container-grootte veranderd is
-    window.dispatchEvent(new Event('resize'));
+    // Custom event — voorkomt recursieve resize-lus
+    window.dispatchEvent(new CustomEvent('boerenroute:relayout'));
   }
 
   function setState(s, animate = true) {
@@ -61,7 +61,7 @@ export function initBottomSheet() {
     if (s === 'peek') scroll.scrollTop = 0;
 
     // Leaflet hertekenen na animatie
-    setTimeout(() => window.dispatchEvent(new Event('resize')), 380);
+    setTimeout(() => window.dispatchEvent(new CustomEvent('boerenroute:relayout')), 380);
   }
 
   /* ── FAB declaraties (vroeg, zodat updateFab ze kan gebruiken) ── */
