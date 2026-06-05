@@ -31,6 +31,15 @@ if (existsSync(blogDir)) {
   }
 }
 
+// Winkelpagina's
+const winkelDir = join(root, 'public/winkel');
+if (existsSync(winkelDir)) {
+  for (const f of readdirSync(winkelDir)) {
+    if (!f.endsWith('.html')) continue;
+    add(`${SITE}/winkel/${f.replace(/\.html$/, '')}`, '0.6', 'monthly');
+  }
+}
+
 // Gemeentepagina's
 const gemeenteDir = join(root, 'public/gemeente');
 if (existsSync(gemeenteDir)) {
