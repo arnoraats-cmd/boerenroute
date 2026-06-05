@@ -15,6 +15,12 @@ const add = (loc, priority, changefreq) =>
 // Kern
 add(`${SITE}/`, '1.0', 'weekly');
 add(`${SITE}/blog/`, '0.8', 'weekly');
+add(`${SITE}/aanmelden`, '0.7', 'monthly');
+
+// Categoriepagina's
+for (const slug of ['versautomaten','eierautomaten','zelfpluktuinen','melktap','streekproducten']) {
+  add(`${SITE}/${slug}`, '0.8', 'monthly');
+}
 
 // Blogartikelen
 const blogDir = join(root, 'public/blog');
