@@ -98,6 +98,17 @@ function slugify(s) {
     .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
+function shopSlug(s) {
+  const base = String(s.name ?? '').toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  return `${base}-${s.id}`;
+}
+
+function hasWinkelPage(s) {
+  return s.type !== 'onderweg' && (s.desc || s.hours || s.googleRating);
+}
+
 // Groepeer shops op plaatsnaam (excl. onderweg)
 const byPlace = {};
 for (const s of shops) {
@@ -141,8 +152,8 @@ for (const [place, list] of places) {
   const allProducts = [...new Set(list.flatMap(s => s.products || []))].slice(0, 8);
 
   // Shop-kaarten
-  const cards = list.map(s => `
-      <article class="regio-shop">
+  const cards = list.map(s => {
+    const inner = `
         <span class="regio-emoji" aria-hidden="true">${s.emoji}</span>
         <div class="regio-info">
           <h2 class="regio-shop-name">${esc(s.name)}</h2>
@@ -150,8 +161,11 @@ for (const [place, list] of places) {
           ${s.products?.length ? `<p class="regio-shop-products">${esc(s.products.slice(0,6).join(', '))}</p>` : ''}
           ${s.hours ? `<p class="regio-shop-hours">🕐 ${esc(s.hours)}</p>` : ''}
           ${s.googleRating ? `<p class="regio-shop-rating">⭐ ${s.googleRating.toFixed(1)}${s.googleReviews ? ` (${s.googleReviews})` : ''}</p>` : ''}
-        </div>
-      </article>`).join('');
+        </div>`;
+    return hasWinkelPage(s)
+      ? `<a class="regio-shop regio-shop-link" href="/winkel/${shopSlug(s)}">${inner}</a>`
+      : `<article class="regio-shop">${inner}</article>`;
+  }).join('');
 
   // Links naar andere gemeenten in dezelfde provincie
   const sameProvLinks = gemeenteIndex

@@ -175,8 +175,8 @@ for (const [prov, shopList] of Object.entries(byProv)) {
     .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], 'nl'));
 
   const groupsHtml = placeGroups.map(([place, list]) => {
-    const cards = list.map(s => `
-      <article class="regio-shop">
+    const cards = list.map(s => {
+      const inner = `
         <span class="regio-emoji" aria-hidden="true">${s.emoji}</span>
         <div class="regio-info">
           <h3 class="regio-shop-name">${esc(s.name)}</h3>
@@ -184,8 +184,11 @@ for (const [prov, shopList] of Object.entries(byProv)) {
           ${s.products?.length ? `<p class="regio-shop-products">${esc(s.products.slice(0,6).join(', '))}</p>` : ''}
           ${s.hours ? `<p class="regio-shop-hours">🕐 ${esc(s.hours)}</p>` : ''}
           ${s.googleRating ? `<p class="regio-shop-rating">⭐ ${s.googleRating.toFixed(1)}${s.googleReviews ? ` (${s.googleReviews})` : ''}</p>` : ''}
-        </div>
-      </article>`).join('');
+        </div>`;
+      return hasWinkelPage(s)
+        ? `<a class="regio-shop regio-shop-link" href="/winkel/${shopSlug(s)}">${inner}</a>`
+        : `<article class="regio-shop">${inner}</article>`;
+    }).join('');
     return `
       <section class="regio-place" id="${slugify(place)}">
         <h2 class="regio-place-title">Boerderijwinkels in ${esc(place)} <span class="regio-place-count">${list.length}</span></h2>
@@ -320,5 +323,16 @@ function esc(s) {
 function slugify(s) {
   return 'plaats-' + String(s ?? '').toLowerCase()
     .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+function shopSlug(s) {
+  const base = String(s.name ?? '').toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  return `${base}-${s.id}`;
+}
+
+function hasWinkelPage(s) {
+  return s.type !== 'onderweg' && (s.desc || s.hours || s.googleRating);
 }

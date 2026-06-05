@@ -3061,6 +3061,29 @@
   .regio-more-blog a { color: var(--green-mid); font-weight: 600; }
   .regio-more-blog a:hover { color: var(--green-dark); }
 
+  /* Klikbare winkelkaart (link naar /winkel/) */
+  a.regio-shop-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    border-radius: var(--r-lg);
+    transition: background 0.15s, box-shadow 0.15s;
+  }
+  a.regio-shop-link:hover {
+    background: var(--green-bg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+  a.regio-shop-link:hover .regio-shop-name { color: var(--green-mid); }
+  a.regio-shop-link::after {
+    content: '→';
+    margin-left: auto;
+    padding: 0 4px;
+    color: var(--green-light);
+    font-size: var(--t-sm);
+    align-self: center;
+    flex-shrink: 0;
+  }
+
   /* Individuele winkelpagina */
   .winkel-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--r-xl); overflow: hidden; margin-bottom: 32px; }
   .winkel-header { display: flex; align-items: center; gap: 18px; padding: 28px 28px 20px; background: linear-gradient(135deg, var(--green-bg) 0%, #deecc6 100%); }
