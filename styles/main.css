@@ -3351,16 +3351,25 @@
     .btn-install { display: none; }
   }
 
-  /* Mobiel: bottom sheet layout */
+  /* Mobiel: basis (altijd) */
   @media (max-width: 720px) {
+    .toolbar-inner { flex-wrap: wrap; padding-block: 8px; gap: 8px; }
+    .filter-chips  { order: 3; width: 100%; padding-bottom: 4px; overflow-x: auto; scrollbar-width: none; }
+    .filter-chips::-webkit-scrollbar { display: none; }
+    .toolbar-right { order: 2; margin-left: auto; flex-shrink: 0; max-width: calc(100vw - var(--pad) * 2); }
+    .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+    .footer-cols  { gap: 24px; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+  }
 
-    /* Kaart vult het hele scherm */
-    .content-wrap {
+  /* Mobiel: bottom sheet layout — alleen actief na locatiekeuze */
+  @media (max-width: 720px) {
+    body.map-active .content-wrap {
       display: block;
       position: relative;
     }
 
-    .map-section {
+    body.map-active .map-section {
       position: fixed;
       top: var(--header-h);
       left: 0; right: 0;
@@ -3370,8 +3379,7 @@
       z-index: 10;
     }
 
-    /* Toolbar zweeft boven de kaart */
-    .toolbar {
+    body.map-active .toolbar {
       position: fixed;
       top: var(--header-h);
       left: 0; right: 0;
@@ -3382,13 +3390,8 @@
       border-bottom: 1px solid var(--border);
       box-shadow: 0 2px 8px rgba(0,0,0,.08);
     }
-    .toolbar-inner { flex-wrap: wrap; padding-block: 8px; gap: 8px; }
-    .filter-chips  { order: 3; width: 100%; padding-bottom: 4px; overflow-x: auto; scrollbar-width: none; }
-    .filter-chips::-webkit-scrollbar { display: none; }
-    .toolbar-right { order: 2; margin-left: auto; flex-shrink: 0; max-width: calc(100vw - var(--pad) * 2); }
 
-    /* Bottom sheet */
-    .list-section {
+    body.map-active .list-section {
       position: fixed;
       left: 0; right: 0; bottom: 0;
       z-index: 30;
@@ -3405,14 +3408,14 @@
       touch-action: none;
     }
 
-    .list-section.sheet-half   { transform: translateY(40%); }
-    .list-section.sheet-open   { transform: translateY(0); }
-    .list-section.sheet-peek   { transform: translateY(calc(100% - 72px - env(safe-area-inset-bottom, 0px))); }
-    .list-section.sheet-dragging { transition: none; }
+    body.map-active .list-section.sheet-half     { transform: translateY(40%); }
+    body.map-active .list-section.sheet-open     { transform: translateY(0); }
+    body.map-active .list-section.sheet-peek     { transform: translateY(calc(100% - 72px - env(safe-area-inset-bottom, 0px))); }
+    body.map-active .list-section.sheet-dragging { transition: none; }
 
     /* Sleepgreep */
     .sheet-handle {
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
       gap: 6px;
@@ -3423,19 +3426,11 @@
       border-radius: 20px 20px 0 0;
       flex-shrink: 0;
     }
-    .sheet-handle-bar {
-      width: 40px; height: 4px;
-      background: var(--border-md);
-      border-radius: 2px;
-    }
-    .sheet-handle-label {
-      font-size: var(--t-xs);
-      color: var(--text-light);
-      font-weight: 600;
-      letter-spacing: .02em;
-    }
+    body.map-active .sheet-handle { display: flex; }
+    .sheet-handle-bar { width: 40px; height: 4px; background: var(--border-md); border-radius: 2px; }
+    .sheet-handle-label { font-size: var(--t-xs); color: var(--text-light); font-weight: 600; letter-spacing: .02em; }
 
-    /* Scrollbaar gedeelte in het sheet */
+    /* Scrollbaar deel */
     .sheet-scroll {
       overflow-y: auto;
       overflow-x: hidden;
@@ -3446,7 +3441,7 @@
 
     .list-header { border-radius: 0; border-top: 1px solid var(--border); }
 
-    /* Zwevende "X winkels"-knop op de kaart */
+    /* FAB: "X winkels ↑" knop */
     .sheet-fab {
       display: none;
       position: fixed;
@@ -3465,14 +3460,9 @@
       box-shadow: 0 4px 16px rgba(0,0,0,.25);
       white-space: nowrap;
     }
-    .sheet-fab[hidden] { display: none !important; }
-    .sheet-fab:not([hidden]) { display: flex; }
+    body.map-active .sheet-fab:not([hidden]) { display: flex; }
     .sheet-fab-icon { font-size: 1rem; }
     .sheet-fab-arrow { font-size: 1rem; opacity: .7; }
-
-    .footer-inner { grid-template-columns: 1fr; gap: 28px; }
-    .footer-cols  { gap: 24px; }
-    .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
   }
 
   @media (max-width: 480px) {

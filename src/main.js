@@ -78,6 +78,8 @@ function _hideLanding() {
   document.getElementById('voordelenBanner')?.setAttribute('hidden', '');
   document.getElementById('maandHomeBanner')?.setAttribute('hidden', '');
   document.getElementById('popularRoutesBanner')?.setAttribute('hidden', '');
+  // Activeer bottom-sheet layout op mobiel
+  document.body.classList.add('map-active');
 }
 
 document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
