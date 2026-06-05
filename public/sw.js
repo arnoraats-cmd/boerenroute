@@ -1,8 +1,9 @@
 /* Service Worker — Boerenroute.nl */
-const CACHE   = 'boerenroute-v4';
+const CACHE   = 'boerenroute-v5';
 const OFFLINE = [
   '/',
   '/styles/main.css',
+  '/public/images/hero.jpg',
   '/src/main.js',
   '/src/shops.js',
   '/src/map.js',
@@ -15,6 +16,7 @@ const OFFLINE = [
   '/src/stamps.js',
   '/src/stempelkaart.js',
   '/src/blog.js',
+  '/src/bottomsheet.js',
   '/src/data/verifiedShops.json',
   '/src/data/routes.json',
   '/src/data/blog.json',
