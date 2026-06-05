@@ -77,8 +77,11 @@ export function setUserLocation(lat, lng) {
   sortBy  = 'afstand';
   const sel = $('sortSelect');
   if (sel) sel.value = 'afstand';
-  // Activeer bottom-sheet layout op mobiel (altijd, ook bij terugkeer)
   document.body.classList.add('map-active');
+  // Pas kaart-layout direct toe via JS (werkt altijd, ook bij terugkeer)
+  import('./bottomsheet.js').then(({ activateMobileLayout }) => {
+    activateMobileLayout();
+  });
   _render();
 }
 
