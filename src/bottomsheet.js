@@ -1,6 +1,59 @@
-/* Bottom sheet voor mobiel — 2 standen: half (standaard) en open */
+/* Bottom sheet voor mobiel — layout volledig via JS, geen CSS-cascade problemen */
+
+const MOBILE_W = 900;
+
+function isMobile() { return window.innerWidth <= MOBILE_W; }
+
+/* Pas de kaart-layout direct toe via inline styles (hoogste prioriteit) */
+function applyLayout(headerH, toolbarH) {
+  const map     = document.querySelector('.map-section');
+  const list    = document.querySelector('.list-section');
+  const wrap    = document.querySelector('.content-wrap');
+  const toolbar = document.querySelector('.toolbar');
+
+  if (!map || !list) return;
+
+  if (isMobile() && document.body.classList.contains('map-active')) {
+    const top = headerH + toolbarH;
+    // Content-wrap: geen grid meer
+    if (wrap) { wrap.style.display = 'block'; wrap.style.position = 'relative'; }
+    // Kaart: fullscreen
+    map.style.cssText = `
+      position: fixed !important;
+      top: ${top}px !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: 100% !important;
+      height: auto !important;
+      max-height: none !important;
+      z-index: 10;
+    `;
+    // Toolbar: vast bovenaan
+    if (toolbar) {
+      toolbar.style.position = 'fixed';
+      toolbar.style.top = `${headerH}px`;
+      toolbar.style.left = '0';
+      toolbar.style.right = '0';
+      toolbar.style.zIndex = '20';
+    }
+  } else {
+    // Herstel desktop layout
+    if (wrap)    { wrap.style.display = ''; wrap.style.position = ''; }
+    if (map)     map.style.cssText = '';
+    if (toolbar) toolbar.style.cssText = '';
+    if (list)    list.style.transform = '';
+  }
+}
+
+/* Lees header-hoogte uit CSS-variabele */
+function getHeaderH() {
+  const v = getComputedStyle(document.documentElement).getPropertyValue('--header-h').trim();
+  return parseInt(v) || 106;
+}
+
 export function initBottomSheet() {
-  if (window.innerWidth > 900) return;
+  if (!isMobile()) return;
 
   const sheet   = document.querySelector('.list-section');
   const toolbar = document.querySelector('.toolbar');
@@ -9,15 +62,13 @@ export function initBottomSheet() {
   /* ── Sleepgreep injecteren ───────────────────────────────────── */
   const handle = document.createElement('div');
   handle.className = 'sheet-handle';
-  handle.setAttribute('aria-label', 'Sleep omhoog voor de volledige winkellijst');
   handle.innerHTML = `
     <div class="sheet-handle-bar"></div>
     <div class="sheet-handle-row">
-      <span class="sheet-handle-label" id="sheetLabel">Winkels</span>
-      <button class="sheet-map-btn" id="sheetMapBtn" aria-label="Terug naar kaart">← Kaart</button>
+      <span class="sheet-handle-label">Winkels</span>
+      <button class="sheet-map-btn" id="sheetMapBtn">← Kaart</button>
     </div>`;
 
-  /* Bestaande inhoud in scrollbare wrapper */
   const scroll = document.createElement('div');
   scroll.className = 'sheet-scroll';
   while (sheet.firstChild) scroll.appendChild(sheet.firstChild);
@@ -31,13 +82,12 @@ export function initBottomSheet() {
     return toolbar ? toolbar.getBoundingClientRect().height : 0;
   }
 
-  function applyMapTop() {
-    const headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 106;
-    const tbH     = toolbarH();
-    const mapEl   = document.querySelector('.map-section');
-    if (mapEl) mapEl.style.top = `${headerH + tbH}px`;
-    if (toolbar) toolbar.style.top = `${headerH}px`;
+  function refreshLayout() {
+    applyLayout(getHeaderH(), toolbarH());
   }
+
+  /* Exporteer refreshLayout zodat shops.js het kan aanroepen */
+  window.__refreshMobileLayout = refreshLayout;
 
   function setState(s, animate = true) {
     state = s;
@@ -45,78 +95,135 @@ export function initBottomSheet() {
     sheet.classList.remove('sheet-half', 'sheet-open');
     sheet.classList.add('sheet-' + s);
     if (!animate) {
-      sheet.getBoundingClientRect(); // force reflow
+      sheet.getBoundingClientRect();
       sheet.classList.remove('sheet-no-transition');
     }
-    // Toon/verberg "← Kaart" knop
     const mapBtn = document.getElementById('sheetMapBtn');
     if (mapBtn) mapBtn.style.display = s === 'open' ? 'inline-flex' : 'none';
-
     if (s === 'half') scroll.scrollTop = 0;
-    // Leaflet hertekenen na animatie
     setTimeout(() => window.dispatchEvent(new CustomEvent('boerenroute:relayout')), 360);
   }
 
-  setState('half', false);
-  requestAnimationFrame(() => applyMapTop());
+  /* Stel list-section positie in via inline style */
+  function positionSheet() {
+    const h = window.innerHeight;
+    if (state === 'half') {
+      sheet.style.cssText = `
+        position: fixed !important;
+        left: 0; right: 0; bottom: 0;
+        z-index: 30;
+        height: ${Math.round(h * 0.52)}px;
+        border-radius: 20px 20px 0 0;
+        background: white;
+        box-shadow: 0 -4px 24px rgba(0,0,0,.15);
+        overflow: hidden;
+        transition: height .36s cubic-bezier(.32,.72,0,1);
+      `;
+    } else {
+      sheet.style.cssText = `
+        position: fixed !important;
+        left: 0; right: 0; bottom: 0;
+        z-index: 30;
+        height: calc(100dvh - ${getHeaderH()}px);
+        border-radius: 20px 20px 0 0;
+        background: white;
+        box-shadow: 0 -4px 24px rgba(0,0,0,.15);
+        overflow: hidden;
+        transition: height .36s cubic-bezier(.32,.72,0,1);
+      `;
+    }
+  }
+
+  /* Overschrijf setState om ook positionSheet aan te roepen */
+  const _origSetState = setState;
+
+  /* ── Initialiseer ────────────────────────────────────────────── */
+  refreshLayout();
+  positionSheet();
 
   /* ── Tik op greep ────────────────────────────────────────────── */
   handle.addEventListener('click', e => {
-    if (e.target.id === 'sheetMapBtn') return; // knop heeft eigen handler
-    setState(state === 'half' ? 'open' : 'half');
+    if (e.target.id === 'sheetMapBtn') return;
+    state = state === 'half' ? 'open' : 'half';
+    positionSheet();
+    const mapBtn = document.getElementById('sheetMapBtn');
+    if (mapBtn) mapBtn.style.display = state === 'open' ? 'inline-flex' : 'none';
+    if (state === 'half') scroll.scrollTop = 0;
+    setTimeout(() => window.dispatchEvent(new CustomEvent('boerenroute:relayout')), 380);
   });
 
-  document.getElementById('sheetMapBtn')?.addEventListener('click', () => setState('half'));
+  document.getElementById('sheetMapBtn')?.addEventListener('click', () => {
+    state = 'half';
+    positionSheet();
+    document.getElementById('sheetMapBtn').style.display = 'none';
+    scroll.scrollTop = 0;
+  });
 
   /* ── Sleep ───────────────────────────────────────────────────── */
-  let startY = 0, startT = 0, dragging = false;
-
-  function getTranslateY() {
-    return new DOMMatrixReadOnly(getComputedStyle(sheet).transform).m42;
-  }
+  let startY = 0, startH = 0, dragging = false;
 
   handle.addEventListener('pointerdown', e => {
     if (e.pointerType === 'mouse' && e.button !== 0) return;
     dragging = true;
     startY = e.clientY;
-    startT = getTranslateY();
-    sheet.classList.add('sheet-no-transition');
+    startH = sheet.getBoundingClientRect().height;
+    sheet.style.transition = 'none';
     handle.setPointerCapture(e.pointerId);
   });
 
   handle.addEventListener('pointermove', e => {
     if (!dragging) return;
-    const dy = e.clientY - startY;
-    const t  = Math.max(0, startT + dy);
-    sheet.style.transform = `translateY(${t}px)`;
+    const dy = startY - e.clientY; // omhoog = positief
+    const newH = Math.max(80, Math.min(window.innerHeight - getHeaderH(), startH + dy));
+    sheet.style.height = `${newH}px`;
   });
 
   handle.addEventListener('pointerup', e => {
     if (!dragging) return;
     dragging = false;
-    sheet.classList.remove('sheet-no-transition');
-    sheet.style.transform = '';
-    const dy = e.clientY - startY;
-    // Swipe omlaag > 60px → half; omhoog > 60px → open; anders behoud staat
-    if (dy > 60)       setState('half');
-    else if (dy < -60) setState('open');
-    else               setState(state);
+    const dy = startY - e.clientY;
+    if (dy > 60)       state = 'open';
+    else if (dy < -60) state = 'half';
+    positionSheet();
+    const mapBtn = document.getElementById('sheetMapBtn');
+    if (mapBtn) mapBtn.style.display = state === 'open' ? 'inline-flex' : 'none';
+    if (state === 'half') scroll.scrollTop = 0;
+    setTimeout(() => window.dispatchEvent(new CustomEvent('boerenroute:relayout')), 380);
   });
 
   /* ── Tik op kaart → terug naar half ─────────────────────────── */
   document.querySelector('.map-section')?.addEventListener('click', e => {
     if (e.target.closest('.leaflet-control, .br-popup, .leaflet-marker-icon')) return;
-    if (state === 'open') setState('half');
+    if (state === 'open') {
+      state = 'half';
+      positionSheet();
+      document.getElementById('sheetMapBtn')?.style.setProperty('display','none');
+      scroll.scrollTop = 0;
+    }
   });
 
-  /* ── Resize / rotate ─────────────────────────────────────────── */
+  /* ── Resize ──────────────────────────────────────────────────── */
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 900) {
-      sheet.style.transform = '';
-      sheet.classList.remove('sheet-half', 'sheet-open', 'sheet-no-transition');
+    if (!isMobile()) {
+      const map  = document.querySelector('.map-section');
+      const wrap = document.querySelector('.content-wrap');
+      if (map)  map.style.cssText  = '';
+      if (wrap) wrap.style.cssText = '';
+      sheet.style.cssText = '';
+      if (toolbar) toolbar.style.cssText = '';
       return;
     }
-    applyMapTop();
-    setState(state, false);
+    refreshLayout();
+    positionSheet();
   });
+}
+
+/* Aanroepbaar vanuit shops.js nadat map-active gezet is */
+export function activateMobileLayout() {
+  if (!isMobile()) return;
+  const headerH = getHeaderH();
+  const toolbar = document.querySelector('.toolbar');
+  const tbH     = toolbar ? toolbar.getBoundingClientRect().height : 56;
+  applyLayout(headerH, tbH);
+  if (window.__refreshMobileLayout) window.__refreshMobileLayout();
 }
