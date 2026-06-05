@@ -17,6 +17,8 @@
   const all = document.querySelectorAll('*');
   const wide = [];
   all.forEach(el => {
+    // Leaflet-kaartonderdelen vallen altijd buiten het scherm (tiles, markers) — geen echte fout
+    if (el.closest('.leaflet-container, .leaflet-pane, .leaflet-map-pane')) return;
     const r = el.getBoundingClientRect();
     if (r.right > W + 2) { // +2px tolerantie voor afrondingsfouten
       wide.push({ el, overshoot: Math.round(r.right - W), tag: el.tagName, cls: el.className?.toString().slice(0,60) });

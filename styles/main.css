@@ -2214,7 +2214,7 @@
   }
 
   .leaflet-control-attribution {
-    font-size: 10px !important;
+    font-size: 12px !important;
     background: rgba(255,255,255,.75) !important;
     backdrop-filter: blur(4px);
   }
@@ -3302,11 +3302,16 @@
 
   /* Mobiel: voorkom dat iOS Safari inzoomt zodra je een veld aantikt
      (gebeurt bij invoer < 16px). Geldt voor alle formuliervelden. */
-  @media (max-width: 640px) {
+  /* iOS zoomt in op invoervelden met font-size < 16px — fix voor alle touch-schermen */
+  @media (hover: none) {
     input, select, textarea,
     .form-input, .hero-search-input, .search-input, .sort-select,
     .diploma-name-input, .sk-backup-code, .bood-input {
-      font-size: 16px;
+      font-size: 16px !important;
+    }
+    /* Knoppen: minimaal 44px hoog voor comfortabel tikken */
+    button, .btn, .nav-btn, .chip, .tip-btn, .route-nav-btn {
+      min-height: 44px;
     }
   }
 
