@@ -37,10 +37,11 @@ export function initBottomSheet() {
   function setToolbarOffset() {
     const h = toolbarH();
     sheet.style.setProperty('--tb-h', h + 'px');
-    // Pas ook de kaart aan zodat die onder de toolbar begint
-    const map = document.querySelector('.map-section');
-    if (map) map.style.top = `calc(var(--header-h) + ${h}px)`;
+    const mapEl = document.querySelector('.map-section');
+    if (mapEl) mapEl.style.top = `calc(var(--header-h) + ${h}px)`;
     if (toolbar) toolbar.style.top = 'var(--header-h)';
+    // Vertel Leaflet dat de container-grootte veranderd is
+    window.dispatchEvent(new Event('resize'));
   }
 
   function setState(s, animate = true) {
@@ -48,7 +49,7 @@ export function initBottomSheet() {
     sheet.classList.toggle('sheet-dragging', false);
     sheet.classList.remove('sheet-peek', 'sheet-half', 'sheet-open');
 
-    if (!animate) sheet.classList.add('sheet-dragging'); // skip transition
+    if (!animate) sheet.classList.add('sheet-dragging');
     sheet.classList.add('sheet-' + s);
 
     const label = document.getElementById('sheetLabel');
@@ -57,8 +58,10 @@ export function initBottomSheet() {
       if (s === 'half') label.textContent = 'Winkels';
       if (s === 'open') label.textContent = 'Winkels';
     }
-    // scroll bij open terug naar top
     if (s === 'peek') scroll.scrollTop = 0;
+
+    // Leaflet hertekenen na animatie
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 380);
   }
 
   /* Start in half-stand zodat gebruiker meteen winkels ziet */

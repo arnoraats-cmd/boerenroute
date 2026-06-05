@@ -3371,7 +3371,7 @@
 
     body.map-active .map-section {
       position: fixed;
-      top: var(--header-h);
+      top: calc(var(--header-h) + var(--toolbar-h, 56px));
       left: 0; right: 0;
       bottom: 0;
       height: auto;
