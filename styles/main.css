@@ -2999,7 +2999,32 @@
   .regio-intro { font-size: var(--t-base); color: var(--text-mid); line-height: 1.7; margin-bottom: 28px; }
   .regio-intro a { color: var(--green-mid); }
 
-  .regio-shops { display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; }
+  .regio-shops { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+
+  /* Spring-naar-plaats navigatie */
+  .regio-placenav { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; margin: 0 0 30px; }
+  .regio-placenav-label { font-size: var(--t-sm); font-weight: 600; color: var(--text-mid); margin-right: 4px; }
+  .regio-placenav a {
+    font-size: var(--t-xs); color: var(--green-dark); background: var(--green-bg);
+    padding: 4px 10px; border-radius: var(--r-full); text-decoration: none;
+    transition: background var(--tf);
+  }
+  .regio-placenav a:hover { background: color-mix(in srgb, var(--green-bg) 75%, var(--green-light)); }
+  .regio-placenav a span { color: var(--text-light); font-weight: 600; }
+
+  /* Gemeente-secties */
+  .regio-place { margin-bottom: 34px; scroll-margin-top: 80px; }
+  .regio-place-title {
+    font-family: var(--serif); font-size: var(--t-lg); font-weight: 700;
+    color: var(--green-dark); margin: 0 0 14px; padding-bottom: 8px;
+    border-bottom: 2px solid var(--green-bg);
+    display: flex; align-items: baseline; gap: 8px;
+  }
+  .regio-place-count {
+    font-family: var(--sans); font-size: var(--t-sm); font-weight: 600;
+    color: var(--white); background: var(--green-light);
+    padding: 1px 9px; border-radius: var(--r-full);
+  }
 
   .regio-shop {
     display: flex;

@@ -164,17 +164,42 @@ for (const [prov, shopList] of Object.entries(byProv)) {
       </section>`;
   })() : '';
 
-  const rows = shopList.map(s => `
-  <article class="regio-shop">
-    <span class="regio-emoji" aria-hidden="true">${s.emoji}</span>
-    <div class="regio-info">
-      <h2 class="regio-shop-name">${esc(s.name)}</h2>
-      <p class="regio-shop-type">${TYPE_LABEL[s.type] ?? s.type} · ${esc(s.address)}</p>
-      ${s.products?.length ? `<p class="regio-shop-products">${esc(s.products.slice(0,6).join(', '))}</p>` : ''}
-      ${s.hours ? `<p class="regio-shop-hours">🕐 ${esc(s.hours)}</p>` : ''}
-      ${s.googleRating ? `<p class="regio-shop-rating">⭐ ${s.googleRating.toFixed(1)}${s.googleReviews ? ` (${s.googleReviews})` : ''}</p>` : ''}
-    </div>
-  </article>`).join('');
+  /* Groepeer per gemeente (plaats) → lokale long-tail ("boerderijwinkel <plaats>")
+     + nette kop-hiërarchie (H1 provincie › H2 gemeente › H3 winkel) */
+  const byPlace = {};
+  for (const s of shopList) {
+    const p = (s._place || 'Overig').trim();
+    (byPlace[p] ||= []).push(s);
+  }
+  const placeGroups = Object.entries(byPlace)
+    .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], 'nl'));
+
+  const groupsHtml = placeGroups.map(([place, list]) => {
+    const cards = list.map(s => `
+      <article class="regio-shop">
+        <span class="regio-emoji" aria-hidden="true">${s.emoji}</span>
+        <div class="regio-info">
+          <h3 class="regio-shop-name">${esc(s.name)}</h3>
+          <p class="regio-shop-type">${TYPE_LABEL[s.type] ?? s.type} · ${esc(s.address)}</p>
+          ${s.products?.length ? `<p class="regio-shop-products">${esc(s.products.slice(0,6).join(', '))}</p>` : ''}
+          ${s.hours ? `<p class="regio-shop-hours">🕐 ${esc(s.hours)}</p>` : ''}
+          ${s.googleRating ? `<p class="regio-shop-rating">⭐ ${s.googleRating.toFixed(1)}${s.googleReviews ? ` (${s.googleReviews})` : ''}</p>` : ''}
+        </div>
+      </article>`).join('');
+    return `
+      <section class="regio-place" id="${slugify(place)}">
+        <h2 class="regio-place-title">Boerderijwinkels in ${esc(place)} <span class="regio-place-count">${list.length}</span></h2>
+        <div class="regio-shops">${cards}</div>
+      </section>`;
+  }).join('');
+
+  /* Snel-navigatie naar de gemeenten (interne ankerlinks) */
+  const navPlaces = placeGroups.filter(([, l]) => l.length >= 3);
+  const placeNav = navPlaces.length > 1
+    ? `<nav class="regio-placenav" aria-label="Spring naar plaats">
+        <span class="regio-placenav-label">Plaatsen:</span>${navPlaces
+        .map(([p, l]) => `<a href="#${slugify(p)}">${esc(p)} <span>${l.length}</span></a>`).join('')}</nav>`
+    : '';
 
   const html = `<!DOCTYPE html>
 <html lang="nl">
@@ -184,9 +209,15 @@ for (const [prov, shopList] of Object.entries(byProv)) {
   <title>Boerderijwinkels in ${prov} — Boerenroute.nl</title>
   <meta name="description" content="Ontdek ${count} boerderijwinkels, eierautomaten en versautomaten in ${prov}. Verse producten rechtstreeks van de boer.">
   <link rel="canonical" href="https://www.boerenroute.nl/regio/${slug}">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Boerderijwinkels in ${prov}">
   <meta property="og:description" content="${count} geverifieerde locaties in ${prov} op Boerenroute.nl">
   <meta property="og:url" content="https://www.boerenroute.nl/regio/${slug}">
+  <meta property="og:image" content="https://www.boerenroute.nl/public/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Boerderijwinkels in ${prov} — Boerenroute.nl">
+  <meta name="twitter:description" content="${count} geverifieerde locaties in ${prov}. Verse producten rechtstreeks van de boer.">
+  <meta name="twitter:image" content="https://www.boerenroute.nl/public/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles/main.css">
@@ -207,6 +238,16 @@ for (const [prov, shopList] of Object.entries(byProv)) {
         "geo": { "@type": "GeoCoordinates", "latitude": ${s.lat}, "longitude": ${s.lng} }
       }
     }`).join(',')}]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Boerenroute.nl", "item": "https://www.boerenroute.nl/" },
+      { "@type": "ListItem", "position": 2, "name": "Boerderijwinkels in ${prov}", "item": "https://www.boerenroute.nl/regio/${slug}" }
+    ]
   }
   </script>
 </head>
@@ -233,9 +274,8 @@ for (const [prov, shopList] of Object.entries(byProv)) {
         <a href="/#kaart">Bekijk ze op de kaart →</a>
       </p>
 
-      <div class="regio-shops">
-        ${rows}
-      </div>
+      ${placeNav}
+      ${groupsHtml}
 ${routeBlock}
       <div class="regio-cta">
         <a href="/" class="btn btn-green">🗺️ Bekijk alle locaties op de kaart</a>
@@ -275,4 +315,10 @@ console.log('\nKlaar.');
 
 function esc(s) {
   return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function slugify(s) {
+  return 'plaats-' + String(s ?? '').toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
