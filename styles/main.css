@@ -3351,31 +3351,100 @@
     .btn-install { display: none; }
   }
 
-  /* Mobiel: gestapeld */
+  /* Mobiel: bottom sheet layout */
   @media (max-width: 720px) {
-    .content-wrap { grid-template-columns: 1fr; }
+
+    /* Kaart vult het hele scherm */
+    .content-wrap {
+      display: block;
+      position: relative;
+    }
 
     .map-section {
-      position: relative;
-      top: auto;
-      height: 44vw;
-      min-height: 190px;
-      max-height: 320px;
-    }
-
-    .list-section {
+      position: fixed;
+      top: var(--header-h);
+      left: 0; right: 0;
+      bottom: 0;
+      height: auto;
       max-height: none;
-      border-left: none;
-      border-top: 1px solid var(--border);
-      overflow-y: visible;
+      z-index: 10;
     }
 
-    .toolbar-inner { flex-wrap: wrap; }
-    .filter-chips  { order: 3; width: 100%; padding-bottom: 6px; overflow-x: auto; scrollbar-width: none; }
+    /* Toolbar zweeft boven de kaart */
+    .toolbar {
+      position: fixed;
+      top: var(--header-h);
+      left: 0; right: 0;
+      z-index: 20;
+      height: auto;
+      overflow: hidden;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+    .toolbar-inner { flex-wrap: wrap; padding-block: 8px; gap: 8px; }
+    .filter-chips  { order: 3; width: 100%; padding-bottom: 4px; overflow-x: auto; scrollbar-width: none; }
     .filter-chips::-webkit-scrollbar { display: none; }
     .toolbar-right { order: 2; margin-left: auto; flex-shrink: 0; max-width: calc(100vw - var(--pad) * 2); }
-    .toolbar { height: auto; overflow: hidden; }
-    .toolbar-inner { padding-block: 8px; gap: 8px; }
+
+    /* Bottom sheet */
+    .list-section {
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      z-index: 30;
+      border-left: none;
+      border-top: none;
+      border-radius: 20px 20px 0 0;
+      background: var(--white);
+      box-shadow: 0 -4px 24px rgba(0,0,0,.13);
+      max-height: 92dvh;
+      overflow: hidden;
+      transform: translateY(calc(100% - 72px));
+      transition: transform .35s cubic-bezier(.32,.72,0,1);
+      will-change: transform;
+      touch-action: none;
+    }
+
+    .list-section.sheet-half   { transform: translateY(40%); }
+    .list-section.sheet-open   { transform: translateY(0); }
+    .list-section.sheet-peek   { transform: translateY(calc(100% - 72px)); }
+    .list-section.sheet-dragging { transition: none; }
+
+    /* Sleepgreep */
+    .sheet-handle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px 8px;
+      cursor: grab;
+      user-select: none;
+      background: var(--white);
+      border-radius: 20px 20px 0 0;
+      flex-shrink: 0;
+    }
+    .sheet-handle-bar {
+      width: 40px; height: 4px;
+      background: var(--border-md);
+      border-radius: 2px;
+    }
+    .sheet-handle-label {
+      font-size: var(--t-xs);
+      color: var(--text-light);
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+
+    /* Scrollbaar gedeelte in het sheet */
+    .sheet-scroll {
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      height: calc(92dvh - 72px);
+      overscroll-behavior: contain;
+    }
+
+    .list-header { border-radius: 0; border-top: 1px solid var(--border); }
 
     .footer-inner { grid-template-columns: 1fr; gap: 28px; }
     .footer-cols  { gap: 24px; }

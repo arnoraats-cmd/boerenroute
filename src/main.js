@@ -9,10 +9,12 @@ import { initBoodschappenlijst }             from './boodschappenlijst.js';
 import { initStempelkaart, renderStempelkaart } from './stempelkaart.js';
 import { getCount }                          from './stamps.js';
 import { renderBlog }                        from './blog.js';
+import { initBottomSheet }                   from './bottomsheet.js';
 
 /* ── Kaart + modals direct initialiseren ─────────────────── */
 initMap({ lat: DEFAULT.lat, lng: DEFAULT.lng });
 initModals();
+initBottomSheet();
 
 /* ── Stempelkaart-badge in nav bijwerken ─────────────────── */
 function _updateStampBadge() {
