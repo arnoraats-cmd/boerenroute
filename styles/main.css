@@ -1660,6 +1660,9 @@
     font-size: var(--t-sm);
     color: rgba(255,255,255,.58);
     transition: color var(--tf);
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
   }
 
   .footer-col a:hover { color: var(--white); }
@@ -2902,7 +2905,7 @@
     gap: 2px;
   }
   .stat-item strong { font-size: var(--t-xl); font-weight: 700; color: var(--green-mid); }
-  .stat-item span   { font-size: clamp(12px, 1.6vw, 13px); color: var(--text-light); }
+  .stat-item span   { font-size: 12px !important; color: var(--text-light); }
 
   /* Adverteren */
   .adverteer-grid {
@@ -3359,7 +3362,8 @@
     .toolbar-inner { flex-wrap: wrap; padding-block: 8px; gap: 8px; }
     .filter-chips  { order: 3; width: 100%; padding-bottom: 4px; overflow-x: auto; scrollbar-width: none; }
     .filter-chips::-webkit-scrollbar { display: none; }
-    .toolbar-right { order: 2; margin-left: auto; flex-shrink: 0; max-width: calc(100vw - var(--pad) * 2); }
+    .toolbar-right { order: 2; margin-left: auto; flex-shrink: 0; max-width: calc(100vw - var(--pad) * 2); overflow: hidden; }
+    .sort-select { max-width: 140px; }
     .footer-inner { grid-template-columns: 1fr; gap: 28px; }
     .footer-cols  { gap: 24px; }
     .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }

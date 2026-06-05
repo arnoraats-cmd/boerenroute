@@ -64,6 +64,18 @@ export function initBottomSheet() {
     setTimeout(() => window.dispatchEvent(new Event('resize')), 380);
   }
 
+  /* ── FAB declaraties (vroeg, zodat updateFab ze kan gebruiken) ── */
+  const fab = document.getElementById('sheetFab');
+  const fabCount = document.getElementById('sheetFabCount');
+
+  function updateFab() {
+    if (!fab) return;
+    if (state === 'peek') fab.removeAttribute('hidden');
+    else fab.setAttribute('hidden', '');
+  }
+
+  fab?.addEventListener('click', () => { setState('half'); updateFab(); });
+
   /* Start in half-stand zodat gebruiker meteen winkels ziet */
   setState('half', false);
   setToolbarOffset();
@@ -122,19 +134,6 @@ export function initBottomSheet() {
     else if (state === 'half') setState('open');
     else setState('peek');
   });
-
-  /* ── FAB: zwevende knop op de kaart ─────────────────────────── */
-  const fab = document.getElementById('sheetFab');
-  const fabCount = document.getElementById('sheetFabCount');
-
-  function updateFab() {
-    if (!fab) return;
-    // Toon FAB alleen in peek-stand
-    if (state === 'peek') fab.removeAttribute('hidden');
-    else fab.setAttribute('hidden', '');
-  }
-
-  fab?.addEventListener('click', () => setState('half'));
 
   // Houd shopcount bij via de bestaande teller in de DOM
   const observer = new MutationObserver(() => {
