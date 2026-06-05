@@ -2981,6 +2981,53 @@
   .regio-link:hover { border-color: var(--green-mid); color: var(--green-mid); background: var(--green-bg); }
 
   /* Contact */
+  /* Dankjewel-blok */
+  .over-dankjewel {
+    margin: 0 0 44px;
+    padding: 28px 32px;
+    background: linear-gradient(135deg, #fffbf0 0%, var(--amber-bg) 100%);
+    border: 1px solid #f0d9a0;
+    border-radius: var(--r-xl);
+  }
+  .over-dankjewel h2 {
+    font-family: var(--serif);
+    font-size: var(--t-xl);
+    font-weight: 700;
+    color: var(--amber);
+    margin-bottom: 10px;
+  }
+  .over-dankjewel p {
+    font-size: var(--t-sm);
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  .dankjewel-lijst {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .dankjewel-lijst li {
+    font-size: var(--t-sm);
+    color: var(--text);
+    padding: 10px 14px;
+    background: rgba(255,255,255,.7);
+    border-radius: var(--r-md);
+    border-left: 3px solid var(--amber-light);
+  }
+  .dankjewel-naam {
+    font-weight: 700;
+    color: var(--green-dark);
+  }
+  .dankjewel-sub {
+    font-size: var(--t-xs) !important;
+    color: var(--text-light) !important;
+    margin: 0 !important;
+  }
+
   .over-contact { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
   .over-contact p { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.6; margin-bottom: 12px; }
 
