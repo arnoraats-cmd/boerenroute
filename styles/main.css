@@ -3426,23 +3426,24 @@
   /* Mobiel: bottom sheet layout — alleen actief na locatiekeuze */
   @media (max-width: 900px) {
     body.map-active .content-wrap {
-      display: block;
+      display: block !important;
       position: relative;
     }
 
     body.map-active .map-section {
-      position: fixed;
-      top: calc(var(--header-h) + var(--toolbar-h, 56px));
-      left: 0; right: 0;
-      bottom: 0;
-      height: auto;
-      max-height: none;
+      position: fixed !important;
+      top: var(--header-h) !important;
+      left: 0 !important; right: 0 !important;
+      bottom: 0 !important;
+      height: auto !important;
+      max-height: none !important;
+      width: 100% !important;
       z-index: 10;
     }
 
     body.map-active .toolbar {
-      position: fixed;
-      top: var(--header-h);
+      position: fixed !important;
+      top: var(--header-h) !important;
       left: 0; right: 0;
       z-index: 20;
       height: auto;
@@ -3453,7 +3454,7 @@
     }
 
     body.map-active .list-section {
-      position: fixed;
+      position: fixed !important;
       left: 0; right: 0; bottom: 0;
       z-index: 30;
       border-left: none;

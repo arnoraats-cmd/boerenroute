@@ -32,10 +32,11 @@ export function initBottomSheet() {
   }
 
   function applyMapTop() {
-    const h = toolbarH();
-    const mapEl = document.querySelector('.map-section');
-    if (mapEl) mapEl.style.top = `calc(var(--header-h) + ${h}px)`;
-    if (toolbar) toolbar.style.top = 'var(--header-h)';
+    const headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 106;
+    const tbH     = toolbarH();
+    const mapEl   = document.querySelector('.map-section');
+    if (mapEl) mapEl.style.top = `${headerH + tbH}px`;
+    if (toolbar) toolbar.style.top = `${headerH}px`;
   }
 
   function setState(s, animate = true) {
