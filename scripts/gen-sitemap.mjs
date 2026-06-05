@@ -70,5 +70,7 @@ ${urls.map(u => `  <url>
 </urlset>
 `;
 
+// Schrijf naar root (https://boerenroute.nl/sitemap.xml) én public/ (voor consistentie)
+writeFileSync(join(root, 'sitemap.xml'), xml, 'utf8');
 writeFileSync(join(root, 'public/sitemap.xml'), xml, 'utf8');
 console.log(`✓ sitemap.xml — ${urls.length} URLs (lastmod ${today})`);
