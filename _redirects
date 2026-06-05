@@ -2,11 +2,26 @@
 # Status 200 = rewrite (URL blijft schoon, inhoud komt van het doelbestand).
 # Eerste match wint, dus specifieke regels vóór wildcards.
 
-/robots.txt    /public/robots.txt          200
-/sitemap.xml   /public/sitemap.xml         200
+/robots.txt         /public/robots.txt              200
+# sitemap.xml staat nu in de root — geen rewrite nodig
 
-/blog          /public/blog/index.html     200
-/blog/         /public/blog/index.html     200
-/blog/*        /public/blog/:splat.html    200
+/blog               /public/blog/index.html         200
+/blog/              /public/blog/index.html         200
+/blog/*             /public/blog/:splat.html        200
 
-/regio/*       /public/regio/:splat.html   200
+/regio/*            /public/regio/:splat.html       200
+
+/gemeente           /public/gemeente/index.html     200
+/gemeente/          /public/gemeente/index.html     200
+/gemeente/*         /public/gemeente/:splat.html    200
+
+/winkel/*           /public/winkel/:splat.html      200
+
+/versautomaten      /public/versautomaten.html      200
+/eierautomaten      /public/eierautomaten.html      200
+/zelfpluktuinen     /public/zelfpluktuinen.html     200
+/melktap            /public/melktap.html            200
+/streekproducten    /public/streekproducten.html    200
+
+/aanmelden          /public/aanmelden/index.html    200
+/aanmelden/         /public/aanmelden/index.html    200
