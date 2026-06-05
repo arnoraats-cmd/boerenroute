@@ -31,6 +31,16 @@ if (existsSync(blogDir)) {
   }
 }
 
+// Gemeentepagina's
+const gemeenteDir = join(root, 'public/gemeente');
+if (existsSync(gemeenteDir)) {
+  for (const f of readdirSync(gemeenteDir)) {
+    if (!f.endsWith('.html') || f === 'index.html') continue;
+    add(`${SITE}/gemeente/${f.replace(/\.html$/, '')}`, '0.7', 'monthly');
+  }
+  add(`${SITE}/gemeente/`, '0.6', 'monthly');
+}
+
 // Regiopagina's
 const regioDir = join(root, 'public/regio');
 if (existsSync(regioDir)) {
