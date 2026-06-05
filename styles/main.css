@@ -1636,7 +1636,7 @@
 
   .footer-sponsor a:hover { color: rgba(255,255,255,.75); }
 
-  .footer-cols { display: flex; gap: 40px; }
+  .footer-cols { display: flex; gap: 32px; flex-wrap: wrap; }
 
   .footer-col h3 {
     font-family: var(--sans);
