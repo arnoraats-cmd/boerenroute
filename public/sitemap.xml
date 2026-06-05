@@ -67,6 +67,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.boerenroute.nl/blog/eierautomaat-in-de-buurt</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.boerenroute.nl/blog/flevoland</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -133,6 +139,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.boerenroute.nl/blog/verse-melk-kopen-bij-de-boer</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.boerenroute.nl/blog/waarom-kopen-bij-de-boer</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -140,6 +152,12 @@
   </url>
   <url>
     <loc>https://www.boerenroute.nl/blog/zeeland</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.boerenroute.nl/blog/zelfpluktuin-nederland</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
