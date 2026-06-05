@@ -3306,6 +3306,35 @@
     .content-wrap { grid-template-columns: 1fr 1fr; }  /* 50/50 */
   }
 
+  /* Mobiel (≤900px): kaart en lijst NOOIT naast elkaar — altijd gestapeld.
+     Voorkomt dat ze horizontaal buiten beeld lopen vóór locatiekeuze.
+     De bottom-sheet JS legt hier daarna de fixed-layout overheen. */
+  @media (max-width: 900px) {
+    .content-wrap {
+      display: block !important;
+      grid-template-columns: none !important;
+    }
+    .map-section,
+    .list-section {
+      grid-column: auto !important;
+      grid-row: auto !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    .map-section {
+      position: relative;
+      top: auto;
+      height: 50vh;
+      min-height: 280px;
+    }
+    .list-section {
+      position: relative;
+      max-height: none;
+      border-left: none;
+      border-top: 1px solid var(--border);
+    }
+  }
+
   /* Mobiel: voorkom dat iOS Safari inzoomt zodra je een veld aantikt
      (gebeurt bij invoer < 16px). Geldt voor alle formuliervelden. */
   /* Touch-schermen: iOS zoom-fix + 44px tap targets */
