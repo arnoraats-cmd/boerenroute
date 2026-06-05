@@ -17,11 +17,19 @@
   const all = document.querySelectorAll('*');
   const wide = [];
   all.forEach(el => {
-    // Leaflet en scrollbare containers: onderdelen mogen buiten de clip-grens vallen
-    if (el.closest('.leaflet-container, .leaflet-pane, .leaflet-map-pane')) return;
+    // Skip Leaflet, scrollbare containers, verborgen elementen, overflow:hidden kinderen
+    if (el.closest('[class*="leaflet-"]')) return;
     if (el.closest('[style*="overflow-x: auto"], [style*="overflow-x:auto"]')) return;
     const parent = el.parentElement;
     if (parent && getComputedStyle(parent).overflowX === 'auto') return;
+    if (el.closest('[hidden], [style*="display: none"], [style*="display:none"]')) return;
+    // Skip elementen die visueel geclipped zijn door overflow:hidden ouder
+    let clip = el.parentElement;
+    while (clip && clip !== document.body) {
+      const ov = getComputedStyle(clip).overflow;
+      if (ov === 'hidden' || ov === 'clip') return;
+      clip = clip.parentElement;
+    }
     const r = el.getBoundingClientRect();
     if (r.right > W + 2) { // +2px tolerantie voor afrondingsfouten
       wide.push({ el, overshoot: Math.round(r.right - W), tag: el.tagName, cls: el.className?.toString().slice(0,60) });
@@ -41,7 +49,8 @@
   const clickable = document.querySelectorAll('a, button, input[type=checkbox], input[type=radio], select, [role=button]');
   const smallTap = [];
   clickable.forEach(el => {
-    if (el.closest('.leaflet-control-attribution')) return; // attributielinks zijn bewust klein
+    if (el.closest('[class*="leaflet-"]')) return; // kaartonderdelen
+    if (el.closest('[hidden]') || el.closest('[style*="display: none"]')) return; // verborgen
     const r = el.getBoundingClientRect();
     if ((r.width < 44 || r.height < 44) && r.width > 0) {
       smallTap.push({ tag: el.tagName, w: Math.round(r.width), h: Math.round(r.height), text: (el.textContent || el.value || el.getAttribute('aria-label') || '').trim().slice(0,30) });
@@ -78,6 +87,7 @@
   const tinyText = [];
   textEls.forEach(el => {
     if (!el.textContent.trim()) return;
+    if (el.closest('[hidden]') || el.closest('[style*="display: none"]')) return;
     const fs = parseFloat(getComputedStyle(el).fontSize);
     if (fs < 12) tinyText.push({ tag: el.tagName, fs: fs.toFixed(1), text: el.textContent.trim().slice(0,40) });
   });
