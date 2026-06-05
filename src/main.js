@@ -133,9 +133,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 });
 
 /* ── Drijvende tip-knop (mobiel) ─────────────────────────── */
-document.getElementById('contactTipBtn')?.addEventListener('click', e => {
-  e.preventDefault();
-  import('./modals.js').then(({ openTipModal }) => openTipModal());
+['contactTipBtn', 'footerContactLink'].forEach(id => {
+  document.getElementById(id)?.addEventListener('click', e => {
+    e.preventDefault();
+    import('./modals.js').then(({ openTipModal }) => openTipModal());
+  });
 });
 
 document.getElementById('floatTipBtn')?.addEventListener('click', () => {
