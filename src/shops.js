@@ -74,9 +74,11 @@ export function initShops(shops) {
 export function setUserLocation(lat, lng) {
   userLat = lat;
   userLng = lng;
-  sortBy  = 'afstand'; // automatisch op afstand sorteren na locatie-keuze
+  sortBy  = 'afstand';
   const sel = $('sortSelect');
   if (sel) sel.value = 'afstand';
+  // Activeer bottom-sheet layout op mobiel (altijd, ook bij terugkeer)
+  document.body.classList.add('map-active');
   _render();
 }
 

@@ -771,7 +771,7 @@
     text-overflow: ellipsis;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 900px) {
     .maandhome-card { grid-template-columns: 1fr; }
     .maandhome-right { border-top: 1px solid var(--border); }
   }
@@ -2290,7 +2290,7 @@
   .float-tip:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(186,117,23,.55); }
   .float-tip:active { transform: scale(.95); }
 
-  @media (max-width: 720px) { .float-tip { display: flex; } }
+  @media (max-width: 900px) { .float-tip { display: flex; } }
 
   .ios-hint {
     position: fixed;
@@ -3356,13 +3356,16 @@
     .tip-btn span { display: none; }
     .tip-btn { padding: 8px 12px; }
     .btn-install { display: none; }
-    /* Verberg uitgebreide nav-items op mobiel */
+  }
+
+  /* Kleine telefoons (< 480px): verberg extra nav-knoppen, toon Meer▾ */
+  @media (max-width: 480px) {
     .nav-btn-desktop { display: none !important; }
   }
 
   /* Meer-dropdown */
   .nav-btn-meer { display: none; }
-  @media (max-width: 900px) { .nav-btn-meer { display: inline-flex; } }
+  @media (max-width: 480px) { .nav-btn-meer { display: inline-flex; } }
 
   .nav-meer-panel {
     position: fixed;
@@ -3393,7 +3396,7 @@
   .nav-meer-item:hover { background: var(--green-bg); color: var(--green-dark); }
 
   /* Mobiel: basis (altijd) */
-  @media (max-width: 720px) {
+  @media (max-width: 900px) {
     .toolbar-inner { flex-wrap: wrap; padding-block: 8px; gap: 8px; }
     .filter-chips  {
       order: 3; width: 100%; padding-bottom: 4px;
@@ -3421,7 +3424,7 @@
   }
 
   /* Mobiel: bottom sheet layout — alleen actief na locatiekeuze */
-  @media (max-width: 720px) {
+  @media (max-width: 900px) {
     body.map-active .content-wrap {
       display: block;
       position: relative;

@@ -1,6 +1,6 @@
 /* Bottom sheet voor mobiel — 2 standen: half (standaard) en open */
 export function initBottomSheet() {
-  if (window.innerWidth > 720) return;
+  if (window.innerWidth > 900) return;
 
   const sheet   = document.querySelector('.list-section');
   const toolbar = document.querySelector('.toolbar');
@@ -110,7 +110,7 @@ export function initBottomSheet() {
 
   /* ── Resize / rotate ─────────────────────────────────────────── */
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 720) {
+    if (window.innerWidth > 900) {
       sheet.style.transform = '';
       sheet.classList.remove('sheet-half', 'sheet-open', 'sheet-no-transition');
       return;
