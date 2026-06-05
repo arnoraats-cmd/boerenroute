@@ -175,6 +175,7 @@
     align-items: center;
     gap: 9px;
     flex-shrink: 0;
+    min-height: 44px;
   }
 
   .logo-icon {
@@ -2210,7 +2211,9 @@
 
   .leaflet-control-zoom-in,
   .leaflet-control-zoom-out {
-    line-height: 26px !important;
+    width: 44px !important;
+    height: 44px !important;
+    line-height: 44px !important;
   }
 
   .leaflet-control-attribution {
@@ -2899,7 +2902,7 @@
     gap: 2px;
   }
   .stat-item strong { font-size: var(--t-xl); font-weight: 700; color: var(--green-mid); }
-  .stat-item span   { font-size: max(var(--t-xs), 12px); color: var(--text-light); }
+  .stat-item span   { font-size: clamp(12px, 1.6vw, 13px); color: var(--text-light); }
 
   /* Adverteren */
   .adverteer-grid {

@@ -16,6 +16,7 @@ initMap({ lat: DEFAULT.lat, lng: DEFAULT.lng });
 initModals();
 initBottomSheet();
 
+
 /* ── Stempelkaart-badge in nav bijwerken ─────────────────── */
 function _updateStampBadge() {
   const badge = document.getElementById('stampBadge');
