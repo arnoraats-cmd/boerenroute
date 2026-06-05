@@ -3383,7 +3383,7 @@
     .header-nav::-webkit-scrollbar { display: none; }
 
     .tip-btn span { display: none; }
-    .tip-btn { padding: 8px 12px; }
+    .tip-btn { padding: 8px 12px; margin-left: auto; }
     .btn-install { display: none; }
   }
 
