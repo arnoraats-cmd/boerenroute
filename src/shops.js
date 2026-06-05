@@ -299,8 +299,7 @@ function _cardHTML(shop) {
     : '';
 
   return `
-<li class="shop-card" data-id="${shop.id}" role="button" tabindex="0"
-    aria-label="${_esc(shop.name)}, ${_esc(shop.address)}">
+<li class="shop-card" data-id="${shop.id}" tabindex="0">
   <button class="shop-fav${isFav ? ' is-fav' : ''}" data-id="${shop.id}"
     aria-pressed="${isFav}"
     aria-label="${isFav ? 'Verwijder uit favorieten' : 'Voeg toe aan favorieten'}"

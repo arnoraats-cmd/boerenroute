@@ -104,8 +104,9 @@ export function initBottomSheet() {
     setTimeout(() => window.dispatchEvent(new CustomEvent('boerenroute:relayout')), 360);
   }
 
-  /* Stel list-section positie in via inline style */
+  /* Stel list-section positie in via inline style — alleen als map actief is */
   function positionSheet() {
+    if (!document.body.classList.contains('map-active')) return;
     const h = window.innerHeight;
     if (state === 'half') {
       sheet.style.cssText = `
@@ -134,12 +135,13 @@ export function initBottomSheet() {
     }
   }
 
-  /* Overschrijf setState om ook positionSheet aan te roepen */
-  const _origSetState = setState;
-
   /* ── Initialiseer ────────────────────────────────────────────── */
-  refreshLayout();
-  positionSheet();
+  /* Géén positionSheet() bij laden: de lijst blijft in normale flow tot
+     er een locatie gekozen is (map-active). Voorkomt layout shift (CLS). */
+  if (document.body.classList.contains('map-active')) {
+    refreshLayout();
+    positionSheet();
+  }
 
   /* ── Tik op greep ────────────────────────────────────────────── */
   handle.addEventListener('click', e => {
@@ -213,9 +215,16 @@ export function initBottomSheet() {
       if (toolbar) toolbar.style.cssText = '';
       return;
     }
+    if (!document.body.classList.contains('map-active')) return;
     refreshLayout();
     positionSheet();
   });
+
+  /* Activeer de sheet-layout zodra map-active gezet wordt (na locatiekeuze) */
+  window.__activateSheet = () => {
+    refreshLayout();
+    positionSheet();
+  };
 }
 
 /* Aanroepbaar vanuit shops.js nadat map-active gezet is */
@@ -225,5 +234,6 @@ export function activateMobileLayout() {
   const toolbar = document.querySelector('.toolbar');
   const tbH     = toolbar ? toolbar.getBoundingClientRect().height : 56;
   applyLayout(headerH, tbH);
-  if (window.__refreshMobileLayout) window.__refreshMobileLayout();
+  // Positioneer de sheet nu pas (map-active staat aan) — geen CLS bij laden
+  if (window.__activateSheet) window.__activateSheet();
 }

@@ -1623,18 +1623,18 @@
 
   .footer-tagline {
     font-size: var(--t-sm);
-    color: rgba(255,255,255,.48);
+    color: rgba(255,255,255,.78);
     line-height: 1.65;
   }
 
   .footer-sponsor {
     font-size: var(--t-xs);
-    color: rgba(255,255,255,.35);
+    color: rgba(255,255,255,.72);
     margin-top: 4px;
   }
 
   .footer-sponsor a {
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,.82);
     text-decoration: underline;
     text-underline-offset: 2px;
     transition: color var(--tf);
@@ -1648,7 +1648,7 @@
     font-family: var(--sans);
     font-size: var(--t-xs);
     font-weight: 600;
-    color: rgba(255,255,255,.38);
+    color: rgba(255,255,255,.72);
     text-transform: uppercase;
     letter-spacing: .07em;
     margin-bottom: 14px;
@@ -1658,7 +1658,7 @@
 
   .footer-col a {
     font-size: var(--t-sm);
-    color: rgba(255,255,255,.58);
+    color: rgba(255,255,255,.78);
     transition: color var(--tf);
     display: inline-block;
     min-height: 44px;
@@ -1678,11 +1678,11 @@
     flex-wrap: wrap;
     gap: 8px;
     font-size: var(--t-xs);
-    color: rgba(255,255,255,.3);
+    color: rgba(255,255,255,.72);
   }
 
-  .footer-bottom a { color: rgba(255,255,255,.4); transition: color var(--tf); }
-  .footer-bottom a:hover { color: rgba(255,255,255,.65); }
+  .footer-bottom a { color: rgba(255,255,255,.78); transition: color var(--tf); }
+  .footer-bottom a:hover { color: var(--white); }
 }
 
 /* ══ LOCATIE-BREADCRUMB & HERO-ERROR ════════════════════════════ */
