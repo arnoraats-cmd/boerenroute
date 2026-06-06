@@ -309,8 +309,8 @@ function _diplomaHTML(name, rank, count, recent) {
   return `
 <div class="diploma-doc">
   <div class="diploma-header">
-    <span class="diploma-logo">🌾</span>
-    <span class="diploma-logo-text">Boeren<strong>route.nl</strong></span>
+    <svg class="diploma-logo" width="22" height="26" viewBox="0 0 26 30" fill="none" aria-hidden="true"><path d="M13 1.4C6.5 1.4 1.4 6.4 1.4 12.5c0 6.7 8.3 14.6 11 16.9.35.3.85.3 1.2 0 2.7-2.3 11-10.2 11-16.9C24.6 6.4 19.5 1.4 13 1.4Z" fill="#FBEFD6" stroke="#356611" stroke-width="1.7"/><path d="M13 19V9.2" stroke="#356611" stroke-width="1.7" stroke-linecap="round"/><path d="M13 14.2C9.9 14.4 7.4 12.3 7 9.4c3.1-.2 5.6 1.9 6 4.8Z" fill="#5E9420"/><path d="M13 11.4c2.6.1 4.8-1.7 5.2-4.3-2.6-.1-4.8 1.7-5.2 4.3Z" fill="#E8981C"/></svg>
+    <span class="diploma-logo-text">Boeren<strong>route</strong></span>
   </div>
   <div class="diploma-body">
     <div class="diploma-type">DIPLOMA</div>
@@ -370,7 +370,7 @@ body { font-family: 'DM Sans', sans-serif; background: #FBF0DD; display: flex; j
 </style>
 </head><body>
 <div class="diploma">
-  <div class="logo">🌾 Boeren<strong>route.nl</strong></div>
+  <div class="logo"><svg width="20" height="23" viewBox="0 0 26 30" fill="none" style="vertical-align:-4px"><path d="M13 1.4C6.5 1.4 1.4 6.4 1.4 12.5c0 6.7 8.3 14.6 11 16.9.35.3.85.3 1.2 0 2.7-2.3 11-10.2 11-16.9C24.6 6.4 19.5 1.4 13 1.4Z" fill="#FBEFD6" stroke="#356611" stroke-width="1.7"/><path d="M13 19V9.2" stroke="#356611" stroke-width="1.7" stroke-linecap="round"/><path d="M13 14.2C9.9 14.4 7.4 12.3 7 9.4c3.1-.2 5.6 1.9 6 4.8Z" fill="#5E9420"/><path d="M13 11.4c2.6.1 4.8-1.7 5.2-4.3-2.6-.1-4.8 1.7-5.2 4.3Z" fill="#E8981C"/></svg> Boeren<strong>route</strong></div>
   <div class="type">DIPLOMA</div>
   <div class="awarded">Dit diploma wordt met trots uitgereikt aan</div>
   <div class="name">${_e(name)}</div>
