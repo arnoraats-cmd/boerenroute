@@ -4,6 +4,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { toggleStop, clearRoute, isInRoute } from './route.js';
+import { shopIcon } from './icons.js';
 
 /* ── State ──────────────────────────────────────────────── */
 let _list    = [];   // array van productstrings die de gebruiker heeft toegevoegd
@@ -162,7 +163,7 @@ function _render() {
           : `<ul class="bood-shops">
               ${shops.slice(0, 5).map(s => `
                 <li class="bood-shop-item">
-                  <span class="bood-shop-emoji">${s.emoji}</span>
+                  <span class="bood-shop-emoji">${shopIcon(s, { size: 20 })}</span>
                   <div class="bood-shop-info">
                     <span class="bood-shop-name">${_esc(s.name)}</span>
                     <span class="bood-shop-addr">${_esc(s.address)}</span>

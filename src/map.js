@@ -3,6 +3,8 @@
    Leaflet geladen als global `L` via CDN in index.html
    ═══════════════════════════════════════════════════════════════ */
 
+import { shopIcon } from './icons.js';
+
 /* Kleuren per type (zie CLAUDE.md) */
 const COLOR = {
   winkel:   '#64748B', // grijs
@@ -179,7 +181,10 @@ export function setRouteMarkers(stops) {
 function _icon(shop, hl, routeNum = null) {
   const bg   = routeNum ? COLOR.route : (COLOR[shop.type] || COLOR.route);
   const size = (hl || routeNum) ? 38 : 30;
-  const label = routeNum ? `<span style="color:white;font-weight:700;font-size:${hl?'16px':'13px'};font-family:sans-serif">${routeNum}</span>` : shop.emoji;
+  const glyph = (hl || routeNum) ? 20 : 16;
+  const label = routeNum
+    ? `<span style="color:white;font-weight:700;font-size:${hl?'16px':'13px'};font-family:sans-serif">${routeNum}</span>`
+    : shopIcon(shop, { size: glyph, stroke: '#fff', sw: 1.9 });
 
   return L.divIcon({
     className: '',
@@ -219,7 +224,7 @@ function _popupHTML(shop) {
   return `
 <div class="map-popup">
   <div class="popup-top">
-    <span class="popup-emoji">${shop.emoji}</span>
+    <span class="popup-emoji">${shopIcon(shop, { size: 22 })}</span>
     <div class="popup-info">
       <div class="popup-name">${_e(shop.name)}</div>
       <div class="popup-addr">${_e(shop.address)}</div>

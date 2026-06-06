@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Icoon-preview — Boerenroute</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-dark:#1C4109; --green-mid:#356611; --green-light:#5E9420; --green-bg:#E7F0D6;
+    --amber:#B8720F; --amber-light:#E8981C; --sand:#F8F4EC; --text:#1A1A18; --text-mid:#555550;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--sand);color:var(--text);font-family:'DM Sans',system-ui,sans-serif;padding:32px}
+  h1{font-family:'Lora',serif;color:var(--green-dark);margin:0 0 4px}
+  .sub{color:var(--text-mid);margin:0 0 28px;max-width:60ch}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+  .card{background:#fff;border:1px solid var(--green-bg);border-radius:14px;padding:14px 14px 12px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  .card h3{font-family:'Lora',serif;font-size:15px;margin:0 0 10px;color:var(--green-dark);text-transform:capitalize}
+  .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  /* groen chip zoals in de winkellijst */
+  .chip{width:40px;height:40px;border-radius:12px;background:var(--green-bg);display:flex;align-items:center;justify-content:center;color:var(--green-dark)}
+  /* grote inkt-versie */
+  .big{color:var(--green-dark)}
+  /* kaart-pin: witte glyph op type-kleur */
+  .pins{display:flex;gap:7px}
+  .pin{width:30px;height:30px;border-radius:50%;border:2.5px solid rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.28);color:#fff}
+  .emojis{margin-top:9px;font-size:13px;color:var(--text-mid)}
+  .legend{margin:22px 0 8px;font-size:13px;color:var(--text-mid)}
+  .toolbar{display:flex;gap:18px;align-items:center;margin-bottom:22px;flex-wrap:wrap;background:#fff;border:1px solid var(--green-bg);border-radius:12px;padding:12px 16px}
+  .toolbar label{font-size:13px;color:var(--text-mid);display:flex;align-items:center;gap:7px}
+  svg{display:block}
+</style>
+</head>
+<body>
+  <h1>🌾 Hand-getekend icoonset — preview</h1>
+  <p class="sub">Warme penlijn in huisstijlkleur, in plaats van emoji. Elk icoon getoond zoals het écht verschijnt: links groot (inkt), als groen chip in de winkellijst, en als witte glyph op de gekleurde kaart-pinnen (grijs=winkel, blauw=automaat, bruin=markt, paars=onderweg). Onderaan staat welke emoji naar welk icoon gaan.</p>
+
+  <div class="toolbar">
+    <label>Lijndikte
+      <input id="sw" type="range" min="1.2" max="2.4" step="0.1" value="1.7">
+      <b id="swv">1.7</b>
+    </label>
+    <label>Pin-glyph grootte
+      <input id="pz" type="range" min="14" max="20" step="1" value="16">
+      <b id="pzv">16</b>
+    </label>
+    <span style="color:var(--text-mid);font-size:13px">← schuif om de stijl te proeven; zeg straks wat je mooi vindt</span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+<script type="module">
+import { shopIcon, iconKey } from './src/icons.js';
+
+const PIN = { winkel:'#64748B', automaat:'#2563EB', markt:'#92400E', onderweg:'#7C3AED' };
+const EMOJI = {
+  cheese:['🧀','🧈'], milk:['🥛','🐄','🐐','🐑'], egg:['🥚','🍗'], berry:['🍓','🍒','🫐'],
+  apple:['🍎'], carrot:['🥕','🥬','🥔','🍄'], meat:['🥩','🐗'], grain:['🌾'],
+  sprout:['🌱','🌿','🌷','🌸'], honey:['🍯'], icecream:['🍦'], basket:['🛒','🪙'], playground:['🛝'],
+};
+const KEYS = Object.keys(EMOJI);
+
+function render(){
+  const sw = parseFloat(document.getElementById('sw').value);
+  const pz = parseInt(document.getElementById('pz').value, 10);
+  document.getElementById('swv').textContent = sw.toFixed(1);
+  document.getElementById('pzv').textContent = pz;
+  const grid = document.getElementById('grid');
+  grid.innerHTML = KEYS.map(key => {
+    const sample = { emoji: EMOJI[key][0] };
+    const big  = shopIcon(sample, { size:46, sw });
+    const chip = shopIcon(sample, { size:24, sw });
+    const pins = Object.entries(PIN).map(([t,c]) =>
+      `<span class="pin" style="background:${c}">${shopIcon(sample,{size:pz,stroke:'#fff',sw:sw+0.1})}</span>`).join('');
+    return `<div class="card">
+      <h3>${key}</h3>
+      <div class="row">
+        <span class="big">${big}</span>
+        <span class="chip">${chip}</span>
+        <span class="pins">${pins}</span>
+      </div>
+      <div class="emojis">${EMOJI[key].join(' ')}</div>
+    </div>`;
+  }).join('');
+}
+document.getElementById('sw').addEventListener('input', render);
+document.getElementById('pz').addEventListener('input', render);
+render();
+</script>
+</body>
+</html>

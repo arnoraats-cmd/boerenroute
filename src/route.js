@@ -4,6 +4,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { drawRoute, setRouteMarkers } from './map.js';
+import { shopIcon } from './icons.js';
 
 /* ── State ──────────────────────────────────────────────────── */
 let _stops  = [];    // shop-objecten in volgorde
@@ -131,7 +132,7 @@ function _renderPanel() {
   stopsEl.innerHTML = legs.map(({ shop, leg }, i) => `
 <li class="route-stop" data-id="${shop.id}">
   <span class="stop-num">${i + 1}</span>
-  <span class="stop-emoji">${shop.emoji}</span>
+  <span class="stop-emoji">${shopIcon(shop, { size: 20 })}</span>
   <div class="stop-info">
     <div class="stop-name">${_esc(shop.name)}</div>
     <div class="stop-addr">${_esc(shop.address)}</div>

@@ -4,6 +4,7 @@
 
 import { toggleStop, isInRoute } from './route.js';
 import { checkIn, hasVisited } from './stamps.js';
+import { shopIcon } from './icons.js';
 
 const FORMSPREE = 'https://formspree.io/f/xykvvprz';
 
@@ -195,7 +196,7 @@ function _shopHTML(shop) {
   return `
     <button class="modal-close" aria-label="Sluit venster">&times;</button>
     <div class="modal-hero">
-      <span class="modal-emoji" aria-hidden="true">${shop.emoji}</span>
+      <span class="modal-emoji" aria-hidden="true">${shopIcon(shop, { size: 34, sw: 1.6 })}</span>
       <div>
         <h2 class="modal-title" id="modalTitle">${_e(shop.name)}</h2>
         <div class="modal-meta">${types[shop.type] || shop.type} ${status}</div>

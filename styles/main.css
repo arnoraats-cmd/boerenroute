@@ -1468,7 +1468,16 @@
     z-index: 2;
   }
 
-  .shop-emoji { font-size: 22px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+  .shop-emoji {
+    flex-shrink: 0;
+    width: 40px; height: 40px;
+    border-radius: 11px;
+    background: var(--green-bg);
+    color: var(--green-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .shop-info { flex: 1; min-width: 0; }
 
@@ -1910,7 +1919,7 @@
     font-family: var(--sans);
   }
 
-  .stop-emoji { font-size: 20px; flex-shrink: 0; }
+  .stop-emoji { flex-shrink: 0; color: var(--green-mid); display: inline-flex; align-items: center; }
 
   .stop-info { flex: 1; min-width: 0; }
 
@@ -2164,7 +2173,16 @@
     margin-bottom: 8px;
   }
 
-  .popup-emoji { font-size: 22px; line-height: 1; flex-shrink: 0; margin-top: 1px; }
+  .popup-emoji {
+    flex-shrink: 0;
+    width: 34px; height: 34px;
+    border-radius: 9px;
+    background: var(--green-bg);
+    color: var(--green-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .popup-info { flex: 1; min-width: 0; }
 
@@ -2385,7 +2403,16 @@
     padding: 24px 24px 0;
   }
 
-  .modal-emoji { font-size: 36px; line-height: 1; flex-shrink: 0; }
+  .modal-emoji {
+    flex-shrink: 0;
+    width: 56px; height: 56px;
+    border-radius: 15px;
+    background: var(--green-bg);
+    color: var(--green-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .modal-title {
     font-size: var(--t-lg);
@@ -2785,7 +2812,7 @@
   }
   .bood-shop-item:hover { box-shadow: var(--sh); border-color: var(--green-bg); }
 
-  .bood-shop-emoji { font-size: 20px; flex-shrink: 0; }
+  .bood-shop-emoji { flex-shrink: 0; color: var(--green-mid); display: inline-flex; align-items: center; }
   .bood-shop-info  { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
   .bood-shop-name  { font-family: var(--serif); font-size: 13.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .bood-shop-addr  { font-size: var(--t-xs); color: var(--text-light); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -3586,7 +3613,7 @@
 
     /* Winkelkaartjes luchtiger op mobiel */
     .shop-card { padding: 16px 14px 14px; }
-    .shop-emoji { font-size: 28px; }
+    .shop-emoji { width: 44px; height: 44px; border-radius: 12px; }
     .shop-name { font-size: 16px; white-space: normal; line-height: 1.25; }
     .shop-address { font-size: 13px; white-space: normal; }
     .shop-meta { margin-top: 10px; gap: 6px; }

@@ -6,6 +6,7 @@ import { renderMarkers, highlightMarker, flyTo } from './map.js';
 import { toggleStop, isInRoute } from './route.js';
 import { openShopModal } from './modals.js';
 import { hasVisited } from './stamps.js';
+import { shopIcon } from './icons.js';
 
 /* ── State ──────────────────────────────────────────────────── */
 let allShops     = [];
@@ -305,7 +306,7 @@ function _cardHTML(shop) {
     aria-label="${isFav ? 'Verwijder uit favorieten' : 'Voeg toe aan favorieten'}"
   >${isFav ? '♥' : '♡'}</button>
   <div class="shop-card-header">
-    <span class="shop-emoji" aria-hidden="true">${shop.emoji}</span>
+    <span class="shop-emoji" aria-hidden="true">${shopIcon(shop, { size: 26 })}</span>
     <div class="shop-info">
       <div class="shop-name">${_esc(shop.name)}</div>
       <div class="shop-address">${_esc(shop.address)}</div>
