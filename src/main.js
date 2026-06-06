@@ -10,6 +10,7 @@ import { initStempelkaart, renderStempelkaart } from './stempelkaart.js';
 import { getCount }                          from './stamps.js';
 import { renderBlog }                        from './blog.js';
 import { initBottomSheet }                   from './bottomsheet.js';
+import { shopIcon, emojiIcon }               from './icons.js';
 
 /* ── Kaart + modals direct initialiseren ─────────────────── */
 initMap({ lat: DEFAULT.lat, lng: DEFAULT.lng });
@@ -450,7 +451,7 @@ function _renderMaandRoute(route, maand) {
   el.innerHTML = `
     <div class="maand-card">
       <div class="maand-badge">🗓️ ${_esc(maand)}</div>
-      <h3 class="maand-title">${route.emoji} ${_esc(route.titel)}</h3>
+      <h3 class="maand-title"><span class="maand-title-ic">${emojiIcon(route.emoji, { size: 22 })}</span>${_esc(route.titel)}</h3>
       <p class="maand-sub">${_esc(route.subtitel)}</p>
       <p class="maand-intro">${_esc(route.intro)}</p>
       <div class="maand-meta">
@@ -476,7 +477,7 @@ function _renderMaandHome(route, maand) {
   const stopsHTML = stops.map((s, i) => `
     <li class="maandhome-stop">
       <span class="maandhome-stop-num">${i + 1}</span>
-      <span class="maandhome-stop-emoji">${s.emoji}</span>
+      <span class="maandhome-stop-emoji">${shopIcon(s, { size: 18 })}</span>
       <span class="maandhome-stop-name">${_esc(s.name)}</span>
     </li>`).join('');
 
@@ -484,7 +485,7 @@ function _renderMaandHome(route, maand) {
     <div class="maandhome-card">
       <div class="maandhome-left">
         <div class="maandhome-badge">🗓️ Boerenroute van de maand &middot; ${_esc(maand)}</div>
-        <h2 class="maandhome-title">${route.emoji} ${_esc(route.titel)}</h2>
+        <h2 class="maandhome-title"><span class="maandhome-title-ic">${emojiIcon(route.emoji, { size: 26 })}</span>${_esc(route.titel)}</h2>
         <p class="maandhome-sub">${_esc(route.subtitel)}</p>
         <p class="maandhome-intro">${_esc(route.intro)}</p>
         <div class="maandhome-meta">
@@ -518,11 +519,11 @@ function _renderPopularRoutes(data) {
     const stops = route.stopIds
       .map(id => _baseShops.find(s => s.id === id))
       .filter(Boolean);
-    const emojis = stops.map(s => `<span class="poproute-stopemoji" title="${_esc(s.name)}">${s.emoji}</span>`).join('');
+    const emojis = stops.map(s => `<span class="poproute-stopemoji" title="${_esc(s.name)}">${shopIcon(s, { size: 18 })}</span>`).join('');
     return `
       <article class="poproute-card">
         <div class="poproute-top">
-          <span class="poproute-emoji">${route.emoji}</span>
+          <span class="poproute-emoji">${emojiIcon(route.emoji, { size: 24 })}</span>
           <span class="poproute-prov">${_esc(route.provincie)}</span>
         </div>
         <h3 class="poproute-title">${_esc(route.titel)}</h3>

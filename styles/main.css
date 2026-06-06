@@ -681,6 +681,17 @@
     color: var(--green-dark);
     line-height: 1.15;
     margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .maandhome-title-ic {
+    flex-shrink: 0;
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    background: var(--green-bg);
+    color: var(--green-dark);
+    display: inline-flex; align-items: center; justify-content: center;
   }
 
   .maandhome-sub {
@@ -780,7 +791,7 @@
     border: 2px solid var(--white);
   }
 
-  .maandhome-stop-emoji { font-size: 1.2rem; flex-shrink: 0; }
+  .maandhome-stop-emoji { flex-shrink: 0; color: var(--green-mid); display: inline-flex; align-items: center; }
   .maandhome-stop-name {
     font-size: var(--t-sm);
     font-weight: 500;
@@ -835,7 +846,13 @@
   .poproute-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
 
   .poproute-top { display: flex; align-items: center; justify-content: space-between; }
-  .poproute-emoji { font-size: 1.8rem; line-height: 1; }
+  .poproute-emoji {
+    width: 40px; height: 40px;
+    border-radius: 11px;
+    background: var(--green-bg);
+    color: var(--green-dark);
+    display: inline-flex; align-items: center; justify-content: center;
+  }
   .poproute-prov {
     font-size: var(--t-xs);
     font-weight: 600;
@@ -854,11 +871,11 @@
   }
   .poproute-sub { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.45; flex: 1; }
 
-  .poproute-stopemojis { display: flex; gap: 2px; font-size: 1.1rem; }
+  .poproute-stopemojis { display: flex; gap: 4px; }
   .poproute-stopemoji {
     width: 30px; height: 30px;
     display: inline-flex; align-items: center; justify-content: center;
-    background: var(--sand); border-radius: 50%;
+    background: var(--green-bg); color: var(--green-dark); border-radius: 9px;
   }
 
   .poproute-meta {
@@ -3100,7 +3117,15 @@
     box-shadow: var(--sh);
   }
   .maand-badge { font-size: var(--t-xs); color: var(--amber); font-weight: 600; margin-bottom: 6px; }
-  .maand-title { font-size: var(--t-lg); font-weight: 700; margin-bottom: 4px; }
+  .maand-title { font-size: var(--t-lg); font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+  .maand-title-ic {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    background: var(--green-bg);
+    color: var(--green-dark);
+    display: inline-flex; align-items: center; justify-content: center;
+  }
   .maand-sub   { font-size: var(--t-sm); color: var(--text-mid); margin-bottom: 10px; }
   .maand-intro { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.6; margin-bottom: 12px; }
   .maand-meta  { display: flex; gap: 16px; font-size: var(--t-sm); color: var(--text-light); margin-bottom: 16px; }
@@ -3895,7 +3920,7 @@
   }
   .sk-stamp-filled:hover { transform: rotate(0deg) scale(1.12); z-index: 1; }
 
-  .sk-stamp-emoji { font-size: 1.5rem; line-height: 1; }
+  .sk-stamp-emoji { color: var(--amber); display: inline-flex; align-items: center; justify-content: center; }
   .sk-stamp-name  { font-size: .55rem; color: var(--text-mid); text-align: center; line-height: 1.2; max-width: 64px; overflow: hidden; }
 
   /* ── Recent bezocht ── */
@@ -3913,7 +3938,14 @@
   .sk-recent-item:last-child  { border-radius: 0 0 var(--r-lg) var(--r-lg); border-bottom: none; }
   .sk-recent-item:hover { background: var(--sand); }
 
-  .sk-recent-emoji { font-size: 1.4rem; flex-shrink: 0; }
+  .sk-recent-emoji {
+    flex-shrink: 0;
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    background: var(--green-bg);
+    color: var(--green-dark);
+    display: inline-flex; align-items: center; justify-content: center;
+  }
   .sk-recent-info  { flex: 1; min-width: 0; }
   .sk-recent-name  { font-weight: 600; font-size: var(--t-sm); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .sk-recent-addr  { font-size: var(--t-xs); color: var(--text-light); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

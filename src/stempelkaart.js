@@ -7,6 +7,7 @@ import {
   getCount, getVisited, clearAll, formatAge,
   exportStamps, exportStampsJSON, importStamps,
 } from './stamps.js';
+import { emojiIcon } from './icons.js';
 
 let _allShops = [];
 
@@ -73,7 +74,7 @@ export function renderStempelkaart(containerId) {
     <ul class="sk-recent">
       ${recent.map(v => `
         <li class="sk-recent-item">
-          <span class="sk-recent-emoji">${v.emoji}</span>
+          <span class="sk-recent-emoji">${emojiIcon(v.emoji, { size: 22 })}</span>
           <div class="sk-recent-info">
             <div class="sk-recent-name">${_e(v.name)}</div>
             <div class="sk-recent-addr">${_e(v.address)}</div>
@@ -238,7 +239,7 @@ function _stampGrid(visited) {
     }
     return `<div class="sk-stamp sk-stamp-filled" style="--rot:${rot}deg"
         title="${_e(s.name)}" aria-label="${_e(s.name)} bezocht">
-      <span class="sk-stamp-emoji">${s.emoji}</span>
+      <span class="sk-stamp-emoji">${emojiIcon(s.emoji, { size: 24, sw: 1.8 })}</span>
       <span class="sk-stamp-name">${_short(s.name)}</span>
     </div>`;
   }).join('');
