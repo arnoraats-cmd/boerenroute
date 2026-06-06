@@ -2,6 +2,8 @@
    season.js — interactieve seizoenskalender voor NL streekproducten
    ═══════════════════════════════════════════════════════════════ */
 
+import { productIcon } from './icons.js';
+
 export const SEASONS = {
   1:  { label:'Januari',   icon:'❄️',  items:['witlof','winterpeen','knolselderij','prei','spruitjes','boerenkool','rode kool','pastinaak','aardpeer','rode biet'] },
   2:  { label:'Februari',  icon:'🌬️', items:['witlof','prei','knolselderij','winterpeen','rode biet','boerenkool','pastinaak'] },
@@ -96,7 +98,7 @@ export function renderSeasonPage(containerId) {
         ${data.items.map((item, idx) => `
           <button class="season-card" data-product="${item}" style="--i:${idx}"
                   aria-label="Vind ${item} bij jou in de buurt">
-            <span class="season-card-emoji">${emojiFor(item)}</span>
+            <span class="season-card-emoji">${productIcon(item, { size: 30 }) || emojiFor(item)}</span>
             <span class="season-card-name">${item}</span>
             ${availBar(item)}
             <span class="season-card-find">📍 Vind dichtbij</span>

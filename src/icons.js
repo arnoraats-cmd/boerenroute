@@ -38,6 +38,64 @@ const PATHS = {
   playground: `<path d="M5 19.3h14"/><path d="M8 19.3V8.2M6.2 8.2H8M6.2 11.4H8M6.2 14.6H8"/><path d="M8.2 8.4c4.6.2 6.4 5.4 9 10.6"/><circle cx="8" cy="5.4" r="1.4"/>`,
 };
 
+/* ── Groente/fruit-iconen voor de seizoenskalender ──────────────────
+   Zelfde penlijn-stijl. Aangevuld op de winkel-iconen (berry, apple,
+   carrot, sprout worden hergebruikt). */
+const PRODUCE = {
+  // Blad-groente (witlof, prei, spinazie, sla, kool, rucola …)
+  leaf: `<path d="M5 19.4c-.6-7 4.4-13.6 14.2-14.6C16.2 12.4 9.7 19.4 5 19.4Z"/><path d="M6.6 17.9C9.9 13.6 13.3 11 17 9.4" stroke-width="1.3"/>`,
+  // Knol/biet met blad (rode biet, knolselderij, aardpeer, radijs)
+  beet: `<path d="M12 8.8c2.6 0 4.5 1.9 4.5 4.4 0 2.8-2.5 5.6-4.5 7.2-2-1.6-4.5-4.4-4.5-7.2 0-2.5 1.9-4.4 4.5-4.4Z"/><path d="M12 8.9c.2-2.1 1.7-3.5 3.8-3.6-.1 2.1-1.6 3.5-3.8 3.6Z"/><path d="M12 9c-.5-1.7-1.9-2.7-3.7-2.7" stroke-width="1.3"/>`,
+  // Broccoli / bloemkool
+  broccoli: `<path d="M12 19.6v-4.8M9.6 14.8h4.8"/><path d="M9.2 9.9a2.3 2.3 0 0 1 .7-3.2 2.3 2.3 0 0 1 3.7-1.1 2.3 2.3 0 0 1 3.4 1.3 2.2 2.2 0 0 1-.7 3.3 2.2 2.2 0 0 1-2 1.1 2.3 2.3 0 0 1-2.2 0 2.3 2.3 0 0 1-3-.7c-.6-.7-.4-1.7.4-2.9" stroke-linejoin="round"/>`,
+  // Kersen
+  cherry: `<circle cx="8.7" cy="16.4" r="2.7"/><circle cx="15.2" cy="16.9" r="2.5"/><path d="M9 13.9 12 6.8M15.4 14.5 12 6.8M12 6.8c1.5-.7 3.1-.5 4.4.6" stroke-width="1.3"/>`,
+  // Peulvrucht (doperwten, bonen)
+  pods: `<path d="M6.4 9.2c4.2-.4 9.7 2.2 11.4 8.4-6.2.8-11.5-2.6-11.4-8.4Z"/><circle cx="9.6" cy="12.6" r=".85"/><circle cx="12" cy="14.1" r=".85"/><circle cx="14.4" cy="15.4" r=".85"/>`,
+  // Komkommer / courgette
+  cucumber: `<path d="M7 17c-1.6-1.6-1.4-4.1.5-6l3.6-3.6c1.9-1.9 4.4-2.1 6-.5s1.4 4.1-.5 6l-3.6 3.6c-1.9 1.9-4.4 2.1-6 .5Z"/><path d="M10.2 13.8l1 1M12.6 11.4l1 1" stroke-width="1.2"/>`,
+  // Tomaat (met kroontje)
+  tomato: `<path d="M12 8c-3.3 0-6 2.5-6 5.8s2.7 5.7 6 5.7 6-2.4 6-5.7S15.3 8 12 8Z"/><path d="M12 8c-.8-1.3-2.1-1.8-3.6-1.4.3 1.5 1.5 2.4 3 2.4M12 8c.8-1.3 2.1-1.8 3.6-1.4-.3 1.5-1.5 2.4-3 2.4M12 7.3v1.4" stroke-width="1.3"/>`,
+  // Paprika
+  pepper: `<path d="M7.8 11c-1 2.6-.2 6.1 2.4 7.7 1.1.7 2.5.7 3.6 0 2.6-1.6 3.4-5.1 2.4-7.7-.7-1.8-2.4-2.5-4.2-2.5s-3.5.7-4.2 2.5Z"/><path d="M12 8.5V6.6M12 6.6c0-1.1.9-2 2.1-1.9" stroke-width="1.3"/>`,
+  // Ui / knoflook
+  onion: `<path d="M12 8.4c-3 0-5 2.6-5 6 0 3 2.2 5.1 5 5.1s5-2.1 5-5.1c0-3.4-2-6-5-6Z"/><path d="M12 8.4c-.4-1.5-.2-2.7.8-3.7M12 8.4c.4-1.5.2-2.7-.8-3.7" stroke-width="1.3"/><path d="M10 10.2c-.8 2-.8 5 .3 7.2M14 10.2c.8 2 .8 5-.3 7.2" stroke-width="1.1"/>`,
+  // Maïs (kolf met blad)
+  corn: `<path d="M12 4.8c2.6 0 4 2.4 4 6 0 4-2 8.6-4 8.6s-4-4.6-4-8.6c0-3.6 1.4-6 4-6Z"/><path d="M9.5 8.6c1.6 1 3.4 1 5 0M9.3 12c1.8 1 3.6 1 5.4 0M9.6 15.4c1.5.9 3.3.9 4.8 0" stroke-width="1.1"/><path d="M12 19.2c-1.9.4-3.3-.4-4.3-2.3M12 19.2c1.9.4 3.3-.4 4.3-2.3" stroke-width="1.2"/>`,
+  // Peer
+  pear: `<path d="M12 7.6c1.5 0 2.1 1.3 2.5 2.6.5 1.6 2.3 2.6 2.3 5.1 0 2.5-2.1 4.4-4.8 4.4s-4.8-1.9-4.8-4.4c0-2.5 1.8-3.5 2.3-5.1.4-1.3 1-2.6 2.5-2.6Z"/><path d="M12 7.6V5.6c0-1 .9-1.8 2-1.7" stroke-width="1.3"/>`,
+  // Pruim (met groef)
+  plum: `<path d="M12 8.2c-3 0-5 2.4-5 5.6s2 5.9 5 5.9 5-2.7 5-5.9-2-5.6-5-5.6Z"/><path d="M12 8.7v10.6" stroke-width="1.1"/><path d="M12 8.2c.3-1.6 1.6-2.7 3.4-2.7" stroke-width="1.3"/>`,
+  // Pompoen (geribd)
+  pumpkin: `<path d="M12 8.6c-3.2 0-5.6 2.4-5.6 5.6s2.4 5.5 5.6 5.5 5.6-2.3 5.6-5.5S15.2 8.6 12 8.6Z"/><path d="M12 9v10.6M9.1 9.6c-1.1 1.4-1.1 8.2 0 9.6M14.9 9.6c1.1 1.4 1.1 8.2 0 9.6" stroke-width="1.1"/><path d="M12 8.6V6.5c0-.8.7-1.4 1.6-1.3" stroke-width="1.3"/>`,
+};
+
+/* Productnaam → icoon-sleutel (sleutel uit PATHS of PRODUCE).
+   Niet-gemapte producten vallen terug op de emoji in season.js. */
+const PRODUCT = {
+  // soft fruit
+  'aardbeien':'berry','frambozen':'berry','bramen':'berry','bosbessen':'berry','kersen':'cherry',
+  // hard fruit
+  'appelen':'apple','appelen (bewaard)':'apple','peren':'pear','pruimen':'plum',
+  // vrucht-groente
+  'tomaten':'tomato','paprika':'pepper','komkommer':'cucumber','courgette':'cucumber',
+  'pompoen':'pumpkin','maïs':'corn','courgette ':'cucumber',
+  // wortel/knol
+  'winterpeen':'carrot','pastinaak':'carrot','rode biet':'beet','knolselderij':'beet',
+  'aardpeer':'beet','radijs':'beet','koolrabi':'beet',
+  // bol
+  'uien':'onion','knoflook':'onion',
+  // kool/bloemscherm
+  'broccoli':'broccoli','bloemkool':'broccoli',
+  // peul
+  'doperwten':'pods','bonen':'pods',
+  // stengel
+  'asperges':'sprout','rabarber':'leaf','venkel':'leaf',
+  // blad
+  'witlof':'leaf','prei':'leaf','spruitjes':'leaf','boerenkool':'leaf','rode kool':'leaf',
+  'spinazie':'leaf','veldsla':'leaf','rucola':'leaf','raapstelen':'leaf','sla':'leaf','postelein':'leaf',
+};
+
 /* Emoji → icoon-sleutel */
 const EMOJI = {
   '🧀': 'cheese', '🧈': 'cheese',
@@ -84,6 +142,23 @@ export function shopIcon(shop, { size = 22, stroke = 'currentColor', sw = 1.7, c
 /* Render een icoon op basis van een los emoji-teken (bv. opgeslagen stempel) */
 export function emojiIcon(emoji, opts) {
   return shopIcon({ emoji }, opts);
+}
+
+/* Sleutel voor een productnaam, of null als er geen eigen icoon is */
+export function productKey(name) {
+  return PRODUCT[String(name || '').toLowerCase().trim()] || null;
+}
+
+/* Eigen icoon voor een seizoensproduct; geeft null terug als er geen is
+   (dan valt season.js terug op de emoji). */
+export function productIcon(name, { size = 30, stroke = 'currentColor', sw = 1.6, cls = 'hd-icon' } = {}) {
+  const key = productKey(name);
+  if (!key) return null;
+  const inner = PRODUCE[key] || PATHS[key];
+  if (!inner) return null;
+  return `<svg class="${cls}" data-icon="${key}" width="${size}" height="${size}" viewBox="0 0 24 24" `
+    + `fill="none" stroke="${stroke}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" `
+    + `aria-hidden="true" focusable="false">${inner}</svg>`;
 }
 
 export { keyFor as iconKey };

@@ -2936,7 +2936,17 @@
   }
   .season-card:active { transform: translateY(-1px) scale(.98); }
 
-  .season-card-emoji { font-size: 2.4rem; line-height: 1; }
+  .season-card-emoji {
+    width: 54px; height: 54px;
+    border-radius: 14px;
+    background: var(--green-bg);
+    color: var(--green-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;      /* geldt alleen voor de emoji-fallback */
+    line-height: 1;
+  }
   .season-card-name  {
     font-family: var(--serif); font-weight: 600; font-size: var(--t-md);
     color: var(--green-dark); text-transform: capitalize;
