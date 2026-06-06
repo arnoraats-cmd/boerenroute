@@ -579,16 +579,16 @@ function _renderMaandHome(route, maand) {
     ?.addEventListener('click', () => _loadRouteStops(route));
 }
 
-/* Grid met overige populaire routes op de homepage */
+/* Carrousel: één kant-en-klare route per provincie (alle 12) op de homepage */
 function _renderPopularRoutes(data) {
   const el = document.getElementById('popularRoutes');
   if (!el) return;
 
-  const others = data.routes.filter(r => !r.featured);
-  if (others.length === 0) { el.closest('.poproutes')?.setAttribute('hidden', ''); return; }
+  const routes = data.provincieRoutes || [];
+  if (routes.length === 0) { el.closest('.poproutes')?.setAttribute('hidden', ''); return; }
 
-  el.innerHTML = others.map((route, idx) => {
-    const stops = route.stopIds
+  el.innerHTML = routes.map((route, idx) => {
+    const stops = (route.stopIds || [])
       .map(id => _baseShops.find(s => s.id === id))
       .filter(Boolean);
     const emojis = stops.map(s => `<span class="poproute-stopemoji" title="${_esc(s.name)}">${shopIcon(s, { size: 18 })}</span>`).join('');
@@ -599,7 +599,7 @@ function _renderPopularRoutes(data) {
           <span class="poproute-prov">${_esc(route.provincie)}</span>
         </div>
         <h3 class="poproute-title">${_esc(route.titel)}</h3>
-        <p class="poproute-sub">${_esc(route.subtitel)}</p>
+        <p class="poproute-sub">${_esc(route.intro || route.subtitel || '')}</p>
         <div class="poproute-stopemojis">${emojis}</div>
         <div class="poproute-meta">
           <span>📏 ${_esc(route.afstand)}</span>
@@ -610,6 +610,17 @@ function _renderPopularRoutes(data) {
   }).join('');
 
   el.querySelectorAll('.poproute-btn').forEach(btn => {
-    btn.addEventListener('click', () => _loadRouteStops(others[+btn.dataset.route]));
+    btn.addEventListener('click', () => _loadRouteStops(routes[+btn.dataset.route]));
+  });
+
+  /* Pijl-knoppen (desktop) scrollen de carrousel een kaartbreedte verder. */
+  const wrap = el.closest('.poproutes-inner');
+  wrap?.querySelectorAll('[data-poproll]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const dir  = btn.dataset.poproll === 'next' ? 1 : -1;
+      const card = el.querySelector('.poproute-card');
+      const step = card ? card.getBoundingClientRect().width + 16 : 300;
+      el.scrollBy({ left: dir * step, behavior: 'smooth' });
+    });
   });
 }

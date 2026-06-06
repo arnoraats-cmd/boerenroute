@@ -249,6 +249,34 @@
     color: var(--white);
   }
 
+  /* Nav-icoontje (lijn, currentColor) */
+  .nav-ic {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    flex-shrink: 0;
+  }
+
+  /* Kaart/Route als segment-schakelaar: maakt duidelijk dat het twee
+     weergaven van hetzelfde zijn — en onderscheidt ze van de paginalinks. */
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 3px;
+    background: rgba(0,0,0,.22);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: var(--r-full);
+    margin-right: 4px;
+  }
+  .nav-toggle-btn { min-height: 36px; padding: 6px 14px; }
+  .nav-toggle-btn:hover { background: rgba(255,255,255,.08); }
+  .nav-toggle-btn.active {
+    background: var(--white);
+    color: var(--green-dark);
+  }
+  .nav-toggle-btn.active .nav-ic { stroke: var(--green-mid); }
+
   /* Tip-knop */
   .tip-btn {
     display: inline-flex;
@@ -814,7 +842,7 @@
     background: var(--sand);
     padding: clamp(8px, 2vw, 16px) var(--pad) clamp(32px, 5vw, 56px);
   }
-  .poproutes-inner { max-width: var(--max-w); margin: 0 auto; }
+  .poproutes-inner { max-width: var(--max-w); margin: 0 auto; position: relative; }
 
   .poproutes-header { text-align: center; margin-bottom: 26px; }
   .poproutes-title {
@@ -826,10 +854,50 @@
   }
   .poproutes-sub { font-size: var(--t-sm); color: var(--text-mid); }
 
+  /* Carrousel: horizontaal scrollen/swipen met snap-punten. */
   .poproutes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 18px;
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 var(--pad);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;            /* Firefox */
+    padding: 4px 2px 8px;
+    scroll-behavior: smooth;
+  }
+  .poproutes-grid::-webkit-scrollbar { display: none; }   /* WebKit */
+
+  .poproutes-grid > .poproute-card {
+    flex: 0 0 clamp(240px, 78vw, 268px);
+    scroll-snap-align: start;
+  }
+
+  /* Pijl-knoppen: alleen op grotere schermen (mobiel = swipen). */
+  /* Pijlen rechtsboven naast de kop — overlappen de kaarten nooit. */
+  .poproll {
+    position: absolute;
+    top: clamp(6px, 1.5vw, 12px);
+    z-index: 2;
+    width: 38px; height: 38px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r-full);
+    box-shadow: var(--sh-sm);
+    color: var(--green-dark);
+    cursor: pointer;
+    transition: background var(--tf), box-shadow var(--tf);
+  }
+  .poproll:hover { background: var(--green-bg); box-shadow: var(--sh-md); }
+  .poproll-prev { right: 50px; left: auto; }
+  .poproll-next { right: 4px; }
+  .poproll svg { width: 18px; height: 18px; }
+
+  @media (min-width: 720px) {
+    .poproll { display: inline-flex; }
   }
 
   .poproute-skeleton { color: var(--text-light); font-size: var(--t-sm); padding: 30px; text-align: center; }

@@ -106,13 +106,20 @@
       </a>
 
       <nav class="header-nav" aria-label="Hoofdnavigatie">
-        <button class="nav-btn active" data-page="kaart">Kaart</button>
-        <button class="nav-btn" data-page="route">
-          Route <span class="nav-badge" id="routeBadge" hidden>0</span>
-        </button>
-        <button class="nav-btn nav-btn-desktop" data-page="boodschappen">🛒 Boodschappen</button>
+        <!-- Kaart/Route: één segment-schakelaar (twee weergaven van dezelfde data) -->
+        <div class="nav-toggle" role="group" aria-label="Weergave">
+          <button class="nav-btn nav-toggle-btn active" data-page="kaart">
+            <svg class="nav-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 4 6 2 6-2v15l-6 2-6-2-6 2V6l6-2Z"/><path d="M9 4v15M15 6v15"/></svg>
+            Kaart
+          </button>
+          <button class="nav-btn nav-toggle-btn" data-page="route">
+            <svg class="nav-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="5" r="2.3"/><path d="M8.3 18.5H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>
+            Route <span class="nav-badge" id="routeBadge" hidden>0</span>
+          </button>
+        </div>
+        <button class="nav-btn nav-btn-desktop" data-page="boodschappen">Boodschappen</button>
         <button class="nav-btn" data-page="stempelkaart">
-          🗂️ Stempelkaart
+          Stempelkaart
           <span class="nav-badge nav-badge-stamp" id="stampBadge" hidden>0</span>
         </button>
         <button class="nav-btn nav-btn-desktop" data-page="seizoen">Seizoen</button>
@@ -286,6 +293,12 @@
         <h2 class="poproutes-title">🚴 Meer mooie routes om te fietsen</h2>
         <p class="poproutes-sub">Kant-en-klare tochten langs 4 tot 5 winkels. Eén klik en je route staat op de kaart.</p>
       </header>
+      <button class="poproll poproll-prev" data-poproll="prev" aria-label="Vorige routes" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="poproll poproll-next" data-poproll="next" aria-label="Volgende routes" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
       <div class="poproutes-grid" id="popularRoutes">
         <div class="poproute-card poproute-skeleton">Routes laden…</div>
       </div>
