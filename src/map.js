@@ -178,33 +178,35 @@ export function setRouteMarkers(stops) {
 
 /* ══ Marker-icoon ════════════════════════════════════════════════ */
 
+/* Pin in de vorm van het logo-merk (druppel), gekleurd per type met de
+   witte glyph in de bol. Het punt onderaan wijst exact naar de locatie. */
 function _icon(shop, hl, routeNum = null) {
-  const bg   = routeNum ? COLOR.route : (COLOR[shop.type] || COLOR.route);
-  const size = (hl || routeNum) ? 38 : 30;
-  const glyph = (hl || routeNum) ? 20 : 16;
-  const label = routeNum
-    ? `<span style="color:white;font-weight:700;font-size:${hl?'16px':'13px'};font-family:sans-serif">${routeNum}</span>`
-    : shopIcon(shop, { size: glyph, stroke: '#fff', sw: 1.9 });
+  const bg  = routeNum ? COLOR.route : (COLOR[shop.type] || COLOR.route);
+  const w   = (hl || routeNum) ? 36 : 28;
+  const h   = Math.round(w * 30 / 26);
+  const gsz = Math.round(w * 0.52);
+
+  const inner = routeNum
+    ? `<span style="position:absolute;left:50%;top:41%;transform:translate(-50%,-50%);`
+      + `color:#fff;font-weight:700;font-size:${hl ? '15px' : '13px'};font-family:system-ui,sans-serif">${routeNum}</span>`
+    : `<span style="position:absolute;left:50%;top:41%;transform:translate(-50%,-50%);display:flex">`
+      + `${shopIcon(shop, { size: gsz, stroke: '#fff', sw: 1.9 })}</span>`;
+
+  const shadow = hl
+    ? 'drop-shadow(0 4px 6px rgba(0,0,0,.4))'
+    : 'drop-shadow(0 2px 3px rgba(0,0,0,.35))';
+
+  const pin = `<svg width="${w}" height="${h}" viewBox="0 0 26 30" fill="none" style="display:block;filter:${shadow}">`
+    + `<path d="M13 1.4C6.5 1.4 1.4 6.4 1.4 12.5c0 6.7 8.3 14.6 11 16.9.35.3.85.3 1.2 0 2.7-2.3 11-10.2 11-16.9C24.6 6.4 19.5 1.4 13 1.4Z" `
+    + `fill="${bg}" stroke="#fff" stroke-width="${hl ? 2 : 1.7}"/></svg>`;
 
   return L.divIcon({
     className: '',
-    html: `<div style="
-      width:${size}px;height:${size}px;
-      background:${bg};
-      border-radius:50%;
-      border:2.5px solid rgba(255,255,255,.9);
-      box-shadow:${hl
-        ? `0 0 0 3px ${bg}55,0 4px 16px rgba(0,0,0,.4)`
-        : '0 2px 8px rgba(0,0,0,.28)'};
-      display:flex;align-items:center;justify-content:center;
-      font-size:${hl ? '18px' : '13px'};
-      transform:${hl ? 'scale(1.18)' : 'scale(1)'};
-      transition:transform .18s,box-shadow .18s;
-      cursor:pointer;
-    ">${label}</div>`,
-    iconSize:    [size, size],
-    iconAnchor:  [size / 2, size / 2],
-    popupAnchor: [0, -(size / 2 + 8)],
+    html: `<div style="position:relative;width:${w}px;height:${h}px;cursor:pointer;`
+      + `transition:transform .18s">${pin}${inner}</div>`,
+    iconSize:    [w, h],
+    iconAnchor:  [w / 2, h],          // punt onderaan op de locatie
+    popupAnchor: [0, -h + 3],
   });
 }
 
