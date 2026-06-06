@@ -1921,6 +1921,28 @@
     color: var(--text-light);
   }
 
+  /* Automatische routegeneratie */
+  .route-gen {
+    width: 100%;
+    max-width: 320px;
+    background: var(--green-bg);
+    border: 1px solid rgba(39,80,10,.12);
+    border-radius: var(--r-lg);
+    padding: 16px 16px 14px;
+    margin: 6px 0 4px;
+  }
+  .route-gen-title { font-size: var(--t-md); font-weight: 700; color: var(--green-dark); margin-bottom: 2px; }
+  .route-gen-hint  { font-size: var(--t-xs); color: var(--text-mid); line-height: 1.5; margin-bottom: 12px; }
+  .route-gen-btns  { display: flex; gap: 8px; justify-content: center; }
+  .route-gen-btns .btn { flex: 1; }
+  .route-gen-status {
+    font-size: var(--t-xs);
+    color: var(--green-mid);
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .route-empty-or { color: var(--text-light); font-size: var(--t-xs); margin-top: 6px; }
+
   /* Stop-lijst */
   .route-stops {
     padding: 10px;

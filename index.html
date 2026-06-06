@@ -392,10 +392,22 @@
         <div class="route-empty" id="routeEmpty">
           <div class="route-empty-icon">🚴</div>
           <p class="route-empty-title">Je route is nog leeg</p>
-          <p class="route-empty-hint">
-            Ga naar <strong>Kaart</strong> en klik op
+
+          <div class="route-gen" id="routeGen">
+            <p class="route-gen-title">✨ Laat ons een route maken</p>
+            <p class="route-gen-hint">Kies een afstand — wij kiezen mooie verkooppunten in een lus bij jou in de buurt.</p>
+            <div class="route-gen-btns">
+              <button class="btn btn-green btn-sm" data-gen="20">± 20 km</button>
+              <button class="btn btn-green btn-sm" data-gen="35">± 35 km</button>
+              <button class="btn btn-green btn-sm" data-gen="50">± 50 km</button>
+            </div>
+            <p class="route-gen-status" id="routeGenStatus" hidden></p>
+          </div>
+
+          <p class="route-empty-hint route-empty-or">
+            of ga naar <strong>Kaart</strong> en klik op
             <span class="route-empty-badge">+ Route</span>
-            bij een winkel om hem toe te voegen.
+            bij een winkel.
           </p>
           <button class="btn btn-ghost btn-sm route-empty-back" id="routeGoToKaart">
             ← Terug naar de kaart

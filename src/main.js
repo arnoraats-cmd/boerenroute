@@ -223,6 +223,29 @@ document.getElementById('routeGoToKaart')?.addEventListener('click', () => {
   document.querySelector('.nav-btn[data-page="kaart"]')?.click();
 });
 
+/* ── Automatische routegeneratie ("Maak een route voor mij") ── */
+document.getElementById('routeGen')?.addEventListener('click', async e => {
+  const btn = e.target.closest('[data-gen]');
+  if (!btn) return;
+  const targetKm = +btn.dataset.gen;
+  const statusEl = document.getElementById('routeGenStatus');
+  const setStatus = msg => { if (statusEl) { statusEl.hidden = false; statusEl.textContent = msg; } };
+
+  const start = { lat: window._brLat ?? DEFAULT.lat, lng: window._brLng ?? DEFAULT.lng };
+  const pool  = _baseShops.concat(_osmShops || []);
+
+  setStatus('Route samenstellen…');
+  const { generateRoute } = await import('./autoroute.js');
+  const picked = generateRoute(pool, start, targetKm);
+  if (picked.length < 3) {
+    setStatus('Te weinig verkooppunten in de buurt — kies eerst een locatie of een grotere afstand.');
+    return;
+  }
+  setStatus(`Route langs ${picked.length} verkooppunten — de kaart laadt de mooiste lus…`);
+  const { loadStops } = await import('./route.js');
+  loadStops(picked, { optimize: true });
+});
+
 /* ── Hero-elementen ──────────────────────────────────────── */
 const heroGpsBtn       = document.getElementById('heroGpsBtn');
 const heroSearchBtn    = document.getElementById('heroSearchBtn');
