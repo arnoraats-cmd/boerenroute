@@ -31,10 +31,18 @@ const QUERIES = [
   'zuivelautomaat', 'aardappelautomaat',
 ];
 
-/* Fijn raster over (bewoond) Nederland — kleinere cellen voor dichte gebieden */
+/* Raster over Nederland. Text Search geeft per call max 20 resultaten;
+   in dichte gebieden verdringen prominente zaken de kleine automaatjes.
+   --dense = fijner raster + kleinere zoekstraal → minder verdringing,
+   dus meer "long-tail" vondsten (bv. roadside eierautomaten). */
+const DENSE   = args.includes('--dense');
+const LAT_STEP = DENSE ? 0.15  : 0.35;
+const LNG_STEP = DENSE ? 0.18  : 0.4;
+const RADIUS_M = DENSE ? 11000 : 26000;   // zoekstraal-bias per rasterpunt (meter)
+
 const GRID = [];
-for (let lat = 50.75; lat <= 53.5; lat += 0.35)
-  for (let lng = 3.4; lng <= 7.1; lng += 0.4)
+for (let lat = 50.75; lat <= 53.5; lat += LAT_STEP)
+  for (let lng = 3.4; lng <= 7.1; lng += LNG_STEP)
     GRID.push({ lat: +lat.toFixed(3), lng: +lng.toFixed(3) });
 const points = GRID.slice(0, LIMIT);
 
@@ -57,7 +65,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 async function searchText(q, pt) {
   const body = JSON.stringify({
     textQuery: q, languageCode: 'nl', regionCode: 'NL', maxResultCount: 20,
-    locationBias: { circle: { center: { latitude: pt.lat, longitude: pt.lng }, radius: 26000 } },
+    locationBias: { circle: { center: { latitude: pt.lat, longitude: pt.lng }, radius: RADIUS_M } },
   });
   const headers = {
     'Content-Type':     'application/json',
