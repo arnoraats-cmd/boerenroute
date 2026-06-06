@@ -3427,6 +3427,13 @@
   /* Mobiel: basis (altijd) */
   @media (max-width: 900px) {
     .toolbar-inner { flex-wrap: wrap; padding-block: 8px; gap: 8px; }
+    /* Zoekveld verbergen op mobiel: lijst is scrollbaar + filters volstaan */
+    .search-wrap { display: none; }
+    /* Toast bovenaan i.p.v. onderaan: botst niet met route-knop/💡-knop */
+    .br-toast {
+      top: calc(var(--header-h, 106px) + 12px);
+      bottom: auto;
+    }
     .filter-chips  {
       order: 3; width: 100%; padding-bottom: 4px;
       overflow-x: auto; scrollbar-width: none;

@@ -287,7 +287,7 @@ document.getElementById('osmRadius')?.addEventListener('change', () => {
 async function _triggerOSM(lat, lng) {
   _lastLat = lat; _lastLng = lng;
   const radiusEl = document.getElementById('osmRadius');
-  const radius   = radiusEl ? +radiusEl.value : 50;
+  const radius   = radiusEl ? +radiusEl.value : 15;
   if (!radius) return;
 
   const indicator = document.getElementById('osmIndicator');
