@@ -25,3 +25,6 @@
 
 /aanmelden          /public/aanmelden/index.html    200
 /aanmelden/         /public/aanmelden/index.html    200
+
+/stichting          /public/stichting/index.html    200
+/stichting/         /public/stichting/index.html    200

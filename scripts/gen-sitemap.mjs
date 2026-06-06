@@ -16,6 +16,7 @@ const add = (loc, priority, changefreq) =>
 add(`${SITE}/`, '1.0', 'weekly');
 add(`${SITE}/blog/`, '0.8', 'weekly');
 add(`${SITE}/aanmelden`, '0.7', 'monthly');
+add(`${SITE}/stichting`, '0.6', 'monthly');
 
 // Categoriepagina's
 for (const slug of ['versautomaten','eierautomaten','zelfpluktuinen','melktap','streekproducten']) {
