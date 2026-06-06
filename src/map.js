@@ -5,6 +5,7 @@
 
 import { shopIcon } from './icons.js';
 import { routeVia } from './routing.js';
+import { analyzeRoute } from './routeScore.js';
 
 /* Kleuren per type (zie CLAUDE.md) */
 const COLOR = {
@@ -136,9 +137,16 @@ export async function drawRoute(stops) {
     }).addTo(_map);
     _map.fitBounds(_routeLine.getBounds(), { padding: [48, 48], maxZoom: 14 });
 
-    /* Werkelijke (lus-)afstand + klim terug naar het routepaneel */
-    document.dispatchEvent(new CustomEvent('boerenroute:routedistance', {
-      detail: { km: result.distanceKm, ascendM: result.ascendM, engine: result.engine },
+    /* Recreatieve metrics afleiden en naar het routepaneel sturen */
+    const stats = analyzeRoute({
+      distanceKm:   result.distanceKm,
+      ascendM:      result.ascendM,
+      totalTimeSec: result.totalTimeSec,
+      messages:     result.messages,
+      stopCount:    stops.length,
+    });
+    document.dispatchEvent(new CustomEvent('boerenroute:routestats', {
+      detail: { ...stats, km: result.distanceKm, engine: result.engine },
     }));
   } else {
     _drawFallback(stops);

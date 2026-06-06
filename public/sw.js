@@ -1,5 +1,5 @@
 /* Service Worker — Boerenroute.nl */
-const CACHE   = 'boerenroute-v24';
+const CACHE   = 'boerenroute-v25';
 const OFFLINE = [
   '/',
   '/styles/main.css',
@@ -9,6 +9,7 @@ const OFFLINE = [
   '/src/map.js',
   '/src/route.js',
   '/src/routing.js',
+  '/src/routeScore.js',
   '/src/icons.js',
   '/src/location.js',
   '/src/modals.js',

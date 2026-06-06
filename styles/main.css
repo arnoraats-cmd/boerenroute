@@ -1863,6 +1863,29 @@
     font-weight: 500;
   }
 
+  /* Recreatieve metrics-chips */
+  .route-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .rstat {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: var(--t-xs);
+    font-weight: 600;
+    color: var(--green-dark);
+    background: var(--green-bg);
+    border-radius: var(--r-full);
+    padding: 4px 10px;
+    white-space: nowrap;
+  }
+  .rstat small { font-weight: 500; opacity: .7; }
+  .rstat-score { background: var(--amber-bg); color: var(--amber); }
+  .rstat-family { background: #E3EFD5; color: var(--green-mid); }
+
   /* Lege staat */
   .route-empty {
     padding: 48px 24px 36px;

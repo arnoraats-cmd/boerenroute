@@ -5,6 +5,7 @@
 
 import { drawRoute, setRouteMarkers } from './map.js';
 import { shopIcon } from './icons.js';
+import { fmtDuration } from './routeScore.js';
 
 /* ── State ──────────────────────────────────────────────────── */
 let _stops  = [];    // shop-objecten in volgorde
@@ -101,12 +102,13 @@ function _bindPanel() {
     document.querySelector('.nav-btn[data-page="route"]')?.click();
   });
 
-  /* Echte wegafstand van OSRM ontvangen */
-  document.addEventListener('boerenroute:routedistance', e => {
+  /* Recreatieve metrics ontvangen (echte wegafstand + belevingsscore enz.) */
+  document.addEventListener('boerenroute:routestats', e => {
     const distEl = document.getElementById('routeTotalDist');
     if (distEl && _stops.length >= 2) {
       distEl.textContent = `${_fmt(e.detail.km)} totaal`;
     }
+    _renderStats(e.detail);
   });
 }
 
@@ -124,6 +126,10 @@ function _renderPanel() {
   if (emptyEl)   emptyEl.hidden   = hasStops;
   if (actionsEl) actionsEl.hidden = !hasStops;
   if (metaEl)    metaEl.hidden    = !hasStops;
+
+  /* Stats-balk pas tonen bij een echte route (≥2 stops); anders leegmaken */
+  const statsEl = document.getElementById('routeStats');
+  if (statsEl && _stops.length < 2) { statsEl.hidden = true; statsEl.innerHTML = ''; }
 
   if (!hasStops) { stopsEl.innerHTML = ''; return; }
 
@@ -176,6 +182,26 @@ function _updateFab() {
   const countEl = document.getElementById('routeFabCount');
   if (countEl) countEl.textContent = _stops.length;
   fab.hidden = _stops.length === 0;
+}
+
+/* Recreatieve metrics-chips in het routepaneel */
+function _renderStats(stats) {
+  const el = document.getElementById('routeStats');
+  if (!el) return;
+  if (!stats || _stops.length < 2) { el.hidden = true; el.innerHTML = ''; return; }
+
+  const chips = [];
+  if (stats.score != null)
+    chips.push(`<span class="rstat rstat-score" title="Recreatieve belevingsscore (autoluw, fietspad, knooppuntennet)">⭐ ${stats.score}<small>/100</small></span>`);
+  chips.push(`<span class="rstat" title="Verwachte duur incl. winkelstops">🕐 ${fmtDuration(stats.durationMin)}</span>`);
+  chips.push(`<span class="rstat" title="Route-moeilijkheid">📊 ${stats.difficulty}</span>`);
+  if (stats.pctQuiet != null)
+    chips.push(`<span class="rstat" title="Aandeel autoluwe wegen">🌿 ${Math.round(stats.pctQuiet * 100)}% autoluw</span>`);
+  if (stats.family)
+    chips.push('<span class="rstat rstat-family" title="Kort, vlak, verhard en autoluw">👪 Gezinsvriendelijk</span>');
+
+  el.innerHTML = chips.join('');
+  el.hidden = false;
 }
 
 /* Korte, niet-opdringerige bevestiging onderaan het scherm */

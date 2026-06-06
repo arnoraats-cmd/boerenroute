@@ -48,10 +48,12 @@ async function _brouter(points, profile) {
 
   const p = feat.properties || {};
   return {
-    geometry:   feat.geometry,                          // LineString [lon,lat,ele]
-    distanceKm: (parseFloat(p['track-length'])   || 0) / 1000,
-    ascendM:     parseFloat(p['filtered ascend']) || 0,
-    engine:     'brouter',
+    geometry:     feat.geometry,                        // LineString [lon,lat,ele]
+    distanceKm:   (parseFloat(p['track-length'])   || 0) / 1000,
+    ascendM:       parseFloat(p['filtered ascend']) || 0,
+    totalTimeSec:  parseFloat(p['total-time'])      || 0,
+    messages:      p.messages || [],                    // per-segment WayTags voor scoring
+    engine:       'brouter',
   };
 }
 
@@ -66,9 +68,11 @@ async function _osrm(points) {
   if (d.code !== 'Ok' || !d.routes?.[0]) throw new Error('osrm no route');
 
   return {
-    geometry:   d.routes[0].geometry,
-    distanceKm: d.routes[0].distance / 1000,
-    ascendM:    0,
-    engine:    'osrm',
+    geometry:     d.routes[0].geometry,
+    distanceKm:   d.routes[0].distance / 1000,
+    ascendM:      0,
+    totalTimeSec: d.routes[0].duration || 0,
+    messages:     [],                                   // geen wegtags ⇒ geen score
+    engine:      'osrm',
   };
 }
