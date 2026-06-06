@@ -35,6 +35,30 @@ export function renderStempelkaart(containerId) {
   el.innerHTML = `
 <div class="sk-page">
 
+  <!-- ── Intro: wat is het + zo werkt het ── -->
+  <header class="sk-intro">
+    <h1 class="sk-intro-title"><span>🗂️</span> Mijn stempelkaart</h1>
+    <p class="sk-intro-lead">
+      Verzamel een stempel bij elke boerderijwinkel of automaat die je bezoekt.
+      Spaar voor rangen en een echt kinderdiploma.
+      <strong>Gratis &amp; zonder account</strong> — je stempels blijven privé op dit apparaat.
+    </p>
+    <ol class="sk-how">
+      <li class="sk-how-step">
+        <span class="sk-how-num">1</span>
+        <span class="sk-how-text">Bezoek een boerderijwinkel, eierautomaat of melktap.</span>
+      </li>
+      <li class="sk-how-step">
+        <span class="sk-how-num">2</span>
+        <span class="sk-how-text">Open de winkel en tik op <strong>“📍 Check in”</strong>. Je telefoon controleert via GPS dat je er écht bent.</span>
+      </li>
+      <li class="sk-how-step">
+        <span class="sk-how-num">3</span>
+        <span class="sk-how-text">Je stempel verschijnt hier meteen. Hoe meer je spaart, hoe hoger je rang.</span>
+      </li>
+    </ol>
+  </header>
+
   <!-- ── Rang-header ── -->
   <div class="sk-rank-card" style="--rank-color:${rank.color}">
     <div class="sk-rank-icon">${rank.icon}</div>

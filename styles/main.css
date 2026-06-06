@@ -3878,6 +3878,67 @@
     gap: 32px;
   }
 
+  /* ── Intro: wat is het + zo werkt het ── */
+  .sk-intro {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r-xl);
+    padding: clamp(20px, 3vw, 28px);
+    box-shadow: var(--sh-sm);
+  }
+  .sk-intro-title {
+    font-family: var(--serif);
+    font-size: var(--t-xl);
+    font-weight: 700;
+    color: var(--green-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .sk-intro-lead {
+    font-size: var(--t-sm);
+    color: var(--text-mid);
+    line-height: 1.7;
+    max-width: 62ch;
+    margin-bottom: 20px;
+  }
+  .sk-intro-lead strong { color: var(--green-mid); }
+
+  .sk-how {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .sk-how-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    background: var(--green-bg);
+    border-radius: var(--r-lg);
+    padding: 14px 16px;
+  }
+  .sk-how-num {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    display: grid;
+    place-items: center;
+    background: var(--green-mid);
+    color: var(--white);
+    font-weight: 700;
+    font-size: var(--t-sm);
+    border-radius: 50%;
+  }
+  .sk-how-text { font-size: var(--t-sm); color: var(--text); line-height: 1.5; }
+  .sk-how-text strong { color: var(--green-dark); white-space: nowrap; }
+
+  @media (min-width: 620px) {
+    .sk-how { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  }
+
   /* ── Rang-kaart ── */
   .sk-rank-card {
     background: var(--white);
