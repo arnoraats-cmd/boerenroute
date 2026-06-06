@@ -1,0 +1,4610 @@
+[
+  {
+    "name": "'t Bukske - Kinderspeelboerderij in Valkenburg",
+    "address": "Hekerbeekweg 84, 6301 EN Valkenburg",
+    "lat": 50.870815699999994,
+    "lng": 5.8435789,
+    "placeId": "ChIJNe3Y1FS_wEcRZrcfeilDm9U",
+    "primaryType": ""
+  },
+  {
+    "name": "'T Hoevendrieske",
+    "address": "Heirbaan 134, 3350 Linter, België",
+    "lat": 50.850900599999996,
+    "lng": 5.0494276,
+    "placeId": "ChIJVSXuh-8UwUcRbmsEY07KKTo",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "'t Land van Vlierbos - Kinderboerderij en pluktuin",
+    "address": "IJzerdijk 41, 8600 Diksmuide, België",
+    "lat": 51.0259314,
+    "lng": 2.8522284,
+    "placeId": "ChIJwdlfF7m33EcRXEta8tYqy1s",
+    "primaryType": "tourist_attraction"
+  },
+  {
+    "name": "‘t Ooievaarsnest zorg & kinderboerderij",
+    "address": "Herseltseweg 24, 2431 Laakdal, België",
+    "lat": 51.0676038,
+    "lng": 4.9568628,
+    "placeId": "ChIJrQYos15HwUcRJSf9kBUSiV0",
+    "primaryType": ""
+  },
+  {
+    "name": "(Kinder)boerderij GGNet",
+    "address": "Vordenseweg, 7231 PA Warnsveld",
+    "lat": 52.1370578,
+    "lng": 6.246477100000001,
+    "placeId": "ChIJB5-4bmuTx0cRCrDPZXB0lRg",
+    "primaryType": ""
+  },
+  {
+    "name": "Agara Hoeve",
+    "address": "De Vorrelvenen 8, 7991 TP Dwingeloo",
+    "lat": 52.8715561,
+    "lng": 6.4037614,
+    "placeId": "ChIJ_93xcB4WyEcRrdUuKFvAPKo",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Agathahoeve - Gemiva",
+    "address": "Duinoordseweg 36, 3233 EE Oostvoorne",
+    "lat": 51.912737,
+    "lng": 4.081461,
+    "placeId": "ChIJoTYNoXZTxEcRWMSUAFGnCpA",
+    "primaryType": "health"
+  },
+  {
+    "name": "Albert Vink Dierenweide",
+    "address": "De Wilgen 10, 7948 NM Nijeveen",
+    "lat": 52.736807899999995,
+    "lng": 6.162719,
+    "placeId": "ChIJWdqmOb5tyEcRb75WVDqRxIU",
+    "primaryType": ""
+  },
+  {
+    "name": "Alliade - Kinderboerderij Anna Zijlstra Hoeve",
+    "address": "Parklaan 10, 9103 SP Dokkum",
+    "lat": 53.316498499999994,
+    "lng": 5.9960884,
+    "placeId": "ChIJu_1WadqryUcR1wtYfF73PbM",
+    "primaryType": ""
+  },
+  {
+    "name": "Alliade - Kinderboerderij Doniastate",
+    "address": "Truerderdyk 14, 9051 LC Stiens",
+    "lat": 53.2647816,
+    "lng": 5.783118099999999,
+    "placeId": "ChIJd-lXbhECyUcRvyVLlq8Q12Q",
+    "primaryType": ""
+  },
+  {
+    "name": "Alliade - Kinderboerderij Sneek",
+    "address": "Harste 11B, 8602 JX Sneek",
+    "lat": 53.0374205,
+    "lng": 5.6481547,
+    "placeId": "ChIJLRk-bNXxyEcRhdCTzn13DRI",
+    "primaryType": ""
+  },
+  {
+    "name": "Alpacafarm Vorstenbosch - Alpaca boerderij",
+    "address": "Leeghandseweg 10a, 5476 VD Vorstenbosch",
+    "lat": 51.6621904,
+    "lng": 5.5416775,
+    "placeId": "ChIJVdPKJkbixkcRbMahaUAHV1k",
+    "primaryType": "farm"
+  },
+  {
+    "name": "André Hoeve",
+    "address": "Noord-Spierdijkerweg 179, 1643 NM Spierdijk",
+    "lat": 52.656481299999996,
+    "lng": 4.9498076,
+    "placeId": "ChIJbXJ79xaryEcRDjnxVyI7x0Y",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Animatieboerderij La Prairie",
+    "address": "Velleriestraat 121, 7700 Moeskroen, België",
+    "lat": 50.731977,
+    "lng": 3.2141528,
+    "placeId": "ChIJh6T_m_clw0cRsddy1cK9Vh0",
+    "primaryType": ""
+  },
+  {
+    "name": "Avonturenboerderij Molenwaard",
+    "address": "Wilgenweg 3, 2964 AM Groot-Ammers",
+    "lat": 51.9301628,
+    "lng": 4.8417718999999995,
+    "placeId": "ChIJ9VNF_dJ_xkcR5mfOetMKX1U",
+    "primaryType": "amusement_center"
+  },
+  {
+    "name": "Balans kinderboerderij De Veenweide🪿",
+    "address": "Vedelaarpad 53, 3766 CM Soest",
+    "lat": 52.167317000000004,
+    "lng": 5.2806446,
+    "placeId": "ChIJtZ9-8vJBxkcRPKC_LTQ28uI",
+    "primaryType": ""
+  },
+  {
+    "name": "Bartjes boerderij",
+    "address": "Buinerweg 8D, 9536 PG Ees",
+    "lat": 52.908251799999995,
+    "lng": 6.8145264999999995,
+    "placeId": "ChIJYzLwwJPet0cR_U150sacaG4",
+    "primaryType": "amusement_center"
+  },
+  {
+    "name": "Beekdalhoeve Kinderboerderij Marsdijk",
+    "address": "Andrej Sacharovweg 2, 9403 WE Assen",
+    "lat": 53.0156371,
+    "lng": 6.5912714,
+    "placeId": "ChIJk__xyJglyEcRsGODqdUEws8",
+    "primaryType": ""
+  },
+  {
+    "name": "Beleef de koe",
+    "address": "Westerseweg 23, 9785 TD Zuidwolde",
+    "lat": 53.263486300000004,
+    "lng": 6.5725691,
+    "placeId": "ChIJa6PR5MnNyUcRnQdyTMFzZEc",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Beleefboerderij",
+    "address": "Reindersdijk 859, 7751 SH Dalen",
+    "lat": 52.674796799999996,
+    "lng": 6.7724551,
+    "placeId": "ChIJ1U5kh3f9t0cRgswafM0FvkQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Beleefboerderij BUITEN",
+    "address": "Kanaaldijk Zuid 12, 3998 WK Schalkwijk",
+    "lat": 52.008128,
+    "lng": 5.1711237,
+    "placeId": "ChIJ2zGuDQBnxkcRH3N-zgZ2YSg",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Beleefboerderij de Elihoeve",
+    "address": "Noord-Linschoterzandweg 35, 3425 EL Snelrewaard",
+    "lat": 52.034724399999995,
+    "lng": 4.885351,
+    "placeId": "ChIJjY0hu03VLkQRgyhKkUQanOw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Beleefboerderij De kleine Carrousel",
+    "address": "Koebushorst 7, 7245 TD Laren",
+    "lat": 52.229000799999994,
+    "lng": 6.398336899999999,
+    "placeId": "ChIJ7fM3hJ7zx0cR6Ov5ZQAGAsI",
+    "primaryType": ""
+  },
+  {
+    "name": "Beleefboerderij en camping de Stelle",
+    "address": "Stelweg 3, 4305 RC Ouwerkerk",
+    "lat": 51.6240683,
+    "lng": 3.9642883999999996,
+    "placeId": "ChIJ5ex62NNfxEcRqAEGo5hr0B8",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Beleeftuin Drakensteyn",
+    "address": "Ellerweg 22a, 8256 RT Biddinghuizen",
+    "lat": 52.4690285,
+    "lng": 5.7794338,
+    "placeId": "ChIJya_iAXnTx0cRYXimJhyChjE",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Belevenisboerderij Schieveen",
+    "address": "Oude Bovendijk 220, 3046 NL Rotterdam",
+    "lat": 51.9658853,
+    "lng": 4.4408901,
+    "placeId": "ChIJNZsRlRvLxUcRFETcqkZoBLA",
+    "primaryType": ""
+  },
+  {
+    "name": "Belevingsboerderij de Zes Grazen",
+    "address": "Boersterweg 67, 9796 TA Sint Annen",
+    "lat": 53.2953872,
+    "lng": 6.6718015,
+    "placeId": "ChIJgWW2LlnRyUcRwkpGF2U3upc",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "BIJ De Boerentuin - Uw kleinschalige Zorgboerderij & Inspiratietuin",
+    "address": "Geerling 11, 1611 BT Bovenkarspel",
+    "lat": 52.7116458,
+    "lng": 5.2397785,
+    "placeId": "ChIJ5a8EtnykyEcR1jA0pNWkZak",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Billy's Boerderij",
+    "address": "Akkerwinde 43, 5684 HG Best",
+    "lat": 51.4976455,
+    "lng": 5.3895098,
+    "placeId": "ChIJh2ET0mPdxkcR-LAymqVwFYQ",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Bio Boerderij Hof te Muizenhole",
+    "address": "Muizenholstraat, 9570 Lierde, België",
+    "lat": 50.7764167,
+    "lng": 3.8389458,
+    "placeId": "ChIJy0BOc3qow0cRBMIR2I9b5Ps",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bio-boerderij Den Diepen Boomgaard",
+    "address": "Rijkenhoekstraat 80, 1850 Grimbergen, België",
+    "lat": 50.937954,
+    "lng": 4.373678,
+    "placeId": "ChIJyx0-2Szow0cRb4UxI8Fpwls",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bioboerderij De Kleinaart",
+    "address": "Kleinaartstraat 32, 3832 Ulbeek, België",
+    "lat": 50.8408611,
+    "lng": 5.299545000000001,
+    "placeId": "ChIJNVgppycZwUcRmH5xoj_MLpI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Bioboerderij dubbeldoel",
+    "address": "Zwartschaapstraat 5, 1755 Pajottegem, België",
+    "lat": 50.7852109,
+    "lng": 4.0968821,
+    "placeId": "ChIJV4YzJx26w0cRPml0EUb4lJ8",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Bioboerderij Miltenburg",
+    "address": "Overeind 33, 3998 JB Schalkwijk",
+    "lat": 51.9871464,
+    "lng": 5.206817099999999,
+    "placeId": "ChIJdRKLObJgxkcRO0TTap0kv5o",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Biologisch Melkveebedrijf en IJsboerderij De Meulenhorst",
+    "address": "Achterbroekweg 1, 7731 PN Ommen",
+    "lat": 52.478836699999995,
+    "lng": 6.471413999999999,
+    "placeId": "ChIJz6JxwE38x0cRWHdglfcfHiY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische boerderij De Hofstad",
+    "address": "Olen 13, 5694 NP Breugel",
+    "lat": 51.5148334,
+    "lng": 5.5402109,
+    "placeId": "ChIJVXFFbIPfxkcR8ZyqLg_5V98",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische Boerderij het Vertrouwen - Wendy de Koning",
+    "address": "Verlengde Roemersdijk 6, 1921 CR Akersloot",
+    "lat": 52.567482999999996,
+    "lng": 4.732137,
+    "placeId": "ChIJG8ordVL4xUcRaKqyISQ7Qg0",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Biologische boerderij Martinizicht",
+    "address": "Westerseweg 2, 9738 AH Groningen",
+    "lat": 53.2593703,
+    "lng": 6.5746924,
+    "placeId": "ChIJS1YgjYTNyUcR27CfH-Her_k",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Biologische Schapenboerderij De Zeekraal",
+    "address": "Oosterend 17, 8897 HW Oosterend Terschelling",
+    "lat": 53.4039302,
+    "lng": 5.3756968,
+    "placeId": "ChIJB98cZoYkyUcRxdBTQGniVKA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Blij op de Boerderij Zorgboerderij Dagbesteding volwassenen en ouderenzorg",
+    "address": "Keinsmerweg 88a, 1756 CE 't Zand",
+    "lat": 52.8275892,
+    "lng": 4.7684974,
+    "placeId": "ChIJT1dLpw5Pz0cRZbTjP3kWID0",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Boerderij 't Geertje",
+    "address": "Geerweg 7, 2381 LT Zoeterwoude",
+    "lat": 52.0943779,
+    "lng": 4.505336400000001,
+    "placeId": "ChIJKcvIZK3IxUcRiKt578Wr0DU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij ’T Westendorp",
+    "address": "Westendorpweg 2, 7122 JT Aalten",
+    "lat": 51.8836885,
+    "lng": 6.5198399,
+    "placeId": "ChIJf8cyAgh_uEcRNecCAmoWuek",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "Boerderij \"De Boterbloem\" V.O.F.",
+    "address": "Amerongerwetering 2, 3958 MD Amerongen",
+    "lat": 52.002449899999995,
+    "lng": 5.4264642,
+    "placeId": "ChIJB3EhLA1axkcRyPDyS0YfMLI",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Boerderij 22",
+    "address": "Verlengde Scholtenskanaal Oostzijde 22, 7881 JR Emmer-Compascuum",
+    "lat": 52.7987049,
+    "lng": 7.0172307,
+    "placeId": "ChIJAfQB5Jzpt0cRkzDrilrRf_g",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij 63",
+    "address": "Hoogdeurnestraat 63, 9600 Ronse, België",
+    "lat": 50.7259015,
+    "lng": 3.6262645000000004,
+    "placeId": "ChIJrwrCo9sFw0cRaAcXCb1eS4E",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij aan de dijk",
+    "address": "Ketelmeerweg 3, 8308 RA Nagele",
+    "lat": 52.620743999999995,
+    "lng": 5.7170687,
+    "placeId": "ChIJF-CBY-aByEcR7j8AbHxLxE4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Boterhuys",
+    "address": "Zijldijk 7, 2362 AE Warmond",
+    "lat": 52.1866105,
+    "lng": 4.5276127,
+    "placeId": "ChIJPS5r1AbExUcRzz3i4FMk-LM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Camping Nieuw Duinoord",
+    "address": "Postweg 165, 1795 JM De Cocksdorp",
+    "lat": 53.1320606,
+    "lng": 4.8420333,
+    "placeId": "ChIJtxcCyDIuz0cRHMpFADXpuWA",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Boerderij de Boeren Biezen",
+    "address": "Sara Beytsweg 2, 4529 JL Eede",
+    "lat": 51.253789399999995,
+    "lng": 3.4644155,
+    "placeId": "ChIJuYwGzSpew0cRgh4Cl-U8rwE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij de Boterbloem",
+    "address": "Karel Doormanweg 58, 8309 PC Tollebeek",
+    "lat": 52.656946500000004,
+    "lng": 5.655342,
+    "placeId": "ChIJ43sOfQmEyEcRvFysxaP21O8",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij De Deel",
+    "address": "Heuvenseweg 6, 6991 JE Rheden",
+    "lat": 52.017648799999996,
+    "lng": 6.0247063,
+    "placeId": "ChIJKaXYPyCjx0cRA4lOvTsIlbw",
+    "primaryType": "event_venue"
+  },
+  {
+    "name": "Boerderij De Dreef",
+    "address": "Roelandsweg 3a, 4325 CR Renesse",
+    "lat": 51.730135499999996,
+    "lng": 3.7721031999999997,
+    "placeId": "ChIJ132IN6LxxEcRKJixdyESd_4",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Boerderij de Grens",
+    "address": "Bavelseweg 170, 5124 PZ Molenschot",
+    "lat": 51.552659999999996,
+    "lng": 4.8646348999999995,
+    "placeId": "ChIJ3ctff6ajxkcRosQI8KkHTS8",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderij De Haen",
+    "address": "Dr, Dokter Poletlaan 21, 5626 NC Eindhoven",
+    "lat": 51.46455460000001,
+    "lng": 5.448028100000001,
+    "placeId": "ChIJh_iPSVDZxkcR7rDItL4N5vI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij De Huydecoper",
+    "address": "Huydecoperlaan 1, 3744 PG Baarn",
+    "lat": 52.215493200000004,
+    "lng": 5.227437,
+    "placeId": "ChIJVVVVVWFqxkcRrjuzXs5uahA",
+    "primaryType": ""
+  },
+  {
+    "name": "Boerderij De Kommel",
+    "address": "Kommelsweg 1, 6245 KC Eijsden",
+    "lat": 50.7673851,
+    "lng": 5.7246945,
+    "placeId": "ChIJtwSJWz3swEcRoZ2qihlOit4",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "Boerderij De Liedehoeve",
+    "address": "Liedeweg 32, 2065 AJ Haarlemmerliede",
+    "lat": 52.388333300000006,
+    "lng": 4.6902778,
+    "placeId": "ChIJbdfqB6PlxUcRmUksFOjtRpU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij De Morgenstond (Boris & Ellen Heemskerk)",
+    "address": "Boekhorsterweg 20, 2374 BN Oud Ade",
+    "lat": 52.1992562,
+    "lng": 4.5563161,
+    "placeId": "ChIJwx5T_JHDxUcRm87M9VK-VT0",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderij de Muiderhof",
+    "address": "Dijkweg 4, 1398 PG Muiden",
+    "lat": 52.3316057,
+    "lng": 5.1041488,
+    "placeId": "ChIJtddNgiESxkcRoAi82jUUiqM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij de oude Deel",
+    "address": "Lankerenseweg 13, 3781 NB Voorthuizen",
+    "lat": 52.1790082,
+    "lng": 5.5712306,
+    "placeId": "ChIJHzEAwXtJxkcROwqX1wd81Kw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij de Straat-Hof",
+    "address": "Willem van der Veldenweg 57, 2451 BB Leimuiden",
+    "lat": 52.212899699999994,
+    "lng": 4.669368599999999,
+    "placeId": "ChIJO5pxKe7cxUcRwCOB7_SpmIU",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Boerderij De Vloeiweide",
+    "address": "Ritseweg 2, 4891 SR Rijsbergen",
+    "lat": 51.5419567,
+    "lng": 4.6988065,
+    "placeId": "ChIJAbNiN_ofxEcRrO0MQXhIOA0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij De Vooruitgang",
+    "address": "Achtermiddenweg 3, 2445 AA Aarlanderveen",
+    "lat": 52.124513,
+    "lng": 4.740962,
+    "placeId": "ChIJhbszxZbZxUcRAALvIhKkzjU",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij De Zonnewijzer",
+    "address": "Koningslaan 15, 3981 HD Bunnik",
+    "lat": 52.0679485,
+    "lng": 5.1725616,
+    "placeId": "ChIJ84yD5S9mxkcRS8OZftpNASs",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Den Hoek",
+    "address": "Leemsteeg 23, 7384 SN Wilp",
+    "lat": 52.2072679,
+    "lng": 6.062193799999999,
+    "placeId": "ChIJF2a6wYHAx0cR0lMbOiViwic",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderij Dichtbij",
+    "address": "Zwetkade Noord 3, 2291 HZ Wateringen",
+    "lat": 52.007140799999995,
+    "lng": 4.2884344,
+    "placeId": "ChIJ4_XuNAu0xUcRupvAg8au1pk",
+    "primaryType": "lodging"
+  },
+  {
+    "name": "Boerderij Eben Haëzer",
+    "address": "Postweg 2, 7951 KT Staphorst",
+    "lat": 52.6536435,
+    "lng": 6.1198502999999995,
+    "placeId": "ChIJF0_X3N1zyEcRGy3CjbjYBb0",
+    "primaryType": "travel_agency"
+  },
+  {
+    "name": "Boerderij Fortzicht",
+    "address": "Voordorpsedijk 35, 3737 BL Groenekan",
+    "lat": 52.110572499999996,
+    "lng": 5.1566059,
+    "placeId": "ChIJx7qGLNtoxkcRGFBzWtzEU9w",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderij Het Binnenveld",
+    "address": "Zuidelijke Meentsteeg 9, 3911 TD Rhenen",
+    "lat": 51.98500440000001,
+    "lng": 5.5748005,
+    "placeId": "ChIJ1Sg7IY5TxkcRt01W9zjuBZo",
+    "primaryType": "butcher_shop"
+  },
+  {
+    "name": "Boerderij Het Gagelgat - Stichting De Paardenkamp",
+    "address": "Birkstraat 107, 3768 HD Soest",
+    "lat": 52.163100199999995,
+    "lng": 5.3194859999999995,
+    "placeId": "ChIJm7a_cntBxkcRKKgP5BxiaLw",
+    "primaryType": "monument"
+  },
+  {
+    "name": "Boerderij Hoogerwaard",
+    "address": "Lageweg 45, 2935 CD Ouderkerk aan den IJssel",
+    "lat": 51.9689857,
+    "lng": 4.6472147999999995,
+    "placeId": "ChIJUyYaOwHTxUcRhHaiOMvHwGM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij In Via",
+    "address": "Zuidbroek 143, 2861 LK Bergambacht",
+    "lat": 51.9361707,
+    "lng": 4.7275478,
+    "placeId": "ChIJF1E7Ap3VxUcRbcgUqt236AQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Koldermelk",
+    "address": "Kolderveense Bovenboer 4, 7948 LV Nijeveen",
+    "lat": 52.744755299999994,
+    "lng": 6.1546397,
+    "placeId": "ChIJh33q3VxtyEcRS9ydjManC1k",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderij Krakenburg - Horeca",
+    "address": "Olen 50, 5674 PJ Nuenen",
+    "lat": 51.5123031,
+    "lng": 5.547212099999999,
+    "placeId": "ChIJYcmFiaXfxkcRdivpvdvjQko",
+    "primaryType": "family_restaurant"
+  },
+  {
+    "name": "Boerderij Levensvreugd",
+    "address": "Bovenberg 130, 2861 BD Bergambacht",
+    "lat": 51.956105,
+    "lng": 4.8265271,
+    "placeId": "ChIJl_ibF6N_xkcRL7E5kaeXCzA",
+    "primaryType": ""
+  },
+  {
+    "name": "Boerderij Moervliet",
+    "address": "Raamschoorseweg 30, 4838 EN Breda",
+    "lat": 51.5577411,
+    "lng": 4.723402,
+    "placeId": "ChIJJaji59kfxEcRc_84_wJvgso",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderij Onder de Eik",
+    "address": "Ossenkampweg 4, 7447 PR Hellendoorn",
+    "lat": 52.4198767,
+    "lng": 6.4197277999999995,
+    "placeId": "ChIJ79lXiRT7x0cR-cpPXR1gMAg",
+    "primaryType": "restaurant"
+  },
+  {
+    "name": "Boerderij Ophovenerhof",
+    "address": "Molenweg 57, 6133 XM Sittard",
+    "lat": 50.987544,
+    "lng": 5.8619267,
+    "placeId": "ChIJuz9cr4G4wEcRCxK_yqD5Tlo",
+    "primaryType": ""
+  },
+  {
+    "name": "Boerderij Polderzicht",
+    "address": "Polderweg 23, 1191 JR Ouderkerk aan de Amstel",
+    "lat": 52.290979099999994,
+    "lng": 4.898909499999999,
+    "placeId": "ChIJBYokueQKxkcR5CC1ghen3Lg",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderij Pret",
+    "address": "Oude Telgterweg 251, 3853 PG Ermelo",
+    "lat": 52.2812888,
+    "lng": 5.582913899999999,
+    "placeId": "ChIJzemCcCnLx0cRD1JozCVvtcg",
+    "primaryType": "sports_activity_location"
+  },
+  {
+    "name": "Boerderij Straathof",
+    "address": "Kruisweg 3, 7932 PS Echten",
+    "lat": 52.7011647,
+    "lng": 6.3922238,
+    "placeId": "ChIJ25YfmAYPyEcRmNvv4TdTi4Y",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Boerderij te Winkel",
+    "address": "Vredenseweg 176, 7105 CC Winterswijk Huppel",
+    "lat": 51.994448,
+    "lng": 6.773637399999999,
+    "placeId": "ChIJNbdfrH9luEcRoto9qE9N6WQ",
+    "primaryType": "store"
+  },
+  {
+    "name": "Boerderij van het Maximiliaanpark🪿",
+    "address": "Schipperijkaai 2, 1000 Brussel, België",
+    "lat": 50.85872750000001,
+    "lng": 4.3504779,
+    "placeId": "ChIJE4yZ0JrDw0cR-krI0qdwTLg",
+    "primaryType": ""
+  },
+  {
+    "name": "Boerderij Westerpark",
+    "address": "Overbrakerpad 10, 1014 AZ Amsterdam",
+    "lat": 52.3873849,
+    "lng": 4.8653442,
+    "placeId": "ChIJMfEkd37ixUcR9Vl-0U2yG9o",
+    "primaryType": ""
+  },
+  {
+    "name": "Boerderij Wezenlandenpark",
+    "address": "Almelose Kanaal 33, 8011 KS Zwolle",
+    "lat": 52.505823,
+    "lng": 6.113702,
+    "placeId": "ChIJF_mfJxzfx0cRE-tvJLc1P1Q",
+    "primaryType": ""
+  },
+  {
+    "name": "Boerderij Wolfslaar",
+    "address": "Wolfslaardreef 95, 4834 SN Breda",
+    "lat": 51.5611111,
+    "lng": 4.8016667,
+    "placeId": "ChIJTUXr5b6hxkcRZjnEDs_JvOk",
+    "primaryType": ""
+  },
+  {
+    "name": "Boerderij Zorgvrij",
+    "address": "Genieweg 50, 1981 LN Velsen-Zuid",
+    "lat": 52.429811699999995,
+    "lng": 4.684663899999999,
+    "placeId": "ChIJJ0CMR0_lxUcRnJuLSly3Qog",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Boerderijcamping de Blökke",
+    "address": "Spekkendijk 41, 7095 CE De Heurne",
+    "lat": 51.881830699999995,
+    "lng": 6.509233500000001,
+    "placeId": "ChIJew9mUaB_uEcRQxN1kGydjoE",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Boerderijcamping De Mebel",
+    "address": "Hoge Heurnseweg 14, 7095 CH De Heurne",
+    "lat": 51.879028399999996,
+    "lng": 6.4988772,
+    "placeId": "ChIJHXKq_pt_uEcRYXncy32ppRw",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Boerderijcamping Molenperk",
+    "address": "Vrouwenpolderseweg 63, 4353 KA Serooskerke",
+    "lat": 51.557876699999994,
+    "lng": 3.6064354,
+    "placeId": "ChIJZfa50QmUxEcRF1vUeTtzfZY",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Boerderijcamping Terweierhof",
+    "address": "Prinsenbaan 18, 6104 BG Koningsbosch",
+    "lat": 51.0711678,
+    "lng": 5.972800599999999,
+    "placeId": "ChIJARNlK9a2wEcRLwQugziYuIQ",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Boerderijcamping Zuiderhoeve",
+    "address": "Dishoekseweg 28, 4371 NH Koudekerke",
+    "lat": 51.475021,
+    "lng": 3.5409870000000003,
+    "placeId": "ChIJX5E5VJyXxEcRVpVgj-D5kbQ",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Boerderijrecreatie",
+    "address": "Marwei 126, 8508 RH Delfstrahuizen",
+    "lat": 52.9010611,
+    "lng": 5.8449463999999995,
+    "placeId": "ChIJWZnO3QVgyEcRZF5D83s9Rk4",
+    "primaryType": "sports_activity_location"
+  },
+  {
+    "name": "Boerderijrecreatie&educatie Lacro-i-Agro",
+    "address": "Eindstraat 30, 6265 AD Sint Geertruid",
+    "lat": 50.7945382,
+    "lng": 5.7631843,
+    "placeId": "ChIJX31Gp4PrwEcRXf990E2QhDY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "BoerenBed - Hoeve Den Overdraght",
+    "address": "Woestenseweg 31, 8970 Poperinge, België",
+    "lat": 50.881295699999995,
+    "lng": 2.7632193,
+    "placeId": "ChIJ8RBSxxbE3EcRqKe6e4sNZeI",
+    "primaryType": "farmstay"
+  },
+  {
+    "name": "BoerPelleboer (Proef, Beleef & Zorg) Natuurboerderij (Polderzicht)",
+    "address": "Oude Wetering 139a, 8293 PE Mastenbroek",
+    "lat": 52.5807406,
+    "lng": 6.016013900000001,
+    "placeId": "ChIJVUbUD713yEcRvBxlVgKp3TM",
+    "primaryType": "health"
+  },
+  {
+    "name": "Bolderburen Natuurspeeltuin",
+    "address": "Prijsseweg 1, 4105 LE Culemborg",
+    "lat": 51.949698000000005,
+    "lng": 5.2165094,
+    "placeId": "ChIJESAuvCpexkcRoQFNb3KFnyY",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Bonte Belevenis",
+    "address": "Vaartdijk 25B, 1566 PN Assendelft",
+    "lat": 52.4800566,
+    "lng": 4.769112499999999,
+    "placeId": "ChIJuce7x4L7xUcRRlvNPeTIk40",
+    "primaryType": ""
+  },
+  {
+    "name": "Buitenspeeltuin Hollandsche Hoeve",
+    "address": "Houtkade 24, 4463 AC Goes",
+    "lat": 51.5135843,
+    "lng": 3.8981035999999993,
+    "placeId": "ChIJ1c5Hb5mJxEcRmFEVfkvhA_w",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Burmania Boerderij",
+    "address": "Miedwei 2, 9081 AJ Lekkum",
+    "lat": 53.220240999999994,
+    "lng": 5.816539499999999,
+    "placeId": "ChIJ-SrGFWn-yEcRNdWjEbcBKNY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "BuurtBoerderij De Nijkamphoeve",
+    "address": "Escamplaan 1750, 2547 HG Den Haag",
+    "lat": 52.0541583,
+    "lng": 4.2585042,
+    "placeId": "ChIJkXAFjxOxxUcRMutr8CYQ0eA",
+    "primaryType": ""
+  },
+  {
+    "name": "Buurtboerderij Eersel",
+    "address": "Houtwal, 5521 NB Eersel",
+    "lat": 51.355011399999995,
+    "lng": 5.3266081,
+    "placeId": "ChIJCzMzTjLQxkcRrKrA7JLIvLE",
+    "primaryType": ""
+  },
+  {
+    "name": "Buurtboerderij Gliphoeve",
+    "address": "Geldershoofd 79, 1103 BG Amsterdam",
+    "lat": 52.323038,
+    "lng": 4.970884,
+    "placeId": "ChIJmS7yDgsMxkcR_ZGpz9C4jGY",
+    "primaryType": ""
+  },
+  {
+    "name": "Cafetaria Kinderboerderij De Zeven Torentjes🪿",
+    "address": "Canadaring 41, 8310 Brugge, België",
+    "lat": 51.1893058,
+    "lng": 3.2446571,
+    "placeId": "ChIJXbWfH2tRw0cRK1ybK5jkb84",
+    "primaryType": ""
+  },
+  {
+    "name": "Camping Boerderij de Omleiding",
+    "address": "Bûtefjild 24, 9269 TV Feanwâlden",
+    "lat": 53.243963799999996,
+    "lng": 5.9743162,
+    "placeId": "ChIJ_XbOXyyryUcRxbWjgDMlOX4",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Carrehoeve",
+    "address": "Carrestraat 5, 8680 Koekelare, België",
+    "lat": 51.069462699999995,
+    "lng": 2.99163,
+    "placeId": "ChIJaz3YHi2z3EcRSz1TINgSRlY",
+    "primaryType": ""
+  },
+  {
+    "name": "Cosis, Kinderboerderij Winschoten",
+    "address": "Bovenburen 96, 9675 HH Winschoten",
+    "lat": 53.1528661,
+    "lng": 7.0415627,
+    "placeId": "ChIJq6BR3hLNt0cRLI0rYmuZEC8",
+    "primaryType": ""
+  },
+  {
+    "name": "Dairyfarm De Kastanje hoeve",
+    "address": "Beets 100, 1475 JH Beets",
+    "lat": 52.5844444,
+    "lng": 4.9666667,
+    "placeId": "ChIJw_GWIMwBxkcRj6ZBkuQozVk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Beleefboerderij",
+    "address": "Laagheideweg 11, 5966 PL America",
+    "lat": 51.4555352,
+    "lng": 5.9534082999999995,
+    "placeId": "ChIJR2VOElY_x0cRRFyD3XgSN40",
+    "primaryType": ""
+  },
+  {
+    "name": "De Bleije Boerderij",
+    "address": "Weesperbinnenweg 7-9, 1398 PC Muiden",
+    "lat": 52.321526,
+    "lng": 5.063002099999999,
+    "placeId": "ChIJE2YB0_MNxkcRRwVETZVTAdg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Boerderij",
+    "address": "Hogestraat 5, 8167 PS Oene",
+    "lat": 52.352250999999995,
+    "lng": 6.0657347,
+    "placeId": "ChIJtTIkf2nDx0cRakgbJLWaeRA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Boerderij Breugel",
+    "address": "Leeuwstraat 2, 5694 VR Breugel",
+    "lat": 51.519706400000004,
+    "lng": 5.51487,
+    "placeId": "ChIJnZzqoKXfxkcR-Id_YDQYtag",
+    "primaryType": "event_venue"
+  },
+  {
+    "name": "De Cuytegemhoeve",
+    "address": "Kuitegemstraat 61, 2890 Sint-Amands, België",
+    "lat": 51.041599399999996,
+    "lng": 4.1947005,
+    "placeId": "ChIJrzXqrAyTw0cRPt5DWFQCrKM",
+    "primaryType": "diner"
+  },
+  {
+    "name": "De Dierenhoeve",
+    "address": "Godinstraat 8, 2222 Heist-op-den-Berg, België",
+    "lat": 51.102185,
+    "lng": 4.8100083,
+    "placeId": "ChIJ1xyv-l1QwUcRmZulwL7xYN4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Drentse Koe Speelboerderij",
+    "address": "Wolddijk 23, 7961 NA Ruinerwold",
+    "lat": 52.734004399999996,
+    "lng": 6.2768235,
+    "placeId": "ChIJ80mfPuwSyEcRoJdtK6T9P3o",
+    "primaryType": "sports_activity_location"
+  },
+  {
+    "name": "De Fronik Boerderij",
+    "address": "Westzanerdijk 150, 1507 AL Zaandam",
+    "lat": 52.4346131,
+    "lng": 4.8057082,
+    "placeId": "ChIJxchGTMv8xUcRRJo9qSaRWCA",
+    "primaryType": ""
+  },
+  {
+    "name": "De Gele Berg - Dierenhoekje",
+    "address": "Kerkstraat, 4715 RP Rucphen",
+    "lat": 51.52683150000001,
+    "lng": 4.5547371000000005,
+    "placeId": "ChIJiT2j1pYZxEcRmfICKHoX6uM",
+    "primaryType": ""
+  },
+  {
+    "name": "De Hollandsche Hoeve",
+    "address": "Kattendijksedijk 27, 4463 AL Goes",
+    "lat": 51.5127202,
+    "lng": 3.8989637000000004,
+    "placeId": "ChIJifuUEd6JxEcROJY11Ct7kVw",
+    "primaryType": "park"
+  },
+  {
+    "name": "De Kleine Boerderij",
+    "address": "Achterdijk 100, 5454 NT Sint Hubert",
+    "lat": 51.6870282,
+    "lng": 5.8151950999999995,
+    "placeId": "ChIJB41ssWwQx0cRwh65jC8Q7Hc",
+    "primaryType": "campground"
+  },
+  {
+    "name": "De Kleine Hoeve",
+    "address": "Burgstsedreef 2, 4822 ZA Breda",
+    "lat": 51.6094933,
+    "lng": 4.7347629,
+    "placeId": "ChIJL4jpM3UgxEcROgIeV5TUtps",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Klepper CSA, Zelfoogstboerderij",
+    "address": "Klepperstraat 21, 1860 Meise, België",
+    "lat": 50.941504099999996,
+    "lng": 4.3103924,
+    "placeId": "ChIJ11n-YAXqw0cRgzW6iYOC_hg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Klepperhoeve",
+    "address": "Meiveldpad 55, 4336 XW Middelburg",
+    "lat": 51.48788330000001,
+    "lng": 3.6207591999999997,
+    "placeId": "ChIJL4KXYsKQxEcRd9CRdL-ZFRQ",
+    "primaryType": ""
+  },
+  {
+    "name": "De Meentboerderij",
+    "address": "Melkmeent 9, 1218 XX Hilversum",
+    "lat": 52.264533199999995,
+    "lng": 5.133169400000001,
+    "placeId": "ChIJC-kWvjsTxkcRkkpraRSX7mE",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "De Melkbrouwerij | Huis in 't Veld | Biologische Boerderij |",
+    "address": "Doldermansweg 1a, 7434 RD Lettele",
+    "lat": 52.273263500000006,
+    "lng": 6.2554438,
+    "placeId": "ChIJ1_p2_wTsx0cRWI6-CUUfFQY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Nonnenbossche Hoeve",
+    "address": "Nonnenbos 6, 5482 ZM Schijndel",
+    "lat": 51.649847699999995,
+    "lng": 5.4205795,
+    "placeId": "ChIJTyFeM9PlxkcR7cUO4LqRPQA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Plukboerderij en B&B van Schelle",
+    "address": "Steenwinkelstraat 499, 2627 Schelle, België",
+    "lat": 51.1247222,
+    "lng": 4.3622222,
+    "placeId": "ChIJtYCRdo7xw0cRRFRq5RfDgS8",
+    "primaryType": "bed_and_breakfast"
+  },
+  {
+    "name": "De Sophiahoeve",
+    "address": "Wasbeeklaan 7, 2361 HG Warmond",
+    "lat": 52.209317299999995,
+    "lng": 4.515100599999999,
+    "placeId": "ChIJIWV5qF3BxUcRLcKt5Tsh34I",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De speelberg Holsbeek vzw",
+    "address": "Meidries 9, 3210 Holsbeek, België",
+    "lat": 50.909685599999996,
+    "lng": 4.7782262,
+    "placeId": "ChIJM-ullcNnwUcRJPqSafBkqkw",
+    "primaryType": "park"
+  },
+  {
+    "name": "De Speelboerderij",
+    "address": "Ellenbroekweg 12, 7482 PJ Haaksbergen",
+    "lat": 52.177128100000004,
+    "lng": 6.6783965,
+    "placeId": "ChIJJRoeCLQMuEcRPNT11_QVHbk",
+    "primaryType": "school"
+  },
+  {
+    "name": "De Speiboerderij",
+    "address": "Speistraat 13, 9550 Herzele, België",
+    "lat": 50.8633204,
+    "lng": 3.8859855,
+    "placeId": "ChIJ705xX7Wmw0cRpVMjUgoOaWs",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Stadsboerderij",
+    "address": "Kemphaanpad 14, 1358 AC Almere",
+    "lat": 52.3425094,
+    "lng": 5.270671699999999,
+    "placeId": "ChIJXRFWnREWxkcRWnbBWdeiRrE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Streekhoeve",
+    "address": "Ganzestraat 49, 3590 Diepenbeek, België",
+    "lat": 50.8963064,
+    "lng": 5.388687,
+    "placeId": "ChIJxWYyEwYhwUcRbq91qi_iLjg",
+    "primaryType": ""
+  },
+  {
+    "name": "De Taemhoeve",
+    "address": "Taemweg 26, 3680 Maaseik, België",
+    "lat": 51.109976499999995,
+    "lng": 5.681610099999999,
+    "placeId": "ChIJea9cJhzOwEcR0daDeVJKw1E",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Trans Kinderboerderij",
+    "address": "Broeder Quirinuslaan 2, 9449 PP Nooitgedacht",
+    "lat": 52.970479700000006,
+    "lng": 6.6596438,
+    "placeId": "ChIJY_bAvOsmyEcRR1PE6dbEdv0",
+    "primaryType": ""
+  },
+  {
+    "name": "De Valkse Knuffelhoeve",
+    "address": "Heivelderweg 12A, 6741 JH Lunteren",
+    "lat": 52.1185183,
+    "lng": 5.6742621,
+    "placeId": "ChIJRTyI1Amzx0cRLEN_MKX5JBk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "De Vierhoekhoeve",
+    "address": "Brielstraat 71, 9860 Oosterzele, België",
+    "lat": 50.9729604,
+    "lng": 3.8102415,
+    "placeId": "ChIJV-GCjml1w0cRTQBVU0y-PJ8",
+    "primaryType": "store"
+  },
+  {
+    "name": "De Westernboerderij - groepsuitjes specialist van Gelderland",
+    "address": "Baarleweg 4, 6941 RD Didam",
+    "lat": 51.946146000000006,
+    "lng": 6.101031,
+    "placeId": "ChIJb__RBDOfx0cRCN_BOA8uk5s",
+    "primaryType": "lodging"
+  },
+  {
+    "name": "De Zijlen, locatie Kinderboerderij De Eelderbaan",
+    "address": "Kornalijnlaan 7, 9743 JK Groningen",
+    "lat": 53.2280181,
+    "lng": 6.5212539,
+    "placeId": "ChIJsT1-RSfNyUcRfSCvtR2BvFI",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenpark",
+    "address": "Overpelt, Kleine Boemerangstraat, 3900 Pelt, België",
+    "lat": 51.1895982,
+    "lng": 5.3874793,
+    "placeId": "ChIJj6aajdkrwUcRoN3VXXysfKE",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenpark \"Landzicht\"",
+    "address": "Oranjeweg 61-B, 3284 KS Zuid-Beijerland",
+    "lat": 51.752728999999995,
+    "lng": 4.3630144,
+    "placeId": "ChIJm9rCrhM4xEcR79UgeUDsn3o",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenpark & Kinderboerderij 't Hertenspoor Echt",
+    "address": "Oranjestraat 67, 6101 HW Echt",
+    "lat": 51.1039588,
+    "lng": 5.8798267,
+    "placeId": "ChIJXRsfF-PJwEcRsg-xtOu5VEI",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenpark De Schuylhut",
+    "address": "Laan van Schuylenburch 20, 7064 AL Silvolde",
+    "lat": 51.912938999999994,
+    "lng": 6.3743492,
+    "placeId": "ChIJxUIySOGDx0cRupydd7QPmpQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenpark Katteberg",
+    "address": "Vrankrijk 20, 3740 Bilzen-Hoeselt, België",
+    "lat": 50.8596521,
+    "lng": 5.5112819,
+    "placeId": "ChIJVSvA2sfgwEcRa06ZAhzOxEQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenpark Plein🪿",
+    "address": "Verdipad, 5481 VT Schijndel",
+    "lat": 51.610882100000005,
+    "lng": 5.4411121,
+    "placeId": "ChIJ94iIyMLmxkcR1gFi8Phnt8A",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenpark ter Horst 🪿",
+    "address": "5961 NJ Horst",
+    "lat": 51.4681272,
+    "lng": 6.063858799999999,
+    "placeId": "ChIJabNePvJBx0cRbjSEdG_Mqw8",
+    "primaryType": ""
+  },
+  {
+    "name": "DierenWeelde",
+    "address": "Hegge 110, 2381 Ravels, België",
+    "lat": 51.4312148,
+    "lng": 5.0402891,
+    "placeId": "ChIJlf5GkTS5xkcR5LzwqrBY7C4",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide",
+    "address": "3881 PD Putten",
+    "lat": 52.2355843,
+    "lng": 5.6202267,
+    "placeId": "ChIJzYirZM81xkcRu2vxlQYv5Q4",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide Aa-weide",
+    "address": "Soerensebeek 40, 8033 DM Zwolle",
+    "lat": 52.5385864,
+    "lng": 6.1050521,
+    "placeId": "ChIJ6zZNb-7fx0cRAezDtN0LbyM",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide Assen Oost",
+    "address": "Adelaarsweg 1, 9404 CW Assen",
+    "lat": 52.990463899999995,
+    "lng": 6.5796134,
+    "placeId": "ChIJ1zdQJwElyEcRJ2KnUof7pOU",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide Breukelen-Noord🪿",
+    "address": "G. van Nijenrodestraat 144, 3621 GM Breukelen",
+    "lat": 52.1833743,
+    "lng": 5.0039352,
+    "placeId": "ChIJNbe4qzFyxkcRoOP7kayCyMw",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide De Brielse Plantage",
+    "address": "Plantageweg 4, 3232 LE Brielle",
+    "lat": 51.897638099999995,
+    "lng": 4.1672228,
+    "placeId": "ChIJ-01JrIdNxEcRkRUh02loZSE",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide Minerva",
+    "address": "Jan van der Zeestraat 13, 9744 AL Groningen",
+    "lat": 53.2021089,
+    "lng": 6.506183399999999,
+    "placeId": "ChIJD9SEYi8zyEcRBXJViIGfRKs",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide Oostergast",
+    "address": "Atlasstraat 53, 9801 VA Zuidhorn",
+    "lat": 53.2469453,
+    "lng": 6.412805,
+    "placeId": "ChIJW0OLa-LKyUcRdt789ypbNJI",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide Oranjebond",
+    "address": "Lisztlaan 8, 9402 RT Assen",
+    "lat": 53.0090465,
+    "lng": 6.5549140999999995,
+    "placeId": "ChIJlUsWJRYlyEcRhH3vx2qWiR0",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide Ouderkerk",
+    "address": "Heemraadsweg 1, 2935 AV Ouderkerk aan den IJssel",
+    "lat": 51.929431099999995,
+    "lng": 4.6457501,
+    "placeId": "ChIJz-IdPiotxEcRwpW2_XOwV-k",
+    "primaryType": ""
+  },
+  {
+    "name": "Dierenweide Stroomdal",
+    "address": "Het Spiek 4S1, 9411 KV Beilen",
+    "lat": 52.855681399999995,
+    "lng": 6.510192,
+    "placeId": "ChIJBXolHBIYyEcRSbDHppWLn0A",
+    "primaryType": ""
+  },
+  {
+    "name": "Doe boerderij",
+    "address": "Schansstraat 3, 5688 NC Oirschot",
+    "lat": 51.5165514,
+    "lng": 5.3214915,
+    "placeId": "ChIJDezOydHDxkcRbqr5q9KqqFU",
+    "primaryType": "museum"
+  },
+  {
+    "name": "Doe-boerderij An 't Hoag",
+    "address": "Walsert 6, 5449 AD Rijkevoort-de Walsert",
+    "lat": 51.6525094,
+    "lng": 5.8540377999999995,
+    "placeId": "ChIJGWag2hoRx0cRXuEZ9kvy5SU",
+    "primaryType": "event_venue"
+  },
+  {
+    "name": "Dorpsboerderij De Brink🪿",
+    "address": "Kroostweg 7, 3704 EA Zeist",
+    "lat": 52.086527,
+    "lng": 5.2279580999999995,
+    "placeId": "ChIJ_w14CRBoxkcRjZiqG24OTgU",
+    "primaryType": ""
+  },
+  {
+    "name": "Dorpsboerderij Dronten | Triade Vitree",
+    "address": "Wisentweg 5A, 8251 PB Dronten",
+    "lat": 52.529455999999996,
+    "lng": 5.6899956,
+    "placeId": "ChIJS1BnAk4qxkcRTJF1JaZVwK0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Dorpsboerderij Kiboe",
+    "address": "Händelstraat 43a, 6961 AB Eerbeek",
+    "lat": 52.1086503,
+    "lng": 6.0528261,
+    "placeId": "ChIJDU950M29x0cRSZ2jDJvhSkw",
+    "primaryType": ""
+  },
+  {
+    "name": "Dorpsboerderij NEST",
+    "address": "Dosseweg 20, 8700 Tielt, België",
+    "lat": 51.027400899999996,
+    "lng": 3.331289,
+    "placeId": "ChIJ2VUwcpxHw0cR-i09r4w9z7A",
+    "primaryType": "event_venue"
+  },
+  {
+    "name": "Dorpsboerderij Waspik🪿",
+    "address": "Prins Bernhardstraat 1, 5165 TH Waspik",
+    "lat": 51.6845035,
+    "lng": 4.9451542,
+    "placeId": "ChIJ5Vd0Tg2axkcReA0TzgGSmGE",
+    "primaryType": ""
+  },
+  {
+    "name": "Dorpsboerderij Weverkeshof",
+    "address": "Jonkheer Hugo van Berckellaan 5, 5671 CH Nuenen",
+    "lat": 51.481068099999995,
+    "lng": 5.553960699999999,
+    "placeId": "ChIJGxt5jKUgx0cRZ-CfNaPRJC0",
+    "primaryType": ""
+  },
+  {
+    "name": "Duinboerderij Willemshoeve",
+    "address": "Hoevelaan 17, 2681 JL Monster",
+    "lat": 52.0355916,
+    "lng": 4.1905024,
+    "placeId": "ChIJKXjHB7KxxUcR-6XkxGLMkEo",
+    "primaryType": ""
+  },
+  {
+    "name": "Ecologische Boerderij de Boterbloem",
+    "address": "Lutkemeerweg 262 B, 1067 TH Amsterdam",
+    "lat": 52.3602687,
+    "lng": 4.7662433,
+    "placeId": "ChIJE7EVrjDjxUcRhdAd37iCens",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Educatieboerderij",
+    "address": "Nachtegaallaan 5, 5074 NA Biezenmortel",
+    "lat": 51.614032699999996,
+    "lng": 5.1870923,
+    "placeId": "ChIJETSryh3rxkcR_yM8PCM3EYE",
+    "primaryType": ""
+  },
+  {
+    "name": "Educatieve Vee- Natuurboerderij Hamster Mieden",
+    "address": "De Buorren 66, 9289 HH Drogeham",
+    "lat": 53.2037863,
+    "lng": 6.109706399999999,
+    "placeId": "ChIJv8a6cJBSyEcRMbwVNIyglzk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Eemhoeve",
+    "address": "3896 LD Zeewolde",
+    "lat": 52.2586164,
+    "lng": 5.396717199999999,
+    "placeId": "ChIJO2xn0405xkcRQippwaoROBw",
+    "primaryType": ""
+  },
+  {
+    "name": "Eetcafé De Boerderij",
+    "address": "Camminghastraat 22, 9162 EM Ballum",
+    "lat": 53.4446333,
+    "lng": 5.6867376,
+    "placeId": "ChIJxag4_WUQyUcRYoLj-rOvWys",
+    "primaryType": "diner"
+  },
+  {
+    "name": "Eetcafé De Boerderij",
+    "address": "Schoolweg 2a, 9911 PA Oosterwijtwerd",
+    "lat": 53.337932599999995,
+    "lng": 6.8113402999999995,
+    "placeId": "ChIJZyB378XXyUcRpgivLEiqQ54",
+    "primaryType": "restaurant"
+  },
+  {
+    "name": "Eiboerderij Smid",
+    "address": "Elfde Wijk 13, 7796 HP Heemserveen",
+    "lat": 52.599526399999995,
+    "lng": 6.5596099,
+    "placeId": "ChIJY8k9hVsByEcR4lrU7ThFi6k",
+    "primaryType": "store"
+  },
+  {
+    "name": "Eigen Wijs Boerderij",
+    "address": "Oude Vensedijk 5, 5652 RT Eindhoven",
+    "lat": 51.448648299999995,
+    "lng": 5.4296017,
+    "placeId": "ChIJHyNV3d7bxkcRty0zN65ODXg",
+    "primaryType": ""
+  },
+  {
+    "name": "Eko boerderij de Eerste",
+    "address": "Uiterdijkenweg 64, 8316 RT Marknesse",
+    "lat": 52.7249628,
+    "lng": 5.9369092,
+    "placeId": "ChIJCY4wRTV7yEcRrM9FqOFYyo4",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Ekoboerderij de Lingehof",
+    "address": "Hemmensestraat 17, 6668 LB Randwijk",
+    "lat": 51.9362986,
+    "lng": 5.6942569,
+    "placeId": "ChIJG58jvairx0cRX80Y5pNkYHI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Erve Weusthag - kinderboerderij",
+    "address": "27, Van Alphenstraat 25, 7556 JT Hengelo",
+    "lat": 52.2804529,
+    "lng": 6.7914607,
+    "placeId": "ChIJ3cfMcCcOuEcRpUv4BEoCVvQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Evenementenlocatie Boerderij & Gasterij 't Dommeltje",
+    "address": "Hoog Munsel 9a, 5283 VT Boxtel",
+    "lat": 51.6003124,
+    "lng": 5.3403106,
+    "placeId": "ChIJoxX_7mPoxkcRgZaxGcpuBJA",
+    "primaryType": "event_venue"
+  },
+  {
+    "name": "everdijhof mobiele kinderboerderij en hengstenhouderij",
+    "address": "b, Zwanenberg 24, 2920 Kalmthout, België",
+    "lat": 51.406865599999996,
+    "lng": 4.4795891,
+    "placeId": "ChIJ7zFNdpMPxEcReGRgGs7iPbY",
+    "primaryType": ""
+  },
+  {
+    "name": "Feest op de boerderij",
+    "address": "Rijksweg 106, 4849 BR Dorst",
+    "lat": 51.589972499999995,
+    "lng": 4.8547245,
+    "placeId": "ChIJlauAaqSYxkcR1wtF__-q3t4",
+    "primaryType": ""
+  },
+  {
+    "name": "Gasthuishoeve Boshoek",
+    "address": "Lintsesteenweg 697, 2540 Hove, België",
+    "lat": 51.136610499999996,
+    "lng": 4.5005958,
+    "placeId": "ChIJgV0yW2X7w0cRmwLFtSJ5Pb8",
+    "primaryType": ""
+  },
+  {
+    "name": "Geertjes Hoeve",
+    "address": "Thematerweg 5, 3455 SM haarzuilens",
+    "lat": 52.1175329,
+    "lng": 5.0050747,
+    "placeId": "ChIJOyWAhkhwxkcRMWY3Pc0okq8",
+    "primaryType": ""
+  },
+  {
+    "name": "Geitenboerderij Jutrijp",
+    "address": "Riperwei 5, 8623 XR Jutrijp",
+    "lat": 52.999559999999995,
+    "lng": 5.6520892,
+    "placeId": "ChIJn_D2SHTxyEcRK2mYDUJrEqk",
+    "primaryType": ""
+  },
+  {
+    "name": "Geitenboerderij Ridammerhoeve",
+    "address": "Nieuwe Meerlaan 4, 1182 DB Amstelveen",
+    "lat": 52.313049299999996,
+    "lng": 4.8244443,
+    "placeId": "ChIJh6wwJbHhxUcR_gjTlqk6IIQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Gemiva - Kinderboerderij IJsselhage",
+    "address": "Fransezoom 14-16, 2914 KA Nieuwerkerk aan den IJssel",
+    "lat": 51.960800299999995,
+    "lng": 4.5981574,
+    "placeId": "ChIJvS2fVJrSxUcRgT47VFiYbD4",
+    "primaryType": ""
+  },
+  {
+    "name": "Graasboerderij",
+    "address": "Sondelerleane 5, 8565 HG Sondel",
+    "lat": 52.863260999999994,
+    "lng": 5.6041514999999995,
+    "placeId": "ChIJT4VmdHmSyEcRVNgNsVLrK3Y",
+    "primaryType": "farm"
+  },
+  {
+    "name": "HARM's Hoeve",
+    "address": "Westerkanaaldijk 5, 6581 KC Malden",
+    "lat": 51.790504399999996,
+    "lng": 5.832402699999999,
+    "placeId": "ChIJWV3GX00Px0cRRV3o8dnXYdI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Heemskerk Dierendorp",
+    "address": "Vrijburglaan 1, 1962 VA Heemskerk",
+    "lat": 52.5083954,
+    "lng": 4.676800699999999,
+    "placeId": "ChIJV_3Yr6DwxUcRGPSu-2xvyhA",
+    "primaryType": ""
+  },
+  {
+    "name": "Heierhof Beleefboerderij",
+    "address": "Heiereind 11, 5561 BB Riethoven",
+    "lat": 51.34986,
+    "lng": 5.3987929999999995,
+    "placeId": "ChIJkZrzZtjQxkcRqcpJl5-j0xg",
+    "primaryType": "tourist_attraction"
+  },
+  {
+    "name": "Hoeve 't Alkeveld",
+    "address": "Steenbekestraat 6, 9620 Zottegem, België",
+    "lat": 50.895714399999996,
+    "lng": 3.7885850000000003,
+    "placeId": "ChIJ4Q86NEIKw0cRx_mvIi7lizA",
+    "primaryType": ""
+  },
+  {
+    "name": "Hoeve De Koeberg",
+    "address": "Heerkuil 1, 6265 NB Sint Geertruid",
+    "lat": 50.7954085,
+    "lng": 5.7763265,
+    "placeId": "ChIJwza28-rrwEcRgIRfhxvlDV8",
+    "primaryType": "service"
+  },
+  {
+    "name": "Hoeve De Werkhorst",
+    "address": "Werkhorstlaan 12, 8381 XP Vledder",
+    "lat": 52.879796,
+    "lng": 6.2130336,
+    "placeId": "ChIJ-dNM6n5qyEcRjMZqqqDfTbQ",
+    "primaryType": "tea_house"
+  },
+  {
+    "name": "Hoeve Hazerswoude / Gebr. Gijzenberg Landbouwbedrijf",
+    "address": "Hoofdweg Oostzijde 152, 1175 LD Lijnden",
+    "lat": 52.344462,
+    "lng": 4.7493701,
+    "placeId": "ChIJxR8q6q7mxUcR5KdE2qKPgb0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Hoeve op den Mierhoop",
+    "address": "Mierhoopweg 1, 3850 Nieuwerkerken, België",
+    "lat": 50.8839335,
+    "lng": 5.2201995,
+    "placeId": "ChIJjbCc9BYXwUcRz04N_UEEei8",
+    "primaryType": "amusement_center"
+  },
+  {
+    "name": "Hoeve Rust-hoff",
+    "address": "Broekpolderweg 3, 3155 EP Maasland",
+    "lat": 51.924230699999995,
+    "lng": 4.2952967,
+    "placeId": "ChIJJ31AZkBLxEcRolLwbE1aJUo",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Hoeve van der Meulen",
+    "address": "Zuidweg 26, 4444 's-Heer Abtskerke",
+    "lat": 51.4640839,
+    "lng": 3.8785657,
+    "placeId": "ChIJAZ7_BxGIxEcRd-dYF7tj60s",
+    "primaryType": "nature_preserve"
+  },
+  {
+    "name": "Hoevewinkel en Kijk-doe-speelboerderij, 't Silsomhof",
+    "address": "Olmenhoekstraat 49, 3071 Kortenberg, België",
+    "lat": 50.9090005,
+    "lng": 4.5883746,
+    "placeId": "ChIJDcU0jsPfw0cRaf7OvVUHCHo",
+    "primaryType": "butcher_shop"
+  },
+  {
+    "name": "Hoevewinkel/Geitenboerderij de Klaverlochting",
+    "address": "Hofsmeer 23, 9340 Lede, België",
+    "lat": 50.9664563,
+    "lng": 3.9473166,
+    "placeId": "ChIJ7VrgiL-Yw0cRs1ifXmPwYe4",
+    "primaryType": "food_store"
+  },
+  {
+    "name": "Hullie Speelboerderij",
+    "address": "Canadasweg 3A, 5406 TS Uden",
+    "lat": 51.672073399999995,
+    "lng": 5.5811405,
+    "placeId": "ChIJlXFxTn_ixkcRV2TPrDI4iWo",
+    "primaryType": "playground"
+  },
+  {
+    "name": "IJsboerderij Boere IIs Akkrum",
+    "address": "Jinshuzen 2, 8491 MR Akkrum",
+    "lat": 53.0529796,
+    "lng": 5.8069697,
+    "placeId": "ChIJHSrAYgv3yEcRPF3WTQBkrRU",
+    "primaryType": "korean_restaurant"
+  },
+  {
+    "name": "IJsboerderij de Gerda Hoeve",
+    "address": "Het Dreefje 3, 4721 PL Schijf",
+    "lat": 51.4852243,
+    "lng": 4.4996138,
+    "placeId": "ChIJgUTVRpoQxEcRm_5YQ8kIaW0",
+    "primaryType": "ice_cream_shop"
+  },
+  {
+    "name": "Jeugd- en Gezinsboerderij Karrewiel",
+    "address": "Troon 9, 2280 Grobbendonk, België",
+    "lat": 51.1860043,
+    "lng": 4.7640272999999995,
+    "placeId": "ChIJdyeLHwtUwUcRnzOMTbrRo5Q",
+    "primaryType": ""
+  },
+  {
+    "name": "Jeugdspeelpark Hendrik-Ido-Ambacht",
+    "address": "Rossenburgpad 12, 3342 GP Hendrik-Ido-Ambacht",
+    "lat": 51.8450212,
+    "lng": 4.6226712,
+    "placeId": "ChIJtb66jaAuxEcRi7jM_SXBD3Q",
+    "primaryType": "playground"
+  },
+  {
+    "name": "JP vd Bent loc. Boerderij Kleurrijk",
+    "address": "Boegen 2, 8567 JC Oudemirdum",
+    "lat": 52.852256999999994,
+    "lng": 5.5444447,
+    "placeId": "ChIJ1_1rHbaTyEcRLs6Lz1WdRf0",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Kampeerboerderij Ykema",
+    "address": "Nummer 11, 8613 JH Sandfirden",
+    "lat": 52.9870752,
+    "lng": 5.5098934,
+    "placeId": "ChIJaYqGIvLryEcRVhRcR2JXpwY",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Kasteel Kinderboerderij",
+    "address": "Mierloseweg 1G, 5662 KA Geldrop",
+    "lat": 51.4239773,
+    "lng": 5.558656600000001,
+    "placeId": "ChIJdyCUIKAnx0cRgLFaQEmO7B0",
+    "primaryType": ""
+  },
+  {
+    "name": "Kijkboerderij 't Hoogeveld",
+    "address": "Helmerdijk 71, 9761 VN Eelde",
+    "lat": 53.1411168,
+    "lng": 6.5451127,
+    "placeId": "ChIJNch9Eg4yyEcRa27FAR4mEc8",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Kijkboerderij De Pierlapont",
+    "address": "Zeedijkweg 23, 8210 Zedelgem, België",
+    "lat": 51.142103,
+    "lng": 3.1815822,
+    "placeId": "ChIJl4Gg8N1Rw0cRnfPD3KlokZY",
+    "primaryType": "lodging"
+  },
+  {
+    "name": "Kinderboerderij",
+    "address": "2M5R+7Q, 3650 Dilsen-Stokkem, België",
+    "lat": 51.008135,
+    "lng": 5.6918795,
+    "placeId": "ChIJJQ0Gl4jFwEcREy2uhfUJWZA",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij",
+    "address": "Unnamed Road, 6464 EP Kerkrade",
+    "lat": 50.868412199999995,
+    "lng": 6.0799439,
+    "placeId": "ChIJlRl1cwqjwEcRAbzKR5HLnpU",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij",
+    "address": "Hommelweg 2, 6114 RT Susteren",
+    "lat": 51.0694384,
+    "lng": 5.886328,
+    "placeId": "ChIJUcVOKgC3wEcRszv7RJz1w3s",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij",
+    "address": "4GG3+P7, 3990 Peer, België",
+    "lat": 51.126371899999995,
+    "lng": 5.5034389,
+    "placeId": "ChIJf6v577zXwEcRpK-u13g4Sxs",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij",
+    "address": "Scheldestraat 3, 4301 VA Zierikzee",
+    "lat": 51.6485882,
+    "lng": 3.9090778999999998,
+    "placeId": "ChIJA_hPRJL1xEcR7fVOxaRtLhg",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij",
+    "address": "Keukenhof 7, 2161 AN Lisse",
+    "lat": 52.266464,
+    "lng": 4.5383587,
+    "placeId": "ChIJX3LWoAPCxUcRQLmWtfnJDug",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij",
+    "address": "Unnamed Road, 7828, 7828 AA Emmen",
+    "lat": 52.731587,
+    "lng": 6.901842800000001,
+    "placeId": "ChIJ7SJGnYvlt0cRXzufgRpiGd8",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Kinderboerderij",
+    "address": "Unnamed Road, 1787 RE Julianadorp",
+    "lat": 52.8811836,
+    "lng": 4.770116799999999,
+    "placeId": "ChIJUdBF4ndJz0cR6VhJbAjk6ow",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij 'De Strohalm'",
+    "address": "Cort van der Lindenkade 5, 1067 LJ Amsterdam",
+    "lat": 52.3756452,
+    "lng": 4.7929704,
+    "placeId": "ChIJYU7ufL7jxUcRwpV_NgAi0mU",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij 't Bakkershof",
+    "address": "Kastijdestraat 15, 9820 Merelbeke-Melle, België",
+    "lat": 50.9412215,
+    "lng": 3.7172908999999996,
+    "placeId": "ChIJLVWWoaUMw0cRs35khOOtB7U",
+    "primaryType": "government_office"
+  },
+  {
+    "name": "Kinderboerderij 't Boerke🪿",
+    "address": "Nocturnestraat 201, 6544 SN Nijmegen",
+    "lat": 51.8283231,
+    "lng": 5.8091481,
+    "placeId": "ChIJtblhAjEGx0cRyuvKRORPYHM",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij 't Dierenduintje",
+    "address": "Duinenboschweg 1-A, 1901 NR Castricum",
+    "lat": 52.5497131,
+    "lng": 4.6571172999999995,
+    "placeId": "ChIJgcLIpRb3xUcRbbjPbnPWIL4",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij ‘t Dijkweitje",
+    "address": "Brugge 1, 8052 BZ Hattem",
+    "lat": 52.4831639,
+    "lng": 6.0594714,
+    "placeId": "ChIJlzju80fZx0cRjR6w2LRvrjc",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij 't Erf",
+    "address": "Mendelssohnstraat 6, 5144 GG Waalwijk",
+    "lat": 51.681748,
+    "lng": 5.064026,
+    "placeId": "ChIJiceitN-TxkcRQms9rzA1UB0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Kinderboerderij 't Hoefblad",
+    "address": "Pr. Beatrixpark 7, 3121 KJ Schiedam",
+    "lat": 51.930469599999995,
+    "lng": 4.3874422,
+    "placeId": "ChIJ09JZF1A1xEcRIMZlBwarHwk",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij 't Schaapsherdertje - Noordwijk",
+    "address": "Oude Zeeweg 3, 2201 TA Noordwijk",
+    "lat": 52.2356935,
+    "lng": 4.4376638999999996,
+    "placeId": "ChIJlwypV5TBxUcRE-orBkR_ULs",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij 't Schuurken",
+    "address": "Baardegemsestraat 39, 9280 Lebbeke, België",
+    "lat": 50.9735071,
+    "lng": 4.1283389999999995,
+    "placeId": "ChIJTZoPvkKVw0cRd4T3HCTBnj4",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij 't Veldje🪿",
+    "address": "Abraham Kuyperborch 2, 5241 HR Rosmalen",
+    "lat": 51.723462,
+    "lng": 5.3557157,
+    "placeId": "ChIJ7yrEj93vxkcR-B5CLRN6KV8",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij 't Woelige Nest",
+    "address": "Boterbloem 3, 3972 SB Driebergen-Rijsenburg",
+    "lat": 52.053179300000004,
+    "lng": 5.2680178,
+    "placeId": "ChIJuftY5D1dxkcRKZcP0KJ9-3s",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij \"De Beestenboel\"",
+    "address": "Potjesdam 2, 1722 XN Zuid-Scharwoude",
+    "lat": 52.700137999999995,
+    "lng": 4.821088,
+    "placeId": "ChIJm99zQf1Tz0cRDotIqY3YGss",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij \"De Holandsche Hoeve\"",
+    "address": "Kattendijksedijk 23, 4463 AL Goes",
+    "lat": 51.512493,
+    "lng": 3.8979947,
+    "placeId": "ChIJdx6tn-CJxEcRJAP_rGy6Hzw",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij \"De Kleine Artis\"",
+    "address": "Fluytschip 26a, 1483 HA De Rijp",
+    "lat": 52.558000299999996,
+    "lng": 4.8450349,
+    "placeId": "ChIJj97Gsf_-xUcRftRJDx-b5So",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij \"De Schouw\" Zutphen",
+    "address": "Schouwlaaksweg 2, 7206 DJ Zutphen",
+    "lat": 52.129166700000006,
+    "lng": 6.1991667,
+    "placeId": "ChIJuZnf_RGUx0cREXKZ3tQV3zQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij \"Het Hemelsdierenrijk\"",
+    "address": "Putse 8, 9571 Lierde, België",
+    "lat": 50.8081136,
+    "lng": 3.8585788999999995,
+    "placeId": "ChIJu5wZf0ymw0cRwqbMnQg1St4",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Alverna🪿",
+    "address": "6603 DB Wijchen, Nederland",
+    "lat": 51.8025424,
+    "lng": 5.762117900000001,
+    "placeId": "ChIJsXulje4Hx0cRZdvc5WGpF24",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Barelhoeve",
+    "address": "Barelstraat 183, 2880 Bornem, België",
+    "lat": 51.0881122,
+    "lng": 4.2335323,
+    "placeId": "ChIJV1ZqurCSw0cROtSlL2T2vVo",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Beestenboetje",
+    "address": "Ter Coulsterlaan 1A, 1851KA, Heiloo, 1851 LA Heiloo",
+    "lat": 52.602455199999994,
+    "lng": 4.7090216,
+    "placeId": "ChIJZac7Yg_4xUcRu-PV9rSppd8",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Berkum (Zwolle)",
+    "address": "Van Het Hoffpad 1, 8024 BZ Zwolle",
+    "lat": 52.5237969,
+    "lng": 6.1458258,
+    "placeId": "ChIJUwWzwZjfx0cR5QSwlvFPN3E",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Binnenmaas",
+    "address": "Vrouwe Huisjesweg 9, 3271 LX Mijnsheerenland",
+    "lat": 51.8014411,
+    "lng": 4.5187778,
+    "placeId": "ChIJPXyycVEwxEcRrrz81n68Dxg",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Boerenvreugd 🪿",
+    "address": "Beethovenlaan 118, 1431 WZ Aalsmeer",
+    "lat": 52.255818,
+    "lng": 4.772228999999999,
+    "placeId": "ChIJryOU4CLexUcRg2varClIKhM",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Bokkeslot",
+    "address": "Tapuitstraat 57, 8540 Deerlijk, België",
+    "lat": 50.8408053,
+    "lng": 3.3606762,
+    "placeId": "ChIJNQHzd1Y8w0cRSX7yxW1sJnM",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Bospark",
+    "address": "Parklaan 2, 2404 NC Alphen aan den Rijn",
+    "lat": 52.1317555,
+    "lng": 4.6556783,
+    "placeId": "ChIJx9eTU-XaxUcRLa-2W0iWwYY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Boxtel🪿",
+    "address": "Apollopad 1, 5283 KE Boxtel",
+    "lat": 51.5877098,
+    "lng": 5.3426436,
+    "placeId": "ChIJ1fdv8G3oxkcRxJMrLvG2R6U",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Cantecleer",
+    "address": "Buitensingel 3, 8261 DA Kampen",
+    "lat": 52.556297799999996,
+    "lng": 5.909317199999999,
+    "placeId": "ChIJAZTCmp14yEcR2bwldTe9w4A",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Cantecleerhoeve",
+    "address": "Hoevedreef 2, 4567 EC Clinge",
+    "lat": 51.2668938,
+    "lng": 4.0933152,
+    "placeId": "ChIJWcOduSKIw0cR9R8Tl0kVn_E",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Canton",
+    "address": "Piet Heinlaan 13, 3742 AN Baarn",
+    "lat": 52.2074461,
+    "lng": 5.2982057,
+    "placeId": "ChIJd5zez05AxkcRb56AnDkosLE",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Charlotte van Bylandthoeve",
+    "address": "Burg. Feitsmapark 1, 3362 BZ Sliedrecht",
+    "lat": 51.822511899999995,
+    "lng": 4.7831332,
+    "placeId": "ChIJlyqSBA2DxkcRoGbbDz6dHTg",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij d'Oude Smelterij",
+    "address": "Ieperse Heerweg 5, 8820 Torhout, België",
+    "lat": 51.053829099999994,
+    "lng": 3.0954338,
+    "placeId": "ChIJazyJB4BMw0cREUrF_WDOh2Y",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Ahof",
+    "address": "Polstraat 9, 7121 DH Aalten",
+    "lat": 51.9257853,
+    "lng": 6.5867493,
+    "placeId": "ChIJA2xFKNl5uEcRRHfS8D6BxMs",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Baak Beverwijk",
+    "address": "Westerhoutweg 18, 1942 HK Beverwijk",
+    "lat": 52.4812662,
+    "lng": 4.6418202,
+    "placeId": "ChIJbW5r1FjwxUcRYciDFTDoVw8",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de Beestenbende",
+    "address": "M.J. Granpré Molièrestraat 1, 1333 KB Almere",
+    "lat": 52.39342,
+    "lng": 5.260598,
+    "placeId": "ChIJq9f5yJcXxkcRRmVYZNkTYp0",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de Beestenbult, Cosis",
+    "address": "Korenstraat 47, 7908 NL Hoogeveen",
+    "lat": 52.7170838,
+    "lng": 6.443842,
+    "placeId": "ChIJe_GIjg0QyEcR7YRilv-fRHU",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Boerenzwaluw",
+    "address": "Boslaan 5, 2132 RJ Hoofddorp",
+    "lat": 52.2989922,
+    "lng": 4.701189299999999,
+    "placeId": "ChIJF8HBjgjnxUcRltF6UsZ7aF8",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Bollekeshoef",
+    "address": "Groenstraat 38, 2220 Heist-op-den-Berg, België",
+    "lat": 51.0668182,
+    "lng": 4.7515716,
+    "placeId": "ChIJh2Ui20tbwUcRig1Nk57bXaI",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Bongelaar",
+    "address": "Van Veenweg 96, 1701 HH Heerhugowaard",
+    "lat": 52.6690108,
+    "lng": 4.8564485,
+    "placeId": "ChIJ9-u082dUz0cREk248l9jTvc",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de Contactweide",
+    "address": "Snijdelwijklaan 6, 2771 SX Boskoop",
+    "lat": 52.067562599999995,
+    "lng": 4.6439435,
+    "placeId": "ChIJMdfzkk_QxUcRUOrIoAcmqPs",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Dierenhoeve",
+    "address": "Sint Marielaan 10, 2212 TJ Noordwijkerhout",
+    "lat": 52.267484499999995,
+    "lng": 4.48816,
+    "placeId": "ChIJMwYYAOLBxUcRZDcXzt3b5Dg",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Dierenploeg",
+    "address": "Vlimmeren 1, 4761 NX Zevenbergen",
+    "lat": 51.6444444,
+    "lng": 4.5980555999999995,
+    "placeId": "ChIJ30zdpa8jxEcRpBibFZXwSjo",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Drassige Driehoek",
+    "address": "Jaagpad 148D, 2288 CN Rijswijk",
+    "lat": 52.0242604,
+    "lng": 4.345536,
+    "placeId": "ChIJ9UopINO1xUcRvkZPpk_eXJQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de Goffert🪿",
+    "address": "Slotemaker de Bruïneweg 268, 6532 AD Nijmegen",
+    "lat": 51.8259274,
+    "lng": 5.8397051,
+    "placeId": "ChIJn_jTmo8Ix0cRvD5Hvk71kvA",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Goudse Hofsteden",
+    "address": "Bloemendaalseweg 34a, 2804 AB Gouda",
+    "lat": 52.0323012,
+    "lng": 4.696312,
+    "placeId": "ChIJKaNFu0nRxUcRuGYZYDEiag8",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Hazewinkel",
+    "address": "De Twijnder 40, 5506 AP Veldhoven",
+    "lat": 51.418212399999994,
+    "lng": 5.3816197,
+    "placeId": "ChIJ51nihVvaxkcRU-JyG3wZjpU",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Heeg",
+    "address": "Maastrichterweg 2b, 6228 XT Maastricht",
+    "lat": 50.818704399999994,
+    "lng": 5.724662299999999,
+    "placeId": "ChIJ8xu9ltnrwEcRVRGgV_MKxMs",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Heuvel",
+    "address": "Weithusen 63, 4102 NV Culemborg",
+    "lat": 51.9556518,
+    "lng": 5.252324799999999,
+    "placeId": "ChIJSdGvCE9exkcRJU2j-h2QhAY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de Hoeve",
+    "address": "Snelliuslaan 31, 1171 CZ Badhoevedorp",
+    "lat": 52.342058099999996,
+    "lng": 4.7719809,
+    "placeId": "ChIJCU_URAnhxUcREgFwpYmg9zY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de Kakelenburg",
+    "address": "2636 EJ Schipluiden",
+    "lat": 51.973106099999995,
+    "lng": 4.3192365,
+    "placeId": "ChIJnW-RRzW1xUcR3OmY21GnwWg",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Kerkestee",
+    "address": "Plattendijk 1, 3224 AV Hellevoetsluis",
+    "lat": 51.829662799999994,
+    "lng": 4.1540919999999995,
+    "placeId": "ChIJVcy9LShOxEcRdFlrO4cCpbY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Klaprooshof Voorhout",
+    "address": "Klaprooshof 22, 2215 DM Voorhout",
+    "lat": 52.2217814,
+    "lng": 4.4866394,
+    "placeId": "ChIJ_bcnuxrBxUcR94L4CsZ6lGg",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de Kleine Weide",
+    "address": "Dam 20A, 1613 AL Grootebroek",
+    "lat": 52.6899449,
+    "lng": 5.2298653,
+    "placeId": "ChIJaZg42VSlyEcRRS-yPG6WMHk",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de Knuffelweide",
+    "address": "Van Hallstraat 4A, 1161 CG Zwanenburg",
+    "lat": 52.3771201,
+    "lng": 4.742056799999999,
+    "placeId": "ChIJa4z06WvkxUcRIBEhnkUdxac",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Kreek",
+    "address": "Prins Clausstraat 2, 2691 CK 's-Gravenzande",
+    "lat": 52.0008917,
+    "lng": 4.175759,
+    "placeId": "ChIJVQuj9IitxUcRyQ_2FWBcHGo",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Krim Natuuravontuur",
+    "address": "Roggeslootweg 4, 1795 JV De Cocksdorp",
+    "lat": 53.150994000000004,
+    "lng": 4.860726,
+    "placeId": "ChIJFa6_OUUuz0cRNbB2FwiLCh4",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de kromme akker",
+    "address": "Burggravenlaan 3, 4931 XA Geertruidenberg",
+    "lat": 51.705227,
+    "lng": 4.847205,
+    "placeId": "ChIJPbq6gHycxkcRD3D8mZpPwbU",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Lange Schuur🪿",
+    "address": "Stuiverstraat 599, 8400 Oostende, België",
+    "lat": 51.199796799999994,
+    "lng": 2.9287539,
+    "placeId": "ChIJ3cVJW--u3EcR5H6UVut1mrg",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Lenspolder",
+    "address": "Elf Juliwijk 6A, 8620 Nieuwpoort, België",
+    "lat": 51.1342065,
+    "lng": 2.7407315,
+    "placeId": "ChIJ5Swvobm83EcRDYt6cZuSrXs",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Maten",
+    "address": "Pallietergaarde 25, 7329 HB Apeldoorn",
+    "lat": 52.198991,
+    "lng": 6.0001316,
+    "placeId": "ChIJ04WO6K-4x0cRdeDHa6dyjXY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Meent",
+    "address": "Melkmeent 9, 1218 XX Hilversum",
+    "lat": 52.2647252,
+    "lng": 5.1320632999999996,
+    "placeId": "ChIJM4MWmTsTxkcRVS-Pa62H2gM",
+    "primaryType": ""
+  },
+  {
+    "name": "kinderboerderij de Naoberhoeve",
+    "address": "Omhaal 39, 7887 CD Erica",
+    "lat": 52.714759799999996,
+    "lng": 6.930297299999999,
+    "placeId": "ChIJh2relKHvt0cRj_Hg4vRm67c",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Naturij",
+    "address": "Oude Slingeweg 4, 9204 WS Drachten",
+    "lat": 53.0934004,
+    "lng": 6.0714903,
+    "placeId": "ChIJZVHShkdQyEcR_DxqcngddsI",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Olievaar",
+    "address": "Johan Enschedeweg 600, 1422 DR Uithoorn",
+    "lat": 52.243392899999996,
+    "lng": 4.8389773,
+    "placeId": "ChIJS671efPfxUcR1NoWYvTmoxo",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij de Oude Hofstede",
+    "address": "Bovenbuurtweg 35, 6717 XA Ede",
+    "lat": 52.0161831,
+    "lng": 5.6635878,
+    "placeId": "ChIJBT677Sitx0cRD8EdeE8YtgU",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Pijp",
+    "address": "Lizzy Ansinghstraat 82, 1072 RD Amsterdam",
+    "lat": 52.3493048,
+    "lng": 4.8928965,
+    "placeId": "ChIJF_WZaosJxkcRVag2U7-Cv34",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Ridder",
+    "address": "Leeghwaterpark 4, 1445 RA Purmerend",
+    "lat": 52.5026715,
+    "lng": 4.9707009,
+    "placeId": "ChIJgxWv5scGxkcRTT-etefHloA",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Uilenburg",
+    "address": "Uilenburg 6, 5081 WJ Hilvarenbeek",
+    "lat": 51.492028999999995,
+    "lng": 5.1412539,
+    "placeId": "ChIJkygWeq7AxkcROBRbDLQfPsY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Uylenburg",
+    "address": "Staalmeesterslaan 420, 1057 PH Amsterdam",
+    "lat": 52.367473499999996,
+    "lng": 4.845066,
+    "placeId": "ChIJnw6yyxTixUcRIoib28NKwEM",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Vechtse Hoeve🪿",
+    "address": "Van Lingelaan 1A, 3602 PA Maarssen",
+    "lat": 52.1388567,
+    "lng": 5.0490403,
+    "placeId": "ChIJL8M-wyVuxkcRiD5vX08CamE",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Veldstraat",
+    "address": "Veldstraat 147, 2960 Brecht, België",
+    "lat": 51.3731541,
+    "lng": 4.645024300000001,
+    "placeId": "ChIJea4BotgDxEcRWKR64hegsxo",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Vliert🪿",
+    "address": "Droogoven 1, 3961 EW Wijk bij Duurstede",
+    "lat": 51.9785439,
+    "lng": 5.331690099999999,
+    "placeId": "ChIJNTGhyFNZxkcRWAMam6go6R8",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Voskuilerhoeve",
+    "address": "Honingweg 16a, 8091 DN Wezep",
+    "lat": 52.466588599999994,
+    "lng": 6.013197,
+    "placeId": "ChIJdwvSW4DZx0cRAfLBL-3QZQM",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Weidemolen",
+    "address": "Burgemeester Middelberglaan 2, 2721 DX Zoetermeer",
+    "lat": 52.060021,
+    "lng": 4.5528594,
+    "placeId": "ChIJOXjXXlXOxUcRkvHypVSKo58",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Werf",
+    "address": "Archimedeslaan 59, 1098 PX Amsterdam",
+    "lat": 52.3539178,
+    "lng": 4.9451716999999995,
+    "placeId": "ChIJ-_-rB2gJxkcRBtUfZ-U-idY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Woid",
+    "address": "Koperslager 9A, 1625 AH Hoorn",
+    "lat": 52.6530655,
+    "lng": 5.045676200000001,
+    "placeId": "ChIJF3Z5mG6pyEcRv8e15eAJfV0",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij De Zandberg",
+    "address": "Marijke Meustraat 1, 4818 LV Breda",
+    "lat": 51.573962599999994,
+    "lng": 4.7789284,
+    "placeId": "ChIJLyds5TKgxkcRgfvN_UyBy64",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Den Ast",
+    "address": "Hoogwielkestraat 53, 8810 Lichtervelde, België",
+    "lat": 51.033615999999995,
+    "lng": 3.1389511999999997,
+    "placeId": "ChIJXwKeLudLw0cREHcXocSpnqY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Den Uylpark",
+    "address": "Bezoekadres: Heerenveenpad 43 Parkeerplaats:, Amsterdamweg 1, 1324 CB Almere",
+    "lat": 52.3708174,
+    "lng": 5.2071483999999995,
+    "placeId": "ChIJu4QBFtkWxkcR47vZxQVRXhk",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Dierenvreugd",
+    "address": "Zuiderdreef 1, 2153 CL Nieuw-Vennep",
+    "lat": 52.2580836,
+    "lng": 4.6303481,
+    "placeId": "ChIJ35WYj7HCxUcRuT5OhHQyvEI",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Dierenweide Varsselder-Veldhunten",
+    "address": "Achter de Molen, 7076 BM Varsselder",
+    "lat": 51.888961699999996,
+    "lng": 6.357024099999999,
+    "placeId": "ChIJbeO5BjOCx0cR-PlE1uX1xJk",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Donderberg🪿",
+    "address": "Bachstraat 62, 6044 VS Roermond",
+    "lat": 51.1813996,
+    "lng": 6.0099109,
+    "placeId": "ChIJM908MbyzwEcRbm7m2nBLjJA",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Eigen Erf",
+    "address": "Albertsdijk 20, 7461 BW Rijssen",
+    "lat": 52.31089120000001,
+    "lng": 6.5307771,
+    "placeId": "ChIJo6IeDqv3x0cRNnZYTKy1wXA",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Ekenstein",
+    "address": "Alberdaweg, 9901 TA Appingedam",
+    "lat": 53.318503899999996,
+    "lng": 6.8085543,
+    "placeId": "ChIJfSUG3AjXyUcRihjHN8E2Zj4",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Emmelerbos / Werk & Begeleiding Philadelphia Zorg",
+    "address": "Banterweg 2C, 8302 AC Emmeloord",
+    "lat": 52.721333099999995,
+    "lng": 5.7568855,
+    "placeId": "ChIJK-w8iM-HyEcRiX-acSv8Ekg",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij en hertenkamp Weert",
+    "address": "Geurtsvenweg 6, 6006 SN Weert",
+    "lat": 51.2393948,
+    "lng": 5.6661455,
+    "placeId": "ChIJ-cOcWbYtx0cRTxy7G2PqHyY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij en Restaurant Hagerhof",
+    "address": "Hagerlei 1, 5912 PP Venlo",
+    "lat": 51.3542268,
+    "lng": 6.1633192999999995,
+    "placeId": "ChIJU1xo-AlQx0cRl-paT0w8mGA",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij en Stal 't Sweigers",
+    "address": "Sweigers-Zuid 9, 9140 Temse, België",
+    "lat": 51.1505357,
+    "lng": 4.2090499,
+    "placeId": "ChIJIxOoSESNw0cRQ8-opj4XaCw",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij en Waterspeeltuin Tanthof",
+    "address": "Bezoekersingang; langs restaurant Farmhouse, Kalfjeslaan 135, 2623 NB Delft",
+    "lat": 51.9867746,
+    "lng": 4.3542087,
+    "placeId": "ChIJp8gU5KC1xUcRtmdwcTRuQEw",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Engbergen",
+    "address": "Ulftseweg 4b, 7081 AA Gendringen",
+    "lat": 51.8745074,
+    "lng": 6.3860409,
+    "placeId": "ChIJmxWCPZKBx0cRugYvvH-EFm8",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Ermelo",
+    "address": "Enckerkamp, 3853 HK Ermelo",
+    "lat": 52.316356799999994,
+    "lng": 5.6035477,
+    "placeId": "ChIJ5TQdB1UxxkcRB5ipHFrYOak",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Floreffehoeve🪿",
+    "address": "Voorstevliet 29, 4251 EX Werkendam",
+    "lat": 51.809073299999994,
+    "lng": 4.901179000000001,
+    "placeId": "ChIJcYsHH0KExkcRzbtZXkdBVeU",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Freriks",
+    "address": "Frerikshof 15, 7103 CD Winterswijk",
+    "lat": 51.9808771,
+    "lng": 6.7096241,
+    "placeId": "ChIJs08Dlbd6uEcR5PsG36Mj0t0",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Groot Scholtenhagen",
+    "address": "Scholtenhagenweg 23, 7481 VN Haaksbergen",
+    "lat": 52.148486,
+    "lng": 6.72941,
+    "placeId": "ChIJYY0iLw1zuEcRhYsJvL1Q9Nw",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Grootveld",
+    "address": "Grootveld 33, 1745 Opwijk, België",
+    "lat": 50.9551589,
+    "lng": 4.2005797,
+    "placeId": "ChIJp4Ty0kGVw0cRAE82p9HvOps",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Heijderbos",
+    "address": "Het Heijderbos, 6598 LA Heijen",
+    "lat": 51.6734696,
+    "lng": 5.9983075,
+    "placeId": "ChIJKUUYV8kSx0cRRdyc9YBS3wU",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Het Beestenspul",
+    "address": "Tivolistraat, 2513 GZ Den Haag",
+    "lat": 52.079755399999996,
+    "lng": 4.2982867,
+    "placeId": "ChIJOX-muS23xUcRH_9sObbBwSQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Het Gegraaf",
+    "address": "5552 LZ Valkenswaard",
+    "lat": 51.3607072,
+    "lng": 5.4413807,
+    "placeId": "ChIJDfqcsofXxkcR3E85rW26QfE",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Kinderboerderij het Kukelnest (Aveleijn)",
+    "address": "Lintelerweg 4, 7471 LB Goor",
+    "lat": 52.2386627,
+    "lng": 6.5977236,
+    "placeId": "ChIJy2wxZEAKuEcRYqXiyaqiKrM",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Het Sloterpark",
+    "address": "President Allendelaan 2, 1064 GW Amsterdam",
+    "lat": 52.371689599999996,
+    "lng": 4.8151164,
+    "placeId": "ChIJxQvcMLXjxUcRIYy1x03sqJ4",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Het Viaduct",
+    "address": "Havenstraat 99, 9561 EH Ter Apel",
+    "lat": 52.8802289,
+    "lng": 7.0547126,
+    "placeId": "ChIJJ25FKnjDt0cR9c5O8CrX4o8",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Hoek van Holland",
+    "address": "Willem van Houtenstraat 71, 3151 AC Hoek van Holland",
+    "lat": 51.974227,
+    "lng": 4.13441,
+    "placeId": "ChIJpQL3vxmtxUcRce1ByF-p5EM",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Horsterpark",
+    "address": "Horsterparklaan 2, 6922 NR Duiven",
+    "lat": 51.9493819,
+    "lng": 5.9944681,
+    "placeId": "ChIJAe5XnWOhx0cRwtpcvIGstLE",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Houtkamp",
+    "address": "2352 KA Leiderdorp",
+    "lat": 52.1573205,
+    "lng": 4.5318377,
+    "placeId": "ChIJKYB_TPTFxUcRrOHzX9lGC-c",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Kinderboerderij IJsselstee in het Natuurkwartier",
+    "address": "Geinoord 9-12, 3432 PE Nieuwegein",
+    "lat": 52.020964000000006,
+    "lng": 5.082789399999999,
+    "placeId": "ChIJxQC33GZkxkcRctkc8_q1b00",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Jeugddorp De Glind",
+    "address": "Rudolphlaan 6, 3794 MZ De Glind",
+    "lat": 52.1200219,
+    "lng": 5.5073118999999995,
+    "placeId": "ChIJ_7MfDRxPxkcRWreHvjNTqBk",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Jong Leven",
+    "address": "Janspad 2, 1834 EM Sint Pancras",
+    "lat": 52.655206799999995,
+    "lng": 4.7858944999999995,
+    "placeId": "ChIJk5kus4xWz0cRGcUDq3fR-PE",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Kasteel Oost🪿",
+    "address": "6301 PX Valkenburg",
+    "lat": 50.8614708,
+    "lng": 5.840366599999999,
+    "placeId": "ChIJxZlAzbKVwEcReOxMCQjy8Yk",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Kiewit",
+    "address": "Putvennestraat 108, 3500 Hasselt, België",
+    "lat": 50.960958299999994,
+    "lng": 5.3775052,
+    "placeId": "ChIJDUzXszohwUcRZlwqRaRpQjc",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Kobus🪿",
+    "address": "Floraweg 51, 6542 KB Nijmegen",
+    "lat": 51.8373084,
+    "lng": 5.8428759,
+    "placeId": "ChIJ49x3GGMIx0cRSj8KCKY2xuA",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Koekendaal",
+    "address": "Koekendaalseweg 7, 7004 GH Doetinchem",
+    "lat": 51.9512192,
+    "lng": 6.3225405,
+    "placeId": "ChIJC9E0f3SFx0cRyHG3qZRiDpo",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Kinderboerderij Kokiezier",
+    "address": "Belderstraat 30, 7006 SH Doetinchem",
+    "lat": 51.9662056,
+    "lng": 6.2450130999999995,
+    "placeId": "ChIJdSpFFRKbx0cRhzFL3CF120c",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Laag Buurlo",
+    "address": "Homerusstraat 8, 7323 PX Apeldoorn",
+    "lat": 52.2225934,
+    "lng": 6.0030556,
+    "placeId": "ChIJEyLTeUXHx0cRpD8K9pJYDt0",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Landal de Elsgraven",
+    "address": "Restaurant De Elsgraven, Eversdijk 6A, 7468 PV Enter",
+    "lat": 52.310493,
+    "lng": 6.5659038,
+    "placeId": "ChIJ-3ql-Lf3x0cRD_PKIU_rptg",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Landerij de Park",
+    "address": "De Park 12, 6661 NW Elst",
+    "lat": 51.9380763,
+    "lng": 5.8418681999999995,
+    "placeId": "ChIJqVEL10mpx0cRbTtCUR7uPLk",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Leeuwarden",
+    "address": "Jeugdweg 3, 8917 EP Leeuwarden",
+    "lat": 53.2121672,
+    "lng": 5.793959999999999,
+    "placeId": "ChIJ34j3Mn_-yEcRTURdOMwqDTE",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Leijhoeve",
+    "address": "Amanduspad, 4891 NL Rijsbergen",
+    "lat": 51.5195346,
+    "lng": 4.6858825,
+    "placeId": "ChIJ0dXE424exEcRf3fKLLKwC8Q",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Lentehei",
+    "address": "Lenteheide 10, 2200 Herentals, België",
+    "lat": 51.1840153,
+    "lng": 4.7850489,
+    "placeId": "ChIJQabE3cFTwUcRAaisnmDUeXw",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Lettenhof",
+    "address": "Vaartdijk-Noord 65, 8433 Middelkerke, België",
+    "lat": 51.152172,
+    "lng": 2.7987208,
+    "placeId": "ChIJ5wDfBs6k3EcRY_FKrF6-hcY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Maatjeshonk",
+    "address": "9781 XG Bedum",
+    "lat": 53.3029855,
+    "lng": 6.608077100000001,
+    "placeId": "ChIJx9P3SRDRyUcRJtae25koojs",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Merenwijk",
+    "address": "Parkzicht 100, 2317 RH Leiden",
+    "lat": 52.177967699999996,
+    "lng": 4.509398399999999,
+    "placeId": "ChIJucgiCqXGxUcR6JJCFtcnSGA",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Middelharnis",
+    "address": "Westerschelde 12, 3241 PA Middelharnis",
+    "lat": 51.762154599999995,
+    "lng": 4.1726747,
+    "placeId": "ChIJHxBTJgFFxEcRI0s2Mt8Eq1U",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Mikerf",
+    "address": "Mikhof 25, 2930 Brasschaat, België",
+    "lat": 51.3154841,
+    "lng": 4.5370345,
+    "placeId": "ChIJKXjxd_YGxEcRzk0yx22afWQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Nieuw Rotsoord",
+    "address": "Briljantlaan 101, 3523 CL Utrecht",
+    "lat": 52.0744863,
+    "lng": 5.1219507,
+    "placeId": "ChIJs3MxJPplxkcRikKI0Oegvsk",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Nieuw-Beijerland",
+    "address": "'s-Gravenweg 27, 3264 XK Nieuw-Beijerland",
+    "lat": 51.8129073,
+    "lng": 4.3429551,
+    "placeId": "ChIJzbp8jjJIxEcRdSDgf--ZgXQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Nijverdal",
+    "address": "Derde Kampsweg 51, 7442 CC Nijverdal",
+    "lat": 52.3619918,
+    "lng": 6.4924569,
+    "placeId": "ChIJS3fBc5v5x0cRKpES4NdLjHY",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Ommen",
+    "address": "Het Laar 2c, 7731 AV Ommen",
+    "lat": 52.515336,
+    "lng": 6.414617,
+    "placeId": "ChIJ269PXVb9x0cRwA6K7jBTvwI",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Pietersheim",
+    "address": "3620 Lanaken, België",
+    "lat": 50.9028798,
+    "lng": 5.6577306,
+    "placeId": "ChIJSysE1cPCwEcRSCl8CBj1Bfk",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Resort Arcen",
+    "address": "Dorperheideweg 12, 5944 NK Arcen",
+    "lat": 51.480934399999995,
+    "lng": 6.2136436,
+    "placeId": "ChIJy1y3GJhdx0cRexy1k_abvO8",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Rivierenhof",
+    "address": "August van de Wielelei 4, 2100 Antwerpen, België",
+    "lat": 51.2183176,
+    "lng": 4.4759322,
+    "placeId": "ChIJTTolGtP5w0cReC0uUp0wTvE",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Roden",
+    "address": "Norgerweg 2, 9301 JM Roden",
+    "lat": 53.1314205,
+    "lng": 6.4322287,
+    "placeId": "ChIJ_Q5RjwI0yEcR5cFqkHUvy1s",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Rosorum🪿",
+    "address": "Methen 2b, 6904 GN Zevenaar",
+    "lat": 51.9369631,
+    "lng": 6.0600952999999995,
+    "placeId": "ChIJ7eDvUOKhx0cR8IJsYN8MsQI",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Saksenhoeve",
+    "address": "Passage 20A, 2171 GD Sassenheim",
+    "lat": 52.2256413,
+    "lng": 4.5247195,
+    "placeId": "ChIJZQ3ox33BxUcRfrDL21_nWEE",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Samenzóo",
+    "address": "Admiraal W.G. van Nesstraat 8a, 7951 AL Staphorst",
+    "lat": 52.6501259,
+    "lng": 6.2019306,
+    "placeId": "ChIJNT2n3jhzyEcRRZLYRAb1nfQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Stadspark",
+    "address": "Stadspark 3, 9727 KG Groningen",
+    "lat": 53.2060665,
+    "lng": 6.5473235,
+    "placeId": "ChIJYWSt3bUyyEcRVvqoJaH7uCw",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Terneuzen",
+    "address": "Evertsenlaan 88, 4535 AD Terneuzen",
+    "lat": 51.325128799999995,
+    "lng": 3.8526925,
+    "placeId": "ChIJJWChXmCAxEcRzetZqVo6QgU",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Texel",
+    "address": "Paelwerck 9, 1791 WB Den Burg",
+    "lat": 53.0612906,
+    "lng": 4.802291500000001,
+    "placeId": "ChIJsVCrspQwz0cRphK4PjyCBBM",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Tivoli",
+    "address": "Antwerpsesteenweg 94, 2800 Mechelen, België",
+    "lat": 51.046600299999994,
+    "lng": 4.4733275,
+    "placeId": "ChIJERhxGaTlw0cR-E_amo9botQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Uden🪿",
+    "address": "Artillerieweg 3, 5403 PB Uden",
+    "lat": 51.672281299999995,
+    "lng": 5.6240505,
+    "placeId": "ChIJG8bajKgdx0cRzdfCr5GsHZA",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Veendam",
+    "address": "Woldlaan 5, 9642 LX Veendam",
+    "lat": 53.0969554,
+    "lng": 6.8465155,
+    "placeId": "ChIJSweEd5rWt0cRIL8s4y17Kvo",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Wentholtpark",
+    "address": "Wentholtstraat 4, 7131 XM Lichtenvoorde",
+    "lat": 51.9816997,
+    "lng": 6.5741308,
+    "placeId": "ChIJEW4_3Xp5uEcR9NeoStzs3ag",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Westerweide",
+    "address": "Spinozalaan 40, 2231 SR Rijnsburg",
+    "lat": 52.191155699999996,
+    "lng": 4.4351137,
+    "placeId": "ChIJ8cIApcrHxUcR1hZ-ETR6f04",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Wezenlanden",
+    "address": "Almelose Kanaal 33, 8011 KS Zwolle",
+    "lat": 52.505823,
+    "lng": 6.113702,
+    "placeId": "ChIJF_mfJxzfx0cR_9LiYuYmGJI",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Wijkvereniging Emmermeer",
+    "address": "7815 GB Emmen, Nederland",
+    "lat": 52.7975881,
+    "lng": 6.8936886,
+    "placeId": "ChIJa6B7azXnt0cR3HjY0VxeEPs",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Wilhelminapark",
+    "address": "Pr. Beatrixlaan 3, 5684 GJ Best",
+    "lat": 51.4981087,
+    "lng": 5.3906243,
+    "placeId": "ChIJx3z2ZvXcxkcRRp6Y7VKoFGI",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Wilrijk🪿",
+    "address": "Lievevrouwkesbosweg 20, 2610 Antwerpen, België",
+    "lat": 51.1611244,
+    "lng": 4.3782969,
+    "placeId": "ChIJA-4A0EHxw0cRhsTpvcI3yHc",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij Zegersloot",
+    "address": "Burgemeester Bruins Slotsingel 11, 2403 NC Alphen aan den Rijn",
+    "lat": 52.1412434,
+    "lng": 4.689166300000001,
+    "placeId": "ChIJiVs0T7PbxUcR1hHhCoElqaI",
+    "primaryType": ""
+  },
+  {
+    "name": "kinderboerderij zorgboerderij Oosterhoeve",
+    "address": "IJsselsingel 1, 5215 CL 's-Hertogenbosch",
+    "lat": 51.6875143,
+    "lng": 5.335519199999999,
+    "placeId": "ChIJ_VT8egnvxkcRz9wxCzVRwLo",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderij, Didam",
+    "address": "Polstraat 2A, 6942 VJ Didam",
+    "lat": 51.9413257,
+    "lng": 6.1321638,
+    "placeId": "ChIJ5V1d5s2ex0cRbz6tVUSF3WM",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderboerderijdelariks.nl",
+    "address": "Laak 1a, 9406 HX Assen",
+    "lat": 52.999624999999995,
+    "lng": 6.5426969999999995,
+    "placeId": "ChIJp_HpmSYlyEcRI432sxMLIKE",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderkampjes op de boerderij",
+    "address": "Albert Callebautstraat 5, 1600 Sint-Pieters-Leeuw, België",
+    "lat": 50.785808499999995,
+    "lng": 4.2554605,
+    "placeId": "ChIJ_XyEbgDHw0cRgapiCIycQZo",
+    "primaryType": ""
+  },
+  {
+    "name": "Kinderspeelboerderij 't Hofke",
+    "address": "Suetersweg 17, 7497 MZ Bentelo",
+    "lat": 52.2239291,
+    "lng": 6.6999522,
+    "placeId": "ChIJ1YT3J10MuEcRYWFqenWf3Ms",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Kinghorn, De Brede Boerderij",
+    "address": "Tolweg 10, 9914 TA Zeerijp",
+    "lat": 53.351231299999995,
+    "lng": 6.7808226,
+    "placeId": "ChIJq-NSu5_XyUcRMe0gYVbHHHE",
+    "primaryType": "point_of_interest"
+  },
+  {
+    "name": "Knuffelboerderij de Weide Hoeve",
+    "address": "Uddelerveen 92, 3888 MN Uddel",
+    "lat": 52.2597412,
+    "lng": 5.7600568999999995,
+    "placeId": "ChIJJ7pBSFTKx0cRXxd9pFBFNOY",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Koe-Boe-Party (Hoeve-ijs en Kinderboerderij)",
+    "address": "Valgaersteeg 4, 3570 Alken, België",
+    "lat": 50.885483699999995,
+    "lng": 5.2654725,
+    "placeId": "ChIJE-k1XW0ZwUcRd8VEsP3KzAk",
+    "primaryType": "korean_restaurant"
+  },
+  {
+    "name": "KOEkeloeren beleefboerderij",
+    "address": "Wijngaardbosstraat 8, 1755 Pajottegem, België",
+    "lat": 50.8140698,
+    "lng": 4.0839885,
+    "placeId": "ChIJ45ksY7C7w0cR8MurEbqD-d4",
+    "primaryType": "farmstay"
+  },
+  {
+    "name": "Koeweidehof - Hoeveautomaat",
+    "address": "Koeweidestraat 25, 1785 Merchtem, België",
+    "lat": 50.9455149,
+    "lng": 4.2352061,
+    "placeId": "ChIJY_cH76_qw0cR0r9wN9_vkW0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Koffieboerderij \"Groot-Nibbelink\"",
+    "address": "Nibbelinklaan 12, 7065 AH Sinderen",
+    "lat": 51.9260824,
+    "lng": 6.439229999999999,
+    "placeId": "ChIJP12BNdSAx0cReCx2qoTAFAk",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Landbouwbedrijf Hoeve De Hond",
+    "address": "Gaanderse'sweg 2, 4315 PM Dreischor",
+    "lat": 51.69298070000001,
+    "lng": 3.976406,
+    "placeId": "ChIJRwPDBylfxEcRp8md3DjuHto",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Landgoedboerderij Oosterheerdt",
+    "address": "Oosterheerdtstraat 7, 9351 BK Leek",
+    "lat": 53.165827199999995,
+    "lng": 6.3893537,
+    "placeId": "ChIJJ18S7601yEcRjN6mtMtTPWs",
+    "primaryType": "event_venue"
+  },
+  {
+    "name": "Lierhout kinderboerderij",
+    "address": "Diepenburg 3, 2678 WJ De Lier",
+    "lat": 51.9791908,
+    "lng": 4.2458086,
+    "placeId": "ChIJkYf2TOqzxUcR9BLIcLdYQrQ",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Logeer- en Doeboerderij \"De Lummel\"",
+    "address": "Dominicanenstraat 20, 5453 JN Langenboom",
+    "lat": 51.699044799999996,
+    "lng": 5.7320462999999995,
+    "placeId": "ChIJUU29JTsbx0cRQS81xZOZ5o4",
+    "primaryType": "lodging"
+  },
+  {
+    "name": "Malpie Hoeve",
+    "address": "Luikerweg 134, 5551 VA Valkenswaard",
+    "lat": 51.337260799999996,
+    "lng": 5.4418188,
+    "placeId": "ChIJHf9_KebWxkcRIIsSiYySqb0",
+    "primaryType": "cafe"
+  },
+  {
+    "name": "Melkveebedrijf en Boerderij-Educatie Smelt-Luttikhedde",
+    "address": "Braamweg 12-A, 7481 RB Haaksbergen",
+    "lat": 52.15355830000001,
+    "lng": 6.8530372999999996,
+    "placeId": "ChIJHVVJ8bBsuEcRrYAIFDxFX_8",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Milieuboerderij Palingbeek",
+    "address": "Vaartstraat 7, 8902 Ieper, België",
+    "lat": 50.822609799999995,
+    "lng": 2.9065211,
+    "placeId": "ChIJ3e87HRfO3EcRceLb-6_4ol8",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Mini Camping De speelhoeve",
+    "address": "Nibbelinklaan 1, 7065 AE Sinderen",
+    "lat": 51.930993099999995,
+    "lng": 6.429004399999999,
+    "placeId": "ChIJZXrKtCyBx0cRnhBTUzMAhJ4",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Minicamping Welkom op de boerderij",
+    "address": "Zuidwesterringweg 3-I, 8308 PC Nagele",
+    "lat": 52.647334699999995,
+    "lng": 5.7178398999999995,
+    "placeId": "ChIJW8R7jWuByEcRxtFfLrPU3lA",
+    "primaryType": "campground"
+  },
+  {
+    "name": "MMM Zorgboerderij | Triade Vitree",
+    "address": "Gelderseweg 30, 3894 AA Zeewolde",
+    "lat": 52.337880999999996,
+    "lng": 5.5340821,
+    "placeId": "ChIJzfA8duowxkcRyCXRf0GD1b4",
+    "primaryType": ""
+  },
+  {
+    "name": "Mobiele Kinderboerderij Donkey Pronkie",
+    "address": "Provincialeweg 45, 4031 JM Ingen",
+    "lat": 51.9546225,
+    "lng": 5.4782017,
+    "placeId": "ChIJJQjFnxtXxkcRoSbC1PZpCZo",
+    "primaryType": ""
+  },
+  {
+    "name": "Multifunctioneel Centrum Boerderij De Schooten",
+    "address": "Gv M v Waardenburgln 22, 1785 JP Den Helder",
+    "lat": 52.935218,
+    "lng": 4.7688144999999995,
+    "placeId": "ChIJGcHllRFIz0cRIYd2cmSYomo",
+    "primaryType": "event_venue"
+  },
+  {
+    "name": "Museumboerderij Erf 29, van Stichting Streekmuseum \"Ons Erfgoed\"",
+    "address": "Heultjesweg 31, 8267 AH Kampen",
+    "lat": 52.5963411,
+    "lng": 5.891214199999999,
+    "placeId": "ChIJRfAS_tZ4yEcR0sgLh0aZmIA",
+    "primaryType": "museum"
+  },
+  {
+    "name": "Museumboerderij West-Frisia",
+    "address": "Koningspade 31, 1718 MP Hoogwoud",
+    "lat": 52.7283238,
+    "lng": 4.9333779,
+    "placeId": "ChIJN_Wl3c2syEcRdGQv2ahxZmM",
+    "primaryType": "museum"
+  },
+  {
+    "name": "Natuur- & Zorgboerderij Community Farm: Dagbesteding, Paardencoaching, Schapenhoeden Teambuilding, Buitenlocatie",
+    "address": "Lieshoutseweg 76, 5735 RD Aarle-Rixtel",
+    "lat": 51.5131866,
+    "lng": 5.6136137,
+    "placeId": "ChIJbwcq6Xchx0cRnZ9LplEHvFk",
+    "primaryType": "medical_clinic"
+  },
+  {
+    "name": "Natuurbelevingshoeve JoLi",
+    "address": "Terlindenstraat 1, 1670 Pepingen, België",
+    "lat": 50.7303734,
+    "lng": 4.0989908,
+    "placeId": "ChIJnRlRQt23w0cRxjRNOLkp8cU",
+    "primaryType": ""
+  },
+  {
+    "name": "Natuurboerderij BalkInn",
+    "address": "Westerveen 32, 7711 DE Nieuwleusen",
+    "lat": 52.5726291,
+    "lng": 6.2815347,
+    "placeId": "ChIJZ5cFEAALyEcR-TXvsHslB88",
+    "primaryType": ""
+  },
+  {
+    "name": "Natuurboerderij De Brinkhorst",
+    "address": "Wageningseberg 43, 3825 GR Amersfoort",
+    "lat": 52.197849999999995,
+    "lng": 5.4179751,
+    "placeId": "ChIJeYA2RwFHxkcR1D0KTTAOQRc",
+    "primaryType": ""
+  },
+  {
+    "name": "Natuurcentrum en stadsboerderij De Elzenhoek🪿",
+    "address": "Anna van Schuurmanstraat 602, 5344 TX Oss",
+    "lat": 51.7504613,
+    "lng": 5.5032536,
+    "placeId": "ChIJwaczt5v8xkcRjKttNOHj5iM",
+    "primaryType": ""
+  },
+  {
+    "name": "Natuurspeelpark Deken van Miert",
+    "address": "Unnamed Road, 5462 CR Veghel",
+    "lat": 51.614694199999995,
+    "lng": 5.5432134,
+    "placeId": "ChIJu4vYxvDhxkcRW8aKGWZ1bks",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Natuurspeeltuin De Weijver",
+    "address": "Kerkepad 6, 1718 AA Hoogwoud",
+    "lat": 52.711360199999994,
+    "lng": 4.9409173,
+    "placeId": "ChIJtdRDv8isyEcRVT2Nc47usFw",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Natuurspeeltuin Het Diereneiland",
+    "address": "Molenwijk 11, 1035 EE Amsterdam",
+    "lat": 52.4162478,
+    "lng": 4.8877861,
+    "placeId": "ChIJfYblQxAIxkcRVDNZcJ1TtsU",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Neerpedehoeve",
+    "address": "Neerpedestraat 958, 1070 Anderlecht, België",
+    "lat": 50.827833299999995,
+    "lng": 4.2622694,
+    "placeId": "ChIJA04pkivHw0cRh4M-2V6c1wY",
+    "primaryType": "grocery_store"
+  },
+  {
+    "name": "Novalishoeve",
+    "address": "Hoornderweg 46, 1797 RA Den Hoorn Texel",
+    "lat": 53.0269444,
+    "lng": 4.7613889,
+    "placeId": "ChIJ-7cEW_s5z0cRqdMGqwL9hL0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Oens Speelplekkie",
+    "address": "Lhee 7991, 7991 NE Dwingeloo",
+    "lat": 52.829405599999994,
+    "lng": 6.4033999,
+    "placeId": "ChIJn4XA9oUXyEcRcPz6LNKImUc",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Onze 013 Boerderij ’t Valleike 🪿",
+    "address": "Scharwoudestraat 30, 5035 LN Tilburg",
+    "lat": 51.579937099999995,
+    "lng": 4.9848734,
+    "placeId": "ChIJbauj0dWXxkcR_Y-Ccnywqow",
+    "primaryType": ""
+  },
+  {
+    "name": "Onze 013 Boerderij 🪿",
+    "address": "Puccinistraat 319A, 5049 GK Tilburg",
+    "lat": 51.588556999999994,
+    "lng": 5.0707873,
+    "placeId": "ChIJISY0OJOVxkcRcImlWx92PCY",
+    "primaryType": ""
+  },
+  {
+    "name": "Onze 013 Boerderij Dierenweide Roomley",
+    "address": "Kreitenmolenstraat 147, 5071 BC Udenhout",
+    "lat": 51.608971999999994,
+    "lng": 5.1518372999999995,
+    "placeId": "ChIJGxCWjBXrxkcRPKYcC-q6VlA",
+    "primaryType": ""
+  },
+  {
+    "name": "Onze 013 Boerderij Hertenweide Quirijnstokpark",
+    "address": "Quirijnstokpark, 5012 BE Tilburg",
+    "lat": 51.5834976,
+    "lng": 5.1074524,
+    "placeId": "ChIJCZnHXQ6VxkcRqVZB6fBqqP8",
+    "primaryType": ""
+  },
+  {
+    "name": "Onze 013 boerderij Het Wandelbos 🪿",
+    "address": "Indigolaan, 5044 RP Tilburg",
+    "lat": 51.5717,
+    "lng": 5.039655499999999,
+    "placeId": "ChIJx56jPv69xkcRydUTEBOTHRU",
+    "primaryType": ""
+  },
+  {
+    "name": "Onze 013 boerderij Kerkibo",
+    "address": "Bisschop Bekkerslaan 202A, 5046 JK Tilburg",
+    "lat": 51.5717813,
+    "lng": 5.082800199999999,
+    "placeId": "ChIJKX3qUCi-xkcRhVvxjv9oLB8",
+    "primaryType": ""
+  },
+  {
+    "name": "Onze 013 boerderij Maria Goretti",
+    "address": "Stedekestraat 17, 5041 ED Tilburg",
+    "lat": 51.56495710000001,
+    "lng": 5.0793495,
+    "placeId": "ChIJ97mjiy--xkcRWimLopqnAkE",
+    "primaryType": ""
+  },
+  {
+    "name": "Op De Him Boerderijwinkel",
+    "address": "De Him 4, 9023 BC Jorwert",
+    "lat": 53.139467499999995,
+    "lng": 5.688663699999999,
+    "placeId": "ChIJO-pz_-77yEcRgvdvYrX7-1o",
+    "primaryType": "supermarket"
+  },
+  {
+    "name": "Over-Amstel Boerderij",
+    "address": "Binnenweg 17, 1191 AA Ouderkerk aan de Amstel",
+    "lat": 52.314492,
+    "lng": 4.906983599999999,
+    "placeId": "ChIJf1EpAkcLxkcR1C_dBQ_6tkk",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Parkboerderij Deurne",
+    "address": "Haageind 37, 5751 BB Deurne",
+    "lat": 51.4700299,
+    "lng": 5.8025948,
+    "placeId": "ChIJ6W1cwYk8x0cRjQEEQzruT-E",
+    "primaryType": "zoo"
+  },
+  {
+    "name": "Parkboerderij Kiboe-hoeve",
+    "address": "Parklaan 7, 3335 LM Zwijndrecht",
+    "lat": 51.819882799999995,
+    "lng": 4.6228701999999995,
+    "placeId": "ChIJA2YGA_QuxEcRhHAhDiFAOLY",
+    "primaryType": ""
+  },
+  {
+    "name": "Parkeerplaats 1 - Speelboerderij Dondertman",
+    "address": "Meester Bosweg 1-5, 7451 KC Holten",
+    "lat": 52.3025667,
+    "lng": 6.390074299999999,
+    "placeId": "ChIJmyPDwh3xx0cR1xcb3npIAPk",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Pluk en beleefboerderij naranofi",
+    "address": "Spieveldstraat 67, 9100 Sint-Niklaas, België",
+    "lat": 51.1882629,
+    "lng": 4.1246434,
+    "placeId": "ChIJXw2yl02Pw0cRQq-PHfiZ6hI",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Publieksboerderij De Proosdij",
+    "address": "ingang Florislaan, Proosdijweg 37, 6714 AK Ede",
+    "lat": 52.040275699999995,
+    "lng": 5.651852100000001,
+    "placeId": "ChIJjdMM9LNSxkcRwb2qVo2U0X8",
+    "primaryType": ""
+  },
+  {
+    "name": "Quarto Hoeve",
+    "address": "Peverstraat 6, 1755 Pajottegem, België",
+    "lat": 50.765465299999995,
+    "lng": 4.0854688,
+    "placeId": "ChIJq_vfEwCxw0cR0j5E7b7orsk",
+    "primaryType": ""
+  },
+  {
+    "name": "Recreatie & Kinderboerderij Feltsigt",
+    "address": "Bekveldseweg 5, 7255 KG Hengelo",
+    "lat": 52.044048,
+    "lng": 6.282261999999999,
+    "placeId": "ChIJ5wYEExaQx0cRUe3sbm2sLk0",
+    "primaryType": ""
+  },
+  {
+    "name": "Recreatie- & Hertenboerderij De Weerd (boerencamping)",
+    "address": "Middendijk 22, 7397 NB Nijbroek",
+    "lat": 52.2864721,
+    "lng": 6.0677851,
+    "placeId": "ChIJgUSkSGHBx0cRvo2rm1zORSs",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Recreatieboerderij De Kleine Biesbosch",
+    "address": "Brugdam 17, 4926 CS Lage Zwaluwe",
+    "lat": 51.709852,
+    "lng": 4.712793,
+    "placeId": "ChIJAZ_s2gUnxEcRb87_53HmXlA",
+    "primaryType": "sports_activity_location"
+  },
+  {
+    "name": "Recreatieboerderij de Zeemeeuw",
+    "address": "Weststraat 3, 4589 RM Ossenisse",
+    "lat": 51.398534999999995,
+    "lng": 3.9771031999999993,
+    "placeId": "ChIJx2TPF3t8xEcRx6FYe3iEafA",
+    "primaryType": "lodging"
+  },
+  {
+    "name": "Recreatieboerderij Slachtehiem",
+    "address": "Bayumerleane 5, 8823 SH Lollum",
+    "lat": 53.145303,
+    "lng": 5.519689,
+    "placeId": "ChIJ5ZZVau3myEcRMUkwS1qvOts",
+    "primaryType": "lodging"
+  },
+  {
+    "name": "Restaurant De Gerrithoeve (camping)",
+    "address": "Kollenburgsebaan 11, 5062 TH Oisterwijk",
+    "lat": 51.5424329,
+    "lng": 5.2446291,
+    "placeId": "ChIJozbEeCDCxkcRGrOvtDzMdCo",
+    "primaryType": "restaurant"
+  },
+  {
+    "name": "RUSTPUNT Hoeve Kerkenerf - Biologische melkveehouderij",
+    "address": "Jonkheer Doctor C.J. Sandbergweg 40, 3852 PV Ermelo",
+    "lat": 52.294011,
+    "lng": 5.7212507,
+    "placeId": "ChIJH3gHoSjLx0cRbOQoc42fBiA",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Sanatur, doe-mee-boerderij",
+    "address": "Kleine Medelaar 3, 2980 Zoersel, België",
+    "lat": 51.253473299999996,
+    "lng": 4.652180899999999,
+    "placeId": "ChIJ036PR_X_w0cRJhGnIXqv2-8",
+    "primaryType": ""
+  },
+  {
+    "name": "Schapenboerderij Texel - Lammetjes knuffelen",
+    "address": "Pontweg 77, 1791 LA Den Burg",
+    "lat": 53.041373,
+    "lng": 4.7956199999999995,
+    "placeId": "ChIJqcouqykxz0cR6y6K66j1ORM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Schoolhoeve De Campagne",
+    "address": "Gijzelstraat 14, 9031 Gent, België",
+    "lat": 51.066932099999995,
+    "lng": 3.6291217000000002,
+    "placeId": "ChIJ73V2tCRuw0cRQjdm_VofwHc",
+    "primaryType": ""
+  },
+  {
+    "name": "Sexclub De Boerderij",
+    "address": "Kolderveense Bovenboer 48, 7948 LW Nijeveen",
+    "lat": 52.741035399999994,
+    "lng": 6.1359189999999995,
+    "placeId": "ChIJ7SyV6N5tyEcRIBA46LbHprY",
+    "primaryType": ""
+  },
+  {
+    "name": "Shetlandboerderij Holten",
+    "address": "Velddijk 3, 7451 RJ Holten",
+    "lat": 52.283169,
+    "lng": 6.451054000000001,
+    "placeId": "ChIJjb5bY0Xxx0cRKtl9D07QyTU",
+    "primaryType": ""
+  },
+  {
+    "name": "Speel- & Beleefboerderij \"De Roosendaal\"",
+    "address": "Beulekampersteeg 31, 3882 LJ Putten",
+    "lat": 52.2261603,
+    "lng": 5.571400199999999,
+    "placeId": "ChIJ5-6WCuNJxkcRuZ5OXdVymUM",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speel- en Dierenpark Sanjes Safari",
+    "address": "De Sânjes 4, 9269 HA Feanwâlden",
+    "lat": 53.2508944,
+    "lng": 6.0097013,
+    "placeId": "ChIJqZXvNEWryUcRvT84d0qrTDk",
+    "primaryType": "amusement_park"
+  },
+  {
+    "name": "Speel- en kinderboerderij \"Strubbert\"",
+    "address": "Koebushorst 7, 7245 TD Laren",
+    "lat": 52.229009600000005,
+    "lng": 6.398269099999999,
+    "placeId": "ChIJyQvcJgDzx0cRM2UmOv-FQlA",
+    "primaryType": ""
+  },
+  {
+    "name": "Speel- en Recreatieboerderij de Flierefluiter",
+    "address": "Hogebroeksweg 15, 8102 RL Raalte",
+    "lat": 52.4187453,
+    "lng": 6.2870425999999995,
+    "placeId": "ChIJyVjUhSXkx0cRNHN4FlQinpk",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelboerderij ‘n Veldhook - camping de Rammelbeek",
+    "address": "Frensdorferweg 45, 7635 NK Lattrop-Breklenkamp",
+    "lat": 52.420404899999994,
+    "lng": 6.991235199999999,
+    "placeId": "ChIJUR22T_kfuEcR1W0EI2GySrM",
+    "primaryType": "indoor_playground"
+  },
+  {
+    "name": "Speelboerderij 't Ganzengoed",
+    "address": "Wallemolenstraat 10, 8840 Staden, België",
+    "lat": 50.9179154,
+    "lng": 2.9915022,
+    "placeId": "ChIJVQfRvw7L3EcRIqIP6IuHfWk",
+    "primaryType": ""
+  },
+  {
+    "name": "Speelboerderij Binky (Kinderparadijs Malkenschoten)",
+    "address": "Dubbelbeek 4, 7333 NH Apeldoorn",
+    "lat": 52.1837533,
+    "lng": 5.9636698,
+    "placeId": "ChIJcyEQZ_G4x0cRVPXVz-Wb0xc",
+    "primaryType": ""
+  },
+  {
+    "name": "Speelboerderij De HappyFarm",
+    "address": "Dronkelaarseweg 28, 3784 WB Terschuur",
+    "lat": 52.1586028,
+    "lng": 5.5425569999999995,
+    "placeId": "ChIJkRkvjDlJxkcR6qGo2aKJO1E",
+    "primaryType": "video_arcade"
+  },
+  {
+    "name": "Speelboerderij Den Scherpenberg",
+    "address": "Scherpenbergsebaan 53, 4715 SK Rucphen",
+    "lat": 51.515176499999995,
+    "lng": 4.5745894,
+    "placeId": "ChIJrdd_an4ZxEcRfh2uFFqpqWI",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelboerderij Dondertman",
+    "address": "Meester Bosweg 5, 7451 KC Holten",
+    "lat": 52.302020399999996,
+    "lng": 6.3893615,
+    "placeId": "ChIJM6CNWsfxx0cRd2ftv_68hso",
+    "primaryType": ""
+  },
+  {
+    "name": "Speelboerderij Elsenhove",
+    "address": "Bankrasweg 1, 1183 TP Amstelveen",
+    "lat": 52.2970866,
+    "lng": 4.8888530999999995,
+    "placeId": "ChIJEU6T_fMKxkcROQKcbNQMQQQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Speelboerderij Five Star Farm",
+    "address": "Baas Huisweg 11, 4493 NE Kamperland",
+    "lat": 51.5781898,
+    "lng": 3.6903821999999997,
+    "placeId": "ChIJlX3wWnGTxEcRmalUfhtSgGs",
+    "primaryType": "indoor_playground"
+  },
+  {
+    "name": "Speelboerderij Het Buitenbeest",
+    "address": "Belvédèrebos 270, 2715 VP Zoetermeer",
+    "lat": 52.059354299999995,
+    "lng": 4.4766739,
+    "placeId": "ChIJpcUw1CPJxUcRUMEjh_RSaKY",
+    "primaryType": ""
+  },
+  {
+    "name": "Speelboerderij Pierewiet 🛝",
+    "address": "Mettenijedijk 16a, 4504 AR Nieuwvliet",
+    "lat": 51.3730684,
+    "lng": 3.4684397,
+    "placeId": "ChIJQbGBxvChxEcRW6kYfI7V23U",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelboerderij RAVOT",
+    "address": "Nieuwstraat 15, 3380 Glabbeek, België",
+    "lat": 50.874920599999996,
+    "lng": 4.950928,
+    "placeId": "ChIJ7b8cqk9qwUcRCGiN4o8IJbE",
+    "primaryType": ""
+  },
+  {
+    "name": "Speelbos 't Vossenhol 🛝",
+    "address": "Eikenbos Bertem, 3060 Bertem, België",
+    "lat": 50.875419,
+    "lng": 4.615641,
+    "placeId": "ChIJw86twdVhwUcRZmW6bn_efto",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelbos De Boskoel",
+    "address": "5855 EA Bergen",
+    "lat": 51.576012299999995,
+    "lng": 6.0911941,
+    "placeId": "ChIJa05ScX1px0cRzZnR4jQO9rw",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeldorp Pee Wee",
+    "address": "Heinsbergerweg 65, 6061 AH Posterholt",
+    "lat": 51.114224199999995,
+    "lng": 6.0539382,
+    "placeId": "ChIJWRPNcS-ywEcR4d2THHIcnmE",
+    "primaryType": "indoor_playground"
+  },
+  {
+    "name": "Speelhof Hoogerzael",
+    "address": "Seispark 2a, 4334 AZ Middelburg",
+    "lat": 51.503042699999995,
+    "lng": 3.6033447999999995,
+    "placeId": "ChIJAYJEiSqRxEcRgi1l88DyHHY",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelnatuur Puttene",
+    "address": "Puttene 29, 9680 Maarkedal, België",
+    "lat": 50.811433699999995,
+    "lng": 3.6279169,
+    "placeId": "ChIJIalq6sEPw0cRe-jLUucO6Hc",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelnatuur van OERRR De Onlanderij",
+    "address": "Madijk 1, 9766 TZ Eelderwolde",
+    "lat": 53.1779533,
+    "lng": 6.532778899999999,
+    "placeId": "ChIJKRBQQQAzyEcRxWdtALqNHAU",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelnatuur van OERRR Landal Orveltermarke",
+    "address": "Meester J.b. Kanweg 3, 9439 TD Witteveen",
+    "lat": 52.834998,
+    "lng": 6.6614485,
+    "placeId": "ChIJ4wDvdcMfyEcRG2URa_o1Ce4",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelpark & Maisdoolhof Voorthuizen",
+    "address": "Bijschoterweg 2, 3781 LP Voorthuizen",
+    "lat": 52.1763629,
+    "lng": 5.584887,
+    "placeId": "ChIJgcMDusVLxkcRiAH3OtxNpD0",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelplaats in Natuurgebied 🛝",
+    "address": "Unnamed Road, 4503 PD Groede",
+    "lat": 51.387798,
+    "lng": 3.4878457,
+    "placeId": "ChIJneI29OCZxEcRvqlPio5QZI0",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelplaats speeleiland",
+    "address": "8253 JB Dronten",
+    "lat": 52.5373847,
+    "lng": 5.686654,
+    "placeId": "ChIJhdgtV5orxkcRZPjobnmXvcg",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelplein Hemelrijk",
+    "address": "Hemelrijkstraat 50, 9910 Aalter, België",
+    "lat": 51.1367999,
+    "lng": 3.4112571999999997,
+    "placeId": "ChIJZ7oP8S5dw0cRrXbu6e7wHcM",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelschuur Molenwaard",
+    "address": "Bloklandsekade 5, 2975 LA Ottoland",
+    "lat": 51.8729897,
+    "lng": 4.8579288,
+    "placeId": "ChIJnTae5auBxkcR-N1dQyQ28AI",
+    "primaryType": "indoor_playground"
+  },
+  {
+    "name": "Speeltuin",
+    "address": "Koaidyk 12, 9264 TP Earnewâld",
+    "lat": 53.125880599999995,
+    "lng": 5.9415819999999995,
+    "placeId": "ChIJnzMqPjpXyEcRw8IcdUfJlZk",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin 't Baneblökske",
+    "address": "Parallelweg, 6367 XZ Voerendaal",
+    "lat": 50.8846621,
+    "lng": 5.924610700000001,
+    "placeId": "ChIJyTksuKG_wEcRsXn2m_dZj58",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin 't Boartersplak",
+    "address": "De Iken, 9269 XB Feanwâlden",
+    "lat": 53.243623,
+    "lng": 5.9925913,
+    "placeId": "ChIJlRfudUqryUcRWLChCgM_v78",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin \"De Hoef\"",
+    "address": "Mesdaglaan 180, 1816 VG Alkmaar",
+    "lat": 52.626677099999995,
+    "lng": 4.7196863,
+    "placeId": "ChIJz6dpiOtXz0cREoqbznbA_sM",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin \"de Souburgt\"",
+    "address": "Koopmansvoetpad 73, 4388 AS Oost-Souburg",
+    "lat": 51.4712965,
+    "lng": 3.6001707,
+    "placeId": "ChIJraL1G7KQxEcR0NrDJZf99JY",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin Beerta 't Speulparadies",
+    "address": "Buitenlandenstraat 5, 9686 PZ Beerta",
+    "lat": 53.1729546,
+    "lng": 7.098262,
+    "placeId": "ChIJIdBPQsnMt0cRJIMb5veSw_o",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin binnen dierenpark Hoenderdaell",
+    "address": "Van Ewijckskade 1, 1761 JA Anna Paulowna",
+    "lat": 52.8680303,
+    "lng": 4.8526289,
+    "placeId": "ChIJgYlH6s1Lz0cRET0jIykEuS0",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin Bynia State 🛝",
+    "address": "8862 RK Harlingen",
+    "lat": 53.1610601,
+    "lng": 5.4253981,
+    "placeId": "ChIJGfYE4urdyEcR6CfVVCtmJJM",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin de Brouwerij",
+    "address": "Brouwerij 13, 8401 PM Gorredijk",
+    "lat": 53.0094182,
+    "lng": 6.0687681,
+    "placeId": "ChIJkaO2jsZbyEcREFlieOBHYtE",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin De Ijsboerderij Labora",
+    "address": "1795, 1795 LE De Cocksdorp",
+    "lat": 53.1442239,
+    "lng": 4.8667774,
+    "placeId": "ChIJTwL249svz0cRldGCtIWfZmM",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin de Klimbim",
+    "address": "Eikenlaan 11, 5581 VC Waalre",
+    "lat": 51.3847027,
+    "lng": 5.452909099999999,
+    "placeId": "ChIJbc7PaGHXxkcRoupf2rRRZBw",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin De Leeuwenborg Groningen",
+    "address": "Pastorieweg 14, 9943 TG Nieuw Scheemda",
+    "lat": 53.221918699999996,
+    "lng": 6.954497,
+    "placeId": "ChIJwdbhsPEstkcR9ws4O_es7aw",
+    "primaryType": "indoor_playground"
+  },
+  {
+    "name": "Speeltuin de Speelderij Edam-Volendam",
+    "address": "Boezelgracht 2-A, 1132 PE Volendam",
+    "lat": 52.502311299999995,
+    "lng": 5.0639007,
+    "placeId": "ChIJy7QmmIQExkcROPOX1J4lk5I",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin De Woeste Weide",
+    "address": "Burg. Feitsmapark 1, 3362 BZ Sliedrecht",
+    "lat": 51.823178299999995,
+    "lng": 4.784013,
+    "placeId": "ChIJoT42GRaDxkcRoSHU2xbLpUI",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin en dieren",
+    "address": "8443 DC Heerenveen",
+    "lat": 52.9497449,
+    "lng": 5.9376956,
+    "placeId": "ChIJ6749gQlfyEcR4zOIHf0ohd8",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin en kinderboerderij",
+    "address": "Spinozalaan, 2231 SR Rijnsburg",
+    "lat": 52.1912437,
+    "lng": 4.4353035,
+    "placeId": "ChIJUU-hj0zHxUcR1Y4Icv_LMpM",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin en Kinderboerderij de Kabouter Vaesrade",
+    "address": "Tulpstraat 59E, 6361 JB Nuth",
+    "lat": 50.928025999999996,
+    "lng": 5.9049119999999995,
+    "placeId": "ChIJucsC0d2-wEcRFtA7OhootYs",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin Hernesseroord",
+    "address": "3241 LK Middelharnis",
+    "lat": 51.7621262,
+    "lng": 4.174357,
+    "placeId": "ChIJPZ2E5GtFxEcR9dN7um0z_E8",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin Hertenkamp boerderij",
+    "address": "Johannes van Lochemstraat 1, 3641 AS Mijdrecht",
+    "lat": 52.2034492,
+    "lng": 4.8659523,
+    "placeId": "ChIJ0-NKZ0t1xkcRX7DZHYrMDy4",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin Het Hof",
+    "address": "Elandslaagte 9, 8701 JE Bolsward",
+    "lat": 53.061667899999996,
+    "lng": 5.5258313999999995,
+    "placeId": "ChIJB5PfZb_pyEcRn-8iN5Cnads",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin kinderboerderij Kiewit",
+    "address": "3500 Hasselt, België",
+    "lat": 50.960983,
+    "lng": 5.3769711000000004,
+    "placeId": "ChIJndxcujohwUcRTgDvq178vRw",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin Os Blie Riek",
+    "address": "Tollensstraat 1b, 5921 CA Venlo",
+    "lat": 51.365189099999995,
+    "lng": 6.1408597,
+    "placeId": "ChIJ89sFIk5Fx0cRj8kR10wFGjw",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speeltuin wigwam",
+    "address": "Pelgrimstraat 22, 4354 AR Vrouwenpolder",
+    "lat": 51.575525299999995,
+    "lng": 3.6142266999999997,
+    "placeId": "ChIJUVTiZs2TxEcRAI8cZlwSfCY",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelweide",
+    "address": "Ploeglanderweg 8, 1791 NV Den Burg",
+    "lat": 53.0600786,
+    "lng": 4.7512637,
+    "placeId": "ChIJO6v8IWs6z0cR7lbBZ05hRLo",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Speelweide om de dobben",
+    "address": "Pingo Ruïne Hurdegarypster Warren, Langelaan 3, 9251 MC Burgum",
+    "lat": 53.2036374,
+    "lng": 5.9655562,
+    "placeId": "ChIJrXIBXTtVyEcRZur55jiz4KI",
+    "primaryType": "playground"
+  },
+  {
+    "name": "St. Dierenweide Nieuwe Pekela",
+    "address": "Beukenlaan 1a, 9663 RC Nieuwe Pekela",
+    "lat": 53.0759894,
+    "lng": 6.958212,
+    "placeId": "ChIJY90Mhr7Rt0cRsNWdG273gSY",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij 't Nije Hoff",
+    "address": "Nieuw Amsterdamsestraat 140, 7814 VA Emmen",
+    "lat": 52.761614699999996,
+    "lng": 6.8725165,
+    "placeId": "ChIJr-MlNtbnt0cRplrh2z_ar4w",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Stadsboerderij 't Waaygat",
+    "address": "Havenkade 75, 2586 TW Den Haag",
+    "lat": 52.1069672,
+    "lng": 4.2801832,
+    "placeId": "ChIJ0dkFcqSwxUcRlxXNb6xGHSM",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij & Camping De Sibbe - Kamperen, Trouwen, Vergaderen en Vieren",
+    "address": "Ivige Leane 24, 8631 WB Loënga",
+    "lat": 53.053236899999995,
+    "lng": 5.6588443999999996,
+    "placeId": "ChIJk2khFXLxyEcRGfa9naJG2ig",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Stadsboerderij & Waterspeeltuin BuytenDelft",
+    "address": "Korftlaan 3a, 2616 LJ Delft",
+    "lat": 52.017345899999995,
+    "lng": 4.3749766999999995,
+    "placeId": "ChIJoTWPLOW1xUcRPmWug8W1cPE",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Asserbos",
+    "address": "Bosrand 1, 9401 SL Assen",
+    "lat": 52.986005999999996,
+    "lng": 6.5477414,
+    "placeId": "ChIJe44MZd0kyEcRLirRLCOHJio",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Beeklust",
+    "address": "Ledeboerslaan 3, 7606 HS Almelo",
+    "lat": 52.3481447,
+    "lng": 6.6410659,
+    "placeId": "ChIJhwxUq9UHuEcRIgyuAJKuoIM",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Darwinpark",
+    "address": "De Weer 31, 1504 AH Zaandam",
+    "lat": 52.439292099999996,
+    "lng": 4.8450872,
+    "placeId": "ChIJLYSVfgD9xUcR5oiJWTVmeW0",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Balijhoeve",
+    "address": "Kurkhout 100, 2719 JZ Zoetermeer",
+    "lat": 52.044722199999995,
+    "lng": 4.4580556,
+    "placeId": "ChIJc1tgZw3JxUcRovpzB7rWwmY",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Beestenboel",
+    "address": "Zandweg 13, 3181 HX Rozenburg",
+    "lat": 51.912432499999994,
+    "lng": 4.2287694,
+    "placeId": "ChIJLXJQlPpMxEcRWnISw9BicTM",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Blijde Wei",
+    "address": "Bergse Linker Rottekade 435, 3069 LV Rotterdam",
+    "lat": 51.9652964,
+    "lng": 4.5446390999999995,
+    "placeId": "ChIJ63F5eiLNxUcR5yXrtiw5TLE",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Bokkesprong 🪿",
+    "address": "Tjalklaan 90, 3028 JK Rotterdam",
+    "lat": 51.915164,
+    "lng": 4.428840999999999,
+    "placeId": "ChIJL98C5eA0xEcRx3RAARQo26U",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij de Gagelhoeve",
+    "address": "Mient 210, 2564 KL Den Haag",
+    "lat": 52.0699116,
+    "lng": 4.2664148,
+    "placeId": "ChIJJ9zskR-xxUcRZSQHr8ft4VM",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij de Herweijerhoeve",
+    "address": "Anna Polakweg 7, 2533 SW Den Haag",
+    "lat": 52.0587044,
+    "lng": 4.2796059,
+    "placeId": "ChIJR_oy2DOxxUcRsjJXKNgPVlc",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij de Hout",
+    "address": "Hertenkamppad 1, 1815 JD Alkmaar",
+    "lat": 52.6263398,
+    "lng": 4.731031199999999,
+    "placeId": "ChIJSZkpRsFXz0cRjafMlCBYBdU",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij de Houthoeve",
+    "address": "Hertenkamplaan 3, 2012 CV Haarlem",
+    "lat": 52.3679261,
+    "lng": 4.6298647,
+    "placeId": "ChIJ_ewW9UfvxUcRWxPJnG-YsO4",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Kakelhof",
+    "address": "Puccinistraat 215, 2551 LN Den Haag",
+    "lat": 52.0625148,
+    "lng": 4.2399242,
+    "placeId": "ChIJUV5K-QexxUcRy7awQbTQdh0",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Kooi",
+    "address": "Maeterlinckweg 85, 3076 GA Rotterdam",
+    "lat": 51.8709444,
+    "lng": 4.5163917,
+    "placeId": "ChIJLZ7l9LUzxEcROetyVUtktKw",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij de Korenmaat",
+    "address": "Marius van Beeklaan 5, 6836 WD Arnhem",
+    "lat": 51.946965299999995,
+    "lng": 5.9004745,
+    "placeId": "ChIJ0bwUAmOmx0cRHam6BrDgF2g",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Kraal",
+    "address": "Langepad 60, 3062 CJ Rotterdam",
+    "lat": 51.9395111,
+    "lng": 4.5050192,
+    "placeId": "ChIJ442p6rXMxUcRnJW9zjrU0kU",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Molenwei",
+    "address": "Brammertstraat 10, 3084 RV Rotterdam",
+    "lat": 51.881947,
+    "lng": 4.4667028,
+    "placeId": "ChIJW4EYGnc0xEcRCHeSny_9uqA",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Oedenstee 🪿",
+    "address": "Marthalaan 46, 3194 EH Hoogvliet Rotterdam",
+    "lat": 51.8676652,
+    "lng": 4.3581704,
+    "placeId": "ChIJpZnbRA9KxEcRBjbLq27KdhI",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Reigershof",
+    "address": "Reigersbergenweg 280, 2592 EZ Den Haag",
+    "lat": 52.0869157,
+    "lng": 4.358740399999999,
+    "placeId": "ChIJXxaAHaO3xUcRdzBhmCp2eIc",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Vosheuvel 🪿",
+    "address": "Heiligenbergerweg 187, 3816 AJ Amersfoort",
+    "lat": 52.144016199999996,
+    "lng": 5.4050842999999995,
+    "placeId": "ChIJFVMLDi5ExkcRJb9KcIRAn4E",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Wesseler",
+    "address": "Wesselerweg 15a, 7544 RP Enschede",
+    "lat": 52.1903483,
+    "lng": 6.8755136,
+    "placeId": "ChIJ7wBMykMTuEcRiDULilmbZQ4",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij De Wilgenhof",
+    "address": "Ringdijk 76, 3054 KV Rotterdam",
+    "lat": 51.952976899999996,
+    "lng": 4.478392299999999,
+    "placeId": "ChIJ8bvrzl7LxUcRCOlElSvVAiE",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Eilandsteede | Utrecht Natuurlijk",
+    "address": "Vreugdenhillaan 31, 3526 ZB Utrecht",
+    "lat": 52.0692789,
+    "lng": 5.1045376000000005,
+    "placeId": "ChIJmfvfu5JlxkcRdaDrXUvQ73Y",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Gagelsteede | Utrecht Natuurlijk",
+    "address": "Gangesdreef 7a, 3564 SN Utrecht",
+    "lat": 52.1223846,
+    "lng": 5.1034159,
+    "placeId": "ChIJy1XncOJuxkcRHHwx-A5aS_g",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Griftsteede | Utrecht Natuurlijk",
+    "address": "Van Swindenstraat 129, 3514 XR Utrecht",
+    "lat": 52.1014798,
+    "lng": 5.1285339,
+    "placeId": "ChIJs2BPKTZvxkcRZfuo4QNF6AI",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Het Boegbeeld",
+    "address": "Koerspad 3, 9735 AK Groningen",
+    "lat": 53.2372222,
+    "lng": 6.609166699999999,
+    "placeId": "ChIJX5tj1ezSyUcRBtxHXTENkaA",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Holywood",
+    "address": "Boerderijpad 1, 3137 RR Vlaardingen",
+    "lat": 51.937893900000006,
+    "lng": 4.350566199999999,
+    "placeId": "ChIJd_HYd8pKxEcRwdxzXkbYId4",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Koppelsteede | Utrecht Natuurlijk",
+    "address": "Koppeldijk 115, 3524 SK Utrecht",
+    "lat": 52.0571931,
+    "lng": 5.137754,
+    "placeId": "ChIJX0cZRHNmxkcRojP0P678iWg",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Kukele-Boe",
+    "address": "Kievitstraat 40, 3443 BG Woerden",
+    "lat": 52.0909329,
+    "lng": 4.8885556,
+    "placeId": "ChIJJ0Wk8mJ3xkcRGTS70VWSW6c",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Landzigt",
+    "address": "Aristoteleslaan, 2493 ZN Den Haag",
+    "lat": 52.060797099999995,
+    "lng": 4.395699,
+    "placeId": "ChIJF7sNxNXJxUcR_tBvL4dlcuc",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Op den Dijk",
+    "address": "Bovendijk 141 - 143, 2548 AX Den Haag",
+    "lat": 52.026762,
+    "lng": 4.299547,
+    "placeId": "ChIJY-yySh20xUcRNd-2MhyKeB0",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Presikhaaf",
+    "address": "Ruitenberglaan 4, 6826 CC Arnhem",
+    "lat": 51.9873691,
+    "lng": 5.9454274,
+    "placeId": "ChIJY0Qyumikx0cREkLK0yx3gwA",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Steede Hoge Woerd | Utrecht Natuurlijk",
+    "address": "Hoge Woerdplein 1, 3454 PB Utrecht",
+    "lat": 52.0860357,
+    "lng": 5.0429264,
+    "placeId": "ChIJpxVQwVdlxkcR76EGYfT2NYQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Wageningen",
+    "address": "Spijk 13, 6701 DT Wageningen",
+    "lat": 51.9659633,
+    "lng": 5.6672359,
+    "placeId": "ChIJESv7FFmrx0cRD7f9cWgBD5o",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Weizigt 🪿",
+    "address": "Van Baerleplantsoen 30, 3314 BH Dordrecht",
+    "lat": 51.806530599999995,
+    "lng": 4.6656432,
+    "placeId": "ChIJHTdZitQuxEcRGX4CIXudEs0",
+    "primaryType": ""
+  },
+  {
+    "name": "Stadsboerderij Zimmerhoeve",
+    "address": "Schimmelstraat 44, 1053 TH Amsterdam",
+    "lat": 52.368774699999996,
+    "lng": 4.864264299999999,
+    "placeId": "ChIJd6IZ23TixUcRlywcEo8TYck",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting BeLeef de Peerdegaerdt",
+    "address": "Kruisdijk 4b, 3291 LH Strijen",
+    "lat": 51.730034599999996,
+    "lng": 4.5268299999999995,
+    "placeId": "ChIJl3PR_Nw6xEcR-Txs3BZ7Tk0",
+    "primaryType": "non_profit_organization"
+  },
+  {
+    "name": "Stichting De Boerderij Zelhem",
+    "address": "Meeneweg 4, 7021 HN Zelhem",
+    "lat": 52.0104075,
+    "lng": 6.3620972,
+    "placeId": "ChIJ1aHIko-Fx0cRwGqZt4Cnx3E",
+    "primaryType": "community_center"
+  },
+  {
+    "name": "Stichting Dierenpark Beek en Donk",
+    "address": "Hermelijnstraat 100, 5741 KZ Beek en Donk",
+    "lat": 51.5340035,
+    "lng": 5.6250805,
+    "placeId": "ChIJ1fIVlNwhx0cR9S57rs9eo5A",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Dierenweide Harderwijk🪿",
+    "address": "Middelste Wei, 3844 HT Harderwijk",
+    "lat": 52.337749599999995,
+    "lng": 5.6089519,
+    "placeId": "ChIJp8vvjF0xxkcRR4l7Kb0iF8k",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij \"'t Weidje\"",
+    "address": "Spatterstraat 105A, 1531 DC Wormer",
+    "lat": 52.4946122,
+    "lng": 4.8051577,
+    "placeId": "ChIJffTCFUL8xUcRPs9Id4nsKe0",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Stichting Kinderboerderij \"Beatrixhoeve\"",
+    "address": "De Blokken 14, 7894 CL Zwartemeer",
+    "lat": 52.7198486,
+    "lng": 7.0371236999999995,
+    "placeId": "ChIJP8DEsTnst0cR9iFnGBb1FcY",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij \"De Vijverhof\"",
+    "address": "Vijverhof 4a, 8121 GZ Olst",
+    "lat": 52.33454460000001,
+    "lng": 6.104016499999999,
+    "placeId": "ChIJ_5OswPjCx0cRoJzogpPJXhc",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij “Erve 't Wooldrik”",
+    "address": "Lorentzlaan 22, 7535 CK Enschede",
+    "lat": 52.2164272,
+    "lng": 6.9149258,
+    "placeId": "ChIJo3p4FEIUuEcRelxIRFbTyOw",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij Breda Noord (Parkhoeve)",
+    "address": "via Kasterleestraat, Tussen de Dijken 101, 4826 GW Breda",
+    "lat": 51.613932299999995,
+    "lng": 4.7919357,
+    "placeId": "ChIJaW0vyA2fxkcR5jHVc5Jxu8w",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij Buitengewoon",
+    "address": "Beukenlaan 8, 5363 RA Velp",
+    "lat": 51.7460769,
+    "lng": 5.7098358,
+    "placeId": "ChIJrzGGX48Ex0cRni_sovQ3alQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij De Rekerhout",
+    "address": "Krielenzand 5, 1825 BZ Alkmaar",
+    "lat": 52.6491045,
+    "lng": 4.7564736,
+    "placeId": "ChIJje3mUgBXz0cRN_W0D-QaCsQ",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij Dommelen",
+    "address": "Hovenierwei 18A, 5551 RE Valkenswaard",
+    "lat": 51.360634,
+    "lng": 5.4284149,
+    "placeId": "ChIJYRfLoyDXxkcRBxd48HsMN9g",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij Enschede-Noord",
+    "address": "Vanekerbeekweg 15, 7524 PE Enschede",
+    "lat": 52.242641,
+    "lng": 6.888787,
+    "placeId": "ChIJgWO7-_4TuEcR9BGA2jMDXvw",
+    "primaryType": "sports_activity_location"
+  },
+  {
+    "name": "Stichting Kinderboerderij Gennep",
+    "address": "Sneeuwheide 21, 6591 RH Gennep",
+    "lat": 51.683663900000006,
+    "lng": 5.9808241,
+    "placeId": "ChIJ-y5_gIQSx0cRz2oA9i6EsCk",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting kinderboerderij pekela",
+    "address": "Hugo de Grootstraat 79, 9665 LM Oude Pekela",
+    "lat": 53.103570299999994,
+    "lng": 6.9932585,
+    "placeId": "ChIJ_wdD-rbTt0cRc9rBj1FdmHU",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij Schutterspark",
+    "address": "Heidestraat 2, 6443 VZ Brunssum",
+    "lat": 50.9436909,
+    "lng": 5.9879897,
+    "placeId": "ChIJ_wSW24m7wEcRPAiZW0uCSI0",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Kinderboerderij St. Odilienberg",
+    "address": "Bosserveldweg 54, 6077 GB Sint Odiliënberg",
+    "lat": 51.1395888,
+    "lng": 5.9962345,
+    "placeId": "ChIJ96lbmJW1wEcR2K_fFIdGE_8",
+    "primaryType": "zoo"
+  },
+  {
+    "name": "stichting Natuur- en Milieu Educatie (Kinderboerderij) Hoogezand-Sappemeer",
+    "address": "Burgemeester van Royenstraat West 11 a, 9602 CR Hoogezand",
+    "lat": 53.1553761,
+    "lng": 6.727906900000001,
+    "placeId": "ChIJEfNjl6oryEcRQpIiFYmp50c",
+    "primaryType": "educational_institution"
+  },
+  {
+    "name": "Stichting Natuurboerderij Dalfsen",
+    "address": "Koesteeg 4, 7722 RM Dalfsen",
+    "lat": 52.519531199999996,
+    "lng": 6.2612361,
+    "placeId": "ChIJvQJIsrjhx0cR9nOwUZ5pEek",
+    "primaryType": ""
+  },
+  {
+    "name": "Stichting Speeltuin de Paddestoel",
+    "address": "Florianstraat 3a, 6121 MA Born",
+    "lat": 51.036086999999995,
+    "lng": 5.8076216,
+    "placeId": "ChIJNbcXhoLIwEcREw4aXPgSikA",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Stichting Vriendenfonds Kinderboerderij Kienehoeve",
+    "address": "Klothal 1, 5491 KA Sint-Oedenrode",
+    "lat": 51.5737647,
+    "lng": 5.4509745,
+    "placeId": "ChIJq5BBB0nnxkcRtGGMQV2s_7c",
+    "primaryType": ""
+  },
+  {
+    "name": "Strandspeeltuin",
+    "address": "9449 PW Nooitgedacht",
+    "lat": 52.9657732,
+    "lng": 6.6746023999999995,
+    "placeId": "ChIJl3V1IAonyEcR3eda6yjOV6c",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Streekboerderij Daniken",
+    "address": "Ten Eysden 5, 6164 JL Geleen",
+    "lat": 50.9587078,
+    "lng": 5.840766599999999,
+    "placeId": "ChIJ3fPl-QvHwEcR_jdsXQd1V1c",
+    "primaryType": ""
+  },
+  {
+    "name": "Struisvogel- en Recreatieboerderij Vrieswijk",
+    "address": "Oude Maatsestraat 5b, 6941 SC Didam",
+    "lat": 51.9588306,
+    "lng": 6.1202498,
+    "placeId": "ChIJOdQ8bdiYx0cR5vSXkdgt7Qw",
+    "primaryType": ""
+  },
+  {
+    "name": "Struisvogelboerderij Monnikenwerve",
+    "address": "Hogeweg 1, 4524 KG Sluis",
+    "lat": 51.2815655,
+    "lng": 3.4153642,
+    "placeId": "ChIJ2wkKY3Zfw0cRrVDEW874Qvg",
+    "primaryType": "tourist_attraction"
+  },
+  {
+    "name": "Ter Wielewalle Zorgboerderij, feestzaal",
+    "address": "Landouwestraat 4, 8740 Pittem, België",
+    "lat": 51.0022048,
+    "lng": 3.2841807999999997,
+    "placeId": "ChIJMRyly69Hw0cRYCnU62gnhzw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Teun's Hoeve",
+    "address": "Maatschappijwijk 36, 7707 SH Balkbrug",
+    "lat": 52.5754185,
+    "lng": 6.418447,
+    "placeId": "ChIJl6daPIEIyEcRibzSPOz-pMg",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Texelse IJsboerderij Labora",
+    "address": "Hollandseweg 2, 1795 LE De Cocksdorp",
+    "lat": 53.143976,
+    "lng": 4.866237,
+    "placeId": "ChIJr8mXEUEuz0cRIX2RQt_6txQ",
+    "primaryType": "ice_cream_shop"
+  },
+  {
+    "name": "Theeschenkerij Bij ons op de Boerderij",
+    "address": "Tarpanweg 20, 8255 RS Swifterbant",
+    "lat": 52.5739806,
+    "lng": 5.6626993,
+    "placeId": "ChIJO5SOzueByEcRafNXPIxcVfE",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "Thuisboerderij de Welp/ camping, dagbesteding",
+    "address": "Heidbuurtweg 13, 9261 XN Eastermar",
+    "lat": 53.1756456,
+    "lng": 6.075555,
+    "placeId": "ChIJIZk6pEhSyEcRuc5gBmDu0Sc",
+    "primaryType": "campground"
+  },
+  {
+    "name": "Urker hoeve",
+    "address": "Piet Heinallee 1a, 8323 BC Urk",
+    "lat": 52.655942599999996,
+    "lng": 5.6379772,
+    "placeId": "ChIJY7ZNXHeEyEcRzg1gjp13Qrc",
+    "primaryType": ""
+  },
+  {
+    "name": "Urker hoeve",
+    "address": "Piet Heinallee 1a, 8323 BC Urk",
+    "lat": 52.655873899999996,
+    "lng": 5.6379681,
+    "placeId": "ChIJKWnwNACFyEcRNk2Gfp3KG4Y",
+    "primaryType": ""
+  },
+  {
+    "name": "vzw Beleefboerderij Hof van Beieren",
+    "address": "Schom 8, 1980 Zemst, België",
+    "lat": 50.988065899999995,
+    "lng": 4.4600507,
+    "placeId": "ChIJYfpKYWDnw0cRBKdnNzTPKZg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "WALEUK Recreatie-, Speel- & Feestboerderij Waalwijk",
+    "address": "Valkenvoortweg 31, 5145 PM Waalwijk",
+    "lat": 51.7155166,
+    "lng": 5.0897403,
+    "placeId": "ChIJQZPSKTmSxkcRGPaFf5nGx2A",
+    "primaryType": "playground"
+  },
+  {
+    "name": "Welkomboerderij Onstaheerd",
+    "address": "Singelweg 2, 9771 BC Sauwerd",
+    "lat": 53.292835200000006,
+    "lng": 6.527749999999999,
+    "placeId": "ChIJp6UWzC7MyUcRYk249NfZCQw",
+    "primaryType": "farm"
+  },
+  {
+    "name": "wijkBoerderij Alkmaar",
+    "address": "Vondelstraat 31, 1813 AA Alkmaar",
+    "lat": 52.623517799999995,
+    "lng": 4.7514794,
+    "placeId": "ChIJq3aoocxXz0cR_dK3KU3vVvo",
+    "primaryType": ""
+  },
+  {
+    "name": "Wijkboerderij Baalder | Baalderborg",
+    "address": "Beekberg 45, 7772 DP Hardenberg",
+    "lat": 52.5792899,
+    "lng": 6.637044599999999,
+    "placeId": "ChIJ_5hX5N0ByEcRyhBXafRO1ZM",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Wijkboerderij De Eemhoeve",
+    "address": "Eemlaan 25, 8032 EB Zwolle",
+    "lat": 52.52677620000001,
+    "lng": 6.094600799999999,
+    "placeId": "ChIJszgFU0jfx0cRYrk-aMJAn_U",
+    "primaryType": ""
+  },
+  {
+    "name": "Wijkboerderij de Klooienberg, Travers Welzijn",
+    "address": "Klooienberglaan 1, 8031 GA Zwolle",
+    "lat": 52.523571000000004,
+    "lng": 6.0768029,
+    "placeId": "ChIJMbRjKMrYx0cRbqpNCGsfwQA",
+    "primaryType": ""
+  },
+  {
+    "name": "Wijkboerderij de schellerhoeve, Travers Welzijn",
+    "address": "Schellerpark 101, 8017 NZ Zwolle",
+    "lat": 52.4929285,
+    "lng": 6.0932208999999995,
+    "placeId": "ChIJi2_y09rex0cRq-cqoBTS9TY",
+    "primaryType": ""
+  },
+  {
+    "name": "Wijkboerderij De Veldmuis",
+    "address": "Ilpendamstraat 38, 1507 JZ Zaandam",
+    "lat": 52.4438557,
+    "lng": 4.8054296999999995,
+    "placeId": "ChIJG3Fhi8j8xUcRGq2j9L841us",
+    "primaryType": ""
+  },
+  {
+    "name": "Winkel en slijterij van Landgoed de Bonte Belevenis",
+    "address": "Rommelpot 11, 1797 RN Den Hoorn Texel",
+    "lat": 53.0309624,
+    "lng": 4.7389962,
+    "placeId": "ChIJL7TCX4w5z0cRkriu8RBfVB4",
+    "primaryType": "store"
+  },
+  {
+    "name": "ZIN Zorgboerderij",
+    "address": "Uiterdijkenweg 7, 8315 PK Luttelgeest",
+    "lat": 52.775054399999995,
+    "lng": 5.8552767,
+    "placeId": "ChIJZwKLUVZiyEcRJqHaUWfGfSU",
+    "primaryType": ""
+  },
+  {
+    "name": "Zomo speelboerderij Houten",
+    "address": "Keercamp 15, 3992 RV Houten",
+    "lat": 52.031467899999996,
+    "lng": 5.1445199,
+    "placeId": "ChIJqfuaVIlmxkcRkMA7Vp-hsZM",
+    "primaryType": ""
+  },
+  {
+    "name": "Zorg en kinderboerderij De Veldmuis / pannenkoeken",
+    "address": "Eemdijk 17, 3754 NC Eemdijk",
+    "lat": 52.261856699999996,
+    "lng": 5.337751,
+    "placeId": "ChIJVziRRntAxkcR986UV-8hKRQ",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zorg- & educatieboerderij Kloosterhoeve",
+    "address": "Mûntsewei 2, 8853 XN Klooster Lidlum",
+    "lat": 53.232152899999996,
+    "lng": 5.5207277999999995,
+    "placeId": "ChIJE2hx6rLhyEcRDAj8ybRct2Y",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zorg- en speelboerderij de Hosvazze",
+    "address": "Oude Zandweg 15, 4456 RH Lewedorp",
+    "lat": 51.485689199999996,
+    "lng": 3.7759297999999997,
+    "placeId": "ChIJ__MH1DyPxEcRBdVPMEgQxIA",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Zorgboerderij 'De Keldershoeve'",
+    "address": "Eegwortel 1-3, 5507 LV Veldhoven",
+    "lat": 51.425028999999995,
+    "lng": 5.378416,
+    "placeId": "ChIJHQtRbuvbxkcRpx8F7pJ2EkY",
+    "primaryType": ""
+  },
+  {
+    "name": "zorgboerderij \"Buyskêrke\"",
+    "address": "Boudewijnskerke 5, 4374 SB Zoutelande",
+    "lat": 51.520541099999996,
+    "lng": 3.4667312999999997,
+    "placeId": "ChIJLT-d6ru9xEcR8Y0hgJwRY90",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Zorgboerderij Berne Wille",
+    "address": "Wommelserweg 9, 8804 NK Tzum",
+    "lat": 53.1550521,
+    "lng": 5.5653806999999995,
+    "placeId": "ChIJs01cLR_kyEcRI-XDEkLvNx0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zorgboerderij Boer Dirk - Hoevewinkel",
+    "address": "Kattenbroekstraat 9a, 9310 Aalst, België",
+    "lat": 50.953737999999994,
+    "lng": 4.0901265,
+    "placeId": "ChIJobB8VTqWw0cRBq1ghn1WByg",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zorgboerderij by Saar",
+    "address": "Gagelweg 15, 4651 VL Steenbergen",
+    "lat": 51.5500654,
+    "lng": 4.3683566,
+    "placeId": "ChIJcVOVlgkVxEcR1k17eCpkfgw",
+    "primaryType": ""
+  },
+  {
+    "name": "Zorgboerderij Cormeij Hoeve",
+    "address": "Hippolytushoeverweg 17, 1774 MK Slootdorp",
+    "lat": 52.90051390000001,
+    "lng": 5.0061579,
+    "placeId": "ChIJFXfwHAO1yEcRTB2EvpEDgNo",
+    "primaryType": "health"
+  },
+  {
+    "name": "Zorgboerderij de Badhoeve",
+    "address": "Groenezoom 1B, 1171 JA Badhoevedorp",
+    "lat": 52.336132199999994,
+    "lng": 4.7845849,
+    "placeId": "ChIJ__9vnWnhxUcRq5ZFvvWQulg",
+    "primaryType": ""
+  },
+  {
+    "name": "Zorgboerderij de Groene Hoeve",
+    "address": "Lekerweg 25, 1608 MB Wijdenes",
+    "lat": 52.6414085,
+    "lng": 5.172083499999999,
+    "placeId": "ChIJixfRKVCmyEcR8jse67folR8",
+    "primaryType": "ranch"
+  },
+  {
+    "name": "zorgboerderij de Leemberg",
+    "address": "Dorpsstraat 51, 4634 TN Woensdrecht",
+    "lat": 51.4278269,
+    "lng": 4.3032718999999995,
+    "placeId": "ChIJ-8NzVvwMxEcRUwMOG5lIUPY",
+    "primaryType": "lodging"
+  },
+  {
+    "name": "Zorgboerderij de Steurhoeve",
+    "address": "Grote Zomerdijk 51, 1715 KS Spanbroek",
+    "lat": 52.679508399999996,
+    "lng": 4.9766597,
+    "placeId": "ChIJxQPoX9-ryEcRmhH6jC74DE0",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zorgboerderij KOE",
+    "address": "Berg 6, 5768 PE Meijel",
+    "lat": 51.347842899999996,
+    "lng": 5.8564146,
+    "placeId": "ChIJFXLjuao3x0cRts8vvCbqSLE",
+    "primaryType": "farm"
+  },
+  {
+    "name": "Zorgboerderij Schildmeer",
+    "address": "Oude Graauwedijk 7, 9625 TA Overschild",
+    "lat": 53.2764362,
+    "lng": 6.805478600000001,
+    "placeId": "ChIJewEzdfvVyUcR9mTkrLbqXDI",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Zorgboerderij Vreike-hof",
+    "address": "Waatskamp 114, 6035 BV Ospel",
+    "lat": 51.293847199999995,
+    "lng": 5.7886867,
+    "placeId": "ChIJMQeMzmYxx0cR_Z47ylADlfs",
+    "primaryType": "association_or_organization"
+  },
+  {
+    "name": "Zuivel ijs en kampeer Boerderij",
+    "address": "Surmerhuizerweg 10, 1744 JC Sint Maarten",
+    "lat": 52.74235480000001,
+    "lng": 4.7261318,
+    "placeId": "ChIJox3urX5Qz0cRzLEfpa0HJTA",
+    "primaryType": "campground"
+  }
+]
