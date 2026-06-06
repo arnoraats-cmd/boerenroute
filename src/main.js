@@ -195,7 +195,13 @@ document.getElementById('werkplaatsLink')?.addEventListener('click', e => {
   if (isIOS && !isStandalone && !dismissed) {
     setTimeout(() => {
       const hint = document.getElementById('iosHint');
-      if (hint) hint.hidden = false;
+      if (!hint) return;
+      hint.hidden = false;
+      // Automatisch weg na 5 sec — niet irriteren
+      setTimeout(() => {
+        hint.hidden = true;
+        sessionStorage.setItem('ios-hint-dismissed', '1');
+      }, 5000);
     }, 4000);
   }
 
