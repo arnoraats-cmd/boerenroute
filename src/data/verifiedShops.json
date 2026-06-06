@@ -28956,5 +28956,29 @@
     "dagVers": null,
     "desc": null,
     "osm": false
+  },
+  {
+    "id": 1178,
+    "emoji": "🥚",
+    "name": "De eierautomaat",
+    "type": "automaat",
+    "premium": false,
+    "seasonal": false,
+    "lat": 51.5579202,
+    "lng": 5.47064456,
+    "address": "Nijnselseweg 21, Sint-Oedenrode",
+    "hours": "24/7",
+    "products": [
+      "verse eieren"
+    ],
+    "tags": [
+      "eieren"
+    ],
+    "placeId": null,
+    "googleRating": null,
+    "googleReviews": null,
+    "dagVers": null,
+    "desc": "Eierautomaat aan de Nijnselseweg in Sint-Oedenrode met verse eieren, dag en nacht zelf te koop.",
+    "osm": false
   }
 ]
