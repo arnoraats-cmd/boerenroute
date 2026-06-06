@@ -35,12 +35,27 @@ export function getStops()   { return [..._stops]; }
 export function getCount()   { return _stops.length; }
 export function clearRoute() { _clear(); }
 
+/* Zet een volledige route ineens (bv. gecureerde maand-route).
+   optimize:false bewaart de aangeleverde volgorde (gecureerd);
+   true laat de lus-ordening los op de stops. */
+export function loadStops(shops, { optimize = false } = {}) {
+  const seen = new Set();
+  _stops = shops
+    .map(s => (typeof s === 'object' ? s : _allRef.find(x => x.id === s)))
+    .filter(s => s && !seen.has(s.id) && seen.add(s.id));
+  if (optimize) _stops = _optimizeOrder(_stops, _stops[0]);
+  _sync();
+}
+
 /* ══ Interne mutaties ════════════════════════════════════════════ */
 
 function _add(shopId) {
   const shop = _allRef.find(s => s.id === shopId);
   if (!shop || isInRoute(shopId)) return;
+  const start = _stops[0] || shop;          // behoud het eerste punt als start van de lus
   _stops.push(shop);
+  /* Auto-lus-ordening zodra er een ronde te maken is (handmatig + boodschappenlijst) */
+  if (_stops.length >= 3) _stops = _optimizeOrder(_stops, start);
   _sync();
   /* Subtiele bevestiging; de zwevende balk toont de telling + route-actie */
   _toast(`✓ ${shop.name} toegevoegd`);
@@ -58,7 +73,7 @@ function _clear() {
 
 function _optimize() {
   if (_stops.length < 3) return;
-  _stops = _nearestNeighbour([..._stops]);
+  _stops = _optimizeOrder(_stops, _stops[0]);
   _sync();
 }
 
@@ -181,21 +196,48 @@ function _toast(msg) {
   _toastTimer = setTimeout(() => t.classList.remove('br-toast-show'), 2400);
 }
 
-/* ══ Nearest-neighbour optimalisatie ════════════════════════════ */
+/* ══ Lus-optimalisatie: hoekordening + 2-opt ═════════════════════
+   Greedy nearest-neighbour maakt juist kruisingen/terugslag. Voor een
+   cirkelroute werkt: (1) sorteer op poolhoek rond het zwaartepunt → een
+   niet-kruisende ronde, (2) 2-opt op de gesloten lus tegen restkruisingen,
+   (3) roteer zodat de oorspronkelijke startwinkel weer vooraan staat. */
 
-function _nearestNeighbour(shops) {
-  const result    = [shops[0]];
-  const remaining = shops.slice(1);
-  while (remaining.length) {
-    const last = result[result.length - 1];
-    let ni = 0, nd = Infinity;
-    remaining.forEach((s, i) => {
-      const d = _haversine(last.lat, last.lng, s.lat, s.lng);
-      if (d < nd) { nd = d; ni = i; }
-    });
-    result.push(remaining.splice(ni, 1)[0]);
+function _optimizeOrder(shops, startShop) {
+  if (shops.length < 3) return shops;
+  let order = _twoOpt(_angularOrder(shops));
+  const i = startShop ? order.findIndex(s => s.id === startShop.id) : 0;
+  if (i > 0) order = [...order.slice(i), ...order.slice(0, i)];
+  return order;
+}
+
+function _angularOrder(shops) {
+  const cx = shops.reduce((a, s) => a + s.lng, 0) / shops.length;
+  const cy = shops.reduce((a, s) => a + s.lat, 0) / shops.length;
+  return [...shops].sort((a, b) =>
+    Math.atan2(a.lat - cy, a.lng - cx) - Math.atan2(b.lat - cy, b.lng - cx)
+  );
+}
+
+/* 2-opt op een GESLOTEN lus (edge n-1 → 0 telt mee). n is klein (≤ ~12). */
+function _twoOpt(order) {
+  const n = order.length;
+  const d = (a, b) => _haversine(a.lat, a.lng, b.lat, b.lng);
+  let improved = true;
+  while (improved) {
+    improved = false;
+    for (let i = 0; i < n - 1; i++) {
+      for (let k = i + 1; k < n; k++) {
+        const a = order[(i - 1 + n) % n], b = order[i];
+        const c = order[k],               e = order[(k + 1) % n];
+        if (a === c || b === e) continue;
+        if (d(a, c) + d(b, e) + 1e-9 < d(a, b) + d(c, e)) {
+          order = [...order.slice(0, i), ...order.slice(i, k + 1).reverse(), ...order.slice(k + 1)];
+          improved = true;
+        }
+      }
+    }
   }
-  return result;
+  return order;
 }
 
 /* ══ Export ══════════════════════════════════════════════════════ */

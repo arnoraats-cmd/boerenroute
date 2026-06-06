@@ -4,6 +4,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { shopIcon } from './icons.js';
+import { routeVia } from './routing.js';
 
 /* Kleuren per type (zie CLAUDE.md) */
 const COLOR = {
@@ -122,42 +123,33 @@ export async function drawRoute(stops) {
 
   const ver = ++_drawVer;
 
-  try {
-    const coords  = stops.map(s => `${s.lng},${s.lat}`).join(';');
-    const timeout = new Promise((_, rej) =>
-      setTimeout(() => rej(new Error('timeout')), 8000)
-    );
-    const data = await Promise.race([
-      fetch(
-        `https://router.project-osrm.org/route/v1/cycling/${coords}` +
-        `?geometries=geojson&overview=full&steps=false`
-      ).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
-      timeout,
-    ]);
+  /* Sluit de lus: keer terug naar de eerste stop → cirkelroute i.p.v. heen-en-weer */
+  const points = stops.map(s => ({ lat: s.lat, lng: s.lng }));
+  points.push({ lat: stops[0].lat, lng: stops[0].lng });
 
-    if (ver !== _drawVer) return; // nieuwere aanvraag onderweg, negeer
+  const result = await routeVia(points, { profile: 'trekking' });
+  if (ver !== _drawVer) return; // nieuwere aanvraag onderweg, negeer
 
-    if (data.code === 'Ok' && data.routes?.[0]) {
-      _routeLine = L.geoJSON(data.routes[0].geometry, {
-        style: { color: '#3B6D11', weight: 5, opacity: .9, lineJoin: 'round', lineCap: 'round' },
-      }).addTo(_map);
-      _map.fitBounds(_routeLine.getBounds(), { padding: [48, 48], maxZoom: 14 });
+  if (result?.geometry) {
+    _routeLine = L.geoJSON(result.geometry, {
+      style: { color: '#3B6D11', weight: 5, opacity: .9, lineJoin: 'round', lineCap: 'round' },
+    }).addTo(_map);
+    _map.fitBounds(_routeLine.getBounds(), { padding: [48, 48], maxZoom: 14 });
 
-      /* Stuur werkelijke wegafstand terug voor het routepaneel */
-      const km = data.routes[0].distance / 1000;
-      document.dispatchEvent(new CustomEvent('boerenroute:routedistance', { detail: { km } }));
-    } else {
-      _drawFallback(stops);
-    }
-  } catch {
-    if (ver !== _drawVer) return;
+    /* Werkelijke (lus-)afstand + klim terug naar het routepaneel */
+    document.dispatchEvent(new CustomEvent('boerenroute:routedistance', {
+      detail: { km: result.distanceKm, ascendM: result.ascendM, engine: result.engine },
+    }));
+  } else {
     _drawFallback(stops);
   }
 }
 
 function _drawFallback(stops) {
+  const pts = stops.map(s => [s.lat, s.lng]);
+  if (stops.length >= 2) pts.push([stops[0].lat, stops[0].lng]); // lus sluiten
   _routeLine = L.polyline(
-    stops.map(s => [s.lat, s.lng]),
+    pts,
     { color: '#3B6D11', weight: 4, opacity: .6, dashArray: '10 8', lineJoin: 'round' }
   ).addTo(_map);
 }

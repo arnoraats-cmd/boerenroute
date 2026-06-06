@@ -437,10 +437,9 @@ fetch('src/data/routes.json')
 
 function _loadRouteStops(route) {
   document.querySelector('[data-page="route"]')?.click();
-  import('./route.js').then(({ toggleStop, getStops }) => {
-    route.stopIds.forEach(id => {
-      if (!getStops().some(s => s.id === id)) toggleStop(id);
-    });
+  import('./route.js').then(({ loadStops }) => {
+    /* Gecureerde volgorde behouden (niet her-optimaliseren) */
+    loadStops(route.stopIds, { optimize: false });
   });
 }
 
