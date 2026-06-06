@@ -14,15 +14,16 @@ function haversine(aLat, aLng, bLat, bLng) {
 }
 
 /* Kies winkels voor een lus van ~targetKm rond start.
+   radiusFactor schaalt de selectie-straal (de tuner stelt 'm bij).
    Geeft een array shops (3–6) terug, of [] als er te weinig in de buurt is. */
-export function generateRoute(shops, start, targetKm = 35, { maxStops = 6 } = {}) {
+export function generateRoute(shops, start, targetKm = 35, { maxStops = 8, radiusFactor = 1, sectors } = {}) {
   const cand = (shops || []).filter(s =>
     s && s.type !== 'onderweg' && isFinite(s.lat) && isFinite(s.lng)
   );
   if (cand.length < 3) return [];
 
   // Lus-omtrek ≈ 2πr ⇒ ideale straal; winkels rond ~0.8·r geven een nette ronde
-  const r        = Math.max(2, targetKm / 6.28);
+  const r        = Math.max(2, (targetKm / 6.28) * radiusFactor);
   const idealD   = r * 0.8;
   const withMeta = cand.map(s => ({
     s,
@@ -36,12 +37,12 @@ export function generateRoute(shops, start, targetKm = 35, { maxStops = 6 } = {}
   if (pool.length < 3) return [];
 
   // Verdeel over hoek-sectoren → gespreide lus (geen cluster aan één kant)
-  const sectors = Math.min(maxStops, Math.max(3, Math.round(targetKm / 9)));
-  const chosen  = [];
-  const taken   = new Set();
-  for (let k = 0; k < sectors; k++) {
-    const lo = -Math.PI + (k * 2 * Math.PI) / sectors;
-    const hi = lo + (2 * Math.PI) / sectors;
+  const nSectors = Math.min(maxStops, sectors || Math.max(3, Math.round(targetKm / 9)));
+  const chosen   = [];
+  const taken    = new Set();
+  for (let k = 0; k < nSectors; k++) {
+    const lo = -Math.PI + (k * 2 * Math.PI) / nSectors;
+    const hi = lo + (2 * Math.PI) / nSectors;
     const inSec = pool.filter(o => o.ang >= lo && o.ang < hi && !taken.has(o.s.id));
     if (!inSec.length) continue;
     // dicht bij ideale straal + lichte voorkeur voor premium / hoog gewaardeerd
@@ -69,4 +70,46 @@ function bonus(s) {
   if (s.premium) b += 1.5;
   if ((s.googleRating || 0) >= 4.6) b += 0.8;
   return b;
+}
+
+/* Iteratief afstemmen op de doelafstand.
+   measure(orderedShops|shops) → Promise<werkelijke lus-km> (BRouter).
+   Past de selectie-straal proportioneel aan tot binnen de tolerantie.
+   Geeft { picked, dist, err } van de beste poging. */
+export async function generateTunedRoute(
+  shops, start, targetKm = 35,
+  measure,
+  { tolerance = 0.12, maxIters = 3, onStep } = {}
+) {
+  const baseSectors = Math.max(3, Math.round(targetKm / 9));
+  let factor = 1, extra = 0, prev = null, best = null;
+
+  for (let i = 0; i < maxIters; i++) {
+    const picked = generateRoute(shops, start, targetKm, {
+      radiusFactor: factor,
+      sectors: baseSectors + extra,
+    });
+    if (picked.length < 3) { if (!best) best = { picked, dist: 0, err: Infinity }; break; }
+
+    const dist = await measure(picked);
+    if (!dist) { if (!best) best = { picked, dist: 0, err: Infinity }; break; }
+
+    const err = Math.abs(dist - targetKm) / targetKm;
+    if (!best || err < best.err) best = { picked, dist, err };
+    if (onStep) onStep({ iter: i + 1, dist, err });
+    if (err <= tolerance) break;
+
+    // Vastgelopen? (straal aanpassen veranderde de afstand nauwelijks)
+    const stuck = prev != null && Math.abs(dist - prev) < 0.6;
+    prev = dist;
+
+    // Proportionele regeling van de straal; bij vastlopen de stop-hefboom
+    factor *= targetKm / Math.max(dist, 1);
+    factor = Math.min(2.4, Math.max(0.45, factor));
+    if (stuck) {
+      if (dist < targetKm) extra += 1;                 // te kort → stop erbij
+      else if (extra > 0)  extra -= 1;                 // te lang → stop eraf
+    }
+  }
+  return best;
 }

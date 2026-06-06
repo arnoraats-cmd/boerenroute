@@ -237,15 +237,29 @@ document.addEventListener('click', async e => {
   const pool  = _baseShops.concat(_osmShops || []);
 
   setStatus('Route samenstellen…');
-  const { generateRoute } = await import('./autoroute.js');
-  const picked = generateRoute(pool, start, targetKm);
-  if (picked.length < 3) {
+  const { generateTunedRoute }   = await import('./autoroute.js');
+  const { orderLoop, loadStops } = await import('./route.js');
+  const { routeVia }             = await import('./routing.js');
+
+  /* Meet de werkelijke lus-afstand met dezelfde ordening als de tekening */
+  const measure = async (shops) => {
+    const ordered = orderLoop(shops, shops[0]);
+    const pts = ordered.map(s => ({ lat: s.lat, lng: s.lng }));
+    pts.push({ lat: ordered[0].lat, lng: ordered[0].lng });
+    const r = await routeVia(pts, { profile: 'trekking' });
+    return r?.distanceKm || 0;
+  };
+
+  const best = await generateTunedRoute(pool, start, targetKm, measure, {
+    onStep: ({ iter, dist }) => setStatus(`Route afstemmen op ${targetKm} km… (${dist.toFixed(0)} km)`),
+  });
+
+  if (!best || best.picked.length < 3) {
     setStatus('Te weinig verkooppunten in de buurt — kies eerst een locatie of een grotere afstand.');
     return;
   }
-  setStatus(`Route langs ${picked.length} verkooppunten — de kaart laadt de mooiste lus…`);
-  const { loadStops } = await import('./route.js');
-  loadStops(picked, { optimize: true });
+  setStatus(`Route gemaakt: ~${best.dist.toFixed(0)} km langs ${best.picked.length} verkooppunten.`);
+  loadStops(best.picked, { optimize: true });
   /* Toon het resultaat: spring naar de route-tab */
   document.querySelector('.nav-btn[data-page="route"]')?.click();
 });

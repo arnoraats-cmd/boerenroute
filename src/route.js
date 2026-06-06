@@ -236,6 +236,11 @@ function _optimizeOrder(shops, startShop) {
   return order;
 }
 
+/* Zelfde lus-ordening, herbruikbaar (bv. om de afstand vooraf te meten) */
+export function orderLoop(shops, startShop = shops[0]) {
+  return _optimizeOrder(shops, startShop);
+}
+
 function _angularOrder(shops) {
   const cx = shops.reduce((a, s) => a + s.lng, 0) / shops.length;
   const cy = shops.reduce((a, s) => a + s.lat, 0) / shops.length;

@@ -12,6 +12,10 @@
 const BROUTER = 'https://brouter.de/brouter';
 const OSRM    = 'https://router.project-osrm.org/route/v1/cycling';
 
+/* Eén keer vaststellen dat de eigen proxy niet bestaat (bv. lokaal of
+   projecttype zonder Functions) → niet bij elke call opnieuw 404'en. */
+let _proxyDead = false;
+
 /* Geef { geometry (GeoJSON LineString), distanceKm, ascendM, engine } of null.
    points: [{lat,lng}, …] — sluit de lus door zelf het startpunt achteraan te zetten.
 
@@ -23,9 +27,11 @@ export async function routeVia(points, { profile = 'trekking', timeoutMs = 9000 
   const timeout = () => new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), timeoutMs));
 
   // 1) Eigen proxy (Cloudflare Pages Function) — cache + fallback
-  try {
-    return await Promise.race([_proxy(points, profile), timeout()]);
-  } catch { /* niet gedeployed / lokaal → val terug op directe BRouter */ }
+  if (!_proxyDead) {
+    try {
+      return await Promise.race([_proxy(points, profile), timeout()]);
+    } catch { /* niet gedeployed / lokaal → val terug op directe BRouter */ }
+  }
 
   // 2) BRouter direct — recreatief profiel
   try {
@@ -48,7 +54,10 @@ async function _proxy(points, profile) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ points, profile }),
   });
-  if (!r.ok) throw new Error('proxy ' + r.status);
+  if (!r.ok) {
+    if (r.status === 404 || r.status === 405) _proxyDead = true; // functie bestaat niet
+    throw new Error('proxy ' + r.status);
+  }
   const d = await r.json();
   if (!d?.geometry) throw new Error('proxy empty');
   return d;
