@@ -2807,82 +2807,153 @@
   .bood-more { font-size: var(--t-xs); color: var(--text-light); font-style: italic; padding: 4px 12px; }
 }
 
-/* ══ SEIZOENSKALENDER ════════════════════════════════════════════ */
+/* ══ SEIZOENSKALENDER (interactief) ══════════════════════════════ */
 @layer components {
   .season-page { max-width: var(--max-w); margin: 0 auto; padding: clamp(24px,4vw,48px) var(--pad); }
 
-  .season-page-header { text-align: center; margin-bottom: 32px; }
-  .season-page-title  { font-size: var(--t-xl); font-weight: 700; }
-  .season-page-sub    { margin-top: 8px; color: var(--text-mid); font-size: var(--t-md); }
+  .season-page-header { text-align: center; margin-bottom: 24px; }
+  .season-page-title  { font-family: var(--serif); font-size: var(--t-2xl, 2rem); font-weight: 700; color: var(--green-dark); }
+  .season-page-sub    { margin: 8px auto 0; color: var(--text-mid); font-size: var(--t-md); max-width: 600px; line-height: 1.55; }
 
-  .season-now { margin-bottom: 40px; }
-  .season-now-title { font-size: var(--t-lg); margin-bottom: 16px; }
+  /* ── Maandkiezer (horizontaal scrollbaar) ── */
+  .season-monthstrip {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 6px 2px 14px;
+    margin-bottom: 8px;
+    scroll-snap-type: x proximity;
+  }
+  .season-monthstrip::-webkit-scrollbar { display: none; }
+
+  .season-mchip {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    min-width: 62px;
+    padding: 10px 8px;
+    border-radius: var(--r-lg);
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    cursor: pointer;
+    position: relative;
+    transition: border-color var(--tf), background var(--tf), transform var(--tf), box-shadow var(--tf);
+  }
+  .season-mchip:hover { border-color: var(--green-light); transform: translateY(-2px); }
+  .season-mchip-icon  { font-size: 1.35rem; line-height: 1; }
+  .season-mchip-label { font-size: var(--t-xs); font-weight: 600; color: var(--text-mid); }
+
+  .season-mchip.is-active {
+    background: var(--green-mid);
+    border-color: var(--green-mid);
+    box-shadow: 0 4px 14px rgba(28,65,9,.28);
+  }
+  .season-mchip.is-active .season-mchip-label { color: #fff; }
+
+  .season-mchip-dot {
+    position: absolute;
+    top: 6px; right: 8px;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--amber-light);
+    box-shadow: 0 0 0 2px var(--white);
+  }
+  .season-mchip.is-active .season-mchip-dot { box-shadow: 0 0 0 2px var(--green-mid); }
+
+  /* ── Productpaneel ── */
+  .season-panel-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .season-panel-icon  { font-size: 1.6rem; line-height: 1; }
+  .season-panel-title { font-family: var(--serif); font-size: var(--t-xl); font-weight: 700; color: var(--green-dark); }
+  .season-panel-count {
+    margin-left: auto;
+    font-size: var(--t-xs); font-weight: 600;
+    color: var(--green-dark); background: var(--green-bg);
+    padding: 3px 12px; border-radius: var(--r-full);
+  }
 
   .season-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .season-card {
-    padding: 6px 14px;
-    border-radius: var(--r-full);
-    font-size: var(--t-sm);
-    font-weight: 500;
-    background: var(--green-bg);
-    color: var(--green-dark);
-    border: 1.5px solid rgba(59,109,17,.18);
-  }
-
-  .season-cal-title { font-size: var(--t-lg); margin-bottom: 16px; }
-
-  .season-months {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
   }
 
-  .season-month {
+  /* ── Productkaart ── */
+  .season-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    padding: 18px 12px 14px;
     background: var(--white);
     border: 1.5px solid var(--border);
     border-radius: var(--r-lg);
-    padding: 12px;
-    transition: box-shadow var(--tb);
+    cursor: pointer;
+    text-align: center;
+    transition: transform var(--tb), box-shadow var(--tb), border-color var(--tb);
+    animation: season-pop .4s var(--ease) both;
+    animation-delay: calc(var(--i, 0) * 40ms);
   }
-  .season-month:hover { box-shadow: var(--sh); }
-  .season-month-current { border-color: var(--green-mid); box-shadow: 0 0 0 2px rgba(59,109,17,.12); }
-  .season-month-next    { border-color: var(--amber); }
+  .season-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sh-md);
+    border-color: var(--green-light);
+  }
+  .season-card:active { transform: translateY(-1px) scale(.98); }
 
-  .season-month-header {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 8px;
-  }
-  .season-month-icon  { font-size: 18px; }
-  .season-month-label { font-weight: 600; font-size: var(--t-sm); }
-  .season-month-badge {
-    font-size: 10px;
-    background: var(--green-mid);
-    color: white;
-    padding: 1px 6px;
-    border-radius: var(--r-full);
-    margin-left: auto;
+  .season-card-emoji { font-size: 2.4rem; line-height: 1; }
+  .season-card-name  {
+    font-family: var(--serif); font-weight: 600; font-size: var(--t-md);
+    color: var(--green-dark); text-transform: capitalize;
   }
 
-  .season-month-items {
+  /* Mini-beschikbaarheidsbalk: 12 maandsegmenten */
+  .season-availbar {
     display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
+    gap: 2px;
+    margin-top: 2px;
   }
-  .season-month-items span {
-    font-size: 11px;
-    color: var(--text-mid);
-    background: var(--sand);
-    padding: 2px 6px;
-    border-radius: var(--r-full);
+  .sab {
+    width: 13px; height: 15px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 7px; font-weight: 700;
+    color: transparent;
+    background: var(--sand-dark, #e9e2d4);
+    border-radius: 3px;
   }
-  .season-more { color: var(--text-light) !important; font-style: italic; }
+  .sab-on  { background: var(--green-light); color: rgba(255,255,255,.85); }
+  .sab-cur { outline: 2px solid var(--amber); outline-offset: 1px; }
+
+  .season-card-find {
+    font-size: var(--t-xs);
+    color: var(--text-light);
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(2px);
+    transition: opacity var(--tf), transform var(--tf), color var(--tf);
+  }
+  .season-card:hover .season-card-find { opacity: 1; transform: translateY(0); color: var(--green-mid); }
+
+  @keyframes season-pop {
+    from { opacity: 0; transform: translateY(10px) scale(.96); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .season-card { animation: none; }
+  }
+
+  /* Op touch: 'vind dichtbij' altijd tonen (geen hover) */
+  @media (hover: none) {
+    .season-card-find { opacity: 1; transform: none; color: var(--green-mid); }
+  }
 }
 
 /* ══ OVER ONS ════════════════════════════════════════════════════ */
