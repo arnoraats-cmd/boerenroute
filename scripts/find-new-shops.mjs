@@ -87,8 +87,13 @@ async function searchText(q, pt) {
 const found = new Map(); // placeId → kandidaat
 let calls = 0;
 
-console.log(`Raster: ${points.length} punten × ${QUERIES.length} zoektermen = max ${points.length * QUERIES.length} calls\n`);
+const totalCalls = points.length * QUERIES.length;
+const estMin = Math.round(totalCalls * 0.55 / 60);
+console.log(`Raster: ${points.length} punten × ${QUERIES.length} zoektermen = max ${totalCalls} calls`);
+console.log(`Geschatte tijd: ~${estMin} min. Voortgang verschijnt elke 20 punten.\n`);
 
+let done = 0;
+const t0 = Date.now();
 for (const pt of points) {
   for (const q of QUERIES) {
     try {
@@ -120,6 +125,12 @@ for (const pt of points) {
     await new Promise(r => setTimeout(r, 250));
   }
   if (pt.stop) break;
+
+  done++;
+  if (done % 20 === 0 || done === points.length) {
+    const secLeft = Math.round((Date.now() - t0) / done * (points.length - done) / 1000);
+    console.log(`… ${done}/${points.length} punten · ${calls} calls · ${found.size} kandidaten · nog ~${Math.ceil(secLeft / 60)} min`);
+  }
 }
 
 const candidates = [...found.values()].sort((a, b) => a.name.localeCompare(b.name, 'nl'));
