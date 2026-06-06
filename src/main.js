@@ -223,20 +223,24 @@ document.getElementById('routeGoToKaart')?.addEventListener('click', () => {
   document.querySelector('.nav-btn[data-page="kaart"]')?.click();
 });
 
-/* ── Automatische routegeneratie ("Maak een route voor mij") ──
-   Document-brede delegatie zodat de knoppen op meerdere plekken werken
-   (kaart-strip én lege-route-staat). Navigeert na succes naar de route. */
-document.addEventListener('click', async e => {
-  const btn = e.target.closest('[data-gen]');
-  if (!btn) return;
-  const targetKm = +btn.dataset.gen;
-  const statusEl = document.getElementById('routeGenStatus');
+/* ── Automatische routegeneratie ("Maak een route voor mij") ── */
+let _genTarget  = null;   // laatst gekozen doelafstand
+let _genVariant = 0;      // variatie-teller voor "andere route"
+let _genBusy    = false;
+
+async function _generateAndLoad(targetKm, variant = 0) {
+  if (_genBusy) return;
+  _genBusy = true;
+  _genTarget = targetKm;
+
+  const statusEl  = document.getElementById('routeGenStatus');
   const setStatus = msg => { if (statusEl) { statusEl.hidden = false; statusEl.textContent = msg; } };
+  const anotherBtn = document.getElementById('anotherRouteBtn');
 
   const start = { lat: window._brLat ?? DEFAULT.lat, lng: window._brLng ?? DEFAULT.lng };
   const pool  = _baseShops.concat(_osmShops || []);
 
-  setStatus('Route samenstellen…');
+  setStatus(variant ? 'Andere route samenstellen…' : 'Route samenstellen…');
   const { generateTunedRoute }   = await import('./autoroute.js');
   const { orderLoop, loadStops } = await import('./route.js');
   const { routeVia }             = await import('./routing.js');
@@ -251,8 +255,11 @@ document.addEventListener('click', async e => {
   };
 
   const best = await generateTunedRoute(pool, start, targetKm, measure, {
-    onStep: ({ iter, dist }) => setStatus(`Route afstemmen op ${targetKm} km… (${dist.toFixed(0)} km)`),
+    variant,
+    onStep: ({ dist }) => setStatus(`Route afstemmen op ${targetKm} km… (${dist.toFixed(0)} km)`),
   });
+
+  _genBusy = false;
 
   if (!best || best.picked.length < 3) {
     setStatus('Te weinig verkooppunten in de buurt — kies eerst een locatie of een grotere afstand.');
@@ -260,8 +267,33 @@ document.addEventListener('click', async e => {
   }
   setStatus(`Route gemaakt: ~${best.dist.toFixed(0)} km langs ${best.picked.length} verkooppunten.`);
   loadStops(best.picked, { optimize: true });
+  if (anotherBtn) { anotherBtn.hidden = false; anotherBtn.textContent = '🔄 Andere route'; }
   /* Toon het resultaat: spring naar de route-tab */
   document.querySelector('.nav-btn[data-page="route"]')?.click();
+}
+
+/* Document-brede delegatie zodat de knoppen op meerdere plekken werken
+   (kaart-strip én lege-route-staat). */
+document.addEventListener('click', e => {
+  const btn = e.target.closest('[data-gen]');
+  if (!btn) return;
+  _genVariant = 0;
+  _generateAndLoad(+btn.dataset.gen, 0);
+});
+
+/* "Andere route" — zelfde afstand, andere lus */
+document.getElementById('anotherRouteBtn')?.addEventListener('click', () => {
+  if (_genTarget == null) return;
+  _genVariant += 1;
+  _generateAndLoad(_genTarget, _genVariant);
+});
+
+/* Verberg de "andere route"-knop zodra de route leeg is */
+document.addEventListener('boerenroute:routechange', () => {
+  import('./route.js').then(({ getCount }) => {
+    const b = document.getElementById('anotherRouteBtn');
+    if (b && getCount() === 0) b.hidden = true;
+  });
 });
 
 /* ── Hero-elementen ──────────────────────────────────────── */

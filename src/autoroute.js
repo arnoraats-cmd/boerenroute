@@ -16,15 +16,16 @@ function haversine(aLat, aLng, bLat, bLng) {
 /* Kies winkels voor een lus van ~targetKm rond start.
    radiusFactor schaalt de selectie-straal (de tuner stelt 'm bij).
    Geeft een array shops (3–6) terug, of [] als er te weinig in de buurt is. */
-export function generateRoute(shops, start, targetKm = 35, { maxStops = 8, radiusFactor = 1, sectors } = {}) {
+export function generateRoute(shops, start, targetKm = 35, { maxStops = 8, radiusFactor = 1, sectors, variant = 0 } = {}) {
   const cand = (shops || []).filter(s =>
     s && s.type !== 'onderweg' && isFinite(s.lat) && isFinite(s.lng)
   );
   if (cand.length < 3) return [];
 
-  // Lus-omtrek ≈ 2πr ⇒ ideale straal; winkels rond ~0.8·r geven een nette ronde
+  // Lus-omtrek ≈ 2πr ⇒ ideale straal; winkels rond ~0.8·r geven een nette ronde.
+  // De ideale straal varieert licht per variant zodat "andere route" écht anders is.
   const r        = Math.max(2, (targetKm / 6.28) * radiusFactor);
-  const idealD   = r * 0.8;
+  const idealD   = r * (0.8 + ((variant % 3) - 1) * 0.07);
   const withMeta = cand.map(s => ({
     s,
     d:   haversine(start.lat, start.lng, s.lat, s.lng),
@@ -36,21 +37,26 @@ export function generateRoute(shops, start, targetKm = 35, { maxStops = 8, radiu
   if (pool.length < 3) pool = withMeta.slice().sort((a, b) => a.d - b.d).slice(0, 12);
   if (pool.length < 3) return [];
 
-  // Verdeel over hoek-sectoren → gespreide lus (geen cluster aan één kant)
+  // Verdeel over hoek-sectoren → gespreide lus (geen cluster aan één kant).
+  // variant roteert de sectoren + kiest een andere winkel per sector → andere lus.
   const nSectors = Math.min(maxStops, sectors || Math.max(3, Math.round(targetKm / 9)));
+  const off      = variant * 1.07;                // sector-rotatie (radialen; herhaalt niet snel)
+  const rank     = variant % 2;                   // 0 = beste, 1 = op één na beste
+  const norm = a => { a = (a - off) % (2 * Math.PI); if (a < -Math.PI) a += 2 * Math.PI; if (a >= Math.PI) a -= 2 * Math.PI; return a; };
   const chosen   = [];
   const taken    = new Set();
   for (let k = 0; k < nSectors; k++) {
     const lo = -Math.PI + (k * 2 * Math.PI) / nSectors;
     const hi = lo + (2 * Math.PI) / nSectors;
-    const inSec = pool.filter(o => o.ang >= lo && o.ang < hi && !taken.has(o.s.id));
+    const inSec = pool.filter(o => { const a = norm(o.ang); return a >= lo && a < hi && !taken.has(o.s.id); });
     if (!inSec.length) continue;
     // dicht bij ideale straal + lichte voorkeur voor premium / hoog gewaardeerd
     inSec.sort((a, b) =>
       (Math.abs(a.d - idealD) - bonus(a.s)) - (Math.abs(b.d - idealD) - bonus(b.s))
     );
-    chosen.push(inSec[0].s);
-    taken.add(inSec[0].s.id);
+    const pick = inSec[Math.min(rank, inSec.length - 1)];
+    chosen.push(pick.s);
+    taken.add(pick.s.id);
   }
 
   // Te weinig sectoren gevuld? Vul aan met dichtstbijzijnde nog niet gekozen
@@ -79,7 +85,7 @@ function bonus(s) {
 export async function generateTunedRoute(
   shops, start, targetKm = 35,
   measure,
-  { tolerance = 0.12, maxIters = 3, onStep } = {}
+  { tolerance = 0.12, maxIters = 3, onStep, variant = 0 } = {}
 ) {
   const baseSectors = Math.max(3, Math.round(targetKm / 9));
   let factor = 1, extra = 0, prev = null, best = null;
@@ -88,6 +94,7 @@ export async function generateTunedRoute(
     const picked = generateRoute(shops, start, targetKm, {
       radiusFactor: factor,
       sectors: baseSectors + extra,
+      variant,
     });
     if (picked.length < 3) { if (!best) best = { picked, dist: 0, err: Infinity }; break; }
 
