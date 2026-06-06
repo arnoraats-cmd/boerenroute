@@ -223,8 +223,10 @@ document.getElementById('routeGoToKaart')?.addEventListener('click', () => {
   document.querySelector('.nav-btn[data-page="kaart"]')?.click();
 });
 
-/* ── Automatische routegeneratie ("Maak een route voor mij") ── */
-document.getElementById('routeGen')?.addEventListener('click', async e => {
+/* ── Automatische routegeneratie ("Maak een route voor mij") ──
+   Document-brede delegatie zodat de knoppen op meerdere plekken werken
+   (kaart-strip én lege-route-staat). Navigeert na succes naar de route. */
+document.addEventListener('click', async e => {
   const btn = e.target.closest('[data-gen]');
   if (!btn) return;
   const targetKm = +btn.dataset.gen;
@@ -244,6 +246,8 @@ document.getElementById('routeGen')?.addEventListener('click', async e => {
   setStatus(`Route langs ${picked.length} verkooppunten — de kaart laadt de mooiste lus…`);
   const { loadStops } = await import('./route.js');
   loadStops(picked, { optimize: true });
+  /* Toon het resultaat: spring naar de route-tab */
+  document.querySelector('.nav-btn[data-page="route"]')?.click();
 });
 
 /* ── Hero-elementen ──────────────────────────────────────── */

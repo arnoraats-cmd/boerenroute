@@ -2745,6 +2745,27 @@
     align-items: center;
     gap: 6px;
   }
+
+  /* Opvallende auto-route-strip boven de kaart */
+  .route-cta {
+    max-width: var(--max-w);
+    margin: 8px auto 0;
+    padding: 10px 14px;
+    background: linear-gradient(100deg, var(--green-bg), var(--amber-bg));
+    border: 1px solid rgba(39,80,10,.14);
+    border-radius: var(--r-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .route-cta-label {
+    font-size: var(--t-sm);
+    font-weight: 600;
+    color: var(--green-dark);
+  }
+  .route-cta-btns { display: flex; gap: 8px; flex-wrap: wrap; }
 }
 
 /* ══ BOODSCHAPPENLIJST ═══════════════════════════════════════════ */
