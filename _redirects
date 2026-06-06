@@ -26,5 +26,8 @@
 /aanmelden          /public/aanmelden/index.html    200
 /aanmelden/         /public/aanmelden/index.html    200
 
-/stichting          /public/stichting/index.html    200
-/stichting/         /public/stichting/index.html    200
+/partners           /public/partners/index.html     200
+/partners/          /public/partners/index.html     200
+# Oude stichting-URL doorverwijzen naar de nieuwe partners-pagina
+/stichting          /partners                       301
+/stichting/         /partners                       301

@@ -3400,6 +3400,12 @@
     .stichting-data > div { grid-template-columns: 1fr; gap: 2px; }
   }
 
+  /* Partners / adverteren-pagina */
+  .partner-stats { justify-content: center; margin: 0 0 40px; padding: 18px; background: var(--white); border: 1px solid var(--border); border-radius: var(--r-xl); }
+  .partner-tiers { margin: 16px 0 8px; }
+  .partner-cta-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+  .partner-cta-note { font-size: var(--t-sm); color: var(--text-light); }
+
   /* Provincie-fietsroute op de regiopagina */
   .regioroute {
     margin: 32px 0 8px;
