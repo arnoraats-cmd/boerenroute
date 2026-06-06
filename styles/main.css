@@ -178,6 +178,7 @@
     min-height: 44px;
   }
 
+  /* Oud emoji-icoon (nog gebruikt op gegenereerde subpagina's) */
   .logo-icon {
     font-size: 22px;
     line-height: 1;
@@ -185,18 +186,36 @@
     transition: transform var(--tb);
     filter: drop-shadow(0 1px 3px rgba(0,0,0,.35));
   }
-
   .logo:hover .logo-icon { transform: rotate(-8deg) scale(1.12); }
+
+  /* Eigen SVG-merkteken: route-pin met spruit */
+  .logo-mark {
+    display: block;
+    flex-shrink: 0;
+    transition: transform var(--tb);
+    transform-origin: 50% 90%;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,.28));
+  }
+  .logo:hover .logo-mark,
+  .footer-logo:hover .logo-mark { transform: rotate(-6deg) scale(1.08); }
 
   .logo-text {
     font-family: var(--serif);
-    font-size: clamp(15px, 2.5vw, 18px);
-    font-weight: 400;
-    color: rgba(255,255,255,.9);
-    letter-spacing: -.015em;
+    font-size: clamp(16px, 2.6vw, 19px);
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: -.018em;
     white-space: nowrap;
   }
 
+  /* Gouden accent op 'route' (pop op donkergroene header, haalt WCAG AA) */
+  .logo-text .lt-accent,
+  .footer-logo .lt-accent {
+    color: var(--amber-light);
+    font-weight: 700;
+  }
+
+  /* Subpagina's gebruiken nog 'Boeren<strong>route.nl</strong>' */
   .logo-text strong {
     color: var(--green-light);
     font-weight: 700;
