@@ -1,5 +1,5 @@
 /* Service Worker — Boerenroute.nl */
-const CACHE   = 'boerenroute-v25';
+const CACHE   = 'boerenroute-v26';
 const OFFLINE = [
   '/',
   '/styles/main.css',
@@ -50,7 +50,7 @@ self.addEventListener('fetch', e => {
   if (req.method !== 'GET') return;
 
   /* Tiles + live API's: nooit via de SW (te groot / moet altijd vers) */
-  if (/tile|overpass|nominatim|formspree|goatcounter|router\.project-osrm/.test(req.url)) return;
+  if (/tile|overpass|nominatim|formspree|goatcounter|router\.project-osrm|brouter/.test(req.url)) return;
 
   const sameOrigin = new URL(req.url).origin === self.location.origin;
 

@@ -13,23 +13,45 @@ const BROUTER = 'https://brouter.de/brouter';
 const OSRM    = 'https://router.project-osrm.org/route/v1/cycling';
 
 /* Geef { geometry (GeoJSON LineString), distanceKm, ascendM, engine } of null.
-   points: [{lat,lng}, …] — sluit de lus door zelf het startpunt achteraan te zetten. */
+   points: [{lat,lng}, …] — sluit de lus door zelf het startpunt achteraan te zetten.
+
+   Volgorde: (1) eigen /api/route-proxy (edge-cache + ORS-fallback, key verborgen),
+   (2) BRouter direct (werkt ook lokaal/zonder functie), (3) OSRM. */
 export async function routeVia(points, { profile = 'trekking', timeoutMs = 9000 } = {}) {
   if (!Array.isArray(points) || points.length < 2) return null;
 
   const timeout = () => new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), timeoutMs));
 
-  // 1) BRouter — recreatief profiel
+  // 1) Eigen proxy (Cloudflare Pages Function) — cache + fallback
+  try {
+    return await Promise.race([_proxy(points, profile), timeout()]);
+  } catch { /* niet gedeployed / lokaal → val terug op directe BRouter */ }
+
+  // 2) BRouter direct — recreatief profiel
   try {
     return await Promise.race([_brouter(points, profile), timeout()]);
   } catch { /* val terug op OSRM */ }
 
-  // 2) OSRM — laatste redmiddel (snelste lijn, maar tekent tenminste iets)
+  // 3) OSRM — laatste redmiddel (snelste lijn, maar tekent tenminste iets)
   try {
     return await Promise.race([_osrm(points), timeout()]);
   } catch {
     return null;
   }
+}
+
+/* ══ Proxy (eigen Pages Function) ════════════════════════════════ */
+
+async function _proxy(points, profile) {
+  const r = await fetch('/api/route', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ points, profile }),
+  });
+  if (!r.ok) throw new Error('proxy ' + r.status);
+  const d = await r.json();
+  if (!d?.geometry) throw new Error('proxy empty');
+  return d;
 }
 
 /* ══ BRouter ═════════════════════════════════════════════════════ */
