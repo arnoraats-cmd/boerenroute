@@ -1306,6 +1306,26 @@
     flex-shrink: 0;
   }
 
+  /* "Mijn locatie"-knop in de toolbar (snel naar GPS, ook na wegscrollen hero) */
+  .toolbar-locate {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    background: var(--green-mid);
+    color: var(--white);
+    border-radius: var(--r-full);
+    padding: 8px 14px;
+    font-size: var(--t-sm);
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(59,109,17,.22);
+    transition: background var(--tf), transform var(--tf);
+  }
+  .toolbar-locate:hover  { background: var(--green-dark); }
+  .toolbar-locate:active { transform: scale(.97); }
+  .toolbar-locate { display: none; }   /* desktop: hero + zoekveld volstaan; alleen op mobiel tonen */
+
   .toolbar-divider {
     width: 1px;
     height: 20px;
@@ -3795,8 +3815,34 @@
       mask-image: linear-gradient(to right, black 80%, transparent 100%);
     }
     .filter-chips::-webkit-scrollbar { display: none; }
-    .toolbar-right { order: 2; margin-left: auto; flex-shrink: 0; max-width: calc(100vw - var(--pad) * 2); overflow: hidden; }
-    .sort-select { max-width: min(140px, calc(50vw - 20px)); }
+    /* Controls-rij (GPS + Nu open + Afstand + Straal) als één volle,
+       scrollbare rij — hoogte-neutraal en niets wordt afgekapt.
+       Filterchips komen op de rij eronder. */
+    .toolbar-locate { display: inline-flex; }
+    .toolbar-right {
+      order: 2;
+      width: 100%;
+      margin-left: 0;
+      gap: 6px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
+      mask-image: linear-gradient(to right, black 90%, transparent 100%);
+    }
+    .toolbar-right::-webkit-scrollbar { display: none; }
+    .toolbar-divider { display: none; }
+    .toolbar-locate { padding: 7px 12px; }
+    .toolbar-right .toggle-pill { padding: 7px 11px; font-size: var(--t-xs); flex-shrink: 0; }
+    .sort-select {
+      max-width: none;
+      flex-shrink: 0;
+      padding: 7px 26px 7px 11px;
+      font-size: var(--t-xs);
+      background-position: right 8px center;
+    }
     .btn { max-width: 100%; box-sizing: border-box; }
     .footer-inner { grid-template-columns: 1fr; gap: 28px; }
     .footer-cols  { gap: 24px; }

@@ -317,17 +317,20 @@ document.getElementById('heroRoutesBtn')?.addEventListener('click', () => {
 heroSearchInput?.addEventListener('keydown', e => { if (e.key === 'Enter') _submitSearch(); });
 heroSearchSubmit?.addEventListener('click', _submitSearch);
 
-heroGpsBtn?.addEventListener('click', async () => {
-  _setBusy(heroGpsBtn, '📍 Locatie ophalen…');
+async function _locateMe(btn) {
+  if (btn) _setBusy(btn, '📍 Locatie ophalen…');
   try {
     const { lat, lng } = await getGPS();
     _applyLocation(lat, lng, 'Jouw locatie');
   } catch (e) {
     _showError(e.message);
   } finally {
-    _resetBusy(heroGpsBtn);
+    if (btn) _resetBusy(btn);
   }
-});
+}
+
+heroGpsBtn?.addEventListener('click', () => _locateMe(heroGpsBtn));
+document.getElementById('toolbarGpsBtn')?.addEventListener('click', e => _locateMe(e.currentTarget));
 
 async function _submitSearch() {
   const q = heroSearchInput?.value.trim();
