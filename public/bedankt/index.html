@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bedankt voor je steun — Boerenroute</title>
+  <meta name="description" content="Dankjewel voor je donatie aan Boerenroute. Laat optioneel je naam achter voor onze steunwand — of blijf gewoon anoniem.">
+  <link rel="canonical" href="https://www.boerenroute.nl/bedankt">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Boerenroute home">
+        <svg class="logo-mark" width="26" height="30" viewBox="0 0 26 30" fill="none" aria-hidden="true"><path d="M13 1.4C6.5 1.4 1.4 6.4 1.4 12.5c0 6.7 8.3 14.6 11 16.9.35.3.85.3 1.2 0 2.7-2.3 11-10.2 11-16.9C24.6 6.4 19.5 1.4 13 1.4Z" fill="#FBEFD6" stroke="#356611" stroke-width="1.7"/><path d="M13 19V9.2" stroke="#356611" stroke-width="1.7" stroke-linecap="round"/><path d="M13 14.2C9.9 14.4 7.4 12.3 7 9.4c3.1-.2 5.6 1.9 6 4.8Z" fill="#5E9420"/><path d="M13 11.4c2.6.1 4.8-1.7 5.2-4.3-2.6-.1-4.8 1.7-5.2 4.3Z" fill="#E8981C"/></svg>
+        <span class="logo-text">Boeren<span class="lt-accent">route</span></span>
+      </a>
+    </div>
+  </header>
+
+  <main class="aanmeld-main">
+    <nav class="regio-breadcrumb" aria-label="Broodkruimelpad">
+      <a href="/">Boerenroute.nl</a> › Bedankt
+    </nav>
+
+    <div class="aanmeld-hero">
+      <h1>💚 Dankjewel voor je steun!</h1>
+      <p>Wat ontzettend lief. Dankzij jouw bijdrage blijft Boerenroute <strong>gratis, reclamevrij en onafhankelijk</strong> — voor iedereen die lokaal eten en fietsen een warm hart toedraagt. Je hebt er echt mee geholpen. 🌾</p>
+    </div>
+
+    <!-- ── Naam achterlaten (optioneel) ─────────────────────────── -->
+    <section class="stichting-section">
+      <h2>Laat je naam achter — of blijf anoniem</h2>
+      <p>Wil je op onze <strong>steunwand</strong> verschijnen? Vul dan hieronder je naam in. Liever anoniem? Ook helemaal goed — je hoeft niets in te vullen, je steun blijft net zo waardevol. 💚</p>
+
+      <form id="donorForm" class="nieuwsbrief-form" action="https://formspree.io/f/xykvvprz" method="POST" style="max-width:520px;margin-top:6px;">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
+        <input type="hidden" name="_subject" value="Nieuwe donateur — Boerenroute.nl">
+        <input type="hidden" name="type" value="donatie">
+
+        <label class="donor-label" for="donorName">Je naam (optioneel)</label>
+        <input type="text" id="donorName" name="naam" class="form-input" maxlength="60" autocomplete="name" placeholder="Bijv. Jan uit Uden — of laat leeg voor anoniem">
+
+        <label class="donor-label" for="donorMsg" style="margin-top:12px;">Een berichtje (optioneel)</label>
+        <textarea id="donorMsg" name="bericht" class="form-input" rows="3" maxlength="280" placeholder="Bijv. Wat een fijne site, ga zo door!"></textarea>
+
+        <label class="donor-check">
+          <input type="checkbox" name="anoniem" value="ja">
+          <span>Toon mij liever <strong>anoniem</strong> op de steunwand</span>
+        </label>
+
+        <button type="submit" class="btn btn-green" style="margin-top:14px;">💚 Verstuur</button>
+        <p class="donor-privacy">We gebruiken je naam alleen voor de steunwand en sturen je geen e-mail. Geen account, geen spam.</p>
+      </form>
+
+      <div class="donor-ok" id="donorOk" hidden role="status">
+        <h3>🌻 Gelukt — dankjewel!</h3>
+        <p>We hebben je bericht ontvangen en voegen je met liefde toe aan de steunwand. Tot ziens op de fiets!</p>
+        <a href="/" class="btn btn-green" style="margin-top:10px;">🗺️ Terug naar de kaart</a>
+      </div>
+      <p class="donor-err" id="donorErr" hidden role="alert">Hm, er ging iets mis bij het versturen. Probeer het zo nog eens, of mail ons via de contactknop.</p>
+    </section>
+
+    <!-- ── Nog niet gedoneerd? ──────────────────────────────────── -->
+    <section class="over-steun" style="margin-top:24px;">
+      <h2>💚 Nog niet gedoneerd?</h2>
+      <p>Op deze pagina beland maar nog geen bijdrage gedaan? Elke gift — groot of klein — helpt enorm.</p>
+      <a class="btn btn-green over-steun-btn" href="https://bunq.me/boerenroute" target="_blank" rel="noopener">💚 Trakteer ons op een kop koffie</a>
+      <p class="over-steun-note">Eenmalig, veilig via iDEAL — in de hoogte die jij wilt.</p>
+    </section>
+
+    <!-- ── Steunwand ────────────────────────────────────────────── -->
+    <section class="stichting-section">
+      <h2>🌻 Onze steuners</h2>
+      <p>Een dikke merci aan iedereen die Boerenroute mogelijk maakt:</p>
+      <ul class="dankjewel-lijst" id="steunwand">
+        <!-- Voeg hier donateurs toe die hun naam achterlieten, bijv.:
+             <li><span class="dankjewel-naam">Jan uit Uden</span> — "Wat een fijne site!"</li>
+             Anonieme donateurs hoef je niet te noemen, of als één regel: -->
+        <li><span class="dankjewel-naam">Bram</span> — voor het meedenken en aanvullen van boerderijadressen 🌾</li>
+        <li><span class="dankjewel-naam">Jij?</span> — wees de volgende die op de wand komt 💚</li>
+      </ul>
+      <p class="dankjewel-sub">Anonieme steuners: jullie worden net zo gewaardeerd — bedankt! 🙏</p>
+    </section>
+
+    <div class="regio-cta">
+      <a href="/" class="btn btn-green">🗺️ Terug naar de kaart</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <svg class="logo-mark" width="22" height="26" viewBox="0 0 26 30" fill="none" aria-hidden="true"><path d="M13 1.4C6.5 1.4 1.4 6.4 1.4 12.5c0 6.7 8.3 14.6 11 16.9.35.3.85.3 1.2 0 2.7-2.3 11-10.2 11-16.9C24.6 6.4 19.5 1.4 13 1.4Z" fill="#FBEFD6" stroke="#356611" stroke-width="1.7"/><path d="M13 19V9.2" stroke="#356611" stroke-width="1.7" stroke-linecap="round"/><path d="M13 14.2C9.9 14.4 7.4 12.3 7 9.4c3.1-.2 5.6 1.9 6 4.8Z" fill="#5E9420"/><path d="M13 11.4c2.6.1 4.8-1.7 5.2-4.3-2.6-.1-4.8 1.7-5.2 4.3Z" fill="#E8981C"/></svg>
+          <span class="footer-logo-text">Boeren<span class="lt-accent">route</span></span>
+        </a>
+        <p class="footer-tagline">Lokaal, vers en op de fiets.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Boerenroute</p>
+      <a href="/">Naar de kaart</a>
+    </div>
+  </footer>
+
+  <script>
+    /* Formulier via Formspree (AJAX) zodat de bezoeker op de pagina blijft */
+    var f = document.getElementById('donorForm');
+    f.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      document.getElementById('donorErr').hidden = true;
+      try {
+        var res = await fetch(f.action, { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } });
+        if (res.ok) {
+          f.hidden = true;
+          document.getElementById('donorOk').hidden = false;
+          document.getElementById('donorOk').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          document.getElementById('donorErr').hidden = false;
+        }
+      } catch (err) {
+        document.getElementById('donorErr').hidden = false;
+      }
+    });
+  </script>
+</body>
+</html>
