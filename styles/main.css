@@ -1854,7 +1854,7 @@
     text-align: center;
   }
   .over-steun h2 {
-    font-family: var(--serif);
+    font-family: var(--sans);
     font-size: var(--t-xl);
     font-weight: 700;
     color: var(--green-dark);
@@ -1882,6 +1882,26 @@
   }
   .route-donate a { color: var(--green-mid); font-weight: 600; white-space: nowrap; }
   .route-donate a:hover { color: var(--green-dark); text-decoration: underline; }
+
+  /* Bedankpagina — donateursformulier */
+  .donor-label { display: block; font-size: var(--t-sm); font-weight: 600; color: var(--text); margin-bottom: 5px; }
+  .donor-check { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: var(--t-sm); color: var(--text-mid); cursor: pointer; }
+  .donor-check input { width: 18px; height: 18px; flex-shrink: 0; }
+  .donor-privacy { font-size: var(--t-xs); color: var(--text-light); margin-top: 10px; }
+  .donor-ok {
+    background: var(--green-bg);
+    border: 1px solid color-mix(in srgb, var(--green-mid) 25%, transparent);
+    border-radius: var(--r-lg);
+    padding: 20px 22px;
+    margin-top: 14px;
+  }
+  .donor-ok h3 { font-family: var(--serif); font-size: var(--t-lg); color: var(--green-dark); margin-bottom: 6px; }
+  .donor-ok p { color: var(--text-mid); }
+  .donor-err { color: var(--red); font-size: var(--t-sm); margin-top: 10px; }
+
+  /* "door Arno" — verduidelijkt dat de bunq-betaling bij de juiste persoon hoort */
+  .donate-by { font-size: var(--t-xs); color: var(--text-light); margin-top: 8px; }
+  .footer-by { display: block; width: 100%; font-size: var(--t-xs); color: rgba(255,255,255,.55); margin-top: 2px; }
 }
 
 /* ══ LOCATIE-BREADCRUMB & HERO-ERROR ════════════════════════════ */
@@ -3407,7 +3427,7 @@
     border-radius: var(--r-xl);
   }
   .over-dankjewel h2 {
-    font-family: var(--serif);
+    font-family: var(--sans);
     font-size: var(--t-xl);
     font-weight: 700;
     color: var(--amber);
