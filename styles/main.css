@@ -1248,6 +1248,7 @@
     display: flex;
     gap: 5px;
     flex: 1;
+    min-width: 0;            /* laat de chips-rij krimpen + scrollen i.p.v. de sorteer-select buiten beeld te duwen */
     overflow-x: auto;
     scrollbar-width: none;
     padding-bottom: 1px;
@@ -3723,6 +3724,14 @@
   /* Kleine telefoons (< 480px): verberg extra nav-knoppen, toon Meer▾ */
   @media (max-width: 480px) {
     .nav-btn-desktop { display: none !important; }
+  }
+
+  /* Zeer smalle telefoons (≤400px): trim nav-padding zodat "Meer ▾" past */
+  @media (max-width: 400px) {
+    .nav-btn { padding-left: 10px; padding-right: 10px; }
+    .nav-toggle-btn { padding-left: 11px; padding-right: 11px; }
+    .nav-toggle { margin-right: 2px; }
+    .nav-ic { margin-right: 5px; }
   }
 
   /* Meer-dropdown */

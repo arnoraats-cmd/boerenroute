@@ -309,6 +309,11 @@ heroSearchBtn?.addEventListener('click', () => {
   if (opening) heroSearchInput?.focus();
 });
 
+/* Hero → naar de kant-en-klare fietsroutes (carrousel) scrollen */
+document.getElementById('heroRoutesBtn')?.addEventListener('click', () => {
+  document.getElementById('popularRoutesBanner')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
 heroSearchInput?.addEventListener('keydown', e => { if (e.key === 'Enter') _submitSearch(); });
 heroSearchSubmit?.addEventListener('click', _submitSearch);
 
