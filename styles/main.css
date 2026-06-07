@@ -2111,13 +2111,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 9px;
     font-size: var(--t-md);
-    font-weight: 600;
+    font-weight: 700;
     padding: 13px 16px;
     border-radius: var(--r);
     text-align: center;
   }
+  .route-nav-txt { display: inline-flex; flex-direction: column; line-height: 1.15; text-align: left; }
+  .route-nav-sub { font-size: var(--t-xs); font-weight: 500; opacity: .85; }
 
   /* Rij met secundaire knoppen */
   .route-actions-row {
@@ -3850,6 +3852,21 @@
     body.map-active .list-section.sheet-half { transform: translateY(48%); }
     body.map-active .list-section.sheet-open { transform: translateY(0); }
     body.map-active .list-section.sheet-no-transition { transition: none !important; }
+
+    /* Route-pagina: kaart compact bovenaan, de winkels in de route meteen
+       zichtbaar in de eigen scroll-box eronder (geen fullscreen-kaart +
+       "swipe omhoog" meer). De actiebalk blijft gepind onderaan die box. */
+    body.map-active[data-page="route"] .map-section {
+      position: static !important;
+      top: auto !important; bottom: auto !important;
+      height: 34vh !important;
+      max-height: 34vh !important;
+      z-index: 1;
+    }
+    body.map-active[data-page="route"] .toolbar { display: none !important; }
+    body.map-active[data-page="route"] .route-section {
+      max-height: calc(100dvh - var(--header-h) - 34vh);
+    }
 
     /* Sleepgreep */
     .sheet-handle {
