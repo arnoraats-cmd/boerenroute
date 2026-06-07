@@ -1823,6 +1823,65 @@
     padding: 6px 2px;           /* ruimer tik-doel (≥ AA 24px) */
   }
   .footer-bottom a:hover { color: var(--white); }
+
+  /* Donatieknop in de footer (wit pilletje, valt op tegen donkergroen) */
+  .footer-bottom .footer-donate {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: auto;                 /* duwt copyright + statistieken naar rechts */
+    background: var(--white);
+    color: var(--green-dark);
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: var(--r-full);
+    box-shadow: 0 2px 8px rgba(0,0,0,.18);
+    transition: transform var(--tf), box-shadow var(--tf);
+  }
+  .footer-bottom .footer-donate:hover {
+    color: var(--green-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(0,0,0,.26);
+  }
+
+  /* Steunblok op de Over ons-pagina */
+  .over-steun {
+    margin-top: 28px;
+    background: var(--green-bg);
+    border: 1px solid color-mix(in srgb, var(--green-mid) 22%, transparent);
+    border-radius: var(--r-xl);
+    padding: clamp(20px, 3vw, 30px);
+    text-align: center;
+  }
+  .over-steun h2 {
+    font-family: var(--serif);
+    font-size: var(--t-xl);
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+  }
+  .over-steun p {
+    color: var(--text-mid);
+    line-height: 1.65;
+    max-width: 56ch;
+    margin: 0 auto 16px;
+  }
+  .over-steun-btn { font-size: var(--t-md); }
+  .over-steun-note {
+    font-size: var(--t-sm);
+    color: var(--text-light);
+    margin: 10px auto 0;
+  }
+
+  /* Subtiele steun-regel onder een geladen route */
+  .route-donate {
+    text-align: center;
+    font-size: var(--t-xs);
+    color: var(--text-light);
+    margin-top: 6px;
+  }
+  .route-donate a { color: var(--green-mid); font-weight: 600; white-space: nowrap; }
+  .route-donate a:hover { color: var(--green-dark); text-decoration: underline; }
 }
 
 /* ══ LOCATIE-BREADCRUMB & HERO-ERROR ════════════════════════════ */

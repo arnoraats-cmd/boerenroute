@@ -1,5 +1,5 @@
 /* Service Worker — Boerenroute.nl */
-const CACHE   = 'boerenroute-v42';
+const CACHE   = 'boerenroute-v43';
 const OFFLINE = [
   '/',
   '/styles/main.css',
