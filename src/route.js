@@ -192,7 +192,7 @@ function _renderStats(stats) {
 
   const chips = [];
   if (stats.score != null)
-    chips.push(`<span class="rstat rstat-score" title="Recreatieve belevingsscore (autoluw, fietspad, knooppuntennet)">⭐ ${stats.score}<small>/100</small></span>`);
+    chips.push(`<button type="button" class="rstat rstat-score" id="rstatScoreBtn" aria-expanded="false" aria-controls="rstatInfo">⭐ ${stats.score}<small>/100</small><span class="rstat-i" aria-hidden="true">ⓘ</span></button>`);
   chips.push(`<span class="rstat" title="Verwachte duur incl. winkelstops">🕐 ${fmtDuration(stats.durationMin)}</span>`);
   chips.push(`<span class="rstat" title="Route-moeilijkheid">📊 ${stats.difficulty}</span>`);
   if (stats.pctQuiet != null)
@@ -200,8 +200,31 @@ function _renderStats(stats) {
   if (stats.family)
     chips.push('<span class="rstat rstat-family" title="Kort, vlak, verhard en autoluw">👪 Gezinsvriendelijk</span>');
 
-  el.innerHTML = chips.join('');
+  /* Uitklap-uitleg bij de belevingsscore (tap-vriendelijk i.p.v. tooltip) */
+  let info = '';
+  if (stats.score != null) {
+    const pct = v => v == null ? '–' : Math.round(v * 100) + '%';
+    info = `<div class="rstat-info" id="rstatInfo" hidden>
+      <p class="rstat-info-lead"><strong>Belevingsscore ${stats.score}/100</strong> — hoe prettig deze route fietst. Hoe hoger, hoe rustiger en mooier.</p>
+      <ul class="rstat-info-list">
+        <li><span>🌿 Autoluwe wegen</span><strong>${pct(stats.pctQuiet)}</strong></li>
+        <li><span>🔗 Fietsknooppunten-netwerk</span><strong>${pct(stats.pctNetwork)}</strong></li>
+        <li><span>🛣️ Verhard pad</span><strong>${pct(stats.pctPaved)}</strong></li>
+      </ul>
+      <p class="rstat-info-foot">Automatisch berekend uit de échte wegen in de route.</p>
+    </div>`;
+  }
+
+  el.innerHTML = chips.join('') + info;
   el.hidden = false;
+
+  const btn = document.getElementById('rstatScoreBtn');
+  const panel = document.getElementById('rstatInfo');
+  btn?.addEventListener('click', () => {
+    const opening = panel.hidden;
+    panel.hidden = !opening;
+    btn.setAttribute('aria-expanded', String(opening));
+  });
 }
 
 /* Korte, niet-opdringerige bevestiging onderaan het scherm */

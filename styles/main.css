@@ -1981,6 +1981,33 @@
   .rstat-score { background: var(--amber-bg); color: var(--amber-ink); }
   .rstat-family { background: #E3EFD5; color: var(--green-mid); }
 
+  /* Klikbare belevingsscore + uitklap-uitleg */
+  button.rstat-score {
+    cursor: pointer;
+    border: 1px solid color-mix(in srgb, var(--amber-ink) 25%, transparent);
+    transition: background var(--tf), box-shadow var(--tf);
+  }
+  button.rstat-score:hover { background: color-mix(in srgb, var(--amber-bg) 80%, var(--amber-light)); }
+  button.rstat-score[aria-expanded="true"] { box-shadow: 0 0 0 2px color-mix(in srgb, var(--amber-ink) 30%, transparent); }
+  .rstat-i { font-size: .9em; opacity: .8; margin-left: 1px; }
+
+  .rstat-info {
+    width: 100%;
+    margin-top: 4px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 14px 16px;
+    box-shadow: var(--sh-sm);
+    animation: fade-up .2s var(--ease) both;
+  }
+  .rstat-info-lead { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.6; margin-bottom: 10px; }
+  .rstat-info-lead strong { color: var(--amber-ink); }
+  .rstat-info-list { list-style: none; margin: 0 0 10px; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+  .rstat-info-list li { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: var(--t-sm); color: var(--text); }
+  .rstat-info-list strong { color: var(--green-dark); font-variant-numeric: tabular-nums; }
+  .rstat-info-foot { font-size: var(--t-xs); color: var(--text-light); font-style: italic; }
+
   /* Lege staat */
   .route-empty {
     padding: 48px 24px 36px;
