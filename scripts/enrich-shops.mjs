@@ -77,12 +77,17 @@ if (isMain) {
   let LIMIT = Infinity;
   const li = args.indexOf('--limit');
   if (li !== -1 && args[li + 1]) LIMIT = parseInt(args[li + 1], 10);
+  /* --since N: alleen winkels met id >= N (zo verrijken we enkel de nieuwe). */
+  let SINCE = 0;
+  const si = args.indexOf('--since');
+  if (si !== -1 && args[si + 1]) SINCE = parseInt(args[si + 1], 10);
 
   const FILE  = 'src/data/verifiedShops.json';
   const shops = JSON.parse(readFileSync(FILE, 'utf8'));
-  const todo  = shops.filter(s => s.placeId && !s.osm).slice(0, LIMIT);
+  const pool  = shops.filter(s => s.placeId && !s.osm && (+s.id || 0) >= SINCE);
+  const todo  = pool.slice(0, LIMIT);
 
-  console.log(`Met placeId: ${shops.filter(s => s.placeId && !s.osm).length}. Verwerken: ${todo.length}` +
+  console.log(`Met placeId${SINCE ? ` (id ≥ ${SINCE})` : ''}: ${pool.length}. Verwerken: ${todo.length}` +
               `${WRITE ? '  → OPSLAAN' : '  → dry-run'}\n`);
 
   let calls = 0, hoursSet = 0, phoneSet = 0, webSet = 0, ratingSet = 0;
