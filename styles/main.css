@@ -1796,7 +1796,12 @@
     color: rgba(255,255,255,.72);
   }
 
-  .footer-bottom a { color: rgba(255,255,255,.78); transition: color var(--tf); }
+  .footer-bottom a {
+    color: rgba(255,255,255,.78);
+    transition: color var(--tf);
+    display: inline-block;
+    padding: 6px 2px;           /* ruimer tik-doel (≥ AA 24px) */
+  }
   .footer-bottom a:hover { color: var(--white); }
 }
 
@@ -2230,6 +2235,11 @@
 
   /* Op de route-tab zelf overbodig (de echte knoppen staan er al) */
   body[data-page="route"] .route-fab { display: none !important; }
+  /* Op de route-tab: geen losse generator-strip (de route is er al; gebruik
+     "Andere route" of de lege-staat-generator) en geen iOS-installatiehint
+     die de gepinde actiebalk overlapt. */
+  body[data-page="route"] .route-cta { display: none !important; }
+  body[data-page="route"] .ios-hint  { display: none !important; }
 
   /* Kleine variant van btn-ghost en btn-sm */
   .btn-sm {
