@@ -3,7 +3,8 @@
 # Eerste match wint, dus specifieke regels vóór wildcards.
 
 /robots.txt         /public/robots.txt              200
-# sitemap.xml staat nu in de root — geen rewrite nodig
+# Schone /sitemap.xml direct (200-rewrite) serveren vanaf het echte bestand in /public.
+/sitemap.xml        /public/sitemap.xml             200
 
 /blog               /public/blog/index.html         200
 /blog/              /public/blog/index.html         200

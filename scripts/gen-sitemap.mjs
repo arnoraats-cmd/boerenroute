@@ -81,7 +81,7 @@ ${urls.map(u => `  <url>
 </urlset>
 `;
 
-// Schrijf naar root (https://boerenroute.nl/sitemap.xml) én public/ (voor consistentie)
-writeFileSync(join(root, 'sitemap.xml'), xml, 'utf8');
+// Eén bron van waarheid: public/sitemap.xml. De schone URL /sitemap.xml wordt
+// via _redirects (200-rewrite) hiernaartoe geserveerd — geen dubbel root-bestand.
 writeFileSync(join(root, 'public/sitemap.xml'), xml, 'utf8');
-console.log(`✓ sitemap.xml — ${urls.length} URLs (lastmod ${today})`);
+console.log(`✓ public/sitemap.xml — ${urls.length} URLs (lastmod ${today})`);
