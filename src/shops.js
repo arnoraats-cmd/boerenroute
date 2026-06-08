@@ -204,8 +204,9 @@ function _render(reset = true) {
         ? `<li class="shop-more"><button class="btn btn-ghost" id="shopMoreBtn">Toon meer (${restant} resterend)</button></li>`
         : '');
 
-  /* Kaart: alleen de getoonde markers (lichter op de telefoon) */
-  renderMarkers(shown);
+  /* Kaart: álle gefilterde locaties (clustering bundelt ze, dus blijft licht).
+     De lijst blijft wél gepagineerd (_limit) voor een lichte DOM op mobiel. */
+  renderMarkers(shops);
 
   document.getElementById('shopMoreBtn')?.addEventListener('click', () => {
     _limit += BASE_LIMIT;
