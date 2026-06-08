@@ -4601,3 +4601,13 @@
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
   flex: 0 0 auto;
 }
+
+/* ── Sociaal-bewijs-strip onder de testimonial (gecentreerd, niet links) ── */
+.quote-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(28px, 5vw, 48px);
+  max-width: 680px;
+  margin: clamp(20px, 3vw, 28px) auto 0;
+}
