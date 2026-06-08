@@ -11,10 +11,21 @@ import { analyzeRoute } from './routeScore.js';
 const COLOR = {
   winkel:   '#64748B', // grijs
   automaat: '#2563EB', // blauw
+  zelfpluk: '#E11D48', // aardbei-rood
   markt:    '#92400E', // bruin
   onderweg: '#7C3AED', // paars
   route:    '#3B6D11', // groen (in route)
 };
+
+/* Volgorde + labels voor de kaartlegenda */
+const LEGEND = [
+  ['winkel',   'Winkel'],
+  ['automaat', 'Automaat'],
+  ['zelfpluk', 'Zelfpluk'],
+  ['markt',    'Markt'],
+  ['onderweg', 'Onderweg'],
+  ['route',    'In route'],
+];
 
 let _map        = null;
 let _group      = null;
@@ -62,6 +73,39 @@ export function initMap({ lat = 51.6606, lng = 5.6188 } = {}) {
       })
     : L.layerGroup()
   ).addTo(_map);
+
+  _addLegend();
+}
+
+/* Kaartlegenda — inklapbaar (standaard ingeklapt op smal scherm) */
+function _addLegend() {
+  const ctrl = L.control({ position: 'bottomleft' });
+  ctrl.onAdd = () => {
+    const div = L.DomUtil.create('div', 'map-legend');
+    const items = LEGEND
+      .map(([k, label]) => `<li><span class="map-legend-dot" style="background:${COLOR[k]}"></span>${label}</li>`)
+      .join('');
+    div.innerHTML =
+      `<button class="map-legend-toggle" type="button" aria-expanded="true">`
+      + `<span class="map-legend-title">Legenda</span>`
+      + `<span class="map-legend-chevron" aria-hidden="true">▾</span></button>`
+      + `<ul class="map-legend-body">${items}</ul>`;
+
+    L.DomEvent.disableClickPropagation(div);
+    L.DomEvent.disableScrollPropagation(div);
+
+    const btn = div.querySelector('.map-legend-toggle');
+    btn.addEventListener('click', () => {
+      const collapsed = div.classList.toggle('collapsed');
+      btn.setAttribute('aria-expanded', String(!collapsed));
+    });
+    if (window.matchMedia('(max-width: 640px)').matches) {
+      div.classList.add('collapsed');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+    return div;
+  };
+  ctrl.addTo(_map);
 }
 
 /* Groene cluster-bubbel in de huisstijl, met het aantal locaties erin */
