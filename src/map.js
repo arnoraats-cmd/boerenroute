@@ -48,7 +48,34 @@ export function initMap({ lat = 51.6606, lng = 5.6188 } = {}) {
     }
   ).addTo(_map);
 
-  _group = L.layerGroup().addTo(_map);
+  /* Clustering van 1.600+ markers. Bij uitzoomen bundelen we ze tot leesbare
+     groene clusters; vanaf zoom 13 (stad/dorp) tonen we weer losse pins, zodat
+     route-nummers en selectie zichtbaar blijven. Plugin niet geladen? → losse markers. */
+  _group = (typeof L.markerClusterGroup === 'function'
+    ? L.markerClusterGroup({
+        showCoverageOnHover: false,
+        spiderfyOnMaxZoom: true,
+        disableClusteringAtZoom: 13,
+        maxClusterRadius: 55,
+        chunkedLoading: true,
+        iconCreateFunction: _clusterIcon,
+      })
+    : L.layerGroup()
+  ).addTo(_map);
+}
+
+/* Groene cluster-bubbel in de huisstijl, met het aantal locaties erin */
+function _clusterIcon(cluster) {
+  const n = cluster.getChildCount();
+  const s = n < 10 ? 32 : n < 50 ? 38 : n < 200 ? 44 : 50;
+  return L.divIcon({
+    className: 'br-cluster',
+    html: `<div style="width:${s}px;height:${s}px;display:flex;align-items:center;justify-content:center;`
+      + `background:radial-gradient(circle at 32% 28%, #5E9420, #356611);color:#fff;font-weight:700;`
+      + `font-family:system-ui,sans-serif;font-size:${n > 99 ? 13 : 14}px;border-radius:50%;`
+      + `border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35)">${n}</div>`,
+    iconSize: [s, s],
+  });
 }
 
 /* ══ Markers ════════════════════════════════════════════════════ */
@@ -60,6 +87,7 @@ export function renderMarkers(shops) {
   _data.clear();
   _hl = null;
 
+  const markers = [];
   shops.forEach(shop => {
     const marker = L.marker([shop.lat, shop.lng], {
       icon: _icon(shop, false),
@@ -81,9 +109,13 @@ export function renderMarkers(shops) {
       );
     });
 
-    _group.addLayer(marker);
+    markers.push(marker);
     _data.set(shop.id, { marker, shop });
   });
+
+  // Bulk toevoegen (sneller bij clustering); layerGroup-terugval heeft geen addLayers
+  if (typeof _group.addLayers === 'function') _group.addLayers(markers);
+  else markers.forEach(m => _group.addLayer(m));
 }
 
 /* ══ Uitlichten ══════════════════════════════════════════════════ */
@@ -98,7 +130,12 @@ export function highlightMarker(id) {
   if (id != null && _data.has(id)) {
     const { marker, shop } = _data.get(id);
     marker.setIcon(_icon(shop, true, _routeNums.get(shop.id) ?? null));
-    marker.openPopup();
+    // Zit de marker in een cluster (uitgezoomd)? Eerst uitvouwen/inzoomen, dán popup.
+    if (typeof _group.zoomToShowLayer === 'function' && _group.hasLayer(marker)) {
+      _group.zoomToShowLayer(marker, () => marker.openPopup());
+    } else {
+      marker.openPopup();
+    }
   }
 }
 
