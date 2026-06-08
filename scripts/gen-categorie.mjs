@@ -3,7 +3,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { provByCoords } from './province.mjs';
+import { getProvince, PROV_SLUG } from './place-prov.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root  = join(__dir, '..');
@@ -11,84 +11,6 @@ const root  = join(__dir, '..');
 const shops = JSON.parse(readFileSync(join(root, 'src/data/verifiedShops.json'), 'utf8'));
 
 const SITE = 'https://www.boerenroute.nl';
-
-const PLACE_TO_PROV = {
-  'Aarle-Rixtel':'Noord-Brabant','Asten':'Noord-Brabant','Best':'Noord-Brabant',
-  'Beek en Donk':'Noord-Brabant','Berlicum':'Noord-Brabant','Biezenmortel':'Noord-Brabant',
-  'Bladel':'Noord-Brabant','Boekel':'Noord-Brabant','Boxtel':'Noord-Brabant',
-  'Breda':'Noord-Brabant','Budel':'Noord-Brabant','Casteren':'Noord-Brabant',
-  'De Moer':'Noord-Brabant','Den Dungen':'Noord-Brabant','Deurne':'Noord-Brabant',
-  'Diessen':'Noord-Brabant','Dongen':'Noord-Brabant','Drunen':'Noord-Brabant',
-  'Eerde':'Noord-Brabant','Eindhoven':'Noord-Brabant','Elshout':'Noord-Brabant',
-  'Erp':'Noord-Brabant','Etten-Leur':'Noord-Brabant','Genderen':'Noord-Brabant',
-  'Goirle':'Noord-Brabant','Halsteren':'Noord-Brabant','Haaren':'Noord-Brabant',
-  'Heesch':'Noord-Brabant','Heeswijk-Dinther':'Noord-Brabant','Heeze':'Noord-Brabant',
-  'Helmond':'Noord-Brabant','Helvoirt':'Noord-Brabant','Heerle':'Noord-Brabant',
-  'Heukelom':'Noord-Brabant','Hilvarenbeek':'Noord-Brabant',
-  'Hoogeloon':'Noord-Brabant','Hooge Zwaluwe':'Noord-Brabant',
-  'Liempde':'Noord-Brabant','Lithoijen':'Noord-Brabant','Loon op Zand':'Noord-Brabant',
-  'Maarheeze':'Noord-Brabant','Made':'Noord-Brabant','Mariahout':'Noord-Brabant',
-  'Maren-Kessel':'Noord-Brabant','Moergestel':'Noord-Brabant',
-  'Nistelrode':'Noord-Brabant','Nuenen':'Noord-Brabant','Nuland':'Noord-Brabant',
-  'Oirschot':'Noord-Brabant','Oisterwijk':'Noord-Brabant','Ommel':'Noord-Brabant',
-  'Oosterhout':'Noord-Brabant','Oss':'Noord-Brabant',
-  'Oost West en Middelbeers':'Noord-Brabant',
-  'Reek':'Noord-Brabant','Riel':'Noord-Brabant','Rijkevoort':'Noord-Brabant',
-  'Rosmalen':'Noord-Brabant','Rucphen':'Noord-Brabant',
-  'Schijndel':'Noord-Brabant','Sint-Michielsgestel':'Noord-Brabant',
-  'Sint-Oedenrode':'Noord-Brabant','Soerendonk':'Noord-Brabant','Someren':'Noord-Brabant',
-  'Son en Breugel':'Noord-Brabant','Sprundel':'Noord-Brabant',
-  'Tilburg':'Noord-Brabant','Uden':'Noord-Brabant','Udenhout':'Noord-Brabant',
-  'Ulicoten':'Noord-Brabant','Veghel':'Noord-Brabant','Veldhoven':'Noord-Brabant',
-  'Vinkel':'Noord-Brabant','Vlijmen':'Noord-Brabant','Volkel':'Noord-Brabant',
-  'Vught':'Noord-Brabant','Waspik':'Noord-Brabant','Wintelre':'Noord-Brabant',
-  'Zeeland':'Noord-Brabant',"'s-Hertogenbosch":'Noord-Brabant',
-  'Bergen op Zoom':'Noord-Brabant',
-  'Arnhem':'Gelderland','Barneveld':'Gelderland','Culemborg':'Gelderland',
-  'Diepenveen':'Gelderland','Doorwerth':'Gelderland','Dreumel':'Gelderland',
-  'Haaften':'Gelderland','Harskamp':'Gelderland','Hedel':'Gelderland',
-  'Overasselt':'Gelderland','Rha':'Gelderland','Rossum':'Gelderland',
-  'Spankeren':'Gelderland','Spijk':'Gelderland','Toldijk':'Gelderland',
-  'Velddriel':'Gelderland','Vierakker':'Gelderland','Vorden':'Gelderland',
-  'Vragender':'Gelderland','Wageningen':'Gelderland','Wilp':'Gelderland',
-  'Bunnik':'Utrecht','De Hoef':'Utrecht','Groenekan':'Utrecht',
-  'Leusden':'Utrecht','Woudenberg':'Utrecht',
-  'Utrecht (De Meern)':'Utrecht','Utrecht (Haarzuilens)':'Utrecht',
-  'Waverveen':'Utrecht',
-  'Amsterdam':'Noord-Holland','Avenhorn':'Noord-Holland',
-  'Den Helder':'Noord-Holland','Egmond aan den Hoef':'Noord-Holland',
-  'Grosthuizen':'Noord-Holland','Schagerbrug':'Noord-Holland',
-  'Stompetoren':'Noord-Holland','Warmenhuizen':'Noord-Holland',
-  'Wervershoof':'Noord-Holland','Zuidschermer':'Noord-Holland',
-  'Alphen aan den Rijn':'Zuid-Holland','Benthuizen':'Zuid-Holland',
-  'Bergschenhoek':'Zuid-Holland','Delfgauw':'Zuid-Holland',
-  'Den Bommel':'Zuid-Holland','Rhoon':'Zuid-Holland','Wassenaar':'Zuid-Holland',
-  'Aagtekerke':'Zeeland','Arnemuiden':'Zeeland','Kattendijke':'Zeeland',
-  'Bedum':'Groningen','Bierum':'Groningen','Den Horn':'Groningen',
-  'Marum':'Groningen','Mussel':'Groningen',"'t Zandt":'Groningen',
-  'Trimunt':'Groningen','Winsum':'Groningen',
-  'Burgum':'Friesland','Makkum':'Friesland','Noordwolde':'Friesland',
-  'Oosterwolde':'Friesland','Siegerswoude':'Friesland',
-  'Twijzel':'Friesland','Tzum':'Friesland',
-  'Beilen':'Drenthe','Doldersum':'Drenthe','Geesbrug':'Drenthe',
-  'Grolloo':'Drenthe','Nijeveen':'Drenthe','Peize':'Drenthe',
-  'Ruinerwold':'Drenthe','Zuidveld':'Drenthe',
-};
-
-const PROV_SLUG = {
-  'Noord-Brabant': 'noord-brabant',
-  'Gelderland': 'gelderland',
-  'Utrecht': 'utrecht',
-  'Noord-Holland': 'noord-holland',
-  'Zuid-Holland': 'zuid-holland',
-  'Zeeland': 'zeeland',
-  'Groningen': 'groningen',
-  'Friesland': 'friesland',
-  'Drenthe': 'drenthe',
-  'Overijssel': 'overijssel',
-  'Flevoland': 'flevoland',
-  'Limburg': 'limburg',
-};
 
 const TYPE_LABEL = {
   winkel: 'Boerderijwinkel', automaat: 'Versautomaat',
@@ -103,11 +25,6 @@ function slugify(s) {
   return 'plaats-' + String(s ?? '').toLowerCase()
     .normalize('NFD').replace(/[̀-ͯ]/g, '')
     .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-}
-
-function getProvince(s) {
-  const place = s.address.replace(/^.*,\s*/, '').trim();
-  return PLACE_TO_PROV[place] ?? provByCoords(s.lat, s.lng);
 }
 
 function shopCard(s) {
@@ -135,19 +52,26 @@ function groupByProv(list) {
     .sort((a, b) => b[1].length - a[1].length);
 }
 
-function provSection(prov, list) {
+/* Drempel: minimaal aantal locaties per categorie+provincie voor een eigen pagina.
+   Moet gelijk zijn aan MIN_COMBO in gen-categorie-regio.mjs. */
+const MIN_COMBO = 3;
+
+function provSection(prov, list, catSlug) {
   const slug = PROV_SLUG[prov] ?? prov.toLowerCase().replace(/[^a-z]/g, '-');
   const cards = list.map(shopCard).join('');
+  // Link naar de categorie×provincie-pagina als die bestaat (≥ MIN_COMBO locaties)
+  const subLink = (catSlug && list.length >= MIN_COMBO)
+    ? `<p class="categ-prov-link"><a href="/${catSlug}/${slug}">Bekijk alles in ${esc(prov)} →</a></p>`
+    : '';
   return `
     <section class="categ-prov" id="prov-${slug}">
       <h2 class="regio-place-title">${esc(prov)} <span class="regio-place-count">${list.length}</span></h2>
-      ${list.length > 8 ? `<p class="categ-prov-link"><a href="/regio/${slug}">Alle boerderijwinkels in ${esc(prov)} →</a></p>` : ''}
+      ${subLink}
       <div class="regio-shops">${cards}</div>
     </section>`;
 }
 
-function pageHtml({ slug, title, metaDesc, h1, intro, list }) {
-  const faq = null; // FAQ alleen op homepage, niet per categoriepagina
+function pageHtml({ slug, title, metaDesc, h1, intro, list, faq = null }) {
   const provGroups = groupByProv(list);
   const count = list.length;
 
@@ -160,7 +84,7 @@ function pageHtml({ slug, title, metaDesc, h1, intro, list }) {
           }).join('')}</nav>`
     : '';
 
-  const sections = provGroups.map(([p, l]) => provSection(p, l)).join('');
+  const sections = provGroups.map(([p, l]) => provSection(p, l, slug)).join('');
 
   const faqHtml = faq?.length ? `
     <section class="categ-faq">

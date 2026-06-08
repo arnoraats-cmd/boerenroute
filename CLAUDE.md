@@ -6,11 +6,62 @@ Live op: https://www.boerenroute.nl
 
 ---
 
-## Doel van deze herstart
+## Status (juni 2026)
 
-De eerste versie was één groot HTML-bestand (~3000 regels) dat organisch gegroeid is. Werkte goed, maar werd lastig te onderhouden. Deze herstart heeft als doel: **dezelfde functionaliteit, maar met een schone, modulaire structuur** zodat het project makkelijk uitbreidbaar blijft.
+Het project is volwassen en draait live. De app is een modulaire statische site (`index.html` +
+`src/*` modules) met daarnaast een **volledige programmatische SEO-laag** van statisch gegenereerde
+pagina's. Concrete stand:
 
-Belangrijk: **begin niet helemaal opnieuw met de inhoud.** Alle 94 geverifieerde locaties staan klaar in `verifiedShops.json` — die nemen we over. Het gaat puur om een betere code-organisatie.
+- **~1.638 locaties** in `src/data/verifiedShops.json` (1.414 echte verkooppunten + 224 kids-uitjes
+  `type:onderweg`). Dit is de bron van waarheid voor álle gegenereerde pagina's.
+- **Gegenereerde pagina's** (via `scripts/gen-*.mjs`): per provincie (`/regio/*`), per gemeente
+  (`/gemeente/*`), per winkel (`/winkel/*`), per categorie (`/eierautomaten`, `/melktap`, …), per
+  **categorie × provincie** (`/eierautomaten/gelderland`, …) en de blog (`/blog/*`).
+- **Schone URL's** worden geserveerd via het root-bestand `_redirects` (Cloudflare Pages, status-200
+  rewrites naar de echte bestanden in `/public`). Nieuwe paginatypes hebben dáár een regel nodig.
+- De oude "herstart vanaf 94 locaties" is afgerond — **begin niet opnieuw**; bouw incrementeel verder.
+
+---
+
+## Standaarden (vastgelegd na de audit van juni 2026)
+
+Deze afspraken zijn hard. Wijk er niet van af zonder overleg.
+
+1. **Eén consistent locatie-getal op álle publieke pagina's.** Gebruik **"1.600+ locaties"** (1.638 ≥
+   1.600 = eerlijk). Niet drie verschillende getallen zoals vroeger (hero 1.600+, over 850+, partners
+   1.170+). Bij forse datagroei: het getal bewust op alle plekken tegelijk bijwerken (hero + over-sectie
+   in `index.html`, stats in `public/partners/index.html`).
+2. **Geen verzonnen sociaal bewijs.** Geen nep-testimonials of nep-donateurs. Sociaal bewijs moet
+   **data-gedekt** zijn (bv. "580+ winkels met 4,8★+", "gem. 4,7★" — direct uit `verifiedShops.json`).
+3. **Privacypagina is verplicht** (`/privacy`, AVG). Formulieren benoemen Formspree (verwerker) en
+   GoatCounter (cookieloze statistiek). Footers linken naar `/privacy`.
+4. **FAQ staat AAN** op categorie- én categorie×provincie-pagina's (FAQPage-schema → rich results).
+5. **Beloof geen features die niet bestaan.** Controleer eerst de code (bv. het kinderdiploma in
+   `src/stempelkaart.js` bestáát — dat mag beloofd worden).
+6. **Programmatisch patroon:** categorie × provincie is `scripts/gen-categorie-regio.mjs`; drempel
+   `MIN_COMBO = 3` (gelijkhouden met de down-link-drempel in `gen-categorie.mjs`).
+
+---
+
+## Generatie & routing (workflow)
+
+Na elke wijziging in `verifiedShops.json` (of in een generator) opnieuw bouwen:
+
+```
+node scripts/gen-regio.mjs            # provinciepagina's
+node scripts/gen-gemeente.mjs         # gemeentepagina's
+node scripts/gen-winkel.mjs           # winkel-detailpagina's
+node scripts/gen-categorie.mjs        # 5 categoriepagina's (FAQ aan)
+node scripts/gen-categorie-regio.mjs  # categorie × provincie (~57 pagina's)
+node scripts/gen-blog.mjs             # blog + index
+node scripts/gen-sitemap.mjs          # ALTIJD als laatste (leest de mappen in)
+```
+
+- **Provincie-koppeling** (plaatsnaam → provincie) staat canoniek in `scripts/place-prov.mjs`
+  (`PLACE_TO_PROV`, `PROV_SLUG`, `getProvince`, `provSlug`). Nieuwe generators importeren hieruit.
+  `gen-regio.mjs` en `gen-categorie.mjs` hebben nog een eigen kopie — converge die hier naartoe.
+- **Nieuw paginatype = nieuwe `_redirects`-regel.** Specifieke/exacte regels boven wildcards
+  (eerste match wint), bv. `/eierautomaten` vóór `/eierautomaten/*`.
 
 ---
 
@@ -60,7 +111,7 @@ boerenroute/
 ├─ src/
 │  ├─ main.js             ← init, koppelt alles samen
 │  ├─ data/
-│  │  └─ verifiedShops.json   ← de 94 geverifieerde locaties (meegeleverd)
+│  │  └─ verifiedShops.json   ← ~1.638 geverifieerde locaties (bron van waarheid)
 │  ├─ map.js              ← Leaflet-kaart + markers
 │  ├─ shops.js            ← winkellijst renderen, filteren, sorteren
 │  ├─ osm.js              ← Overpass-query + verwerking live OSM-data

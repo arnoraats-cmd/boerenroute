@@ -18,9 +18,19 @@ add(`${SITE}/blog/`, '0.8', 'weekly');
 add(`${SITE}/aanmelden`, '0.7', 'monthly');
 add(`${SITE}/partners`, '0.6', 'monthly');
 
-// Categoriepagina's
+// Privacybeleid
+add(`${SITE}/privacy`, '0.4', 'yearly');
+
+// Categoriepagina's + categorie × provincie-subpagina's
 for (const slug of ['versautomaten','eierautomaten','zelfpluktuinen','melktap','streekproducten']) {
   add(`${SITE}/${slug}`, '0.8', 'monthly');
+  const catDir = join(root, 'public', slug);
+  if (existsSync(catDir)) {
+    for (const f of readdirSync(catDir)) {
+      if (!f.endsWith('.html')) continue;
+      add(`${SITE}/${slug}/${f.replace(/\.html$/, '')}`, '0.7', 'monthly');
+    }
+  }
 }
 
 // Blogartikelen

@@ -23,6 +23,17 @@
 /melktap            /public/melktap.html            200
 /streekproducten    /public/streekproducten.html    200
 
+# Categorie × provincie (bv. /eierautomaten/gelderland). Exacte regel hierboven wint
+# voor /eierautomaten zelf; de wildcard vangt alleen de provincie-subpagina's.
+/versautomaten/*    /public/versautomaten/:splat.html   200
+/eierautomaten/*    /public/eierautomaten/:splat.html   200
+/zelfpluktuinen/*   /public/zelfpluktuinen/:splat.html  200
+/melktap/*          /public/melktap/:splat.html         200
+/streekproducten/*  /public/streekproducten/:splat.html 200
+
+/privacy            /public/privacy/index.html      200
+/privacy/           /public/privacy/index.html      200
+
 /aanmelden          /public/aanmelden/index.html    200
 /aanmelden/         /public/aanmelden/index.html    200
 
