@@ -1,8 +1,8 @@
 import { initShops, setUserLocation }        from './shops.js';
 import { geocode, getGPS, DEFAULT }          from './location.js';
-import { initMap, flyTo as mapFlyTo, invalidateSize } from './map.js';
+import { initMap, flyTo as mapFlyTo, invalidateSize, setLegendTypes } from './map.js';
 import { initRoute }                         from './route.js';
-import { initModals, openSignupModal, openWerkplaatsModal } from './modals.js';
+import { initModals, openSignupModal, openWerkplaatsModal, openShopModal } from './modals.js';
 import { loadOSMShops }                      from './osm.js';
 import { renderSeasonPage }                  from './season.js';
 import { initBoodschappenlijst }             from './boodschappenlijst.js';
@@ -472,6 +472,8 @@ fetch('src/data/verifiedShops.json')
     initRoute(shops);
     initBoodschappenlijst(shops);
     initStempelkaart(shops);
+    _renderHeroPreview();
+    setLegendTypes(new Set(shops.map(s => s.type)));
 
     /* Render routes op homepage zodra shops bekend zijn (race-safe) */
     if (_routesData) {
@@ -542,6 +544,53 @@ function _renderMaandRoute(route, maand) {
     </div>`;
   document.getElementById('loadMaandRoute')
     ?.addEventListener('click', () => _loadRouteStops(route));
+}
+
+/* Mini-preview in de hero: 3 echte topwinkels (1 per hoofdtype) — toont meteen waarde.
+   Klik opent de winkeldetail. Verdwijnt vanzelf met de hero zodra een locatie gekozen is. */
+function _renderHeroPreview() {
+  const el = document.getElementById('heroPreview');
+  if (!el || !_baseShops?.length) return;
+
+  const score = s => (s.googleRating || 0) + Math.min(s.googleReviews || 0, 300) / 3000;
+  const rated = _baseShops.filter(s => s.googleRating && s.type !== 'onderweg');
+  const pick = [];
+  for (const t of ['winkel', 'zelfpluk', 'automaat']) {
+    const best = rated.filter(s => s.type === t && !pick.includes(s)).sort((a, b) => score(b) - score(a))[0];
+    if (best) pick.push(best);
+  }
+  /* Aanvullen tot 3 met de hoogst gewaardeerde overige winkels */
+  if (pick.length < 3) {
+    for (const s of [...rated].sort((a, b) => score(b) - score(a))) {
+      if (pick.length >= 3) break;
+      if (!pick.includes(s)) pick.push(s);
+    }
+  }
+  if (!pick.length) return;
+
+  const place = s => (s.address || '').split(',').pop().trim();
+  el.innerHTML = `
+    <p class="hero-preview-label">Populair bij fietsers — zo ziet het eruit</p>
+    <div class="hero-preview-cards">
+      ${pick.map(s => `
+        <button class="hero-preview-card" type="button" data-id="${s.id}"
+                aria-label="Bekijk ${_esc(s.name)} in ${_esc(place(s))}">
+          <span class="hero-preview-ic">${shopIcon(s, { size: 22, stroke: '#356611', sw: 1.85 })}</span>
+          <span class="hero-preview-body">
+            <span class="hero-preview-name">${_esc(s.name)}</span>
+            <span class="hero-preview-place">${_esc(place(s))}</span>
+          </span>
+          <span class="hero-preview-rating">★ ${s.googleRating.toFixed(1).replace('.', ',')}</span>
+        </button>`).join('')}
+    </div>`;
+  el.hidden = false;
+
+  el.querySelectorAll('.hero-preview-card').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const s = _baseShops.find(x => x.id === +btn.dataset.id);
+      if (s) openShopModal(s);
+    });
+  });
 }
 
 /* Prominente showcase op de homepage met echte stops */

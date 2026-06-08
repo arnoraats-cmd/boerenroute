@@ -4611,3 +4611,85 @@
   max-width: 680px;
   margin: clamp(20px, 3vw, 28px) auto 0;
 }
+
+/* ── Hero mini-preview (3 echte uitgelichte winkels) ───────────────── */
+.hero-preview {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  animation: fade-up .55s var(--ease, ease) .3s both;
+}
+.hero-preview-label {
+  margin: 0;
+  font-size: var(--t-xs, 12px);
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: rgba(255, 255, 255, .72);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+}
+.hero-preview-cards {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: safe center;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 2px 2px 4px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.hero-preview-cards::-webkit-scrollbar { display: none; }
+.hero-preview-card {
+  flex: 0 0 auto;
+  width: clamp(158px, 44vw, 190px);
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+  font-family: inherit;
+}
+.hero-preview-card:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .24); }
+.hero-preview-card:focus-visible { outline: 2px solid var(--amber-light, #E8981C); outline-offset: 2px; }
+.hero-preview-ic {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-bg, #E7F0D6);
+  border-radius: 50%;
+}
+.hero-preview-body { display: flex; flex-direction: column; flex: 1 1 auto; min-width: 0; line-height: 1.25; }
+.hero-preview-name {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--green-dark, #1C4109);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hero-preview-place {
+  font-size: 11px;
+  color: var(--text-mid, #555550);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hero-preview-rating {
+  flex: 0 0 auto;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--amber, #B8720F);
+  white-space: nowrap;
+}

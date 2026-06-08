@@ -78,18 +78,33 @@ export function initMap({ lat = 51.6606, lng = 5.6188 } = {}) {
 }
 
 /* Kaartlegenda — inklapbaar (standaard ingeklapt op smal scherm) */
+let _legendBody = null;
+
+function _fillLegend(types) {
+  if (!_legendBody) return;
+  // 'route' (in route) toont altijd; overige types alleen als ze in de data zitten
+  const items = LEGEND.filter(([k]) => k === 'route' || !types || types.has(k));
+  _legendBody.innerHTML = items
+    .map(([k, label]) => `<li><span class="map-legend-dot" style="background:${COLOR[k]}"></span>${label}</li>`)
+    .join('');
+}
+
+/* Verfijn de legenda tot de types die echt op de kaart voorkomen (bv. 'markt' weglaten) */
+export function setLegendTypes(types) {
+  _fillLegend(types);
+}
+
 function _addLegend() {
   const ctrl = L.control({ position: 'bottomleft' });
   ctrl.onAdd = () => {
     const div = L.DomUtil.create('div', 'map-legend');
-    const items = LEGEND
-      .map(([k, label]) => `<li><span class="map-legend-dot" style="background:${COLOR[k]}"></span>${label}</li>`)
-      .join('');
     div.innerHTML =
       `<button class="map-legend-toggle" type="button" aria-expanded="true">`
       + `<span class="map-legend-title">Legenda</span>`
       + `<span class="map-legend-chevron" aria-hidden="true">▾</span></button>`
-      + `<ul class="map-legend-body">${items}</ul>`;
+      + `<ul class="map-legend-body"></ul>`;
+    _legendBody = div.querySelector('.map-legend-body');
+    _fillLegend(null); // alle types tot setLegendTypes verfijnt
 
     L.DomEvent.disableClickPropagation(div);
     L.DomEvent.disableScrollPropagation(div);

@@ -40,6 +40,15 @@ Deze afspraken zijn hard. Wijk er niet van af zonder overleg.
    `src/stempelkaart.js` bestáát — dat mag beloofd worden).
 6. **Programmatisch patroon:** categorie × provincie is `scripts/gen-categorie-regio.mjs`; drempel
    `MIN_COMBO = 3` (gelijkhouden met de down-link-drempel in `gen-categorie.mjs`).
+7. **Blijf als expertpanel werken.** Beoordeel elke UI-/UX-wijziging door de bril van de ingehuurde
+   experts (Senior UX, UI, CRO, SEO, IA, Accessibility/WCAG, Product, Frontend). Wees kritisch op
+   eigen werk en benoem trade-offs.
+8. **Pixel-nette afwerking is niet-onderhandelbaar.** De eindklant accepteert geen slordige uitlijning.
+   Nieuwe blokken uitlijnen met het bestaande grid/de container (centreren, `max-width`, `margin auto`),
+   consistente spacing/typografie, en visueel controleren vóór je het oplevert. Geen losse elementen
+   die tegen een schermrand plakken.
+9. **Geen lege/dode UI.** Toon filters, chips, legenda-items of secties alleen als er data voor is —
+   data-gedreven (bv. een type-chip verschijnt alleen als er locaties van dat type zijn).
 
 ---
 

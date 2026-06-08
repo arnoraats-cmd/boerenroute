@@ -35,6 +35,7 @@ let _bound = false;
 
 export function initShops(shops) {
   allShops = shops;
+  _syncFilterChips();
 
   /* Controls + globale listeners maar één keer binden.
      initShops wordt opnieuw aangeroepen bij het toevoegen van OSM-winkels;
@@ -84,6 +85,26 @@ export function setUserLocation(lat, lng) {
     activateMobileLayout();
   });
   _render();
+}
+
+/* Verberg type-filterchips waarvoor geen enkele locatie bestaat (bv. 'markt').
+   Data-gedreven: voeg je later zo'n type toe, dan verschijnt de chip vanzelf. */
+function _syncFilterChips() {
+  document.querySelectorAll('#filterChips .chip[data-filter]').forEach(chip => {
+    const t = chip.dataset.filter;
+    if (t === 'all' || t === 'onderweg') return; // 'alles' altijd; 'onderweg' is de kids-toggle
+    const has = allShops.some(s => s.type === t);
+    chip.style.display = has ? '' : 'none';
+    // Stond het filter op een nu-verborgen type? Val terug op 'Alles'.
+    if (!has && activeFilter === t) {
+      activeFilter = 'all';
+      document.querySelectorAll('#filterChips .chip').forEach(c => {
+        const on = c.dataset.filter === 'all';
+        c.classList.toggle('chip-active', on);
+        if (on) c.setAttribute('aria-pressed', 'true'); else c.removeAttribute('aria-pressed');
+      });
+    }
+  });
 }
 
 /* ══ Controls ════════════════════════════════════════════════════ */
