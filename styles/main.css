@@ -1696,6 +1696,26 @@
     gap: 8px;
   }
 
+  /* Kids-hint: verschijnt alleen bij 'Alles'-filter */
+  .kids-hint {
+    font-size: var(--t-sm);
+    color: var(--amber);
+    padding: 6px 16px 4px;
+    margin: 0;
+  }
+  .kids-hint[hidden] { display: none; }
+  .kids-hint-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .kids-hint-btn:hover, .kids-hint-btn:focus-visible { color: var(--amber-ink, #7a4b00); }
+
   .list-empty {
     padding: 48px 24px;
     text-align: center;

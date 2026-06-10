@@ -142,6 +142,11 @@ function _bindControls() {
     showFavOnly = e.target.checked;
     _render();
   });
+
+  /* Kids-hint knop → activeert de 'Onderweg'-chip direct */
+  document.getElementById('kidsHintBtn')?.addEventListener('click', () => {
+    document.querySelector('#filterChips .chip[data-filter="onderweg"]')?.click();
+  });
 }
 
 /* ══ Filter + sort ═══════════════════════════════════════════════ */
@@ -204,6 +209,10 @@ function _render(reset = true) {
 
   const el = countEl();
   if (el) el.textContent = `${shops.length} van ${total} locaties`;
+
+  /* Kids-hint: toon alleen bij 'Alles', verberg bij 'Onderweg' en andere filters */
+  const hint = document.getElementById('kidsHint');
+  if (hint) hint.hidden = activeFilter !== 'all';
 
   if (shops.length === 0) {
     list.innerHTML = '';
