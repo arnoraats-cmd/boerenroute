@@ -515,8 +515,8 @@ fetch('src/data/verifiedShops.json')
 
     /* Render routes op homepage zodra shops bekend zijn (race-safe) */
     if (_routesData) {
-      const featured = _routesData.routes.find(r => r.featured) || _routesData.routes[0];
-      _renderMaandHome(featured, _routesData.maand);
+      const picked = _pickMaandRoute(_routesData);
+      if (picked) _renderMaandHome(picked.route, picked.maand);
       _renderPopularRoutes(_routesData);
     }
 
@@ -544,14 +544,41 @@ fetch('src/data/verifiedShops.json')
   });
 
 /* ── Populaire routes laden ──────────────────────────────── */
+
+/* Kiest de juiste maand-route op basis van de huidige datum.
+   Voeg nieuwe maanden toe aan data.maandRoutes zonder code te wijzigen. */
+function _pickMaandRoute(data) {
+  const now = new Date();
+  const cy = now.getFullYear(), cm = now.getMonth() + 1;
+
+  if (Array.isArray(data.maandRoutes) && data.maandRoutes.length) {
+    const score = e => e.year * 12 + e.month;
+    const cur   = cy * 12 + cm;
+    // Exacte match voor huidige maand
+    const exact = data.maandRoutes.find(e => e.year === cy && e.month === cm);
+    if (exact) return { route: exact.route, maand: exact.maand };
+    // Meest recente verleden entry als fallback
+    const past = data.maandRoutes.filter(e => score(e) < cur).sort((a,b) => score(b) - score(a));
+    if (past.length) return { route: past[0].route, maand: past[0].maand };
+    // Anders de eerstvolgende toekomstige entry
+    const future = [...data.maandRoutes].sort((a,b) => score(a) - score(b));
+    if (future.length) return { route: future[0].route, maand: future[0].maand };
+  }
+  // Oud formaat (backwards compat)
+  const route = (data.routes || []).find(r => r.featured) || data.routes?.[0];
+  return route ? { route, maand: data.maand || '' } : null;
+}
+
 let _routesData = null;
 fetch('src/data/routes.json')
   .then(r => r.json())
   .then(data => {
     _routesData = data;
-    const featured = data.routes.find(r => r.featured) || data.routes[0];
-    _renderMaandRoute(featured, data.maand);
-    _renderMaandHome(featured, data.maand);
+    const picked = _pickMaandRoute(data);
+    if (picked) {
+      _renderMaandRoute(picked.route, picked.maand);
+      _renderMaandHome(picked.route, picked.maand);
+    }
     _renderPopularRoutes(data);
   })
   .catch(() => {});

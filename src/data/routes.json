@@ -1,4 +1,36 @@
 {
+  "maandRoutes": [
+    {
+      "year": 2026,
+      "month": 6,
+      "maand": "Juni 2026",
+      "route": {
+        "id": "maashorstlus",
+        "titel": "Maashorstlus",
+        "subtitel": "Langs het beste van het Brabantse platteland",
+        "provincie": "Noord-Brabant",
+        "emoji": "🌾",
+        "afstand": "28 km",
+        "intro": "Een rustige tocht door het glooiende Maashorstgebied langs een zelfkazerij, een fruitautomaat en een vrijloopboerderij met eigen vleesverkoop. Perfect voor een zaterdagochtend.",
+        "stopIds": [1, 5, 6, 7, 8]
+      }
+    },
+    {
+      "year": 2026,
+      "month": 7,
+      "maand": "Juli 2026",
+      "route": {
+        "id": "heuvelrug-zomertocht",
+        "titel": "Heuvelrug Zomertocht",
+        "subtitel": "Kaas, eieren en streekwaar in de schaduw van de bossen",
+        "provincie": "Utrecht",
+        "emoji": "🌲",
+        "afstand": "21 km",
+        "intro": "Een zomerse tocht door het glooiende landschap van de Utrechtse Heuvelrug. Beginnen bij de Langbroekerwetering in Doorn, dan via bosrijke lanen omhoog naar het Gelderse Valleigebied. Ideaal voor een rustige zomerdag op de fiets.",
+        "stopIds": [728, 49, 818, 297, 300]
+      }
+    }
+  ],
   "maand": "Juni 2026",
   "routes": [
     {
