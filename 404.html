@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Pagina niet gevonden · Boerenroute.nl</title>
+  <meta name="description" content="Oeps, deze pagina bestaat niet. Schud je telefoon of tik 3× op het ei!">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
+  <style>
+    /* ── TOKENS (boerenroute.nl huisstijl) ─────────────────────── */
+    :root {
+      --green-dark:  #1C4109;
+      --green-mid:   #356611;
+      --green-light: #5E9420;
+      --green-bg:    #E7F0D6;
+      --amber:       #B8720F;
+      --amber-light: #E8981C;
+      --amber-bg:    #FBEFD6;
+      --white:       #FFFFFF;
+      --text:        #1A1A18;
+      --text-mid:    #555550;
+      --text-light:  #888780;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.5) 0%, transparent 65%),
+        var(--green-bg);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      color: var(--text);
+      padding: 5rem 1.5rem 6rem;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* ── LOGO ────────────────────────────────────────────────────── */
+    .site-logo {
+      position: fixed;
+      top: 1rem; left: 50%;
+      transform: translateX(-50%);
+      display: flex; align-items: center; gap: .45rem;
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--green-dark);
+      text-decoration: none;
+      white-space: nowrap;
+      z-index: 10;
+    }
+    .logo-accent { color: var(--green-light); }
+
+    /* ── 404 HEADER ──────────────────────────────────────────────── */
+    .err-number {
+      font-family: 'Lora', Georgia, serif;
+      font-size: clamp(4.5rem, 22vw, 7rem);
+      font-weight: 700;
+      color: var(--green-dark);
+      line-height: 1;
+      letter-spacing: -3px;
+    }
+    .err-sub {
+      font-size: clamp(.9rem, 3.5vw, 1.1rem);
+      color: var(--text-mid);
+      margin-top: .5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ── EGG ─────────────────────────────────────────────────────── */
+    /* Invisible SVG holds the jagged clip-path definitions */
+    .svg-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+    .egg-scene {
+      position: relative;
+      width: 140px;
+      margin: 0 auto 1.8rem;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    .egg-wrap {
+      position: relative;
+      width: 140px;
+      height: 185px;
+      filter: drop-shadow(0 10px 28px rgba(0,0,0,.18));
+      animation: breathe 3.2s ease-in-out infinite;
+    }
+
+    /* Both halves share this shape; clip-path reveals only their region */
+    .egg-half {
+      position: absolute;
+      inset: 0;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      background:
+        radial-gradient(ellipse at 36% 28%, rgba(255,255,255,.62) 0%, transparent 52%),
+        radial-gradient(ellipse at 65% 72%, rgba(0,0,0,.04) 0%, transparent 40%),
+        linear-gradient(158deg, #fef9ee 0%, #f2e3b0 42%, #e6cd80 100%);
+    }
+
+    .egg-top    { clip-path: url(#clip-top); }
+    .egg-bottom { clip-path: url(#clip-bottom); }
+
+    /* ── YOLK ────────────────────────────────────────────────────── */
+    .egg-yolk {
+      position: absolute;
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 38% 34%, #FFE454 0%, #F8A810 65%, #E08A00 100%);
+      box-shadow: 0 3px 12px rgba(0,0,0,.22), inset 0 -2px 5px rgba(0,0,0,.1);
+      bottom: 22px; left: 50%;
+      transform: translateX(-50%) scale(0);
+      transition: transform .55s .42s cubic-bezier(.34,1.56,.64,1);
+      z-index: 2;
+    }
+
+    /* ── KEYFRAMES ───────────────────────────────────────────────── */
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
+      50%       { transform: scale(1.04); }
+    }
+
+    @keyframes wobble {
+      0%   { transform: rotate(0)     scale(1); }
+      16%  { transform: rotate(-7deg) scale(1.04); }
+      33%  { transform: rotate(7deg)  scale(1.04); }
+      50%  { transform: rotate(-4.5deg) scale(1.02); }
+      67%  { transform: rotate(4.5deg)  scale(1.02); }
+      83%  { transform: rotate(-1.5deg); }
+      100% { transform: rotate(0)     scale(1); }
+    }
+
+    @keyframes crack-top {
+      0%   { transform: translateY(0)    rotate(0); }
+      25%  { transform: translateY(-12px) rotate(-6deg); }
+      100% { transform: translateY(-92px) rotate(-26deg); }
+    }
+
+    @keyframes crack-bottom {
+      0%   { transform: rotate(0); }
+      22%  { transform: rotate(4deg); }
+      52%  { transform: rotate(-2.5deg); }
+      78%  { transform: rotate(1.5deg); }
+      100% { transform: rotate(0); }
+    }
+
+    /* ── ANIMATION STATES ────────────────────────────────────────── */
+    .egg-wrap.wobbling {
+      animation: wobble .48s ease-in-out;
+    }
+
+    .egg-wrap.cracking {
+      animation: none; /* stop breathe */
+    }
+    .egg-wrap.cracking .egg-top {
+      animation: crack-top .65s cubic-bezier(.25,.46,.45,.94) forwards;
+      transform-origin: 50% 46%; /* rotate from the crack line */
+    }
+    .egg-wrap.cracking .egg-bottom {
+      animation: crack-bottom .65s ease-in-out forwards;
+      transform-origin: 50% 46%;
+    }
+    .egg-wrap.cracking .egg-yolk {
+      transform: translateX(-50%) scale(1);
+    }
+
+    /* ── PROGRESS DOTS ───────────────────────────────────────────── */
+    .tap-dots {
+      display: flex; gap: 10px;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .tap-dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+      border: 2px solid var(--green-mid);
+      background: transparent;
+      transition: background .25s, transform .25s, border-color .25s;
+    }
+    .tap-dot.lit {
+      background: var(--amber-light);
+      border-color: var(--amber);
+      transform: scale(1.3);
+    }
+
+    /* ── INSTRUCTION TEXT ────────────────────────────────────────── */
+    .instruction {
+      font-size: .9rem;
+      color: var(--text-light);
+      line-height: 1.6;
+      min-height: 2.8em; /* prevents layout shift on text change */
+    }
+    .instruction strong { color: var(--text-mid); }
+
+    /* ── JOKE CARD ───────────────────────────────────────────────── */
+    .joke-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 1.4rem 1.6rem 1.6rem;
+      max-width: 300px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.12), 0 2px 6px rgba(0,0,0,.06);
+      border: 1.5px solid var(--amber-bg);
+      margin: 1.8rem auto 0;
+      opacity: 0;
+      transform: translateY(14px) scale(.97);
+      transition: opacity .5s .3s ease, transform .5s .3s ease;
+    }
+    .joke-card.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    .joke-emoji {
+      display: block;
+      font-size: 2.4rem;
+      margin-bottom: .6rem;
+      line-height: 1;
+    }
+    .joke-text {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── BACK HOME ───────────────────────────────────────────────── */
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      margin-top: 2.2rem;
+      padding: .85rem 1.9rem;
+      background: var(--green-mid);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: .95rem;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(53,102,17,.28);
+      transition: background .2s, transform .15s, box-shadow .2s;
+    }
+    .back-home:hover, .back-home:focus-visible {
+      background: var(--green-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(28,65,9,.3);
+    }
+
+    /* ── GRASS DECORATION ────────────────────────────────────────── */
+    .grass-strip {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      height: 52px;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .blade {
+      position: absolute;
+      bottom: 0;
+      width: 11px;
+      border-radius: 50% 50% 0 0 / 80% 80% 0 0;
+      background: var(--green-mid);
+      transform-origin: bottom center;
+    }
+    .blade:nth-child(1)  { left:1%;   height:34px; background:var(--green-dark);  transform:rotate(-7deg); }
+    .blade:nth-child(2)  { left:5%;   height:44px; width:9px; }
+    .blade:nth-child(3)  { left:9%;   height:28px; background:var(--green-light); transform:rotate(6deg); }
+    .blade:nth-child(4)  { left:14%;  height:40px; background:var(--green-dark);  transform:rotate(-3deg); }
+    .blade:nth-child(5)  { left:19%;  height:46px; width:10px; transform:rotate(8deg); }
+    .blade:nth-child(6)  { left:25%;  height:30px; background:var(--green-light); }
+    .blade:nth-child(7)  { left:31%;  height:42px; background:var(--green-dark);  transform:rotate(-5deg); }
+    .blade:nth-child(8)  { left:37%;  height:34px; transform:rotate(4deg); }
+    .blade:nth-child(9)  { left:43%;  height:48px; background:var(--green-dark);  transform:rotate(-2deg); }
+    .blade:nth-child(10) { left:49%;  height:30px; background:var(--green-light); transform:rotate(7deg); }
+    .blade:nth-child(11) { left:55%;  height:40px; transform:rotate(-5deg); }
+    .blade:nth-child(12) { left:61%;  height:36px; background:var(--green-dark);  transform:rotate(3deg); }
+    .blade:nth-child(13) { left:67%;  height:44px; background:var(--green-light); transform:rotate(-4deg); }
+    .blade:nth-child(14) { left:73%;  height:32px; transform:rotate(8deg); }
+    .blade:nth-child(15) { left:79%;  height:46px; background:var(--green-dark);  transform:rotate(-6deg); }
+    .blade:nth-child(16) { left:85%;  height:36px; background:var(--green-light); transform:rotate(2deg); }
+    .blade:nth-child(17) { left:91%;  height:42px; background:var(--green-dark);  transform:rotate(-3deg); }
+    .blade:nth-child(18) { right:1%;  height:30px; background:var(--green-light); transform:rotate(5deg); }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <a href="/" class="site-logo" aria-label="Naar Boerenroute.nl home">
+    🌾 Boeren<span class="logo-accent">route.nl</span>
+  </a>
+
+  <!--
+    SVG clip-path definitions for the jagged egg crack.
+    The egg is split at ~46% height. Both polygons share the same
+    zigzag edge so the two halves align perfectly as one solid egg.
+    Uses objectBoundingBox (0–1) so it scales with any element size.
+  -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <clipPath id="clip-top" clipPathUnits="objectBoundingBox">
+        <polygon points="0,0 1,0 1,0.44 0.86,0.47 0.72,0.43 0.58,0.47 0.44,0.43 0.30,0.47 0.15,0.43 0,0.46"/>
+      </clipPath>
+      <clipPath id="clip-bottom" clipPathUnits="objectBoundingBox">
+        <polygon points="0,0.46 0.15,0.43 0.30,0.47 0.44,0.43 0.58,0.47 0.72,0.43 0.86,0.47 1,0.44 1,1 0,1"/>
+      </clipPath>
+    </defs>
+  </svg>
+
+  <!-- 404 header -->
+  <p class="err-number">404</p>
+  <p class="err-sub">Deze pagina is er vandoor&nbsp;— net als een kip voor de heg.</p>
+
+  <!-- Interactive egg -->
+  <div class="egg-scene" id="eggScene"
+       role="button" tabindex="0"
+       aria-label="Tik 3 keer op het ei of schud je telefoon voor een verrassing">
+    <div class="egg-wrap" id="eggWrap">
+      <div class="egg-half egg-top"></div>
+      <div class="egg-half egg-bottom">
+        <div class="egg-yolk"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 progress dots -->
+  <div class="tap-dots" aria-hidden="true">
+    <div class="tap-dot" id="dot0"></div>
+    <div class="tap-dot" id="dot1"></div>
+    <div class="tap-dot" id="dot2"></div>
+  </div>
+
+  <!-- Instruction (updated on each interaction) -->
+  <p class="instruction" id="instruction" aria-live="polite">
+    <strong>Schud je telefoon</strong> of tik <strong>3×</strong> op het ei
+  </p>
+
+  <!-- Joke card — fades in after crack -->
+  <div class="joke-card" id="jokeCard" role="status" aria-live="polite">
+    <span class="joke-emoji" id="jokeEmoji"></span>
+    <p class="joke-text" id="jokeText"></p>
+  </div>
+
+  <!-- Back to site -->
+  <a href="/" class="back-home">🌾 Terug naar Boerenroute</a>
+
+  <!-- Decorative grass blades at the bottom -->
+  <div class="grass-strip" aria-hidden="true">
+    <div class="blade"></div><div class="blade"></div><div class="blade"></div>
+    <div class="blade"></div><div class="blade"></div><div class="blade"></div>
+    <div class="blade"></div><div class="blade"></div><div class="blade"></div>
+    <div class="blade"></div><div class="blade"></div><div class="blade"></div>
+    <div class="blade"></div><div class="blade"></div><div class="blade"></div>
+    <div class="blade"></div><div class="blade"></div><div class="blade"></div>
+  </div>
+
+  <script>
+    /* ═══════════════════════════════════════════════════════════════════
+       BOERENGRAPJES
+       Voeg hier grappjes toe of pas ze aan. Formaat: { emoji, text }
+    ═══════════════════════════════════════════════════════════════════ */
+    const JOKES = [
+      { emoji: '🐣', text: 'Ei love boerderijen!' },
+      { emoji: '🐓', text: 'Wat zegt een kip die tegen de muur vliegt? Tok!' },
+      { emoji: '🥚', text: 'Ei-ndelijk een 404-pagina die er écht uitspringt!' },
+      { emoji: '🚜', text: 'Boer zoekt ei… en vond een 404. Dan maar terug naar de boerderij!' },
+      { emoji: '🐥', text: 'Waarom leggen kippen eieren? Omdat ze anders zouden vallen!' },
+    ];
+    /* ═══════════════════════════════════════════════════════════════════ */
+
+    /* DOM refs */
+    const wrap      = document.getElementById('eggWrap');
+    const scene     = document.getElementById('eggScene');
+    const instrEl   = document.getElementById('instruction');
+    const jokeCard  = document.getElementById('jokeCard');
+    const jokeEmoji = document.getElementById('jokeEmoji');
+    const jokeText  = document.getElementById('jokeText');
+    const dots      = [0, 1, 2].map(i => document.getElementById('dot' + i));
+
+    /* Config — adjust if needed */
+    const MAX             = 3;    // taps/shakes required to crack
+    const SHAKE_THRESHOLD = 20;   // m/s²  — raise if triggers too easily
+    const SHAKE_COOLDOWN  = 450;  // ms minimum between shake events
+
+    /* State */
+    let count     = 0;
+    let cracked   = false;
+    let animating = false;
+    let lastShake = 0;
+
+    /* Wobble animation (taps 1 & 2) */
+    function doWobble() {
+      if (animating) return;
+      animating = true;
+      wrap.classList.remove('wobbling');
+      void wrap.offsetWidth; /* force reflow so animation restarts cleanly */
+      wrap.classList.add('wobbling');
+      wrap.addEventListener('animationend', () => {
+        wrap.classList.remove('wobbling');
+        animating = false;
+      }, { once: true });
+    }
+
+    /* Crack animation (3rd tap/shake) */
+    function doCrack() {
+      cracked = true;
+      const joke = JOKES[Math.floor(Math.random() * JOKES.length)];
+      jokeEmoji.textContent = joke.emoji;
+      jokeText.textContent  = joke.text;
+
+      wrap.classList.remove('wobbling');
+      wrap.classList.add('cracking');
+
+      setTimeout(() => jokeCard.classList.add('visible'), 200);
+
+      instrEl.innerHTML = '🐣 <strong>Geknakt!</strong> Jij wint de boerengrap!';
+      scene.setAttribute('aria-label', joke.text);
+    }
+
+    /* Shared trigger — called by both tap and shake */
+    function trigger() {
+      /* Block rapid taps mid-wobble (not on the final crack tap) */
+      if (cracked || (animating && count < MAX - 1)) return;
+      count = Math.min(count + 1, MAX);
+
+      dots[count - 1]?.classList.add('lit');
+
+      if (count >= MAX) {
+        doCrack();
+      } else {
+        doWobble();
+        instrEl.innerHTML = `Nog <strong>${MAX - count}×</strong> tikken (of schudden)…`;
+      }
+    }
+
+    /* Tap / click */
+    scene.addEventListener('click', trigger);
+    scene.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); trigger(); }
+    });
+
+    /* DeviceMotion shake detection */
+    function onMotion(e) {
+      if (cracked) return;
+      const a = e.accelerationIncludingGravity;
+      if (!a) return;
+      const mag = Math.sqrt((a.x || 0) ** 2 + (a.y || 0) ** 2 + (a.z || 0) ** 2);
+      const now = Date.now();
+      if (mag > SHAKE_THRESHOLD && now - lastShake > SHAKE_COOLDOWN) {
+        lastShake = now;
+        trigger();
+      }
+    }
+
+    function initMotion() {
+      if (typeof DeviceMotionEvent === 'undefined') return;
+
+      if (typeof DeviceMotionEvent.requestPermission === 'function') {
+        /*
+          iOS 13+ requires an explicit user gesture before requesting
+          motion permission. We piggyback on the first tap so the
+          permission dialog and the first wobble fire together.
+        */
+        scene.addEventListener('click', function askOnce() {
+          DeviceMotionEvent.requestPermission()
+            .then(s => {
+              if (s === 'granted') {
+                window.addEventListener('devicemotion', onMotion, { passive: true });
+              }
+            })
+            .catch(() => { /* silently fall back to tap-only */ });
+          scene.removeEventListener('click', askOnce);
+        }, { once: true });
+      } else {
+        /* Android / Firefox — no permission gate needed */
+        window.addEventListener('devicemotion', onMotion, { passive: true });
+      }
+    }
+
+    initMotion();
+  </script>
+</body>
+</html>
