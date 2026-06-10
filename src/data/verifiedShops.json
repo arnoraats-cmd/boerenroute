@@ -39482,5 +39482,25 @@
     "osm": false,
     "phone": "0167 528 112",
     "website": "https://zuylenhoeve.nl/"
+  },
+  {
+    "id": 1642,
+    "emoji": "🍦",
+    "name": "Boerderij Softijs",
+    "type": "winkel",
+    "premium": false,
+    "seasonal": true,
+    "lat": 51.5740688,
+    "lng": 5.3381704,
+    "address": "Oirschotseweg 7, Boxtel",
+    "hours": null,
+    "products": [
+      "softijs",
+      "kaas"
+    ],
+    "tags": [
+      "zuivel"
+    ],
+    "desc": "Tap zelf een softijsje van de machine, terwijl de koeien buiten grazen. Populair fietsersstopje met bankjes en verse kaas van de buurboer."
   }
 ]
