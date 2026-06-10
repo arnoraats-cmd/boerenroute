@@ -1502,11 +1502,11 @@
 
   .more-filters-panel[hidden] { display: none; }
 
-  /* Overlay achter het "Meer filters"-paneel: dimt de kaart en vangt klik-buiten op */
+  /* Overlay achter het "Meer filters"-paneel: body-level, z-15 = boven kaart (z-10), onder toolbar (z-20/90) */
   .more-filters-overlay {
     position: fixed;
     inset: 0;
-    z-index: 19;
+    z-index: 15;
     background: rgba(0,0,0,.28);
   }
   .more-filters-overlay[hidden] { display: none; }
@@ -4142,6 +4142,9 @@
       background-position: right 8px center;
     }
     .btn { max-width: 100%; box-sizing: border-box; }
+    /* Route-CTA ("Maak een fietsroute") verbergen op mobiel: staat in verkeerde flow-positie,
+       route aanmaken loopt via het Route-tabblad */
+    .route-cta { display: none; }
     .footer-inner { grid-template-columns: 1fr; gap: 28px; }
     .footer-cols  { gap: 24px; }
     .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }

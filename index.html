@@ -367,9 +367,6 @@
         </div>
       </div>
     </div>
-    <!-- Overlay achter "Meer filters"-paneel: dimt kaart, vangt klik-buiten op -->
-    <div class="more-filters-overlay" id="moreFiltersOverlay" hidden aria-hidden="true"></div>
-
     <!-- OSM-indicator (verschijnt na locatie-keuze) -->
     <div class="osm-indicator" id="osmIndicator" hidden aria-live="polite"></div>
 
@@ -813,6 +810,9 @@
     </p>
     <button class="ios-hint-close" id="iosHintClose" aria-label="Sluit hint">&times;</button>
   </div>
+
+  <!-- Overlay achter "Meer filters"-paneel: body-niveau zodat z-index definitief boven kaart (z-10) valt -->
+  <div class="more-filters-overlay" id="moreFiltersOverlay" hidden aria-hidden="true"></div>
 
   <!-- ══ MODAL ════════════════════════════════════════════════════ -->
   <div id="modalOverlay" class="modal-overlay" hidden role="dialog" aria-modal="true"></div>
