@@ -107,6 +107,7 @@ export function initBottomSheet() {
   /* Stel list-section positie in via inline style — alleen als map actief is */
   function positionSheet() {
     if (!document.body.classList.contains('map-active')) return;
+    document.body.classList.toggle('sheet-is-open', state === 'open');
     const h = window.innerHeight;
     if (state === 'half') {
       sheet.style.cssText = `

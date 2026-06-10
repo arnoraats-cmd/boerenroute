@@ -4203,7 +4203,12 @@
       overflow: hidden;
       transition: transform .36s cubic-bezier(.32,.72,0,1);
       will-change: transform;
-      touch-action: none;
+      /* touch-action alleen op de handle, niet op de hele sheet — anders scrollt sheet-scroll niet */
+    }
+
+    /* Sheet volledig open: kaart staat achter de sheet, blokkeer map-interactie */
+    body.sheet-is-open .map-section {
+      pointer-events: none;
     }
 
     body.map-active .list-section.sheet-half { transform: translateY(48%); }
@@ -4268,6 +4273,7 @@
       -webkit-overflow-scrolling: touch;
       height: calc(92dvh - 64px);
       overscroll-behavior: contain;
+      touch-action: pan-y; /* native scroll toestaan; handle heeft z'n eigen touch-action: none */
     }
 
     .list-header { border-radius: 0; border-top: 1px solid var(--border); }
