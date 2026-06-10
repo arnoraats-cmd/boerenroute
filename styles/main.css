@@ -1502,6 +1502,15 @@
 
   .more-filters-panel[hidden] { display: none; }
 
+  /* Overlay achter het "Meer filters"-paneel: dimt de kaart en vangt klik-buiten op */
+  .more-filters-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 19;
+    background: rgba(0,0,0,.28);
+  }
+  .more-filters-overlay[hidden] { display: none; }
+
   .more-filter-field {
     display: grid;
     gap: 6px;
@@ -4117,10 +4126,13 @@
     .toolbar-locate { padding: 7px 12px; }
     .toolbar-right .toggle-pill { padding: 7px 11px; font-size: var(--t-xs); flex-shrink: 0; }
     .more-filters-btn { margin-left: auto; padding: 7px 11px; font-size: var(--t-xs); }
+    /* Positioneringscontext verplaatst naar toolbar-inner zodat paneel ONDER beide rijen valt */
+    .toolbar-right { position: static; }
+    .toolbar-inner { position: relative; }
     .more-filters-panel {
       left: auto;
       right: 0;
-      top: calc(100% + 8px);
+      top: calc(100% + 4px);
     }
     .sort-select {
       max-width: none;

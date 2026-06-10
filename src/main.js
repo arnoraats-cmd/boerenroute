@@ -225,21 +225,28 @@ document.getElementById('routeGoToKaart')?.addEventListener('click', () => {
 
 /* ── Automatische routegeneratie ("Maak een route voor mij") ── */
 /* Meer filters: houdt de mobiele toolbar rustig zonder filters te verstoppen. */
-const moreFiltersBtn = document.getElementById('moreFiltersBtn');
-const moreFiltersPanel = document.getElementById('moreFiltersPanel');
+const moreFiltersBtn     = document.getElementById('moreFiltersBtn');
+const moreFiltersPanel   = document.getElementById('moreFiltersPanel');
+const moreFiltersOverlay = document.getElementById('moreFiltersOverlay');
+
+function _closeMoreFilters() {
+  if (!moreFiltersPanel) return;
+  moreFiltersPanel.hidden = true;
+  moreFiltersBtn?.setAttribute('aria-expanded', 'false');
+  if (moreFiltersOverlay) moreFiltersOverlay.hidden = true;
+}
+
 moreFiltersBtn?.addEventListener('click', e => {
   e.stopPropagation();
   if (!moreFiltersPanel) return;
   const opening = moreFiltersPanel.hidden;
   moreFiltersPanel.hidden = !opening;
   moreFiltersBtn.setAttribute('aria-expanded', String(opening));
+  if (moreFiltersOverlay) moreFiltersOverlay.hidden = !opening;
 });
 moreFiltersPanel?.addEventListener('click', e => e.stopPropagation());
-document.addEventListener('click', () => {
-  if (!moreFiltersPanel || moreFiltersPanel.hidden) return;
-  moreFiltersPanel.hidden = true;
-  moreFiltersBtn?.setAttribute('aria-expanded', 'false');
-});
+moreFiltersOverlay?.addEventListener('click', _closeMoreFilters);
+document.addEventListener('click', _closeMoreFilters);
 
 /* Toon hoeveel "verstopte" filters actief zijn, ook als het paneel dicht is.
    Telt: 'Nu open' aan + OSM-straal afwijkend van de standaard (15 km). */
