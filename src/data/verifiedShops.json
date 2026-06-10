@@ -39502,5 +39502,27 @@
       "zuivel"
     ],
     "desc": "Tap zelf een softijsje van de machine, terwijl de koeien buiten grazen. Populair fietsersstopje met bankjes en verse kaas van de buurboer."
+  },
+  {
+    "id": 1643,
+    "emoji": "🍎",
+    "name": "Landwinkel Philips Fruittuin",
+    "type": "zelfpluk",
+    "premium": false,
+    "seasonal": true,
+    "lat": 51.4637272,
+    "lng": 5.4271228,
+    "address": "Oirschotsedijk 14A, Eindhoven",
+    "hours": "di–za 10–20u · zo 11–20u · ma gesloten",
+    "products": [
+      "appels",
+      "peren",
+      "pruimen",
+      "streekproducten"
+    ],
+    "tags": [
+      "fruit"
+    ],
+    "desc": "Historische biologische boomgaard van 12 ha, aangelegd door Anton Philips. Pluk zelf appels, peren en pruimen (sep–okt). Landwinkel met streekproducten en pannenkoekenhuis op het terrein."
   }
 ]
