@@ -339,23 +339,31 @@
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
             <span class="toolbar-locate-txt">Mijn locatie</span>
           </button>
-          <label class="toggle-pill" title="Toon alleen nu open">
-            <input type="checkbox" id="openNowToggle">
-            <span>Nu open</span>
-          </label>
-          <div class="toolbar-divider" aria-hidden="true"></div>
           <select class="sort-select" id="sortSelect" aria-label="Sorteren op">
             <option value="afstand">Afstand</option>
             <option value="rating">Beoordeling</option>
             <option value="naam">Naam A–Z</option>
           </select>
-          <select class="sort-select" id="osmRadius" aria-label="Extra winkels via OpenStreetMap">
-            <option value="0">Alleen geverifieerd</option>
-            <option value="15" selected>Straal 15 km</option>
-            <option value="25">Straal 25 km</option>
-            <option value="50">Straal 50 km</option>
-            <option value="100">Straal 100 km</option>
-          </select>
+          <button class="more-filters-btn" id="moreFiltersBtn" type="button" aria-expanded="false" aria-controls="moreFiltersPanel">
+            Meer filters
+            <span class="more-filters-count" id="moreFiltersCount" hidden aria-hidden="true"></span>
+          </button>
+          <div class="more-filters-panel" id="moreFiltersPanel" hidden>
+            <label class="toggle-pill" title="Toon alleen nu open">
+              <input type="checkbox" id="openNowToggle">
+              <span>Nu open</span>
+            </label>
+            <label class="more-filter-field">
+              <span>Extra OSM-locaties</span>
+              <select class="sort-select" id="osmRadius" aria-label="Extra winkels via OpenStreetMap">
+                <option value="0">Alleen geverifieerd</option>
+                <option value="15" selected>Straal 15 km</option>
+                <option value="25">Straal 25 km</option>
+                <option value="50">Straal 50 km</option>
+                <option value="100">Straal 100 km</option>
+              </select>
+            </label>
+          </div>
         </div>
       </div>
     </div>
@@ -578,7 +586,14 @@
               </div>
             </div>
             <form action="https://formspree.io/f/xykvvprz" method="POST" style="margin-top:16px;">
-              <button type="submit" class="btn btn-green">📩 Neem contact op</button>
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1">
+              <input type="hidden" name="_subject" value="Adverteren op Boerenroute.nl">
+              <input type="hidden" name="type" value="adverteren">
+              <div class="nieuwsbrief-row">
+                <input type="email" name="email" class="form-input" required placeholder="jouw@email.nl">
+                <button type="submit" class="btn btn-green">📩 Neem contact op</button>
+              </div>
+              <textarea name="bericht" class="form-input" rows="3" required placeholder="Welk niveau heeft je interesse? Naam + plaats van je winkel..." style="margin-top:8px;width:100%;"></textarea>
             </form>
           </article>
         </div>

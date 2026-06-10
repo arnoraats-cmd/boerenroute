@@ -224,6 +224,37 @@ document.getElementById('routeGoToKaart')?.addEventListener('click', () => {
 });
 
 /* ── Automatische routegeneratie ("Maak een route voor mij") ── */
+/* Meer filters: houdt de mobiele toolbar rustig zonder filters te verstoppen. */
+const moreFiltersBtn = document.getElementById('moreFiltersBtn');
+const moreFiltersPanel = document.getElementById('moreFiltersPanel');
+moreFiltersBtn?.addEventListener('click', e => {
+  e.stopPropagation();
+  if (!moreFiltersPanel) return;
+  const opening = moreFiltersPanel.hidden;
+  moreFiltersPanel.hidden = !opening;
+  moreFiltersBtn.setAttribute('aria-expanded', String(opening));
+});
+moreFiltersPanel?.addEventListener('click', e => e.stopPropagation());
+document.addEventListener('click', () => {
+  if (!moreFiltersPanel || moreFiltersPanel.hidden) return;
+  moreFiltersPanel.hidden = true;
+  moreFiltersBtn?.setAttribute('aria-expanded', 'false');
+});
+
+/* Toon hoeveel "verstopte" filters actief zijn, ook als het paneel dicht is.
+   Telt: 'Nu open' aan + OSM-straal afwijkend van de standaard (15 km). */
+function _updateFiltersCount() {
+  const openNow = document.getElementById('openNowToggle')?.checked;
+  const radius  = document.getElementById('osmRadius')?.value;
+  const n = (openNow ? 1 : 0) + (radius && radius !== '15' ? 1 : 0);
+  const badge = document.getElementById('moreFiltersCount');
+  moreFiltersBtn?.classList.toggle('has-active', n > 0);
+  if (badge) { badge.textContent = String(n); badge.hidden = n === 0; }
+}
+document.getElementById('openNowToggle')?.addEventListener('change', _updateFiltersCount);
+document.getElementById('osmRadius')?.addEventListener('change', _updateFiltersCount);
+_updateFiltersCount();
+
 let _genTarget  = null;   // laatst gekozen doelafstand
 let _genVariant = 0;      // variatie-teller voor "andere route"
 let _genBusy    = false;
