@@ -546,27 +546,34 @@ fetch('src/data/verifiedShops.json')
 /* ── Populaire routes laden ──────────────────────────────── */
 
 /* Kiest de juiste maand-route op basis van de huidige datum.
-   Voeg nieuwe maanden toe aan data.maandRoutes zonder code te wijzigen. */
+   Prioriteit: 1) handmatige entry in maandRoutes  2) automatische provincierotatie
+   Nieuwe handmatige maanden toevoegen = alleen routes.json aanpassen, geen code. */
 function _pickMaandRoute(data) {
+  const MAANDEN = ['Januari','Februari','Maart','April','Mei','Juni',
+                   'Juli','Augustus','September','Oktober','November','December'];
   const now = new Date();
   const cy = now.getFullYear(), cm = now.getMonth() + 1;
+  const maandLabel = `${MAANDEN[cm - 1]} ${cy}`;
 
+  // 1. Handmatige entry voor exacte jaar+maand
   if (Array.isArray(data.maandRoutes) && data.maandRoutes.length) {
-    const score = e => e.year * 12 + e.month;
-    const cur   = cy * 12 + cm;
-    // Exacte match voor huidige maand
     const exact = data.maandRoutes.find(e => e.year === cy && e.month === cm);
     if (exact) return { route: exact.route, maand: exact.maand };
-    // Meest recente verleden entry als fallback
-    const past = data.maandRoutes.filter(e => score(e) < cur).sort((a,b) => score(b) - score(a));
-    if (past.length) return { route: past[0].route, maand: past[0].maand };
-    // Anders de eerstvolgende toekomstige entry
-    const future = [...data.maandRoutes].sort((a,b) => score(a) - score(b));
-    if (future.length) return { route: future[0].route, maand: future[0].maand };
   }
-  // Oud formaat (backwards compat)
+
+  // 2. Automatische provincierotatie (maandnummer 1–12 → index 0–11)
+  const prov = data.provincieRoutes || [];
+  if (prov.length) {
+    const r = prov[(cm - 1) % prov.length];
+    return {
+      route: { ...r, subtitel: r.subtitel || `Ontdek ${r.provincie} op de fiets` },
+      maand: maandLabel,
+    };
+  }
+
+  // 3. Oud formaat (backwards compat)
   const route = (data.routes || []).find(r => r.featured) || data.routes?.[0];
-  return route ? { route, maand: data.maand || '' } : null;
+  return route ? { route, maand: data.maand || maandLabel } : null;
 }
 
 let _routesData = null;
