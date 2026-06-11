@@ -27,6 +27,79 @@ function blockHTML(b) {
   return '';
 }
 
+function mapTarget(post) {
+  const tags = new Set(post.tags || []);
+  if (post.regioSlug) {
+    return {
+      href: `/regio/${post.regioSlug}`,
+      label: `Bekijk winkels in ${post.regioName || 'deze regio'}`,
+      hint: 'Open de kaart met adressen uit dit verhaal.',
+    };
+  }
+  if (tags.has('eieren')) {
+    return { href: '/eierautomaten', label: 'Vind een eierautomaat', hint: 'Open de kaart met eierautomaten in Nederland.' };
+  }
+  if (tags.has('melk') || tags.has('zuivel')) {
+    return { href: '/melktap', label: 'Vind een melktap', hint: 'Open de kaart met verse melk direct van de boer.' };
+  }
+  if (tags.has('zelfpluk') || tags.has('fruit') || tags.has('seizoen')) {
+    return { href: '/zelfpluktuinen', label: 'Vind een zelfpluktuin', hint: 'Open de kaart met pluktuinen en seizoensadressen.' };
+  }
+  if (tags.has('automaat')) {
+    return { href: '/versautomaten', label: 'Vind een versautomaat', hint: 'Open de kaart met automaten langs boerderijen.' };
+  }
+  return { href: '/', label: 'Ontdek winkels bij jou', hint: 'Open de kaart en plan meteen een fietsroute.' };
+}
+
+function inlineCta(post) {
+  const target = mapTarget(post);
+  return `      <aside class="blog-inline-cta">
+        <div>
+          <p class="blog-inline-kicker">Zin om op pad te gaan?</p>
+          <p class="blog-inline-title">${esc(target.label)}</p>
+          <p class="blog-inline-copy">${esc(target.hint)}</p>
+        </div>
+        <a class="btn btn-green" href="${target.href}">Open de kaart</a>
+      </aside>`;
+}
+
+function articleBodyHTML(post) {
+  const blocks = post.body.map(blockHTML);
+  const insertAt = Math.min(4, Math.max(2, Math.floor(blocks.length / 2)));
+  blocks.splice(insertAt, 0, inlineCta(post));
+  return blocks.join('\n');
+}
+
+function relatedPosts(post) {
+  const tags = new Set(post.tags || []);
+  return posts
+    .filter(p => p.slug !== post.slug)
+    .map(p => ({
+      post: p,
+      score: (p.tags || []).filter(t => tags.has(t)).length,
+    }))
+    .sort((a, b) => b.score - a.score || new Date(b.post.date) - new Date(a.post.date))
+    .slice(0, 3)
+    .map(x => x.post);
+}
+
+function relatedHTML(post) {
+  const related = relatedPosts(post);
+  if (!related.length) return '';
+  return `        <section class="blog-related" aria-labelledby="related-title">
+          <h2 id="related-title">Gerelateerde verhalen</h2>
+          <div class="blog-related-grid">
+${related.map(p => `            <a class="blog-related-card" href="/blog/${p.slug}">
+              <span class="blog-related-emoji">${p.emoji}</span>
+              <span>
+                <strong>${esc(p.title)}</strong>
+                <small>${esc(p.excerpt)}</small>
+              </span>
+            </a>`).join('\n')}
+          </div>
+        </section>`;
+}
+
 function shell(title, desc, canonical, bodyInner, jsonLd) {
   return `<!DOCTYPE html>
 <html lang="nl">
@@ -114,7 +187,7 @@ for (const post of posts) {
           <p class="blog-article-lead">${esc(post.excerpt)}</p>
         </header>
         <div class="blog-article-body">
-${post.body.map(blockHTML).join('\n')}
+${articleBodyHTML(post)}
         </div>
         <footer class="blog-article-footer">
           ${post.regioSlug
@@ -122,6 +195,7 @@ ${post.body.map(blockHTML).join('\n')}
             : `<a class="btn btn-green" href="/">🗺️ Ontdek winkels bij jou</a>`}
           <a class="btn btn-ghost" href="/blog/">← Terug naar verhalen</a>
         </footer>
+${relatedHTML(post)}
       </div>
     </article>`;
 

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSM Farm Shops Checker — Boerenroute</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 { color: #1C4109; margin-bottom: 20px; font-size: 28px; }
+    .stats { background: #E7F0D6; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; }
+    .controls {
+      display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;
+    }
+    button {
+      padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;
+      background: #356611; color: white; transition: background 0.2s;
+    }
+    button:hover { background: #1C4109; }
+    button.secondary { background: #999; }
+    button.secondary:hover { background: #666; }
+    input[type="text"] {
+      padding: 10px 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; flex: 1;
+      min-width: 200px;
+    }
+    .shop-item {
+      background: white; padding: 16px; margin-bottom: 12px; border-radius: 8px;
+      border-left: 4px solid #B8720F; display: flex; gap: 12px; align-items: flex-start;
+    }
+    .shop-item.filtered-out { opacity: 0.4; pointer-events: none; }
+    input[type="checkbox"] { width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px; cursor: pointer; }
+    .shop-info { flex: 1; }
+    .shop-name { font-weight: 700; color: #1C4109; font-size: 16px; margin-bottom: 4px; }
+    .shop-addr { font-size: 13px; color: #555; margin-bottom: 6px; }
+    .shop-meta { font-size: 12px; color: #888; display: flex; gap: 16px; flex-wrap: wrap; }
+    .shop-meta span { display: flex; align-items: center; gap: 4px; }
+    .shop-url { color: #356611; text-decoration: none; }
+    .shop-url:hover { text-decoration: underline; }
+    .export-btn { background: #B8720F; }
+    .export-btn:hover { background: #9a5800; }
+    .result {
+      background: #f0f9ff; padding: 12px; border-radius: 6px; margin-top: 20px;
+      border: 1px solid #ccc; font-family: monospace; font-size: 12px; max-height: 200px;
+      overflow-y: auto; white-space: pre-wrap; word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚜 OSM Farm Shops Checker</h1>
+    <div class="stats" id="stats">Laden...</div>
+
+    <div class="controls">
+      <input type="text" id="searchBox" placeholder="Zoek op naam of plaats...">
+      <button class="secondary" onclick="toggleAll(true)">✓ Alles selecteren</button>
+      <button class="secondary" onclick="toggleAll(false)">✗ Alles deselecteren</button>
+      <button class="export-btn" onclick="exportSelected()">📥 Exporteer geselecteerde</button>
+    </div>
+
+    <div id="shopsList"></div>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    let allShops = [];
+    let filtered = [];
+    let existingShops = [];
+
+    // Filter: stadse adressen eruit
+    function isLikelyUrban(shop) {
+      const addr = (shop.properties['addr:street'] || '').toLowerCase();
+      const name = (shop.properties.name || '').toLowerCase();
+      const building = (shop.properties.building || '').toLowerCase();
+      
+      const urbanKeywords = ['straat', 'plein', 'laan', 'weg centrum', 'center', 'markt'];
+      const urbanBuilding = ['house', 'apartments', 'commercial'];
+      
+      if (urbanBuilding.includes(building)) return true;
+      if (urbanKeywords.some(kw => addr.includes(kw))) return true;
+      
+      return false;
+    }
+
+    // Check duplicaten
+    function isDuplicate(osmShop) {
+      const osmName = (osmShop.properties.name || '').toLowerCase().trim();
+      const osmCity = (osmShop.properties['addr:city'] || '').toLowerCase().trim();
+      
+      return existingShops.some(existing => {
+        const existName = (existing.name || '').toLowerCase().trim();
+        const existAddr = (existing.address || '').toLowerCase().trim();
+        
+        // Match op naam + plaats
+        if (osmName === existName && existAddr.includes(osmCity)) return true;
+        
+        // Match op dicht bij elkaar ligging (< 100m)
+        const dist = Math.sqrt(
+          Math.pow(osmShop.geometry.coordinates[1] - existing.lat, 2) +
+          Math.pow(osmShop.geometry.coordinates[0] - existing.lng, 2)
+        ) * 111; // ruw: 1 graad ≈ 111km
+        
+        if (dist < 0.1 && osmName.includes(existName.split(' ')[0])) return true;
+        
+        return false;
+      });
+    }
+
+    // Laad verifiedShops eerst
+    Promise.all([
+      fetch('src/data/verifiedShops.json').then(r => r.json()),
+      fetch('OSM_farm_shop_NL.geojson').then(r => r.json())
+    ])
+      .then(([verified, osmData]) => {
+        existingShops = verified;
+        
+        allShops = osmData.features
+          .filter(f => !isLikelyUrban(f))
+          .filter(f => !isDuplicate(f))
+          .sort((a, b) => (a.properties.name || '').localeCompare(b.properties.name || ''));
+        
+        filtered = [...allShops];
+        renderList();
+        updateStats();
+        
+        const duplicates = osmData.features.length - (osmData.features.length - allShops.length) - allShops.length;
+        document.getElementById('stats').innerHTML += 
+          `<br>OSM totaal: <strong>${osmData.features.length}</strong> | Verwijderd (duplicaten/stedelijk): <strong>${osmData.features.length - allShops.length}</strong>`;
+      })
+      .catch(e => console.error('Fout bij laden:', e));
+
+    function renderList() {
+      const list = document.getElementById('shopsList');
+      list.innerHTML = filtered.map((shop, i) => `
+        <div class="shop-item">
+          <input type="checkbox" class="shop-check" data-idx="${i}">
+          <div class="shop-info">
+            <div class="shop-name">${shop.properties.name || '?'}</div>
+            <div class="shop-addr">${shop.properties['addr:street'] || ''} ${shop.properties['addr:housenumber'] || ''}, ${shop.properties['addr:city'] || ''}</div>
+            <div class="shop-meta">
+              <span>📍 ${shop.geometry.coordinates[1].toFixed(4)}, ${shop.geometry.coordinates[0].toFixed(4)}</span>
+              ${shop.properties.website ? `<span><a href="${shop.properties.website}" class="shop-url" target="_blank">🔗 Website</a></span>` : ''}
+              ${shop.properties.url ? `<span><a href="${shop.properties.url}" class="shop-url" target="_blank">🔗 URL</a></span>` : ''}
+              ${shop.properties.description ? `<span>ℹ️ ${shop.properties.description}</span>` : ''}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function updateStats() {
+      const checked = document.querySelectorAll('.shop-check:checked').length;
+      document.getElementById('stats').innerHTML = 
+        `Getoond: <strong>${filtered.length}</strong> | Geselecteerd: <strong>${checked}</strong>`;
+    }
+
+    document.getElementById('searchBox').addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      filtered = allShops.filter(shop => {
+        const name = (shop.properties.name || '').toLowerCase();
+        const city = (shop.properties['addr:city'] || '').toLowerCase();
+        return name.includes(query) || city.includes(query);
+      });
+      renderList();
+      updateStats();
+    });
+
+    document.addEventListener('change', (e) => {
+      if (e.target.classList.contains('shop-check')) {
+        updateStats();
+      }
+    });
+
+    function toggleAll(checked) {
+      document.querySelectorAll('.shop-check').forEach(cb => cb.checked = checked);
+      updateStats();
+    }
+
+    function exportSelected() {
+      const selected = [];
+      document.querySelectorAll('.shop-check:checked').forEach((cb) => {
+        const idx = parseInt(cb.dataset.idx);
+        const shop = filtered[idx];
+        selected.push({
+          name: shop.properties.name || '?',
+          address: `${shop.properties['addr:street'] || ''} ${shop.properties['addr:housenumber'] || ''}, ${shop.properties['addr:city'] || ''}`.trim(),
+          lat: shop.geometry.coordinates[1],
+          lng: shop.geometry.coordinates[0],
+          website: shop.properties.website || shop.properties.url || null,
+          description: shop.properties.description || null,
+          osm_id: shop.properties['@id']
+        });
+      });
+
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `<strong>JSON export (${selected.length} items):</strong>\n\n` + 
+        JSON.stringify(selected, null, 2);
+      resultDiv.style.display = 'block';
+      resultDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

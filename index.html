@@ -332,6 +332,7 @@
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
             Onderweg (kids)
           </button>
+          <button class="chip chip-reset" id="chipReset" hidden aria-label="Wis actief filter">× Wis filter</button>
         </div>
 
         <div class="toolbar-right">
@@ -794,9 +795,11 @@
   <button class="float-tip" id="floatTipBtn" aria-label="Tip een winkel">💡</button>
 
 
-  <!-- Onboarding-tooltip voor het sheet (eenmalig) -->
-  <div class="sheet-onboard" id="sheetOnboardTip" hidden aria-live="polite">
-    ↑ Swipe omhoog voor alle winkels
+  <!-- Onboarding-tooltip voor het sheet (eenmalig, dismissible) -->
+  <div class="sheet-onboard" id="sheetOnboardTip" hidden role="tooltip">
+    <span class="onboard-text">↑ Swipe omhoog voor de winkellijst</span>
+    <button class="onboard-dismiss" id="onboardDismiss" aria-label="Tip sluiten">×</button>
+    <span class="onboard-caret" aria-hidden="true"></span>
   </div>
 
   <!-- ══ ZWEVENDE "ROUTE KLAAR"-BALK (verschijnt zodra je stops hebt) ══ -->

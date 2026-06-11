@@ -84,13 +84,26 @@ function _hideLanding() {
   // Activeer bottom-sheet layout op mobiel
   document.body.classList.add('map-active');
   requestAnimationFrame(() => invalidateSize());
-  // Onboarding-tooltip (eenmalig, verdwijnt na 4 sec)
-  if (window.innerWidth <= 720 && !sessionStorage.getItem('sheet-hint-shown')) {
-    sessionStorage.setItem('sheet-hint-shown', '1');
+  // Onboarding-tooltip — eenmalig per apparaat (localStorage), dismissible
+  if (window.innerWidth <= 900 && !localStorage.getItem('br_onboard_v1')) {
     const tip = document.getElementById('sheetOnboardTip');
     if (tip) {
       tip.removeAttribute('hidden');
-      setTimeout(() => tip.setAttribute('hidden', ''), 4000);
+
+      function _dismissTip() {
+        tip.setAttribute('hidden', '');
+        localStorage.setItem('br_onboard_v1', '1');
+      }
+
+      // Klik op de tip zelf (of de ×-knop) sluit hem
+      tip.addEventListener('click', _dismissTip, { once: true });
+
+      // Sheet-handle interactie sluit ook de tip
+      const handle = document.querySelector('.sheet-handle');
+      handle?.addEventListener('pointerdown', _dismissTip, { once: true });
+
+      // Vangnet: verdwijnt na 10 seconden als gebruiker niets doet
+      setTimeout(_dismissTip, 10000);
     }
   }
 }
@@ -195,14 +208,19 @@ document.getElementById('werkplaatsLink')?.addEventListener('click', e => {
 
   if (isIOS && !isStandalone && !dismissed) {
     setTimeout(() => {
-      const hint = document.getElementById('iosHint');
-      if (!hint) return;
-      hint.hidden = false;
-      // Automatisch weg na 5 sec — niet irriteren
+      // Als de onboarding-tip nog zichtbaar is (gebruiker koos snel een locatie),
+      // wacht dan tot die weg is voor we de iOS-hint tonen — twee tips tegelijk is te druk.
+      const onboardTip  = document.getElementById('sheetOnboardTip');
+      const extraDelay  = (onboardTip && !onboardTip.hidden) ? 11000 : 0;
       setTimeout(() => {
-        hint.hidden = true;
-        sessionStorage.setItem('ios-hint-dismissed', '1');
-      }, 5000);
+        const hint = document.getElementById('iosHint');
+        if (!hint) return;
+        hint.hidden = false;
+        setTimeout(() => {
+          hint.hidden = true;
+          sessionStorage.setItem('ios-hint-dismissed', '1');
+        }, 5000);
+      }, extraDelay);
     }, 4000);
   }
 
@@ -460,8 +478,8 @@ function _showCrumb(name) {
   }
   crumb.innerHTML = `
     <span class="crumb-icon">📍</span>
-    <span class="crumb-label">Afstand vanuit <strong>${_esc(name)}</strong></span>
-    <button class="crumb-reset" id="crumbReset" aria-label="Reset locatie">✕</button>`;
+    <span class="crumb-label">Winkels bij <strong>${_esc(name)}</strong></span>
+    <button class="crumb-reset" id="crumbReset" aria-label="Andere locatie kiezen">Locatie wijzigen</button>`;
   document.getElementById('crumbReset')?.addEventListener('click', () => {
     setUserLocation(DEFAULT.lat, DEFAULT.lng);
     mapFlyTo(DEFAULT.lat, DEFAULT.lng, 11);

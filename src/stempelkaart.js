@@ -8,6 +8,7 @@ import {
   exportStamps, exportStampsJSON, importStamps,
 } from './stamps.js';
 import { emojiIcon } from './icons.js';
+import { renderProvincieKaart } from './provincie-kaart.js';
 
 let _allShops = [];
 
@@ -76,6 +77,11 @@ export function renderStempelkaart(containerId) {
       </div>
     </div>` : `<div class="sk-rank-max">🎉 Maximale rang bereikt!</div>`}
   </div>
+
+  <!-- ── Provincieverzamelaar ── -->
+  <section class="sk-section" aria-label="Provincieverzamelaar">
+    ${renderProvincieKaart(_allShops)}
+  </section>
 
   <!-- ── Stempelgrid ── -->
   <section class="sk-section" aria-label="Stempelkaart">

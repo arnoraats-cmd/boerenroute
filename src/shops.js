@@ -147,6 +147,11 @@ function _bindControls() {
   document.getElementById('kidsHintBtn')?.addEventListener('click', () => {
     document.querySelector('#filterChips .chip[data-filter="onderweg"]')?.click();
   });
+
+  /* Reset-chip → terug naar 'Alles' */
+  $('chipReset')?.addEventListener('click', () => {
+    document.querySelector('#filterChips .chip[data-filter="all"]')?.click();
+  });
 }
 
 /* ══ Filter + sort ═══════════════════════════════════════════════ */
@@ -214,10 +219,37 @@ function _render(reset = true) {
   const hint = document.getElementById('kidsHint');
   if (hint) hint.hidden = activeFilter !== 'all';
 
+  /* Reset-chip: zichtbaar zodra er een actief filter is (niet 'all') */
+  const resetChip = $('chipReset');
+  if (resetChip) resetChip.hidden = (activeFilter === 'all');
+
   if (shops.length === 0) {
     list.innerHTML = '';
     const emp = emptyEl();
-    if (emp) emp.hidden = false;
+    if (emp) {
+      emp.hidden = false;
+      const FILTER_NAMES = {
+        winkel: 'winkels', automaat: 'automaten', zelfpluk: 'zelfpluktuinen',
+        markt: 'markten', onderweg: 'onderweg-plekken',
+      };
+      const filterLabel = FILTER_NAMES[activeFilter] ?? 'locaties';
+      const isFiltered  = activeFilter !== 'all';
+      const hasQuery    = !!searchQuery;
+      let msg = '';
+      if (hasQuery && isFiltered)
+        msg = `Geen ${filterLabel} gevonden voor <em>"${_esc(searchQuery)}"</em>.`;
+      else if (hasQuery)
+        msg = `Niets gevonden voor <em>"${_esc(searchQuery)}"</em>.`;
+      else if (isFiltered)
+        msg = `Geen ${filterLabel} gevonden in je buurt.`;
+      else
+        msg = 'Geen locaties gevonden in je buurt.';
+
+      const tips = [];
+      if (isFiltered || hasQuery) tips.push('Wis de filters om alle locaties te zien.');
+      if (!hasQuery && !isFiltered) tips.push('Probeer een andere plaats of vergroot de kaart.');
+      emp.innerHTML = `${msg}${tips.length ? `<br><span>${tips.join(' ')}</span>` : ''}`;
+    }
     renderMarkers([]);
     return;
   }

@@ -242,6 +242,126 @@ OSM-geladen winkels krijgen `id` vanaf 100 (zodat ze niet botsen met de handmati
 
 ---
 
+## Mobiel interactiemodel (spec)
+
+> **Gebruik dit als checklist bij elke UI/JS-wijziging op mobiel (≤ 900px).**
+> Primaire testomgeving: iOS Safari op iPhone. Safe-area (home indicator) is ~34px extra onderaan.
+
+---
+
+### App-fasen
+
+| Fase | Trigger | Zichtbaar |
+|---|---|---|
+| **Landing** | Eerste bezoek, nog geen locatie | Hero + banners + normale paginalayout |
+| **Map-active** | Locatie gekozen (GPS of zoekveld) | `body.map-active` — kaart fullscreen, toolbar vast, bottom sheet actief |
+
+Bij locatiekeuze: `body.classList.add('map-active')` → `activateMobileLayout()` → bottom sheet initialiseert.
+
+---
+
+### Bottom sheet — toestanden
+
+Geïmplementeerd in `src/bottomsheet.js`. Drie toestanden:
+
+| Toestand | Hoogte | Wat zichtbaar |
+|---|---|---|
+| `peek` | 100 px + safe-area | Sleepbalk + "Winkels" label + quicknav (Route/Stempel/Seizoen) |
+| `half` | 52% schermhoogte (38% landscape) | Bovenstaande + winkellijst (gescrolld naar top) |
+| `open` | `100dvh − header` | Volledig scherm, "↓ Sluit lijst"-knop zichtbaar |
+
+**Beginstand:** `half` zodra `map-active` gezet wordt.
+
+---
+
+### Bottom sheet — overgangen
+
+| Actie | Van | Naar |
+|---|---|---|
+| Tik op sleepgreep | peek | half |
+| Tik op sleepgreep | half | open |
+| Tik op sleepgreep | open | half |
+| Sleep omhoog > 40 px | peek | half |
+| Sleep omhoog > 60 px | half | open |
+| Sleep omlaag > 60 px | half | **peek** (blijft peek — springt NIET terug) |
+| Sleep omlaag > 60 px | open | half |
+| Tik op kaart (niet marker) | open | half |
+| Tik op kaart (niet marker) | peek | **niets** (gebruiker heeft bewust weggesleept) |
+| Tik op "↓ Sluit lijst" | open | half |
+| Quicknav-knop (Route/Stempel/Seizoen) | any | half + navigeert naar die sectie |
+
+**Scroll-reset:** bij elke overgang naar `peek` of `half` scrollt `.sheet-scroll` terug naar top.  
+**Map pointer-events:** alleen geblokkeerd bij `sheet-is-open` (= `open`-toestand); bij `half` en `peek` is de kaart aanraakbaar.
+
+---
+
+### Toolbar (vast bovenaan bij map-active)
+
+- Positie: `fixed`, `top: var(--header-h)`, `z-index: 20`
+- Rij 1: "Mijn locatie"-knop · "Afstand"-sorteerknop · "Meer filters"-knop
+- Rij 2: Filterchips (Alles · Winkel · Automaat · Zelfpluk · …) — data-gedreven, alleen tonen als dat type bestaat
+- **Meer filters-paneel:** opent als overlay (z-index 25), sluit bij klik buiten paneel of op overlay. Badge toont aantal actieve verborgen filters (Nu open + afwijkende OSM-straal).
+- **Kids-hint:** "Met kinderen op pad? Toon speeltuinen & uitjes →" — alleen zichtbaar als `onderweg`-winkels aanwezig zijn.
+- **Uitzondering route-tab:** toolbar volledig verborgen (`display: none !important`) op `data-page="route"`.
+
+---
+
+### Route-tab mobiel
+
+Afwijkend layout (GEEN bottom sheet / fullscreen kaart):
+
+- Kaart: `static`, hoogte `34vh`, `z-index: 1`
+- Route-sectie eronder: scrollbaar, `max-height: calc(100dvh − header − 34vh)`
+- Toolbar: verborgen
+
+---
+
+### Onboarding-tooltip
+
+- Eenmalig per apparaat (`localStorage: br_onboard_v1`)
+- Verschijnt direct na `map-active`, gepositioneerd boven de sheet (`bottom: calc(52% + 14px)`)
+- Verdwijnt bij: klik op tooltip, klik op sheet-handle (pointerdown), of na 10 seconden
+- **Nooit opnieuw tonen** na dismiss
+
+---
+
+### iOS-hint (PWA-installatie)
+
+- Alleen op iOS Safari buiten standalone-modus
+- Verschijnt 4 seconden na laden (of 15 s als onboarding-tooltip nog zichtbaar is)
+- Auto-hide na 5 seconden; sessie-dismissed via `sessionStorage`
+
+---
+
+### Testchecklist (doorlopen na elke mobiele UI/JS-wijziging)
+
+**Bottom sheet:**
+- [ ] `half` → sleepgreep omhoog → `open` ✓
+- [ ] `open` → sleepgreep omlaag → `half` ✓
+- [ ] `half` → omlaag > 80 px slepen → `peek`, blijft peek ✓
+- [ ] `peek` → tik op greep → `half` ✓
+- [ ] `peek` → kaart aantikken → niets (sheet blijft peek) ✓
+- [ ] `open` → kaart aantikken → `half` ✓
+- [ ] Quicknav in peek: Route/Stempel/Seizoen navigeert correct ✓
+- [ ] Safe-area op iPhone: onderkant sheet niet afgesneden ✓
+- [ ] Landscape (hoogte < 480 px): sheet half = 38% ✓
+
+**Toolbar/filters:**
+- [ ] Meer filters-paneel opent en sluit (incl. klik buiten) ✓
+- [ ] Filter badge toont correct aantal actieve verborgen filters ✓
+- [ ] Filterchips: alleen zichtbaar voor types met data ✓
+- [ ] Toolbar verborgen op route-tab ✓
+
+**Kaart:**
+- [ ] Marker-klik scrollt lijst naar het bijbehorende kaartje ✓
+- [ ] Kaart aanraakbaar in half/peek; geblokkeerd in open ✓
+
+**Overig:**
+- [ ] Onboarding-tooltip verdwijnt na dismiss, komt niet terug ✓
+- [ ] iOS-hint alleen op iOS Safari ✓
+
+---
+
 ## Workflow
 
 1. Wijzig code lokaal.

@@ -146,8 +146,23 @@ function _renderPanel() {
   const distEl = document.getElementById('routeTotalDist');
   if (distEl) distEl.textContent = `${_fmt(totalKm)} totaal`;
 
-  /* Google Maps-link bijwerken */
-  if (mapsLink) mapsLink.href = _mapsUrl(_stops);
+  /* Navigatie-link bijwerken: Google Maps kapt na 10 stops af, dus lange routes gaan naar Komoot. */
+  if (mapsLink) {
+    const usesKomoot = _usesKomootFallback(_stops);
+    mapsLink.href = _navUrl(_stops);
+    mapsLink.setAttribute(
+      'aria-label',
+      usesKomoot
+        ? 'Open route in Komoot met alle stops'
+        : 'Start route in Google Maps op de fiets'
+    );
+    const txt = mapsLink.querySelector('.route-nav-txt');
+    if (txt) {
+      txt.innerHTML = usesKomoot
+        ? 'Open in Komoot<span class="route-nav-sub">alle stops mee naar de planner</span>'
+        : 'Start route<span class="route-nav-sub">navigeer op de fiets · Google Maps</span>';
+    }
+  }
 
   /* Stop-items */
   stopsEl.innerHTML = legs.map(({ shop, leg }, i) => `
@@ -334,6 +349,14 @@ ${rtepts}
   URL.revokeObjectURL(a.href);
 }
 
+function _navUrl(stops) {
+  return _usesKomootFallback(stops) ? _komootUrl(stops) : _mapsUrl(stops);
+}
+
+function _usesKomootFallback(stops) {
+  return stops.length > 10;
+}
+
 function _mapsUrl(stops) {
   if (!stops.length) return '#';
   const MAX = 10; // Google Maps-limiet
@@ -348,8 +371,16 @@ function _mapsUrl(stops) {
   return `https://www.google.com/maps/dir/?${params}`;
 }
 
+function _komootUrl(stops) {
+  if (!stops.length) return 'https://www.komoot.com/plan';
+  const start = stops[0];
+  const params = new URLSearchParams({ sport: 'touringbicycle' });
+  stops.forEach(s => params.append('waypoint', `${s.lat},${s.lng}`));
+  return `https://www.komoot.com/plan/@${start.lat},${start.lng},12z?${params}`;
+}
+
 async function _share() {
-  const url  = _mapsUrl(_stops);
+  const url  = _navUrl(_stops);
   const text = `Mijn Boerenroute langs ${_stops.length} stop${_stops.length !== 1 ? 's' : ''}:\n`
     + _stops.map((s, i) => `${i + 1}. ${s.name} — ${s.address}`).join('\n');
 
