@@ -1716,6 +1716,23 @@
     gap: 8px;
   }
 
+  /* Landing-nudge: zichtbaar op mobiel als er geen locatie gekozen is */
+  .shop-landing-nudge {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: var(--amber-bg);
+    border: 1.5px dashed rgba(184,114,15,.35);
+    border-radius: var(--r-lg);
+    padding: 16px;
+    margin: 4px 0 8px;
+  }
+  .sln-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 1px; }
+  .sln-body { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.5; }
+  .sln-body strong { color: var(--amber); }
+  .sln-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+
   /* Kids-hint: verschijnt alleen bij 'Alles'-filter */
   .kids-hint {
     font-size: var(--t-sm);

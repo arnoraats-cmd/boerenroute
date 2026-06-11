@@ -20,7 +20,8 @@ let showFavOnly  = false;
 const favorites  = new Set();
 
 /* Render-limiet: niet honderden kaartjes/markers tegelijk (mobiel-performance) */
-const BASE_LIMIT = 80;
+const BASE_LIMIT    = 80;
+const LANDING_LIMIT = 20; // mobiel zonder locatie: korte preview zodat footer bereikbaar blijft
 let _limit = BASE_LIMIT;
 
 /* ── DOM ────────────────────────────────────────────────────── */
@@ -203,7 +204,9 @@ function _getFiltered() {
 /* ══ Render ══════════════════════════════════════════════════════ */
 
 function _render(reset = true) {
-  if (reset) _limit = BASE_LIMIT;
+  const isLandingMobile = window.innerWidth <= 900 && !document.body.classList.contains('map-active');
+  const effectiveBase   = isLandingMobile ? LANDING_LIMIT : BASE_LIMIT;
+  if (reset) _limit = effectiveBase;
   const shops = _getFiltered();
   const list  = listEl();
   if (!list) return;
@@ -261,10 +264,26 @@ function _render(reset = true) {
   const shown   = shops.slice(0, _limit);
   const restant = shops.length - shown.length;
 
-  list.innerHTML = shown.map(_cardHTML).join('')
-    + (restant > 0
-        ? `<li class="shop-more"><button class="btn btn-ghost" id="shopMoreBtn">Toon meer (${restant} resterend)</button></li>`
-        : '');
+  let moreHTML = '';
+  if (restant > 0) {
+    if (isLandingMobile) {
+      moreHTML = `<li class="shop-landing-nudge">
+        <div class="sln-icon">📍</div>
+        <div class="sln-body">
+          <strong>Nog ${restant} winkels</strong> staan er in de database.
+          Geef je woonplaats of locatie op en zie ze gesorteerd op afstand.
+          <div class="sln-actions">
+            <button class="btn btn-green btn-sm" id="slnGpsBtn">📍 Mijn locatie</button>
+            <button class="btn btn-ghost btn-sm" id="slnMoreBtn">Toon toch alles</button>
+          </div>
+        </div>
+      </li>`;
+    } else {
+      moreHTML = `<li class="shop-more"><button class="btn btn-ghost" id="shopMoreBtn">Toon meer (${restant} resterend)</button></li>`;
+    }
+  }
+
+  list.innerHTML = shown.map(_cardHTML).join('') + moreHTML;
 
   /* Kaart: álle gefilterde locaties (clustering bundelt ze, dus blijft licht).
      De lijst blijft wél gepagineerd (_limit) voor een lichte DOM op mobiel. */
@@ -273,6 +292,15 @@ function _render(reset = true) {
   document.getElementById('shopMoreBtn')?.addEventListener('click', () => {
     _limit += BASE_LIMIT;
     _render(false);
+  });
+
+  document.getElementById('slnMoreBtn')?.addEventListener('click', () => {
+    _limit += BASE_LIMIT;
+    _render(false);
+  });
+
+  document.getElementById('slnGpsBtn')?.addEventListener('click', () => {
+    document.getElementById('locateBtn')?.click();
   });
 
   /* Fav-knoppen */
