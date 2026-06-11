@@ -38,3 +38,7 @@ Thumbs.db
 # Tijdelijke / lokale bestanden
 *.tmp
 .tmp/
+
+.dev.vars*
+!.dev.vars.example
+!.env.example
