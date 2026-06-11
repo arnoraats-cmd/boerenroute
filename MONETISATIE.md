@@ -8,7 +8,8 @@ Uitgewerkt juni 2026. Werk dit bestand bij als stappen zijn afgerond.
 
 | Model | Jaar 1 (verwacht) | Prioriteit |
 |---|---|---|
-| Premium vermeldingen | €13.000–27.000 | ★★★★★ Eerste |
+| Premium vermeldingen (boeren) | €13.000–27.000 | ★★★★★ Eerste |
+| **Streekwinkels — betaald only** | **€7.000–15.000** | **★★★★★ Eerste** |
 | Route sponsoring | €4.500–7.500 | ★★★☆☆ Tweede |
 | Affiliate marketing | €1.000–5.000 | ★★★☆☆ Tweede |
 | Doneer / GPX-bundel | €500–2.000 | ★★☆☆☆ Derde |
@@ -135,6 +136,74 @@ Uitgewerkt juni 2026. Werk dit bestand bij als stappen zijn afgerond.
 | Aspergevereniging NL | Streekproduct | €500–1.500 | [ ] Benaderen |
 | ANWB | Groot / co-branding | €3.000–8.000 | [ ] Later |
 | Gazelle / Sparta / Batavus | Fietsmerk | €2.000–5.000 | [ ] Later |
+
+---
+
+---
+
+## Streekwinkels — betaald only (nieuw segment)
+
+Commerciële winkels die aantoonbaar lokale/regionale producten verkopen. Geen boer, maar een curaterende tussenlaag (kaasspeciaalzaak, delicatessen, ambachtelijke slager, biologische winkel). Hogere marketingbudgetten dan boeren → hogere tarieven gerechtvaardigd.
+
+### Toelatingscriteria (strikt handhaven — beschermt het merk)
+Een streekwinkel wordt alleen toegelaten als minimaal één van deze geldt:
+- Minimaal 50% van het assortiment is aantoonbaar lokaal/regionaal (max. ~150 km)
+- Vaste, benoemde relaties met lokale boeren (traceerbaarheid toonbaar)
+- Gecertificeerd biologisch of Erkend Streekproduct-keurmerk
+
+**Nooit toelaten:** supermarktketens, franchises, winkels die "lokaal" als marketingterm gebruiken zonder aantoonbare herkomst.
+
+### Pakketten streekwinkels
+
+**Streekwinkel Basis — €29/maand of €290/jaar**
+- Vermelding op kaart (goud/oranje marker, duidelijk anders dan boerderij-groen)
+- Foto's, eigen verhaal, productlijst, webshoplink
+- Badge "Streekwinkel — verkoopt lokale producten"
+- Filterbaar door gebruiker (aparte chip in de filterbalk)
+- Zichtbaar op gemeente- en provinciepagina
+
+**Streekwinkel Uitgelicht — €59/maand of €590/jaar**
+- Alles van Basis
+- Bovenaan zoekresultaten in gemeente én provincie
+- Vermelding op relevante categoriepagina's
+- Social shoutout
+- Statistieken-dashboard
+
+### UX-regels (niet onderhandelbaar)
+- **Marker-kleur:** goud/warm-oranje — nooit hetzelfde groen als boerderijwinkels
+- **Label op elk kaartje:** "Streekwinkel" — altijd zichtbaar, nooit verbergen
+- **Filterchip:** "Streekwinkels" als aparte chip, standaard aan, makkelijk uit te zetten
+- **Geen gratis tier** — streekwinkels bestaan niet in de database tenzij ze betalen
+- **Volgorde in lijst:** boerderijlocaties altijd boven streekwinkels bij gelijke afstand
+
+### Validatie vóór bouwen
+- [ ] Bel 5 kaasspeciaalzaken / delicatessenzaken: "Zou €290/jaar logisch zijn voor jullie?"
+- [ ] Bepaal go/no-go op basis van die gesprekken
+- [ ] Pas daarna technisch bouwen
+
+### Technische implementatie (na validatie)
+- [ ] Nieuw type `streekwinkel` toevoegen aan datamodel in `verifiedShops.json`
+- [ ] Nieuw marker-icoon + kleur (goud/oranje) in `src/icons.js`
+- [ ] Filterchip "Streekwinkels" toevoegen in `index.html` (data-gedreven: chip alleen als er streekwinkels zijn)
+- [ ] Filterlogica uitbreiden in `src/shops.js`
+- [ ] Kaartlegenda bijwerken
+- [ ] Categorie- en provinciepagina's: streekwinkels in eigen blok, visueel gescheiden van boerderijlocaties
+- [ ] `_redirects` en sitemap: geen extra werk, valt onder bestaande routes
+- [ ] CLAUDE.md datamodel bijwerken met nieuw type
+
+### Verdienpotentie
+
+| Scenario | Winkels | Prijs | Omzet jaar 1 |
+|---|---|---|---|
+| Conservatief | 15 Basis + 5 Uitgelicht | €290/€590 | €7.300 |
+| Realistisch | 30 Basis + 10 Uitgelicht | €290/€590 | €14.600 |
+| Optimistisch jaar 2 | 80 Basis + 25 Uitgelicht | €290/€590 | €37.950 |
+
+Doelgroep voor outreach (~800 relevante winkels in NL):
+- ~500 kaasspeciaalzaken
+- ~300 delicatessenzaken / streekproductwinkels
+- ~200 ambachtelijke slagers met lokale inkoop
+- ~150 biologische speciaalzaken
 
 ---
 
