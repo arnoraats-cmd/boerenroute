@@ -155,19 +155,48 @@ Een streekwinkel wordt alleen toegelaten als minimaal één van deze geldt:
 
 ### Pakketten streekwinkels
 
-**Streekwinkel Basis — €29/maand of €290/jaar**
+**Streekwinkel Basis — €290/jaar**
 - Vermelding op kaart (goud/oranje marker, duidelijk anders dan boerderij-groen)
 - Foto's, eigen verhaal, productlijst, webshoplink
 - Badge "Streekwinkel — verkoopt lokale producten"
 - Filterbaar door gebruiker (aparte chip in de filterbalk)
 - Zichtbaar op gemeente- en provinciepagina
 
-**Streekwinkel Uitgelicht — €59/maand of €590/jaar**
+**Streekwinkel Uitgelicht — €590/jaar**
 - Alles van Basis
 - Bovenaan zoekresultaten in gemeente én provincie
 - Vermelding op relevante categoriepagina's
 - Social shoutout
 - Statistieken-dashboard
+
+### Loyaliteitsprijzen (automatisch, transparant gecommuniceerd)
+
+Hoe langer een winkel partner is, hoe minder ze betalen. Max. 30% korting vanaf jaar 4.
+
+| Jaar | Korting | Basis | Uitgelicht |
+|---|---|---|---|
+| Jaar 1 | — | €290 | €590 |
+| Jaar 2 | 10% | €261 | €531 |
+| Jaar 3 | 20% | €232 | €472 |
+| Jaar 4+ | 30% | €203 | €413 |
+
+**Principe:** dit is geen verborgen kortingscode. Het staat open op de website vermeld zodat elke nieuwe winkel weet wat ze kunnen verwachten. Langetermijnrelaties zijn meer waard dan snelle omzet.
+
+### Introductieprijs — eerste 10 winkels (50%)
+
+De allereerste 10 streekwinkels krijgen 50% korting op jaar 1 als beloning voor early-adopter-lef.
+
+| | Normaal | Introductie |
+|---|---|---|
+| Basis | €290/jaar | **€145/jaar** |
+| Uitgelicht | €590/jaar | **€295/jaar** |
+
+**Communicatie-aanpak (transparant, geen truc):**
+- Op de /partners-pagina: "Introductieprijs — 10 plekken" met een zichtbare lijst van wie er al in zit
+- Zodra een plek bezet is: naam van de winkel doorgestreept en zichtbaar gemaakt ("Plek 1 — Kaasspeciaalzaak De Vries ✓")
+- Geen countdown-timer, geen "nog maar 2 plekken!" — gewoon de feiten
+- Als alle 10 plekken vol zijn: sectie verdwijnt, normale prijs geldt
+- Doel: vertrouwen door transparantie, niet urgentie door druk
 
 ### UX-regels (niet onderhandelbaar)
 - **Marker-kleur:** goud/warm-oranje — nooit hetzelfde groen als boerderijwinkels
