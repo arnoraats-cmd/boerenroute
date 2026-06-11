@@ -1508,10 +1508,8 @@
   .more-filters-count[hidden] { display: none; }
 
   .more-filters-panel {
-    position: absolute;
-    top: calc(100% + 10px);
-    right: 0;
-    z-index: 120;
+    /* Positie wordt via JS gezet (position: fixed, top/right via getBoundingClientRect).
+       Hierdoor valt het paneel altijd boven de bottom sheet, ongeacht stacking context. */
     min-width: min(300px, calc(100vw - 32px));
     padding: 14px;
     display: grid;
@@ -4183,14 +4181,6 @@
     .toolbar-locate { padding: 7px 12px; }
     .toolbar-right .toggle-pill { padding: 7px 11px; font-size: var(--t-xs); flex-shrink: 0; }
     .more-filters-btn { margin-left: auto; padding: 7px 11px; font-size: var(--t-xs); }
-    /* Positioneringscontext verplaatst naar toolbar-inner zodat paneel ONDER beide rijen valt */
-    .toolbar-right { position: static; }
-    .toolbar-inner { position: relative; }
-    .more-filters-panel {
-      left: auto;
-      right: 0;
-      top: calc(100% + 4px);
-    }
     .sort-select {
       max-width: none;
       flex-shrink: 0;

@@ -350,24 +350,27 @@
             Meer filters
             <span class="more-filters-count" id="moreFiltersCount" hidden aria-hidden="true"></span>
           </button>
-          <div class="more-filters-panel" id="moreFiltersPanel" hidden>
-            <label class="toggle-pill" title="Toon alleen nu open">
-              <input type="checkbox" id="openNowToggle">
-              <span>Nu open</span>
-            </label>
-            <label class="more-filter-field">
-              <span>Extra OSM-locaties</span>
-              <select class="sort-select" id="osmRadius" aria-label="Extra winkels via OpenStreetMap">
-                <option value="0">Alleen geverifieerd</option>
-                <option value="15" selected>Straal 15 km</option>
-                <option value="25">Straal 25 km</option>
-                <option value="50">Straal 50 km</option>
-                <option value="100">Straal 100 km</option>
-              </select>
-            </label>
-          </div>
         </div>
       </div>
+    </div>
+    <!-- Meer-filters paneel buiten de toolbar zodat het BOVEN de bottom sheet uitkomt
+         (toolbar heeft z-index 20, sheet z-index 30 — kinderen van toolbar kunnen nooit
+          boven de sheet uitkomen via z-index; vandaar dit element op body-niveau) -->
+    <div class="more-filters-panel" id="moreFiltersPanel" hidden>
+      <label class="toggle-pill" title="Toon alleen nu open">
+        <input type="checkbox" id="openNowToggle">
+        <span>Nu open</span>
+      </label>
+      <label class="more-filter-field">
+        <span>Extra OSM-locaties</span>
+        <select class="sort-select" id="osmRadius" aria-label="Extra winkels via OpenStreetMap">
+          <option value="0">Alleen geverifieerd</option>
+          <option value="15" selected>Straal 15 km</option>
+          <option value="25">Straal 25 km</option>
+          <option value="50">Straal 50 km</option>
+          <option value="100">Straal 100 km</option>
+        </select>
+      </label>
     </div>
     <!-- OSM-indicator (verschijnt na locatie-keuze) -->
     <div class="osm-indicator" id="osmIndicator" hidden aria-live="polite"></div>

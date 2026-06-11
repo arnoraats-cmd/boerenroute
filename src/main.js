@@ -258,6 +258,16 @@ moreFiltersBtn?.addEventListener('click', e => {
   e.stopPropagation();
   if (!moreFiltersPanel) return;
   const opening = moreFiltersPanel.hidden;
+  if (opening) {
+    // Positioneer het paneel onder de knop via getBoundingClientRect zodat het
+    // altijd correct staat — ongeacht toolbar-hoogte of fixed/sticky gedrag.
+    const r = moreFiltersBtn.getBoundingClientRect();
+    moreFiltersPanel.style.position = 'fixed';
+    moreFiltersPanel.style.top      = `${r.bottom + 6}px`;
+    moreFiltersPanel.style.right    = `${window.innerWidth - r.right}px`;
+    moreFiltersPanel.style.left     = 'auto';
+    moreFiltersPanel.style.zIndex   = '200';
+  }
   moreFiltersPanel.hidden = !opening;
   moreFiltersBtn.setAttribute('aria-expanded', String(opening));
   if (moreFiltersOverlay) moreFiltersOverlay.hidden = !opening;
