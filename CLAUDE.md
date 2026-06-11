@@ -193,6 +193,7 @@ Elke winkel/automaat in `verifiedShops.json` heeft dit formaat:
   googleRating: 4.9,           // optioneel
   googleReviews: 84,           // optioneel
   dagVers: null,               // of bv. "Verse aardbeien vandaag!" → toont badge
+  tippedBy: "Arno",           // optioneel — naam van de persoon die de tip doorgaf (voor /updates spotlight)
   desc: "Korte beschrijving in 1-2 zinnen."
 }
 ```
