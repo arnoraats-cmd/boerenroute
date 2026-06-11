@@ -1981,7 +1981,7 @@
     max-width: var(--max-w);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.6fr 1fr;
+    grid-template-columns: 220px 1fr;
     gap: 48px;
     align-items: start;
     padding-bottom: clamp(32px, 5vw, 48px);
@@ -2022,7 +2022,8 @@
 
   .footer-sponsor a:hover { color: rgba(255,255,255,.75); }
 
-  .footer-cols { display: flex; gap: 32px; flex-wrap: wrap; }
+  .footer-cols { display: flex; gap: 24px; flex-wrap: nowrap; }
+  .footer-col  { flex: 1; min-width: 0; }
 
   .footer-col h3 {
     font-family: var(--sans);
@@ -4210,7 +4211,8 @@
        route aanmaken loopt via het Route-tabblad */
     .route-cta { display: none; }
     .footer-inner { grid-template-columns: 1fr; gap: 28px; }
-    .footer-cols  { gap: 24px; }
+    .footer-cols  { gap: 20px; flex-wrap: wrap; }
+    .footer-col   { flex: 1 1 140px; }
     .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
 
     /* Winkelkaartjes luchtiger op mobiel */
