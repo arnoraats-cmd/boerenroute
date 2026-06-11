@@ -131,10 +131,64 @@
       line-height: 1.55;
     }
 
+    /* ── Spotlight ───────────────────────────────────────────── */
+    .spotlight {
+      background: linear-gradient(135deg, #fffbf0 0%, var(--amber-bg) 100%);
+      border: 1.5px solid rgba(184,114,15,.2);
+      border-radius: var(--r-xl);
+      padding: 28px 28px 22px;
+      margin-bottom: 48px;
+    }
+    .spotlight h2 {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      color: var(--amber);
+      margin: 0 0 6px;
+    }
+    .spotlight-intro {
+      font-size: var(--t-sm);
+      color: var(--text-mid);
+      margin: 0 0 18px;
+      line-height: 1.55;
+    }
+    .spotlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .spotlight-card {
+      background: white;
+      border: 1px solid rgba(184,114,15,.15);
+      border-radius: var(--r-lg);
+      padding: 12px 14px;
+    }
+    .spotlight-card-name {
+      font-weight: 600;
+      font-size: var(--t-sm);
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .spotlight-card-place {
+      font-size: 12px;
+      color: var(--text-mid);
+    }
+    .spotlight-card-tip {
+      font-size: 11px;
+      color: var(--amber);
+      margin-top: 5px;
+      font-style: italic;
+    }
+    .spotlight-note {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 14px;
+    }
+
     @media (max-width: 600px) {
       .updates-stats { flex-direction: column; gap: 8px; text-align: center; }
       .update-entry  { gap: 10px; }
       .update-tag    { font-size: 10px; padding: 2px 7px; }
+      .spotlight-grid { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
@@ -163,6 +217,39 @@
     <nav aria-label="Broodkruimelpad" style="margin-bottom:32px;font-size:var(--t-sm);color:var(--text-mid)">
       <a href="/" style="color:var(--green-mid)">Boerenroute.nl</a> › Wat is er nieuw?
     </nav>
+
+    <!-- ── Spotlight: handmatig toegevoegde winkels ───────────── -->
+    <div class="spotlight">
+      <h2>☀️ Recent in het zonnetje</h2>
+      <p class="spotlight-intro">Deze winkels zijn de laatste weken door onszelf of door een tip van een bezoeker aan de kaart toegevoegd. Ken jij ook een winkel die er nog niet bij staat? <a href="/aanmelden" style="color:var(--amber)">Geef het door!</a></p>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <div class="spotlight-card-name">Landwinkel Philips Fruittuin</div>
+          <div class="spotlight-card-place">📍 Eindhoven</div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-card-name">Boerderij Softijs</div>
+          <div class="spotlight-card-place">📍 Boxtel</div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-card-name">Zuylenhoeve</div>
+          <div class="spotlight-card-place">📍 Heijningen</div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-card-name">Zuivelhoeve Giethoorn</div>
+          <div class="spotlight-card-place">📍 Giethoorn</div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-card-name">Zuivelboerderij Wismans</div>
+          <div class="spotlight-card-place">📍 Oosterhout</div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-card-name">Wolboerderij DutchMerino</div>
+          <div class="spotlight-card-place">📍 Koewacht</div>
+        </div>
+      </div>
+      <p class="spotlight-note">Weet je wie er een tip heeft doorgegeven? Laat het ons weten via het aanmeldformulier — dan zetten we de naam erbij. Kleine moeite, groot gebaar.</p>
+    </div>
 
     <!-- ── Juni 2026 ───────────────────────────────────────────── -->
     <section class="updates-month">
