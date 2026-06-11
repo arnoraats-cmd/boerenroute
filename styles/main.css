@@ -2168,6 +2168,24 @@
     margin: 10px auto 0;
   }
 
+  /* Affiliate-tip na GPX-download */
+  .gpx-tip {
+    display: flex; align-items: center; gap: .6rem;
+    margin-top: .75rem; padding: .6rem .75rem;
+    background: var(--green-bg); border-radius: 8px;
+    font-size: .8rem; color: var(--text-mid); line-height: 1.4;
+    border: 1px solid rgba(53,102,17,.15);
+  }
+  .gpx-tip-icon { font-size: 1rem; flex-shrink: 0; }
+  .gpx-tip-text { flex: 1; }
+  .gpx-tip-link { color: var(--green-dark); font-weight: 600; text-decoration: underline; white-space: nowrap; }
+  .gpx-tip-link:hover { color: var(--green-mid); }
+  .gpx-tip-close {
+    background: none; border: none; cursor: pointer; font-size: 1rem;
+    color: var(--text-light); padding: 0 .2rem; flex-shrink: 0; line-height: 1;
+  }
+  .gpx-tip-close:hover { color: var(--text); }
+
   /* Subtiele steun-regel onder een geladen route */
   .route-donate {
     text-align: center;

@@ -347,6 +347,33 @@ ${rtepts}
   a.click();
   a.remove();
   URL.revokeObjectURL(a.href);
+
+  _showGpxTip();
+}
+
+/* Affiliate-tip na GPX-download: één keer per sessie tonen */
+function _showGpxTip() {
+  if (sessionStorage.getItem('br_gpxtip')) return;
+  sessionStorage.setItem('br_gpxtip', '1');
+
+  const existing = document.getElementById('gpxAffiliateTip');
+  if (existing) { existing.hidden = false; return; }
+
+  /* AFFILIATE: vervang deze URL door je Awin-link zodra je account actief is.
+     Formaat: https://www.awin1.com/cread.php?awinmid=10197&awinaffid=JOUW_ID&p=... */
+  const AFFILIATE_URL = 'https://www.bol.com/nl/nl/s/?searchtext=garmin+edge+fietscomputer';
+
+  const tip = document.createElement('div');
+  tip.id        = 'gpxAffiliateTip';
+  tip.className = 'gpx-tip';
+  tip.innerHTML = `
+    <span class="gpx-tip-icon">🚴</span>
+    <span class="gpx-tip-text">GPX werkt op elke Garmin Edge — <a href="${AFFILIATE_URL}" target="_blank" rel="noopener sponsored" class="gpx-tip-link">bekijk fietscomputers op Bol.com →</a></span>
+    <button class="gpx-tip-close" aria-label="Sluit tip">×</button>`;
+  tip.querySelector('.gpx-tip-close').addEventListener('click', () => tip.remove());
+
+  const btn = document.getElementById('gpxBtn');
+  btn?.insertAdjacentElement('afterend', tip);
 }
 
 function _navUrl(stops) {
