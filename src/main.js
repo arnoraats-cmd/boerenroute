@@ -412,13 +412,13 @@ async function _triggerOSM(lat, lng) {
     }
     if (indicator) {
       if (deduped.length > 0) {
-        indicator.textContent = `+${deduped.length} extra locaties via OpenStreetMap`;
+        indicator.textContent = `+${deduped.length} extra locaties gevonden`;
       } else {
         indicator.hidden = true;
       }
     }
   } catch {
-    if (indicator) indicator.textContent = 'OpenStreetMap niet beschikbaar';
+    if (indicator) indicator.textContent = 'Extra winkels tijdelijk niet beschikbaar';
   }
 }
 
