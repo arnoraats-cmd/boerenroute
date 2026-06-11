@@ -13,7 +13,7 @@ import { initBottomSheet }                   from './bottomsheet.js';
 import { shopIcon, emojiIcon }               from './icons.js';
 
 /* ── Kaart + modals direct initialiseren ─────────────────── */
-initMap({ lat: DEFAULT.lat, lng: DEFAULT.lng });
+initMap({ lat: 52.2, lng: 5.3, zoom: 7 }); // NL-overzicht; flyTo naar user-locatie zodra gekozen
 initModals();
 initBottomSheet();
 window.addEventListener('boerenroute:relayout', () => invalidateSize());
@@ -351,6 +351,13 @@ async function _locateMe(btn) {
 heroGpsBtn?.addEventListener('click', () => _locateMe(heroGpsBtn));
 document.getElementById('toolbarGpsBtn')?.addEventListener('click', e => _locateMe(e.currentTarget));
 
+/* Locatie-prompt in winkellijst — delegeert naar hero-knoppen */
+document.getElementById('promptGpsBtn')?.addEventListener('click', () => _locateMe(document.getElementById('promptGpsBtn')));
+document.getElementById('promptSearchBtn')?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  setTimeout(() => document.getElementById('heroSearchBtn')?.click(), 350);
+});
+
 async function _submitSearch() {
   const q = heroSearchInput?.value.trim();
   if (!q) { heroSearchInput?.focus(); return; }
@@ -374,6 +381,7 @@ function _applyLocation(lat, lng, name) {
   window._brLng = lng;
   setUserLocation(lat, lng);
   mapFlyTo(lat, lng, 12);
+  document.getElementById('locatiePrompt')?.setAttribute('hidden', '');
   _hideLanding();
   document.getElementById('mainLayout')?.scrollIntoView({ behavior: 'smooth' });
   _showCrumb(name);

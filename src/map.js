@@ -39,12 +39,12 @@ let _drawVer    = 0;         // versieteller om stale OSRM-responses te negeren
 
 /* ══ Init ════════════════════════════════════════════════════════ */
 
-export function initMap({ lat = 51.6606, lng = 5.6188 } = {}) {
+export function initMap({ lat = 51.6606, lng = 5.6188, zoom = 11 } = {}) {
   document.querySelector('#map .map-placeholder')?.remove();
 
   _map = L.map('map', {
     center: [lat, lng],
-    zoom: 11,
+    zoom,
     zoomControl: false,
     attributionControl: true,
   });

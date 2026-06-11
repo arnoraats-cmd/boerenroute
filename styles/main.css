@@ -1748,6 +1748,39 @@
   .sln-body strong { color: var(--amber); }
   .sln-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
 
+  /* Locatie-prompt: zichtbaar tot gebruiker een locatie kiest */
+  .locatie-prompt {
+    padding: 1.25rem 1rem 1rem;
+    text-align: center;
+    background: var(--sand);
+    border-bottom: 1px solid var(--green-bg);
+  }
+  .locatie-prompt-text {
+    font-weight: 600;
+    font-size: .95rem;
+    margin: 0 0 .3rem;
+    color: var(--text);
+  }
+  .locatie-prompt-sub {
+    font-size: .82rem;
+    color: var(--text-mid);
+    margin: 0 0 .9rem;
+    line-height: 1.5;
+  }
+  .locatie-prompt-btns {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .locatie-prompt-btn {
+    font-size: .82rem;
+    padding: .45rem .9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+  }
+
   /* Kids-hint: verschijnt alleen bij 'Alles'-filter */
   .kids-hint {
     font-size: var(--t-sm);
