@@ -242,53 +242,6 @@ document.getElementById('routeGoToKaart')?.addEventListener('click', () => {
 });
 
 /* ── Automatische routegeneratie ("Maak een route voor mij") ── */
-/* Meer filters: houdt de mobiele toolbar rustig zonder filters te verstoppen. */
-const moreFiltersBtn     = document.getElementById('moreFiltersBtn');
-const moreFiltersPanel   = document.getElementById('moreFiltersPanel');
-const moreFiltersOverlay = document.getElementById('moreFiltersOverlay');
-
-function _closeMoreFilters() {
-  if (!moreFiltersPanel) return;
-  moreFiltersPanel.hidden = true;
-  moreFiltersBtn?.setAttribute('aria-expanded', 'false');
-  if (moreFiltersOverlay) moreFiltersOverlay.hidden = true;
-}
-
-moreFiltersBtn?.addEventListener('click', e => {
-  e.stopPropagation();
-  if (!moreFiltersPanel) return;
-  const opening = moreFiltersPanel.hidden;
-  if (opening) {
-    // Positioneer het paneel onder de knop via getBoundingClientRect zodat het
-    // altijd correct staat — ongeacht toolbar-hoogte of fixed/sticky gedrag.
-    const r = moreFiltersBtn.getBoundingClientRect();
-    moreFiltersPanel.style.position = 'fixed';
-    moreFiltersPanel.style.top      = `${r.bottom + 6}px`;
-    moreFiltersPanel.style.right    = `${window.innerWidth - r.right}px`;
-    moreFiltersPanel.style.left     = 'auto';
-    moreFiltersPanel.style.zIndex   = '200';
-  }
-  moreFiltersPanel.hidden = !opening;
-  moreFiltersBtn.setAttribute('aria-expanded', String(opening));
-  if (moreFiltersOverlay) moreFiltersOverlay.hidden = !opening;
-});
-moreFiltersPanel?.addEventListener('click', e => e.stopPropagation());
-moreFiltersOverlay?.addEventListener('click', _closeMoreFilters);
-document.addEventListener('click', _closeMoreFilters);
-
-/* Toon hoeveel "verstopte" filters actief zijn, ook als het paneel dicht is.
-   Telt: 'Nu open' aan + OSM-straal afwijkend van de standaard (15 km). */
-function _updateFiltersCount() {
-  const openNow = document.getElementById('openNowToggle')?.checked;
-  const radius  = document.getElementById('osmRadius')?.value;
-  const n = (openNow ? 1 : 0) + (radius && radius !== '15' ? 1 : 0);
-  const badge = document.getElementById('moreFiltersCount');
-  moreFiltersBtn?.classList.toggle('has-active', n > 0);
-  if (badge) { badge.textContent = String(n); badge.hidden = n === 0; }
-}
-document.getElementById('openNowToggle')?.addEventListener('change', _updateFiltersCount);
-document.getElementById('osmRadius')?.addEventListener('change', _updateFiltersCount);
-_updateFiltersCount();
 
 let _genTarget  = null;   // laatst gekozen doelafstand
 let _genVariant = 0;      // variatie-teller voor "andere route"

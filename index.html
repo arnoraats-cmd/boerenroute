@@ -333,6 +333,11 @@
             Onderweg (kids)
           </button>
           <button class="chip chip-reset" id="chipReset" hidden aria-label="Wis actief filter">× Wis filter</button>
+          <!-- Nu open als toggle-chip — onafhankelijk van het type-filter -->
+          <label class="toggle-pill toggle-pill-sm" title="Toon alleen winkels die nu open zijn">
+            <input type="checkbox" id="openNowToggle">
+            <span>⏰ Nu open</span>
+          </label>
         </div>
 
         <div class="toolbar-right">
@@ -346,31 +351,15 @@
             <option value="rating">Beoordeling</option>
             <option value="naam">Naam A–Z</option>
           </select>
-          <button class="more-filters-btn" id="moreFiltersBtn" type="button" aria-expanded="false" aria-controls="moreFiltersPanel">
-            Meer filters
-            <span class="more-filters-count" id="moreFiltersCount" hidden aria-hidden="true"></span>
-          </button>
+          <select class="sort-select" id="osmRadius" aria-label="Extra winkels via OpenStreetMap">
+            <option value="0">Alleen basis</option>
+            <option value="15" selected>+ OSM 15 km</option>
+            <option value="25">+ OSM 25 km</option>
+            <option value="50">+ OSM 50 km</option>
+            <option value="100">+ OSM 100 km</option>
+          </select>
         </div>
       </div>
-    </div>
-    <!-- Meer-filters paneel buiten de toolbar zodat het BOVEN de bottom sheet uitkomt
-         (toolbar heeft z-index 20, sheet z-index 30 — kinderen van toolbar kunnen nooit
-          boven de sheet uitkomen via z-index; vandaar dit element op body-niveau) -->
-    <div class="more-filters-panel" id="moreFiltersPanel" hidden>
-      <label class="toggle-pill" title="Toon alleen nu open">
-        <input type="checkbox" id="openNowToggle">
-        <span>Nu open</span>
-      </label>
-      <label class="more-filter-field">
-        <span>Extra OSM-locaties</span>
-        <select class="sort-select" id="osmRadius" aria-label="Extra winkels via OpenStreetMap">
-          <option value="0">Alleen geverifieerd</option>
-          <option value="15" selected>Straal 15 km</option>
-          <option value="25">Straal 25 km</option>
-          <option value="50">Straal 50 km</option>
-          <option value="100">Straal 100 km</option>
-        </select>
-      </label>
     </div>
     <!-- OSM-indicator (verschijnt na locatie-keuze) -->
     <div class="osm-indicator" id="osmIndicator" hidden aria-live="polite"></div>
@@ -823,7 +812,6 @@
   </div>
 
   <!-- Overlay achter "Meer filters"-paneel: body-niveau zodat z-index definitief boven kaart (z-10) valt -->
-  <div class="more-filters-overlay" id="moreFiltersOverlay" hidden aria-hidden="true"></div>
 
   <!-- ══ MODAL ════════════════════════════════════════════════════ -->
   <div id="modalOverlay" class="modal-overlay" hidden role="dialog" aria-modal="true"></div>
