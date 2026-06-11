@@ -143,7 +143,7 @@ function buildPage({ slug, title, metaDesc, h1, intro, seizoen, list, faq }) {
   <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="/styles/main.css">
   <script type="application/ld+json">${JSON.stringify(itemListSchema)}</script>
   <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
   ${faqSchema ? `<script type="application/ld+json">${JSON.stringify(faqSchema)}</script>` : ''}
