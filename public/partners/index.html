@@ -113,6 +113,15 @@
 
     .partner-cta-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem; }
     .partner-cta-note { font-size: .82rem; color: var(--text-light); }
+    .tier-cta {
+      display: block; margin-top: .9rem; text-align: center; padding: .55rem .75rem;
+      border-radius: 8px; font-size: .82rem; font-weight: 600; text-decoration: none;
+      background: var(--green-bg); color: var(--green-dark); border: 1px solid rgba(53,102,17,.2);
+      transition: background .15s, color .15s;
+    }
+    .tier-cta:hover { background: var(--green-dark); color: #fff; }
+    .tier-cta.amber { background: var(--amber-bg); color: #92400E; border-color: rgba(184,114,15,.25); }
+    .tier-cta.amber:hover { background: var(--amber); color: #fff; }
   </style>
 </head>
 <body>
@@ -182,6 +191,7 @@
             <li class="muted">Homepage-blok</li>
             <li class="muted">Nieuwsbrief-vermelding</li>
           </ul>
+          <a class="tier-cta" href="https://bunq.me/Boerenroute" target="_blank" rel="noopener">Betalen €190/jaar →</a>
         </div>
         <div class="tier-card featured">
           <div class="tier-badge">Populair</div>
@@ -193,6 +203,7 @@
             <li>Vermelding in nieuwsbrief</li>
             <li>Weekend-uitlichting</li>
           </ul>
+          <a class="tier-cta" href="https://bunq.me/Boerenroute" target="_blank" rel="noopener">Betalen €390/jaar →</a>
         </div>
       </div>
 
@@ -237,6 +248,7 @@
             <li class="muted">Homepage-blok</li>
             <li class="muted">Nieuwsbrief-vermelding</li>
           </ul>
+          <a class="tier-cta amber" href="https://bunq.me/Boerenroute" target="_blank" rel="noopener">Betalen €290/jaar →</a>
         </div>
         <div class="tier-card amber-card featured">
           <div class="tier-badge amber">Aanbevolen</div>
@@ -248,6 +260,7 @@
             <li>Homepage-sponsorblok</li>
             <li>Vermelding in nieuwsbrief</li>
           </ul>
+          <a class="tier-cta amber" href="https://bunq.me/Boerenroute" target="_blank" rel="noopener">Betalen €590/jaar →</a>
         </div>
       </div>
 
