@@ -36,6 +36,8 @@ const PATHS = {
   basket: `<path d="M5 9.2h14l-1.2 8.3c-.1 1-1 1.7-2 1.7H8.2c-1 0-1.9-.7-2-1.7L5 9.2Z"/><path d="M4 9.2h16"/><path d="M9 6.6 12 4l3 2.6"/><path d="M9.2 12.4v3.4M14.8 12.4v3.4M12 12.4v3.4" stroke-width="1.4"/>`,
   // Speeltuin-glijbaan (kids / onderweg)
   playground: `<path d="M5 19.3h14"/><path d="M8 19.3V8.2M6.2 8.2H8M6.2 11.4H8M6.2 14.6H8"/><path d="M8.2 8.4c4.6.2 6.4 5.4 9 10.6"/><circle cx="8" cy="5.4" r="1.4"/>`,
+  // Winkelpui met deur en ramen (streekwinkel — commercieel betaald segment)
+  store: `<path d="M3.5 20.5V11M20.5 20.5V11"/><path d="M3.5 11h17"/><path d="M2 11 6.3 4.5h11.4L22 11"/><path d="M9.5 20.5v-5h5v5"/><rect x="4.5" y="13" width="3.5" height="2.8" rx=".5"/><rect x="16" y="13" width="3.5" height="2.8" rx=".5"/>`,
 };
 
 /* ── Groente/fruit-iconen voor de seizoenskalender ──────────────────
@@ -137,6 +139,8 @@ const EMOJI = {
 
 /* Bepaal icoon-sleutel: eerst via emoji, anders via tags/type */
 function keyFor(shop) {
+  // Streekwinkel altijd herkenbaar aan de winkelpui, ongeacht emoji/tags
+  if (shop && shop.type === 'streekwinkel') return 'store';
   if (shop && shop.emoji && EMOJI[shop.emoji]) return EMOJI[shop.emoji];
   const tags = (shop && shop.tags) || [];
   if (tags.includes('kindvriendelijk')) return 'playground';

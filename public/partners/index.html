@@ -3,19 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adverteren, sponsoring & samenwerking — Boerenroute</title>
-  <meta name="description" content="Bereik duizenden bewuste, lokaal-gerichte bezoekers. Licht je boerderijwinkel uit, word merksponsor of zet een gebrande regiokaart op met Boerenroute.">
+  <title>Partner worden — boeren, streekwinkels &amp; merken | Boerenroute</title>
+  <meta name="description" content="Vergroot je zichtbaarheid op het grootste platform voor lokaal eten in Nederland. Eerlijke jaarprijzen, loyaliteitskorting en een introductieaanbieding voor de eerste streekwinkels.">
   <link rel="canonical" href="https://www.boerenroute.nl/partners">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Partner worden van Boerenroute">
-  <meta property="og:description" content="Adverteren, sponsoring en regio-samenwerking op het grootste platform voor lokaal eten in Nederland.">
+  <meta property="og:description" content="Eerlijke jaarprijzen voor boerderijwinkels en streekwinkels. Loyaliteitskorting tot 30%. Eerste 10 streekwinkels krijgen 50% introductiekorting.">
   <meta property="og:url" content="https://www.boerenroute.nl/partners">
   <meta property="og:image" content="https://www.boerenroute.nl/public/og-image.png">
   <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles/main.css">
+  <style>
+    /* ── Partner-pagina-only stijlen ──────────────────────────── */
+    .partner-hero { text-align: center; padding: 2.5rem 1rem 1.5rem; }
+    .partner-hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin-bottom: .75rem; }
+    .partner-hero p { max-width: 620px; margin: 0 auto; color: var(--text-mid); line-height: 1.65; }
+
+    .partner-anchor-nav {
+      display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center;
+      padding: 1rem 1rem 1.5rem; max-width: 720px; margin: 0 auto;
+    }
+    .partner-anchor-nav a {
+      padding: .4rem 1rem; border-radius: 99px; font-size: .875rem; font-weight: 600;
+      background: var(--green-bg); color: var(--green-dark); text-decoration: none;
+      border: 1px solid rgba(53,102,17,.2); transition: background .15s, color .15s;
+    }
+    .partner-anchor-nav a:hover { background: var(--green-dark); color: #fff; }
+    .partner-anchor-nav a.amber {
+      background: var(--amber-bg); color: #92400E; border-color: rgba(184,114,15,.3);
+    }
+    .partner-anchor-nav a.amber:hover { background: var(--amber); color: #fff; }
+
+    .tier-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem; margin: 1.25rem 0;
+    }
+    .tier-card {
+      border: 1.5px solid var(--green-bg); border-radius: 12px; padding: 1.25rem 1.25rem 1rem;
+      position: relative; background: #fff;
+    }
+    .tier-card.featured {
+      border-color: var(--green-mid); box-shadow: 0 2px 12px rgba(53,102,17,.12);
+    }
+    .tier-card.amber-card { border-color: rgba(184,114,15,.35); }
+    .tier-card.amber-card.featured {
+      border-color: var(--amber); box-shadow: 0 2px 12px rgba(184,114,15,.16);
+    }
+    .tier-badge {
+      position: absolute; top: -.7rem; left: 50%; transform: translateX(-50%);
+      background: var(--green-mid); color: #fff; font-size: .72rem; font-weight: 700;
+      padding: .18rem .7rem; border-radius: 99px; white-space: nowrap;
+    }
+    .tier-badge.amber { background: var(--amber); }
+    .tier-price { font-size: 1.6rem; font-weight: 700; color: var(--text); margin: .5rem 0 .1rem; }
+    .tier-price span { font-size: .9rem; font-weight: 400; color: var(--text-mid); }
+    .tier-name { font-weight: 600; color: var(--green-dark); margin-bottom: .75rem; font-size: 1rem; }
+    .tier-card.amber-card .tier-name { color: #92400E; }
+    .tier-free .tier-price { color: var(--text-mid); }
+    .tier-ul { list-style: none; padding: 0; margin: 0; font-size: .875rem; color: var(--text-mid); }
+    .tier-ul li { padding: .28rem 0; padding-left: 1.25rem; position: relative; line-height: 1.45; }
+    .tier-ul li::before { content: "✓"; position: absolute; left: 0; color: var(--green-mid); font-weight: 700; }
+    .tier-card.amber-card .tier-ul li::before { color: var(--amber); }
+    .tier-ul li.muted { color: #bbb; }
+    .tier-ul li.muted::before { content: "–"; color: #ccc; }
+
+    .loyalty-block {
+      background: var(--sand); border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0;
+    }
+    .loyalty-block h3 { font-size: .95rem; margin: 0 0 .75rem; color: var(--text); }
+    .loyalty-table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+    .loyalty-table th, .loyalty-table td {
+      padding: .4rem .6rem; text-align: left; border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .loyalty-table th { font-weight: 600; color: var(--text-mid); font-size: .78rem; }
+    .loyalty-table tr:last-child td { border-bottom: none; }
+    .loyalty-note { font-size: .78rem; color: var(--text-light); margin-top: .6rem; }
+
+    .intro-block {
+      background: #FFFBF0; border: 1.5px solid rgba(184,114,15,.3); border-radius: 12px;
+      padding: 1.25rem 1.5rem; margin: 1.5rem 0;
+    }
+    .intro-block h3 { margin: 0 0 .4rem; font-size: 1.05rem; color: #92400E; }
+    .intro-block p { font-size: .875rem; color: var(--text-mid); margin: 0 0 1rem; line-height: 1.55; }
+    .intro-spots {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: .5rem;
+    }
+    .intro-spot {
+      border: 1.5px dashed rgba(184,114,15,.4); border-radius: 8px; padding: .55rem .75rem;
+      font-size: .8rem; text-align: center; color: var(--amber); font-weight: 600;
+      background: rgba(232,152,28,.06);
+    }
+    .intro-spot.taken {
+      border-style: solid; border-color: var(--green-mid); color: var(--green-dark);
+      background: var(--green-bg); text-decoration: line-through; opacity: .6;
+    }
+    .intro-prices { font-size: .82rem; color: var(--text-mid); margin-top: .9rem; }
+    .intro-prices strong { color: var(--amber); }
+
+    .section-label {
+      display: inline-flex; align-items: center; gap: .4rem; font-size: .8rem; font-weight: 700;
+      letter-spacing: .04em; text-transform: uppercase; padding: .3rem .85rem; border-radius: 99px;
+      margin-bottom: .75rem;
+    }
+    .section-label.green { background: var(--green-bg); color: var(--green-dark); }
+    .section-label.amber { background: var(--amber-bg); color: #92400E; }
+
+    .partner-cta-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem; }
+    .partner-cta-note { font-size: .82rem; color: var(--text-light); }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -32,12 +130,12 @@
       <a href="/">Boerenroute.nl</a> › Partners
     </nav>
 
-    <div class="aanmeld-hero">
+    <div class="partner-hero">
       <h1>Partner worden van Boerenroute</h1>
-      <p>Boerenroute is het grootste platform voor lokaal eten in Nederland. Bereik een <strong>bewust, koopkrachtig en lokaal-gericht publiek</strong> — zonder cookies of opdringerige reclame. Hieronder de mogelijkheden voor boeren, merken en regio's.</p>
+      <p>Het grootste platform voor lokaal eten in Nederland. Eerlijke jaarprijzen, geen verborgen kosten, loyaliteitskorting omdat trouwe partners dat verdienen.</p>
     </div>
 
-    <!-- ── Waarom ─────────────────────────────────────────────── -->
+    <!-- Stats -->
     <div class="over-stats partner-stats">
       <div class="stat-item"><strong>1.600+</strong><span>locaties</span></div>
       <div class="stat-item"><strong>12</strong><span>provincies</span></div>
@@ -45,49 +143,159 @@
       <div class="stat-item"><strong>1.500+</strong><span>vindbare pagina's</span></div>
     </div>
 
-    <!-- ── Voor boeren ────────────────────────────────────────── -->
-    <section class="stichting-section">
-      <h2>🌾 Voor boeren — word uitgelicht</h2>
-      <p>Een basisvermelding is en blijft gratis. Wil je opvallen tussen de rest? Met een uitlichting sta je bovenaan en val je op de kaart op.</p>
-      <div class="adverteer-grid partner-tiers">
-        <div class="adverteer-card">
-          <div class="adverteer-prijs">€9 <span>/maand</span></div>
-          <div class="adverteer-naam">✨ Badge</div>
-          <ul>
+    <!-- Anchor nav -->
+    <nav class="partner-anchor-nav" aria-label="Navigeer naar sectie">
+      <a href="#boeren">🌾 Boerderijwinkels</a>
+      <a href="#streekwinkels" class="amber">🧺 Streekwinkels</a>
+      <a href="#merken">🤝 Merken</a>
+      <a href="#regio">🗺️ Regio's</a>
+      <a href="#contact">✉️ Contact</a>
+    </nav>
+
+    <!-- ── Boerderijwinkels ──────────────────────────────────── -->
+    <section class="stichting-section" id="boeren">
+      <span class="section-label green">🌾 Boerderijwinkels</span>
+      <h2>Word uitgelicht op de kaart</h2>
+      <p>Een basisvermelding is en blijft gratis. Wil je opvallen? Met een premiumvermelding sta je bovenaan, val je op de kaart op en bereik je meer fietsers.</p>
+
+      <div class="tier-grid">
+        <div class="tier-card tier-free">
+          <div class="tier-price">€0 <span>/jaar</span></div>
+          <div class="tier-name">Gratis vermelding</div>
+          <ul class="tier-ul">
+            <li>Zichtbaar op de kaart</li>
+            <li>In de winkellijst</li>
+            <li>Eigen pagina (/winkel/…)</li>
+            <li class="muted">Bovenaan in de lijst</li>
+            <li class="muted">Uitgelicht-badge</li>
+            <li class="muted">Foto &amp; beschrijving</li>
+          </ul>
+        </div>
+        <div class="tier-card">
+          <div class="tier-price">€190 <span>/jaar</span></div>
+          <div class="tier-name">✨ Premium</div>
+          <ul class="tier-ul">
+            <li>Alles van gratis</li>
+            <li>Bovenaan in de lijst</li>
             <li>Uitgelicht-badge op de kaart</li>
-            <li>Altijd bovenaan in de lijst</li>
-            <li>Opvallende markerkleur</li>
+            <li>Foto &amp; uitgebreide beschrijving</li>
+            <li class="muted">Homepage-blok</li>
+            <li class="muted">Nieuwsbrief-vermelding</li>
           </ul>
         </div>
-        <div class="adverteer-card adverteer-featured">
-          <div class="adverteer-label">Populair</div>
-          <div class="adverteer-prijs">€15 <span>/maand</span></div>
-          <div class="adverteer-naam">🌟 Sponsorblok</div>
-          <ul>
-            <li>Alles van Badge</li>
-            <li>Eigen blok op de homepage</li>
-            <li>Foto &amp; uitgebreide tekst</li>
-          </ul>
-        </div>
-        <div class="adverteer-card">
-          <div class="adverteer-prijs">€25 <span>/maand</span></div>
-          <div class="adverteer-naam">🏆 Sponsor+</div>
-          <ul>
-            <li>Alles van Sponsorblok</li>
+        <div class="tier-card featured">
+          <div class="tier-badge">Populair</div>
+          <div class="tier-price">€390 <span>/jaar</span></div>
+          <div class="tier-name">🌟 Uitgelicht</div>
+          <ul class="tier-ul">
+            <li>Alles van Premium</li>
+            <li>Homepage-sponsorblok</li>
+            <li>Vermelding in nieuwsbrief</li>
             <li>Weekend-uitlichting</li>
-            <li>Vermelding in de nieuwsbrief</li>
           </ul>
         </div>
       </div>
+
+      <div class="loyalty-block">
+        <h3>🙏 Loyaliteitskorting — voor trouwe partners</h3>
+        <table class="loyalty-table">
+          <thead>
+            <tr><th>Jaar</th><th>Korting</th><th>Premium</th><th>Uitgelicht</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Jaar 1</td><td>—</td><td>€190</td><td>€390</td></tr>
+            <tr><td>Jaar 2</td><td>−10%</td><td>€171</td><td>€351</td></tr>
+            <tr><td>Jaar 3</td><td>−20%</td><td>€152</td><td>€312</td></tr>
+            <tr><td>Jaar 4+</td><td>−30%</td><td>€133</td><td>€273</td></tr>
+          </tbody>
+        </table>
+        <p class="loyalty-note">Korting loopt automatisch op zolang je partner blijft. Opzeggen en later terugkomen reset de teller — eerlijk is eerlijk.</p>
+      </div>
+
       <div class="partner-cta-row">
         <a href="/aanmelden" class="btn btn-green">🌾 Meld je winkel aan</a>
         <span class="partner-cta-note">Nog niet op de kaart? Aanmelden is gratis — upgraden kan altijd later.</span>
       </div>
     </section>
 
-    <!-- ── Voor merken ────────────────────────────────────────── -->
-    <section class="stichting-section">
-      <h2>🤝 Voor merken — sponsoring &amp; adverteren</h2>
+    <!-- ── Streekwinkels ─────────────────────────────────────── -->
+    <section class="stichting-section" id="streekwinkels">
+      <span class="section-label amber">🧺 Streekwinkels</span>
+      <h2>Streekwinkel op de kaart — een nieuw segment</h2>
+      <p>Kaasspeciaalzaak, delicatessenwinkel, streekmarkt of regionaal warenhuis? Als ≥&nbsp;50% van je assortiment van lokale of regionale boeren afkomstig is, hoor jij op Boerenroute. Streekwinkels zijn een apart, betaald segment — zichtbaar voor de fietser die op zoek is naar eerlijk streeketen.</p>
+      <p style="font-size:.875rem;color:var(--text-mid)"><strong>Toelating:</strong> ≥ 50% lokaal/regionaal aanbod of gecertificeerd streekproduct-keurmerk. Geen supermarkten of franchiseketens.</p>
+
+      <div class="tier-grid">
+        <div class="tier-card amber-card">
+          <div class="tier-price" style="color:#92400E">€290 <span>/jaar</span></div>
+          <div class="tier-name">🧺 Basis</div>
+          <ul class="tier-ul">
+            <li>Amber-marker op de kaart</li>
+            <li>Eigen streekwinkel-chip-filter</li>
+            <li>Winkelkaart met producten</li>
+            <li>Eigen pagina (/winkel/…)</li>
+            <li class="muted">Homepage-blok</li>
+            <li class="muted">Nieuwsbrief-vermelding</li>
+          </ul>
+        </div>
+        <div class="tier-card amber-card featured">
+          <div class="tier-badge amber">Aanbevolen</div>
+          <div class="tier-price" style="color:#92400E">€590 <span>/jaar</span></div>
+          <div class="tier-name">⭐ Uitgelicht</div>
+          <ul class="tier-ul">
+            <li>Alles van Basis</li>
+            <li>Bovenaan in de streekwinkellijst</li>
+            <li>Homepage-sponsorblok</li>
+            <li>Vermelding in nieuwsbrief</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="loyalty-block" style="background:#FFFBF0;border:1px solid rgba(184,114,15,.2)">
+        <h3>🙏 Loyaliteitskorting streekwinkels</h3>
+        <table class="loyalty-table">
+          <thead>
+            <tr><th>Jaar</th><th>Korting</th><th>Basis</th><th>Uitgelicht</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Jaar 1</td><td>—</td><td>€290</td><td>€590</td></tr>
+            <tr><td>Jaar 2</td><td>−10%</td><td>€261</td><td>€531</td></tr>
+            <tr><td>Jaar 3</td><td>−20%</td><td>€232</td><td>€472</td></tr>
+            <tr><td>Jaar 4+</td><td>−30%</td><td>€203</td><td>€413</td></tr>
+          </tbody>
+        </table>
+        <p class="loyalty-note">Trouw zijn loont. Zolang je partner blijft loopt de korting automatisch op tot maximaal 30%.</p>
+      </div>
+
+      <!-- Intro block -->
+      <div class="intro-block">
+        <h3>🎉 Introductieaanbieding — eerste 10 streekwinkels</h3>
+        <p>We bouwen dit segment op nul. Eerlijk betekent: de eerste 10 streekwinkels die instappen betalen het eerste jaar 50% van de normale prijs. Geen verborgen addertje — als alle 10 spots bezet zijn, verdwijnt dit aanbod. Je ziet hieronder exact hoeveel plekken er nog vrij zijn.</p>
+        <div class="intro-spots">
+          <div class="intro-spot">Spot 1 — vrij</div>
+          <div class="intro-spot">Spot 2 — vrij</div>
+          <div class="intro-spot">Spot 3 — vrij</div>
+          <div class="intro-spot">Spot 4 — vrij</div>
+          <div class="intro-spot">Spot 5 — vrij</div>
+          <div class="intro-spot">Spot 6 — vrij</div>
+          <div class="intro-spot">Spot 7 — vrij</div>
+          <div class="intro-spot">Spot 8 — vrij</div>
+          <div class="intro-spot">Spot 9 — vrij</div>
+          <div class="intro-spot">Spot 10 — vrij</div>
+        </div>
+        <p class="intro-prices">Introductieprijs jaar 1: <strong>Basis €145</strong> (normaal €290) · <strong>Uitgelicht €295</strong> (normaal €590). Daarna gelden de normale tarieven inclusief loyaliteitsopbouw.</p>
+      </div>
+
+      <div class="partner-cta-row">
+        <a href="#contact" class="btn" style="background:var(--amber);color:#fff;border:none">🧺 Aanmelden als streekwinkel</a>
+        <span class="partner-cta-note">Kies in het contactformulier hieronder "Streekwinkel — Basis" of "Streekwinkel — Uitgelicht".</span>
+      </div>
+    </section>
+
+    <!-- ── Merken ────────────────────────────────────────────── -->
+    <section class="stichting-section" id="merken">
+      <span class="section-label green">🤝 Merken</span>
+      <h2>Sponsoring &amp; adverteren</h2>
       <p>Past jouw merk bij lokaal, duurzaam en buiten zijn? Denk aan e-bikes, koeltassen, streekproducten of een coöperatieve bank. We werken met nette, niet-opdringerige plekken die bij de sfeer passen:</p>
       <ul class="stichting-list">
         <li><strong>Sponsorplek op de homepage</strong> — subtiel, "mede mogelijk gemaakt door";</li>
@@ -97,9 +305,10 @@
       </ul>
     </section>
 
-    <!-- ── Voor regio's ──────────────────────────────────────── -->
-    <section class="stichting-section">
-      <h2>🗺️ Voor regio's &amp; toerisme</h2>
+    <!-- ── Regio's ───────────────────────────────────────────── -->
+    <section class="stichting-section" id="regio">
+      <span class="section-label green">🗺️ Regio's &amp; toerisme</span>
+      <h2>Gebrande regiokaart op maat</h2>
       <p>Ben je een provincie, VVV, gemeente of streekorganisatie? We bouwen een <strong>gebrande regiokaart met fietsroutes</strong> op maat — in jouw huisstijl, met de boerderijwinkels en streekproducten van jouw gebied. Een kant-en-klare manier om plattelandstoerisme en korte ketens te promoten, zonder zelf techniek te bouwen.</p>
     </section>
 
@@ -114,17 +323,27 @@
           <input type="text" id="p-naam" name="naam" required>
         </div>
         <div class="form-row">
-          <label for="p-org">Bedrijf / organisatie</label>
+          <label for="p-org">Bedrijf / winkel</label>
           <input type="text" id="p-org" name="organisatie">
         </div>
         <div class="form-row">
-          <label for="p-type">Ik ben *</label>
+          <label for="p-type">Ik ben / ik wil *</label>
           <select id="p-type" name="type" required>
             <option value="" disabled selected>Kies…</option>
-            <option value="Boer / verkooppunt">Boer / verkooppunt</option>
-            <option value="Merk / adverteerder">Merk / adverteerder</option>
-            <option value="Regio / VVV / gemeente">Regio / VVV / gemeente</option>
-            <option value="Anders">Anders</option>
+            <optgroup label="Boerderijwinkel">
+              <option value="Boerderijwinkel — gratis aanmelden">Boerderijwinkel — gratis aanmelden</option>
+              <option value="Boerderijwinkel — Premium (€190/jr)">Boerderijwinkel — Premium (€190/jr)</option>
+              <option value="Boerderijwinkel — Uitgelicht (€390/jr)">Boerderijwinkel — Uitgelicht (€390/jr)</option>
+            </optgroup>
+            <optgroup label="Streekwinkel">
+              <option value="Streekwinkel — Basis (€290/jr, nu €145 intro)">Streekwinkel — Basis (€290/jr, nu €145 intro)</option>
+              <option value="Streekwinkel — Uitgelicht (€590/jr, nu €295 intro)">Streekwinkel — Uitgelicht (€590/jr, nu €295 intro)</option>
+            </optgroup>
+            <optgroup label="Overig">
+              <option value="Merk / adverteerder">Merk / adverteerder</option>
+              <option value="Regio / VVV / gemeente">Regio / VVV / gemeente</option>
+              <option value="Anders / vraag">Anders / vraag</option>
+            </optgroup>
           </select>
         </div>
         <div class="form-row">
@@ -133,7 +352,7 @@
         </div>
         <div class="form-row">
           <label for="p-bericht">Bericht</label>
-          <textarea id="p-bericht" name="bericht" placeholder="Waar denk je aan?"></textarea>
+          <textarea id="p-bericht" name="bericht" placeholder="Waar denk je aan? Stel gerust een vraag."></textarea>
         </div>
         <button type="submit" class="btn btn-green aanmeld-submit">Verstuur aanvraag</button>
       </form>
@@ -156,7 +375,7 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand">
+      <div class="footer-col footer-brand">
         <a href="/" class="footer-logo">
           <svg class="logo-mark" width="22" height="26" viewBox="0 0 26 30" fill="none" aria-hidden="true"><path d="M13 1.4C6.5 1.4 1.4 6.4 1.4 12.5c0 6.7 8.3 14.6 11 16.9.35.3.85.3 1.2 0 2.7-2.3 11-10.2 11-16.9C24.6 6.4 19.5 1.4 13 1.4Z" fill="#FBEFD6" stroke="#356611" stroke-width="1.7"/><path d="M13 19V9.2" stroke="#356611" stroke-width="1.7" stroke-linecap="round"/><path d="M13 14.2C9.9 14.4 7.4 12.3 7 9.4c3.1-.2 5.6 1.9 6 4.8Z" fill="#5E9420"/><path d="M13 11.4c2.6.1 4.8-1.7 5.2-4.3-2.6-.1-4.8 1.7-5.2 4.3Z" fill="#E8981C"/></svg>
           <span class="footer-logo-text">Boeren<span class="lt-accent">route</span></span>
@@ -166,6 +385,32 @@
           <a href="https://www.facebook.com/profile.php?id=61590474546602" target="_blank" rel="noopener" class="footer-social-link" aria-label="Boerenroute op Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg></a>
           <a href="https://www.instagram.com/boerenroute.nl" target="_blank" rel="noopener" class="footer-social-link" aria-label="Boerenroute op Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
         </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Ontdekken</h4>
+        <ul class="footer-links">
+          <li><a href="/eierautomaten">Eierautomaten</a></li>
+          <li><a href="/melktap">Melktap</a></li>
+          <li><a href="/zelfpluk">Zelfpluk</a></li>
+          <li><a href="/blog/">Verhalen</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Regio's</h4>
+        <ul class="footer-links">
+          <li><a href="/regio/noord-brabant">Noord-Brabant</a></li>
+          <li><a href="/regio/gelderland">Gelderland</a></li>
+          <li><a href="/regio/utrecht">Utrecht</a></li>
+          <li><a href="/regio/overijssel">Overijssel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Over ons</h4>
+        <ul class="footer-links">
+          <li><a href="/partners">Partners &amp; adverteren</a></li>
+          <li><a href="/aanmelden">Winkel aanmelden</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">

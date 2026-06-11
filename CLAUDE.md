@@ -180,7 +180,7 @@ Elke winkel/automaat in `verifiedShops.json` heeft dit formaat:
   id: 5,                       // uniek, oplopend nummer
   emoji: "🧀",
   name: "Siebe's Kaas",
-  type: "winkel",              // winkel | automaat | zelfpluk | markt | onderweg
+  type: "winkel",              // winkel | automaat | zelfpluk | markt | onderweg | streekwinkel
   premium: false,              // true = uitgelicht (betaalde plek)
   seasonal: false,             // true = seizoensgebonden aanbod
   lat: 51.6269512,

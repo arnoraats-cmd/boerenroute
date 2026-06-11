@@ -367,6 +367,8 @@ function _cardHTML(shop) {
   const isTopRated = shop.googleRating >= 4.8 && (shop.googleReviews || 0) >= 5;
 
   const badges = [];
+  if (shop.type === 'streekwinkel')
+    badges.push('<span class="shop-badge badge-streekwinkel" title="Verkoopt producten van lokale boeren">🧺 Streekwinkel</span>');
   if (shop.premium)
     badges.push('<span class="shop-badge badge-premium">✨ Uitgelicht</span>');
   if (isTopRated)

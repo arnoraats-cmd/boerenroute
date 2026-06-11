@@ -9,22 +9,24 @@ import { analyzeRoute } from './routeScore.js';
 
 /* Kleuren per type (zie CLAUDE.md) */
 const COLOR = {
-  winkel:   '#64748B', // grijs
-  automaat: '#2563EB', // blauw
-  zelfpluk: '#E11D48', // aardbei-rood
-  markt:    '#92400E', // bruin
-  onderweg: '#7C3AED', // paars
-  route:    '#3B6D11', // groen (in route)
+  winkel:      '#64748B', // grijs
+  automaat:    '#2563EB', // blauw
+  zelfpluk:    '#E11D48', // aardbei-rood
+  markt:       '#92400E', // bruin
+  onderweg:    '#7C3AED', // paars
+  streekwinkel:'#B8720F', // amber/goud — betaald commercieel segment
+  route:       '#3B6D11', // groen (in route)
 };
 
 /* Volgorde + labels voor de kaartlegenda */
 const LEGEND = [
-  ['winkel',   'Winkel'],
-  ['automaat', 'Automaat'],
-  ['zelfpluk', 'Zelfpluk'],
-  ['markt',    'Markt'],
-  ['onderweg', 'Onderweg'],
-  ['route',    'In route'],
+  ['winkel',      'Winkel'],
+  ['automaat',    'Automaat'],
+  ['zelfpluk',    'Zelfpluk'],
+  ['markt',       'Markt'],
+  ['streekwinkel','Streekwinkel'],
+  ['onderweg',    'Onderweg'],
+  ['route',       'In route'],
 ];
 
 let _map        = null;
