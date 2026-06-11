@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boerenroute — Partner worden</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-dark:  #1C4109;
+      --green-mid:   #356611;
+      --green-light: #5E9420;
+      --green-bg:    #E7F0D6;
+      --amber:       #B8720F;
+      --amber-light: #E8981C;
+      --amber-bg:    #FBEFD6;
+      --sand:        #F8F4EC;
+      --text:        #1A1A18;
+      --text-mid:    #555550;
+    }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.5;
+    }
+
+    /* ── Print-layout: A4 staand ──────────────────────────── */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 14mm 16mm 12mm;
+      background: #fff;
+      position: relative;
+    }
+
+    @media print {
+      @page { size: A4 portrait; margin: 0; }
+      body { background: #fff; }
+      .page { width: 100%; min-height: 100vh; padding: 12mm 14mm 10mm; }
+      .no-print { display: none !important; }
+    }
+
+    /* ── Header ───────────────────────────────────────────── */
+    .flyer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--green-mid);
+      margin-bottom: 14px;
+    }
+    .flyer-logo {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; color: var(--text);
+    }
+    .flyer-logo-text {
+      font-family: 'Lora', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -.01em;
+    }
+    .flyer-logo-text span { color: var(--green-light); }
+    .flyer-url {
+      font-size: .78rem;
+      color: var(--green-mid);
+      font-weight: 600;
+    }
+
+    /* ── Hero-blok ────────────────────────────────────────── */
+    .flyer-hero {
+      background: var(--green-dark);
+      color: #fff;
+      border-radius: 10px;
+      padding: 16px 20px 14px;
+      margin-bottom: 14px;
+    }
+    .flyer-hero-eyebrow {
+      font-size: .72rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: rgba(255,255,255,.6);
+      margin-bottom: 4px;
+    }
+    .flyer-hero-title {
+      font-family: 'Lora', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+    .flyer-hero-sub {
+      font-size: .85rem;
+      color: rgba(255,255,255,.8);
+      max-width: 480px;
+    }
+    .flyer-stats {
+      display: flex;
+      gap: 20px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,.15);
+    }
+    .flyer-stat strong {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--amber-light);
+      line-height: 1.1;
+    }
+    .flyer-stat span {
+      font-size: .72rem;
+      color: rgba(255,255,255,.65);
+    }
+
+    /* ── Wat krijg je ─────────────────────────────────────── */
+    .flyer-section-title {
+      font-family: 'Lora', serif;
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 8px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--green-bg);
+    }
+
+    .flyer-tiers {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .flyer-tier {
+      border: 1.5px solid var(--green-bg);
+      border-radius: 8px;
+      padding: 10px 12px;
+      position: relative;
+    }
+    .flyer-tier.featured {
+      border-color: var(--green-mid);
+      background: var(--green-bg);
+    }
+    .flyer-tier-badge {
+      position: absolute;
+      top: -8px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--green-mid);
+      color: #fff;
+      font-size: .62rem;
+      font-weight: 700;
+      padding: 1px 8px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+    .flyer-tier-price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      line-height: 1;
+      margin-bottom: 1px;
+    }
+    .flyer-tier-price span {
+      font-size: .72rem;
+      font-weight: 400;
+      color: var(--text-mid);
+    }
+    .flyer-tier-name {
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--text-mid);
+      margin-bottom: 6px;
+    }
+    .flyer-tier-ul {
+      list-style: none;
+      font-size: .75rem;
+      color: var(--text-mid);
+    }
+    .flyer-tier-ul li {
+      padding: 2px 0;
+      padding-left: 12px;
+      position: relative;
+    }
+    .flyer-tier-ul li::before {
+      content: "✓";
+      position: absolute; left: 0;
+      color: var(--green-mid);
+      font-weight: 700;
+    }
+    .flyer-tier-ul li.muted { color: #bbb; }
+    .flyer-tier-ul li.muted::before { content: "–"; color: #ddd; }
+
+    /* ── Loyaliteit ───────────────────────────────────────── */
+    .flyer-loyalty {
+      background: var(--sand);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .flyer-loyalty-text {
+      flex: 1;
+      font-size: .8rem;
+      color: var(--text-mid);
+      line-height: 1.5;
+    }
+    .flyer-loyalty-text strong { color: var(--text); }
+    .flyer-loyalty-table {
+      font-size: .75rem;
+      border-collapse: collapse;
+      white-space: nowrap;
+    }
+    .flyer-loyalty-table th, .flyer-loyalty-table td {
+      padding: 2px 8px;
+      text-align: left;
+    }
+    .flyer-loyalty-table th {
+      font-weight: 600;
+      color: var(--text-mid);
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+
+    /* ── Wat het oplevert ─────────────────────────────────── */
+    .flyer-value {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .flyer-value-card {
+      background: var(--amber-bg);
+      border-radius: 8px;
+      padding: 10px 12px;
+      border: 1px solid rgba(184,114,15,.2);
+    }
+    .flyer-value-card h4 {
+      font-size: .78rem;
+      font-weight: 700;
+      color: #92400E;
+      margin-bottom: 4px;
+    }
+    .flyer-value-card p {
+      font-size: .75rem;
+      color: var(--text-mid);
+      line-height: 1.45;
+    }
+
+    /* ── CTA / Contact ────────────────────────────────────── */
+    .flyer-cta {
+      background: var(--green-mid);
+      color: #fff;
+      border-radius: 10px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .flyer-cta-left h3 {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+    .flyer-cta-left p {
+      font-size: .78rem;
+      color: rgba(255,255,255,.8);
+    }
+    .flyer-cta-right {
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .flyer-cta-right a {
+      display: block;
+      font-size: .85rem;
+      font-weight: 700;
+      color: var(--amber-light);
+      text-decoration: none;
+    }
+    .flyer-cta-right a:hover { text-decoration: underline; }
+    .flyer-cta-right .flyer-cta-sub {
+      display: block;
+      font-size: .72rem;
+      color: rgba(255,255,255,.65);
+      margin-top: 2px;
+    }
+
+    /* ── Print-knop (alleen op scherm) ───────────────────── */
+    .print-bar {
+      text-align: center;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .print-btn {
+      background: var(--green-mid);
+      color: #fff;
+      border: none;
+      padding: .7rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .print-btn:hover { background: var(--green-dark); }
+    .print-note {
+      font-size: .82rem;
+      color: #888;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar no-print">
+    <button class="print-btn" onclick="window.print()">🖨️ Afdrukken als PDF</button>
+    <p class="print-note">Tip: kies "PDF opslaan" als printer voor een digitale versie</p>
+  </div>
+
+  <div class="page">
+
+    <!-- Header -->
+    <header class="flyer-header">
+      <a href="https://www.boerenroute.nl" class="flyer-logo">
+        <svg width="22" height="26" viewBox="0 0 26 30" fill="none" aria-hidden="true">
+          <path d="M13 1.4C6.5 1.4 1.4 6.4 1.4 12.5c0 6.7 8.3 14.6 11 16.9.35.3.85.3 1.2 0 2.7-2.3 11-10.2 11-16.9C24.6 6.4 19.5 1.4 13 1.4Z" fill="#FBEFD6" stroke="#356611" stroke-width="1.7"/>
+          <path d="M13 19V9.2" stroke="#356611" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M13 14.2C9.9 14.4 7.4 12.3 7 9.4c3.1-.2 5.6 1.9 6 4.8Z" fill="#5E9420"/>
+          <path d="M13 11.4c2.6.1 4.8-1.7 5.2-4.3-2.6-.1-4.8 1.7-5.2 4.3Z" fill="#E8981C"/>
+        </svg>
+        <span class="flyer-logo-text">Boeren<span>route.nl</span></span>
+      </a>
+      <span class="flyer-url">www.boerenroute.nl/partners</span>
+    </header>
+
+    <!-- Hero -->
+    <div class="flyer-hero">
+      <p class="flyer-hero-eyebrow">Voor boerderijwinkels &amp; verkooppunten</p>
+      <h1 class="flyer-hero-title">Val op tussen 1.600+ locaties —<br>bereik meer fietsers en lokale kopers</h1>
+      <p class="flyer-hero-sub">Boerenroute.nl is het grootste gratis platform voor boerderijwinkels, eierautomaten en zelfpluktuinen in Nederland. Duizenden bewuste kopers zoeken hier elke maand naar verse producten bij hen in de buurt.</p>
+      <div class="flyer-stats">
+        <div class="flyer-stat"><strong>1.600+</strong><span>geverifieerde locaties</span></div>
+        <div class="flyer-stat"><strong>12</strong><span>provincies</span></div>
+        <div class="flyer-stat"><strong>4,7 ★</strong><span>gem. winkelbeoordeling</span></div>
+        <div class="flyer-stat"><strong>€0</strong><span>gratis vermelding</span></div>
+      </div>
+    </div>
+
+    <!-- Pakketten -->
+    <h2 class="flyer-section-title">Pakketten — transparante jaarprijzen</h2>
+    <div class="flyer-tiers">
+      <div class="flyer-tier">
+        <div class="flyer-tier-price">€0 <span>/jaar</span></div>
+        <div class="flyer-tier-name">Gratis vermelding</div>
+        <ul class="flyer-tier-ul">
+          <li>Op de kaart &amp; in de lijst</li>
+          <li>Eigen winkel-pagina</li>
+          <li class="muted">Bovenaan in de lijst</li>
+          <li class="muted">Uitgelicht-badge</li>
+        </ul>
+      </div>
+      <div class="flyer-tier">
+        <div class="flyer-tier-price">€190 <span>/jaar</span></div>
+        <div class="flyer-tier-name">✨ Premium</div>
+        <ul class="flyer-tier-ul">
+          <li>Bovenaan in de lijst</li>
+          <li>Uitgelicht-badge op kaart</li>
+          <li>Foto &amp; uitgebreide tekst</li>
+          <li class="muted">Homepage-blok</li>
+        </ul>
+      </div>
+      <div class="flyer-tier featured">
+        <div class="flyer-tier-badge">Populair</div>
+        <div class="flyer-tier-price">€390 <span>/jaar</span></div>
+        <div class="flyer-tier-name">🌟 Uitgelicht</div>
+        <ul class="flyer-tier-ul">
+          <li>Alles van Premium</li>
+          <li>Homepage-sponsorblok</li>
+          <li>Nieuwsbrief-vermelding</li>
+          <li>Weekend-uitlichting</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Loyaliteit -->
+    <div class="flyer-loyalty">
+      <div class="flyer-loyalty-text">
+        <strong>🙏 Loyaliteitskorting — voor trouwe partners</strong><br>
+        Hoe langer je meedoet, hoe minder je betaalt. Tot maximaal 30% korting vanaf jaar 4. Transparant en automatisch — geen gedoe.
+      </div>
+      <table class="flyer-loyalty-table">
+        <thead><tr><th>Jaar</th><th>Korting</th><th>Premium</th><th>Uitgelicht</th></tr></thead>
+        <tbody>
+          <tr><td>Jaar 1</td><td>—</td><td>€190</td><td>€390</td></tr>
+          <tr><td>Jaar 2</td><td>−10%</td><td>€171</td><td>€351</td></tr>
+          <tr><td>Jaar 3</td><td>−20%</td><td>€152</td><td>€312</td></tr>
+          <tr><td>Jaar 4+</td><td>−30%</td><td>€133</td><td>€273</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Wat het oplevert -->
+    <h2 class="flyer-section-title">Wat levert het op?</h2>
+    <div class="flyer-value">
+      <div class="flyer-value-card">
+        <h4>🗺️ Meer bezoekers via de kaart</h4>
+        <p>Uitgelichte winkels staan bovenaan in de lijst en vallen op met een grotere, opvallende marker. Fietsers die in de buurt zoeken, zien jou als eerste.</p>
+      </div>
+      <div class="flyer-value-card">
+        <h4>📍 Vindbaar in heel Nederland</h4>
+        <p>Elke winkel krijgt een eigen SEO-pagina (/winkel/jouw-naam). Mensen die Googelen op "boerderijwinkel [jouw gemeente]" landen direct bij jou.</p>
+      </div>
+      <div class="flyer-value-card">
+        <h4>🚴 In fietsroutes van anderen</h4>
+        <p>Bezoekers voegen jouw winkel toe aan hun route. Zo bereik je fietsers die normaal niet langs jou zouden komen — ook uit andere regio's.</p>
+      </div>
+      <div class="flyer-value-card">
+        <h4>📧 Nieuwsbrief &amp; homepage</h4>
+        <p>Uitgelicht-partners worden vermeld in de nieuwsbrief en op de homepage — direct zichtbaar voor alle terugkerende bezoekers.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="flyer-cta">
+      <div class="flyer-cta-left">
+        <h3>Interesse? Meld je aan via de website</h3>
+        <p>Of neem direct contact op — we helpen je graag op weg.</p>
+      </div>
+      <div class="flyer-cta-right">
+        <a href="https://www.boerenroute.nl/partners">boerenroute.nl/partners</a>
+        <a href="mailto:arnoraats@gmail.com" style="color:rgba(255,255,255,.8);font-weight:400;font-size:.78rem;margin-top:2px">arnoraats@gmail.com</a>
+        <span class="flyer-cta-sub">Betaling via bunq.me/Boerenroute</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
