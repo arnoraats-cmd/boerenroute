@@ -43,3 +43,6 @@
 # Oude stichting-URL doorverwijzen naar de nieuwe partners-pagina
 /stichting          /partners                       301
 /stichting/         /partners                       301
+
+/updates            /public/updates/index.html      200
+/updates/           /public/updates/index.html      200
