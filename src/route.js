@@ -359,9 +359,7 @@ function _showGpxTip() {
   const existing = document.getElementById('gpxAffiliateTip');
   if (existing) { existing.hidden = false; return; }
 
-  /* AFFILIATE: vervang deze URL door je Awin-link zodra je account actief is.
-     Formaat: https://www.awin1.com/cread.php?awinmid=10197&awinaffid=JOUW_ID&p=... */
-  const AFFILIATE_URL = 'https://www.bol.com/nl/nl/s/?searchtext=garmin+edge+fietscomputer';
+  const AFFILIATE_URL = 'https://partner.bol.com/click/click?p=2&t=url&s=1526050&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dedge%20garmin&name=Bol';
 
   const tip = document.createElement('div');
   tip.id        = 'gpxAffiliateTip';
