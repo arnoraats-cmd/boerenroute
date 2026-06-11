@@ -2071,8 +2071,8 @@
 
   .footer-sponsor a:hover { color: rgba(255,255,255,.75); }
 
-  .footer-cols { display: flex; gap: 24px; flex-wrap: nowrap; }
-  .footer-col  { flex: 1; min-width: 0; }
+  .footer-cols { display: flex; gap: 20px; flex-wrap: wrap; }
+  .footer-col  { flex: 1 1 120px; min-width: 0; }
 
   .footer-col h3 {
     font-family: var(--sans);
