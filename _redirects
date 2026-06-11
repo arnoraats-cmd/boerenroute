@@ -46,3 +46,12 @@
 
 /updates            /public/updates/index.html      200
 /updates/           /public/updates/index.html      200
+
+/fietsroute-asperges        /public/fietsroute-asperges/index.html      200
+/fietsroute-asperges/       /public/fietsroute-asperges/index.html      200
+/fietsroute-aardbeien       /public/fietsroute-aardbeien/index.html     200
+/fietsroute-aardbeien/      /public/fietsroute-aardbeien/index.html     200
+/kaasboerderij-bezoeken     /public/kaasboerderij-bezoeken/index.html   200
+/kaasboerderij-bezoeken/    /public/kaasboerderij-bezoeken/index.html   200
+/boerderijijs-nederland     /public/boerderijijs-nederland/index.html   200
+/boerderijijs-nederland/    /public/boerderijijs-nederland/index.html   200
