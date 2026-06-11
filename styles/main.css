@@ -2186,6 +2186,13 @@
   }
   .gpx-tip-close:hover { color: var(--text); }
 
+  /* Bol.com affiliate banner onder winkellijst */
+  .bol-banner {
+    display: flex; justify-content: center;
+    padding: 1.5rem 1rem 2rem;
+  }
+  .bol-banner img[width="300"] { border-radius: 8px; max-width: 100%; }
+
   /* Subtiele steun-regel onder een geladen route */
   .route-donate {
     text-align: center;
