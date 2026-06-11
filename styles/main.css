@@ -4066,7 +4066,18 @@
   @media (max-width: 900px) {
     :root { --header-h: 106px; }
 
-    .site-header { height: auto; }
+    /* Header altijd vast bovenaan — geeft de gebruiker altijd een zichtbare escape.
+       sticky is onbetrouwbaar op iOS Safari als de pagina niet scrollt (map-active). */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: auto;
+    }
+
+    /* Compenseer voor de fixed header zodat pagina-inhoud er niet onder schuift */
+    body { padding-top: var(--header-h); }
 
     .header-inner {
       flex-wrap: wrap;

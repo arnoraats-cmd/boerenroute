@@ -249,6 +249,17 @@ OSM-geladen winkels krijgen `id` vanaf 100 (zodat ze niet botsen met de handmati
 
 ---
 
+### Header (altijd zichtbaar)
+
+`.site-header` is op mobiel `position: fixed` (niet `sticky`) — geeft altijd een zichtbare escape.  
+- z-index: 100 (boven alles)
+- Hoogte: 106px op mobiel (`--header-h`)  
+- Inhoud: logo (link naar `/` = volledige reset naar beginscherm) + nav-tabs (Kaart · Route · Stempelkaart · Meer▾)
+- `body` heeft `padding-top: var(--header-h)` zodat pagina-inhoud niet achter de header schuift
+- De JS (`getHeaderH()`) leest `--header-h` en positioneert toolbar en kaart correct
+
+---
+
 ### App-fasen
 
 | Fase | Trigger | Zichtbaar |
