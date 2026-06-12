@@ -4123,7 +4123,9 @@
       top: auto;
       height: 50vh;
       min-height: 280px;
+      pointer-events: none; /* voorkomt scroll-trap: Leaflet vangt geen touch op de landingspagina */
     }
+    body.map-active .map-section { pointer-events: auto; }
     .list-section {
       position: relative;
       max-height: none;
