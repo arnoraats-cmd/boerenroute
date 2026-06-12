@@ -141,7 +141,7 @@ export function initBottomSheet() {
       const isLandscape = window.innerHeight < 480;
       sheet.style.cssText = shared + `height: ${Math.round(h * (isLandscape ? 0.38 : 0.52))}px;`;
     } else {
-      sheet.style.cssText = shared + `height: calc(100dvh - ${getHeaderH()}px);`;
+      sheet.style.cssText = shared + `height: calc(100dvh - ${getHeaderH() + toolbarH()}px);`;
     }
   }
 
