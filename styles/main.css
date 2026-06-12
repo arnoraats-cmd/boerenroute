@@ -4119,6 +4119,7 @@
     }
     .map-section {
       position: relative;
+      z-index: 1; /* stacking context: houdt Leaflet-tiles (z-index 200+) opgesloten zodat ze niet boven de fixed header (z-index 100) uitkomen */
       top: auto;
       height: 50vh;
       min-height: 280px;
