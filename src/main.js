@@ -19,13 +19,13 @@ initBottomSheet();
 window.addEventListener('boerenroute:relayout', () => invalidateSize());
 
 
-/* ── Stempelkaart-badge in nav bijwerken ─────────────────── */
+/* ── Stempelkaart-badge in nav + bottom nav bijwerken ───── */
 function _updateStampBadge() {
-  const badge = document.getElementById('stampBadge');
-  if (!badge) return;
   const n = getCount();
-  badge.textContent = n;
-  badge.hidden = n === 0;
+  for (const id of ['stampBadge', 'bnStampBadge']) {
+    const el = document.getElementById(id);
+    if (el) { el.textContent = n; el.hidden = n === 0; }
+  }
 }
 _updateStampBadge();
 document.addEventListener('boerenroute:stampupdate', _updateStampBadge);
@@ -134,6 +134,10 @@ document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
 
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    /* Sync bottom nav active state */
+    document.querySelectorAll('.bn-btn[data-page]').forEach(b => {
+      b.classList.toggle('active', b.dataset.page === page);
+    });
     document.body.dataset.page = page; // CSS gebruikt dit o.a. om de route-FAB te verbergen
 
     /* Hero + landingsbanners weg zodra je naar een tab navigeert,
@@ -161,6 +165,29 @@ document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
 
     /* Naar boven zodat de gekozen sectie meteen in beeld staat */
     window.scrollTo({ top: 0, behavior: 'auto' });
+  });
+});
+
+/* ── Bottom nav ──────────────────────────────────────────── */
+document.querySelectorAll('.bn-btn[data-page]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelector(`.nav-btn[data-page="${btn.dataset.page}"]`)?.click();
+  });
+});
+
+const _bnMeerBtn   = document.getElementById('bnMeerBtn');
+const _bnMeerPanel = document.getElementById('bnMeerPanel');
+_bnMeerBtn?.addEventListener('click', e => {
+  e.stopPropagation();
+  const open = !_bnMeerPanel.hidden;
+  _bnMeerPanel.hidden = open;
+  _bnMeerBtn.setAttribute('aria-expanded', String(!open));
+});
+document.addEventListener('click', () => { if (_bnMeerPanel) _bnMeerPanel.hidden = true; });
+document.querySelectorAll('.bn-meer-item').forEach(item => {
+  item.addEventListener('click', () => {
+    if (_bnMeerPanel) _bnMeerPanel.hidden = true;
+    document.querySelector(`.nav-btn[data-page="${item.dataset.page}"]`)?.click();
   });
 });
 

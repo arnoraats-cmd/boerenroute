@@ -4148,47 +4148,41 @@
     a.regio-shop-link, a.blog-card { min-height: 44px; }
   }
 
-  /* Notch / home-indicator: houd zwevende knoppen vrij van de schermranden */
-  .float-tip   { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
-  .route-fab   { bottom: calc(22px + env(safe-area-inset-bottom, 0px)); }
-  .br-toast    { bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
+  /* Notch / home-indicator */
   .site-footer { padding-bottom: env(safe-area-inset-bottom, 0px); }
 
-  @media (max-width: 900px) {
-    :root { --header-h: 106px; }
+  /* Desktop: safe-area voor zwevende knoppen */
+  @media (min-width: 901px) {
+    .float-tip { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+    .route-fab { bottom: calc(22px + env(safe-area-inset-bottom, 0px)); }
+    .br-toast  { bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
+  }
 
-    /* Header altijd vast bovenaan — geeft de gebruiker altijd een zichtbare escape.
-       sticky is onbetrouwbaar op iOS Safari als de pagina niet scrollt (map-active). */
+  /* Mobiel: zwevende knoppen boven de bottom nav */
+  @media (max-width: 900px) {
+    :root { --bottomnav-h: 60px; }
+    body { padding-bottom: calc(var(--bottomnav-h) + env(safe-area-inset-bottom, 0px)); }
+    .float-tip { bottom: calc(var(--bottomnav-h) + 12px + env(safe-area-inset-bottom, 0px)); right: 14px; }
+    .route-fab { bottom: calc(var(--bottomnav-h) + 12px + env(safe-area-inset-bottom, 0px)); }
+    /* Leaflet zoom-knoppen boven de bottom nav */
+    .leaflet-bottom { bottom: calc(var(--bottomnav-h) + env(safe-area-inset-bottom, 0px)) !important; }
+  }
+
+  @media (max-width: 900px) {
+    /* --header-h blijft 62px (desktop-waarde) — geen override nodig met compacte header */
+
+    /* Header altijd vast bovenaan */
     .site-header {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: auto;
+      top: 0; left: 0; right: 0;
     }
 
     /* Compenseer voor de fixed header zodat pagina-inhoud er niet onder schuift */
     body { padding-top: var(--header-h); }
 
-    .header-inner {
-      flex-wrap: wrap;
-      height: auto;
-      padding-block: 10px 0;
-      gap: 6px;
-    }
-
-    /* Nav als scrollbare balk onder de logo-rij */
-    .header-nav {
-      display: flex;
-      order: 10;
-      width: 100%;
-      overflow-x: auto;
-      scrollbar-width: none;
-      padding: 6px 0 8px;
-      gap: 2px;
-      border-top: 1px solid rgba(255,255,255,.08);
-    }
-    .header-nav::-webkit-scrollbar { display: none; }
+    /* Navigatie verhuist naar bottom-nav — header toont alleen logo + tip-knop */
+    .header-nav,
+    .nav-meer-panel { display: none !important; }
 
     .tip-btn span { display: none; }
     .tip-btn { padding: 8px 12px; margin-left: auto; }
@@ -4245,9 +4239,9 @@
     .toolbar-inner { flex-wrap: wrap; padding-block: 8px; gap: 8px; }
     /* Zoekveld verbergen op mobiel: lijst is scrollbaar + filters volstaan */
     .search-wrap { display: none; }
-    /* Toast bovenaan i.p.v. onderaan: botst niet met route-knop/💡-knop */
+    /* Toast bovenaan — botst niet met bottom nav */
     .br-toast {
-      top: calc(var(--header-h, 106px) + 12px);
+      top: calc(var(--header-h) + 12px);
       bottom: auto;
     }
     .filter-chips  {
@@ -4513,6 +4507,106 @@
     .over-grid      { grid-template-columns: 1fr; }
     .adverteer-grid { grid-template-columns: 1fr 1fr; }
     .over-contact   { grid-template-columns: 1fr; }
+  }
+}
+
+/* ══ BOTTOM NAV ═════════════════════════════════════════════════ */
+@layer components {
+  /* Verborgen op desktop */
+  .bottom-nav { display: none; }
+
+  @media (max-width: 900px) {
+    .bottom-nav {
+      display: flex;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 40;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+      box-shadow: 0 -2px 14px rgba(0,0,0,.07);
+    }
+
+    .bn-btn {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      padding: 8px 4px 6px;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-light);
+      min-height: var(--bottomnav-h, 60px);
+      position: relative;
+      transition: color .12s, background .12s;
+      border-radius: 0;
+      touch-action: manipulation;
+    }
+    .bn-btn:active { background: var(--green-bg); }
+    .bn-btn.active {
+      color: var(--green-mid);
+    }
+    .bn-btn.active svg { stroke: var(--green-mid); }
+    .bn-btn svg { stroke: var(--text-light); transition: stroke .12s; }
+
+    .bn-badge {
+      position: absolute;
+      top: 5px;
+      right: calc(50% - 18px);
+      background: var(--amber);
+      color: var(--white);
+      font-size: 9px;
+      font-weight: 700;
+      min-width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 4px;
+    }
+    .bn-badge[hidden] { display: none; }
+
+    /* Meer-panel: popup boven de bottom nav */
+    .bn-meer-panel {
+      position: fixed;
+      bottom: calc(var(--bottomnav-h, 60px) + env(safe-area-inset-bottom, 0px) + 6px);
+      right: 8px;
+      z-index: 50;
+      background: var(--white);
+      border-radius: var(--r-xl);
+      box-shadow: 0 8px 32px rgba(0,0,0,.18);
+      padding: 8px;
+      min-width: 210px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .bn-meer-panel[hidden] { display: none; }
+
+    .bn-meer-item {
+      text-align: left;
+      padding: 12px 16px;
+      font-size: var(--t-md);
+      font-weight: 500;
+      color: var(--text);
+      border-radius: var(--r-lg);
+      width: 100%;
+      transition: background var(--tf);
+    }
+    .bn-meer-item:hover,
+    .bn-meer-item:active { background: var(--green-bg); color: var(--green-dark); }
+  }
+}
+
+/* ══ PRESTATIES ══════════════════════════════════════════════════ */
+@layer components {
+  /* Lange winkellijst: alleen zichtbare kaartjes volledig renderen */
+  .shop-card {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 88px;
   }
 }
 

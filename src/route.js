@@ -184,10 +184,11 @@ function _renderPanel() {
 }
 
 function _updateBadge() {
-  const badge = document.getElementById('routeBadge');
-  if (!badge) return;
-  badge.textContent = _stops.length;
-  badge.hidden = _stops.length === 0;
+  const n = _stops.length;
+  for (const id of ['routeBadge', 'bnRouteBadge']) {
+    const el = document.getElementById(id);
+    if (el) { el.textContent = n; el.hidden = n === 0; }
+  }
 }
 
 /* Zwevende "route klaar"-balk bijwerken (CSS verbergt 'm op de route-tab zelf) */

@@ -1,7 +1,7 @@
 /* Bottom sheet voor mobiel — layout volledig via JS, geen CSS-cascade problemen */
 
 const MOBILE_W = 900;
-const PEEK_H   = 100; /* px — alleen sleepgreep + quicknav zichtbaar */
+const PEEK_H   = 68; /* px — alleen sleepgreep + label zichtbaar */
 
 function isMobile() { return window.innerWidth <= MOBILE_W; }
 
@@ -50,7 +50,14 @@ function applyLayout(headerH, toolbarH) {
 /* Lees header-hoogte uit CSS-variabele */
 function getHeaderH() {
   const v = getComputedStyle(document.documentElement).getPropertyValue('--header-h').trim();
-  return parseInt(v) || 106;
+  return parseInt(v) || 62;
+}
+
+/* Hoogte van de bottom nav inclusief safe-area (via bounding rect) */
+function getBottomNavH() {
+  const bn = document.getElementById('bottomNav');
+  if (!bn || !isMobile()) return 0;
+  return Math.round(window.innerHeight - bn.getBoundingClientRect().top);
 }
 
 export function initBottomSheet() {
@@ -68,20 +75,6 @@ export function initBottomSheet() {
     <div class="sheet-handle-row">
       <span class="sheet-handle-label">Winkels</span>
       <button class="sheet-map-btn" id="sheetMapBtn">↓ Sluit lijst</button>
-    </div>
-    <div class="sheet-quicknav" id="sheetQuicknav">
-      <button class="sq-btn" data-nav="route" aria-label="Mijn route">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8.2 18.5H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6H15.8"/></svg>
-        Route
-      </button>
-      <button class="sq-btn" data-nav="stempelkaart" aria-label="Stempelkaart">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M9 9v12M15 9v12"/></svg>
-        Stempel
-      </button>
-      <button class="sq-btn" data-nav="seizoen" aria-label="Seizoenskalender">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 4.5-7 13-7 13S5 13.5 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        Seizoen
-      </button>
     </div>`;
 
   const scroll = document.createElement('div');
@@ -123,25 +116,26 @@ export function initBottomSheet() {
   function positionSheet() {
     if (!document.body.classList.contains('map-active')) return;
     document.body.classList.toggle('sheet-is-open', state === 'open');
-    const h = window.innerHeight;
+    const h      = window.innerHeight;
+    const bnH    = getBottomNavH();
+    const usable = h - bnH;
     const shared = `
       position: fixed !important;
-      left: 0; right: 0; bottom: 0;
+      left: 0; right: 0; bottom: ${bnH}px;
       z-index: 30;
       border-radius: 20px 20px 0 0;
       background: white;
       box-shadow: 0 -4px 24px rgba(0,0,0,.15);
       overflow: hidden;
-      padding-bottom: env(safe-area-inset-bottom, 0px);
       transition: height .36s cubic-bezier(.32,.72,0,1);
     `;
     if (state === 'peek') {
       sheet.style.cssText = shared + `height: ${PEEK_H}px;`;
     } else if (state === 'half') {
-      const isLandscape = window.innerHeight < 480;
-      sheet.style.cssText = shared + `height: ${Math.round(h * (isLandscape ? 0.38 : 0.52))}px;`;
+      const isLandscape = h < 480;
+      sheet.style.cssText = shared + `height: ${Math.round(usable * (isLandscape ? 0.42 : 0.54))}px;`;
     } else {
-      sheet.style.cssText = shared + `height: calc(100dvh - ${getHeaderH() + toolbarH()}px);`;
+      sheet.style.cssText = shared + `height: ${usable - getHeaderH() - toolbarH()}px;`;
     }
   }
 
@@ -152,19 +146,6 @@ export function initBottomSheet() {
     refreshLayout();
     positionSheet();
   }
-
-  /* ── Quicknav-knoppen → navigeer naar andere pagina's ───────── */
-  document.getElementById('sheetQuicknav')?.addEventListener('click', e => {
-    const btn = e.target.closest('.sq-btn');
-    if (!btn) return;
-    e.stopPropagation();
-    document.querySelector(`.nav-btn[data-page="${btn.dataset.nav}"]`)?.click();
-    // Klap sheet in na navigatie
-    state = 'half';
-    positionSheet();
-    document.getElementById('sheetMapBtn').style.display = 'none';
-    scroll.scrollTop = 0;
-  });
 
   /* ── Tik op greep ────────────────────────────────────────────── */
   handle.addEventListener('click', e => {

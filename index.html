@@ -828,7 +828,38 @@
     <button class="ios-hint-close" id="iosHintClose" aria-label="Sluit hint">&times;</button>
   </div>
 
-  <!-- Overlay achter "Meer filters"-paneel: body-niveau zodat z-index definitief boven kaart (z-10) valt -->
+  <!-- ══ BOTTOM NAV (mobiel) ══════════════════════════════════════ -->
+  <nav class="bottom-nav" id="bottomNav" aria-label="Navigatie">
+    <button class="bn-btn active" data-page="kaart" aria-label="Kaart">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 4 6 2 6-2v15l-6 2-6-2-6 2V6l6-2Z"/><path d="M9 4v15M15 6v15"/></svg>
+      <span>Kaart</span>
+    </button>
+    <button class="bn-btn" data-page="route" aria-label="Route">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="5" r="2.3"/><path d="M8.3 18.5H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>
+      <span>Route</span>
+      <span class="bn-badge" id="bnRouteBadge" hidden>0</span>
+    </button>
+    <button class="bn-btn" data-page="stempelkaart" aria-label="Stempelkaart">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M9 9v12M15 9v12"/></svg>
+      <span>Stempel</span>
+      <span class="bn-badge" id="bnStampBadge" hidden>0</span>
+    </button>
+    <button class="bn-btn" data-page="seizoen" aria-label="Seizoen">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 4.5-7 13-7 13S5 13.5 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+      <span>Seizoen</span>
+    </button>
+    <button class="bn-btn" id="bnMeerBtn" aria-haspopup="true" aria-expanded="false" aria-label="Meer opties">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="5" cy="12" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="19" cy="12" r="1.2"/></svg>
+      <span>Meer</span>
+    </button>
+  </nav>
+
+  <!-- Meer-panel voor bottom nav -->
+  <div class="bn-meer-panel" id="bnMeerPanel" hidden>
+    <button class="bn-meer-item" data-page="boodschappen">🛒 Boodschappenlijst</button>
+    <button class="bn-meer-item" data-page="verhalen">📖 Verhalen</button>
+    <button class="bn-meer-item" data-page="over">🌾 Over ons</button>
+  </div>
 
   <!-- ══ MODAL ════════════════════════════════════════════════════ -->
   <div id="modalOverlay" class="modal-overlay" hidden role="dialog" aria-modal="true"></div>
