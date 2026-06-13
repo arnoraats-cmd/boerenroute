@@ -21,7 +21,7 @@
 /versautomaten      /public/versautomaten.html      200
 /eierautomaten      /public/eierautomaten.html      200
 /zelfpluktuinen     /public/zelfpluktuinen.html     200
-/melktap            /public/melktap.html            200
+/melktap            /public/melktap                 200
 /streekproducten    /public/streekproducten.html    200
 
 # Categorie × provincie (bv. /eierautomaten/gelderland). Exacte regel hierboven wint
