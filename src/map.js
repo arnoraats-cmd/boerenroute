@@ -281,11 +281,18 @@ function _drawFallback(stops) {
   ).addTo(_map);
 }
 
-/* Zet markers voor route-stops op genummerde iconen */
+/* Zet markers voor route-stops op genummerde iconen. Een eventueel startpunt
+   (_start) telt niet mee in de nummering en krijgt een eigen 📍-marker. */
 export function setRouteMarkers(stops) {
   if (!_map) return;
   _routeNums.clear();
-  stops.forEach((s, i) => _routeNums.set(s.id, i + 1));
+  let n = 0;
+  let startStop = null;
+  for (const s of stops) {
+    if (s._start) { startStop = s; continue; }
+    _routeNums.set(s.id, ++n);
+  }
+  _setStartMarker(startStop);
 
   // Herrender alle zichtbare markers
   _data.forEach(({ marker, shop }) => {
@@ -293,6 +300,24 @@ export function setRouteMarkers(stops) {
     const hl  = _hl === shop.id;
     marker.setIcon(_icon(shop, hl, num));
   });
+}
+
+/* Eigen marker voor het GPS-startpunt (geen winkel, dus niet in _data). */
+let _startMarker = null;
+function _setStartMarker(startStop) {
+  if (_startMarker) { _startMarker.remove(); _startMarker = null; }
+  if (!startStop || !_map) return;
+  _startMarker = L.marker([startStop.lat, startStop.lng], {
+    icon: L.divIcon({
+      className: '',
+      html: '<div class="route-start-pin" aria-hidden="true">📍</div>',
+      iconSize:   [32, 32],
+      iconAnchor: [16, 30],
+    }),
+    interactive: false,
+    keyboard:    false,
+    zIndexOffset: 1000,
+  }).addTo(_map);
 }
 
 /* ══ Marker-icoon ════════════════════════════════════════════════ */

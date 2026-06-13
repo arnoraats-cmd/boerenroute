@@ -6,9 +6,11 @@
 import { drawRoute, setRouteMarkers } from './map.js';
 import { shopIcon } from './icons.js';
 import { fmtDuration } from './routeScore.js';
+import { getGPS } from './location.js';
 
 /* ── State ──────────────────────────────────────────────────── */
-let _stops  = [];    // shop-objecten in volgorde
+const START_ID = '__mijn-locatie__';   // synthetisch startpunt (geen winkel)
+let _stops  = [];    // shop-objecten in volgorde (eventueel met startpunt vooraan)
 let _allRef = [];    // referentie naar de volledige dataset
 
 /* ══ Init ════════════════════════════════════════════════════════ */
@@ -45,6 +47,34 @@ export function loadStops(shops, { optimize = false } = {}) {
     .map(s => (typeof s === 'object' ? s : _allRef.find(x => x.id === s)))
     .filter(s => s && !seen.has(s.id) && seen.add(s.id));
   if (optimize) _stops = _optimizeOrder(_stops, _stops[0]);
+  _sync();
+}
+
+/* Zet (of vervang) een startpunt op de huidige GPS-locatie. De route begint
+   dan bij jou en sluit als lus weer daar terug — een rondrit van huis. */
+export async function startFromMyLocation() {
+  const btn = document.getElementById('startHereBtn');
+  if (btn) { btn.disabled = true; btn.dataset.busy = '1'; }
+  try {
+    const { lat, lng } = await getGPS();
+    const start = {
+      id: START_ID, name: 'Mijn startpunt', address: 'Jouw GPS-locatie',
+      lat, lng, _start: true,
+    };
+    const shops = _stops.filter(s => !s._start);     // bestaand startpunt vervangen
+    _stops = [start, ...shops];
+    if (_stops.length >= 3) _stops = _optimizeOrder(_stops, start);
+    _sync();
+    _toast('📍 Startpunt op jouw locatie gezet');
+  } catch (e) {
+    _toast(`📍 ${e.message}`);
+  } finally {
+    if (btn) { btn.disabled = false; delete btn.dataset.busy; }
+  }
+}
+
+function _removeStart() {
+  _stops = _stops.filter(s => !s._start);
   _sync();
 }
 
@@ -94,6 +124,7 @@ function _sync() {
 function _bindPanel() {
   document.getElementById('clearRouteBtn')?.addEventListener('click', _clear);
   document.getElementById('optimizeBtn')?.addEventListener('click', _optimize);
+  document.getElementById('startHereBtn')?.addEventListener('click', startFromMyLocation);
   document.getElementById('gpxBtn')?.addEventListener('click', _downloadGPX);
   document.getElementById('shareBtn')?.addEventListener('click', _share);
 
@@ -164,22 +195,32 @@ function _renderPanel() {
     }
   }
 
-  /* Stop-items */
-  stopsEl.innerHTML = legs.map(({ shop, leg }, i) => `
-<li class="route-stop" data-id="${shop.id}">
-  <span class="stop-num">${i + 1}</span>
-  <span class="stop-emoji">${shopIcon(shop, { size: 20 })}</span>
+  /* Stop-items — het startpunt (📍) krijgt geen nummer; winkels tellen 1..n */
+  let num = 0;
+  stopsEl.innerHTML = legs.map(({ shop, leg }) => {
+    const isStart = shop._start;
+    const badge   = isStart ? '📍' : `${++num}`;
+    const emoji   = isStart ? '📍' : shopIcon(shop, { size: 20 });
+    const rm = isStart
+      ? `<button class="stop-rm" data-start="1" aria-label="Verwijder startpunt">✕</button>`
+      : `<button class="stop-rm" data-id="${shop.id}" aria-label="Verwijder ${_esc(shop.name)} uit route">✕</button>`;
+    return `
+<li class="route-stop${isStart ? ' route-stop-start' : ''}"${isStart ? '' : ` data-id="${shop.id}"`}>
+  <span class="stop-num">${badge}</span>
+  <span class="stop-emoji">${emoji}</span>
   <div class="stop-info">
     <div class="stop-name">${_esc(shop.name)}</div>
     <div class="stop-addr">${_esc(shop.address)}</div>
     ${leg ? `<div class="stop-leg">← ${_fmt(leg)}</div>` : ''}
   </div>
-  <button class="stop-rm" data-id="${shop.id}"
-    aria-label="Verwijder ${_esc(shop.name)} uit route">✕</button>
-</li>`).join('');
+  ${rm}
+</li>`;
+  }).join('');
 
   stopsEl.querySelectorAll('.stop-rm').forEach(btn =>
-    btn.addEventListener('click', () => _remove(+btn.dataset.id))
+    btn.addEventListener('click', () =>
+      btn.dataset.start ? _removeStart() : _remove(+btn.dataset.id)
+    )
   );
 }
 

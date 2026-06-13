@@ -2492,6 +2492,24 @@
 
   .route-stop:hover { box-shadow: var(--sh); border-color: var(--green-bg); }
 
+  /* Startpunt-rij (GPS) — visueel onderscheiden van winkelstops */
+  .route-stop-start {
+    background: var(--green-bg);
+    border-color: var(--green-light);
+  }
+  .route-stop-start .stop-num {
+    background: transparent;
+    font-size: 18px;
+  }
+
+  /* 📍-marker voor het startpunt op de kaart */
+  .route-start-pin {
+    width: 32px; height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px; line-height: 1;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,.4));
+  }
+
   .stop-num {
     flex-shrink: 0;
     width: 24px; height: 24px;
