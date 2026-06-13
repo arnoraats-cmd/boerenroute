@@ -67,8 +67,8 @@ node scripts/gen-sitemap.mjs          # ALTIJD als laatste (leest de mappen in)
 ```
 
 - **Provincie-koppeling** (plaatsnaam → provincie) staat canoniek in `scripts/place-prov.mjs`
-  (`PLACE_TO_PROV`, `PROV_SLUG`, `getProvince`, `provSlug`). Nieuwe generators importeren hieruit.
-  `gen-regio.mjs` en `gen-categorie.mjs` hebben nog een eigen kopie — converge die hier naartoe.
+  (`PLACE_TO_PROV`, `PROV_SLUG`, `getProvince`, `provSlug`). Álle generators importeren hieruit —
+  geen eigen kopieën meer. Nieuwe generators doen hetzelfde.
 - **Nieuw paginatype = nieuwe `_redirects`-regel.** Specifieke/exacte regels boven wildcards
   (eerste match wint), bv. `/eierautomaten` vóór `/eierautomaten/*`.
 
@@ -236,7 +236,6 @@ Deze drie stonden als "hoge prioriteit" op de roadmap en zijn nu live. Niet opni
 
 ### Nog open / tech-schuld
 
-- **Provincie-koppeling convergeren.** `gen-regio.mjs` en `gen-categorie.mjs` hebben nog een eigen kopie van de plaats→provincie-tabel; die moeten `scripts/place-prov.mjs` importeren (zie "Generatie & routing").
 - **Turnstile serverseitig aanzetten.** De Formspree-formulieren hebben de Turnstile-widget; verificatie moet ook in het Formspree-form (`xykvvprz`) aanstaan, anders is de widget cosmetisch.
 
 ---

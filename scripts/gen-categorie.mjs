@@ -3,7 +3,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { getProvince, PROV_SLUG } from './place-prov.mjs';
+import { getProvince, provSlug } from './place-prov.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root  = join(__dir, '..');
@@ -57,7 +57,7 @@ function groupByProv(list) {
 const MIN_COMBO = 3;
 
 function provSection(prov, list, catSlug) {
-  const slug = PROV_SLUG[prov] ?? prov.toLowerCase().replace(/[^a-z]/g, '-');
+  const slug = provSlug(prov);
   const cards = list.map(shopCard).join('');
   // Link naar de categorie×provincie-pagina als die bestaat (≥ MIN_COMBO locaties)
   const subLink = (catSlug && list.length >= MIN_COMBO)
@@ -79,7 +79,7 @@ function pageHtml({ slug, title, metaDesc, h1, intro, list, faq = null }) {
     ? `<nav class="regio-placenav" aria-label="Spring naar provincie">
         <span class="regio-placenav-label">Provincies:</span>${provGroups
           .map(([p, l]) => {
-            const ps = PROV_SLUG[p] ?? p.toLowerCase().replace(/[^a-z]/g, '-');
+            const ps = provSlug(p);
             return `<a href="#prov-${ps}">${esc(p)} <span>${l.length}</span></a>`;
           }).join('')}</nav>`
     : '';

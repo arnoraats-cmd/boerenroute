@@ -1,7 +1,7 @@
 /* Canonieke koppeling plaatsnaam → provincie + provincie-slugs.
-   Bron van waarheid voor de programmatische pagina's. De oudere generators
-   (gen-regio.mjs, gen-categorie.mjs) hebben elk nog een eigen kopie; nieuwe
-   code importeert vanaf hier. Converge die later naar dit bestand. */
+   Bron van waarheid voor de programmatische pagina's. Alle generators
+   (incl. gen-regio.mjs en gen-categorie.mjs) importeren vanaf hier —
+   geen eigen kopieën meer. Nieuwe code importeert ook vanaf hier. */
 import { provByCoords } from './province.mjs';
 
 export const PLACE_TO_PROV = {
