@@ -3935,7 +3935,8 @@
   .winkel-rating { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
   .winkel-stars { font-size: var(--t-lg); font-weight: 700; color: var(--amber); }
   .winkel-reviews { font-size: var(--t-sm); color: var(--text-light); }
-  .winkel-desc { font-size: var(--t-md); color: var(--text); line-height: 1.65; margin-bottom: 20px; }
+  .winkel-desc { font-size: var(--t-md); color: var(--text); line-height: 1.65; margin-bottom: 14px; }
+  .winkel-context { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.6; margin-bottom: 20px; }
   .winkel-details { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
   .winkel-detail { display: grid; grid-template-columns: 130px 1fr; gap: 8px; font-size: var(--t-sm); }
   .winkel-detail dt { font-weight: 700; color: var(--text-mid); }

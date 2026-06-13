@@ -29,6 +29,46 @@ function esc(s) {
   return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+/* Nette Nederlandse opsomming: "a, b en c". */
+function naturalList(items) {
+  const a = items.filter(Boolean);
+  if (a.length <= 1) return a[0] || '';
+  return `${a.slice(0, -1).join(', ')} en ${a[a.length - 1]}`;
+}
+
+/* Tweede, inhoudelijke alinea per winkel — uit de échte data, met een
+   id-gebaseerde template-rotatie zodat pagina's onderling verschillen i.p.v.
+   identiek gesjabloneerd te zijn (en stabiel blijven bij regeneratie).
+   Sociaal bewijs alleen als er een echte rating is (geen verzinsels). */
+function contextParagraph(s, place, prov) {
+  const out = [];
+
+  if (s.products?.length) {
+    const prods = naturalList(s.products.slice(0, 5).map(esc));
+    const intros = [
+      `Bij ${esc(s.name)} in ${esc(place)} vind je ${prods}`,
+      `${esc(s.name)} in ${esc(place)} biedt ${prods}`,
+      `Voor ${prods} kun je terecht bij ${esc(s.name)} in ${esc(place)}`,
+    ];
+    out.push(`${intros[s.id % intros.length]} — vers en uit de streek.`);
+  } else {
+    out.push(`${esc(s.name)} is ${TYPE_DESC[s.type] || 'een lokaal adres'} in ${esc(place)} (${esc(prov)}).`);
+  }
+
+  const routeLines = [
+    `${esc(place)} ligt in ${esc(prov)}; combineer dit adres met andere boerderijwinkels in de buurt tot een fietstocht.`,
+    `Plan ${esc(s.name)} in een fietsroute langs meer verse adressen in ${esc(prov)}.`,
+    `Onderweg in ${esc(prov)}? Neem ${esc(place)} mee in een fietsroute langs lokale boeren.`,
+  ];
+  out.push(routeLines[s.id % routeLines.length]);
+
+  if (s.googleRating) {
+    out.push(`Bezoekers geven gemiddeld ${s.googleRating.toFixed(1)}★${s.googleReviews ? ` (${s.googleReviews} beoordelingen)` : ''}.`);
+  }
+
+  return out.join(' ');
+}
+
 // Groepeer per plaatsnaam voor 'ook in deze plaats'-links
 const byPlace = {};
 for (const s of shops) {
@@ -176,6 +216,8 @@ for (const s of eligible) {
           </div>` : ''}
 
           ${s.desc ? `<p class="winkel-desc" itemprop="description">${esc(s.desc)}</p>` : ''}
+
+          <p class="winkel-context">${contextParagraph(s, place, prov)}</p>
 
           <dl class="winkel-details">
             <div class="winkel-detail">
