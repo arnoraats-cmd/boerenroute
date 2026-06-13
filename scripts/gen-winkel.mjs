@@ -3,7 +3,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { provByCoords } from './province.mjs';
+import { getProvince, placeOf, provSlug as toProvSlug } from './place-prov.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root  = join(__dir, '..');
@@ -11,76 +11,6 @@ const root  = join(__dir, '..');
 const shops = JSON.parse(readFileSync(join(root, 'src/data/verifiedShops.json'), 'utf8'));
 const SITE = 'https://www.boerenroute.nl';
 
-const PLACE_TO_PROV = {
-  'Aarle-Rixtel':'Noord-Brabant','Asten':'Noord-Brabant','Best':'Noord-Brabant',
-  'Beek en Donk':'Noord-Brabant','Berlicum':'Noord-Brabant','Biezenmortel':'Noord-Brabant',
-  'Bladel':'Noord-Brabant','Boekel':'Noord-Brabant','Boxtel':'Noord-Brabant',
-  'Breda':'Noord-Brabant','Budel':'Noord-Brabant','Casteren':'Noord-Brabant',
-  'De Moer':'Noord-Brabant','Den Dungen':'Noord-Brabant','Deurne':'Noord-Brabant',
-  'Diessen':'Noord-Brabant','Dongen':'Noord-Brabant','Drunen':'Noord-Brabant',
-  'Eerde':'Noord-Brabant','Eindhoven':'Noord-Brabant','Elshout':'Noord-Brabant',
-  'Erp':'Noord-Brabant','Etten-Leur':'Noord-Brabant','Genderen':'Noord-Brabant',
-  'Goirle':'Noord-Brabant','Halsteren':'Noord-Brabant','Haaren':'Noord-Brabant',
-  'Heesch':'Noord-Brabant','Heeswijk-Dinther':'Noord-Brabant','Heeze':'Noord-Brabant',
-  'Helmond':'Noord-Brabant','Helvoirt':'Noord-Brabant','Heerle':'Noord-Brabant',
-  'Heukelom':'Noord-Brabant','Hilvarenbeek':'Noord-Brabant',
-  'Hoogeloon':'Noord-Brabant','Hooge Zwaluwe':'Noord-Brabant',
-  'Liempde':'Noord-Brabant','Lithoijen':'Noord-Brabant','Loon op Zand':'Noord-Brabant',
-  'Maarheeze':'Noord-Brabant','Made':'Noord-Brabant','Mariahout':'Noord-Brabant',
-  'Maren-Kessel':'Noord-Brabant','Moergestel':'Noord-Brabant',
-  'Nistelrode':'Noord-Brabant','Nuenen':'Noord-Brabant','Nuland':'Noord-Brabant',
-  'Oirschot':'Noord-Brabant','Oisterwijk':'Noord-Brabant','Ommel':'Noord-Brabant',
-  'Oosterhout':'Noord-Brabant','Oss':'Noord-Brabant',
-  'Oost West en Middelbeers':'Noord-Brabant',
-  'Reek':'Noord-Brabant','Riel':'Noord-Brabant','Rijkevoort':'Noord-Brabant',
-  'Rosmalen':'Noord-Brabant','Rucphen':'Noord-Brabant',
-  'Schijndel':'Noord-Brabant','Sint-Michielsgestel':'Noord-Brabant',
-  'Sint-Oedenrode':'Noord-Brabant','Soerendonk':'Noord-Brabant','Someren':'Noord-Brabant',
-  'Son en Breugel':'Noord-Brabant','Sprundel':'Noord-Brabant',
-  'Tilburg':'Noord-Brabant','Uden':'Noord-Brabant','Udenhout':'Noord-Brabant',
-  'Ulicoten':'Noord-Brabant','Veghel':'Noord-Brabant','Veldhoven':'Noord-Brabant',
-  'Vinkel':'Noord-Brabant','Vlijmen':'Noord-Brabant','Volkel':'Noord-Brabant',
-  'Vught':'Noord-Brabant','Waspik':'Noord-Brabant','Wintelre':'Noord-Brabant',
-  'Zeeland':'Noord-Brabant',"'s-Hertogenbosch":'Noord-Brabant',
-  'Bergen op Zoom':'Noord-Brabant',
-  'Arnhem':'Gelderland','Barneveld':'Gelderland','Culemborg':'Gelderland',
-  'Dalfsen':'Overijssel',
-  'Diepenveen':'Gelderland','Doorwerth':'Gelderland','Dreumel':'Gelderland',
-  'Haaften':'Gelderland','Harskamp':'Gelderland','Hedel':'Gelderland',
-  'Overasselt':'Gelderland','Rha':'Gelderland','Rossum':'Gelderland',
-  'Spankeren':'Gelderland','Spijk':'Gelderland','Toldijk':'Gelderland',
-  'Velddriel':'Gelderland','Vierakker':'Gelderland','Vorden':'Gelderland',
-  'Vragender':'Gelderland','Wageningen':'Gelderland','Wilp':'Gelderland',
-  'Bunnik':'Utrecht','De Hoef':'Utrecht','Groenekan':'Utrecht',
-  'Leusden':'Utrecht','Woudenberg':'Utrecht',
-  'Utrecht (De Meern)':'Utrecht','Utrecht (Haarzuilens)':'Utrecht',
-  'Waverveen':'Utrecht',
-  'Amsterdam':'Noord-Holland','Avenhorn':'Noord-Holland',
-  'Den Helder':'Noord-Holland','Egmond aan den Hoef':'Noord-Holland',
-  'Grosthuizen':'Noord-Holland','Schagerbrug':'Noord-Holland',
-  'Stompetoren':'Noord-Holland','Warmenhuizen':'Noord-Holland',
-  'Wervershoof':'Noord-Holland','Zuidschermer':'Noord-Holland',
-  'Alphen aan den Rijn':'Zuid-Holland','Benthuizen':'Zuid-Holland',
-  'Bergschenhoek':'Zuid-Holland','Delfgauw':'Zuid-Holland',
-  'Den Bommel':'Zuid-Holland','Rhoon':'Zuid-Holland','Wassenaar':'Zuid-Holland',
-  'Aagtekerke':'Zeeland','Arnemuiden':'Zeeland','Kattendijke':'Zeeland',
-  'Bedum':'Groningen','Bierum':'Groningen','Den Horn':'Groningen',
-  'Marum':'Groningen','Mussel':'Groningen',"'t Zandt":'Groningen',
-  'Trimunt':'Groningen','Winsum':'Groningen',
-  'Burgum':'Friesland','Makkum':'Friesland','Noordwolde':'Friesland',
-  'Oosterwolde':'Friesland','Siegerswoude':'Friesland',
-  'Twijzel':'Friesland','Tzum':'Friesland',
-  'Beilen':'Drenthe','Doldersum':'Drenthe','Geesbrug':'Drenthe',
-  'Grolloo':'Drenthe','Nijeveen':'Drenthe','Peize':'Drenthe',
-  'Ruinerwold':'Drenthe','Zuidveld':'Drenthe',
-};
-
-const PROV_SLUG = {
-  'Noord-Brabant':'noord-brabant','Gelderland':'gelderland',
-  'Utrecht':'utrecht','Noord-Holland':'noord-holland','Zuid-Holland':'zuid-holland',
-  'Zeeland':'zeeland','Groningen':'groningen','Friesland':'friesland',
-  'Drenthe':'drenthe','Overijssel':'overijssel','Flevoland':'flevoland','Limburg':'limburg',
-};
 
 const TYPE_LABEL = {
   winkel:'Boerderijwinkel', automaat:'Versautomaat',
@@ -112,7 +42,7 @@ function shopSlug(s) {
 const byPlace = {};
 for (const s of shops) {
   if (s.type === 'onderweg') continue;
-  const place = s.address.replace(/^.*,\s*/, '').trim();
+  const place = placeOf(s);
   (byPlace[place] ||= []).push(s);
 }
 
@@ -127,9 +57,9 @@ const eligible = shops.filter(s =>
 let count = 0;
 
 for (const s of eligible) {
-  const place = s.address.replace(/^.*,\s*/, '').trim();
-  const prov  = PLACE_TO_PROV[place] ?? provByCoords(s.lat, s.lng);
-  const provSlug = PROV_SLUG[prov] ?? prov.toLowerCase().replace(/[^a-z]/g, '-');
+  const place = placeOf(s);
+  const prov  = getProvince(s);
+  const provSlug = toProvSlug(prov);
   const placeSlug = slugify(place);
   const slug = shopSlug(s);
   const url  = `${SITE}/winkel/${slug}`;

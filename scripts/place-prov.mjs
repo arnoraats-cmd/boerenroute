@@ -42,6 +42,7 @@ export const PLACE_TO_PROV = {
   // ── Gelderland ─────────────────────────────────────────────────
   'Arnhem':'Gelderland','Barneveld':'Gelderland','Culemborg':'Gelderland',
   'Diepenveen':'Gelderland','Doorwerth':'Gelderland','Dreumel':'Gelderland',
+  'Groesbeek':'Gelderland',
   'Haaften':'Gelderland','Harskamp':'Gelderland','Hedel':'Gelderland',
   'Overasselt':'Gelderland','Rha':'Gelderland','Rossum':'Gelderland',
   'Spankeren':'Gelderland','Spijk':'Gelderland','Toldijk':'Gelderland',
@@ -55,7 +56,7 @@ export const PLACE_TO_PROV = {
   'Waverveen':'Utrecht',
 
   // ── Noord-Holland ──────────────────────────────────────────────
-  'Amsterdam':'Noord-Holland','Avenhorn':'Noord-Holland',
+  'Amsterdam':'Noord-Holland','Amstelveen':'Noord-Holland','Avenhorn':'Noord-Holland',
   'Den Helder':'Noord-Holland','Egmond aan den Hoef':'Noord-Holland',
   'Grosthuizen':'Noord-Holland','Schagerbrug':'Noord-Holland',
   'Stompetoren':'Noord-Holland','Warmenhuizen':'Noord-Holland',
