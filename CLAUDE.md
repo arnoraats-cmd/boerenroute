@@ -226,11 +226,18 @@ OSM-geladen winkels krijgen `id` vanaf 100 (zodat ze niet botsen met de handmati
 
 ---
 
-## Nog te bouwen (hoge prioriteit — stonden op de roadmap)
+## Roadmap-items uit v1 — inmiddels gebouwd (✅)
 
-1. **Hero + locatie-prompt bij eerste bezoek.** Compacte hero bovenaan met "Verse producten, rechtstreeks van de boer" + knoppen "📍 Vind winkels bij mij" en "🔍 Zoek een plaats". Verdwijnt zodra een locatie gekozen is. Voorkomt dat een bezoeker uit Groningen alleen Uden ziet.
-2. **"Boerenroute van de maand".** Eén uitgelichte, kant-en-klare route langs 4-5 winkels die maandelijks handmatig wisselt. Met titel, afstand, stops en een "Laad deze route"-knop. Deelbaar, geeft de site een levend gevoel.
-3. **Regiopagina's voor SEO.** Per provincie een echte, zichtbare en indexeerbare pagina met de winkels uit de database (naam, plaats, producten). Dit vangt long-tail zoekopdrachten als "boerderijwinkel Drenthe". **Gebruik zichtbare tekst, geen verborgen keyword-blokken** (Google straft dat af).
+Deze drie stonden als "hoge prioriteit" op de roadmap en zijn nu live. Niet opnieuw bouwen.
+
+1. ✅ **Hero + locatie-prompt bij eerste bezoek.** Landing-fase met hero + "📍 Vind winkels bij mij" / "🔍 Zoek een plaats"; verdwijnt zodra een locatie gekozen is (`body.map-active`). Zie het mobiel-interactiemodel hierboven.
+2. ✅ **"Boerenroute van de maand".** Wisselt automatisch per maand via `_pickMaandRoute()` in `src/main.js` (eerst handmatige entry in `src/data/routes.json` → `maandRoutes`, anders provincierotatie op maandnummer). Getoond op de homepage-banner (`_renderMaandHome`) en de route-tab (`_renderMaandRoute`). Nieuwe maand = alleen `routes.json` aanpassen.
+3. ✅ **Regiopagina's voor SEO.** Per provincie een gegenereerde, indexeerbare pagina (`/regio/*`) via `scripts/gen-regio.mjs`. Zichtbare tekst, geen verborgen keyword-blokken.
+
+### Nog open / tech-schuld
+
+- **Provincie-koppeling convergeren.** `gen-regio.mjs` en `gen-categorie.mjs` hebben nog een eigen kopie van de plaats→provincie-tabel; die moeten `scripts/place-prov.mjs` importeren (zie "Generatie & routing").
+- **Turnstile serverseitig aanzetten.** De Formspree-formulieren hebben de Turnstile-widget; verificatie moet ook in het Formspree-form (`xykvvprz`) aanstaan, anders is de widget cosmetisch.
 
 ---
 
