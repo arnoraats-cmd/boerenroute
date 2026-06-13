@@ -31,6 +31,36 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://www.boerenroute.nl/fietsroute-asperges</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.boerenroute.nl/fietsroute-aardbeien</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.boerenroute.nl/kaasboerderij-bezoeken</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.boerenroute.nl/boerderijijs-nederland</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.boerenroute.nl/updates</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.boerenroute.nl/versautomaten</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>

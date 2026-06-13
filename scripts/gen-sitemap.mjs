@@ -21,6 +21,14 @@ add(`${SITE}/partners`, '0.6', 'monthly');
 // Privacybeleid
 add(`${SITE}/privacy`, '0.4', 'yearly');
 
+// Thematische landingspagina's (seizoen/zoekintentie) — losse pagina's, dus
+// hier expliciet bijhouden. Nieuwe landingspagina toevoegen? Voeg 'm hier toe.
+add(`${SITE}/fietsroute-asperges`, '0.7', 'monthly');
+add(`${SITE}/fietsroute-aardbeien`, '0.7', 'monthly');
+add(`${SITE}/kaasboerderij-bezoeken`, '0.7', 'monthly');
+add(`${SITE}/boerderijijs-nederland`, '0.7', 'monthly');
+add(`${SITE}/updates`, '0.5', 'weekly');
+
 // Categoriepagina's + categorie × provincie-subpagina's
 for (const slug of ['versautomaten','eierautomaten','zelfpluktuinen','melktap','streekproducten']) {
   add(`${SITE}/${slug}`, '0.8', 'monthly');
