@@ -2836,6 +2836,36 @@
     margin-left: auto;
   }
 
+  /* Route-knop in de kaart-popup — winkels direct vanaf de kaart in je route prikken */
+  .popup-route-btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px 13px;
+    border: 1.5px solid var(--green-mid);
+    border-radius: var(--r-full);
+    font-family: var(--sans);
+    font-size: var(--t-xs);
+    font-weight: 600;
+    color: var(--green-mid);
+    background: transparent;
+    cursor: pointer;
+    transition: background var(--tf), color var(--tf), border-color var(--tf);
+  }
+
+  .popup-route-btn:hover { background: var(--green-bg); }
+
+  .popup-route-btn.in-route {
+    background: var(--green-mid);
+    border-color: var(--green-mid);
+    color: var(--white);
+  }
+
+  .popup-route-btn.in-route:hover {
+    background: color-mix(in srgb, var(--green-mid) 85%, black);
+    border-color: color-mix(in srgb, var(--green-mid) 85%, black);
+  }
+
   /* Leaflet algemeen */
   .leaflet-control-zoom a {
     font-family: var(--sans) !important;

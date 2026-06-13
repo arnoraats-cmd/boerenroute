@@ -6,6 +6,7 @@
 import { shopIcon } from './icons.js';
 import { routeVia } from './routing.js';
 import { analyzeRoute } from './routeScore.js';
+import { toggleStop, isInRoute } from './route.js';
 
 /* Kleuren per type (zie CLAUDE.md) */
 const COLOR = {
@@ -77,6 +78,24 @@ export function initMap({ lat = 51.6606, lng = 5.6188, zoom = 11 } = {}) {
   ).addTo(_map);
 
   _addLegend();
+
+  /* Route-knop in de popup bedienen. De popup-DOM bestaat pas bij openen,
+     dus delegeren via Leaflets popupopen-event. */
+  _map.on('popupopen', e => {
+    const btn = e.popup.getElement()?.querySelector('.popup-route-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      toggleStop(+btn.dataset.id);
+      _syncPopupRouteBtn(btn); // directe terugkoppeling, ook vóór de routechange-echo
+    });
+  });
+
+  /* Wijzigt de route ergens anders (lijst/paneel) terwijl een popup openstaat?
+     Werk dan de knop in die open popup bij. */
+  document.addEventListener('boerenroute:routechange', () => {
+    const btn = document.querySelector('.leaflet-popup .popup-route-btn');
+    if (btn) _syncPopupRouteBtn(btn);
+  });
 }
 
 /* Kaartlegenda — inklapbaar (standaard ingeklapt op smal scherm) */
@@ -156,7 +175,9 @@ export function renderMarkers(shops) {
       riseOnHover: true,
     });
 
-    marker.bindPopup(_popupHTML(shop), {
+    /* Functie i.p.v. string: zo wordt de route-status (in route / niet) elke
+       keer dat de popup opent vers berekend. */
+    marker.bindPopup(() => _popupHTML(shop), {
       maxWidth: 248,
       className: 'br-popup',
       closeButton: false,
@@ -332,7 +353,24 @@ function _popupHTML(shop) {
   </div>
   ${hours}
   <div class="popup-bottom">${tags}${rating}</div>
+  ${_routeBtnHTML(shop)}
 </div>`.trim();
+}
+
+/* Knop om de winkel direct vanaf de kaart aan de route toe te voegen/halen. */
+function _routeBtnHTML(shop) {
+  const inR = isInRoute(shop.id);
+  return `<button type="button" class="popup-route-btn${inR ? ' in-route' : ''}" `
+    + `data-id="${shop.id}" aria-pressed="${inR}">`
+    + `${inR ? '✓ In route' : '+ Voeg toe aan route'}</button>`;
+}
+
+/* Stel het uiterlijk van een route-knop in op de actuele route-status. */
+function _syncPopupRouteBtn(btn) {
+  const inR = isInRoute(+btn.dataset.id);
+  btn.classList.toggle('in-route', inR);
+  btn.setAttribute('aria-pressed', String(inR));
+  btn.textContent = inR ? '✓ In route' : '+ Voeg toe aan route';
 }
 
 function _e(s) {
