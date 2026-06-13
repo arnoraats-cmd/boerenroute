@@ -4,6 +4,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { getProvince, placeOf, provSlug as toProvSlug } from './place-prov.mjs';
+import { slugify, shopSlug, hasWinkelPage } from './shop-url.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root  = join(__dir, '..');
@@ -28,16 +29,6 @@ function esc(s) {
   return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-function slugify(s) {
-  return String(s ?? '').toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-}
-
-function shopSlug(s) {
-  return `${slugify(s.name)}-${s.id}`;
-}
-
 // Groepeer per plaatsnaam voor 'ook in deze plaats'-links
 const byPlace = {};
 for (const s of shops) {
@@ -49,10 +40,7 @@ for (const s of shops) {
 mkdirSync(join(root, 'public/winkel'), { recursive: true });
 
 // Filter: excl. onderweg, moet desc of hours of rating hebben
-const eligible = shops.filter(s =>
-  s.type !== 'onderweg' &&
-  (s.desc || s.hours || s.googleRating)
-);
+const eligible = shops.filter(hasWinkelPage);
 
 let count = 0;
 

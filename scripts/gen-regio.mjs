@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { getProvince, placeOf, provSlug } from './place-prov.mjs';
+import { shopSlug, hasWinkelPage } from './shop-url.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root  = join(__dir, '..');
@@ -225,19 +226,10 @@ function esc(s) {
   return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+/* Anchor-slug voor plaats-secties op de regiopagina (eigen 'plaats-'-prefix,
+   los van de winkel-slug). */
 function slugify(s) {
   return 'plaats-' + String(s ?? '').toLowerCase()
     .normalize('NFD').replace(/[̀-ͯ]/g, '')
     .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-}
-
-function shopSlug(s) {
-  const base = String(s.name ?? '').toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-  return `${base}-${s.id}`;
-}
-
-function hasWinkelPage(s) {
-  return s.type !== 'onderweg' && (s.desc || s.hours || s.googleRating);
 }

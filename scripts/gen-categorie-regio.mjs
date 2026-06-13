@@ -5,6 +5,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { getProvince, placeOf, provSlug } from './place-prov.mjs';
+import { shopSlug, hasWinkelPage } from './shop-url.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root  = join(__dir, '..');
@@ -95,8 +96,7 @@ for (const cat of CATEGORIES) {
 }
 
 function shopCard(s) {
-  return `
-      <article class="regio-shop">
+  const inner = `
         <span class="regio-emoji" aria-hidden="true">${s.emoji}</span>
         <div class="regio-info">
           <h3 class="regio-shop-name">${esc(s.name)}</h3>
@@ -104,8 +104,11 @@ function shopCard(s) {
           ${s.products?.length ? `<p class="regio-shop-products">${esc(s.products.slice(0, 6).join(', '))}</p>` : ''}
           ${s.hours ? `<p class="regio-shop-hours">🕐 ${esc(s.hours)}</p>` : ''}
           ${s.googleRating ? `<p class="regio-shop-rating">⭐ ${s.googleRating.toFixed(1)}${s.googleReviews ? ` (${s.googleReviews})` : ''}</p>` : ''}
-        </div>
-      </article>`;
+        </div>`;
+  // Link naar de winkeldetailpagina als die bestaat → interne links + crawlbaarheid
+  return hasWinkelPage(s)
+    ? `<a class="regio-shop regio-shop-link" href="/winkel/${shopSlug(s)}">${inner}</a>`
+    : `<article class="regio-shop">${inner}</article>`;
 }
 
 function pageHtml(cat, prov, plist) {

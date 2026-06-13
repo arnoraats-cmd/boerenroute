@@ -4,6 +4,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { getProvince, placeOf, provSlug as toProvSlug } from './place-prov.mjs';
+import { slugify, shopSlug, hasWinkelPage } from './shop-url.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root  = join(__dir, '..');
@@ -19,23 +20,6 @@ const TYPE_LABEL = {
 
 function esc(s) {
   return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-function slugify(s) {
-  return String(s ?? '').toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-}
-
-function shopSlug(s) {
-  const base = String(s.name ?? '').toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/['']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-  return `${base}-${s.id}`;
-}
-
-function hasWinkelPage(s) {
-  return s.type !== 'onderweg' && (s.desc || s.hours || s.googleRating);
 }
 
 // Groepeer shops op plaatsnaam (excl. onderweg)
