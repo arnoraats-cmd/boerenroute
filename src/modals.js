@@ -7,8 +7,29 @@ import { checkIn, hasVisited } from './stamps.js';
 import { shopIcon } from './icons.js';
 
 const FORMSPREE = 'https://formspree.io/f/xykvvprz';
+const TURNSTILE_SITEKEY = '0x4AAAAAADjlNgignSbvlYjn';
 
 let _overlay = null;
+
+/* Turnstile-widget in een dynamisch ingespoten modal-formulier renderen.
+   Auto-render van het script pakt alleen widgets die bij laadtijd al in de DOM
+   staan; modals worden later ingespoten, dus expliciet renderen. Het script
+   laadt async — als het er nog niet is, kort wachten. */
+function _renderTurnstile() {
+  const el = _overlay?.querySelector('.cf-turnstile:not([data-rendered])');
+  if (!el) return;
+  const tryRender = () => {
+    if (!window.turnstile) return false;
+    window.turnstile.render(el, { sitekey: TURNSTILE_SITEKEY, language: 'nl' });
+    el.setAttribute('data-rendered', '1');
+    return true;
+  };
+  if (tryRender()) return;
+  const timer = setInterval(() => {
+    if (tryRender() || _overlay?.hidden) clearInterval(timer);
+  }, 200);
+  setTimeout(() => clearInterval(timer), 8000);
+}
 
 /* ══ Init ════════════════════════════════════════════════════════ */
 
@@ -285,6 +306,7 @@ export function openTipModal(shopName = '') {
       <label class="form-label">E-mailadres <span class="form-opt">(optioneel)</span>
         <input name="email" class="form-input" type="email" placeholder="jouw@email.nl">
       </label>
+      <div class="cf-turnstile" data-sitekey="${TURNSTILE_SITEKEY}" data-language="nl"></div>
       <div class="form-actions">
         <button type="submit" class="btn btn-primary" id="tipSubmit">Verstuur tip</button>
       </div>
@@ -335,6 +357,7 @@ export function openSignupModal() {
       <label class="form-label">Jouw e-mailadres <span class="form-req">*</span>
         <input name="email" class="form-input" type="email" required placeholder="eigenaar@winkel.nl">
       </label>
+      <div class="cf-turnstile" data-sitekey="${TURNSTILE_SITEKEY}" data-language="nl"></div>
       <div class="form-actions">
         <button type="submit" class="btn btn-primary" id="signupSubmit">Aanmelden</button>
       </div>
@@ -402,6 +425,7 @@ export function openWerkplaatsModal() {
           <label class="form-label">Jouw e-mail <span class="form-opt">(optioneel, voor terugkoppeling)</span>
             <input name="email" class="form-input" type="email" placeholder="jij@email.nl">
           </label>
+          <div class="cf-turnstile" data-sitekey="${TURNSTILE_SITEKEY}" data-language="nl"></div>
           <div class="form-actions">
             <button type="submit" class="btn btn-primary" id="bugSubmit">📨 Versturen naar de boer</button>
           </div>
@@ -535,6 +559,8 @@ function _bindForm(formId, btnId, statusId, btnLabel, successMsg, celebrate = fa
   const btn    = document.getElementById(btnId);
   const status = document.getElementById(statusId);
   if (!form) return;
+
+  _renderTurnstile();
 
   form.addEventListener('submit', async e => {
     e.preventDefault();

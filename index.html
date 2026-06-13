@@ -38,6 +38,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="">
 
+  <!-- Cloudflare Turnstile — spambeveiliging op de Formspree-formulieren (nieuwsbrief, tip, aanmelden) -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
   <link rel="stylesheet" href="styles/main.css">
   <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/public/manifest.json">
@@ -664,6 +667,7 @@
                 <input type="email" name="email" class="form-input" required placeholder="jouw@email.nl">
                 <button type="submit" class="btn btn-primary">Aanmelden</button>
               </div>
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAADjlNgignSbvlYjn" data-language="nl"></div>
             </form>
           </div>
           <div class="over-contact-col">
