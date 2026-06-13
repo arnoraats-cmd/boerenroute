@@ -13,6 +13,25 @@
 /robots.txt         /public/robots.txt              200
 /sitemap.xml        /public/sitemap.xml             200
 
+# Trailing slash → canonieke no-slash variant (alle canonicals zijn zonder
+# slash). Bovenaan zodat ze vóór de rewrites matchen; ze eisen een trailing
+# slash, dus no-slash-URL's vallen er nooit per ongeluk in. Map-indexen
+# (/blog/, /gemeente/, /aanmelden/ …) matchen niet en blijven 200.
+/gemeente/*/        /gemeente/:splat        301
+/regio/*/           /regio/:splat           301
+/winkel/*/          /winkel/:splat          301
+/blog/*/            /blog/:splat            301
+/versautomaten/*/   /versautomaten/:splat   301
+/eierautomaten/*/   /eierautomaten/:splat   301
+/zelfpluktuinen/*/  /zelfpluktuinen/:splat  301
+/melktap/*/         /melktap/:splat         301
+/streekproducten/*/ /streekproducten/:splat 301
+/versautomaten/     /versautomaten          301
+/eierautomaten/     /eierautomaten          301
+/zelfpluktuinen/    /zelfpluktuinen         301
+/melktap/           /melktap                301
+/streekproducten/   /streekproducten        301
+
 /blog               /public/blog/                   200
 /blog/              /public/blog/                   200
 /blog/*             /public/blog/:splat             200
