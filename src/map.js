@@ -383,7 +383,7 @@ function _popupNode(shop) {
   if (btn) {
     L.DomEvent.on(btn, 'click', ev => {
       L.DomEvent.stop(ev);
-      toggleStop(+btn.dataset.id);
+      toggleStop(shop.id, shop);   // shop meegeven → werkt ook zonder _allRef
       _syncPopupRouteBtn(btn);
     });
   }

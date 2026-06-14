@@ -26,8 +26,10 @@ export function initRoute(allShops) {
 
 /* ══ Publiek API ════════════════════════════════════════════════ */
 
-export function toggleStop(shopId) {
-  isInRoute(shopId) ? _remove(shopId) : _add(shopId);
+/* shop (optioneel) = het volledige winkel-object. Meegeven maakt toevoegen
+   onafhankelijk van _allRef (bv. vóór locatiekeuze of bij OSM-winkels). */
+export function toggleStop(shopId, shop) {
+  isInRoute(shopId) ? _remove(shopId) : _add(shopId, shop);
 }
 
 export function isInRoute(shopId) {
@@ -80,8 +82,8 @@ function _removeStart() {
 
 /* ══ Interne mutaties ════════════════════════════════════════════ */
 
-function _add(shopId) {
-  const shop = _allRef.find(s => s.id === shopId);
+function _add(shopId, provided) {
+  const shop = _allRef.find(s => s.id === shopId) || provided;
   if (!shop || isInRoute(shopId)) return;
   const start = _stops[0] || shop;          // behoud het eerste punt als start van de lus
   _stops.push(shop);
