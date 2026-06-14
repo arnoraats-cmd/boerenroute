@@ -49,6 +49,14 @@ Deze afspraken zijn hard. Wijk er niet van af zonder overleg.
    die tegen een schermrand plakken.
 9. **Geen lege/dode UI.** Toon filters, chips, legenda-items of secties alleen als er data voor is —
    data-gedreven (bv. een type-chip verschijnt alleen als er locaties van dat type zijn).
+10. **Bezoeker-relevante wijziging? Werk de "Wat is er nieuw"-pagina bij.** Bij elke wijziging die een
+    bezoeker merkt (nieuwe functie, zichtbare verbetering, opgeloste bug die live stond), voeg in
+    **dezelfde commit** een item toe aan `public/updates/index.html`, bovenaan de huidige maand:
+    `<div class="update-entry">` met een tag (`tag-nieuw` Nieuw · `tag-verbeterd` Verbeterd ·
+    `tag-opgelost` Opgelost · `tag-locatie` Locatie), een korte titel, een beschrijving in **gewone
+    bezoekerstaal** (geen jargon) en de datum. **Niet** opnemen: interne/technische wijzigingen die de
+    bezoeker niet merkt (SEO, redirects, refactors, generatoren, build) — en geen bug als "Opgelost" als
+    die nooit in een release zat. Bij twijfel: weglaten.
 
 ---
 
