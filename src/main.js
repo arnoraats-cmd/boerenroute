@@ -344,16 +344,12 @@ document.addEventListener('boerenroute:routechange', () => {
 
 /* ── Hero-elementen ──────────────────────────────────────── */
 const heroGpsBtn       = document.getElementById('heroGpsBtn');
-const heroSearchBtn    = document.getElementById('heroSearchBtn');
 const heroSearch       = document.getElementById('heroSearch');
 const heroSearchInput  = document.getElementById('heroSearchInput');
 const heroSearchSubmit = document.getElementById('heroSearchSubmit');
 
-heroSearchBtn?.addEventListener('click', () => {
-  const opening = heroSearch.hidden;
-  heroSearch.hidden = !opening;
-  if (opening) heroSearchInput?.focus();
-});
+/* Het zoekveld staat nu altijd zichtbaar in de hero — geen aparte "Zoek een
+   plaats"-knop meer om te tonen/verbergen. */
 
 /* Hero → naar de kant-en-klare fietsroutes (carrousel) scrollen */
 document.getElementById('heroRoutesBtn')?.addEventListener('click', () => {
@@ -369,7 +365,10 @@ async function _locateMe(btn) {
     const { lat, lng } = await getGPS();
     _applyLocation(lat, lng, 'Jouw locatie');
   } catch (e) {
-    _showError(e.message);
+    /* Vriendelijke fallback i.p.v. een kale foutmelding: wijs naar de
+       alternatieven en zet de cursor klaar in het zoekveld. */
+    _showError('Geen probleem — zoek hierboven een plaats of tik op "Verken de kaart".', true);
+    heroSearchInput?.focus();
   } finally {
     if (btn) _resetBusy(btn);
   }
@@ -382,7 +381,7 @@ document.getElementById('toolbarGpsBtn')?.addEventListener('click', e => _locate
 document.getElementById('promptGpsBtn')?.addEventListener('click', () => _locateMe(document.getElementById('promptGpsBtn')));
 document.getElementById('promptSearchBtn')?.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  setTimeout(() => document.getElementById('heroSearchBtn')?.click(), 350);
+  setTimeout(() => heroSearchInput?.focus(), 350);
 });
 
 async function _submitSearch() {
@@ -518,13 +517,13 @@ function _resetBusy(btn) {
   btn.innerHTML = btn.dataset.orig ?? btn.innerHTML;
   btn.disabled  = false;
 }
-function _showError(msg) {
+function _showError(msg, hint = false) {
   _clearError();
   const el = Object.assign(document.createElement('p'), {
-    id: 'heroError', className: 'hero-error', textContent: msg,
+    id: 'heroError', className: `hero-error${hint ? ' hero-hint' : ''}`, textContent: msg,
   });
   heroSearch.insertAdjacentElement('afterend', el);
-  setTimeout(() => el.remove(), 5000);
+  setTimeout(() => el.remove(), hint ? 7000 : 5000);
 }
 function _clearError() { document.getElementById('heroError')?.remove(); }
 function _esc(s) {

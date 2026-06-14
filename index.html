@@ -200,10 +200,6 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="9" stroke-dasharray="3 0" opacity=".3"/></svg>
           Vind winkels bij mij
         </button>
-        <button class="btn btn-secondary" id="heroSearchBtn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          Zoek een plaats
-        </button>
         <button class="btn btn-secondary" id="heroExploreBtn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
           Verken de kaart
@@ -214,15 +210,20 @@
         </button>
       </div>
 
+      <div class="hero-orsearch">
+        <span class="hero-orsearch-label">…of zoek een plaats / postcode</span>
+        <div class="hero-search" id="heroSearch">
+          <label for="heroSearchInput" class="sr-only">Zoek een plaats of postcode</label>
+          <input type="text" id="heroSearchInput" class="hero-search-input"
+                 placeholder="Bijv. Utrecht, Wageningen, 5401…" autocomplete="off">
+          <button class="btn btn-primary" id="heroSearchSubmit">Zoeken</button>
+        </div>
+      </div>
+
+      <p class="hero-privacy">🔒 Je locatie blijft op je toestel — we slaan niets op.</p>
+
       <!-- Mini-preview: 3 echte uitgelichte winkels — toont meteen de waarde (gevuld door main.js) -->
       <div class="hero-preview" id="heroPreview" hidden></div>
-
-      <div class="hero-search" id="heroSearch" hidden>
-        <label for="heroSearchInput" class="sr-only">Zoek een plaats of postcode</label>
-        <input type="text" id="heroSearchInput" class="hero-search-input"
-               placeholder="Bijv. Utrecht, Wageningen, 5401…" autocomplete="off">
-        <button class="btn btn-primary" id="heroSearchSubmit">Zoeken</button>
-      </div>
 
       <!-- Vertrouwens-stats -->
       <div class="hero-trust" role="list" aria-label="Feiten over Boerenroute">

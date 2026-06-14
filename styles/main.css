@@ -492,6 +492,30 @@
     box-shadow: 0 0 0 3px rgba(186,117,23,.25), 0 4px 20px rgba(0,0,0,.22);
   }
 
+  /* Altijd-zichtbaar zoekveld als gelijkwaardig alternatief voor GPS */
+  .hero-orsearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    animation: fade-up .55s var(--ease) .3s both;
+  }
+  .hero-orsearch-label {
+    font-size: var(--t-sm);
+    color: rgba(255,255,255,.8);
+    font-weight: 500;
+  }
+  .hero-privacy {
+    font-size: var(--t-xs);
+    color: rgba(255,255,255,.72);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    margin: 0;
+  }
+
   /* Decoratieve achtergrond-emoji's */
   .hero-deco { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
   .hero-deco-item { position: absolute; }
@@ -2268,6 +2292,11 @@
     max-width: 440px;
     text-align: center;
     animation: fade-up .2s var(--ease) both;
+  }
+
+  /* Vriendelijke fallback (bv. GPS geweigerd) — groen i.p.v. rood, geen 'fout' */
+  .hero-error.hero-hint {
+    background: rgba(53,102,17,.82);
   }
 }
 
