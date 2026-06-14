@@ -4376,6 +4376,13 @@
       box-shadow: 0 2px 8px rgba(0,0,0,.08);
     }
 
+    /* De footer staat los in de body (na <main>). In de fullscreen kaart-app-
+       weergave zijn toolbar/map/sheet allemaal position:fixed (uit de flow),
+       waardoor de footer naar boven 'drijft' en achter de toolbar doorpiept.
+       Hij hoort daar ook niet thuis → verbergen. Op de landingspagina
+       (niet map-active) en op desktop blijft de footer gewoon staan. */
+    body.map-active .site-footer { display: none; }
+
     body.map-active .list-section {
       position: fixed !important;
       left: 0; right: 0; bottom: 0;
