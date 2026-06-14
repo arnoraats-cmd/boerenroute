@@ -79,17 +79,6 @@ export function initMap({ lat = 51.6606, lng = 5.6188, zoom = 11 } = {}) {
 
   _addLegend();
 
-  /* Route-knop in de popup bedienen. De popup-DOM bestaat pas bij openen,
-     dus delegeren via Leaflets popupopen-event. */
-  _map.on('popupopen', e => {
-    const btn = e.popup.getElement()?.querySelector('.popup-route-btn');
-    if (!btn) return;
-    btn.addEventListener('click', () => {
-      toggleStop(+btn.dataset.id);
-      _syncPopupRouteBtn(btn); // directe terugkoppeling, ook vóór de routechange-echo
-    });
-  });
-
   /* Wijzigt de route ergens anders (lijst/paneel) terwijl een popup openstaat?
      Werk dan de knop in die open popup bij. */
   document.addEventListener('boerenroute:routechange', () => {
@@ -176,8 +165,8 @@ export function renderMarkers(shops) {
     });
 
     /* Functie i.p.v. string: zo wordt de route-status (in route / niet) elke
-       keer dat de popup opent vers berekend. */
-    marker.bindPopup(() => _popupHTML(shop), {
+       keer dat de popup opent vers berekend, met de knop-listener er direct op. */
+    marker.bindPopup(() => _popupNode(shop), {
       maxWidth: 248,
       className: 'br-popup',
       closeButton: false,
@@ -380,6 +369,25 @@ function _popupHTML(shop) {
   <div class="popup-bottom">${tags}${rating}</div>
   ${_routeBtnHTML(shop)}
 </div>`.trim();
+}
+
+/* Bouw de popup als DOM-element zodat de route-knop een betrouwbare,
+   direct gekoppelde click-listener heeft (i.p.v. delegatie via popupopen).
+   L.DomEvent.stop voorkomt dat de klik de popup laat sluiten of naar de kaart
+   propageert. */
+function _popupNode(shop) {
+  const wrap = document.createElement('div');
+  wrap.innerHTML = _popupHTML(shop);
+  const el = wrap.firstElementChild;
+  const btn = el.querySelector('.popup-route-btn');
+  if (btn) {
+    L.DomEvent.on(btn, 'click', ev => {
+      L.DomEvent.stop(ev);
+      toggleStop(+btn.dataset.id);
+      _syncPopupRouteBtn(btn);
+    });
+  }
+  return el;
 }
 
 /* Knop om de winkel direct vanaf de kaart aan de route toe te voegen/halen. */
