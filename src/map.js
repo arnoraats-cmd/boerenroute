@@ -379,6 +379,11 @@ function _popupNode(shop) {
   const wrap = document.createElement('div');
   wrap.innerHTML = _popupHTML(shop);
   const el = wrap.firstElementChild;
+  /* Mobiel: zorg dat taps op de popup (incl. de knop) niet door Leaflet/de
+     kaart worden opgeslokt — zonder dit reageert de route-knop niet op touch
+     (op desktop komt de muisklik wél door, vandaar 'werkt op pc, niet mobiel'). */
+  L.DomEvent.disableClickPropagation(el);
+  L.DomEvent.disableScrollPropagation(el);
   const btn = el.querySelector('.popup-route-btn');
   if (btn) {
     L.DomEvent.on(btn, 'click', ev => {
