@@ -1,4 +1,4 @@
-import { initShops, setUserLocation }        from './shops.js';
+import { initShops, setUserLocation, exploreMap } from './shops.js';
 import { geocode, getGPS, DEFAULT }          from './location.js';
 import { initMap, flyTo as mapFlyTo, invalidateSize, setLegendTypes } from './map.js';
 import { initRoute }                         from './route.js';
@@ -414,6 +414,20 @@ function _applyLocation(lat, lng, name) {
   _showCrumb(name);
   _triggerOSM(lat, lng);
 }
+
+/* Verken de kaart zonder locatie: fullscreen-kaart op Nederland-overzicht.
+   Geen GPS/zoeken nodig, geen OSM-laden (dat hangt aan een locatie). */
+function _exploreMap() {
+  exploreMap();
+  document.getElementById('locatiePrompt')?.setAttribute('hidden', '');
+  _hideLanding();
+  document.getElementById('mainLayout')?.scrollIntoView({ behavior: 'smooth' });
+  mapFlyTo(52.15, 5.4, 7.4);          // heel Nederland in beeld
+  _showCrumb('Heel Nederland');
+}
+
+document.getElementById('heroExploreBtn')?.addEventListener('click', _exploreMap);
+document.getElementById('promptExploreBtn')?.addEventListener('click', _exploreMap);
 
 /* ── OSM laden na locatie-keuze + bij straal-wijziging ────── */
 let _osmShops      = [];

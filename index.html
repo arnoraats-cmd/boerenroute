@@ -204,6 +204,10 @@
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           Zoek een plaats
         </button>
+        <button class="btn btn-secondary" id="heroExploreBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          Verken de kaart
+        </button>
         <button class="btn btn-secondary" id="heroRoutesBtn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="5" r="2.3"/><path d="M8.3 18.5H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5"/></svg>
           Bekijk fietsroutes
@@ -404,7 +408,7 @@
         <!-- Locatie-prompt: zichtbaar tot gebruiker een locatie kiest -->
         <div class="locatie-prompt" id="locatiePrompt">
           <p class="locatie-prompt-text">📍 Waar wil je winkels zoeken?</p>
-          <p class="locatie-prompt-sub">Kies een locatie voor winkels bij jou in de buurt, gesorteerd op afstand.</p>
+          <p class="locatie-prompt-sub">Voor winkels bij jou in de buurt (gesorteerd op afstand) — of verken gewoon de kaart. Je locatie blijft op je toestel.</p>
           <div class="locatie-prompt-btns">
             <button class="btn btn-primary locatie-prompt-btn" id="promptGpsBtn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
@@ -413,6 +417,10 @@
             <button class="btn btn-secondary locatie-prompt-btn" id="promptSearchBtn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
               Zoek een plaats
+            </button>
+            <button class="btn btn-ghost locatie-prompt-btn" id="promptExploreBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+              Verken de kaart
             </button>
           </div>
         </div>

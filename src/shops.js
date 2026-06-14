@@ -12,6 +12,7 @@ import { shopIcon } from './icons.js';
 let allShops     = [];
 let userLat      = 51.6606;
 let userLng      = 5.6188;
+let _located     = false;   // true zodra een echte locatie is gekozen (GPS/zoek); in verken-modus blijft het false
 let activeFilter = 'all';
 let searchQuery  = '';
 let sortBy       = 'naam';
@@ -77,11 +78,28 @@ export function initShops(shops) {
 export function setUserLocation(lat, lng) {
   userLat = lat;
   userLng = lng;
+  _located = true;
   sortBy  = 'afstand';
   const sel = $('sortSelect');
   if (sel) sel.value = 'afstand';
   document.body.classList.add('map-active');
   // Pas kaart-layout direct toe via JS (werkt altijd, ook bij terugkeer)
+  import('./bottomsheet.js').then(({ activateMobileLayout }) => {
+    activateMobileLayout();
+  });
+  _render();
+}
+
+/* Verken-modus: schakel naar de fullscreen-kaart zónder een locatie te kiezen.
+   Geen echte locatie → afstand-sortering is zinloos, dus val terug op
+   beoordeling, en afstandslabels worden onderdrukt (zie _cardHTML). */
+export function exploreMap() {
+  if (sortBy === 'afstand') {
+    sortBy = 'rating';
+    const sel = $('sortSelect');
+    if (sel) sel.value = 'rating';
+  }
+  document.body.classList.add('map-active');
   import('./bottomsheet.js').then(({ activateMobileLayout }) => {
     activateMobileLayout();
   });
@@ -407,7 +425,7 @@ function _cardHTML(shop) {
   </div>
   <div class="shop-meta">
     ${tags}${badges.join('')}${rating}
-    <span class="shop-dist" aria-label="${distStr} van jouw locatie">${distStr}</span>
+    ${_located ? `<span class="shop-dist" aria-label="${distStr} van jouw locatie">${distStr}</span>` : ''}
   </div>
   <button class="card-route-btn${inRoute ? ' in-route' : ''}" data-id="${shop.id}"
     aria-pressed="${inRoute}"
